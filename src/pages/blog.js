@@ -115,7 +115,7 @@ const Blog = () => {
                         })}
                     </div>
 
-                    <Link className='seemore' href='/blogdetail'>
+                    {/* <Link className='seemore' href='/blogdetail'>
                         <div className='see_more_botton'>
                             <button className="animated-button filter">
                                 <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
@@ -125,7 +125,7 @@ const Blog = () => {
                             </button>
                         </div>
 
-                    </Link>
+                    </Link> */}
 
                 </div>
             </section>

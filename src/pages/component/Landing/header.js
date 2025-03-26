@@ -245,7 +245,7 @@ const Header = () => {
             custom={0.3}
             variants={menuVariants}
           >
-            <Link href="/blogs" scroll={false} onClick={handleClose}>
+            <Link href="/blog" scroll={false} onClick={handleClose}>
               <p className="nav-link">Blogs</p>
             </Link>
           </motion.div>
