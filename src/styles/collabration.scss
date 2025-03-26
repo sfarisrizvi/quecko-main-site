@@ -1,0 +1,205 @@
+.collab {
+    padding: 20px 20px;
+    .inner_collab {
+        position: relative;
+        height: 636px;
+        z-index: 999;
+        padding: 55px;
+        border-radius: 40px;
+        overflow: hidden;
+
+        .main-banner-video {
+            position: absolute;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            top: 0px;
+            right: 0;
+            width: 100%;
+            z-index: -2;
+        }
+
+        h1 {
+            color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            /* 23.4px */
+            text-transform: uppercase;
+        }
+
+        .middle_colab {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: calc(100% - 110px); /* This will subtract 55px from both left and right */
+            position: absolute;
+            bottom: 55px;
+            left: 55px;  /* Adding left gap */
+            right: 55px; /* Adding right gap */
+            z-index: 99999;
+        }
+
+        .middle_colab h2 {
+            color: #000;
+            font-size: 60px;
+            width: 740px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            /* 60px */
+        }
+
+        .middle_colab p {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            width: 421px;
+            font-weight: 400;
+            line-height: 110%;
+            /* 22px */
+        }
+    }
+}
+.detailss_page{
+    padding: 20px;
+    overflow: hidden;
+    .mycontactus{
+        border-radius: 40px;
+        padding-top: 120px;
+    }
+    .contact_us_detailss{
+        border-radius: 40px;
+    background: #F4F4F4;
+    
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .collab {
+        padding: 20px 5px;
+    }
+    .collab .inner_collab .middle_colab h2 {
+        color: #000;
+        font-size: 30px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+    }
+    .collab .inner_collab {
+        position: relative;
+        height: 581px;
+        z-index: 999;
+        padding: 29px;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    .collab .inner_collab .middle_colab p {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        width: 100%;
+        font-weight: 400;
+        line-height: 110%;
+    }
+    .collab .inner_collab .middle_colab {
+        display: flex
+    ;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: calc(100% - 63px);
+        position: absolute;
+        bottom: 55px;
+        left: 29px;
+        right: 55px;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 33px;
+    }
+}
+@media (min-width: 1600px){
+    .collab {
+        padding: 20px 20px;
+    
+        .inner_collab {
+            position: relative;
+            height: 33.13vw; /* Converted from 636px */
+            z-index: 999;
+            padding: 2.86vw; /* Converted from 55px */
+            border-radius: 40px;
+            overflow: hidden;
+    
+            .main-banner-video {
+                position: absolute;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                top: 0px;
+                right: 0;
+                width: 100%;
+                z-index: -2;
+            }
+    
+            h1 {
+                color: #000;
+                font-size: 0.94vw; /* Converted from 18px */
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                text-transform: uppercase;
+            }
+    
+            .middle_colab {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: calc(94.27vw); /* Converted from 100% - 110px */
+                position: absolute;
+                bottom: 2.86vw; /* Converted from 55px */
+                left: 2.86vw;  /* Converted from 55px */
+                right: 2.86vw; /* Converted from 55px */
+                z-index: 99999;
+            }
+    
+            .middle_colab h2 {
+                color: #000;
+                font-size: 3.13vw; /* Converted from 60px */
+                width: 38.54vw; /* Converted from 740px */
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+            }
+    
+            .middle_colab p {
+                color: #000;
+                font-size: 1.04vw; /* Converted from 20px */
+                font-style: normal;
+                width: 21.93vw; /* Converted from 421px */
+                font-weight: 400;
+                line-height: 110%;
+                margin-right: 45px;
+            }
+        }
+    }
+    
+    .detailss_page {
+        padding: 1.25vw; // 20px
+        overflow: hidden;
+    
+        .mycontactus {
+            border-radius: 2.5vw; // 40px
+            padding-top: 7.5vw; // 120px
+        }
+    
+        .contact_us_detailss {
+            border-radius: 2.5vw; // 40px
+            background: #F4F4F4;
+        }
+    }
+    
+    
+    
+}

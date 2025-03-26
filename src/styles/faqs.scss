@@ -1,0 +1,188 @@
+.main_faqs {
+    padding: 30px 20px;
+
+    .inner_faqs {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        gap: 97px;
+        padding: 0px 30px;
+
+
+        .middle_left {
+            h1 {
+                color: #9D9D9D;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                /* 20.8px */
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: #000;
+                font-size: 70px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                /* 70px */
+                padding-top: 10px;
+            }
+        }
+
+        .middle_right {
+            button.accordion-button {
+                box-shadow: unset;
+                background-color: unset;
+                color: #010102;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                /* 28px */
+            }
+
+            .accordion-item {
+                margin-bottom: 10px;
+                border-radius: 20px;
+                border: 1px solid #EAEAEA;
+
+            }
+            .accordion-header {
+                span{
+                    width: 42px;
+                }
+            }
+            .accordion-button:not(.collapsed)::after {
+                background-image: url(../Assests/mins.svg);
+            }
+
+            .accordion-button::after {
+                background-image: url(../Assests/plus.svg);
+            }
+
+            .accordion-body {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                padding: 0px 22px 20px 22px;
+
+                font-weight: 300;
+                line-height: 130%;
+                /* 23.4px */
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .main_faqs .inner_faqs {
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        grid-gap: 97px;
+        gap: 20px;
+        padding: 0px;
+    }
+    .main_faqs .inner_faqs .middle_left h2 {
+        color: #000;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        padding-top: 10px;
+    }
+    .main_faqs .inner_faqs .middle_right button.accordion-button {
+        box-shadow: unset;
+        background-color: unset;
+        color: #010102;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .main_faqs .inner_faqs .middle_right .accordion-body {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        padding: 0px 22px 20px 22px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+@media (min-width: 1600px){
+    .main_faqs {
+        padding: 1.875vw 1.25vw; /* 30px = 1.875vw, 20px = 1.25vw */
+    
+        .inner_faqs {
+            display: grid;
+            grid-template-columns: 1.5fr 2fr;
+            gap: 6.0625vw; /* 97px = 6.0625vw */
+            padding: 0 1.875vw; /* 30px = 1.875vw */
+    
+            .middle_left {
+                h1 {
+                    color: #9D9D9D;
+                    font-size: 1vw; /* 16px = 1vw */
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    text-transform: uppercase;
+                }
+    
+                h2 {
+                    color: #000;
+                    font-size: 4.375vw; /* 70px = 4.375vw */
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                    padding-top: 0.625vw; /* 10px = 0.625vw */
+                }
+            }
+    
+            .middle_right {
+                button.accordion-button {
+                    box-shadow: unset;
+                    background-color: unset;
+                    color: #010102;
+                    font-size: 1.25vw; /* 20px = 1.25vw */
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+    
+                .accordion-item {
+                    margin-bottom: 0.625vw; /* 10px = 0.625vw */
+                    border-radius: 1.25vw; /* 20px = 1.25vw */
+                    border: 0.0625vw solid #EAEAEA; /* 1px = 0.0625vw */
+                }
+    
+                .accordion-header {
+                    span {
+                        width: 2.625vw; /* 42px = 2.625vw */
+                    }
+                }
+    
+                .accordion-button:not(.collapsed)::after {
+                    background-image: url(../Assests/mins.svg);
+                }
+    
+                .accordion-button::after {
+                    background-image: url(../Assests/plus.svg);
+                }
+    
+                .accordion-body {
+                    color: #000;
+                    font-size: 1.125vw; /* 18px = 1.125vw */
+                    font-style: normal;
+                    padding: 0 1.375vw 1.25vw 1.375vw; /* 22px = 1.375vw, 20px = 1.25vw */
+                    font-weight: 400;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+    
+}

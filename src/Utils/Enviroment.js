@@ -1,0 +1,1 @@
+export const api_url = 'https://dev.quecko.com/wp-json/wp/v2/'

@@ -1,0 +1,43 @@
+{
+  "name": "quecko",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postbuild": "next-sitemap",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.5.0",
+    "glob": "^11.0.1",
+    "gsap": "^3.12.7",
+    "jquery": "^3.7.1",
+    "lenis": "^1.2.3",
+    "lottie-web": "^5.12.2",
+    "next": "^14.0.0",
+    "next-sitemap": "^4.2.3",
+    "odometer": "^0.4.8",
+    "owl.carousel": "^2.3.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^7.2.9",
+    "react-toastify": "^10.0.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.68.0"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "sass-loader": "^13.3.2"
+  }
+}
