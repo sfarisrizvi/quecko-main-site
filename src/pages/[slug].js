@@ -574,14 +574,15 @@ export async function getServerSideProps(context) {
     }
 }
 
-const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => {
+const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug}) => {
     // Initialize state with server-side data
     const [blogdetail, setblogdetail] = useState(initialBlogDetail)
     const [allcategories, setallcategories] = useState(initialRelatedBlogs)
     const [index, setIndex] = useState(0)
      const item = blogdetail?.[index] || null;
-
+    
      const getAllDetails = async () => {
+ 
         try {
             const data = await getBlogsdetails(slug)
             setblogdetail(data)
@@ -589,6 +590,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
             console.error(error)
         }
     }
+    console.log(slug, 'slugggggggg')
 // console.log(blogdetail, "blogdetail")
      const getAllcategories = async (id) => {
         try {
@@ -613,7 +615,10 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
             getAllcategories(blogdetail[0]?.categories[0]);
             setRelatedFetched(true);
         }
-    }, [blogdetail]);  
+    }, [blogdetail]); 
+    
+
+   
 
      if (!item) {
         return (
@@ -633,13 +638,13 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
         <>
             <Head>
                 <title>{item?.title?.rendered || "Blog Details | Quecko"}</title>
-                <meta name="description" content={item?.meta_desc || "Read the latest blogs on Quecko"} />
+                <meta name="description" content={item?.yoast_head_json?.description || "Read the latest blogs on Quecko"} />
                 <link rel="canonical" href={`https://www.quecko.com/${slug}` || "#"} />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content={item?.title?.rendered || "Loading..."} />
                 <meta property="og:description" content={item?.meta_desc || "No description available"} />
-                <meta property="og:url" content={item?.url || "#"} />
+                <meta property="og:url" content={`https://www.quecko.com/${slug}`} />
                 <meta property="og:site_name" content="Quecko" />
 
                 <meta property="article:publisher" content="https://www.facebook.com/QueckoInc" />
@@ -659,6 +664,9 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                 <meta name="twitter:data1" content={item?.author_name || "Unknown"} />
                 <meta name="twitter:label2" content="Est. reading time" />
                 <meta name="twitter:data2" content="2 minutes" />
+                <meta name="twitter:title" content={item?.title?.rendered || "Loading..."} />
+                <meta name="twitter:description" content={item?.meta_desc || "No description available"} />
+                <meta name="twitter:image" content={item?.featured_image_url || "/default-image.jpg"} />
             </Head>
 
             <section className="maindetailss">
@@ -685,21 +693,43 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                                     <div className="author_Div">
                                         <h2>Author</h2>
                                         <div className="details_man">
-                                            <img src="/Assets/manimg.svg" className="menimg_blog" alt="Author" />
+                                            <img src={item?.authors?.[0]?.avatar_url?.url} className="menimg_blog" alt="Author" />
+                                            {/* <img src="/Assets/manimg.svg" className="menimg_blog" alt="Author" /> */}
+
                                             <div>
-                                                <h3>John Doe</h3>
-                                                <h4>UI/UX Designer</h4>
+                                                <h3>{item?.authors?.[0]?.display_name || "Unknown Author"}</h3>
+
+                                                <h4>
+                                                    {item?.authors?.[0]?.job_title || "No description available"}
+
+                                                </h4>
                                             </div>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet. Vel galisum quae est labore omnis et quibusdam explicabo non magnam
-                                            corporis.
-                                        </p>
+                                        <p
+                                            className="truncate-text"
+                                            dangerouslySetInnerHTML={{ __html: item?.authors?.[0]?.description }}
+                                        />
                                         <div className="socialicons">
-                                            <img src="/Assets/Frame.png" alt="social icon" className="img-fluid" />
-                                            <img src="/Assets/Frame1.png" alt="social icon" className="img-fluid" />
-                                            <img src="/Assets/Frame2.png" alt="social icon" className="img-fluid" />
-                                            <img src="/Assets/Frame3.png" alt="social icon" className="img-fluid" />
+                                            {item?.authors?.[0]?.linkedinl && (
+                                                <a href={item?.authors?.[0]?.linkedin} target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame.png" alt="social icon" className="img-fluid" />
+                                                </a>
+                                            )}
+                                            {item?.authors?.[0]?.twitter && (
+                                                <a href={item?.authors?.[0]?.twitter} target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame1.png" alt="social icon" className="img-fluid" />
+                                                </a>
+                                            )}
+                                            {item?.authors?.[0]?.user_url && (
+                                                <a href={item?.authors?.[0]?.user_url} target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame2.png" alt="social icon" className="img-fluid" />
+                                                </a>
+                                            )}
+                                            {item?.authors?.[0]?.facebook && (
+                                                <a href={item?.authors?.[0]?.facebook} target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame3.png" alt="social icon" className="img-fluid" />
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                     <div className="top_date_div">
@@ -711,12 +741,27 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                                         <div>
                                             <p className="para">Share on</p>
                                             <div className="socialicons">
-                                                <img src="/Assets/Frame.png" alt="social icon" className="img-fluid" />
-                                                <img src="/Assets/Frame1.png" alt="social icon" className="img-fluid" />
-                                                <img src="/Assets/Frame2.png" alt="social icon" className="img-fluid" />
-                                                <img src="/Assets/Frame3.png" alt="social icon" className="img-fluid" />
+                                                 <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame.png" alt="Website" className="img-fluid" />
+                                                </a>
+
+                                                 <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20this%20out!`}
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame1.png" alt="Twitter/X" className="img-fluid" />
+                                                </a>
+
+                                                 <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}`}
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame2.png" alt="LinkedIn" className="img-fluid" />
+                                                </a>
+
+                                                 <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <img src="/Assets/Frame3.png" alt="Facebook" className="img-fluid" />
+                                                </a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
 

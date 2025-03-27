@@ -468,7 +468,13 @@ text-transform: capitalize;
     }
 }
 
-
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Sirf 5 lines show hongi */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 @media(max-width:600px) {
     .maindetailss {
         padding: 20px 5px;
