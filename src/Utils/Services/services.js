@@ -29,7 +29,7 @@ export const getBlogsdetails = async (slug) => {
 export const RelatedBlogs = async (id) => {
     try {
         const relatedblogs = await axios.get(`${get_all_blogs}?categories=${id}`)
-        return relatedblogs?.data
+        return relatedblogs?.data?.slice(0, 4);    
     }
     catch (error) {
         console.error(error)
