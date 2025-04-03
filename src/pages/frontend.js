@@ -27,22 +27,22 @@ const Frontend = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-<h1>Resource Augmentation</h1>
-</Link>
+                                    <p>Resource Augmentation</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                                 <h2>Frontend Developers</h2>
                             </div>
-                            <h3 className='mainpara'>Boost Your Team with Expert Frontend Developers—On Demand
-                            </h3>
+                            <h1 className='mainpara'>Boost Your Team with Expert Frontend Developers—On Demand
+                            </h1>
                             <p className='para'>Need to scale your frontend development team quickly? Our resource augmentation services provide access to top-tier front-end developers who are ready to hit the ground running. Whether it’s building responsive UIs, optimizing performance, or integrating cutting-edge frameworks, we deliver the talent you need to meet your project goals—fast and flexibly.
 
                             </p>
@@ -309,13 +309,13 @@ const Frontend = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We can provide vetted candidates within 3-5 business days, depending on your requirements.                                </Accordion.Body>
+                                    We can provide vetted candidates within 3-5 business days, depending on your requirements.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header> <span>02.</span>Can I hire developers with expertise in specific frameworks?
-                                ?</Accordion.Header>
+                                    ?</Accordion.Header>
                                 <Accordion.Body>
-                                Absolutely! We specialize in matching you with developers skilled in React, Angular, Vue.js, and more.                                </Accordion.Body>
+                                    Absolutely! We specialize in matching you with developers skilled in React, Angular, Vue.js, and more.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header> <span>03.</span>What if the developer isn’t a good fit?
@@ -323,7 +323,7 @@ const Frontend = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We offer replacement guarantees to ensure you find the right match for your team.
+                                    We offer replacement guarantees to ensure you find the right match for your team.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -331,11 +331,11 @@ const Frontend = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Yes! You save on recruitment costs, benefits, and overhead while getting the same level of expertise.
+                                    Yes! You save on recruitment costs, benefits, and overhead while getting the same level of expertise.
 
                                 </Accordion.Body>
                             </Accordion.Item>
-                           
+
 
 
 

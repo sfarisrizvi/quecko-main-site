@@ -27,23 +27,23 @@ const Blockchaindev = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-<h1>Resource Augmentation</h1>
-</Link>
+                                    <p>Resource Augmentation</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                                 <h2>Blockchain Developers </h2>
                             </div>
-                            <h3 className='mainpara'>Elite Developers for Your Web3 Projects
+                            <h1 className='mainpara'>Elite Developers for Your Web3 Projects
 
-                            </h3>
+                            </h1>
                             <p className='para'>Finding skilled Blockchain Developers can be challenging, but we make it easy. Our resource augmentation model allows you to outsource seasoned professionals who seamlessly integrate with your team. Whether you need expertise in smart contracts, DeFi protocols, or blockchain integrations, we provide the right talent to drive your Web3 success.
 
                             </p>
@@ -204,8 +204,8 @@ const Blockchaindev = () => {
                                 </h2>
                                 <p> Eliminate recruitment and onboarding expenses while accessing specialized talent immediately
 
-Our blockchain specialists adapt to your team's workflow and tools while maintaining the highest standards of code quality and security practices, allowing your projects to achieve faster time-to-market without compromising on technical excellence.
-</p>
+                                    Our blockchain specialists adapt to your team's workflow and tools while maintaining the highest standards of code quality and security practices, allowing your projects to achieve faster time-to-market without compromising on technical excellence.
+                                </p>
                             </div>
                         </div>
                         {/* <div className='parents_cards'>
@@ -314,29 +314,29 @@ Our blockchain specialists adapt to your team's workflow and tools while maintai
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Our blockchain specialists can typically integrate with your team within 1-2 weeks, with expedited options available for urgent requirements.
+                                    Our blockchain specialists can typically integrate with your team within 1-2 weeks, with expedited options available for urgent requirements.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header> <span>02.</span>What blockchain technologies do your developers specialize in?
 
-                                ?</Accordion.Header>
+                                    ?</Accordion.Header>
                                 <Accordion.Body>
-                                Our developers maintain expertise across Ethereum, Solidity, Web3.js, BSC, Polygon, Avalanche, Arbitrum, Binance Chain, Fantom, Tron, and all EVM-compatible chains.                                </Accordion.Body>
+                                    Our developers maintain expertise across Ethereum, Solidity, Web3.js, BSC, Polygon, Avalanche, Arbitrum, Binance Chain, Fantom, Tron, and all EVM-compatible chains.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header> <span>03.</span> How do you ensure code quality and security?
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We implement comprehensive code review processes, static analysis, formal verification methods, and third-party audit preparation as standard practices in our development workflow.                                </Accordion.Body>
+                                    We implement comprehensive code review processes, static analysis, formal verification methods, and third-party audit preparation as standard practices in our development workflow.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
                                 <Accordion.Header> <span>04.</span>What engagement models do you offer?
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We provide flexible engagement options including project-based allocation, dedicated resources, and team augmentation with part-time or full-time availability to suit your specific requirements.
+                                    We provide flexible engagement options including project-based allocation, dedicated resources, and team augmentation with part-time or full-time availability to suit your specific requirements.
                                 </Accordion.Body>
                             </Accordion.Item>
                             {/* <Accordion.Item eventKey="4">

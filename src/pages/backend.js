@@ -27,23 +27,23 @@ const Backend = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-<h1>Resource Augmentation</h1>
-</Link>
+                                    <p>Resource Augmentation</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                                 <h2>Backend Engineers</h2>
                             </div>
-                            <h3 className='mainpara'>Power Your Applications with Skilled Backend Engineers
+                            <h1 className='mainpara'>Power Your Applications with Skilled Backend Engineers
 
-                            </h3>
+                            </h1>
                             <p className='para'>A strong backend is the backbone of any successful application. Our resource augmentation model allows you to outsource top-tier Backend Developers who specialize in building robust server-side architectures, optimizing APIs, and managing databases to ensure seamless performance and scalability.
 
                             </p>
@@ -99,7 +99,7 @@ const Backend = () => {
 
                             </h1>
                             <p> We implement tailored database solutions to match your specific application needs:
-SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & complex relations. NoSQL solutions (MongoDB, DynamoDB) for horizontally scalable & schema-flexible data storage. Caching strategies with Redis or Memcached to reduce database load and optimize response times.
+                                SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & complex relations. NoSQL solutions (MongoDB, DynamoDB) for horizontally scalable & schema-flexible data storage. Caching strategies with Redis or Memcached to reduce database load and optimize response times.
 
                             </p>
                         </div>
@@ -168,7 +168,7 @@ SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & c
                                 <h2>Immediate Productivity
                                 </h2>
                                 <p> Our specialists integrate quickly with established workflows and begin contributing value within days, not weeks
-.
+                                    .
                                 </p>
                             </div>
                         </div>
@@ -312,13 +312,13 @@ SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & c
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We provide you with pre-vetted candidates within 48 hours, and onboarding can be done within a week.                                </Accordion.Body>
+                                    We provide you with pre-vetted candidates within 48 hours, and onboarding can be done within a week.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header> <span>02.</span> Do I have control over the developer’s tasks?
-                                ?</Accordion.Header>
+                                    ?</Accordion.Header>
                                 <Accordion.Body>
-                                Yes! The developer works directly with your team, following your project’s workflow and requirements.                                </Accordion.Body>
+                                    Yes! The developer works directly with your team, following your project’s workflow and requirements.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header> <span>03.</span> What if I need to scale my backend team later?
@@ -326,7 +326,7 @@ SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & c
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                You can easily add more developers based on your project’s growth and evolving needs.
+                                    You can easily add more developers based on your project’s growth and evolving needs.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -334,11 +334,11 @@ SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & c
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We provide hourly, part-time, and full-time engagement options tailored to your business needs.
+                                    We provide hourly, part-time, and full-time engagement options tailored to your business needs.
 
                                 </Accordion.Body>
                             </Accordion.Item>
-                           
+
 
 
 

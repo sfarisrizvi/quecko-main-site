@@ -27,22 +27,22 @@ const Technical = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-<h1>Resource Augmentation</h1>
-</Link>
+                                    <p>Resource Augmentation</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                                 <h2>Technical Writer</h2>
                             </div>
-                            <h3 className='mainpara'>Augment Your Team with Top-Tier Technical Writing Talent
-                            </h3>
+                            <h1 className='mainpara'>Augment Your Team with Top-Tier Technical Writing Talent
+                            </h1>
                             <p className='para'>Struggling to keep up with documentation demands or facing skill gaps in your team? Our resource augmentation services provide the perfect solution. We connect you with pre-vetted, highly skilled technical writers who integrate effortlessly into your projects, delivering top-quality work without the hassle of traditional hiring. Scale your team, meet deadlines, and maintain excellence all with the flexibility you need.
 
                             </p>
@@ -117,7 +117,7 @@ const Technical = () => {
                             </h1>
                             <p>Organize and structure complex information into intuitive, user-friendly formats, ensuring easy navigation and accessibility.
 
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -310,14 +310,14 @@ const Technical = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Depending on your requirements, we can provide vetted candidates within 3-5 business days.                                </Accordion.Body>
+                                    Depending on your requirements, we can provide vetted candidates within 3-5 business days.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header> <span>02.</span>Can I hire for niche technical writing skills?
 
-                                ?</Accordion.Header>
+                                    ?</Accordion.Header>
                                 <Accordion.Body>
-                                Yes, we specialize in matching you with writers experienced in areas like API documentation, UX writing, and more.                                </Accordion.Body>
+                                    Yes, we specialize in matching you with writers experienced in areas like API documentation, UX writing, and more.                                </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header> <span>03.</span>What if the writer isn’t a good fit?
@@ -325,7 +325,7 @@ const Technical = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We offer replacement guarantees to ensure you find the right match for your team.
+                                    We offer replacement guarantees to ensure you find the right match for your team.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -334,11 +334,11 @@ const Technical = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Absolutely! You save on recruitment costs, benefits, and overhead while getting the same level of expertise.
+                                    Absolutely! You save on recruitment costs, benefits, and overhead while getting the same level of expertise.
 
                                 </Accordion.Body>
                             </Accordion.Item>
-                           
+
 
 
 

@@ -27,13 +27,13 @@ const Resource = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-                                    <h1>Resource Augmentation</h1>
+                                    <p>Resource Augmentation</p>
                                 </Link>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
@@ -41,8 +41,8 @@ const Resource = () => {
                                 </svg>
                                 <h2>Mobile App Development</h2>
                             </div>
-                            <h3 className='mainpara'>Expert Developers for Your Mobile App Development
-                            </h3>
+                            <h1 className='mainpara'>Expert Developers for Your Mobile App Development
+                            </h1>
                             <p className='para'>Are you looking for skilled mobile app developers who excel in both Android and iOS? We make it easy. Our resource augmentation model allows you to scale your development team with experts who seamlessly integrate into your workflow. Starting from cross-platform app development, performance optimization, or native module integration, we provide top-tier talent to accelerate your mobile app success.
                             </p>
 

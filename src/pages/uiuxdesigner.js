@@ -27,22 +27,22 @@ const Uiuxdesigner = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-<h1>Resource Augmentation</h1>
-</Link>
+                                    <p>Resource Augmentation</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                                 <h2>UI/UX Developers</h2>
                             </div>
-                            <h3 className='mainpara'>UI/UX Creators: Transforming Ideas into User-Friendly Interfaces
-                            </h3>
+                            <h1 className='mainpara'>UI/UX Creators: Transforming Ideas into User-Friendly Interfaces
+                            </h1>
                             <p className='para'>Managing UI/UX design demands while maintaining quality can be challenging. Our resource augmentation services provide the perfect solution. We connect you with pre-vetted, highly skilled UI/UX designers proficient in Figma, Blender, Adobe XD, and more. They integrate effortlessly into your projects, bringing expertise in user research, wireframing, prototyping, and design systems. Scale your team, enhance user experiences, and maintain design excellence, all with the flexibility you need.
                             </p>
 

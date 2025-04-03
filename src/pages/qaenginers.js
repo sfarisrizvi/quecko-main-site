@@ -27,22 +27,22 @@ const Qaenginers = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <Link href="/resourcelanding">
 
-<h1>Resource Augmentation</h1>
-</Link>
+                                    <p>Resource Augmentation</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
                                 <h2>QA Engineers</h2>
                             </div>
-                            <h3 className='mainpara'>QA Engineers: Guardians of Software Quality
-                            </h3>
+                            <h1 className='mainpara'>QA Engineers: Guardians of Software Quality
+                            </h1>
                             <p className='para'>Ensuring software quality and reliability requires precision and expertise. Quecko’s resource augmentation services provide pre-vetted QA engineers skilled in Selenium, JIRA, Appium, TestRail, and other leading testing tools. They seamlessly integrate into your team, specializing in functional, security, performance, and automation testing. By identifying and resolving issues early, they help maintain smooth operations and ensure software stability. With a structured approach and flexible engagement, your business can scale efficiently while delivering high-quality, reliable products.
 
                             </p>

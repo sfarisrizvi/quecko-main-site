@@ -31,14 +31,14 @@ const Resourcelanding = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
                                 <h2>Staff Augmentation</h2>
                             </div>
-                            <h3 className='mainpara'>Staff Augmentation Services </h3>
+                            <h1 className='mainpara'>Staff Augmentation Services </h1>
                             <p className='para'>Quecko is a leading Web3 solutions provider offering resource augmentation to help businesses scale efficiently. We provide expert developers, marketers, and blockchain specialists who seamlessly integrate into your team. From Web3 development to DeFi solutions and NFT platforms, we ensure you have the right talent to drive innovation and growth in the blockchain space.
 
 
