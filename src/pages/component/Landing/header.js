@@ -139,7 +139,7 @@ const Header = () => {
             <Link href="/?section=services" scroll={false}>
               <p className="nav-link">Service</p>
             </Link>
-            <Link href="/aboutdetail">
+            <Link href="/about-us">
               <p className="nav-link">About Us</p>
             </Link>
 
@@ -154,18 +154,20 @@ const Header = () => {
             </Link>
 
 
-            <button className="animated-button">
-              <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
-                <div className="front"> Start a Project
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                    <path d="M14 8.5L10.6667 5.16666M14 8.5L10.6667 11.8333M14 8.5H2" stroke="#C1FF14" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg></div>
-                <div className="back"> Start a Project
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                    <path d="M14 8.5L10.6667 5.16666M14 8.5L10.6667 11.8333M14 8.5H2" stroke="#C1FF14" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg></div>
-              </div>
-            </button>
+            <Link href="/contact">
+               <button className="animated-button">
+                 <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
+                   <div className="front"> Start a Project
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                       <path d="M14 8.5L10.6667 5.16666M14 8.5L10.6667 11.8333M14 8.5H2" stroke="#C1FF14" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                     </svg></div>
+                   <div className="back"> Start a Project
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                       <path d="M14 8.5L10.6667 5.16666M14 8.5L10.6667 11.8333M14 8.5H2" stroke="#C1FF14" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                     </svg></div>
+                 </div>
+               </button>
+             </Link>
           </div>
         </div>
       </div>
@@ -177,7 +179,9 @@ const Header = () => {
           </Link>
 
           <div className="button_bar">
-            <button>Start a Project</button>
+          <Link href="/contact">
+               <button>Start a Project</button>
+             </Link>
             <img onClick={handleShow} src="/Assets/bar.svg" alt="Menu" />
           </div>
         </div>
@@ -223,7 +227,7 @@ const Header = () => {
             custom={0.1}
             variants={menuVariants}
           >
-            <Link href="/aboutdetail">
+            <Link href="/about-us">
               <p onClick={handleClose} className="nav-link">About Us</p>
             </Link>
           </motion.div>

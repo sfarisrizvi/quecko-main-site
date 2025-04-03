@@ -10,10 +10,21 @@ import Partners from './partners';
 import Marketingfaqs from './marketingfaqs';
 import Contactus from './contactus';
 import Link from 'next/link';
+import Head from 'next/head';
 
-const Marketingcomunity = () => {
+const Marketingcreative = () => {
     return (
         <>
+            <Head>
+                <title>Creative Services - Quecko</title>
+                <meta property="og:title" content="Creative Services - Quecko" />
+                <meta
+                    property="og:description"
+                    content="Creative design and branding services by Quecko to enhance your digital presence."
+                />
+                <meta property="og:url" content="https://quecko.com/creative-services" />
+                <link rel="canonical" href="https://quecko.com/creative-services" />
+            </Head>
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
@@ -29,26 +40,24 @@ const Marketingcomunity = () => {
                     <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
-                                <h1>Services</h1>
+                                <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <Link href="/webmarketing">
+                                <Link href="/web3-marketing">
 
-<h1>Web3 Marketing</h1>
-</Link>
+                                    <p>web3-marketing</p>
+                                </Link>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-<path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-</svg>
-                                <h2>Community Management</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                                <h2>creative-services</h2>
                             </div>
-                            <h3 className='mainpara'>Community Management (Online Engagement & Moderation)
+                            <h1 className='mainpara'>Creative Services
 
-
-                            </h3>
-                            <p className='para'>At Quecko, we understand that a thriving community is the backbone of any successful Web3, blockchain, or crypto project. Our Community Management services are designed to foster meaningful connections, drive engagement, and build trust within your audience.
-
+                            </h1>
+                            <p className='para'>Your brand is more than just a logo. It’s the visual and emotional connection you create with your audience. At Quecko, we ensure your Web3, crypto, NFT, or DeFi project stands out with world-class branding, design, and content creation. Our comprehensive creative solutions bring together cohesive branding, immersive design, and high-impact content, helping you build a recognizable, trustworthy, and engaging presence in the decentralized world.
                             </p>
 
                         </div>
@@ -66,19 +75,16 @@ const Marketingcomunity = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Approach to Community Management
-                    </h2>
+                    <h2>Who Do We Work For?</h2>
                     <div className='mains_cardss'>
                         <div className='card__one'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                                 <path d="M39.375 31.8749L35.3325 28.3724C35.1989 28.2458 35.0309 28.1612 34.8496 28.1294C34.6682 28.0975 34.4815 28.1198 34.3128 28.1934C34.144 28.267 34.0006 28.3886 33.9005 28.5432C33.8004 28.6977 33.7481 28.8783 33.75 29.0624V29.9999C33.75 30.4972 33.5525 30.9741 33.2008 31.3258C32.8492 31.6774 32.3723 31.8749 31.875 31.8749H28.125C27.6277 31.8749 27.1508 31.6774 26.7992 31.3258C26.4475 30.9741 26.25 30.4972 26.25 29.9999C26.25 25.2281 18.7669 22.5562 10.3125 22.4999C9.0693 22.4999 7.87701 22.9938 6.99794 23.8729C6.11886 24.752 5.625 25.9442 5.625 27.1874C5.625 28.4306 6.11886 29.6229 6.99794 30.502C7.87701 31.3811 9.0693 31.8749 10.3125 31.8749C18.0994 31.8749 19.2094 10.6968 21.015 6.56244C21.32 5.86455 21.7905 5.2515 22.3857 4.77633C22.981 4.30116 23.683 3.97819 24.4311 3.83536C25.1792 3.69253 25.9509 3.73415 26.6793 3.9566C27.4077 4.17906 28.071 4.57566 28.6116 5.11209C29.1523 5.64852 29.5541 6.30861 29.7823 7.03525C30.0105 7.76189 30.0582 8.5332 29.9213 9.28242C29.7844 10.0316 29.467 10.7362 28.9965 11.3352C28.526 11.9341 27.9167 12.4094 27.2212 12.7199" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M5.625 39.375H39.375" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h1>Active Engagement & Relationship Building
-
+                            <h1>Ethereum Ecosystem
                             </h1>
-                            <p>We create personalized engagement strategies to interact with your community across platforms like Discord, Telegram, Twitter (X), and Reddit. Our team responds to comments, messages, and inquiries promptly, ensuring your audience feels heard and valued.
-
+                            <p>We develop distinctive branding and designs for Ethereum-based projects, including Layer 2 solutions, ensuring your visual identity captures the innovative spirit of the most established smart contract platform.
                             </p>
                         </div>
                         <div className='card__one'>
@@ -88,10 +94,9 @@ const Marketingcomunity = () => {
                                 <path d="M36.375 31.875V9.375C36.375 8.38044 35.9799 7.42661 35.2766 6.72335C34.5734 6.02009 33.6196 5.625 32.625 5.625H8.25" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M15.75 39.375H38.25C39.2446 39.375 40.1984 38.9799 40.9016 38.2766C41.6049 37.5734 42 36.6196 42 35.625V33.75C42 33.2527 41.8025 32.7758 41.4508 32.4242C41.0992 32.0725 40.6223 31.875 40.125 31.875H21.375C20.8777 31.875 20.4008 32.0725 20.0492 32.4242C19.6975 32.7758 19.5 33.2527 19.5 33.75V35.625C19.5 36.6196 19.1049 37.5734 18.4016 38.2766C17.6984 38.9799 16.7446 39.375 15.75 39.375ZM15.75 39.375C14.7554 39.375 13.8016 38.9799 13.0983 38.2766C12.3951 37.5734 12 36.6196 12 35.625V9.375C12 8.38044 11.6049 7.42661 10.9016 6.72335C10.1984 6.02009 9.24456 5.625 8.25 5.625C7.25544 5.625 6.30161 6.02009 5.59835 6.72335C4.89509 7.42661 4.5 8.38044 4.5 9.375V13.125C4.5 13.6223 4.69754 14.0992 5.04917 14.4508C5.40081 14.8025 5.87772 15 6.375 15H12" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h1>Moderation & Conflict Resolution
+                            <h1>Alternative Blockchains
                             </h1>
-                            <p>We maintain a positive and inclusive environment by moderating discussions, removing spam, and addressing FUD (fear, uncertainty, and doubt). Our experts are trained to handle conflicts diplomatically, ensuring your community remains a safe and welcoming space.
-                            </p>
+                            <p>Our creative team delivers tailored solutions for projects building on Solana, Polkadot, Avalanche, Cardano, and other emerging blockchain platforms, with designs that highlight each chain's unique capabilities.</p>
                         </div>
                         <div className='card__one'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
@@ -100,9 +105,8 @@ const Marketingcomunity = () => {
                                 <path d="M9.875 22.5L4.25 28.125L9.875 33.75" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M17.375 33.75L23 28.125L17.375 22.5" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h1>Community Growth & Retention</h1>
-                            <p>We organize AMA (Ask Me Anything) sessions, live Q&As, and interactive events to keep your community engaged and informed. By fostering a sense of belonging, we help retain existing members while attracting new ones.
-
+                            <h1>NFT Marketplaces & Collections</h1>
+                            <p>We craft compelling visual identities and user experiences for NFT platforms and collections, emphasizing artistic quality and collector engagement through thoughtful design systems.
                             </p>
                         </div>
                         <div className='card__one'>
@@ -119,10 +123,9 @@ const Marketingcomunity = () => {
                                 <path d="M18.4375 29.0625L16.75 28.3125" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M11.5 31.875C14.6066 31.875 17.125 29.3566 17.125 26.25C17.125 23.1434 14.6066 20.625 11.5 20.625C8.3934 20.625 5.875 23.1434 5.875 26.25C5.875 29.3566 8.3934 31.875 11.5 31.875Z" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h1>Feedback Collection & Crisis Management
+                            <h1>DeFi Applications, DAOs & Community Platforms
                             </h1>
-                            <p>We gather valuable insights from your community to help you refine your project’s roadmap, features, and messaging. This feedback-driven approach ensures your project aligns with your audience’s needs and expectations. In the event of a crisis, our team acts swiftly to address concerns, clarify misinformation, and restore trust within your community.
-                            </p>
+                            <p>Our specialized approach to DeFi branding and interface design balances technical complexity with accessibility, creating experiences that instill confidence among users navigating financial services. Also, We develop purpose-built branding and communication frameworks for decentralized organizations, fostering community engagement through cohesive visual systems and clear messaging.</p>
                         </div>
                     </div>
                 </div>
@@ -130,8 +133,7 @@ const Marketingcomunity = () => {
 
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h1>Why Choose Quecko for Community Management?
-<p>In the fast-paced world of Web3, your community is your most valuable asset. A well-managed community not only boosts brand loyalty but also drives organic growth, amplifies your project’s reach, and creates a space for meaningful interactions.</p>
+                        <h1>Why Choose Us?
                         </h1>
                     </div>
                     <div className='top_parents'>
@@ -149,9 +151,8 @@ const Marketingcomunity = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2>Web3 Expertise</h2>
-                                <p>Our team understands the nuances of blockchain and crypto communities, enabling us to engage effectively with tech-savvy audiences.
-                                </p>
+                                <h2>Industry-Specific Expertise</h2>
+                                <p>Our team brings a deep understanding of blockchain technology and Web3 culture, allowing us to create authentic designs that resonate with knowledgeable audiences while remaining accessible to newcomers.</p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -165,10 +166,9 @@ const Marketingcomunity = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2>Proactive Moderation
+                                <h2>FComprehensive Creative Approach
                                 </h2>
-                                <p>We ensure your platforms remain free from toxicity, spam, and misinformation, fostering a healthy community ecosystem.
-
+                                <p>We deliver end-to-end creative solutions, from brand strategy and visual identity to UI/UX design and content creation, ensuring consistency across all touchpoints.
                                 </p>
                             </div>
                         </div>
@@ -184,9 +184,8 @@ const Marketingcomunity = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2>Data-Driven Strategies</h2>
-                                <p>We analyze engagement metrics to optimize our approach, ensuring continuous growth and improved community satisfaction.
-                                </p>
+                                <h2>Measurable Results</h2>
+                                <p>We focus on creating designs that drive specific outcomes—whether increasing conversion rates, improving user retention, or strengthening brand recognition in competitive markets.</p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -198,10 +197,10 @@ const Marketingcomunity = () => {
                                     <path d="M23.1753 30.25C19.2739 30.25 16.1001 27.0762 16.1001 23.1753C16.1001 19.2739 19.2739 16.1001 23.1753 16.1001C27.0762 16.1001 30.25 19.2739 30.25 23.1753C30.25 27.0762 27.0762 30.25 23.1753 30.25ZM23.1753 17.6001C20.1011 17.6001 17.6001 20.1011 17.6001 23.1753C17.6001 26.249 20.1011 28.75 23.1753 28.75C26.249 28.75 28.75 26.249 28.75 23.1753C28.75 20.1011 26.249 17.6001 23.1753 17.6001Z" fill="black" />
                                     <path d="M25.9561 26.4829C25.7744 26.4829 25.5923 26.4175 25.4482 26.2852L22.6675 23.7275C22.5132 23.5854 22.4253 23.3853 22.4253 23.1753V19.478C22.4253 19.064 22.7612 18.728 23.1753 18.728C23.5894 18.728 23.9253 19.064 23.9253 19.478V22.8462L26.4639 25.1807C26.7686 25.4614 26.7886 25.9356 26.5083 26.2407C26.3604 26.4014 26.1582 26.4829 25.9561 26.4829Z" fill="black" />
                                 </svg>
-                                <h2>24/7 Support
+                                <h2>Adaptive Collaboration
 
                                 </h2>
-                                <p>Our team is always available to manage your community, no matter the time zone or scale of your project.</p>
+                                <p>Our flexible process adapts to your project's specific needs, whether you're launching a new venture requiring complete branding or enhancing existing creative assets for greater impact.</p>
                             </div>
                         </div>
                         {/* <div className='parents_cards'>
@@ -229,14 +228,14 @@ const Marketingcomunity = () => {
                 </div>
 
             </section>
-           <Partners/>
+            <Partners />
             <Projects />
 
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
                         <h1>FAQ</h1>
-                        <h2>FAQs About Community Management
+                        <h2>FAQs About Creative Services
 
 
 
@@ -245,62 +244,57 @@ const Marketingcomunity = () => {
                     <div className='middle_right'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header> <span>01.</span>What platforms do you manage communities on?
+                                <Accordion.Header> <span>01.</span>How can Quecko help my crypto project with branding?
 
 
 
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We manage communities on Discord, Telegram, Twitter (X), Reddit, LinkedIn, and more, tailoring our approach to your project’s needs.
+                                    We create a complete brand identity, including logos, color schemes, typography, UI/UX, NFT artwork, and digital assets, ensuring consistency across all platforms.
+
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header> <span>02.</span> How do you handle negative comments or FUD?
+                                <Accordion.Header> <span>02.</span> Do you design UI/UX for blockchain platforms?
 
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We address negativity diplomatically by providing accurate information, clarifying misconceptions, and maintaining a positive tone to build trust.
+                                    Yes! We specialize in Web3 dashboards, dApps, NFT marketplaces, and DeFi platforms, providing intuitive and user-friendly designs.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header> <span>03.</span>Can you grow my community from scratch?
+                                <Accordion.Header> <span>03.</span>Can you create animated content for my project?
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Yes! We create tailored strategies to attract and engage your target audience, whether starting from zero or expanding an existing community.
+                                    Absolutely! We produce explainer videos, motion graphics, and social media animations to boost engagement and storytelling.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
-                                <Accordion.Header> <span>04.</span>Do you offer 24/7 moderation?
+                                <Accordion.Header> <span>04.</span> Do you offer whitepaper & pitch deck design services?
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Absolutely. We provide round-the-clock moderation to keep your community active, safe, and well-managed across all time zones.                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="4">
-                                <Accordion.Header> <span>05.</span>How do you measure success?
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                We track engagement rates, member growth, sentiment analysis, and response times to evaluate and improve our strategies.
+                                    Yes, we design professional whitepapers, litepapers, and investor decks, making complex ideas visually compelling and easy to understand.
                                 </Accordion.Body>
                             </Accordion.Item>
 
 
-                           
-                            
-                 
+
+
+
+
                         </Accordion>
                     </div>
                 </div>
             </section>
-            <Contactus/>
+            <Contactus />
             {/* <Work /> */}
             <Footer />
         </>
     )
 }
 
-export default Marketingcomunity
+export default Marketingcreative

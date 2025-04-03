@@ -19,7 +19,7 @@ const Work = () => {
                     <div className='innner_text_div'>
                         <h3>Let’s Build <span>Together</span> </h3>
 
-                        <Link href="/contactusdetail">
+                        <Link href="/contact">
                             <button className="animated-button" >
                                 <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
                                     <div className="front">Start Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
