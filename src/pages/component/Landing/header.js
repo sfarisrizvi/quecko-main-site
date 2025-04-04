@@ -143,7 +143,7 @@ const Header = () => {
               <p className="nav-link">About Us</p>
             </Link>
 
-            <Link href="/?section=projects" scroll={false} >
+            <Link href="/porfolio" scroll={false} >
               <p className="nav-link">Portfolio</p>
             </Link>
             <Link href="/blog" scroll={false}>
@@ -238,7 +238,7 @@ const Header = () => {
             custom={0.2}
             variants={menuVariants}
           >
-            <Link href="/?section=projects" scroll={false} onClick={handleClose}>
+            <Link href="/porfolio" scroll={false} onClick={handleClose}>
               <p className="nav-link">Portfolio</p>
             </Link>
           </motion.div>
