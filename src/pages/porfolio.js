@@ -102,7 +102,7 @@ const Portfolio = () => {
                                             </div>
                                         </div>
                                         </a>
-                                        <a href='/porfolionligion'>
+                                        <a href='/porfolioligion'>
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
@@ -245,7 +245,7 @@ const Portfolio = () => {
                                             </div>
                                         </div>
                                         </a>
-                                        <a href='/porfolionligion'>
+                                        <a href='/porfolioligion'>
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
@@ -388,7 +388,7 @@ const Portfolio = () => {
                                             </div>
                                         </div>
                                         </a>
-                                        <a href='/porfolionligion'>
+                                        <a href='/porfolioligion'>
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
@@ -531,7 +531,7 @@ const Portfolio = () => {
                                             </div>
                                         </div>
                                         </a>
-                                        <a href='/porfolionligion'>
+                                        <a href='/porfolioligion'>
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
