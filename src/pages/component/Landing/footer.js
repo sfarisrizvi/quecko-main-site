@@ -81,14 +81,20 @@ const Footer = () => {
 
 
                 <h4>Get Updates</h4>
+                <a href="/privacypolicy">
                 <h5>Privacy Policy <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path d="M4.66669 4.86377H11.3334V11.5304" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 11.5304L11.3334 4.86377" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg></h5>
+                </a>
+
+                <a href="/termsconditions">
                 <h5>Terms & Conditions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path d="M4.66669 4.86377H11.3334V11.5304" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 11.5304L11.3334 4.86377" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg></h5>
+                </a>
+
               </div>
             </div>
             <div className="bottom_div">
