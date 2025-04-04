@@ -553,7 +553,7 @@ export async function getServerSideProps(context) {
         if (blogdetail && blogdetail.length > 0 && blogdetail[0]?.categories?.length > 0) {
             relatedBlogs = await RelatedBlogs(blogdetail[0].categories[0])
         }
-   
+
         return {
             props: {
                 initialBlogDetail: blogdetail || [],
@@ -580,9 +580,9 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug}) => {
     const [allcategories, setallcategories] = useState(initialRelatedBlogs)
     const [index, setIndex] = useState(0)
      const item = blogdetail?.[index] || null;
-    
+
      const getAllDetails = async () => {
- 
+
         try {
             const data = await getBlogsdetails(slug)
             setblogdetail(data)
@@ -599,14 +599,14 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug}) => {
         } catch (error) {
             console.error(error)
         }
-    
+
     }
 
     useEffect(() => {
         if (slug && blogdetail.length === 0) {
             getAllDetails();
         }
-    }, [slug]);   
+    }, [slug]);
 
     const [relatedFetched, setRelatedFetched] = useState(false);
 
@@ -615,10 +615,10 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug}) => {
             getAllcategories(blogdetail[0]?.categories[0]);
             setRelatedFetched(true);
         }
-    }, [blogdetail]); 
-    
+    }, [blogdetail]);
 
-   
+
+
 
      if (!item) {
         return (
@@ -681,7 +681,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug}) => {
                                         <button>Development</button>
                                         <button>Product</button>
                                     </div>
-                                    <h2 className="mainpara">{item?.title?.rendered}</h2>
+                                    <h1 className="mainpara">{item?.title?.rendered}</h1>
                                     <p className="para">
                                         <div dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered }} />
                                     </p>

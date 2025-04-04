@@ -9,8 +9,8 @@ const porfoliorewardflow = () => {
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>
                     <div className='first_side'>
-                        <h2>Reward Flow  (not live yet)
-                        </h2>
+                        <h1>Reward Flow  (not live yet)
+                        </h1>
                         <button>Live Preview <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M17.5 10L13.3333 5.83333M17.5 10L13.3333 14.1667M17.5 10H2.5" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></button>

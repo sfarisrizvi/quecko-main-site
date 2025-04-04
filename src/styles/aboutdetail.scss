@@ -87,7 +87,7 @@
 
     }
 
-    h1 {
+    .goaldiv{
         color: #000;
         text-align: center;
         font-size: 80px;
@@ -134,7 +134,7 @@
             /* 24px */
         }
 
-        h1 {
+        .numbersdiv{
             color: #000;
             padding-top: 30px;
             font-size: 100px;
@@ -264,7 +264,7 @@
         justify-content: center;
         flex-direction: column;
 
-        h1 {
+        .name_cards{
             color: #000 !important;
             text-align: center;
             font-size: 22px !important;
@@ -402,7 +402,7 @@ padding-top: 25px;
         flex-direction: column;
     }
 
-    .goalss_side h1 {
+    .goalss_side .goaldiv{
         color: #000;
         text-align: center;
         font-size: 40px;
@@ -439,7 +439,7 @@ padding-top: 25px;
         background: #FFF;
     }
 
-    .tags_bar .developers_side h1 {
+    .tags_bar .developers_side .numbersdiv{
         color: #000;
         padding-top: 30px;
         font-size: 60px;
@@ -683,7 +683,7 @@ padding-top: 25px;
             padding: 3.75vw 4.375vw; // 60px 70px
         }
 
-        h1 {
+        .goaldiv{
             color: #000;
             text-align: center;
             font-size: 5vw; // 80px
@@ -725,7 +725,7 @@ padding-top: 25px;
                 line-height: 120%; // 24px
             }
 
-            h1 {
+            .numbersdiv {
                 color: #000;
                 padding-top: 1.875vw; // 30px
                 font-size: 6.25vw; // 100px
@@ -844,7 +844,7 @@ padding-top: 25px;
             justify-content: center;
             flex-direction: column;
 
-            h1 {
+            .name_cards{
                 color: #000 !important;
                 text-align: center;
                 font-size: 1.375vw !important; // 22px

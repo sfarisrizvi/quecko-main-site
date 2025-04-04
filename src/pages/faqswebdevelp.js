@@ -7,7 +7,7 @@ const Faqswebdevelp = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h1>FAQ</h1>
+                        <h6  className='faqqs_div'>FAQ</h6>
                         <h2>FAQs About Web 3 Development</h2>
                     </div>
                     <div className='middle_right'>
@@ -93,7 +93,7 @@ const Faqswebdevelp = () => {
                                 Yes! Many blockchain solutions offer seamless API integrations to enhance security, automation, and transparency in existing ERP, CRM, and cloud-based systems.
                                 </Accordion.Body>
                             </Accordion.Item> */}
-                 
+
                         </Accordion>
                     </div>
                 </div>

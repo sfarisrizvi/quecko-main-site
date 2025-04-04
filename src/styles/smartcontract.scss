@@ -75,7 +75,7 @@
                 background: #F4F4F4;
                 cursor: pointer;
 
-                h1 {
+         .names_tags{
                     color: #000;
                     font-size: 18px;
                     padding-top: 40px;
@@ -150,7 +150,7 @@
 
         .inner__textt {
 
-            h1 {
+            .contratt{
                 color: #000;
                 font-size: 50px;
                 font-style: normal;
@@ -387,7 +387,7 @@ line-height: 130%; /* 20.8px */
         gap: 30px;
     }
 
-    .smart_contract .Application .inner__textt h1 {
+    .smart_contract .Application .inner__textt .contratt{
         color: #000;
         font-size: 36px;
         font-style: normal;
@@ -478,7 +478,7 @@ line-height: 130%; /* 20.8px */
                     background: #F4F4F4;
                     cursor: pointer;
 
-                    h1 {
+                    .names_tags{
                         color: #000;
                         font-size: 1.125vw;
                         padding-top: 2.5vw;
@@ -547,7 +547,7 @@ line-height: 130%; /* 20.8px */
             }
 
             .inner__textt {
-                h1 {
+                .contratt{
                     color: #000;
                     font-size: 3.125vw;
                     font-style: normal;

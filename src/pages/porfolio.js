@@ -37,7 +37,7 @@ const Portfolio = () => {
 
                                 <h2>Portfolio</h2>
                             </div>
-                            <h3 className='mainpara'>Our Portfolio</h3>
+                            <h1 className='mainpara'>Our Portfolio</h1>
                             <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
 
                             </p>

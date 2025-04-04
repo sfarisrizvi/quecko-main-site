@@ -12,7 +12,7 @@
             flex-direction: column;
             gap: 20px;
 
-            h1 {
+            .ptagss{
                 color: #000;
                 text-align: center;
                 font-size: 90px;
@@ -600,7 +600,7 @@ line-height: 100%; /* 14px */
         grid-template-columns: 1fr 1fr;
     }
 
-    .four_types .inner_types .inner_text h1 {
+    .four_types .inner_types .inner_text .ptagss {
         color: #000;
         text-align: center;
         font-size: 36px;
@@ -652,7 +652,7 @@ line-height: 100%; /* 14px */
     }
 }
 @media only screen and (max-width: 380px) {
-    .four_types .inner_types .inner_text h1 {
+    .four_types .inner_types .inner_text .ptagss {
         color: #000;
         text-align: center;
         font-size: 36px;
@@ -780,7 +780,7 @@ line-height: 100%; /* 14px */
                 flex-direction: column;
                 gap: 1.25vw; /* 20px */
 
-                h1 {
+                .ptagss{
                     color: #000;
                     text-align: center;
                     font-size: 5.625vw; /* 90px */

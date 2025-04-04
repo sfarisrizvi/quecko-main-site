@@ -64,7 +64,7 @@ const Crossuses = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h1>Use Cases</h1>
+                        <h5  className='story_div '>Use Cases</h5>
                         <h2>Use Cases of Interoperability & Cross-Chain Solutions
                         </h2>
                     </div>
@@ -83,7 +83,7 @@ const Crossuses = () => {
                                         <div className="front"> Cross-Chain Asset Transfers</div>
                                         <div className="back"> Cross-Chain Asset Transfers</div>
                                     </div>
-                              
+
                                     <h3>We enable seamless transfer of cryptocurrencies, tokens, and NFTs between different blockchain networks. Our interoperability solutions eliminate reliance on centralized exchanges, enhancing liquidity and reducing transaction costs.
                                     </h3>
                                 </div>
@@ -95,7 +95,7 @@ const Crossuses = () => {
                                         <div className="front">Decentralized Finance (DeFi) Expansion</div>
                                         <div className="back"> Decentralized Finance (DeFi) Expansion</div>
                                     </div>
-                              
+
                                     <h3>We build cross-chain DeFi solutions that allow users to lend, borrow, and stake assets across multiple blockchain networks. This enhances financial inclusivity and improves capital efficiency within decentralized ecosystems.</h3>
                                 </div>
                                 <div className='cardss'>
@@ -106,7 +106,7 @@ const Crossuses = () => {
                                         <div className="front"> Multi-Chain dApps & Smart Contracts</div>
                                         <div className="back">Multi-Chain dApps & Smart Contracts</div>
                                     </div>
-                                   
+
                                     <h3>Our multi-chain dApp development ensures decentralized applications operate efficiently across multiple blockchains. We implement smart contracts that trigger actions across networks, optimizing scalability, transaction speed, and cost-effectiveness.
                                     </h3>
                                 </div>
@@ -118,7 +118,7 @@ const Crossuses = () => {
                                         <div className="front"> Blockchain-Based Identity Management</div>
                                         <div className="back"> Blockchain-Based Identity Management</div>
                                     </div>
-                               
+
                                     <h3>We provide interoperable identity management solutions that allow individuals to use a single decentralized identity across various platforms. This enhances security, simplifies authentication, and eliminates redundant logins.
 
                                     </h3>
@@ -131,7 +131,7 @@ const Crossuses = () => {
                                         <div className="front">Supply Chain & Logistics Optimization</div>
                                         <div className="back">Supply Chain & Logistics Optimization</div>
                                     </div>
-                                
+
                                     <h3>Our cross-chain blockchain solutions improve transparency and efficiency in supply chain operations. Businesses can track shipments, verify product authenticity, and ensure compliance across different blockchain networks.
 
                                     </h3>
@@ -144,7 +144,7 @@ const Crossuses = () => {
                                         <div className="front"> Cross-Chain NFT Marketplaces</div>
                                         <div className="back"> Cross-Chain NFT Marketplaces</div>
                                     </div>
-                          
+
                                     <h3>We enable NFT interoperability, allowing digital assets to be seamlessly traded, transferred, and utilized across multiple blockchains. This expands market opportunities for NFT creators and collectors while increasing liquidity.
                                     </h3>
                                 </div>
@@ -156,7 +156,7 @@ const Crossuses = () => {
                                         <div className="front">Layer 2 Scaling & Cost Reduction</div>
                                         <div className="back"> Layer 2 Scaling & Cost Reduction</div>
                                     </div>
-                               
+
                                     <h3> Our interoperability solutions integrate Layer 2 scaling technologies to reduce transaction fees and congestion on primary blockchains. This enhances network efficiency, making blockchain adoption more scalable and cost-effective.
 
                                     </h3>
@@ -169,7 +169,7 @@ const Crossuses = () => {
                                         <div className="front"> Gaming & Metaverse Integrationsn</div>
                                         <div className="back"> Gaming & Metaverse Integrationsn</div>
                                     </div>
-                          
+
                                     <h3>We develop interoperable gaming and metaverse solutions that allow users to transfer in-game assets, digital currencies, and virtual identities between different platforms, creating a truly connected and immersive experience.
 
 

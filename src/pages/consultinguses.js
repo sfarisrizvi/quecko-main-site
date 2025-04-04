@@ -64,7 +64,7 @@ const Consultinguses = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h1>Use Cases</h1>
+                        <h5  className='story_div '>Use Cases</h5>
                         <h2>Use Cases of Enterprise & Consulting Services
                         </h2>
                     </div>
@@ -83,7 +83,7 @@ const Consultinguses = () => {
                                         <div className="front">Financial Services</div>
                                         <div className="back"> Financial Services</div>
                                     </div>
-                        
+
                                     <h3>We develop secure and automated smart contract solutions for banks, fintech companies, and asset managers, streamlining transactions, reducing fraud, and ensuring compliance.
                                     </h3>
                                 </div>
@@ -95,7 +95,7 @@ const Consultinguses = () => {
                                         <div className="front"> Supply Chain & Logistics</div>
                                         <div className="back"> Supply Chain & Logistics</div>
                                     </div>
-                              
+
                                     <h3>Our solutions bring real-time tracking, automation, and transparency to supply chains, enabling efficient inventory management and seamless cross-border trade.
                                     </h3>
                                 </div>
@@ -107,7 +107,7 @@ const Consultinguses = () => {
                                         <div className="front"> Healthcare & Pharmaceuticals</div>
                                         <div className="back"> Healthcare & Pharmaceuticals</div>
                                     </div>
-                                
+
                                     <h3>We provide data security and interoperability solutions that improve patient data sharing, automate claims processing, and enhance drug traceability.</h3>
                                 </div>
                                 <div className='cardss'>
@@ -122,7 +122,7 @@ const Consultinguses = () => {
 
 </h3>
                                 </div>
-                               
+
                             </OwlCarousel>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ const Projects = () => {
         <>
             <section className='projects_main' id="projects">
                 <div className='inner_projects'>
-                    <h1>Our work</h1>
+                    <h4 className='ourwork'>Our work</h4>
                     <h2>Our Projects</h2>
                     <div className='parent_div'>
                         <div className='left_side hovercard'>

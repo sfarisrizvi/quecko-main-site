@@ -18,10 +18,10 @@ const Fourtypes = () => {
         const numericValue = finalText.replace(/[^0-9]/g, "");
         const prefix = finalText.match(/^[^0-9]+/)?.[0] || "";
         const suffix = finalText.match(/[^0-9]+$/)?.[0] || "";
-        
+
         num.innerHTML = `<span class='odometer-wrapper'><span class='odometer-prefix'>${prefix}</span><span class='odometer-value'>0000000</span><span class='odometer-suffix'>${suffix}</span></span>`;
         const odometerSpan = num.querySelector(".odometer-value");
-        
+
         const odometer = new Odometer({
           el: odometerSpan,
           value: 0,
@@ -59,13 +59,13 @@ const Fourtypes = () => {
           { value: "500+", label: "Total Projects Delivered" },
         ].map((stat, index) => (
           <div key={index} className="inner_text">
-            <h1
+            <p
               ref={(el) => (numbersRef.current[index] = el)}
               data-value={stat.value}
-              className="odometer"
+              className="odometer ptagss"
             >
               <span className='odometer-wrapper'><span className='odometer-prefix'>{stat.value.replace(/[0-9]/g, "").charAt(0)}</span><span className='odometer-value'>{stat.value.replace(/[^0-9]/g, "0")}</span><span className='odometer-suffix'>{stat.value.replace(/[0-9]/g, "").slice(1)}</span></span>
-            </h1>
+            </p>
             <p ref={(el) => (labelsRef.current[index] = el)}>{stat.label}</p>
           </div>
         ))}

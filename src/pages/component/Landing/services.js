@@ -14,7 +14,7 @@ const Services = () => {
         <>
             <section className='services_main'>
                 <div className='inner_services'>
-                    <h1>What we do</h1>
+                    <p className='whatwedo'>What we do</p>
                     <h2>Our Services & Expertise</h2>
                     <div className={`thirple_divs ${expanded ? "expanded" : ""} card-${expanded}`}>
                         <div className='one_part' >
@@ -108,9 +108,9 @@ const Services = () => {
 
                                 <div className='text_ual_div text_ual_div3'>
                                     <Link href="/strategy-and-campaign-design"><div><p>Strategy & Campaign Design </p></div></Link>
-                                    <Link href="/creative-services">    <div><p>Creative Services 
+                                    <Link href="/creative-services">    <div><p>Creative Services
                                     </p></div></Link>
-                                    <Link href="/community-management">       <div><p>Community Management 
+                                    <Link href="/community-management">       <div><p>Community Management
                                     </p></div></Link>
                                     <Link href="/blog-and-article-writing">        <div><p>Blog Writing</p></div></Link>
                                     <div className='view_moree less_div' onClick={() => handleExpand(3)}>
