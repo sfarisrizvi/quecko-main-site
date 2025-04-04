@@ -139,6 +139,7 @@
                 align-items: center;
                 gap: 8px;
                 padding-top: 20px;
+                flex-wrap: wrap;
 
                 h4 {
                     color: #000;
@@ -411,9 +412,26 @@ height: 32px;
 }
 .imgport{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 991px) {
+
+.TDNS_section .inner_porfolio .first_side h1 {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+.TDNS_section .inner_porfolio .challenge_div p {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
     .TDNS_section .inner_porfolio .first_side {
         padding: 71px 0px 30px 0px;
         display: flex
