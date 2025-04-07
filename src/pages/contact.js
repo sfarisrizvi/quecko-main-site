@@ -29,7 +29,7 @@ const contactusdetail = () => {
 
         try {
             await axios.post(
-                'http://dev.quecko.com/wp-json/bitform/v1/entry/1',
+                'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
                 payload,
                 {
                     headers: {
