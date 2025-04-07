@@ -1,11 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './component/Landing/header'
 import Contactus from './contactus'
 import Work from './component/Landing/work'
 import Footer from './component/Landing/footer'
 import Head from 'next/head'
+import axios from 'axios'
 
 const contactusdetail = () => {
+
+    const [name, setName] = useState('');
+    const [telegram, setTelegram] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [loading, setLoading] = useState(false);
+
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault(); 
+        setLoading(true);
+
+        const payload = {
+             "b1-2": name,
+            "b1-5": email,
+            "b1-3": message,
+            "b1-6": telegram,
+        };
+
+        try {
+            await axios.post(
+                'http://dev.quecko.com/wp-json/bitform/v1/entry/1',
+                payload,
+                {
+                    headers: {
+                        "BitForm-API-Key": "59971a5c6213ecbb4e58bf91b4a56962f05311d8",
+                     },
+                }
+            );
+
+
+        } catch (error) {
+            console.error('Submission error:', error.response?.data || error.message);
+         } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <>
             <Head>
@@ -57,16 +97,65 @@ const contactusdetail = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className='right_sidde'>
-                            <input type="text" id="fname" name="fname" placeholder='Name' />
-                            <input type="text" id="fname" name="fname" placeholder='Telegram' />
-                            <input type="text" id="fname" name="fname" placeholder='Email@company.com' />
-                            <textarea placeholder='Your Message' id="w3review" name="w3review" rows="6" cols="50" />
+                        {/* <div className='right_sidde'>
+                            <input type="text" id="fname" name="fname" placeholder='Name'
+                                value={name}
+                                onChange={(e) => setName(e.target.value)} />
+                            <input type="text" id="fname" name="fname" placeholder='Telegram' 
+                                value={telegram}
+                                onChange={(e) => setTelegram(e.target.value)}/>
+                            <input type="text" id="fname" name="fname" placeholder='Email@company.com'
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)} />
+                            <textarea placeholder='Your Message' id="w3review" name="w3review" rows="6" cols="50"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)} />
                             <div className='button_div'>
                                 <button>Get in Touch</button>
                             </div>
 
-                        </div>
+                        </div> */}
+                        <form onSubmit={handleSubmit}>
+                            <div className='right_sidde'>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder='Name'
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    name="telegram"
+                                    placeholder='Telegram'
+                                    value={telegram}
+                                    onChange={(e) => setTelegram(e.target.value)}
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder='Email@company.com'
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
+                                <textarea
+                                    placeholder='Your Message'
+                                    name="message"
+                                    rows="6"
+                                    cols="50"
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                    required
+                                />
+                                <div className='button_div'>
+                                    <button type="submit" disabled={loading}>
+                                        {loading ? 'Submitting...' : 'Get in Touch'}
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </section>
                 </div>
             </div>
