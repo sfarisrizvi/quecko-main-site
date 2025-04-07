@@ -37,7 +37,7 @@ const Portfolio = () => {
 
                                 <h2>Portfolio</h2>
                             </div>
-                            <h3 className='mainpara'>Our Portfolio</h3>
+                            <h1 className='mainpara'>Our Portfolio</h1>
                             <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
 
                             </p>
@@ -54,7 +54,7 @@ const Portfolio = () => {
                 <div >
 
                     <nav className='navsectiontabs'>
-                    <h4>Filters:</h4>
+                        <h4>Filters:</h4>
                         <div className="nav nav-tabs" id="nav-tab" role="tablist">
                             <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
                             <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Design</button>
@@ -66,416 +66,576 @@ const Portfolio = () => {
                     </nav>
                     <div className="tab-content" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <section className='projects_main' id="projects">
-                <div className='inner_projects'>
+                            <section className='projects_main' id="projects">
+                                <div className='inner_projects'>
 
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330961/queckosite%20%28new%29/videos/leftone_p1hwor.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330965/queckosite%20%28new%29/videos/rightone_tyoddj.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div second_parent'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330974/queckosite%20%28new%29/videos/secondleft_vjnzap.mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330987/queckosite%20%28new%29/videos/secondright_y5tbso.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331034/queckosite%20%28new%29/videos/thrdleft_mfbaul.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331017/queckosite%20%28new%29/videos/thrdright_obhwpr.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                    <div className='parent_div'>
+                                        <a href='/porfoliolunchpad'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portnew.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    <button>Branding</button>
+                                                    <button>Development</button>
+                                                    <button>Marketing</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href='/porfoliomultichain'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port22.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolionftgallery'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port33.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfolioligion'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port44.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotdns'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port55.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliopriv'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port66.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioestate'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port77.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliorewardflow'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port88.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotreecoin'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port99.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliobluemoon'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port101.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioquick'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port111.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliotapspace'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port12.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+                            </section>
                         </div>
                         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <section className='projects_main' id="projects">
-                <div className='inner_projects'>
+                            <section className='projects_main' id="projects">
+                                <div className='inner_projects'>
 
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330961/queckosite%20%28new%29/videos/leftone_p1hwor.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330965/queckosite%20%28new%29/videos/rightone_tyoddj.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div second_parent'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330974/queckosite%20%28new%29/videos/secondleft_vjnzap.mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330987/queckosite%20%28new%29/videos/secondright_y5tbso.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331034/queckosite%20%28new%29/videos/thrdleft_mfbaul.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331017/queckosite%20%28new%29/videos/thrdright_obhwpr.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliolunchpad'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portnew.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliomultichain'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port22.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolionftgallery'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port33.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfolioligion'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port44.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotdns'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port55.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliopriv'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port66.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioestate'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port77.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliorewardflow'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port88.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotreecoin'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port99.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliobluemoon'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port101.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioquick'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port111.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliotapspace'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port12.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                {/* <button>Development</button>
+                                                <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+                            </section>
                         </div>
                         <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <section className='projects_main' id="projects">
-                <div className='inner_projects'>
+                            <section className='projects_main' id="projects">
+                                <div className='inner_projects'>
 
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330961/queckosite%20%28new%29/videos/leftone_p1hwor.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330965/queckosite%20%28new%29/videos/rightone_tyoddj.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div second_parent'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330974/queckosite%20%28new%29/videos/secondleft_vjnzap.mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330987/queckosite%20%28new%29/videos/secondright_y5tbso.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331034/queckosite%20%28new%29/videos/thrdleft_mfbaul.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331017/queckosite%20%28new%29/videos/thrdright_obhwpr.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliolunchpad'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portnew.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliomultichain'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port22.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolionftgallery'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port33.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfolioligion'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port44.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotdns'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port55.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+</a>
+<a href='/porfoliopriv'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port66.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioestate'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port77.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliorewardflow'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port88.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotreecoin'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port99.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliobluemoon'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port101.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioquick'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port111.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliotapspace'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port12.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button> */}
+                                                <button>Development</button>
+                                                {/* <button>Marketing</button> */}
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+                            </section>
                         </div>
                         <div className="tab-pane fade  " id="nav-home1" role="tabpanel" aria-labelledby="nav-home1-tab">
-                        <section className='projects_main' id="projects">
-                <div className='inner_projects'>
+                            <section className='projects_main' id="projects">
+                                <div className='inner_projects'>
 
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330961/queckosite%20%28new%29/videos/leftone_p1hwor.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330965/queckosite%20%28new%29/videos/rightone_tyoddj.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div second_parent'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330974/queckosite%20%28new%29/videos/secondleft_vjnzap.mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330987/queckosite%20%28new%29/videos/secondright_y5tbso.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='parent_div'>
-                        <div className='left_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331034/queckosite%20%28new%29/videos/thrdleft_mfbaul.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                        <div className='right_side hovercard'>
-                            <video className='main-banner-video'
-                                muted="muted" playsinline="playsinline"
-                                autoPlay
-                                loop
-                                width="100%"
-                                id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331017/queckosite%20%28new%29/videos/thrdright_obhwpr.mp4" type="video/mp4" />
-                            </video>
-                            <div className='buttons_div'>
-                                <button>Branding</button>
-                                <button>Development</button>
-                                <button>Marketing</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliolunchpad'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portnew.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliomultichain'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port22.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolionftgallery'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port33.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfolioligion'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port44.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotdns'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port55.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliopriv'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port66.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioestate'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port77.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliorewardflow'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port88.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div'>
+                                    <a href='/porfoliotreecoin'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port99.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliobluemoon'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port101.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfolioquick'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\port111.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliotapspace'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\port12.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                {/* <button>Branding</button>
+                                                <button>Development</button> */}
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+                            </section>
                         </div>
 
 

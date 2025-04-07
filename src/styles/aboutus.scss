@@ -61,7 +61,7 @@
             }
 
             .midle_left {
-                h1 {
+                .clientsname{
                     color: #9D9D9D;
                     font-size: 16px;
                     font-style: normal;
@@ -120,7 +120,7 @@ height: 300px;
                 align-items: center;
                 gap: 20px;
 
-                h1 {
+                .nameclient {
                     color: #000;
                     font-size: 26px;
                     font-style: normal;
@@ -139,7 +139,7 @@ height: 300px;
                     /* 20px */
                 }
 
-               
+
             }
         }
     }
@@ -363,7 +363,7 @@ height: 300px;
         display: none;
     }
 
-    .aboutus_main .inner_about .cards .inner_cards h1 {
+    .aboutus_main .inner_about .cards .inner_cards .nameclient {
         color: #000;
         font-size: 18px;
         font-style: normal;
@@ -402,7 +402,7 @@ height: 300px;
     .aboutus_main {
         padding: 1.25vw 1.25vw;
         overflow: hidden;
-    
+
         .inner_about {
             padding: 3.4375vw;
             padding-right: 0vw;
@@ -411,30 +411,30 @@ height: 300px;
             background: #F4F4F4;
             overflow: hidden;
             position: relative;
-    
+
             .midle_class {
                 display: flex;
                 align-items: flex-start;
                 gap: 11.25vw;
                 padding-left: 3.4375vw;
-    
+
                 .owl-carousel .owl-stage-outer {
                     position: relative;
                     overflow: hidden;
                 }
-    
+
                 .owl-carousel {
                     border-radius: 1.875vw;
                 }
-    
+
                 .owl-theme .owl-nav [class*='owl-']:hover {
                     background: unset !important;
                 }
-    
+
                 button.owl-prev {
                     background-color: unset !important;
                 }
-    
+
                 .owl-theme .owl-nav {
                     margin-top: 0.625vw;
                     text-align: center;
@@ -443,13 +443,13 @@ height: 300px;
                     left: -40.9375vw; /* -655px */
                     bottom: 0vw;
                 }
-    
+
                 .owl-item.active {
                     overflow: hidden;
                 }
-    
+
                 .midle_left {
-                    h1 {
+                    .clientsname{
                         color: #9D9D9D;
                         font-size: 1vw;
                         font-style: normal;
@@ -457,7 +457,7 @@ height: 300px;
                         line-height: 130%;
                         text-transform: uppercase;
                     }
-    
+
                     h2 {
                         color: #000;
                         font-size: 4.375vw;
@@ -469,7 +469,7 @@ height: 300px;
                     }
                 }
             }
-    
+
             .cards {
                 padding: 2.5vw;
                 border-radius: 1.875vw;
@@ -481,13 +481,13 @@ height: 300px;
                 gap: 1.875vw;
                 overflow: hidden;
                 height: 18.75vw; /* 300px */
-    
+
                 .imgman {
                     width: 4.625vw; /* 74px */
                     height: 4.625vw; /* 74px */
                     border-radius: 3.75vw; /* 60px */
                 }
-    
+
                 p {
                     color: #000;
                     font-size: 1.5vw; /* 24px */
@@ -501,21 +501,21 @@ height: 300px;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-    
+
                 .inner_cards {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 1.25vw;
-    
-                    h1 {
+
+                    .nameclient{
                         color: #000;
                         font-size: 1.625vw; /* 26px */
                         font-style: normal;
                         font-weight: 400;
                         line-height: 100%;
                     }
-    
+
                     h2 {
                         color: #424242;
                         font-size: 1.25vw; /* 20px */
@@ -527,12 +527,12 @@ height: 300px;
                 }
             }
         }
-    
+
         .owl-carousel .owl-item img {
             // width: auto;
         }
     }
-    
+
     .trendinganimations {
         margin: 0px;
         padding: 0px;
@@ -543,14 +543,14 @@ height: 300px;
         overflow: hidden;
         position: relative;
         height: 4.75vw; /* 76px */
-    
+
         .trendinganimationsleft {
             background: #171A1F;
             border-right: 1px solid #262930;
             padding: 1.875vw; /* 30px */
             position: absolute;
             z-index: 999;
-    
+
             .trendinghead {
                 font-style: normal;
                 font-weight: 600;
@@ -561,10 +561,10 @@ height: 300px;
                 white-space: nowrap;
             }
         }
-    
+
         .trendinganimationsright {
             width: 100%;
-    
+
             .marquee {
                 --duration: 30s;
                 --gap: 3rem;
@@ -573,7 +573,7 @@ height: 300px;
                 user-select: none;
                 gap: var(--gap);
             }
-    
+
             .marquee__group {
                 flex-shrink: 0;
                 display: flex;
@@ -582,13 +582,13 @@ height: 300px;
                 gap: var(--gap);
                 min-width: 50%;
                 animation: scroll var(--duration) linear infinite;
-    
+
                 .trendingcard {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 0.5vw; /* 8px */
-    
+
                     .tendingcardimg {
                         border: 0.125vw solid #3B3D42; /* 2px */
                         border-radius: 100px;
@@ -597,7 +597,7 @@ height: 300px;
                         object-fit: cover;
                         object-position: center;
                         position: relative;
-    
+
                         .trendingcardinnerimg {
                             border-radius: 100px;
                             width: 100%;
@@ -605,7 +605,7 @@ height: 300px;
                             object-fit: cover;
                             object-position: center;
                         }
-    
+
                         .exchangeimg {
                             border: 0.125vw solid #191B21; /* 2px */
                             border-radius: 100px;
@@ -617,7 +617,7 @@ height: 300px;
                             position: absolute;
                             bottom: 0px;
                             right: -0.0625vw; /* -1px */
-    
+
                             .innerexchangeimg {
                                 border-radius: 100px;
                                 width: 100%;
@@ -628,7 +628,7 @@ height: 300px;
                             }
                         }
                     }
-    
+
                     .trendingcardtext {
                         .treandingcardhead {
                             font-style: normal;
@@ -639,7 +639,7 @@ height: 300px;
                             text-transform: uppercase;
                             color: #4C9540;
                         }
-    
+
                         .trendingcardpara {
                             font-style: normal;
                             font-weight: 600;
@@ -651,13 +651,13 @@ height: 300px;
                     }
                 }
             }
-    
+
             @media (prefers-reduced-motion: reduce) {
                 .marquee__group {
                     animation-play-state: paused;
                 }
             }
-    
+
             .marquee__group h4 {
                 aspect-ratio: 1;
                 object-fit: cover;
@@ -665,17 +665,17 @@ height: 300px;
                 border: 1px solid #ccc;
                 padding: 3rem;
             }
-    
+
             @keyframes scroll {
                 0% {
                     transform: translateX(0);
                 }
-    
+
                 100% {
                     transform: translateX(calc(-100% - var(--gap)));
                 }
             }
         }
     }
-    
+
 }

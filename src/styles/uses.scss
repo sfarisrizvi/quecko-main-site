@@ -29,7 +29,7 @@
         padding: 30px 0px 30px 30px;
 
         .textual_div {
-            h1 {
+            .story_div {
                 color: #9D9D9D;
                 font-size: 16px;
                 font-style: normal;
@@ -301,7 +301,7 @@
             text-transform: uppercase;
         }
 
-        h1 {
+        .partnerss{
             color: #000;
             text-align: center;
             font-size: 80px;
@@ -351,7 +351,7 @@
             text-transform: uppercase;
         }
 
-        h1 {
+        .cliiient{
             color: #000;
             font-size: 70px;
             padding-top: 16px;
@@ -471,7 +471,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 75px;
 
-    h1 {
+    .workss_div{
         color: #000;
         font-size: 50px;
         font-style: normal;
@@ -525,7 +525,7 @@
         padding: 30px 20px 60px 20px !important;
     }
 
-    .partner_side .inner_partners h1 {
+    .partner_side .inner_partners .partnerss{
         color: #000;
         text-align: center;
         font-size: 40px !important;
@@ -621,7 +621,7 @@
             padding: 1.875vw 0 1.875vw 1.875vw;
 
             .textual_div {
-                h1 {
+                .story_div{
                     color: #9D9D9D;
                     font-size: 1vw;
                     font-style: normal;
@@ -871,7 +871,7 @@
                 text-transform: uppercase;
             }
 
-            h1 {
+            .partnerss{
                 color: #000;
                 text-align: center;
                 font-size: 5vw;
@@ -919,7 +919,7 @@
                 text-transform: uppercase;
             }
 
-            h1 {
+            .cliiient{
                 color: #000;
                 font-size: 4.375vw;
                 padding-top: 1vw;
@@ -1031,7 +1031,7 @@
         grid-template-columns: 1fr 1fr;
         padding: 4.6875vw;
 
-        h1 {
+        .workss_div{
             color: #000;
             font-size: 3.125vw;
             font-style: normal;

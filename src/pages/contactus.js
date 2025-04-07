@@ -6,7 +6,7 @@ const Contactus = () => {
             <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h1>Become a client</h1>
+                    <h6  className='cliiient'>Become a client</h6>
                     <h2>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
                     </h2>
                     <h3>Get in touch</h3>
@@ -47,7 +47,7 @@ const Contactus = () => {
                     <div className='button_div'>
                         <button>Get in Touch</button>
                     </div>
-                   
+
                 </div>
             </section>
         </>

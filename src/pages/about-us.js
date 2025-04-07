@@ -107,7 +107,7 @@ const aboutdetail = () => {
                 </section>
                 <section className='goalss_side'>
                     <div className='goals_details'>
-                        <h1>Our Goal</h1>
+                        <h4 className='goaldiv'>Our Goal</h4>
                         <p>Our mission is to empower businesses, creators, and innovators with the tools, technology, and expertise they need to succeed in a decentralized world. The digital landscape is evolving, and blockchain is at the heart of this transformation. Yet, many struggle to navigate its complexities. Quecko bridges this gap by delivering secure, scalable, and innovative blockchain solutions that drive real-world impact.
                         </p>
                     </div>
@@ -115,18 +115,18 @@ const aboutdetail = () => {
                 <section className='tags_bar'>
                     <div className='developers_side'>
                         <p>Fullstack Developers</p>
-                        <h1>100+</h1>
+                        <h4 className='numbersdiv'>100+</h4>
                     </div>
                     <div className='developers_side'>
                         <p>Delivered Products</p>
-                        <h1>500+</h1>
+                        <h4  className='numbersdiv'>500+</h4>
                     </div>  <div className='developers_side'>
                         <p>Blockchain Developers</p>
-                        <h1>50+ </h1>
+                        <h4  className='numbersdiv'>50+ </h4>
                     </div>
                     <div className='developers_side'>
                         <p>Experience (Years)</p>
-                        <h1>10+</h1>
+                        <h4  className='numbersdiv'>10+</h4>
                     </div>
                 </section>
                 <section className='collab1'>
@@ -165,7 +165,7 @@ const aboutdetail = () => {
                 <section className='blogs_divv myblogsss' id="stories">
                     <div className='inner_bloggs'>
                         <div className='textual_div'>
-                            <h1>TEAM</h1>
+                            <h4 className='teamss_head'>TEAM</h4>
                             <h2>Meet Our Team</h2>
                         </div>
                         <div className='bottom_side'>
@@ -177,59 +177,59 @@ const aboutdetail = () => {
 
                                     <div className='cardss'>
                                         <img src='\Assets\ali.png' />
-                                        <h1>Alee Abbasi</h1>
+                                        <h3 className='name_cards'>Alee Abbasi</h3>
                                         <h2>CEO</h2>
                                     </div>
 
                                     <div className='cardss'>
 
                                         <img src='\Assets\walled.svg' />
-                                        <h1>Waleed Qureshi</h1>
+                                        <h3  className='name_cards'>Waleed Qureshi</h3>
                                         <h2>Chief Technology Officer </h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\shoaib.svg' />
-                                        <h1>Shoaib Jabbar</h1>
+                                        <h3  className='name_cards'>Shoaib Jabbar</h3>
                                         <h2>Director Sales </h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\shajeel.svg' />
-                                        <h1>Sharjeel Awan</h1>
+                                        <h3  className='name_cards'>Sharjeel Awan</h3>
                                         <h2>Chief Product Officer</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\fahad.png' />
-                                        <h1>Fahad Suleman</h1>
+                                        <h3  className='name_cards'>Fahad Suleman</h3>
                                         <h2>Chief Marketing Officer</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\faiza.png' />
-                                        <h1>Faiza Minhas </h1>
+                                        <h3 className='name_cards'>Faiza Minhas </h3>
                                         <h2>People Manager</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\usman.png' />
-                                        <h1>Usman Malik</h1>
+                                        <h3  className='name_cards'>Usman Malik</h3>
                                         <h2>Team Lead Front-End</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\jamal.png' />
-                                        <h1>Jamal Waseem</h1>
+                                        <h3  className='name_cards'>Jamal Waseem</h3>
                                         <h2>Team Lead UI/UX</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\osama.png' />
-                                        <h1>Osama Chattha </h1>
+                                        <h3  className='name_cards'>Osama Chattha </h3>
                                         <h2>Team Lead QA</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\wasif.png' />
-                                        <h1>Muhammad Wasif  </h1>
+                                        <h3  className='name_cards'>Muhammad Wasif  </h3>
                                         <h2>Team Lead Blockchain</h2>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\zia.svg' />
-                                        <h1>M. Zia ul Rehman</h1>
+                                        <h3  className='name_cards'>M. Zia ul Rehman</h3>
                                         <h2>Team Lead React Native Developer</h2>
                                     </div>
 

@@ -51,7 +51,7 @@ const Blog = () => {
                                     </button>
 
                                 </div>
-                                <h3 className='mainpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</h3>
+                                <h1 className='mainpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</h1>
                                 <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
 
                             </div>
@@ -93,7 +93,7 @@ const Blog = () => {
                         {blogData?.map((item, index) => {
                             return (
                                 <>
-                                   
+
                                     <Link href={`/${item?.slug}`}>
 
 

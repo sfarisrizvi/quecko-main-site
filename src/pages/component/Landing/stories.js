@@ -88,7 +88,7 @@ const Stories = () => {
             <section className='blogs_divv' id="stories">
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h1>Blogs</h1>
+                        <h4 className='blogstag'>Blogs</h4>
                         <h2>Latest stories from Quecko</h2>
                     </div>
                     <div className='bottom_side'>

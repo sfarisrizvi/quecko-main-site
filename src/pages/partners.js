@@ -6,7 +6,7 @@ const Partners = () => {
             <section className='partner_side'>
                 <div className='inner_partners'>
                     <p>PARTNERS</p>
-                    <h1>Our Partners</h1>
+                    <h5 className='partnerss'>Our Partners</h5>
                     <div className='cards_partners'>
                         <div className='imgs_tabs'>
                             <img src='\Assets\de.svg' className="img-fluid"/>
@@ -32,7 +32,7 @@ const Partners = () => {
                         <div className='imgs_tabs'>
                             <img src='\Assets\dia.svg' className="img-fluid"/>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>

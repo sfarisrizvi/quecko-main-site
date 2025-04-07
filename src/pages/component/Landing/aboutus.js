@@ -65,7 +65,7 @@ const Aboutus = () => {
                 <div className='inner_about'>
                     <div className='midle_class'>
                         <div className='midle_left'>
-                            <h1>Clients</h1>
+                            <h4 className='clientsname'>Clients</h4>
                             <h2>What people say about us?</h2>
                         </div>
                         <div className="owl_option">
@@ -77,7 +77,7 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\mennimg.png" />
                                         <div>
-                                            <h1>Mateen O Dawood</h1>
+                                            <h4 className='nameclient'>Mateen O Dawood</h4>
                                             <h2>Stable33 Protocol</h2>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\man.svg" />
                                         <div>
-                                            <h1>Anonymous Client </h1>
+                                            <h4 className='crds_name'>Anonymous Client </h4>
                                             <h2>DAO Project</h2>
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\mennimg.png" />
                                         <div>
-                                            <h1>Anonymous Client  </h1>
+                                            <h4  className='crds_name'>Anonymous Client  </h4>
                                             <h2> NFT marketplace Project</h2>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\man.svg" />
                                         <div>
-                                            <h1>Anonymous Client </h1>
+                                            <h4  className='crds_name'>Anonymous Client </h4>
                                             <h2>UI/UX</h2>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\man.svg" />
                                         <div>
-                                            <h1>Anonymous Client  </h1>
+                                            <h4  className='crds_name'>Anonymous Client  </h4>
                                             <h2>Decentralised DNS Project</h2>
                                         </div>
                                     </div>

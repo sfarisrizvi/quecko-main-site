@@ -7,7 +7,7 @@ const Faqs = () => {
             <section className='main_faqs'id="faqs">
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h1>FAQ</h1>
+                        <h4 className='faqstag'>FAQ</h4>
                         <h2>Answer to your questions</h2>
                     </div>
                     <div className='middle_right'>
@@ -42,7 +42,7 @@ const Faqs = () => {
                                 Getting started is simple! Contact us via our website, email, or social media channels. Our team will schedule a consultation to understand your needs and recommend the best solutions for your project.
                                 </Accordion.Body>
                             </Accordion.Item>
-                 
+
                         </Accordion>
                     </div>
                 </div>

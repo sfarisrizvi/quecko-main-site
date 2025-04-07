@@ -184,7 +184,7 @@ export default function App({ Component, pageProps }) {
         <PageTransition key={router.route}>
           {loading && <Loader />}
           {!loading && <Component {...pageProps} />}
-          {/* <TawkTo /> */}
+          <TawkTo />
         </PageTransition>
       </AnimatePresence>
 

@@ -64,7 +64,7 @@ const Uses = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h1>Use Cases</h1>
+                        <h5 className='story_div '>Use Cases</h5>
                         <h2>Top Use Cases of Blockchain Development Across Industries</h2>
                     </div>
                     <div className='bottom_side'>
@@ -146,7 +146,7 @@ const Uses = () => {
                                         <div className="front">Enterprise Blockchain Solutions</div>
                                         <div className="back">Enterprise Blockchain Solutions</div>
                                     </div>
-                                   
+
 
                                     <h3>Streamline operations with private and consortium blockchain networks.
                                         Enhance data security and compliance with industry regulations.
@@ -161,7 +161,7 @@ const Uses = () => {
                                         <div className="front">Tokenization of Real-World Assets (RWA)</div>
                                         <div className="back"> Tokenization of Real-World Assets (RWA)</div>
                                     </div>
-                                  
+
                                     <h3>Digitize real estate, stocks, bonds, and luxury goods into tradable digital tokens.
                                         Enable fractional ownership, making high-value assets accessible to a broader market.
                                         Improve liquidity and global investment opportunities.

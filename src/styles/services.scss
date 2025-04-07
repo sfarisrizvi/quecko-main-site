@@ -1,7 +1,25 @@
 .services_main {
     padding: 20px 20px;
     overflow: hidden;
-
+    .whatwedo{
+        color: #9D9D9D;
+        font-size: 16px;
+        text-align: center !important;
+        font-style: normal;
+        margin: 0 auto;
+        background-image: unset !important;
+        background-size: unset !important;
+        background-position: -100%;
+        display: block;
+        padding: 0;
+        position: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        transition:unset;
+        font-weight: unset;
+        line-height: unset;
+        text-transform: unset;
+    }
     p {
         background-image: linear-gradient(to right,
                 #000,
@@ -83,7 +101,7 @@
     .inner_services {
         padding: 70px 86px;
 
-        h1 {
+        .whatwedo{
             color: #9D9D9D;
             font-size: 16px;
             text-align: center;
@@ -286,8 +304,8 @@
         .inner_services {
             padding: 3.65vw 4.48vw;
 
-            h1 {
-                color: #9D9D9D;
+            .whatwedo{
+                color: #9D9D9D !important;
                 font-size: 0.83vw;
                 text-align: center;
                 font-style: normal;
@@ -342,7 +360,7 @@
                     margin-bottom: 10px;
                     display: inline-block;
 
-                 
+
                 }
             }
         }

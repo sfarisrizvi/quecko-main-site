@@ -64,7 +64,7 @@ const Rawuses = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h1>Use Cases</h1>
+                        <h6  className='story_div '>Use Cases</h6>
                         <h2>Top Use Cases of  Real-World Asset (RWA) Tokenization
                         </h2>
                     </div>
@@ -83,7 +83,7 @@ const Rawuses = () => {
                                         <div className="front">Real Estate</div>
                                         <div className="back"> Real Estate</div>
                                     </div>
-                                
+
                                     <h3> Tokenized real estate enables fractional ownership, instant transfers, and improved liquidity in property investments.
                                     </h3>
                                 </div>
@@ -95,7 +95,7 @@ const Rawuses = () => {
                                         <div className="front">Supply Chain & Trade Finance</div>
                                         <div className="back"> Supply Chain & Trade Finance</div>
                                     </div>
-                                   
+
                                     <h3>Tokenized invoices and trade documents streamline payments, improve transparency, and reduce fraud.
                                     </h3>
                                 </div>
@@ -118,7 +118,7 @@ const Rawuses = () => {
                                         <div className="front">  Luxury Assets</div>
                                         <div className="back">  Luxury Assets</div>
                                     </div>
-                                   
+
                                     <h3> High-value assets like art, watches, and collectibles can be tokenized for fractional ownership and efficient trading.
                                     </h3>
                                 </div>
@@ -130,7 +130,7 @@ const Rawuses = () => {
                                         <div className="front"> Commodities</div>
                                         <div className="back"> Commodities</div>
                                     </div>
-                                  
+
                                     <h3> Precious metals, oil, and agricultural goods can be tokenized for easier access, trading, and settlement.
 
                                     </h3>
@@ -143,12 +143,12 @@ const Rawuses = () => {
                                         <div className="front"> Debt & Fixed Income</div>
                                         <div className="back"> Debt & Fixed Income</div>
                                     </div>
-                                  
+
                                     <h3>Tokenized bonds and loans enhance accessibility, automation, and liquidity in traditional debt markets.
 
                                     </h3>
                                 </div>
-                               
+
                             </OwlCarousel>
                         </div>
                     </div>

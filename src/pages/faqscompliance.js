@@ -7,7 +7,7 @@ const Faqscompliance = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h1>FAQ</h1>
+                        <h6  className='faqqs_div'>FAQ</h6>
                         <h2>Frequently Asked Questions (FAQs) About Tokenomics & Compliance</h2>
                     </div>
                     <div className='middle_right'>
@@ -55,8 +55,8 @@ const Faqscompliance = () => {
                             </Accordion.Item>
 
 
-                           
-                 
+
+
                         </Accordion>
                     </div>
                 </div>
