@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react'
 import Header from './component/Landing/header'
 import Contactus from './contactus'
@@ -17,31 +19,24 @@ const contactusdetail = () => {
 
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
         setLoading(true);
 
         const payload = {
-             "b1-2": name,
-            "b1-5": email,
-            "b1-3": message,
-            "b1-6": telegram,
+            name,
+            email,
+            message,
+            telegram,
         };
 
-        try {
-            await axios.post(
-                'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
-                payload,
-                {
-                    headers: {
-                        "BitForm-API-Key": "59971a5c6213ecbb4e58bf91b4a56962f05311d8",
-                     },
-                }
-            );
 
+        console.log(payload)
+        try {
+            await axios.post('/api/submitForm', payload);
 
         } catch (error) {
             console.error('Submission error:', error.response?.data || error.message);
-         } finally {
+        } finally {
             setLoading(false);
         }
     };
