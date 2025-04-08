@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { getAllBlogs } from "../../../Utils/Services/services"
 import { getTimeInAges } from '@/Utils/helpers';
 import { categories } from '@/Utils/constants';
+import Loader1 from '@/hooks/loader1';
 
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
 
@@ -156,8 +157,10 @@ const Stories = () => {
                                     ))}
                                 </OwlCarousel>
                             ) : (
-                                <p>Loading blogs...</p>
+                                // <p>Loading blogs...</p>
+                                <Loader1 />
                             )}
+                           
 
                         </div>
 
