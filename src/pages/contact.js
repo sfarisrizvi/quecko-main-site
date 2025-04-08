@@ -15,6 +15,8 @@ const contactusdetail = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
+    const [errors, setErrors] = useState({});
+
 
 
 
@@ -22,6 +24,12 @@ const contactusdetail = () => {
         e.preventDefault();
         setLoading(true);
 
+        const regex = {
+            email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
+            telegram: /^\d+$/,
+            message: /^.{5,}$/,
+        };
         const payload = {
             name,
             email,
@@ -30,9 +38,37 @@ const contactusdetail = () => {
         };
 
 
+        const validationErrors = {};
+        if (!regex.email.test(payload.email)) {
+            validationErrors.email = "Invalid email format";
+        }
+        if (!regex.name.test(payload.name)) {
+            validationErrors.name = "Name must contain only letters and spaces";
+        }
+        if (!regex.telegram.test(payload.telegram)) {
+            validationErrors.telegram = "Telegram must be numeric";
+        }
+        if (!regex.message.test(payload.message)) {
+            validationErrors.message = "Message must be at least 5 characters";
+        }
+
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+            setLoading(false);
+            return;
+        }
+
+
+        setErrors({});  
+
+   
         console.log(payload)
         try {
             await axios.post('/api/submitForm', payload);
+            setName('');
+            setEmail('');
+            setTelegram('');
+            setMessage('');
 
         } catch (error) {
             console.error('Submission error:', error.response?.data || error.message);
@@ -118,23 +154,28 @@ const contactusdetail = () => {
                                     placeholder='Name'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
-                                    required
+                                    
                                 />
-                                <input
+                                {errors.name && <div style={{ color: 'red' }}>{errors.name}</div>}                         
+                                       <input
                                     type="text"
                                     name="telegram"
                                     placeholder='Telegram'
                                     value={telegram}
                                     onChange={(e) => setTelegram(e.target.value)}
                                 />
+                                {errors.telegram && <div style={{ color: 'red' }}>{errors.telegram}</div>}
+
                                 <input
                                     type="email"
                                     name="email"
                                     placeholder='Email@company.com'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    required
+                                    
                                 />
+                                {errors.email && <div style={{ color: 'red' }}>{errors.email}</div>}
+
                                 <textarea
                                     placeholder='Your Message'
                                     name="message"
@@ -142,8 +183,10 @@ const contactusdetail = () => {
                                     cols="50"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
-                                    required
+                                    
                                 />
+                                {errors.message && <div style={{ color: 'red' }}>{errors.message}</div>}
+
                                 <div className='button_div'>
                                     <button type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : 'Get in Touch'}
