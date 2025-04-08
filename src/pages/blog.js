@@ -51,7 +51,7 @@ const Blog = () => {
                                     </button>
 
                                 </div>
-                                <h1 className='mainpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</h1>
+                                <p className='mainpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</p>
                                 <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
 
                             </div>
@@ -75,7 +75,7 @@ const Blog = () => {
                 </div>
                 <div className='latestblogmain'>
                     <div className='upperhead'>
-                        <h2>Latest Blogs</h2>
+                        <h1>Latest Blogs</h1>
                         <button className="animated-button filter">
                             <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
                                 <div className="front">Filter by All <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
@@ -101,13 +101,13 @@ const Blog = () => {
                                             <div className='mainimage blogs_img'>
                                                 <img src={item?.jetpack_featured_media_url} alt='img' className='img-fluid innerimg imginnner' />
                                             </div>
-                                            <h6 className='upper'>ARTICLE <span><svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                            <span className='upper'>ARTICLE <span><svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
                                                 <circle cx="1.5" cy="2.32996" r="1.5" fill="#9D9D9D" />
-                                            </svg></span> <span>{categories[item?.categories[0]]}</span></h6>
-                                            <div className="btn-flip">
+                                            </svg></span> <span>{categories[item?.categories[0]]}</span></span>
+                                            <h3 className="btn-flip">
                                                 <div className="front">{item?.title?.rendered}</div>
                                                 <div className="back">{item?.title?.rendered}</div>
-                                            </div>
+                                            </h3>
                                             <p className='para'>{getTimeInAges(item?.date)}</p>
                                         </div></Link>
                                 </>

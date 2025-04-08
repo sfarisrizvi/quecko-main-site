@@ -159,6 +159,15 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                             </div>
 
                             <div className="bottomparent">
+                            <div className="right">
+                                    <div
+                                        className="img_top_Side"
+                                        style={{
+                                            backgroundImage: `url(${item?.jetpack_featured_media_url})`,
+                                        }}
+                                    />
+                                    <div dangerouslySetInnerHTML={{ __html: item?.content?.rendered }} />
+                                </div>
                                 <div className="left">
                                     <div className="author_Div">
                                         <h2>Author</h2>
@@ -169,10 +178,10 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                             <div>
                                                 <h3>{item?.authors?.[0]?.display_name || "Unknown Author"}</h3>
 
-                                                <h4>
+                                                <span>
                                                     {item?.authors?.[0]?.job_title || "No description available"}
 
-                                                </h4>
+                                                </span>
                                             </div>
                                         </div>
                                         <p
@@ -205,15 +214,18 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                     <div className="top_date_div">
                                         <div className="date_side_div">
                                             <p>Date</p>
-                                            <h6>{getTimeInAges(item?.date)}</h6>
+                                            <span>{getTimeInAges(item?.date)}</span>
                                         </div>
 
                                         <div>
                                             <p className="para">Share on</p>
                                             <div className="socialicons">
-                                                <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame.png" alt="Website" className="img-fluid" />
-                                                </a>
+                                                {/* <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer"> */}
+                                                <div className="imggggfgg">
+                                                <img src="\Assets\copy.svg" alt="Website"  className="img-fluid imgcopyyyy" />
+
+                                                </div>
+                                                {/* </a> */}
 
                                                 <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20this%20out!`}
                                                     target="_blank" rel="noopener noreferrer">
@@ -235,15 +247,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                     </div>
                                 </div>
 
-                                <div className="right">
-                                    <div
-                                        className="img_top_Side"
-                                        style={{
-                                            backgroundImage: `url(${item?.jetpack_featured_media_url})`,
-                                        }}
-                                    />
-                                    <div dangerouslySetInnerHTML={{ __html: item?.content?.rendered }} />
-                                </div>
+
                             </div>
                         </>
                     )}
@@ -265,7 +269,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                             className="img-fluid innerimg imginnner"
                                         />
                                     </div>
-                                    <h6 className="upper">
+                                    <span className="upper">
                                         ARTICLE
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
@@ -273,7 +277,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                             </svg>
                                         </span>
                                         <span>{categories[item?.categories[0]]}</span>
-                                    </h6>
+                                    </span>
                                     <h3 className="btn-flip">
                                         <div className="front">{item?.title?.rendered}</div>
                                         <div className="back">{item?.title?.rendered}</div>
