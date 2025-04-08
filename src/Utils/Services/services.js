@@ -125,4 +125,13 @@ export const JobBasedcategory = async (id) => {
     }
 };
 
- 
+
+export const SingleJobwithSlug = async (slug) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/job?slug=${slug}`);
+        return response?.data;
+    } catch (error) {
+        console.error("Error fetching all jobs:", error);
+        return [];
+    }
+};

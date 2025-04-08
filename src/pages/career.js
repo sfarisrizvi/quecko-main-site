@@ -24,8 +24,6 @@ const career = () => {
 
   }
 
-
-
   const getSingleJob = async (id) => {
     try {
       const data = await JobBasedcategory(id)
@@ -99,7 +97,10 @@ const career = () => {
                   {alljobs.map((item, index) => (
 
                     <>
-                      <Link href="/careerdetail">
+                      {/* <Link href="/careerdetail"> */}
+                      <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
+                        {/* /blogdetail?slug=${item?.slug} */}
+
                       {/* <Link key={index} href={`/${item?.slug}`}> */}
 
 
