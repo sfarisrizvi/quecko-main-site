@@ -41,10 +41,10 @@ const termsconditions = () => {
                 </h3> */}
                         <p>Welcome to Quecko Inc. By accessing or using our website (https://quecko.com) and our services, you agree to be bound by these Terms and Conditions. Please read them carefully.
                         </p>
-                        <h4>Acceptance of Terms</h4>
+                        <h2>Acceptance of Terms</h2>
                         <p>By visiting our website or using our services, you agree that you have read, understood, and accepted these Terms and Conditions and our Privacy Policy. If you do not agree with any part of these terms, please do not use our website or services.</p>
-                        <h4>Definitions
-                        </h4>
+                        <h2>Definitions
+                        </h2>
                         <ul class="custom-list">
                             <li>“Quecko,” “we,” “us” or “our” refers to Quecko.</li>
                             <li>“Services” includes all software development, blockchain, Web3, mobile app, and digital solutions provided by Quecko.</li>
@@ -54,8 +54,8 @@ const termsconditions = () => {
                             <li>“Third-Party Services” means any services provided by third parties that may be integrated or linked to our website.
                             </li>
                         </ul>
-                        <h4> Use of Our Website and Services
-                        </h4>
+                        <h2> Use of Our Website and Services
+                        </h2>
                         <p>a. Eligibility</p>
                         <p>You must be at least 18 years old (or the legal age of majority in your jurisdiction) to use our website and services.</p>
 <p>b. Account Registration</p>
@@ -73,11 +73,11 @@ const termsconditions = () => {
                             </li>
 
                         </ul>
-                        <h4> Intellectual Property
-                        </h4>
+                        <h2> Intellectual Property
+                        </h2>
                         <p>All content, trademarks, logos, and software on our website are the property of Quecko or its licensors. You may view, download, and print content for your personal, non-commercial use only. Any other use of our intellectual property requires prior written consent from Quecko.</p>
-                        <h4> Disclaimers and Limitation of Liability
-                        </h4>
+                        <h2> Disclaimers and Limitation of Liability
+                        </h2>
                         <p>a.  No Warranty
                         </p>
                         <p>Our website and services are provided “as is” without any warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
@@ -97,17 +97,17 @@ const termsconditions = () => {
 
                         </p>
 
-                       <h4> Third-Party Links and Services
-                       </h4>
+                       <h2> Third-Party Links and Services
+                       </h2>
                        <p>Our website may contain links to third-party websites or services that are not owned or controlled by Quecko. We are not responsible for the content or practices of these third parties. Your use of any linked website is at your own risk.</p>
-                       <h4>Modifications to Terms</h4>
+                       <h2>Modifications to Terms</h2>
                        <p>We reserve the right to update or modify these Terms and Conditions at any time. Any changes will be effective immediately upon posting on our website. Your continued use of the website or services following any changes constitutes acceptance of the new Terms.
                        </p>
-                       <h4>Governing Law and Dispute Resolution
-                       </h4>
+                       <h2>Governing Law and Dispute Resolution
+                       </h2>
                        <p>These Terms and your use of our website and services shall be governed by and construed in accordance with the laws of [Insert Governing Jurisdiction]. Any disputes arising under or in connection with these Terms shall be resolved through negotiation in good faith. If a resolution cannot be reached, disputes will be submitted to [arbitration/mediation] in [Insert City, Country].
                        </p>
-                       <h4> Contact Information</h4>
+                       <h2> Contact Information</h2>
                        <p>If you have any questions about these Terms and Conditions, please contact us at:
 Email: [info@quecko.com]
 Phone: +971-50-740-0268

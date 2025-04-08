@@ -42,8 +42,8 @@ const Privacypolicy = () => {
                         <p>Quecko (“we”, “us” or “our”) is committed to protecting the privacy of our visitors, partners, and customers. This Privacy Policy explains how we collect, use, share, and safeguard your personal information when you access our website (https://quecko.com) and use our services.
 
                         </p>
-                        <h4> Information We Collect
-                        </h4>
+                        <h2> Information We Collect
+                        </h2>
                         <p>a. Personal Information
                         </p>
                         <p>When you contact us, register for updates, or request our services, we may collect:</p>
@@ -96,9 +96,9 @@ const Privacypolicy = () => {
 
 
 
-                        <h4>How We Use Your Information
+                        <h2>How We Use Your Information
 
-                        </h4>
+                        </h2>
                         <p>We use your information for various purposes, including to:
                         </p>
 
@@ -122,9 +122,9 @@ const Privacypolicy = () => {
 
 
 
-                        <h4>How We Share Your Information
+                        <h2>How We Share Your Information
 
-                        </h4>
+                        </h2>
                         <p>We do not sell your personal information. We may share your data with:
 
                         </p>
@@ -147,10 +147,10 @@ const Privacypolicy = () => {
 
 
 
-                        <h4>Data Security and Retention
+                        <h2>Data Security and Retention
 
 
-                        </h4>
+                        </h2>
 
 
 
@@ -171,10 +171,10 @@ const Privacypolicy = () => {
 
 
 
-                        <h4> Your Rights
+                        <h2> Your Rights
 
 
-                        </h4>
+                        </h2>
                         <p>Depending on your jurisdiction, you may have the right to:
                         </p>
 
@@ -204,14 +204,14 @@ const Privacypolicy = () => {
 
 
 
-                        <h4>Changes to This Privacy Policy
+                        <h2>Changes to This Privacy Policy
 
-                        </h4>
+                        </h2>
                         <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our website along with the new effective date.
                         </p>
-                        <h4> Contact Us
+                        <h2> Contact Us
 
-                        </h4>
+                        </h2>
 
                         <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
 

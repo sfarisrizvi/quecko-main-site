@@ -76,43 +76,43 @@ const Footer = () => {
               </div>
               <div className="carrres_div">
                 <Link href="/career">
-                <h4>Careers</h4>
+                <h3 className="connecttt">Careers</h3>
                 </Link>
 
 
-                <h4>Get Updates</h4>
+                <h3 className="connecttt">Get Updates</h3>
                 <a href="/privacypolicy">
-                <h5>Privacy Policy <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <h3>Privacy Policy <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path d="M4.66669 4.86377H11.3334V11.5304" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 11.5304L11.3334 4.86377" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg></h5>
+                </svg></h3>
                 </a>
 
                 <a href="/termsconditions">
-                <h5>Terms & Conditions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <h3>Terms & Conditions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path d="M4.66669 4.86377H11.3334V11.5304" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 11.5304L11.3334 4.86377" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg></h5>
+                </svg></h3>
                 </a>
 
               </div>
             </div>
             <div className="bottom_div">
-              <h3>Connect</h3>
+              <h3 className="connecttt">Connect</h3>
               <a href="https://www.facebook.com/QueckoInc" target="blank">
-                <h2>Facebook</h2>
+                <h3>Facebook</h3>
               </a>
               <a href=" https://youtube.com/@quecko-blockchain?si=N8afTnAuKv9Nx0vT" target="blank">
-                <h2>Youtube</h2>
+                <h3>Youtube</h3>
               </a>
               <a href="https://pk.linkedin.com/company/queckoinc" target="blank">
-                <h2>Linkedin</h2>
+                <h3>Linkedin</h3>
               </a>
               <a href="https://www.instagram.com/queckoinc/" target="blank">
-                <h2>Instagram</h2>
+                <h3>Instagram</h3>
               </a>
               <a href="https://x.com/Quecko_Inc" target="blank">
-                <h2>Twitter (X)</h2>
+                <h3>Twitter (X)</h3>
               </a>
             </div>
           </div>

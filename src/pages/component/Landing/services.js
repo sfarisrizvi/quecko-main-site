@@ -14,11 +14,11 @@ const Services = () => {
         <>
             <section className='services_main'>
                 <div className='inner_services'>
-                    <p className='whatwedo'>What we do</p>
+                    <span className='whatwedo'>What we do</span>
                     <h2>Our Services & Expertise</h2>
                     <div className={`thirple_divs ${expanded ? "expanded" : ""} card-${expanded}`}>
                         <div className='one_part' >
-                            <h5>01</h5>
+                            <span>01</span>
                             <Link href="/web-development"><div>          <h3>Web3 Development</h3></div></Link>
                             <div className='smart_contracts'>
                                 <div>
@@ -52,7 +52,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className='one_part' >
-                            <h5>02</h5>
+                            <span>02</span>
                             <Link href="/resourcelanding"><div>
                             <h3>Resource Augmentation</h3>
                             </div></Link>
@@ -86,7 +86,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className='one_part' >
-                            <h5>03</h5>
+                            <span>03</span>
                             <Link href="/web3-marketing"><div>
                             <h3>Web3 Marketing</h3>
                             </div>

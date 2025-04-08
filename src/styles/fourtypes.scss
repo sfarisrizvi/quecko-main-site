@@ -358,6 +358,15 @@ font-style: normal;
 font-weight: 700 !important;
 line-height: 100%;
     }
+    .span_ptag{
+        color: #000 !important;
+        font-size: 16px !important;
+        width: 639px;
+        font-style: normal;
+        padding-top: 20px;
+        font-weight: 400 !important;
+        line-height: 130%; /* 20.8px */
+    }
     h2{
         color: #000 !important;
 font-size: 16px !important;
@@ -383,7 +392,7 @@ line-height: 130%; /* 20.8px */
     // align-items: center;
     // gap: 20px;
     // justify-content: center;
-    h4{
+    span{
         color: #000;
 font-size: 14px;
 font-style: normal;

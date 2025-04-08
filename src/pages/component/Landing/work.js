@@ -17,7 +17,7 @@ const Work = () => {
                     </video>
 
                     <div className='innner_text_div'>
-                        <h3>Let’s Build <span>Together</span> </h3>
+                        <h2>Let’s Build <span className='together'>Together</span> </h2>
 
                         <Link href="/contact">
                             <button className="animated-button" >

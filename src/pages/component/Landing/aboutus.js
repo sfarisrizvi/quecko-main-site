@@ -65,7 +65,7 @@ const Aboutus = () => {
                 <div className='inner_about'>
                     <div className='midle_class'>
                         <div className='midle_left'>
-                            <h4 className='clientsname'>Clients</h4>
+                            <span className='clientsname'>Testimonial</span>
                             <h2>What people say about us?</h2>
                         </div>
                         <div className="owl_option">
@@ -77,8 +77,8 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\mennimg.png" />
                                         <div>
-                                            <h4 className='nameclient'>Mateen O Dawood</h4>
-                                            <h2>Stable33 Protocol</h2>
+                                            <h3 className='nameclient'>Mateen O Dawood</h3>
+                                            <p>Stable33 Protocol</p>
                                         </div>
                                     </div>
                                     <p>I believe that with hard work, determination, and an amazing team of Quecko Inc., we can overcome any obstacle and achieve anything we set our minds to. As we enter 2023, we&apos;re more committed than ever to finalizing the protocol and focusing on adding more and more utility to the STABL33 PROTOCOL Ecosystem.</p>
@@ -87,8 +87,8 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\man.svg" />
                                         <div>
-                                            <h4 className='crds_name'>Anonymous Client </h4>
-                                            <h2>DAO Project</h2>
+                                            <h3 className='crds_name'>Anonymous Client </h3>
+                                            <p>DAO Project</p>
                                         </div>
                                     </div>
                                     <p>Did everything we need. Will continue to work with them. Using again for next set of updates.</p>
@@ -97,8 +97,8 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\mennimg.png" />
                                         <div>
-                                            <h4  className='crds_name'>Anonymous Client  </h4>
-                                            <h2> NFT marketplace Project</h2>
+                                            <h3  className='crds_name'>Anonymous Client  </h3>
+                                            <p> NFT marketplace Project</p>
                                         </div>
                                     </div>
                                     <p>Quecko did a fantastic work right according to my requirements. They know what they&apos;re doing and did it perfectly. I definitely will work with them for all of my future projects. Thank you so much for this amazing product. </p>
@@ -107,8 +107,8 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\man.svg" />
                                         <div>
-                                            <h4  className='crds_name'>Anonymous Client </h4>
-                                            <h2>UI/UX</h2>
+                                            <h3  className='crds_name'>Anonymous Client </h3>
+                                            <p>UI/UX</p>
                                         </div>
                                     </div>
                                     <p>Attention to detail, very well thought of Line of blockchain business, project management skills, core strength. Good strategy. Altogether it was phenomenal to work. One challenge I find is that they are expecting you to test everything which I found a lot. Otherwise I&apos;m pleased.</p>
@@ -117,8 +117,8 @@ const Aboutus = () => {
                                     <div className="inner_cards">
                                         <img className="imgman" src="\Assets\man.svg" />
                                         <div>
-                                            <h4  className='crds_name'>Anonymous Client  </h4>
-                                            <h2>Decentralised DNS Project</h2>
+                                            <h3  className='crds_name'>Anonymous Client  </h3>
+                                            <p>Decentralised DNS Project</p>
                                         </div>
                                     </div>
                                     <p>Amazing job. Excellent communication skills and very responsive. Would recommend this team to anyone looking.</p>

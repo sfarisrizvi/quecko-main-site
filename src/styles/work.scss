@@ -128,9 +128,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 9;
-            h3 {
+            h2 {
                 color: #FFF;
-                font-size: 30px;
+                font-size: 30px !important;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%;
@@ -141,9 +141,9 @@
                 margin-bottom: 37px;
                 /* 39px */
             }
-            span{
+            .together{
                 color: #FFF;
-font-size: 100px;
+font-size: 100px !important;
 font-style: normal;
 font-weight: 400;
 line-height: 100%; /* 100px */
@@ -183,9 +183,9 @@ line-height: 100%; /* 100px */
     }
 }
 @media only screen and (max-width: 991px) {
-     .works_main .inner_work .innner_text_div .h3 {
+     .works_main .inner_work .innner_text_div .h2 {
         color: #FFF;
-        font-size: 24px;
+        font-size: 24px !important;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -196,9 +196,9 @@ line-height: 100%; /* 100px */
         gap: 10px;
         margin-bottom: 37px;
     }
-    .works_main .inner_work .innner_text_div span {
+    .works_main .inner_work .innner_text_div .together {
         color: #FFF;
-        font-size: 54px;
+        font-size: 54px !important;
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
@@ -341,9 +341,9 @@ line-height: 100%; /* 100px */
                 transform: translate(-50%, -50%);
                 z-index: 9;
 
-                h3 {
+                h2 {
                     color: #FFF;
-                    font-size: 1.875vw; /* 30px */
+                    font-size: 1.875vw !important; /* 30px */
                     font-style: normal;
                     font-weight: 500;
                     line-height: 130%;
@@ -354,9 +354,9 @@ line-height: 100%; /* 100px */
                     margin-bottom: 2.3125vw; /* 37px */
                 }
 
-                span {
+                .together {
                     color: #FFF;
-                    font-size: 6.25vw; /* 100px */
+                    font-size: 6.25vw !important; /* 100px */
                     font-style: normal;
                     font-weight: 400;
                     line-height: 100%; /* 100px */

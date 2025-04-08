@@ -6,10 +6,10 @@ const Contactus = () => {
             <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h6  className='cliiient'>Become a client</h6>
-                    <h2>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
-                    </h2>
-                    <h3>Get in touch</h3>
+                    <h2  className='cliiient'>Become a client</h2>
+                    <p className='spantextt'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
+                    </p>
+                    <p>Get in touch</p>
                     <div className='svgs_divv'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M14.0057 14.7046C13.4086 15.1026 12.7151 15.313 12 15.313C11.285 15.313 10.5914 15.1026 9.99431 14.7046L0.159797 8.14801C0.105234 8.11164 0.0520781 8.07372 0 8.03472V18.7783C0 20.0101 0.999609 20.9877 2.20936 20.9877H21.7906C23.0224 20.9877 24 19.9881 24 18.7783V8.03467C23.9478 8.07376 23.8945 8.11178 23.8398 8.1482L14.0057 14.7046Z" fill="black" />

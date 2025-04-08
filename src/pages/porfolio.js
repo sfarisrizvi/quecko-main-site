@@ -35,7 +35,7 @@ const Portfolio = () => {
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-                                <h2>Portfolio</h2>
+                                <span>Portfolio</span>
                             </div>
                             <h1 className='mainpara'>Our Portfolio</h1>
                             <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
@@ -54,7 +54,7 @@ const Portfolio = () => {
                 <div >
 
                     <nav className='navsectiontabs'>
-                        <h4>Filters:</h4>
+                        <span>Filters:</span>
                         <div className="nav nav-tabs" id="nav-tab" role="tablist">
                             <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
                             <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Design</button>
