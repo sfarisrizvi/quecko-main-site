@@ -65,7 +65,7 @@ const Aboutus = () => {
                 <div className='inner_about'>
                     <div className='midle_class'>
                         <div className='midle_left'>
-                            <span className='clientsname'>Testimonial</span>
+                            <span className='clientsname'>Clients</span>
                             <h2>What people say about us?</h2>
                         </div>
                         <div className="owl_option">
