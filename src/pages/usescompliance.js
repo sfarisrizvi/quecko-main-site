@@ -64,7 +64,7 @@ const Usescompliance = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h5  className='story_div '>Use Cases</h5>
+                        <span className='story_div '>Use Cases</span>
                         <h2>Use Cases of Tokenomics & Compliance</h2>
                     </div>
                     <div className='bottom_side'>
@@ -78,74 +78,74 @@ const Usescompliance = () => {
                                     <div className='blogs_img'>
                                         <img className='imginnner' src='\Assets\homeone.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front">Fundraising & ICO/IDO Compliance</div>
                                         <div className="back"> Fundraising & ICO/IDO Compliance</div>
-                                    </div>
-
-                                    <h3>Projects raising capital through token sales (ICO, IDO, or STO) must adhere to legal requirements like KYC/AML regulations to prevent fraud and ensure investor protection.
                                     </h3>
+
+                                    <p>Projects raising capital through token sales (ICO, IDO, or STO) must adhere to legal requirements like KYC/AML regulations to prevent fraud and ensure investor protection.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                     <div className='blogs_img'>
                                         <img className='imginnner' src='\Assets\hometwo.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front">Play-to-Earn (P2E) & Gaming Economies</div>
                                         <div className="back">Play-to-Earn (P2E) & Gaming Economies</div>
-                                    </div>
-                                    <h3>Gaming platforms use tokenomics to structure in-game rewards, ensuring fair distribution while maintaining regulatory compliance in different jurisdictions.
                                     </h3>
+                                    <p>Gaming platforms use tokenomics to structure in-game rewards, ensuring fair distribution while maintaining regulatory compliance in different jurisdictions.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                     <div className='blogs_img'>
                                         <img className='imginnner' src='\Assets\homethree.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front">DeFi Lending & Staking Models</div>
                                         <div className="back"> DeFi Lending & Staking Models</div>
-                                    </div>
-
-                                    <h3>Decentralized finance (DeFi) platforms require secure and compliant token models to manage staking rewards, yield farming, and interest-bearing assets without violating financial laws.
                                     </h3>
+
+                                    <p>Decentralized finance (DeFi) platforms require secure and compliant token models to manage staking rewards, yield farming, and interest-bearing assets without violating financial laws.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                     <div className='blogs_img'>
                                         <img className='imginnner' src='\Assets\homefour.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front"> Governance & DAO Frameworks</div>
                                         <div className="back">Governance & DAO Frameworks</div>
-                                    </div>
-
-                                    <h3>Decentralized Autonomous Organizations (DAOs) utilize governance tokens to facilitate on-chain decision-making while ensuring compliance with securities laws and legal entity structuring.
                                     </h3>
+
+                                    <p>Decentralized Autonomous Organizations (DAOs) utilize governance tokens to facilitate on-chain decision-making while ensuring compliance with securities laws and legal entity structuring.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                     <div className='blogs_img'>
                                         <img className='imginnner' src='\Assets\homeone.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front">Real World Asset (RWA) Tokenization</div>
                                         <div className="back">Real World Asset (RWA) Tokenization</div>
-                                    </div>
-
-                                    <h3>Projects tokenizing real-world assets like real estate, commodities, or equities must follow securities regulations to ensure legal ownership and investor rights.
-
                                     </h3>
+
+                                    <p>Projects tokenizing real-world assets like real estate, commodities, or equities must follow securities regulations to ensure legal ownership and investor rights.
+
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                     <div className='blogs_img'>
                                         <img className='imginnner' src='\Assets\homeone.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front"> Cross-Border Payments & Stablecoins</div>
                                         <div className="back"> Cross-Border Payments & Stablecoins</div>
-                                    </div>
-
-                                    <h3>Stablecoins and crypto payment networks require compliance with global financial regulations (FATF, MiCA, SEC) to prevent illicit transactions and ensure seamless cross-border transfers.
-
                                     </h3>
+
+                                    <p>Stablecoins and crypto payment networks require compliance with global financial regulations (FATF, MiCA, SEC) to prevent illicit transactions and ensure seamless cross-border transfers.
+
+                                    </p>
                                 </div>
 
                             </OwlCarousel>

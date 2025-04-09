@@ -14,7 +14,7 @@ const Collabration = () => {
             id="myVideo">
             <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330995/queckosite%20%28new%29/videos/stonesvideo_gqzerz.webm" type="video/webm" />
           </video>
-          <p className='ourstory'>Our story</p>
+          {/* <span className='ourstory'>Our story</span> */}
           <div className='top_middle'>
             <div className='middle_colab'>
               <h2>Let&apos;s build a decentralized world together.</h2>

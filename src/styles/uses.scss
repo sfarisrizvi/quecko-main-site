@@ -129,9 +129,10 @@
                     display: inline-block;
                     text-decoration: none;
                     width: 100%;
-                    height: 43px;
+                    height: 48px;
 
                     perspective: 1000px;
+                    padding-left: 0px !important;
                 }
 
                 .front,
@@ -154,6 +155,7 @@
                     color: #000;
                     /* Front text color */
                     transform: translateY(0) rotateX(0);
+                    padding-left: 0px !important;
                 }
 
                 .back {
@@ -161,12 +163,13 @@
                     color: #000;
                     transform: translateY(50%) rotateX(90deg);
                     opacity: 0;
+                    padding-left: 0px !important;
                 }
 
 
 
 
-                h3 {
+                p {
                     color: #838383;
                     font-size: 12px;
                     font-style: normal;
@@ -362,17 +365,32 @@
             /* 70px */
         }
 
-        h2 {
+        .cliiientnew{
             color: #000;
-            width: 625px;
-            font-size: 22px;
+            font-size: 30px;
+            padding-top: 16px;
+            width: 550px !important;
+            padding-bottom: 30px;
             font-style: normal;
             font-weight: 400;
+            line-height: 100%;
+            /* 70px */
+        }
+
+
+        .spantextt {
+            color: #000 !important;
+            width: 625px !important;
+            font-size: 22px !important;
+            font-style: normal;
+            font-weight: 400 !important;
             line-height: 140%;
+            text-transform: capitalize !important;
+            padding-bottom: 15px;
             /* 30.8px */
         }
 
-        h3 {
+        span {
             color: #9D9D9D;
             font-size: 14px;
             font-style: normal;
@@ -380,7 +398,7 @@
             line-height: 130%;
             /* 18.2px */
             text-transform: uppercase;
-            padding-top: 30px;
+            margin-top: 30px;
             padding-bottom: 10px;
         }
 
@@ -480,7 +498,7 @@
         /* 55px */
     }
 
-    h2 {
+    h3 {
         color: #000;
         font-size: 18px;
         font-style: normal;
@@ -491,7 +509,7 @@
         /* 18px */
     }
 
-    h3 {
+    p {
         color: #616161;
         font-size: 14px;
         font-style: normal;
@@ -521,6 +539,16 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .contact_us_main .left_siide .cliiientnew {
+        color: #000;
+        font-size: 30px;
+        padding-top: 16px;
+        width: 100% !important;
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
     .partner_side {
         padding: 30px 20px 60px 20px !important;
     }
@@ -929,7 +957,7 @@
                 line-height: 100%;
             }
 
-            h2 {
+            span {
                 color: #000;
                 width: 39.0625vw;
                 font-size: 1.375vw;

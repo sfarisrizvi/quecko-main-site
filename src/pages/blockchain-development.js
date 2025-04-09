@@ -49,7 +49,7 @@ const Smartcontract = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <h2>Blockchain Development</h2>
+                                <span>Blockchain Development</span>
                             </div>
                             <h1 className='mainpara'>Blockchain Development</h1>
                             <p className='para'>Quecko specializes in next-gen blockchain development, providing battle-tested blockchain solutions for DeFi, GameFi, and enterprise applications. With experience across Solana, Ethereum, Polygon, and other top chains, we create solutions that are secure, scalable, and optimized for mass adoption.</p>
@@ -76,7 +76,7 @@ const Smartcontract = () => {
                                 <path d="M39.375 31.8749L35.3325 28.3724C35.1989 28.2458 35.0309 28.1612 34.8496 28.1294C34.6682 28.0975 34.4815 28.1198 34.3128 28.1934C34.144 28.267 34.0006 28.3886 33.9005 28.5432C33.8004 28.6977 33.7481 28.8783 33.75 29.0624V29.9999C33.75 30.4972 33.5525 30.9741 33.2008 31.3258C32.8492 31.6774 32.3723 31.8749 31.875 31.8749H28.125C27.6277 31.8749 27.1508 31.6774 26.7992 31.3258C26.4475 30.9741 26.25 30.4972 26.25 29.9999C26.25 25.2281 18.7669 22.5562 10.3125 22.4999C9.0693 22.4999 7.87701 22.9938 6.99794 23.8729C6.11886 24.752 5.625 25.9442 5.625 27.1874C5.625 28.4306 6.11886 29.6229 6.99794 30.502C7.87701 31.3811 9.0693 31.8749 10.3125 31.8749C18.0994 31.8749 19.2094 10.6968 21.015 6.56244C21.32 5.86455 21.7905 5.2515 22.3857 4.77633C22.981 4.30116 23.683 3.97819 24.4311 3.83536C25.1792 3.69253 25.9509 3.73415 26.6793 3.9566C27.4077 4.17906 28.071 4.57566 28.6116 5.11209C29.1523 5.64852 29.5541 6.30861 29.7823 7.03525C30.0105 7.76189 30.0582 8.5332 29.9213 9.28242C29.7844 10.0316 29.467 10.7362 28.9965 11.3352C28.526 11.9341 27.9167 12.4094 27.2212 12.7199" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M5.625 39.375H39.375" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5  className='names_tags'>Smart Contract Development</h5>
+                            <h3  className='names_tags'>Smart Contract Development</h3>
                             <p> We design and deploy secure, automated, and audit-ready smart contracts, ensuring trust, transparency, and efficiency for DeFi protocols, NFT projects, and enterprise applications.</p>
                         </div>
                         <div className='card__one'>
@@ -86,7 +86,7 @@ const Smartcontract = () => {
                                 <path d="M36.375 31.875V9.375C36.375 8.38044 35.9799 7.42661 35.2766 6.72335C34.5734 6.02009 33.6196 5.625 32.625 5.625H8.25" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M15.75 39.375H38.25C39.2446 39.375 40.1984 38.9799 40.9016 38.2766C41.6049 37.5734 42 36.6196 42 35.625V33.75C42 33.2527 41.8025 32.7758 41.4508 32.4242C41.0992 32.0725 40.6223 31.875 40.125 31.875H21.375C20.8777 31.875 20.4008 32.0725 20.0492 32.4242C19.6975 32.7758 19.5 33.2527 19.5 33.75V35.625C19.5 36.6196 19.1049 37.5734 18.4016 38.2766C17.6984 38.9799 16.7446 39.375 15.75 39.375ZM15.75 39.375C14.7554 39.375 13.8016 38.9799 13.0983 38.2766C12.3951 37.5734 12 36.6196 12 35.625V9.375C12 8.38044 11.6049 7.42661 10.9016 6.72335C10.1984 6.02009 9.24456 5.625 8.25 5.625C7.25544 5.625 6.30161 6.02009 5.59835 6.72335C4.89509 7.42661 4.5 8.38044 4.5 9.375V13.125C4.5 13.6223 4.69754 14.0992 5.04917 14.4508C5.40081 14.8025 5.87772 15 6.375 15H12" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5  className='names_tags'> Decentralized Application (dApp) Development</h5>
+                            <h3  className='names_tags'> Decentralized Application (dApp) Development</h3>
                             <p>Our team builds scalable and high-performance dApps that enhance user experience while leveraging the benefits of decentralization, from crypto exchanges to tokenized ecosystems.</p>
                         </div>
                         <div className='card__one'>
@@ -96,7 +96,7 @@ const Smartcontract = () => {
                                 <path d="M9.875 22.5L4.25 28.125L9.875 33.75" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M17.375 33.75L23 28.125L17.375 22.5" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5  className='names_tags'> Layer 1 & Layer 2 Blockchain Solutions</h5>
+                            <h3  className='names_tags'> Layer 1 & Layer 2 Blockchain Solutions</h3>
                             <p> Optimize speed, reduce costs, and improve scalability with Layer 1 and Layer 2 solutions. Whether developing a custom blockchain or integrating with leading networks like Ethereum, Polygon, and Arbitrum, we provide tailored solutions to meet business objectives.</p>
                         </div>
                         <div className='card__one'>
@@ -113,7 +113,7 @@ const Smartcontract = () => {
                                 <path d="M18.4375 29.0625L16.75 28.3125" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M11.5 31.875C14.6066 31.875 17.125 29.3566 17.125 26.25C17.125 23.1434 14.6066 20.625 11.5 20.625C8.3934 20.625 5.875 23.1434 5.875 26.25C5.875 29.3566 8.3934 31.875 11.5 31.875Z" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5  className='names_tags'>Custom Blockchain Development</h5>
+                            <h3  className='names_tags'>Custom Blockchain Development</h3>
                             <p>We offer end-to-end blockchain solutions, designing bespoke private and public blockchain networks to support industries requiring enhanced security, transparency, and interoperability.</p>
                         </div>
                     </div>
@@ -122,8 +122,8 @@ const Smartcontract = () => {
 
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h6 className='contratt'>Why Invest in Blockchain Development for Your Business?
-                        </h6>
+                        <h2 className='contratt'>Why Invest in Blockchain Development for Your Business?
+                        </h2>
                         <p>Blockchain technology is revolutionizing industries by offering unmatched security, transparency, and efficiency. Whether you’re exploring DeFi, NFT marketplaces, enterprise solutions, or custom blockchain networks, adopting blockchain is a strategic move toward a more secure, scalable, and decentralized future.</p>
                     </div>
                     <div className='top_parents'>
@@ -137,7 +137,7 @@ const Smartcontract = () => {
                                     <path d="M26.6666 8.00008V5.33341C26.6666 4.62617 26.3857 3.94789 25.8856 3.4478C25.3855 2.9477 24.7072 2.66675 24 2.66675C23.2927 2.66675 22.6145 2.9477 22.1144 3.4478C21.6143 3.94789 21.3333 4.62617 21.3333 5.33341V8.00008" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M28 8H20C19.2636 8 18.6667 8.59695 18.6667 9.33333V13.3333C18.6667 14.0697 19.2636 14.6667 20 14.6667H28C28.7364 14.6667 29.3334 14.0697 29.3334 13.3333V9.33333C29.3334 8.59695 28.7364 8 28 8Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <h2>Enhanced Security & Trust</h2>
+                                <h3>Enhanced Security & Trust</h3>
                                 <p>Leverage cryptographic security and decentralized networks to eliminate fraud risks and protect sensitive data with tamper-proof records.</p>
                             </div>
                             <div className='cardee'>
@@ -146,7 +146,7 @@ const Smartcontract = () => {
                                     <path d="M16 24C20.4183 24 24 20.4183 24 16C24 11.5817 20.4183 8 16 8C11.5817 8 8 11.5817 8 16C8 20.4183 11.5817 24 16 24Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M16 18.6666C17.4728 18.6666 18.6667 17.4727 18.6667 15.9999C18.6667 14.5272 17.4728 13.3333 16 13.3333C14.5273 13.3333 13.3334 14.5272 13.3334 15.9999C13.3334 17.4727 14.5273 18.6666 16 18.6666Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <h2>Complete Transparency & Traceability</h2>
+                                <h3>Complete Transparency & Traceability</h3>
                                 <p>Ensure real-time, verifiable transactions across industries, enhancing trust among stakeholders and compliance with global regulations.</p>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ const Smartcontract = () => {
                                     <path d="M2.66669 12V13.3333C2.66669 14.8 3.86669 16 5.33335 16H6.66669" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M21.3333 14.6667H21.3466" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <h2> Automated Efficiency with Smart Contracts</h2>
+                                <h3> Automated Efficiency with Smart Contracts</h3>
                                 <p>Reduce operational costs and eliminate intermediaries with self-executing smart</p>
                             </div>
                             <div className='cardee'>
@@ -166,8 +166,8 @@ const Smartcontract = () => {
                                     <path d="M9.33337 14.6667V20.0001C9.33337 20.7073 9.61433 21.3856 10.1144 21.8857C10.6145 22.3858 11.2928 22.6667 12 22.6667H17.3334" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M25.3334 17.3333H20C18.5273 17.3333 17.3334 18.5272 17.3334 19.9999V25.3333C17.3334 26.806 18.5273 27.9999 20 27.9999H25.3334C26.8061 27.9999 28 26.806 28 25.3333V19.9999C28 18.5272 26.8061 17.3333 25.3334 17.3333Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <h2>Scalability & Future-Readiness
-                                </h2>
+                                <h3>Scalability & Future-Readiness
+                                </h3>
                                 <p> Deploy custom blockchain solutions that grow with your business, ensuring high-performance applications that adapt to evolving market demands.</p>
                             </div>
                         </div>

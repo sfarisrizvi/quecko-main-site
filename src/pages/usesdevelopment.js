@@ -64,7 +64,7 @@ const Usesdevelopment = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div new_texxxt_div'>
-                        <h4 className='story_div'>Quecko Stories</h4>
+                        <span className='story_div'>Quecko Stories</span>
                         <h2>Quecko Stories</h2>
                     </div>
                     <div className='bottom_side'>

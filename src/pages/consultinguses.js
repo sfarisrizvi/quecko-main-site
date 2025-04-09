@@ -64,7 +64,7 @@ const Consultinguses = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h5  className='story_div '>Use Cases</h5>
+                        <span  className='story_div '>Use Cases</span>
                         <h2>Use Cases of Enterprise & Consulting Services
                         </h2>
                     </div>

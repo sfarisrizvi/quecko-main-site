@@ -7,7 +7,7 @@ const Faqswebdevelp = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h6  className='faqqs_div'>FAQ</h6>
+                        <span  className='faqqs_div'>FAQ</span>
                         <h2>FAQs About Web 3 Development</h2>
                     </div>
                     <div className='middle_right'>

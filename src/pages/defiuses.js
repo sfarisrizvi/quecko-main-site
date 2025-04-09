@@ -64,7 +64,7 @@ const Defiuses = () => {
             <section className='uses_divv'>
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
-                        <h5  className='story_div'>Use Cases</h5>
+                        <span  className='story_div'>Use Cases</span>
                         <h2>Top Use Cases of How Quecko Drives Real-World Impact</h2>
                     </div>
                     <div className='bottom_side'>
@@ -78,73 +78,73 @@ const Defiuses = () => {
                                 <div className='blogs_img'>
                                     <img className='imginnner' src='\Assets\homeone.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front">  Web3 Wallets & Digital Asset Management</div>
                                         <div className="back">  Web3 Wallets & Digital Asset Management</div>
-                                    </div>
-
-                                    <h3>Quecko’s secure Web3 wallets empower users to manage cryptocurrencies, NFTs, and digital assets effortlessly. With multi-chain support and top-tier encryption, we ensure users have full control over their assets.
                                     </h3>
+
+                                    <p>Quecko’s secure Web3 wallets empower users to manage cryptocurrencies, NFTs, and digital assets effortlessly. With multi-chain support and top-tier encryption, we ensure users have full control over their assets.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                 <div className='blogs_img'>
                                     <img className='imginnner' src='\Assets\hometwo.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front"> Decentralized Finance (DeFi) Platforms</div>
                                         <div className="back"> Decentralized Finance (DeFi) Platforms</div>
-                                    </div>
-
-                                    <h3>From yield farming to staking, Quecko builds DeFi platforms that enable users to earn passive income securely. Our solutions integrate smart contracts for trustless transactions and real-time analytics.
                                     </h3>
+
+                                    <p>From yield farming to staking, Quecko builds DeFi platforms that enable users to earn passive income securely. Our solutions integrate smart contracts for trustless transactions and real-time analytics.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                 <div className='blogs_img'>
                                     <img className='imginnner' src='\Assets\homethree.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front">  NFT Marketplaces</div>
                                         <div className="back">  NFT Marketplaces</div>
-                                    </div>
+                                    </h3>
 
-                                    <h3>Quecko creates NFT marketplaces for art, gaming, and real estate, enabling seamless minting, trading, and auctions. Our platforms ensure creators and collectors thrive in the digital ownership economy.</h3>
+                                    <p>Quecko creates NFT marketplaces for art, gaming, and real estate, enabling seamless minting, trading, and auctions. Our platforms ensure creators and collectors thrive in the digital ownership economy.</p>
                                 </div>
                                 <div className='cardss'>
                                 <div className='blogs_img'>
                                     <img className='imginnner' src='\Assets\homefour.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front"> Decentralized Exchanges (DEX)</div>
                                         <div className="back"> Decentralized Exchanges (DEX)</div>
-                                    </div>
-
-                                    <h3>Quecko’s DEX solutions, including AMM-based and cross-chain platforms, allow users to trade assets securely and transparently without intermediaries.
                                     </h3>
+
+                                    <p>Quecko’s DEX solutions, including AMM-based and cross-chain platforms, allow users to trade assets securely and transparently without intermediaries.
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                 <div className='blogs_img'>
                                     <img className='imginnner' src='\Assets\homeone.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front"> Real-World Asset (RWA) Tokenization</div>
                                         <div className="back"> Real-World Asset (RWA) Tokenization</div>
-                                    </div>
-
-                                    <h3>Quecko brings real-world assets like real estate and commodities on-chain, enabling fractional ownership and seamless trading through blockchain-based tokenization.
-
                                     </h3>
+
+                                    <p>Quecko brings real-world assets like real estate and commodities on-chain, enabling fractional ownership and seamless trading through blockchain-based tokenization.
+
+                                    </p>
                                 </div>
                                 <div className='cardss'>
                                 <div className='blogs_img'>
                                     <img className='imginnner' src='\Assets\homeone.webp' />
                                     </div>
-                                    <div className="btn-flip">
+                                    <h3 className="btn-flip">
                                         <div className="front"> Smart Contract-Based Identity Systems</div>
                                         <div className="back"> Smart Contract-Based Identity Systems</div>
-                                    </div>
-
-                                    <h3>Quecko develops decentralized identity management systems, ensuring privacy and security while reducing reliance on centralized databases.
                                     </h3>
+
+                                    <p>Quecko develops decentralized identity management systems, ensuring privacy and security while reducing reliance on centralized databases.
+                                    </p>
                                 </div>
 
                             </OwlCarousel>

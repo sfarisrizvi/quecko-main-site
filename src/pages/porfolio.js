@@ -35,7 +35,7 @@ const Portfolio = () => {
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-                                <h2>Portfolio</h2>
+                                <span>Portfolio</span>
                             </div>
                             <h1 className='mainpara'>Our Portfolio</h1>
                             <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
@@ -54,7 +54,7 @@ const Portfolio = () => {
                 <div >
 
                     <nav className='navsectiontabs'>
-                        <h4>Filters:</h4>
+                        <span>Filters:</span>
                         <div className="nav nav-tabs" id="nav-tab" role="tablist">
                             <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
                             <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Design</button>
@@ -202,6 +202,50 @@ const Portfolio = () => {
                                         </a>
                                     </div>
 
+                                    <div className='parent_div'>
+                                    <a href='/porfoliodiet'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portdiet.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliogoldenlooni'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\portlooni.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfoliooracle'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portorcale.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliomeme'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\portmeme.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
 
 
 

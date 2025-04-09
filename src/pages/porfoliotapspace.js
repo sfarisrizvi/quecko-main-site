@@ -17,23 +17,23 @@ const porfoliotapspace = () => {
                         </svg></button>
                     </div>
                     <div className='services_sidess'>
-                        <h3>Services</h3>
+                        <p>Services</p>
                         <div className='inner_sidessd'>
-                            <h4>UI/UX Design</h4>
-                            <h4>Web Design</h4>
-                            <h4>Telegram Bot </h4>
-                            <h4>Marketing
-                            </h4>
+                            <span>UI/UX Design</span>
+                            <span>Web Design</span>
+                            <span>Telegram Bot </span>
+                            <span>Marketing
+                            </span>
                         </div>
                     </div>
                     <div className='challenge_div'>
                         <div>
-                            <h5>Challenge</h5>
+                            <h3>Challenge</h3>
                             <p>TapSpace must keep players engaged with fresh content while ensuring smooth performance as the user base grows. A balanced reward system is key to sustaining the in-game economy, alongside strong anti-cheat measures to prevent fraud. Seamless Web3 integration is also crucial for accessibility and decentralization.
                             </p>
                         </div>
                         <div>
-                            <h5>Project Overview</h5>
+                            <h3>Project Overview</h3>
                             <p>TapSpace is designed to create an interactive and rewarding gaming experience by merging casual gaming with blockchain-powered incentives. The game enables players to progress through space-themed adventures, tap their way to rewards, and participate in social and competitive elements, fostering an active and engaged community. Through a blend of in-game achievements, daily missions, and social engagement, TapSpace aims to build a sustainable tap-to-earn gaming ecosystem.
                             </p>
                         </div>
@@ -43,7 +43,7 @@ const porfoliotapspace = () => {
                     </div>
                     <div className='goals_sidee'>
                         <div className='inner_goal'>
-                            <h4>Project Goal</h4>
+                            <h2>Project Goal</h2>
                             <p>The primary goal of TapSpace is to establish itself as a leading tap-to-earn game within the Telegram mini-app ecosystem by delivering engaging gameplay, interactive rewards, and community-driven mechanics. The platform aims to create an immersive gaming experience where users not only enjoy playing but also earn meaningful rewards. To ensure long-term viability, TapSpace focuses on building a sustainable in-game economy, balancing rewards with scalability. By leveraging Web3 technologies, the game enhances user ownership, transparency, and engagement, making participation more rewarding. Additionally, TapSpace prioritizes community growth and interaction, incorporating social and competitive features that foster an active and loyal player base.
                             </p>
                         </div>
@@ -128,12 +128,12 @@ const porfoliotapspace = () => {
                         </div>
                     </div>
                     <div className='tecnology_div'>
-                        <h3>Technology</h3>
-                        <h4>Technology We Use </h4>
+                        <span>Technology</span>
+                        <h2>Technology We Use </h2>
                         <div className='webs_cards'>
                             <div className='cards_web'>
                          <img src='\Assets\solid.svg' className='mangodbimg'/>
-                                <h5>Solidity</h5>
+                                <h3>Solidity</h3>
                                 <p>Solidity</p>
                             </div>
                             <div className='cards_web'>
@@ -148,7 +148,7 @@ const porfoliotapspace = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h5>Figma</h5>
+                                <h3>Figma</h3>
                                 <p>To Design the UI</p>
                             </div>
                             <div className='cards_web'>
@@ -163,7 +163,7 @@ const porfoliotapspace = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h5>React</h5>
+                                <h3>React</h3>
                                 <p>Frontend, Mobile App and  Web App</p>
                             </div>
                             <div  className='cards_web'>
@@ -188,7 +188,7 @@ const porfoliotapspace = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h5>Node JS</h5>
+                                <h3>Node JS</h3>
                                 <p>Server-side application</p>
                             </div>
                         </div>

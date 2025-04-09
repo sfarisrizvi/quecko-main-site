@@ -39,7 +39,7 @@ const Frontend = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <h2>Frontend Developers</h2>
+                                <span>Frontend Developers</span>
                             </div>
                             <h1 className='mainpara'>Boost Your Team with Expert Frontend Developers—On Demand
                             </h1>
@@ -70,9 +70,9 @@ const Frontend = () => {
                                 <path d="M39.375 31.8749L35.3325 28.3724C35.1989 28.2458 35.0309 28.1612 34.8496 28.1294C34.6682 28.0975 34.4815 28.1198 34.3128 28.1934C34.144 28.267 34.0006 28.3886 33.9005 28.5432C33.8004 28.6977 33.7481 28.8783 33.75 29.0624V29.9999C33.75 30.4972 33.5525 30.9741 33.2008 31.3258C32.8492 31.6774 32.3723 31.8749 31.875 31.8749H28.125C27.6277 31.8749 27.1508 31.6774 26.7992 31.3258C26.4475 30.9741 26.25 30.4972 26.25 29.9999C26.25 25.2281 18.7669 22.5562 10.3125 22.4999C9.0693 22.4999 7.87701 22.9938 6.99794 23.8729C6.11886 24.752 5.625 25.9442 5.625 27.1874C5.625 28.4306 6.11886 29.6229 6.99794 30.502C7.87701 31.3811 9.0693 31.8749 10.3125 31.8749C18.0994 31.8749 19.2094 10.6968 21.015 6.56244C21.32 5.86455 21.7905 5.2515 22.3857 4.77633C22.981 4.30116 23.683 3.97819 24.4311 3.83536C25.1792 3.69253 25.9509 3.73415 26.6793 3.9566C27.4077 4.17906 28.071 4.57566 28.6116 5.11209C29.1523 5.64852 29.5541 6.30861 29.7823 7.03525C30.0105 7.76189 30.0582 8.5332 29.9213 9.28242C29.7844 10.0316 29.467 10.7362 28.9965 11.3352C28.526 11.9341 27.9167 12.4094 27.2212 12.7199" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M5.625 39.375H39.375" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5   className='names_tags'>Advanced Frontend Frameworks & Libraries
+                            <h3   className='names_tags'>Advanced Frontend Frameworks & Libraries
 
-                            </h5>
+                            </h3>
                             <p>Outsource developers proficient in React, Angular, Vue.js, JavaScript (ES6+), and TypeScript to build dynamic, scalable, and maintainable user interfaces.
 
                             </p>
@@ -84,8 +84,8 @@ const Frontend = () => {
                                 <path d="M36.375 31.875V9.375C36.375 8.38044 35.9799 7.42661 35.2766 6.72335C34.5734 6.02009 33.6196 5.625 32.625 5.625H8.25" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M15.75 39.375H38.25C39.2446 39.375 40.1984 38.9799 40.9016 38.2766C41.6049 37.5734 42 36.6196 42 35.625V33.75C42 33.2527 41.8025 32.7758 41.4508 32.4242C41.0992 32.0725 40.6223 31.875 40.125 31.875H21.375C20.8777 31.875 20.4008 32.0725 20.0492 32.4242C19.6975 32.7758 19.5 33.2527 19.5 33.75V35.625C19.5 36.6196 19.1049 37.5734 18.4016 38.2766C17.6984 38.9799 16.7446 39.375 15.75 39.375ZM15.75 39.375C14.7554 39.375 13.8016 38.9799 13.0983 38.2766C12.3951 37.5734 12 36.6196 12 35.625V9.375C12 8.38044 11.6049 7.42661 10.9016 6.72335C10.1984 6.02009 9.24456 5.625 8.25 5.625C7.25544 5.625 6.30161 6.02009 5.59835 6.72335C4.89509 7.42661 4.5 8.38044 4.5 9.375V13.125C4.5 13.6223 4.69754 14.0992 5.04917 14.4508C5.40081 14.8025 5.87772 15 6.375 15H12" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5   className='names_tags'>Performance Optimization & Debugging
-                            </h5>
+                            <h3   className='names_tags'>Performance Optimization & Debugging
+                            </h3>
                             <p>Augment your team with experts skilled in JavaScript, CSS, and browser dev tools to optimize code, reduce load times, and resolve performance bottlenecks.
                             </p>
                         </div>
@@ -96,8 +96,8 @@ const Frontend = () => {
                                 <path d="M9.875 22.5L4.25 28.125L9.875 33.75" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M17.375 33.75L23 28.125L17.375 22.5" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5   className='names_tags'>Responsive & Accessible Design
-                            </h5>
+                            <h3   className='names_tags'>Responsive & Accessible Design
+                            </h3>
                             <p>Bring in professionals who specialize in HTML5, CSS3, Sass/SCSS, and Bootstrap to create responsive, mobile-friendly, and WCAG-compliant designs for seamless user experiences.
 
                             </p>
@@ -116,8 +116,8 @@ const Frontend = () => {
                                 <path d="M18.4375 29.0625L16.75 28.3125" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M11.5 31.875C14.6066 31.875 17.125 29.3566 17.125 26.25C17.125 23.1434 14.6066 20.625 11.5 20.625C8.3934 20.625 5.875 23.1434 5.875 26.25C5.875 29.3566 8.3934 31.875 11.5 31.875Z" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h5   className='names_tags'>API Integration & State Management
-                            </h5>
+                            <h3   className='names_tags'>API Integration & State Management
+                            </h3>
                             <p>Add developers experienced in integrating RESTful APIs, GraphQL, and managing state with tools like Redux, Context API, or Vuex to streamline your application’s functionality.
                             </p>
                         </div>
@@ -127,9 +127,9 @@ const Frontend = () => {
 
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h5   className='contratt'>Why Choose Us?
+                        <h2  className='contratt'>Why Choose Us?
 
-                        </h5>
+                        </h2>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>
@@ -145,7 +145,7 @@ const Frontend = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2> Immediate Impact                                </h2>
+                                <h3> Immediate Impact                                </h3>
                                 <p>Our developers are ready to contribute from day one, reducing ramp-up time.
                                 </p>
                             </div>
@@ -163,8 +163,8 @@ const Frontend = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2>Tailored Solutions
-                                </h2>
+                                <h3>Tailored Solutions
+                                </h3>
                                 <p>We match you with developers who align with your tech stack and project goals.
                                 </p>
                             </div>
@@ -180,8 +180,8 @@ const Frontend = () => {
                                     <path d="M25.7983 5.96631L28.2118 3.54604L29.6648 4.99497L27.2514 7.41524L25.7983 5.96631Z" fill="black" />
                                     <path d="M9.95645 23.1138C9.18565 22.7946 9.18565 22.674 9.18565 22.5677C9.18565 22.321 9.49553 22.2944 9.6288 22.2944C10.1332 22.2944 10.5178 22.5489 10.9373 22.7889L11.4685 21.3661C11.0814 21.1389 10.7281 20.9312 10.249 20.8542V19.9658H8.81177V20.9444C8.05888 21.2112 7.5345 21.8657 7.5345 22.6698C7.5345 23.7555 8.39098 24.2367 9.22483 24.5638C9.89922 24.8371 9.90066 25.0337 9.90066 25.1511C9.90066 25.4278 9.61539 25.5263 9.3477 25.5263C8.7728 25.5263 8.34558 25.2157 7.89156 24.913L7.36377 26.3588C7.7944 26.6667 8.26428 26.8922 8.74333 26.9782V27.8974H10.1806V26.8923C11.0019 26.6147 11.5394 25.9159 11.5394 25.0916C11.5394 23.9168 10.7012 23.4175 9.95645 23.1138Z" fill="black" />
                                 </svg>
-                                <h2>Transparent Process
-                                </h2>
+                                <h3>Transparent Process
+                                </h3>
                                 <p>Clear communication and regular updates ensure you’re always in the loop.
                                 </p>
                             </div>
@@ -199,9 +199,9 @@ const Frontend = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2>Proven Track Record
+                                <h3>Proven Track Record
 
-                                </h2>
+                                </h3>
                                 <p>Developers with a history of delivering high-quality, scalable frontend solutions.</p>
                             </div>
                         </div>
@@ -230,7 +230,7 @@ const Frontend = () => {
                 </div>
                 <div className='how_its_works'>
                     <div>
-                        <h5  className='workss_div'>How does it work?</h5>
+                        <h2  className='workss_div'>How does it work?</h2>
                     </div>
                     <div className='works_cards_mains'>
                         <div className='works_cards'>
@@ -242,19 +242,19 @@ const Frontend = () => {
                                 <path d="M27.0929 23.4982C27.9679 22.6562 28.5179 21.4792 28.5179 20.1712C28.5179 17.6202 26.4419 15.5442 23.8909 15.5442C21.3399 15.5442 19.2639 17.6202 19.2639 20.1712C19.2639 21.4792 19.8139 22.6562 20.6889 23.4982C18.9729 24.3122 17.7749 26.0472 17.7749 28.0692V28.6652C17.7749 29.5412 18.3969 30.2962 19.2539 30.4592C20.7789 30.7512 22.3389 30.8992 23.8899 30.8992C25.4409 30.8992 27.0009 30.7512 28.5259 30.4592C29.3829 30.2952 30.0049 29.5412 30.0049 28.6652V28.0692C30.0069 26.0482 28.8089 24.3122 27.0929 23.4982ZM23.8919 17.3442C25.4509 17.3442 26.7189 18.6122 26.7189 20.1712C26.7189 21.7302 25.4509 22.9982 23.8919 22.9982C22.3329 22.9982 21.0649 21.7302 21.0649 20.1712C21.0649 18.6122 22.3329 17.3442 23.8919 17.3442ZM28.1899 28.6922C25.5679 29.1942 22.8529 29.2092 20.2169 28.7812C20.0029 28.7442 19.7889 28.7102 19.5759 28.6652V28.0692C19.5759 26.2652 21.0429 24.7982 22.8469 24.7982H24.9359C26.7399 24.7982 28.2069 26.2652 28.2069 28.0692L28.1899 28.6922Z" fill="black" />
                                 <path d="M11.3099 23.4982C12.1849 22.6562 12.7349 21.4792 12.7349 20.1712C12.7349 17.6202 10.6589 15.5442 8.10794 15.5442C5.55694 15.5442 3.48094 17.6202 3.48094 20.1712C3.48094 21.4792 4.03094 22.6562 4.90594 23.4982C3.18994 24.3122 1.99194 26.0472 1.99194 28.0692V28.6652C1.99194 29.5412 2.61394 30.2962 3.47094 30.4592C4.99594 30.7512 6.55594 30.8992 8.10694 30.8992C9.65794 30.8992 11.2179 30.7512 12.7429 30.4592C13.5999 30.2952 14.2219 29.5412 14.2219 28.6652V28.0692C14.2239 26.0482 13.0259 24.3122 11.3099 23.4982ZM8.10794 17.3442C9.66694 17.3442 10.9349 18.6122 10.9349 20.1712C10.9349 21.7302 9.66694 22.9982 8.10794 22.9982C6.54894 22.9982 5.28094 21.7302 5.28094 20.1712C5.28094 18.6122 6.54894 17.3442 8.10794 17.3442ZM12.4069 28.6922C9.78494 29.1942 7.06994 29.2092 4.43394 28.7812C4.21994 28.7442 4.00594 28.7102 3.79294 28.6652V28.0692C3.79294 26.2652 5.25994 24.7982 7.06394 24.7982H9.15294C10.9569 24.7982 12.4239 26.2652 12.4239 28.0692L12.4069 28.6922Z" fill="black" />
                             </svg>
-                            <h2>Step 1: Consultation
+                            <h3>Step 1: Consultation
 
-                            </h2>
-                            <h3>We understand your business goals and project requirements to analyze the perfect skill set needed to get the job done.
                             </h3>
+                            <p>We understand your business goals and project requirements to analyze the perfect skill set needed to get the job done.
+                            </p>
                         </div>
                         <div className='works_cards'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <path d="M27.9934 14.8475L27.9015 14.7555L30.7425 11.9144C30.9074 11.7496 31 11.5261 31 11.293C31 11.0599 30.9074 10.8363 30.7425 10.6715L27.9015 7.8305L27.9934 7.7385C28.7 7.63936 29.354 7.31493 29.8647 6.80434C31.1519 5.51704 31.1519 3.4226 29.8647 2.13542C29.2411 1.51168 28.412 1.16827 27.5302 1.16827C26.6484 1.16827 25.8193 1.51168 25.1958 2.13524C24.6852 2.64588 24.3608 3.29991 24.2616 4.00655L24.1696 4.09848L21.3285 1.25739C20.9853 0.914204 20.4288 0.914204 20.0855 1.25739L7.8304 13.5126L7.73847 13.4206C7.63933 12.714 7.31489 12.06 6.80425 11.5493C5.51707 10.2621 3.42264 10.2621 2.13534 11.5493C0.848155 12.8366 0.848155 14.9311 2.13534 16.2183C2.64598 16.7289 3.29994 17.0533 4.00658 17.1525L4.09858 17.2444L1.25743 20.0856C0.91419 20.4287 0.91419 20.9853 1.25743 21.3285L10.6715 30.7425C10.8363 30.9074 11.0598 31 11.2929 31C11.5261 31 11.7495 30.9074 11.9144 30.7425L15.3769 27.2799C15.7201 26.9368 15.7201 26.3802 15.3769 26.037L14.4374 25.0975C14.2786 24.9386 14.0649 24.8467 13.8403 24.8404C13.4444 24.8294 13.0722 24.6692 12.7923 24.3893C12.5007 24.0978 12.3402 23.7101 12.3402 23.2978C12.3402 22.8855 12.5007 22.4979 12.7923 22.2063C13.3941 21.6045 14.3734 21.6044 14.9753 22.2063C15.2552 22.4862 15.4153 22.8584 15.4263 23.2543C15.4325 23.4789 15.5245 23.6925 15.6833 23.8514L16.6229 24.791C16.7877 24.9558 17.0113 25.0485 17.2444 25.0485C17.4775 25.0485 17.701 24.9559 17.8658 24.791L24.1695 18.4873L24.2614 18.5792C24.3606 19.2859 24.685 19.9399 25.1957 20.4505C26.4828 21.7378 28.5773 21.7378 29.8646 20.4505C30.4881 19.8269 30.8315 18.9979 30.8315 18.1161C30.8315 17.2342 30.4881 16.4052 29.8646 15.7816C29.354 15.2711 28.7 14.9466 27.9934 14.8475ZM17.2445 22.9266L17.1525 22.8347C17.0534 22.128 16.7289 21.4741 16.2183 20.9634C14.931 19.6762 12.8366 19.6762 11.5493 20.9634C10.9258 21.587 10.5824 22.4161 10.5824 23.2979C10.5824 24.1797 10.9258 25.0088 11.5493 25.6323C12.0599 26.143 12.714 26.4674 13.4206 26.5666L13.5125 26.6585L11.2929 28.8781L3.12188 20.707L5.96296 17.8659C6.12779 17.7011 6.22042 17.4776 6.22042 17.2445C6.22042 17.0114 6.12779 16.7878 5.96296 16.623L5.02342 15.6835C4.86457 15.5246 4.65088 15.4327 4.42629 15.4264C4.03037 15.4154 3.65819 15.2553 3.37828 14.9754C2.77647 14.3735 2.77647 13.3943 3.37828 12.7923C3.98016 12.1905 4.95937 12.1905 5.56125 12.7923C5.84115 13.0722 6.00134 13.4445 6.0123 13.8404C6.01851 14.065 6.1105 14.2787 6.26941 14.4375L7.2089 15.377C7.55208 15.7202 8.1086 15.7202 8.45184 15.377L11.2929 12.5359L14.134 15.377C14.4773 15.7203 15.0337 15.7203 15.377 15.377L16.3165 14.4375C16.4754 14.2787 16.5674 14.065 16.5736 13.8403C16.5846 13.4445 16.7448 13.0723 17.0246 12.7923C17.6265 12.1905 18.6058 12.1905 19.2076 12.7923C19.8095 13.3942 19.8095 14.3735 19.2076 14.9754C18.9277 15.2553 18.5555 15.4155 18.1596 15.4264C17.935 15.4326 17.7213 15.5246 17.5625 15.6835L16.623 16.623C16.2798 16.9662 16.2798 17.5227 16.623 17.866L19.4641 20.7071L17.2445 22.9266ZM28.6217 19.2077C28.0198 19.8095 27.0405 19.8095 26.4387 19.2077C26.1588 18.9277 25.9986 18.5555 25.9877 18.1596C25.9815 17.935 25.8895 17.7213 25.7306 17.5625L24.7911 16.623C24.6195 16.4513 24.3945 16.3655 24.1696 16.3655C23.9447 16.3655 23.7197 16.4513 23.5482 16.623L20.7071 19.4641L18.4875 17.2444L18.5795 17.1525C19.286 17.0533 19.9401 16.7289 20.4507 16.2183C21.7379 14.9311 21.7379 12.8366 20.4507 11.5493C19.1635 10.2621 17.069 10.2621 15.7817 11.5493C15.2711 12.06 14.9467 12.7141 14.8476 13.4206L14.7556 13.5126L12.5361 11.2929L20.707 3.12184L23.5481 5.96288C23.8913 6.30606 24.4478 6.30606 24.7911 5.96288L25.7306 5.02339C25.8894 4.86454 25.9815 4.65085 25.9877 4.42626C25.9986 4.03034 26.1588 3.65815 26.4387 3.37825C26.7303 3.08669 27.1179 2.92608 27.5302 2.92608C27.9425 2.92608 28.3301 3.08669 28.6217 3.37825C29.2235 3.98006 29.2235 4.95934 28.6217 5.56122C28.3418 5.84112 27.9696 6.00132 27.5737 6.01227C27.3491 6.01848 27.1354 6.11048 26.9765 6.26938L26.037 7.20893C25.6938 7.55218 25.6938 8.10864 26.037 8.45188L28.8781 11.2929L26.037 14.134C25.6938 14.4772 25.6938 15.0337 26.037 15.377L26.9765 16.3165C27.1353 16.4754 27.349 16.5673 27.5736 16.5736C27.9695 16.5846 28.3417 16.7447 28.6216 17.0246C28.9132 17.3162 29.0737 17.7038 29.0737 18.1161C29.0738 18.5284 28.9132 18.9161 28.6217 19.2077Z" fill="black" />
                             </svg>
-                            <h2>Step 2: Talent Matching</h2>
-                            <h3>We select top professionals from our network who match your requirements. You have the final say in choosing the right fit for your team.
-                            </h3>
+                            <h3>Step 2: Talent Matching</h3>
+                            <p>We select top professionals from our network who match your requirements. You have the final say in choosing the right fit for your team.
+                            </p>
                         </div>
                         <div className='works_cards'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -265,11 +265,11 @@ const Frontend = () => {
                                 <path d="M26.6667 27.6667H24C23.4533 27.6667 23 27.2133 23 26.6667V24C23 23.4533 23.4533 23 24 23C24.5467 23 25 23.4533 25 24V25.6667H26.6667C27.2133 25.6667 27.6667 26.12 27.6667 26.6667C27.6667 27.2133 27.2133 27.6667 26.6667 27.6667Z" fill="black" />
                                 <path d="M7.99992 8.99992C7.45325 8.99992 6.99992 8.54659 6.99992 7.99992V6.33325H5.33325C4.78659 6.33325 4.33325 5.87992 4.33325 5.33325C4.33325 4.78659 4.78659 4.33325 5.33325 4.33325H7.99992C8.54659 4.33325 8.99992 4.78659 8.99992 5.33325V7.99992C8.99992 8.54659 8.54659 8.99992 7.99992 8.99992Z" fill="black" />
                             </svg>
-                            <h2>Step 3: Onboarding
+                            <h3>Step 3: Onboarding
 
-                            </h2>
-                            <h3>Your chosen resources integrate seamlessly into your processes and begin contributing immediately.
                             </h3>
+                            <p>Your chosen resources integrate seamlessly into your processes and begin contributing immediately.
+                            </p>
                         </div>
                         <div className='works_cards'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -283,10 +283,10 @@ const Frontend = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <h2>Step 4: Ongoing Support</h2>
-                            <h3>
+                            <h3>Step 4: Ongoing Support</h3>
+                            <p>
                                 We stay in touch to ensure everything runs smoothly and adjust resources as needed to meet evolving project’s requirements.
-                            </h3>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@ const Frontend = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h6   className='faqqs_div'>FAQ</h6>
+                        <span   className='faqqs_div'>FAQ</span>
                         <h2>FAQs About Frontend Developer
 
 
@@ -347,10 +347,10 @@ const Frontend = () => {
             <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h6  className='cliiient'>Become a client</h6>
-                    <h2>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
-                    </h2>
-                    <h3>Get in touch</h3>
+                    <h2  className='cliiient'>Become a client</h2>
+                    <p className='spantextt'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
+                    </p>
+                    <p>Get in touch</p>
                     <div className='svgs_divv'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M14.0057 14.7046C13.4086 15.1026 12.7151 15.313 12 15.313C11.285 15.313 10.5914 15.1026 9.99431 14.7046L0.159797 8.14801C0.105234 8.11164 0.0520781 8.07372 0 8.03472V18.7783C0 20.0101 0.999609 20.9877 2.20936 20.9877H21.7906C23.0224 20.9877 24 19.9881 24 18.7783V8.03467C23.9478 8.07376 23.8945 8.11178 23.8398 8.1482L14.0057 14.7046Z" fill="black" />
