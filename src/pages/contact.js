@@ -122,10 +122,10 @@ const contactusdetail = () => {
                 <div className='contact_us_detailss'>
                     <section className='contact_us_main mycontactus'>
                         <div className='left_siide'>
-                            <h1>Contact Us</h1>
-                            <h2>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
+                            <p>Contact Us</p>
+                            <h2  className='cliiientnew'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
                             </h2>
-                            <h3>Get in touch</h3>
+                            <p>Get in touch</p>
                             <div className='svgs_divv'>
 
                                 <a href="mailto:info@quecko.com" target="_blank" rel="noopener noreferrer">

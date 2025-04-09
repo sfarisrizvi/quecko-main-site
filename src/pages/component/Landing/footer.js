@@ -46,21 +46,26 @@ const Footer = () => {
 
           <div className="footer_middle" >
             <div className="first_div">
-
-              <Link href="/?section=faqs" scroll={false}>
-                <h3 className="nav-link">FAQs</h3>
+            <Link href="/?section=services" scroll={false}>
+                <h3 className="nav-link">Service</h3>
               </Link>
-              <Link href="/?section=stories" scroll={false}>
-                <h3 className="nav-link">Blogs</h3>
+              <Link href="/about-us" scroll={false}>
+                <h3 className="nav-link">About Us</h3>
               </Link>
               <Link href="/?section=projects" scroll={false}>
                 <h3 className="nav-link">Portfolio</h3>
               </Link>
-              <Link href="/?section=services" scroll={false}>
-                <h3 className="nav-link">Service</h3>
+              <Link href="/?section=stories" scroll={false}>
+                <h3 className="nav-link">Blogs</h3>
               </Link>
-              <Link href="/?section=work" scroll={false}>
-                <h3 className="nav-link">Work</h3>
+              <Link href="/?section=faqs" scroll={false}>
+                <h3 className="nav-link">FAQs</h3>
+              </Link>
+
+
+
+              <Link href="/contact" scroll={false}>
+                <h3 className="nav-link">Contact Us</h3>
               </Link>
             </div>
 

@@ -365,6 +365,19 @@
             /* 70px */
         }
 
+        .cliiientnew{
+            color: #000;
+            font-size: 30px;
+            padding-top: 16px;
+            width: 550px !important;
+            padding-bottom: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 70px */
+        }
+
+
         .spantextt {
             color: #000 !important;
             width: 625px !important;
@@ -526,6 +539,16 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .contact_us_main .left_siide .cliiientnew {
+        color: #000;
+        font-size: 30px;
+        padding-top: 16px;
+        width: 100% !important;
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
     .partner_side {
         padding: 30px 20px 60px 20px !important;
     }
