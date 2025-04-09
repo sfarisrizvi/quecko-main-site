@@ -69,29 +69,41 @@ const Usesdevelopment = () => {
                     </div>
                     <div className='bottom_side'>
                         <div className="owl_option">
-                            <OwlCarousel
-                                className="owl-theme"
-                                {...owl_option}
-                            >
-
+                            <OwlCarousel className="owl-theme" {...owl_option}>
                                 <div className='cardss new_cardss'>
-                                   <img src='\Assets\videosimg.png'/>
+                                    <video className='videos_youtube' controls>
+                                        <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330920/queckosite%20(new)/videos/bannervideo_ns7oz8.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                                 <div className='cardss new_cardss'>
-                                   <img src='\Assets\videoo.png'/>
+                                    <video  className='videos_youtube' controls>
+                                        <source src="https://path-to-your-video2.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div  className='cardss new_cardss'>
+                                    <video className='videos_youtube' controls>
+                                        <source src="https://path-to-your-video3.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                                 <div className='cardss new_cardss'>
-                                   <img src='\Assets\videot.png'/>
+                                    <video  className='videos_youtube' controls>
+                                        <source src="https://path-to-your-video4.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                                 <div className='cardss new_cardss'>
-                                   <img src='\Assets\videor.png'/>
-                                </div>
-                                <div className='cardss new_cardss'>
-                                   <img src='\Assets\videoo.png'/>
+                                    <video  className='videos_youtube' controls>
+                                        <source src="https://path-to-your-video5.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                             </OwlCarousel>
                         </div>
                     </div>
+
                 </div>
             </section>
         </>

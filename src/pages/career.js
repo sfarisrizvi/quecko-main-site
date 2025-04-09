@@ -17,8 +17,7 @@ const career = () => {
     try {
       const data = await fetchAllJobs(id)
       setalljobs(data)
-      console.log("all jobs", data)
-    } catch (error) {
+     } catch (error) {
       console.error(error)
     }
 
@@ -28,8 +27,7 @@ const career = () => {
     try {
       const data = await JobBasedcategory(id)
       setalljobs(data)
-      console.log("single job", data)
-
+ 
       if (id === 160) {
         setDesignJobs(data);
       } else if (id === 148) {
@@ -49,10 +47,7 @@ const career = () => {
   }, [])
 
 
-
-  console.log(marketingJobs, 'marketingJobs')
-  console.log(developmentJobs, 'developmentJobs')
-  console.log(designJobs, 'designJobs')
+ 
 
 
   return (
