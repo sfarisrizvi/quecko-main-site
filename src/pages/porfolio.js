@@ -237,7 +237,7 @@ const Portfolio = () => {
                                         </a>
                                         <a href='/porfoliomeme'>
                                         <div className='right_side hovercard'>
-                                            <img src='\Assets\portmeme.png' className='imgport' />
+                                            <img src='\Assets\portmeme1.png' className='imgport' />
                                             <div className='buttons_div'>
                                                 <button>Branding</button>
                                                 <button>Development</button>

@@ -7,6 +7,7 @@ import { getAllBlogs } from '@/Utils/Services/services'
 import { categories } from '@/Utils/constants'
 import { getTimeInAges } from '@/Utils/helpers'
 import Loader2 from '@/hooks/loader2'
+import Usesdevelopment from './usesdevelopment'
 const Blog = () => {
     const [blogData, setBlogData] = useState([]);
     const [Loading, setLoading] = useState(false)
@@ -95,7 +96,7 @@ const Blog = () => {
                     </div>
                      {/* <Link href={`/blogdetail?slug=${item?.slug}`}> */}
                     {/* <Loader2 /> */}
-              {Loading ? <Loader2/> : ( 
+              {Loading ? <Loader2/> : (
                         <div className='parentcardsmain'>
                             {blogData?.map((item, index) => {
                                 return (
@@ -123,7 +124,7 @@ const Blog = () => {
                         </div>
               )}
 
-                    {/* <Link className='seemore' href='/blogdetail'>
+                    <Link className='seemore' href='/blogdetail'>
                         <div className='see_more_botton'>
                             <button className="animated-button filter">
                                 <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
@@ -133,11 +134,11 @@ const Blog = () => {
                             </button>
                         </div>
 
-                    </Link> */}
+                    </Link>
 
                 </div>
             </section>
-
+<Usesdevelopment/>
             <Work />
             <Footer />
 
