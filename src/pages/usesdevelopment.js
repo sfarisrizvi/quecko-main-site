@@ -72,7 +72,7 @@ const Usesdevelopment = () => {
                             <OwlCarousel className="owl-theme" {...owl_option}>
                                 <div className='cardss new_cardss'>
                                     <video className='videos_youtube' controls>
-                                        <source src="https://youtube.com/shorts/hW7STeucGts?si=jqPJ-hN3wEbHMBXv" type="video/mp4" />
+                                        <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330920/queckosite%20(new)/videos/bannervideo_ns7oz8.mp4" type="video/mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>

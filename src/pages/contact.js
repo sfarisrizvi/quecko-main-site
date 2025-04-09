@@ -197,7 +197,7 @@ const contactusdetail = () => {
 
 
                                 />
-                                {errors.name && <div style={{ color: 'red' }}>{errors.name}</div>}
+                                {errors.name && <div className='errror_mssg' style={{ color: 'red' }}>{errors.name}</div>}
                                 <input
                                     type="text"
                                     name="telegram"
@@ -208,7 +208,7 @@ const contactusdetail = () => {
                                     onFocus={handleInputFocus}
 
                                 />
-                                {errors.telegram && <div style={{ color: 'red' }}>{errors.telegram}</div>}
+                                {errors.telegram && <div className='errror_mssg' style={{ color: 'red' }}>{errors.telegram}</div>}
 
                                 <input
                                     type="email"
@@ -227,7 +227,7 @@ const contactusdetail = () => {
 
 
                                 />
-                                {errors.email && <div style={{ color: 'red' }}>{errors.email}</div>}
+                                {errors.email && <div className='errror_mssg' style={{ color: 'red' }}>{errors.email}</div>}
 
                                 <textarea
                                     placeholder='Your Message'
@@ -244,7 +244,7 @@ const contactusdetail = () => {
 
 
                                 />
-                                {errors.message && <div style={{ color: 'red' }}>{errors.message}</div>}
+                                {errors.message && <div  className='errror_mssg'style={{ color: 'red' }}>{errors.message}</div>}
 
                                 <div className='button_div'>
                                     <button type="submit" disabled={loading}>
