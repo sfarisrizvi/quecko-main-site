@@ -62,9 +62,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
             console.error(error)
         }
     }
-    console.log(slug, 'slugggggggg')
-    // console.log(blogdetail, "blogdetail")
-    const getAllcategories = async (id) => {
+     const getAllcategories = async (id) => {
         try {
             const data = await RelatedBlogs(id)
             setallcategories(data)

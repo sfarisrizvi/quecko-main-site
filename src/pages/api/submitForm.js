@@ -1,6 +1,6 @@
 // pages/api/submit.js
 import axios from 'axios';
-import FormData from 'form-data'; // 👈 Important for Node.js
+import FormData from 'form-data'; 
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {

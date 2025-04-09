@@ -7,7 +7,7 @@ import Work from './component/Landing/work'
 import Footer from './component/Landing/footer'
 import Head from 'next/head'
 import axios from 'axios'
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 
 const contactusdetail = () => {
@@ -26,7 +26,7 @@ const contactusdetail = () => {
     const regex = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
-        telegram: /^\d+$/,
+        telegram: /^@[A-Za-z0-9_]{5,32}$/,
         message: /^.{5,}$/,
     };
 
@@ -46,8 +46,9 @@ const contactusdetail = () => {
         if (!payload.telegram) {
             validationErrors.telegram = "Telegram is required";
         } else if (!regex.telegram.test(payload.telegram)) {
-            validationErrors.telegram = "Telegram must be numeric";
+            validationErrors.telegram = "Invalid Telegram username format. It should start with '@' and contain 5-32 characters (letters, numbers, or underscores).";
         }
+
         const cleanedMessage = payload.message.replace(/\s/g, '');
         if (!payload.message) {
             validationErrors.message = "Message is required";
@@ -64,7 +65,7 @@ const contactusdetail = () => {
             email,
             message,
             telegram,
-            // time: new Date().toLocaleString(),
+            time: new Date().toLocaleString(),
         };
         const validationErrors = validateForm(payload);
 
@@ -75,16 +76,14 @@ const contactusdetail = () => {
         }
 
         setErrors({});
-        console.log(payload)
         try {
-            // Send email to user using EmailJS
-            // const result = await emailjs.send(
-            //     'service_qr5nkgc',
-            //     'template_1frxkzp',
-            //     payload,
-            //     'S3BtKGfSoUb93s0HO'
-            // );
-            // console.log('Email sent:', result.text);
+            const result = await emailjs.send(
+                'service_ppg76cf',
+                'template_bymdrau',
+                payload,
+                '5_dvI4T78SrG6vKnY'
+            );
+            console.log('Email sent:', result.text);
             await axios.post('/api/submitForm', payload);
             setName('');
             setEmail('');
@@ -102,6 +101,14 @@ const contactusdetail = () => {
     };
 
 
+    const handleTelegramChange = (e) => {
+        let newValue = e.target.value;
+        if (newValue && !newValue.startsWith("@")) {
+            newValue = "@" + newValue;
+        }
+        setTelegram(newValue);
+        setErrors({ ...errors, telegram: "" });
+    };
 
 
 
@@ -123,7 +130,7 @@ const contactusdetail = () => {
                     <section className='contact_us_main mycontactus'>
                         <div className='left_siide'>
                             <p>Contact Us</p>
-                            <h2  className='cliiientnew'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
+                            <h2 className='cliiientnew'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
                             </h2>
                             <p>Get in touch</p>
                             <div className='svgs_divv'>
@@ -196,14 +203,8 @@ const contactusdetail = () => {
                                     name="telegram"
                                     placeholder='Telegram'
                                     value={telegram}
-                                    onChange={(e) => {
-                                        setTelegram(e.target.value)
-                                        setErrors({ ...errors, telegram: '' });
+                                    onChange={handleTelegramChange}
 
-
-
-
-                                    }}
                                     onFocus={handleInputFocus}
 
                                 />

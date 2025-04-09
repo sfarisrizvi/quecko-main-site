@@ -14,7 +14,6 @@ const careerdetail = () => {
 
     const item = Data?.[index] || null;
 
-  console.log(slug, 'slug - career detail')
 
     const SingleJobS = async (slug) => {
         try {
@@ -36,7 +35,6 @@ const careerdetail = () => {
     }
 
 
-    console.log(Data, 'single job data')
 
     return (
         <>
@@ -44,13 +42,12 @@ const careerdetail = () => {
             <div className='details_career'>
                 <div className='inner_details_page'>
                     {item && (
-<>
+                        <>
                             <section className='contact_us_main2'>
                                 <div className='left_siide'>
                                     <p>Get Hired</p>
                                     <h1>{item?.title?.rendered}</h1>
-                                    {/* <h2>Join our team as a UX/UI designer where you will create user-friendly interfaces and enhance our applications' overall user experience. Collaborate with product managers to develop wireframes and prototypes.
-                                    </h2> */}
+                                    
                                     <h2>
                                         {item?.acf?.job_description}
                                     </h2>
@@ -96,44 +93,11 @@ const careerdetail = () => {
                                         }}
                                     />
                                 </h5>
-                                {/* <h5>We're a leading Blockchain development company based in Islamabad.
-                                    And we're looking for a Graphic Designer to oversee the activities of our creative design team.
-                                    The ideal individual must be creative, a multi-tasker, a self-starter and a leader who has proven experience and a good track record..</h5>
-
-                                <h4>Skills & Requirements:</h4>
-                                <h5>2-3 years of relevant experience being a graphic designer.
-                                    -Create and design various materials for print and digital collateral
-                                    -Ensure projects are completed with high quality and on schedule
-                                    -Establish creative direction for the company as well as brand guidelines
-                                    -Prioritize and manage multiple projects within design specifications and budget restrictions
-                                    -Perform retouching and manipulation of images
-                                    -Work with a wide range of media and use graphic design sottware.</h5>
-
-                                <h4>What we offer:</h4>
-                                <h5>Market competitive salary based on experience and skill set.</h5>
-                                <h5>Annual Increments</h5>
-                                <h5>Performance Based Bonuses</h5>
-                                <h5>Paid leaves and Leaves Encashment</h5>
-                                <h5>Need-based Advance salary option</h5>
-                                <h5>Free Lunch</h5>
-                                <h5>Free Unlimited Tea/Coffee</h5>
-                                <h5>All expenses paid team-building retreats. (yearly)</h5>
-                                <h5>All expenses paid annual dinner</h5>
-                                <h5>Performance-based cash bonuses</h5>
-                                <h5>A friendly and nurturing environment</h5>
-                                <h5>Company issued Laptop</h5>
-                                <h5>Opportunities for fast growth</h5> */}
-
-
-
-
-
-
-
+ 
                             </div>
-</>
+                        </>
                     )}
-                   
+
                 </div>
 
             </div>
