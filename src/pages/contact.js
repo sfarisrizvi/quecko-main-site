@@ -26,7 +26,7 @@ const contactusdetail = () => {
     const regex = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
-        telegram: /^@[A-Za-z0-9_]{5,32}$/,
+        // telegram: /^@[A-Za-z0-9_]{5,32}$/,
         message: /^.{5,}$/,
     };
 
@@ -43,11 +43,11 @@ const contactusdetail = () => {
         } else if (!regex.email.test(payload.email)) {
             validationErrors.email = "Invalid email format";
         }
-        if (!payload.telegram) {
-            validationErrors.telegram = "Telegram is required";
-        } else if (!regex.telegram.test(payload.telegram)) {
-            validationErrors.telegram = "Invalid Telegram username format. It should start with '@' and contain 5-32 characters (letters, numbers, or underscores).";
-        }
+        // if (!payload.telegram) {
+        //     validationErrors.telegram = "Telegram is required";
+        // } else if (!regex.telegram.test(payload.telegram)) {
+        //     validationErrors.telegram = "Invalid Telegram username format. It should start with '@' and contain 5-32 characters (letters, numbers, or underscores).";
+        // }
 
         const cleanedMessage = payload.message.replace(/\s/g, '');
         if (!payload.message) {
