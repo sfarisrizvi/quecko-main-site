@@ -6,17 +6,22 @@ import Footer from './component/Landing/footer'
 import { getAllBlogs } from '@/Utils/Services/services'
 import { categories } from '@/Utils/constants'
 import { getTimeInAges } from '@/Utils/helpers'
+import Loader2 from '@/hooks/loader2'
 const Blog = () => {
     const [blogData, setBlogData] = useState([]);
+    const [Loading, setLoading] = useState(false)
 
 
     const getAllData = async () => {
         try {
+            setLoading(true)
             const data = await getAllBlogs();
             setBlogData(data);
         }
         catch (error) {
             console.error(error)
+        }finally{
+            setLoading(false)
         }
     }
 
@@ -89,31 +94,34 @@ const Blog = () => {
 
                     </div>
                      {/* <Link href={`/blogdetail?slug=${item?.slug}`}> */}
-                    <div className='parentcardsmain'>
-                        {blogData?.map((item, index) => {
-                            return (
-                                <>
+                    {/* <Loader2 /> */}
+              {Loading ? <Loader2/> : ( 
+                        <div className='parentcardsmain'>
+                            {blogData?.map((item, index) => {
+                                return (
+                                    <>
 
-                                    <Link href={`/${item?.slug}`}>
+                                        <Link href={`/${item?.slug}`}>
 
 
-                                        <div key={index} className='innercard'>
-                                            <div className='mainimage blogs_img'>
-                                                <img src={item?.jetpack_featured_media_url} alt='img' className='img-fluid innerimg imginnner' />
-                                            </div>
-                                            <span className='upper'>ARTICLE <span><svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
-                                                <circle cx="1.5" cy="2.32996" r="1.5" fill="#9D9D9D" />
-                                            </svg></span> <span>{categories[item?.categories[0]]}</span></span>
-                                            <h3 className="btn-flip">
-                                                <div className="front">{item?.title?.rendered}</div>
-                                                <div className="back">{item?.title?.rendered}</div>
-                                            </h3>
-                                            <p className='para'>{getTimeInAges(item?.date)}</p>
-                                        </div></Link>
-                                </>
-                            )
-                        })}
-                    </div>
+                                            <div key={index} className='innercard'>
+                                                <div className='mainimage blogs_img'>
+                                                    <img src={item?.jetpack_featured_media_url} alt='img' className='img-fluid innerimg imginnner' />
+                                                </div>
+                                                <span className='upper'>ARTICLE <span><svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                                    <circle cx="1.5" cy="2.32996" r="1.5" fill="#9D9D9D" />
+                                                </svg></span> <span>{categories[item?.categories[0]]}</span></span>
+                                                <h3 className="btn-flip">
+                                                    <div className="front">{item?.title?.rendered}</div>
+                                                    <div className="back">{item?.title?.rendered}</div>
+                                                </h3>
+                                                <p className='para'>{getTimeInAges(item?.date)}</p>
+                                            </div></Link>
+                                    </>
+                                )
+                            })}
+                        </div>
+              )}
 
                     {/* <Link className='seemore' href='/blogdetail'>
                         <div className='see_more_botton'>

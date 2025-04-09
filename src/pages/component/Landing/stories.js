@@ -64,15 +64,19 @@ const Stories = () => {
         },
     };
     const [blogData, setBlogData] = useState([]);
+    const [Loader, setLoader] = useState(false)
 
 
 
     const getAllData = async () => {
+        setLoader(true)
         try {
             const data = await getAllBlogs();
             setBlogData([...data]);
         } catch (error) {
             console.error(error);
+        }finally{
+            setLoader(false)
         }
     };
 
@@ -129,41 +133,45 @@ const Stories = () => {
                             </OwlCarousel>
                         </div>
                         ... */}
-                        <div className="owl_option">
+                        {/* <Loader1 /> */}
+                        {Loader ? <Loader1/> : (
+                            <div className="owl_option">
 
-                            {blogData.length > 0 ? (
-                                <OwlCarousel className="owl-theme" {...owl_option}>
-                                    {blogData.map((item, index) => (
-                                        // <Link key={index} href={`/blogdetail?slug=${item?.slug}`}>
-                                        <Link key={index} href={`/${item?.slug}`}>
+                                {blogData.length > 0 ? (
+                                    <OwlCarousel className="owl-theme" {...owl_option}>
+                                        {blogData.map((item, index) => (
+                                            // <Link key={index} href={`/blogdetail?slug=${item?.slug}`}>
+                                            <Link key={index} href={`/${item?.slug}`}>
 
-                                            <div className='cardss'>
-                                                <div className='blogs_img'>
-                                                    <img className='imginnner' src={item?.jetpack_featured_media_url} />
+                                                <div className='cardss'>
+                                                    <div className='blogs_img'>
+                                                        <img className='imginnner' src={item?.jetpack_featured_media_url} />
+                                                    </div>
+                                                    {/* <h1>ARTICLE <span>•</span> <span>{categories[item?.categories[0]]}</span></h1> */}
+                                                    <span>ARTICLE
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                                                <circle cx="1.5" cy="1.62158" r="1.5" fill="#9D9D9D" />
+                                                            </svg></span> <span>{categories[item?.categories[0]]}</span></span>
+                                                    <h3 className="btn-flip">
+                                                        <div className="front">{item?.title?.rendered}</div>
+                                                        <div className="back">{item?.title?.rendered}</div>
+                                                    </h3>
+                                                    <span>{getTimeInAges(item?.date)}</span>
                                                 </div>
-                                                {/* <h1>ARTICLE <span>•</span> <span>{categories[item?.categories[0]]}</span></h1> */}
-                                                <span>ARTICLE
-                                                    <span>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
-                                                            <circle cx="1.5" cy="1.62158" r="1.5" fill="#9D9D9D" />
-                                                        </svg></span> <span>{categories[item?.categories[0]]}</span></span>
-                                                <h3 className="btn-flip">
-                                                    <div className="front">{item?.title?.rendered}</div>
-                                                    <div className="back">{item?.title?.rendered}</div>
-                                                </h3>
-                                                <span>{getTimeInAges(item?.date)}</span>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                </OwlCarousel>
-                            ) : (
-                                // <p>Loading blogs...</p>
-                                <Loader1 />
-                            )}
-                           
+                                            </Link>
+                                        ))}
+                                    </OwlCarousel>
+                                ) : (
+                                    // <p>Loading blogs...</p>
+                                    <Loader1 />
+                                )}
 
-                        </div>
 
+                            </div>
+
+                        )}
+                 
                     </div>
                 </div>
             </section>

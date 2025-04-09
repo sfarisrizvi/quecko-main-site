@@ -7,6 +7,8 @@ import Work from './component/Landing/work'
 import Footer from './component/Landing/footer'
 import Head from 'next/head'
 import axios from 'axios'
+// import emailjs from '@emailjs/browser';
+
 
 const contactusdetail = () => {
 
@@ -36,41 +38,34 @@ const contactusdetail = () => {
         } else if (!regex.name.test(payload.name)) {
             validationErrors.name = "Name must contain only letters and spaces";
         }
-
         if (!payload.email) {
             validationErrors.email = "Email is required";
         } else if (!regex.email.test(payload.email)) {
             validationErrors.email = "Invalid email format";
         }
-
         if (!payload.telegram) {
             validationErrors.telegram = "Telegram is required";
         } else if (!regex.telegram.test(payload.telegram)) {
             validationErrors.telegram = "Telegram must be numeric";
         }
-
+        const cleanedMessage = payload.message.replace(/\s/g, '');
         if (!payload.message) {
             validationErrors.message = "Message is required";
-        } else if (!regex.message.test(payload.message)) {
-            validationErrors.message = "Message must be at least 5 characters";
+        } else if (cleanedMessage.length < 5) {
+            validationErrors.message = "Message must be at least 5 non-space characters";
         }
-
         return validationErrors;
     };
-
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-
-
         const payload = {
             name,
             email,
             message,
             telegram,
+            // time: new Date().toLocaleString(),
         };
-
         const validationErrors = validateForm(payload);
 
         if (Object.keys(validationErrors).length > 0) {
@@ -80,19 +75,22 @@ const contactusdetail = () => {
         }
 
         setErrors({});
-
-
-
         console.log(payload)
         try {
+            // Send email to user using EmailJS
+            // const result = await emailjs.send(
+            //     'service_qr5nkgc',
+            //     'template_1frxkzp',
+            //     payload,
+            //     'S3BtKGfSoUb93s0HO'
+            // );
+            // console.log('Email sent:', result.text);
             await axios.post('/api/submitForm', payload);
             setName('');
             setEmail('');
             setTelegram('');
             setMessage('');
             setSubmitted(true);
-
-
         } catch (error) {
             console.error('Submission error:', error.response?.data || error.message);
         } finally {
@@ -102,6 +100,9 @@ const contactusdetail = () => {
     const handleInputFocus = () => {
         if (submitted) setSubmitted(false);
     };
+
+
+
 
 
     return (

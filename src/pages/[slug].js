@@ -50,6 +50,8 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
     const [allcategories, setallcategories] = useState(initialRelatedBlogs)
     const [index, setIndex] = useState(0)
     const item = blogdetail?.[index] || null;
+    const [isCopied, setIsCopied] = useState(false);
+
 
     const getAllDetails = async () => {
 
@@ -103,6 +105,19 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
             </>
         )
     }
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                setIsCopied(true);   
+                setTimeout(() => {
+                    setIsCopied(false);   
+                }, 1000);
+            })
+            .catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+    };
 
     return (
         <>
@@ -220,13 +235,16 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                         <div>
                                             <p className="para">Share on</p>
                                             <div className="socialicons">
-                                                {/* <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer"> */}
-                                                <div className="imggggfgg">
-                                                <img src="\Assets\copy.svg" alt="Website"  className="img-fluid imgcopyyyy" />
-
+                                               
+                                                <div className="imggggfgg" onClick={copyToClipboard} style={{ cursor: 'pointer' }}>
+                                                    {isCopied ? (
+                                                        <img src="/Assets/check.svg" alt="Copied URL" className="img-fluid imgcopyyyy" />
+                                                    ) : (
+                                                        <img src="/Assets/copy.svg" alt="Copy URL" className="img-fluid imgcopyyyy" 
+                                                         />
+                                                    )}
                                                 </div>
-                                                {/* </a> */}
-
+ 
                                                 <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20this%20out!`}
                                                     target="_blank" rel="noopener noreferrer">
                                                     <img src="/Assets/Frame1.png" alt="Twitter/X" className="img-fluid" />

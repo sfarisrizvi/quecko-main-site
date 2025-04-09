@@ -135,3 +135,10 @@ export const SingleJobwithSlug = async (slug) => {
         return [];
     }
 };
+
+// Service ID
+// service_qr5nkgc
+// Template ID
+// template_1frxkzp
+// Public Key
+// S3BtKGfSoUb93s0HO
