@@ -202,6 +202,50 @@ const Portfolio = () => {
                                         </a>
                                     </div>
 
+                                    <div className='parent_div'>
+                                    <a href='/porfoliodiet'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portdiet.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliogoldenlooni'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\portlooni.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                    <a href='/porfoliooracle'>
+                                        <div className='left_side hovercard'>
+                                            <img src='\Assets\portorcale.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <a href='/porfoliomeme'>
+                                        <div className='right_side hovercard'>
+                                            <img src='\Assets\portmeme.png' className='imgport' />
+                                            <div className='buttons_div'>
+                                                <button>Branding</button>
+                                                <button>Development</button>
+                                                <button>Marketing</button>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
 
 
 
