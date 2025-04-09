@@ -97,44 +97,9 @@ const Stories = () => {
                         <h2>Latest stories from Quecko</h2>
                     </div>
                     <div className='bottom_side'>
-                        {/* ...
-                        <div className="owl_option">
-                            <OwlCarousel
-                                className="owl-theme"
-                                {...owl_option}
-                            >
-                                {blogData?.map((item, index) => {
-
-                                    return (
-                                        <>
-                                            <Link key={index} href={`/blogdetail?slug=${item?.slug}`}>
-                                                <div className='cardss'>
-                                                    <div className='blogs_img'>
-                                                        <img className='imginnner' src={item?.jetpack_featured_media_url} />
-
-                                                    </div>
-                                                    <h1>ARTICLE
-                                                     <span>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
-                                                        <circle cx="1.5" cy="1.62158" r="1.5" fill="#9D9D9D" />
-                                                    </svg></span> <span>{categories[item?.categories[0]]}</span></h1>
-
-                                                    <div className="btn-flip">
-                                                        <div className="front">{item?.title?.rendered}</div>
-                                                        <div className="back">{item?.title?.rendered}</div>
-                                                    </div>
-
-                                                    <h3>{getTimeInAges(item?.date)}</h3>
-                                                </div></Link>
-                                        </>
-                                    )
-                                })}
-
-                            </OwlCarousel>
-                        </div>
-                        ... */}
-                        {/* <Loader1 /> */}
-                        {Loader ? <Loader1/> : (
+                     
+                        
+                         {Loader ? <Loader1/> : (
                             <div className="owl_option">
 
                                 {blogData.length > 0 ? (
@@ -147,8 +112,7 @@ const Stories = () => {
                                                     <div className='blogs_img'>
                                                         <img className='imginnner' src={item?.jetpack_featured_media_url} />
                                                     </div>
-                                                    {/* <h1>ARTICLE <span>•</span> <span>{categories[item?.categories[0]]}</span></h1> */}
-                                                    <span>ARTICLE
+                                                     <span>ARTICLE
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
                                                                 <circle cx="1.5" cy="1.62158" r="1.5" fill="#9D9D9D" />

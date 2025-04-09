@@ -26,7 +26,7 @@ const contactusdetail = () => {
     const regex = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
-        telegram: /^@[A-Za-z0-9_]{5,32}$/, // New Telegram validation regex
+        telegram: /^@[A-Za-z0-9_]{5,32}$/,
         message: /^.{5,}$/,
     };
 
@@ -76,9 +76,7 @@ const contactusdetail = () => {
         }
 
         setErrors({});
-        console.log(payload)
         try {
-            // Send email to user using EmailJS
             const result = await emailjs.send(
                 'service_ppg76cf',
                 'template_bymdrau',
@@ -103,7 +101,6 @@ const contactusdetail = () => {
     };
 
 
-    // Handle Telegram input change and automatically add '@'
     const handleTelegramChange = (e) => {
         let newValue = e.target.value;
         if (newValue && !newValue.startsWith("@")) {
@@ -133,7 +130,7 @@ const contactusdetail = () => {
                     <section className='contact_us_main mycontactus'>
                         <div className='left_siide'>
                             <p>Contact Us</p>
-                            <h2  className='cliiientnew'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
+                            <h2 className='cliiientnew'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
                             </h2>
                             <p>Get in touch</p>
                             <div className='svgs_divv'>
