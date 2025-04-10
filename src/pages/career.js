@@ -4,30 +4,38 @@ import Work from './component/Landing/work'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 import { fetchAllJobs, JobBasedcategory } from '@/Utils/Services/services'
+import JobLoader from '@/hooks/jobloader'
 
 const career = () => {
   const [alljobs, setalljobs] = useState([])
   const [designJobs, setDesignJobs] = useState([]);
   const [developmentJobs, setDevelopmentJobs] = useState([]);
   const [marketingJobs, setMarketingJobs] = useState([]);
+  const [loading, setloading] = useState(false);
+  const [loading1, setloading1] = useState(false);
+
 
 
 
   const getAlljobs = async (id) => {
     try {
+      setloading(true)
       const data = await fetchAllJobs(id)
       setalljobs(data)
-     } catch (error) {
+    } catch (error) {
       console.error(error)
+    } finally {
+      setloading(false)
     }
 
   }
 
   const getSingleJob = async (id) => {
     try {
+      setloading1(true)
       const data = await JobBasedcategory(id)
       setalljobs(data)
- 
+
       if (id === 160) {
         setDesignJobs(data);
       } else if (id === 148) {
@@ -39,6 +47,8 @@ const career = () => {
 
     } catch (error) {
       console.error(error)
+    } finally {
+      setloading1(false)
     }
   }
 
@@ -47,7 +57,7 @@ const career = () => {
   }, [])
 
 
- 
+
 
 
   return (
@@ -76,10 +86,7 @@ const career = () => {
                   onClick={() => getSingleJob(151)}
 
                 >Marketing</button>
-                {/* <button className="nav-link" id="nav-profile1-tab" data-bs-toggle="tab" data-bs-target="#nav-profile1" type="button" role="tab" aria-controls="nav-profile1" aria-selected="false">Research</button>
-                <button className="nav-link" id="nav-contact1-tab" data-bs-toggle="tab" data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">Testing </button>
-                <button className="nav-link " id="nav-home2-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Deployment </button>
-                <button className="nav-link" id="nav-profile2-tab" data-bs-toggle="tab" data-bs-target="#nav-profile2" type="button" role="tab" aria-controls="nav-profile2" aria-selected="false">Feedback</button> */}
+
               </div>
             </nav>
             <div className="tab-content" id="nav-tabContent">
@@ -87,113 +94,121 @@ const career = () => {
               <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 {/* <Link href="/careerdetail"> */}
 
-                <div className='all_tab_Data'>
+                {loading ? <JobLoader /> :
+                  <div className='all_tab_Data'>
 
-                  {alljobs.map((item, index) => (
+                    {alljobs.map((item, index) => (
 
-                    <>
-                      {/* <Link href="/careerdetail"> */}
-                      <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
-                        {/* /blogdetail?slug=${item?.slug} */}
-
-                      {/* <Link key={index} href={`/${item?.slug}`}> */}
+                      <>
+                        {/* <Link href="/careerdetail"> */}
+                        <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
+                          {/* /blogdetail?slug=${item?.slug} */}
 
 
-                        <div className='inner_tab_cards' >
+
+                          <div className='inner_tab_cards' >
+                            <div className='left_side'>
+                              <h2>{item?.title?.rendered}</h2>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: item?.acf?.job_description
+                                    ?.replace(/&#8211;\s*/g, '')
+                                    ?.replace(/–\s*/g, '')
+                                }}
+                              />
+
+
+                              <div className='buttons_innner'>
+                                <button className='full'>Fulltime</button>
+                                <button className='remote'>Remote</button>
+                              </div>
+                            </div>
+                            <div className='right_side'>
+                              {/* <Link href="/careerdetail"> */}
+                              <button>Apply Now</button>
+
+                              {/* </Link> */}
+                            </div>
+                          </div>
+                        </Link>
+                      </>
+
+                    ))}
+
+
+
+
+                  </div>
+                }
+              </div>
+              {/* Design */}
+              <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                {loading1 ? <JobLoader /> : (
+                  <>
+                    {designJobs.map((item, index) => (
+
+                      <div className='all_tab_Data' key={index}>
+                        <div className='inner_tab_cards'>
                           <div className='left_side'>
                             <h2>{item?.title?.rendered}</h2>
-                            {/* <p>{item?.yoast_head_json?.og_description}</p> */}
                             <p
                               dangerouslySetInnerHTML={{
                                 __html: item?.acf?.job_description
                                   ?.replace(/&#8211;\s*/g, '')
                                   ?.replace(/–\s*/g, '')
                               }}
-                            />
-
-
-                            <div className='buttons_innner'>
+                            />                      <div className='buttons_innner'>
                               <button className='full'>Fulltime</button>
                               <button className='remote'>Remote</button>
                             </div>
                           </div>
                           <div className='right_side'>
-                            {/* <Link href="/careerdetail"> */}
-                            <button>Apply Now</button>
+                            <Link href="/careerdetail">
+                              <button>Apply Now</button>
 
-                            {/* </Link> */}
+                            </Link>
                           </div>
                         </div>
-                      </Link>
-                    </>
-
-                  ))}
 
 
-
-
-                </div>
-
-              </div>
-              {/* Design */}
-              <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                {designJobs.map((item, index) => (
-
-                  <div className='all_tab_Data' key={index}>
-                    <div className='inner_tab_cards'>
-                      <div className='left_side'>
-                        <h2>{item?.title?.rendered}</h2>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: item?.acf?.job_description
-                              ?.replace(/&#8211;\s*/g, '')
-                              ?.replace(/–\s*/g, '')
-                          }}
-                        />                      <div className='buttons_innner'>
-                          <button className='full'>Fulltime</button>
-                          <button className='remote'>Remote</button>
-                        </div>
                       </div>
-                      <div className='right_side'>
-                        <Link href="/careerdetail">
-                          <button>Apply Now</button>
-
-                        </Link>
-                      </div>
-                    </div>
-
-
-                  </div>
-                ))}
+                    ))}
+                  </>
+                )}
 
               </div>
               {/* Development */}
               <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">     <div className='all_tab_Data'>
-                {developmentJobs.map((item, index) => (
+                {loading1 ? <JobLoader /> : (
+                  <>
+                    {developmentJobs.map((item, index) => (
 
-                  <div className='inner_tab_cards' key={index}>
-                    <div className='left_side'>
-                      <h2>{item?.title?.rendered}</h2>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: item?.acf?.job_description
-                            ?.replace(/&#8211;\s*/g, '')
-                            ?.replace(/–\s*/g, '')
-                        }}
-                      />
-                      <div className='buttons_innner'>
-                        <button className='full'>Fulltime</button>
-                        <button className='remote'>Remote</button>
+                      <div className='inner_tab_cards' key={index}>
+                        <div className='left_side'>
+                          <h2>{item?.title?.rendered}</h2>
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: item?.acf?.job_description
+                                ?.replace(/&#8211;\s*/g, '')
+                                ?.replace(/–\s*/g, '')
+                            }}
+                          />
+                          <div className='buttons_innner'>
+                            <button className='full'>Fulltime</button>
+                            <button className='remote'>Remote</button>
+                          </div>
+                        </div>
+                        <div className='right_side'>
+                          <Link href="/careerdetail">
+                            <button>Apply Now</button>
+
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                    <div className='right_side'>
-                      <Link href="/careerdetail">
-                        <button>Apply Now</button>
-
-                      </Link>
-                    </div>
-                  </div>
-                ))}
+                    ))}
+                  </>
+                )}
 
 
               </div>
@@ -203,31 +218,34 @@ const career = () => {
                 <div className='all_tab_Data'>
 
 
-                  {marketingJobs.map((item, index) => (
+                  {loading1 ? <JobLoader /> : (
+                    <>
+                      {marketingJobs.map((item, index) => (
 
-                    <div className='inner_tab_cards' key={index}>
-                      <div className='left_side'>
-                        <h2>{item?.title?.rendered}</h2>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: item?.acf?.job_description
-                              ?.replace(/&#8211;\s*/g, '')
-                              ?.replace(/–\s*/g, '')
-                          }}
-                        />
-                        <div className='buttons_innner'>
-                          <button className='full'>Fulltime</button>
-                          <button className='remote'>Remote</button>
+                        <div className='inner_tab_cards' key={index}>
+                          <div className='left_side'>
+                            <h2>{item?.title?.rendered}</h2>
+                            <p
+                              dangerouslySetInnerHTML={{
+                                __html: item?.acf?.job_description
+                                  ?.replace(/&#8211;\s*/g, '')
+                                  ?.replace(/–\s*/g, '')
+                              }}
+                            />
+                            <div className='buttons_innner'>
+                              <button className='full'>Fulltime</button>
+                              <button className='remote'>Remote</button>
+                            </div>
+                          </div>
+                          <div className='right_side'>
+                            <Link href="/careerdetail">
+                              <button>Apply Now</button>
+
+                            </Link>
+                          </div>
                         </div>
-                      </div>
-                      <div className='right_side'>
-                        <Link href="/careerdetail">
-                          <button>Apply Now</button>
-
-                        </Link>
-                      </div>
-                    </div>
-                  ))}
+                      ))}</>
+                  )}
 
 
                 </div>
