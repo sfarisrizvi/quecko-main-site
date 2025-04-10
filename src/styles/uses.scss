@@ -228,6 +228,22 @@
                 border-radius: 20px !important;
                 overflow: hidden !important;
                 padding: 0px !important;
+                position: relative;
+                .imgplay{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 999;
+                }
+               img {
+                filter: grayscale(100%) brightness(100%) contrast(60%);
+                    transition: filter 0.6s ease-in-out;
+                }
+
+                img:hover {
+                    filter: grayscale(0%);
+                }
             }
 
             .cardss {

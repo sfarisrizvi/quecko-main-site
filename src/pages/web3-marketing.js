@@ -47,8 +47,8 @@ const Webmarketing = () => {
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-                                <h2>web3-marketing
-                                </h2>
+                                <span>web3-marketing
+                                </span>
                             </div>
                             <h1 className='mainpara'>Web3 Marketing
                             </h1>

@@ -38,7 +38,7 @@ const Portfolio = () => {
                                 <span>Portfolio</span>
                             </div>
                             <h1 className='mainpara'>Our Portfolio</h1>
-                            <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
+                            <p className='para'>Our portfolio is a reflection of our purpose. Every project we deliver is a building block in the decentralized future we're helping to shape. From blockchain innovations to Web3 ecosystems, we don’t just work on ideas — we bring them to life with precision, passion, and purpose.
 
                             </p>
 
@@ -54,13 +54,13 @@ const Portfolio = () => {
                 <div >
 
                     <nav className='navsectiontabs'>
-                        <span>Filters:</span>
+                        {/* <span>Filters:</span> */}
                         <div className="nav nav-tabs" id="nav-tab" role="tablist">
                             <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
-                            <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Design</button>
-                            <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Development </button>
+                            {/* <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Design</button> */}
+                            <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"> Web3 Development </button>
 
-                            <button className="nav-link " id="nav-home1-tab" data-bs-toggle="tab" data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1" aria-selected="false">Marketing</button>
+                            <button className="nav-link " id="nav-home1-tab" data-bs-toggle="tab" data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1" aria-selected="false"> Web3 Marketing</button>
 
                         </div>
                     </nav>
@@ -74,9 +74,9 @@ const Portfolio = () => {
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portnew.png' className='imgport' />
                                                 <div className='buttons_div'>
-                                                    <button>Branding</button>
+                                                    {/* <button>Branding</button>
                                                     <button>Development</button>
-                                                    <button>Marketing</button>
+                                                    <button>Marketing</button> */}
                                                 </div>
                                             </div>
                                         </a>
@@ -84,9 +84,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port22.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -96,9 +94,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port33.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -106,9 +102,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -118,9 +112,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port55.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -128,9 +120,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port66.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -140,9 +130,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port77.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -150,9 +138,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port88.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -162,9 +148,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port99.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+                                                {/* */}
                                             </div>
                                         </div>
                                         </a>
@@ -172,9 +156,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port101.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -184,9 +166,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port111.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -194,9 +174,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port12.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -207,9 +185,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\portdiet.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -217,9 +193,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\portlooni.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -229,9 +203,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\portorcale.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -239,9 +211,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\portmeme1.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                <button>Development</button>
-                                                <button>Marketing</button>
+
                                             </div>
                                         </div>
                                         </a>
@@ -261,9 +231,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\portnew.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -271,9 +239,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port22.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -283,9 +249,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port33.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -293,9 +257,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -305,9 +267,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port55.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -315,9 +275,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port66.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -327,9 +285,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port77.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -337,9 +293,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port88.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -349,9 +303,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port99.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -359,9 +311,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port101.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -371,9 +321,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port111.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -381,9 +329,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port12.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                <button>Branding</button>
-                                                {/* <button>Development</button>
-                                                <button>Marketing</button> */}
+
                                             </div>
                                         </div>
                                         </a>
@@ -404,9 +350,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\portnew.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -414,9 +358,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port22.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -426,9 +368,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port33.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -436,9 +376,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -448,9 +386,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port55.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
 </a>
@@ -458,9 +394,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port66.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -470,9 +404,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port77.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -480,9 +412,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port88.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -492,9 +422,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port99.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -502,9 +430,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port101.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -514,9 +440,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port111.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>
@@ -524,9 +448,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port12.png' className='imgport' />
                                             <div className='buttons_div'>
-                                                {/* <button>Branding</button> */}
-                                                <button>Development</button>
-                                                {/* <button>Marketing</button> */}
+                                               
                                             </div>
                                         </div>
                                         </a>

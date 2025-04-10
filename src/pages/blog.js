@@ -21,7 +21,7 @@ const Blog = () => {
         }
         catch (error) {
             console.error(error)
-        }finally{
+        } finally {
             setLoading(false)
         }
     }
@@ -29,6 +29,14 @@ const Blog = () => {
     useEffect(() => {
         getAllData();
     }, [])
+    const [showBlogs, setShowBlogs] = useState(false);
+
+    const handleSeeMoreClick = () => {
+        setShowBlogs(true);
+    };
+
+    const [visibleCount, setVisibleCount] = useState(8);
+
     return (
         <>
 
@@ -37,44 +45,79 @@ const Blog = () => {
                 <div className='mainblog'>
 
                     <div className='parentboxxx'>
-                        <div className='left'>
-                            <div className='mainarrowpic'>
-                                <img src='\Assets\arrow.png' alt='img' className='img-fluid innerimg11' />
-                            </div>
-                            <div className='parenttext'>
-                                <div className='twicebtn'>
-                                    <button className="animated-button">
-                                        <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
-                                            <div className="front">Development</div>
-                                            <div className="back">Development</div>
-                                        </div>
-                                    </button>
-                                    <button className="animated-button">
-                                        <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
-                                            <div className="front">Product </div>
-                                            <div className="back">Product</div>
-                                        </div>
-                                    </button>
+                        {blogData?.length >= 1 && (
+
+                            <div className='left'
+                                style={{
+                                    backgroundImage: `url(${blogData[0]?.jetpack_featured_media_url})`,
+                                }}
+                            >
+                                <Link href={`/${blogData[0]?.slug}`}>
+
+                                <div className='mainarrowpic'>
+                                    <img src='\Assets\arrow.png' alt='img' className='img-fluid innerimg11' />
+                                </div>
+                                </Link>
+
+
+                                <div className='parenttext'>
+                                    <div className='twicebtn'>
+                                        <button className="animated-button">
+                                            <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
+                                                <div className="front">Development</div>
+                                                <div className="back">Development</div>
+                                            </div>
+                                        </button>
+                                        <button className="animated-button">
+                                            <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
+                                                <div className="front">Product </div>
+                                                <div className="back">Product</div>
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                    <p className='mainpara'>{blogData[0]?.title?.rendered}</p>
+                                    <p className='para'>{blogData[0]?.excerpt?.rendered?.replace(/<[^>]+>/g, '').slice(0, 120)}...</p>
 
                                 </div>
-                                <p className='mainpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</p>
-                                <p className='para'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-
                             </div>
-                        </div>
+                        )}
                         <div className='right'>
-                            <div className='firstbox'>
-                                <div className='mainarrowpic'>
-                                    <img src='\Assets\arrow.png' alt='img' className='img-fluid innerimg' />
+                            {blogData?.length >= 2 && (
+
+                                <div className='firstbox'
+                                    style={{
+                                        backgroundImage: `url(${blogData[1]?.jetpack_featured_media_url})`,
+                                    }} >
+                                        <Link href={`/${blogData[1]?.slug}`}>
+
+                                    <div className='mainarrowpic'>
+                                        <img src='\Assets\arrow.png' alt='img' className='img-fluid innerimg' />
+                                    </div>
+                                        </Link>
+
+                                    <p className='innerpara'>{blogData[1]?.title?.rendered}</p>
+
                                 </div>
-                                <p className='innerpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</p>
-                            </div>
-                            <div className='secondbox'>
-                                <p className='innerpara'>How to improve your UI design skills: Quickly develop an “eye” for great design</p>
-                                <div className='mainarrowpic'>
-                                    <img src='\Assets\arrow.png' alt='img' className='img-fluid innerimg' />
+ 
+                            )}
+                            {blogData?.length >= 3 && (
+
+                                <div className='secondbox'
+                                    style={{
+                                        backgroundImage: `url(${blogData[2]?.jetpack_featured_media_url})`,
+                                    }} >
+                                    <p className='innerpara'>{blogData[2]?.title?.rendered}</p>
+                                    <Link href={`/${blogData[2]?.slug}`}>
+
+                                    <div className='mainarrowpic'>
+                                        <img src='\Assets\arrow.png' alt='img' className='img-fluid innerimg' />
+                                    </div>
+                                    </Link>
+
                                 </div>
-                            </div>
+                             )}
+
                         </div>
                     </div>
 
@@ -94,11 +137,11 @@ const Blog = () => {
                         </button>
 
                     </div>
-                     {/* <Link href={`/blogdetail?slug=${item?.slug}`}> */}
+                    {/* <Link href={`/blogdetail?slug=${item?.slug}`}> */}
                     {/* <Loader2 /> */}
-              {Loading ? <Loader2/> : (
+                    {/* {Loading ? <Loader2/> : (
                         <div className='parentcardsmain'>
-                            {blogData?.map((item, index) => {
+                            {blogData.slice(0 , 8)?.map((item, index) => {
                                 return (
                                     <>
 
@@ -124,7 +167,7 @@ const Blog = () => {
                         </div>
               )}
 
-                    <Link className='seemore' href='/blogdetail'>
+                    <div className='seemore' href='/blogdetail'>
                         <div className='see_more_botton'>
                             <button className="animated-button filter">
                                 <div className="btn-flip" data-back="Est labore molestiae ex quos perspi sit commodi" data-front="Est labore molestiae ex quos perspi sit commodi">
@@ -134,11 +177,71 @@ const Blog = () => {
                             </button>
                         </div>
 
-                    </Link>
+                    </div> */}
+
+                    {Loading ? <Loader2 /> : (
+                        <>
+                            {Array.from({ length: Math.ceil((visibleCount - 2) / 8) }).map((_, chunkIndex) => {
+                                const start = chunkIndex * 8 + 2;   
+                                const end = start + 8;
+                                const chunk = blogData?.slice(start, end);
+
+                                return (
+                                    <div key={chunkIndex}>
+                                        <div className='parentcardsmain'>
+                                            {chunk.map((item, index) => (
+                                                <Link key={`${chunkIndex}-${index}`} href={`/${item?.slug}`}>
+                                                    <div className='innercard'>
+                                                        <div className='mainimage blogs_img'>
+                                                            <img
+                                                                src={item?.jetpack_featured_media_url}
+                                                                alt='img'
+                                                                className='img-fluid innerimg imginnner'
+                                                            />
+                                                        </div>
+                                                        <span className='upper'>
+                                                            ARTICLE <span><svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
+                                                                <circle cx="1.5" cy="2.32996" r="1.5" fill="#9D9D9D" />
+                                                            </svg></span> <span>{categories[item?.categories[0]]}</span>
+                                                        </span>
+                                                        <h3 className="btn-flip">
+                                                            <div className="front">{item?.title?.rendered}</div>
+                                                            <div className="back">{item?.title?.rendered}</div>
+                                                        </h3>
+                                                        <p className='para'>{getTimeInAges(item?.date)}</p>
+                                                    </div>
+                                                </Link>
+                                            ))}
+                                        </div>
+
+                                        {/* Show See More after every 8 blogs if more exist */}
+                                        {blogData?.length > end && chunkIndex === Math.floor((visibleCount - 1) / 8) && (
+                                            <div className='seemore'>
+                                                <div className='see_more_botton' onClick={() => setVisibleCount(prev => prev + 8)}>
+                                                    <button className="animated-button filter">
+                                                        <div
+                                                            className="btn-flip"
+                                                            data-back="Est labore molestiae ex quos perspi sit commodi"
+                                                            data-front="Est labore molestiae ex quos perspi sit commodi"
+                                                            style={{ marginTop: '12px' }}
+                                                        >
+                                                            <div className="front">See More</div>
+                                                            <div className="back">See More</div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </>
+                    )}
+
 
                 </div>
             </section>
-<Usesdevelopment/>
+            <Usesdevelopment />
             <Work />
             <Footer />
 
