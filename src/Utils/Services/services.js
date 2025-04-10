@@ -6,7 +6,7 @@ const get_all_blogs = `${api_url}posts`
 
 export const getAllBlogs = async () => {
     try {
-        const blogsResponse = await axios.get(`${get_all_blogs}?per_page=8`)
+        const blogsResponse = await axios.get(`${get_all_blogs}?per_page=100`)
         return blogsResponse?.data
     }
     catch (error) {
