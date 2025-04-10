@@ -219,7 +219,7 @@ const Resourcelanding = () => {
 
             </section>
             <Projects />
-            <Usesdevelopment />
+            {/* <Usesdevelopment /> */}
             <Aboutus />
             <Stories />
             <section className='main_faqs_new'>

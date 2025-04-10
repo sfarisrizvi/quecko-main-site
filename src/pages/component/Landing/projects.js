@@ -62,7 +62,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330987/queckosite%20%28new%29/videos/secondright_y5tbso.mp4" type="video/mp4" />
+                                <source src="\Assets\multichainvideo.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
