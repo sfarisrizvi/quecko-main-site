@@ -15,7 +15,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330961/queckosite%20%28new%29/videos/leftone_p1hwor.mp4" type="video/mp4" />
+                                <source src="\Assets\Legion Branding.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -30,7 +30,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330965/queckosite%20%28new%29/videos/rightone_tyoddj.mp4" type="video/mp4" />
+                                <source src="\Assets\Legion Mobile App.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
