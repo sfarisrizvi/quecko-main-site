@@ -10,6 +10,7 @@ import { getTimeInAges } from "@/Utils/helpers"
 import Link from "next/link"
 import { categories } from "@/Utils/constants"
 import Head from "next/head"
+import Loader from "@/hooks/loader"
 
 // Server-side data fetching
 export async function getServerSideProps(context) {
@@ -37,7 +38,7 @@ export async function getServerSideProps(context) {
             props: {
                 initialBlogDetail: [],
                 initialRelatedBlogs: [],
-                slug: slug || null,
+                slug: slug || null,                                                                  
                 error: true,
             },
         }
@@ -51,15 +52,19 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
     const [index, setIndex] = useState(0)
     const item = blogdetail?.[index] || null;
     const [isCopied, setIsCopied] = useState(false);
+    const [loading, setloading] = useState(false)
 
 
     const getAllDetails = async () => {
 
         try {
+            setloading(true)
             const data = await getBlogsdetails(slug)
             setblogdetail(data)
         } catch (error) {
             console.error(error)
+        }finally{
+            setloading(false)
         }
     }
      const getAllcategories = async (id) => {
@@ -90,19 +95,19 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
 
 
 
-    if (!item) {
-        return (
-            <>
-                <Header />
-                <div className="flex items-center justify-center min-h-[50vh]">
-                    <div className="text-center">
-                        <h2 className="text-2xl font-bold mb-4">Loading blog content...</h2>
-                    </div>
-                </div>
-                <Footer />
-            </>
-        )
-    }
+    // if (!item) {
+    //     return (
+    //         <>
+    //             <Header />
+    //             <div className="flex items-center justify-center min-h-[50vh]">
+    //                 <div className="text-center">
+    //                     <h2 className="text-2xl font-bold mb-4">Loading blog content...</h2>
+    //                 </div>
+    //             </div>
+    //             <Footer />
+    //         </>
+    //     )
+    // }
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(window.location.href)
@@ -156,117 +161,120 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                 <Header />
 
                 <>
-                    {item && (
-                        <>
-                            <div className="blogdetail">
-                                <div className="parenttext">
-                                    <div className="twicebtn">
-                                        <button>Development</button>
-                                        <button>Product</button>
-                                    </div>
-                                    <h1 className="mainpara">{item?.title?.rendered}</h1>
-                                    <p className="para">
-                                        <div dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered }} />
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="bottomparent">
-                            <div className="right">
-                                    <div
-                                        className="img_top_Side"
-                                        style={{
-                                            backgroundImage: `url(${item?.jetpack_featured_media_url})`,
-                                        }}
-                                    />
-                                    <div dangerouslySetInnerHTML={{ __html: item?.content?.rendered }} />
-                                </div>
-                                <div className="left">
-                                    <div className="author_Div">
-                                        <h2>Author</h2>
-                                        <div className="details_man">
-                                            <img src={item?.authors?.[0]?.avatar_url?.url} className="menimg_blog" alt="Author" />
-                                            {/* <img src="/Assets/manimg.svg" className="menimg_blog" alt="Author" /> */}
-
-                                            <div>
-                                                <h3>{item?.authors?.[0]?.display_name || "Unknown Author"}</h3>
-
-                                                <span>
-                                                    {item?.authors?.[0]?.job_title || "No description available"}
-
-                                                </span>
+                 {loading ? <Loader/> : (
+                    <> 
+                            {item && (
+                                <>
+                                    <div className="blogdetail">
+                                        <div className="parenttext">
+                                            <div className="twicebtn">
+                                                <button>Development</button>
+                                                <button>Product</button>
                                             </div>
-                                        </div>
-                                        <p
-                                            className="truncate-text"
-                                            dangerouslySetInnerHTML={{ __html: item?.authors?.[0]?.description }}
-                                        />
-                                        <div className="socialicons">
-                                            {item?.authors?.[0]?.linkedinl && (
-                                                <a href={item?.authors?.[0]?.linkedin} target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame.png" alt="social icon" className="img-fluid" />
-                                                </a>
-                                            )}
-                                            {item?.authors?.[0]?.twitter && (
-                                                <a href={item?.authors?.[0]?.twitter} target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame1.png" alt="social icon" className="img-fluid" />
-                                                </a>
-                                            )}
-                                            {item?.authors?.[0]?.user_url && (
-                                                <a href={item?.authors?.[0]?.user_url} target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame2.png" alt="social icon" className="img-fluid" />
-                                                </a>
-                                            )}
-                                            {item?.authors?.[0]?.facebook && (
-                                                <a href={item?.authors?.[0]?.facebook} target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame3.png" alt="social icon" className="img-fluid" />
-                                                </a>
-                                            )}
+                                            <h1 className="mainpara">{item?.title?.rendered}</h1>
+                                            <p className="para">
+                                                <div dangerouslySetInnerHTML={{ __html: item?.excerpt?.rendered }} />
+                                            </p>
                                         </div>
                                     </div>
-                                    <div className="top_date_div">
-                                        <div className="date_side_div">
-                                            <p>Date</p>
-                                            <span>{getTimeInAges(item?.date)}</span>
-                                        </div>
 
-                                        <div>
-                                            <p className="para">Share on</p>
-                                            <div className="socialicons">
-                                               
-                                                <div className="imggggfgg" onClick={copyToClipboard} style={{ cursor: 'pointer' }}>
-                                                    {isCopied ? (
-                                                        <img src="/Assets/check.svg" alt="Copied URL" className="img-fluid imgcopyyyy" />
-                                                    ) : (
-                                                        <img src="/Assets/copy.svg" alt="Copy URL" className="img-fluid imgcopyyyy" 
-                                                         />
+                                    <div className="bottomparent">
+                                        <div className="right">
+                                            <div
+                                                className="img_top_Side"
+                                                style={{
+                                                    backgroundImage: `url(${item?.jetpack_featured_media_url})`,
+                                                }}
+                                            />
+                                            <div dangerouslySetInnerHTML={{ __html: item?.content?.rendered }} />
+                                        </div>
+                                        <div className="left">
+                                            <div className="author_Div">
+                                                <h2>Author</h2>
+                                                <div className="details_man">
+                                                    <img src={item?.authors?.[0]?.avatar_url?.url} className="menimg_blog" alt="Author" />
+                                                    {/* <img src="/Assets/manimg.svg" className="menimg_blog" alt="Author" /> */}
+
+                                                    <div>
+                                                        <h3>{item?.authors?.[0]?.display_name || "Unknown Author"}</h3>
+
+                                                        <span>
+                                                            {item?.authors?.[0]?.job_title || "No description available"}
+
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p
+                                                    className="truncate-text"
+                                                    dangerouslySetInnerHTML={{ __html: item?.authors?.[0]?.description }}
+                                                />
+                                                <div className="socialicons">
+                                                    {item?.authors?.[0]?.linkedinl && (
+                                                        <a href={item?.authors?.[0]?.linkedin} target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame.png" alt="social icon" className="img-fluid" />
+                                                        </a>
+                                                    )}
+                                                    {item?.authors?.[0]?.twitter && (
+                                                        <a href={item?.authors?.[0]?.twitter} target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame1.png" alt="social icon" className="img-fluid" />
+                                                        </a>
+                                                    )}
+                                                    {item?.authors?.[0]?.user_url && (
+                                                        <a href={item?.authors?.[0]?.user_url} target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame2.png" alt="social icon" className="img-fluid" />
+                                                        </a>
+                                                    )}
+                                                    {item?.authors?.[0]?.facebook && (
+                                                        <a href={item?.authors?.[0]?.facebook} target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame3.png" alt="social icon" className="img-fluid" />
+                                                        </a>
                                                     )}
                                                 </div>
- 
-                                                <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20this%20out!`}
-                                                    target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame1.png" alt="Twitter/X" className="img-fluid" />
-                                                </a>
+                                            </div>
+                                            <div className="top_date_div">
+                                                <div className="date_side_div">
+                                                    <p>Date</p>
+                                                    <span>{getTimeInAges(item?.date)}</span>
+                                                </div>
 
-                                                <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}`}
-                                                    target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame2.png" alt="LinkedIn" className="img-fluid" />
-                                                </a>
+                                                <div>
+                                                    <p className="para">Share on</p>
+                                                    <div className="socialicons">
 
-                                                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
-                                                    target="_blank" rel="noopener noreferrer">
-                                                    <img src="/Assets/Frame3.png" alt="Facebook" className="img-fluid" />
-                                                </a>
+                                                        <div className="imggggfgg" onClick={copyToClipboard} style={{ cursor: 'pointer' }}>
+                                                            {isCopied ? (
+                                                                <img src="/Assets/check.svg" alt="Copied URL" className="img-fluid imgcopyyyy" />
+                                                            ) : (
+                                                                <img src="/Assets/copy.svg" alt="Copy URL" className="img-fluid imgcopyyyy"
+                                                                />
+                                                            )}
+                                                        </div>
+
+                                                        <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20this%20out!`}
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame1.png" alt="Twitter/X" className="img-fluid" />
+                                                        </a>
+
+                                                        <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}`}
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame2.png" alt="LinkedIn" className="img-fluid" />
+                                                        </a>
+
+                                                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <img src="/Assets/Frame3.png" alt="Facebook" className="img-fluid" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
 
+
                                     </div>
-                                </div>
-
-
-                            </div>
-                        </>
-                    )}
+                                </>
+                            )}</>
+                 )}
                 </>
 
                 <div className="latestblogmain">
