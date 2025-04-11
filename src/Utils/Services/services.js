@@ -39,8 +39,7 @@ export const RelatedBlogs = async (id) => {
 
 
 
-// Fetch all jobs
-export const fetchAllJobs = async () => {
+ export const fetchAllJobs = async () => {
     try {
         const response = await axios.get(`${BASE_URL}/job?per_page=100`);
         return response?.data;
@@ -72,9 +71,14 @@ export const SingleJobwithSlug = async (slug) => {
     }
 };
 
-// Service ID
-// service_qr5nkgc
-// Template ID
-// template_1frxkzp
-// Public Key
-// S3BtKGfSoUb93s0HO
+
+export const blogcategories = async () => {
+    try {
+        const response = await axios.get(`${BASE_URL}/posts?categories=161`);
+        return response?.data;
+    } catch (error) {
+        console.error("Error fetching all jobs:", error);
+        return [];
+    }
+};
+ 
