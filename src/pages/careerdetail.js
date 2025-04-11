@@ -4,6 +4,7 @@ import Work from './component/Landing/work'
 import Footer from './component/Landing/footer'
 import { SingleJobwithSlug } from '@/Utils/Services/services'
 import { useRouter } from 'next/router';
+import Loader from '@/hooks/loader'
 
 const careerdetail = () => {
     const router = useRouter();
@@ -31,7 +32,7 @@ const careerdetail = () => {
     }, [slug]);
 
     if (!Data) {
-        return <div>Loading...</div>;
+        return <Loader/>;
     }
 
 
