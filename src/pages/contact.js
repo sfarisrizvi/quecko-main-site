@@ -159,7 +159,7 @@ const contactusdetail = () => {
                                         <p>+971-50-740-0268</p>
                                     </div>
                                     </a>
-                                    <a href="tel:+971507400268" target='blank'>
+                                    <a href="t.me/971507400268" target='blank'>
                                     <div className='projectss_runs'>
                                         <img className='telegramimg' src='\Assets\telegram.svg'/>
                                         <p>+971-50-740-0268</p>

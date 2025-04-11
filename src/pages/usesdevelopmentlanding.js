@@ -65,7 +65,7 @@ const Usesdevelopmentlanding = () => {
                 <div className='inner_bloggs'>
                     <div className='textual_div new_texxxt_div'>
                         <span className='story_div'>Quecko Stories</span>
-                        <h2>Quecko Stories</h2>
+                        <h2>Quecko Studio</h2>
                     </div>
                     <div className='bottom_side'>
                         <div className="owl_option">
@@ -88,7 +88,7 @@ const Usesdevelopmentlanding = () => {
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg1.png' />
+                                    <img src='\Assets\videoimg1.png'  className='img_cardsse_new'/>
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/qFUpxw1mcYk' target='blank'>
@@ -104,7 +104,7 @@ const Usesdevelopmentlanding = () => {
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg2.png' />
+                                    <img src='\Assets\videoimg2.png' className='img_cardsse_new' />
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='
@@ -121,7 +121,7 @@ https://www.youtube.com/shorts/hW7STeucGts' target='blank'>
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg3.png' />
+                                    <img src='\Assets\videoimg3.png' className='img_cardsse_new' />
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='
@@ -138,7 +138,7 @@ https://www.youtube.com/shorts/Sac7lR3x_So' target='blank'>
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg4.png' />
+                                    <img src='\Assets\videoimg4.png'  className='img_cardsse_new'/>
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='
@@ -155,7 +155,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg5.png' />
+                                    <img src='\Assets\videoimg5.png'  className='img_cardsse_new'/>
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/gXBVxw1i7bY' target='blank'>
@@ -171,7 +171,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg6.png' />
+                                    <img src='\Assets\videoimg6.png'  className='img_cardsse_new'/>
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/dzBMQoZmCNQ' target='blank'>
@@ -187,7 +187,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg7.png' />
+                                    <img src='\Assets\videoimg7.png' className='img_cardsse_new' />
                                 </div>
                                 <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/10Cfa9ZmkJs' target='blank'>
@@ -203,7 +203,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                         </defs>
                                     </svg>
                                     </a>
-                                    <img src='\Assets\videoimg8.png' />
+                                    <img src='\Assets\videoimg8.png'  className='img_cardsse_new'/>
                                 </div>
                             </OwlCarousel>
                         </div>
