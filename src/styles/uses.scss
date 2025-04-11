@@ -1144,6 +1144,389 @@
             gap: 0.9375vw;
         }
     }
+    .uses_divv {
+        padding: 1.875vw 0 1.875vw 1.25vw;
+
+        .imginnner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+            border-radius: 1.25vw;
+            border: 0.0625vw solid #F0F0F0;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .blogs_img {
+            overflow: hidden;
+            border-radius: 1.25vw;
+        }
+
+        .inner_bloggs {
+            padding: 1.875vw 0 1.875vw 1.875vw;
+
+            .textual_div {
+                .story_div {
+                    color: #9D9D9D;
+                    font-size: 1vw;
+                    font-weight: 500;
+                    line-height: 1.3;
+                    text-transform: uppercase;
+                }
+
+                h2 {
+                    color: #000;
+                    font-size: 3.875vw;
+                    font-weight: 400;
+                    line-height: 1;
+                    padding-top: 0.625vw;
+                    width: 50.69vw;
+                    margin-bottom: 3.125vw;
+                }
+            }
+
+            .new_texxxt_div {
+                h2 {
+                    margin-bottom: 1vw;
+                }
+
+                p {
+                    width: 39.94vw;
+                    color: #000;
+                    font-size: 1vw;
+                    font-weight: 400;
+                    line-height: 1.3;
+                    margin-bottom: 3.125vw;
+                }
+            }
+
+            .bottom_side {
+                .owl-theme .owl-nav {
+                    margin-top: 0.625vw;
+                    position: absolute;
+                    top: -5.625vw;
+                    right: 3.75vw;
+                }
+
+                .owl-theme .owl-nav [class*='owl-']:hover {
+                    background: unset !important;
+                    color: #FFF;
+                    text-decoration: none;
+                }
+
+                .cardss {
+                    overflow: hidden;
+
+                    h1 {
+                        color: #9D9D9D;
+                        font-size: 0.75vw;
+                        font-weight: 500;
+                        margin-top: 1.25vw;
+                        gap: 0.625vw;
+                    }
+
+                    h2 {
+                        color: #000;
+                        font-size: 1.125vw;
+                        font-weight: 400;
+                        margin-top: 0.9375vw;
+                        margin-bottom: 0.625vw;
+                    }
+
+                    $speed: 0.7s;
+
+                    .btn-flip {
+                        color: #000;
+                        font-size: 1.125vw;
+                        font-weight: 400;
+                        width: 100%;
+                        height: 3vw;
+                        perspective: 62.5vw;
+                        padding-left: 0 !important;
+                    }
+
+                    .front,
+                    .back {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: hidden;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        padding: 0.9375vw 0 0.625vw 0.9375vw;
+                        transition: transform 0.6s, opacity 0.6s;
+                    }
+
+                    .front {
+                        background: transparent;
+                        color: #000;
+                    }
+
+                    .back {
+                        background: transparent;
+                        color: #000;
+                        transform: translateY(50%) rotateX(90deg);
+                        opacity: 0;
+                    }
+
+                    p {
+                        color: #838383;
+                        font-size: 0.75vw;
+                        font-weight: 400;
+                    }
+
+                    .imginnner {
+                        border-radius: 1.25vw;
+                    }
+
+                    &:hover {
+                        .btn-flip .front {
+                            opacity: 0;
+                            transform: translateY(-50%) rotateX(-90deg);
+                        }
+
+                        .btn-flip .back {
+                            opacity: 1;
+                            transform: translateY(0) rotateX(0);
+                        }
+
+                        .imginnner {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .new_cardss,
+                .new_cardss11 {
+                    border: unset !important;
+                    height: 20.75vw !important;
+                    border-radius: 1.25vw !important;
+                    overflow: hidden !important;
+                    padding: 0 !important;
+                    position: relative;
+
+                    .imgplay {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 999;
+                    }
+
+                    img {
+                        filter: grayscale(100%) brightness(100%) contrast(60%);
+                        transition: filter 0.6s ease-in-out;
+                    }
+
+                    img:hover {
+                        filter: grayscale(0%);
+                    }
+                }
+
+                .cardss {
+                    border-radius: 1.875vw;
+                    border: 0.0625vw solid #F1F1F1;
+                    background: #FFF;
+                    padding: 0.625vw 0.625vw 1.875vw 0.625vw;
+                    height: 29.75vw;
+
+                    h1 {
+                        font-size: 1.25vw;
+                        margin-top: 1.25vw;
+                        margin-bottom: 0.75vw;
+                        padding: 0 0.9375vw;
+                    }
+
+                    h2 {
+                        font-size: 1.125vw;
+                        margin-top: 0.9375vw;
+                        margin-bottom: 0.625vw;
+                    }
+
+                    h3 {
+                        color: #616161;
+                        font-size: 0.875vw;
+                        padding-top: 0.625vw;
+                        padding: 0 0.9375vw;
+                    }
+
+                    .imginnner {
+                        height: 15.5vw;
+                        border-radius: 1.25vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .partner_side {
+        padding: 1.875vw 3.125vw 3.75vw 3.125vw;
+
+        .inner_partners {
+            p {
+                font-size: 1vw;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .partnerss {
+                font-size: 5vw;
+                text-align: center;
+                padding-top: 1vw;
+            }
+
+            .cards_partners {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.25vw;
+                margin-top: 3.125vw;
+
+                .imgs_tabs {
+                    display: flex;
+                    height: 6.4375vw;
+                    padding: 1.625vw 2.75vw;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0.9375vw;
+                    background: #F4F4F4;
+                }
+            }
+        }
+    }
+
+    .contact_us_main {
+        padding: 3.125vw;
+        background: #F4F4F4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left_siide {
+            p {
+                font-size: 1vw;
+                text-transform: uppercase;
+            }
+
+            .cliiient {
+                font-size: 4.375vw;
+                padding: 1vw 0 1.875vw 0;
+            }
+
+            .cliiientnew {
+                font-size: 1.875vw;
+                width: 34.375vw !important;
+                padding-bottom: 1.875vw;
+            }
+
+            .spantextt {
+                font-size: 1.375vw !important;
+                width: 39.06vw !important;
+                padding-bottom: 0.9375vw;
+            }
+
+            span {
+                font-size: 0.875vw;
+                margin-top: 1.875vw;
+                padding-bottom: 0.625vw;
+            }
+
+            .svgs_divv {
+                display: flex;
+                align-items: center;
+                gap: 0.6875vw;
+            }
+        }
+
+        .right_sidde {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9375vw;
+
+            .button_div {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 2.1875vw;
+
+                button {
+                    font-size: 1vw;
+                    padding: 1.3125vw 2vw;
+                    border-radius: 9.375vw;
+                }
+            }
+
+            input,
+            textarea {
+                padding: 1.25vw 1.375vw;
+                border-radius: 0.9375vw;
+                font-size: 1vw;
+            }
+
+            ::placeholder {
+                font-size: 1vw;
+            }
+        }
+    }
+
+    .how_its_works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 4.6875vw;
+
+        .workss_div {
+            font-size: 3.125vw;
+        }
+
+        h3 {
+            font-size: 1.125vw;
+            padding: 1.875vw 0 0.625vw 0;
+        }
+
+        p {
+            font-size: 0.875vw;
+        }
+
+        .works_cards {
+            padding: 1.875vw;
+            border-radius: 1.875vw;
+            background: #F4F4F4;
+
+            &:hover {
+                background: #FFF;
+                box-shadow: 0 0.125vw 0.625vw rgba(0, 0, 0, 0.06);
+            }
+        }
+
+        .works_cards_mains {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9375vw;
+        }
+    }
+
+    .videos_youtube {
+        width: 100%;
+        height: 100%;
+    }
+
+    .errror_mssg {
+        display: flex;
+        align-items: flex-start;
+        font-size: 0.75vw;
+        padding-left: 0.625vw;
+    }
+.new_cardss11{
+    .img_cardsse_new {
+        height: 21.19vw !important;
+    }
+}
+
+
 }
 .videos_youtube{
     width: 100%;
@@ -1155,4 +1538,7 @@
     text-align: start;
     font-size: 12px;
     padding-left: 10px;
+}
+.img_cardsse_new{
+    height: 339px !important;
 }
