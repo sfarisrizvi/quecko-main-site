@@ -3,16 +3,20 @@ import React, { useEffect, useState } from 'react'
 import Header from './component/Landing/header'
 import Work from './component/Landing/work'
 import Footer from './component/Landing/footer'
-import { getAllBlogs } from '@/Utils/Services/services'
+import { blogcategories, getAllBlogs } from '@/Utils/Services/services'
 import { categories } from '@/Utils/constants'
 import { getTimeInAges } from '@/Utils/helpers'
 import Loader2 from '@/hooks/loader2'
 import Usesdevelopment from './usesdevelopment'
 import BlogFeatured from '@/hooks/blog-featured'
-import axios from 'axios'
-const Blog = () => {
+ const Blog = () => {
     const [blogData, setBlogData] = useState([]);
     const [Loading, setLoading] = useState(false)
+    const [visibleCount, setVisibleCount] = useState(8);
+    const [posts, setPosts] = useState([]);
+ 
+
+
     
  
 
@@ -29,31 +33,29 @@ const Blog = () => {
         }
     }
 
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        axios.get('https://dev.quecko.com/wp-json/wp/v2/posts?categories=161')
-            .then(response => {
-                console.log("API Response:", response.data);  
-                setPosts(response.data);
-            })
-            .catch(error => {
-                console.error('Error fetching posts:', error);
-            });
-    }, []);
 
 
+    const getPosts = async () => {
+        try {
+            const response = await blogcategories();
+ 
+            setPosts(response);
+            
+        } catch (error) {
+            console.error(error)
+
+        }
+    }
+
+    
  
     useEffect(() => {
+        getPosts()
+
         getAllData();
     }, [])
-    const [showBlogs, setShowBlogs] = useState(false);
 
-    const handleSeeMoreClick = () => {
-        setShowBlogs(true);
-    };
-
-    const [visibleCount, setVisibleCount] = useState(8);
+    
 
     return (
         <>
