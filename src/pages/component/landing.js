@@ -13,6 +13,7 @@ import Work from "./Landing/work";
 import Footer from "./Landing/footer";
 import Header from "./Landing/header";
 import { useRouter } from "next/router";
+import Usesdevelopmentlanding from "../usesdevelopmentlanding";
 
 const FadeInSection = ({ children, disableAnimation = false }) => {
   const controls = useAnimation();
@@ -37,7 +38,7 @@ const FadeInSection = ({ children, disableAnimation = false }) => {
   }, [controls, inView, disableAnimation]);
 
   return disableAnimation ? (
-    <div ref={ref} style={{ marginBottom: "4rem" }}>{children}</div> 
+    <div ref={ref} style={{ marginBottom: "4rem" }}>{children}</div>
   ) : (
     <motion.div
       ref={ref}
@@ -81,7 +82,7 @@ const Landing = () => {
   }, [router.query.section]);
 
   const sections = [
-    <FadeInSection disableAnimation={true}><Banner /></FadeInSection>, 
+    <FadeInSection disableAnimation={true}><Banner /></FadeInSection>,
     <div ref={sectionRefs.services}>
       <FadeInSection><Services /></FadeInSection>
     </div>,
@@ -94,6 +95,9 @@ const Landing = () => {
     <div ref={sectionRefs.stories}>
       <FadeInSection><Stories /></FadeInSection>
     </div>,
+        <div ref={sectionRefs.usesdevelopmentlanding}>
+        <FadeInSection><Usesdevelopmentlanding /></FadeInSection>
+      </div>,
     <div ref={sectionRefs.faqs}>
       <FadeInSection><Faqs /></FadeInSection>
     </div>,

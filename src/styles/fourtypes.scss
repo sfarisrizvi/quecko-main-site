@@ -1329,6 +1329,7 @@
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 13px;
+        width: 90%;
         margin-top: 30px;
 
         .projectss_runs {
@@ -1338,6 +1339,7 @@
             display: flex;
             align-items: flex-start;
             flex-direction: column;
+            width: 100%;
 
         p {
             color: #000;
@@ -1345,6 +1347,7 @@
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
+            text-transform: capitalize;
             line-height: 100%;
             margin-top: 0px !important;
             /* 14px */
@@ -1361,4 +1364,8 @@
     align-items: center;
     gap: 10px;
     margin-top: 30px;
+}
+.telegramimg{
+    width: 26px;
+    height: 25px;
 }
