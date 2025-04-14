@@ -9,28 +9,18 @@ import { getTimeInAges } from '@/Utils/helpers'
 import Loader2 from '@/hooks/loader2'
 import Usesdevelopment from './usesdevelopment'
 import BlogFeatured from '@/hooks/blog-featured'
- const Blog = () => {
+import Head from 'next/head'
+const Blog = () => {
     const [blogData, setBlogData] = useState([]);
     const [Loading, setLoading] = useState(false)
     const [visibleCount, setVisibleCount] = useState(8);
     const [posts, setPosts] = useState([]);
- 
-     useEffect(() => {
-         const canonicalUrl = window.location.origin + window.location.pathname;
-         let link = document.querySelector("link[rel='canonical']");
-
-         if (!link) {
-             link = document.createElement("link");
-             link.setAttribute("rel", "canonical");
-             document.head.appendChild(link);
-         }
-
-         link.setAttribute("href", canonicalUrl);
-     }, []);
 
 
-    
- 
+
+
+
+
 
     const getAllData = async () => {
         try {
@@ -50,31 +40,50 @@ import BlogFeatured from '@/hooks/blog-featured'
     const getPosts = async () => {
         try {
             const response = await blogcategories();
- 
+
             setPosts(response);
-            
+
         } catch (error) {
             console.error(error)
 
         }
     }
 
-    
- 
+
+
     useEffect(() => {
         getPosts()
 
         getAllData();
     }, [])
 
-    
+
 
     return (
         <>
 
+            <Head>
+                <title>Blog - Quecko</title>
+                <meta property="og:title" content="About Us - Quecko" />
+                <meta
+                    property="og:description"
+                    content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
+                />
+                <meta property="og:url" content="https://quecko.com/about-us/" />
+                <link
+                    rel="canonical"
+                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+                />
+                <meta name="publisher" content="Quecko" />
+                <meta name="robots" content="index, follow" />
+
+            </Head>
+
+
+
             <section className='parentblogss'>
                 <Header />
-             {Loading ? <BlogFeatured/> : (
+                {Loading ? <BlogFeatured /> : (
                     <div className='mainblog'>
 
                         <div className='parentboxxx'>
@@ -159,7 +168,7 @@ import BlogFeatured from '@/hooks/blog-featured'
                         </div>
 
                     </div>
-             )} 
+                )}
                 <div className='latestblogmain'>
                     <div className='upperhead'>
                         <h1>Latest Blogs</h1>
@@ -175,11 +184,11 @@ import BlogFeatured from '@/hooks/blog-featured'
                         </button>
 
                     </div>
-                 
+
                     {Loading ? <Loader2 /> : (
                         <>
                             {Array.from({ length: Math.ceil((visibleCount) / 8) }).map((_, chunkIndex) => {
-                                const start = chunkIndex * 8 ;   
+                                const start = chunkIndex * 8;
                                 const end = start + 8;
                                 const chunk = blogData?.slice(start, end);
 

@@ -1,13 +1,13 @@
 import "@/styles/app.scss";
 import Head from "next/head";
-import Script from "next/script";
-import useLenisGsap from "@/hooks/useLenis";
-import { AnimatePresence } from "framer-motion";
-import PageTransition from "@/hooks/PageTransition";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import TawkTo from "./component/Tawkto";
-import Loader from "@/hooks/loader";
+import Script from 'next/script';
+import useLenisGsap from '@/hooks/useLenis';
+import { AnimatePresence } from 'framer-motion';
+import PageTransition from '@/hooks/PageTransition';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import TawkTo from './component/Tawkto';
+import Loader from '@/hooks/loader';
 
 export default function App({ Component, pageProps }) {
   useLenisGsap();
@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
     };
 
 
-  const allImages = document.querySelectorAll("img");
+    const allImages = document.querySelectorAll("img");
     let loadedImages = 0;
     if (allImages.length === 0) {
       imagesLoaded = true;
@@ -48,6 +48,7 @@ export default function App({ Component, pageProps }) {
         };
       });
     }
+
 
     const allVideos = document.querySelectorAll("video");
     let loadedVideos = 0;
@@ -66,10 +67,12 @@ export default function App({ Component, pageProps }) {
       });
     }
 
+
     setTimeout(() => {
       stylesLoaded = true;
       checkAllLoaded();
     }, minLoaderTime);
+
 
     setTimeout(() => {
       setLoading(false);
@@ -85,6 +88,7 @@ export default function App({ Component, pageProps }) {
     const handleRouteChange = (url) => {
       const urlParams = new URLSearchParams(url.split("?")[1]);
       const section = urlParams.get("section");
+
 
       if (!section) {
         setTimeout(() => {
@@ -113,6 +117,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="Quecko Inc. delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
         />
+        {/* <link rel="canonical" href="https://quecko.com/" /> */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Quecko - Leading the Blockchain Revolution with Innovative Solutions" />
@@ -124,10 +129,41 @@ export default function App({ Component, pageProps }) {
         <meta property="og:site_name" content="Quecko" />
         <meta property="article:publisher" content="https://www.facebook.com/QueckoInc" />
         <meta property="article:modified_time" content="2024-12-18T06:17:39+00:00" />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/drt6vurtt/image/upload/c_pad,w_500/v1742572273/queckosite%20%28new%29/images/Untitled-1_rshcle.png"
-        />
+        <meta property="og:image" content="https://res.cloudinary.com/drt6vurtt/image/upload/c_pad,w_500/v1742572273/queckosite%20%28new%29/images/Untitled-1_rshcle.png" />
+
+     
+        <script type="application/ld+json">
+          {`
+            "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Quecko",
+          "url": "https://quecko.com/",
+          "logo": "	https://www.quecko.com/Assets/navlogo.svg",
+          "description": "Quecko is a creative agency offering full-stack Web3 marketing, development, and design solutions for blockchain projects across the globe.",
+          "founder": {
+            "@type": "Person",
+          "name": "Alee Abbasi",
+          "jobTitle": "Founder & CEO",
+          "sameAs": [
+          "https://www.linkedin.com/in/alee-abbasi-32183069",
+          ]
+  },
+          "sameAs": [
+          "https://www.linkedin.com/company/quecko.web3",
+          "https://www.instagram.com/quecko.web3",
+          "https://twitter.com/@quecko_web3"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+          "telephone": "+971-50-740-0268",
+          "contactType": "Sales & Business",
+          "email": "info@quecko.com",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English", "Urdu"]
+  },
+
+ `}
+        </script>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Quecko - Leading the Blockchain Revolution with Innovative Solutions" />
@@ -147,6 +183,34 @@ export default function App({ Component, pageProps }) {
           href="https://db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik+Regular"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){
+              c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "qq5oixz9lv");`,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5NTG2D3Z');`,
+          }}
+        />
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5NTG2D3Z"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
+
       </Head>
 
       <AnimatePresence mode="wait">
@@ -163,5 +227,7 @@ export default function App({ Component, pageProps }) {
         crossOrigin="anonymous"
       />
     </>
+
   );
 }
+

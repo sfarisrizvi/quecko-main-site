@@ -26,8 +26,7 @@ const contactusdetail = () => {
     const regex = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
-        // telegram: /^@[A-Za-z0-9_]{5,32}$/,
-        message: /^.{5,}$/,
+         message: /^.{5,}$/,
     };
 
     const validateForm = (payload) => {
@@ -43,11 +42,7 @@ const contactusdetail = () => {
         } else if (!regex.email.test(payload.email)) {
             validationErrors.email = "Invalid email format";
         }
-        // if (!payload.telegram) {
-        //     validationErrors.telegram = "Telegram is required";
-        // } else if (!regex.telegram.test(payload.telegram)) {
-        //     validationErrors.telegram = "Invalid Telegram username format. It should start with '@' and contain 5-32 characters (letters, numbers, or underscores).";
-        // }
+       
 
         const cleanedMessage = payload.message.replace(/\s/g, '');
         if (!payload.message) {
@@ -122,7 +117,18 @@ const contactusdetail = () => {
                     content="Get in touch with Quecko for inquiries, support, or collaborations. We're here to help!"
                 />
                 <meta property="og:url" content="https://quecko.com/contact/" />
-                <link rel="canonical" href="https://quecko.com/contact/" />
+                     
+                    <meta property="og:url" content="https://quecko.com/about-us/" />
+                    <link
+                        rel="canonical"
+                        href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+                    />
+                    <meta name="publisher" content="Quecko" />
+                    <meta name="robots" content="index, follow" />
+
+ 
+
+
             </Head>
             <Header />
             <div className='detailss_page'>
