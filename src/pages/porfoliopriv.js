@@ -9,14 +9,19 @@ const porfoliopriv = () => {
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>
                     <div className='first_side'>
+                        <div>
                         <h1>Privacy Protocol
 
-                        </h1>
+</h1>
+<p className='modullar_ptag'>Modular Zero-Knowledge Privacy Layer for EVM Chains
+</p>
+                        </div>
+
                         <button>Live Preview <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M17.5 10L13.3333 5.83333M17.5 10L13.3333 14.1667M17.5 10H2.5" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></button>
                     </div>
-                    <div className='services_sidess'>
+                    {/* <div className='services_sidess'>
                         <p>Services</p>
                         <div className='inner_sidessd'>
                             <span>UI/UX Design</span>
@@ -26,105 +31,120 @@ const porfoliopriv = () => {
                             <span>Tokenomics</span>
                             <span>Customer Service</span>
                         </div>
+                    </div> */}
+                        <div className='img_first'>
+                        <img src='\Assets\pri11.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>
-                            <h3>Challenge</h3>
-                            <p>Develop an intuitive system that bridges the gap between secure cryptographic techniques and private blockchain interaction. The goal was to overcome the complexities of data privacy by creating a platform that offers both high-level security and a control over the user's data.
+
+                            <p>Our Privacy Protocol is designed to enhance transactional discretion on Ethereum-compatible networks. By integrating cutting-edge cryptography and custom smart contract logic, it enables users to interact with
                             </p>
                         </div>
                         <div>
-                            <h3>Project Overview</h3>
-                            <p>Privacy Protocol is a De-Fi platform that empowers users with unmatched control over their personal data through selective transparency and advanced zero-knowledge technology. The platform enables users to manage and share their digital assets while maintaining complete privacy. Seamlessly integrating with Ethereum dApps, Privacy Protocol redefines data ownership in the blockchain era.
+
+                            <p>decentralized applications without exposing sensitive asset or wallet details. This framework ensures smooth interoperability with the existing Ethereum ecosystem while putting privacy and control back into the hands of users.
+
                             </p>
                         </div>
                     </div>
-                    <div className='img_first'>
-                        <img src='\Assets\pri1.png' className='imgggs' />
-                    </div>
+
                     <div className='goals_sidee'>
                         <div className='inner_goal'>
-                            <h2>Project Goal</h2>
-                            <p>The goal was to build a secure data management ecosystem that puts user privacy and control first. By combining state-of-the-art cryptographic protocols with an engaging design, we aimed for building trust and driving mass adoption within the blockchain community, positioning Privacy Protocol as the go-to solution for secure digital identity management.</p>
+                            <h2>Core Modules</h2>
+
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\pri2.png' className='imgnew' />
-                            <img src='\Assets\pri3.png' className='imgnew' />
+                            <img src='\Assets\pri12.png' className='imgnew' />
+                            <div>
+                                <h2>Private Token Management System</h2>
+                                <p>Assets are stored and managed in an external privacy-focused pool. This enables transfers from external wallets while breaking the link between sender and receiver, preserving transactional privacy.</p>
+                            </div>
                         </div>
-                        <img src='\Assets\pri4.png' className='imgnew' />
+                        <div className='imgs_seconds newcardssss'>
+                        <div>
+                                <h2>zk-SNARK Verification Without Data Exposure</h2>
+                                <p>This module verifies token ownership and transaction legitimacy using zk-proofs — without exposing sensitive wallet information or transaction history.</p>
+                            </div>
+                            <img src='\Assets\pri13.png' className='imgnew' />
+                        </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\pri5.png' className='imgnew' />
-                            <img src='\Assets\pri6.png' className='imgnew' />
+                            <img src='\Assets\pri14.png' className='imgnew' />
+                            <div>
+                                <h2>Wallet Obfuscation Layer</h2>
+                                <p>Users don’t send assets directly. Instead, transfers are routed through the protocol, enabling secure and private interactions between wallets without public traceability.</p>
+                            </div>
                         </div>
-                        <img src='\Assets\pri7.png' className='imgnew' />
+                        <div className='imgs_seconds newcardssss'>
+                        <div>
+                                <h2>Off-Chain Transfer Ledger</h2>
+                                <p>Transactions between wallets within the Privacy Protocol are recorded off-chain, meaning there are no visible traces on public ledgers — significantly boosting confidentiality for users.</p>
+                            </div>
+                            <img src='\Assets\pri15.png' className='imgnew' />
+                        </div>
                     </div>
                     <div className='sixcards'>
-                        <h2>Major Modules</h2>
+                        <h2>Built With</h2>
                         <div className='cardss_3'>
                             <div className='card__onee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
-                                    <path d="M39.375 32.0659L35.3325 28.5634C35.1989 28.4367 35.0309 28.3521 34.8496 28.3203C34.6682 28.2884 34.4815 28.3107 34.3128 28.3843C34.144 28.4579 34.0006 28.5795 33.9005 28.7341C33.8004 28.8886 33.7481 29.0692 33.75 29.2534V30.1909C33.75 30.6881 33.5525 31.1651 33.2008 31.5167C32.8492 31.8683 32.3723 32.0659 31.875 32.0659H28.125C27.6277 32.0659 27.1508 31.8683 26.7992 31.5167C26.4475 31.1651 26.25 30.6881 26.25 30.1909C26.25 25.419 18.7669 22.7471 10.3125 22.6909C9.0693 22.6909 7.87701 23.1847 6.99794 24.0638C6.11886 24.9429 5.625 26.1352 5.625 27.3784C5.625 28.6216 6.11886 29.8138 6.99794 30.6929C7.87701 31.572 9.0693 32.0659 10.3125 32.0659C18.0994 32.0659 19.2094 10.8877 21.015 6.75336C21.32 6.05547 21.7905 5.44242 22.3857 4.96725C22.981 4.49208 23.683 4.16911 24.4311 4.02628C25.1792 3.88345 25.9509 3.92506 26.6793 4.14752C27.4077 4.36998 28.071 4.76658 28.6116 5.30301C29.1523 5.83944 29.5541 6.49953 29.7823 7.22617C30.0105 7.95281 30.0582 8.72411 29.9213 9.47334C29.7844 10.2226 29.467 10.9271 28.9965 11.5261C28.526 12.125 27.9167 12.6003 27.2212 12.9109" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M5.625 39.5659H39.375" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <h3>Data Management and Sharing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+  <path d="M37.5 24.3749C37.5 33.7499 30.9375 38.4374 23.1375 41.1561C22.7291 41.2945 22.2854 41.2879 21.8812 41.1374C14.0625 38.4374 7.5 33.7499 7.5 24.3749V11.2499C7.5 10.7526 7.69754 10.2757 8.04918 9.92404C8.40081 9.57241 8.87772 9.37487 9.375 9.37487C13.125 9.37487 17.8125 7.12487 21.075 4.27487C21.4722 3.93549 21.9775 3.74902 22.5 3.74902C23.0225 3.74902 23.5278 3.93549 23.925 4.27487C27.2062 7.14362 31.875 9.37487 35.625 9.37487C36.1223 9.37487 36.5992 9.57241 36.9508 9.92404C37.3025 10.2757 37.5 10.7526 37.5 11.2499V24.3749Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16.875 22.5H28.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22.5 16.875V28.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                <h3>zk-SNARKs for Zero-Knowledge Proofs
                                 </h3>
-                                <p>Secure digital asset management with controlled sharing capabilities.
 
-                                </p>
                             </div>
                             <div className='card__onee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
-                                    <path d="M28.125 22.6909H18.75" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.125 15.1909H18.75" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M35.625 32.0659V9.56592C35.625 8.57136 35.2299 7.61753 34.5266 6.91427C33.8234 6.21101 32.8696 5.81592 31.875 5.81592H7.5" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M15 39.5659H37.5C38.4946 39.5659 39.4484 39.1708 40.1516 38.4676C40.8549 37.7643 41.25 36.8105 41.25 35.8159V33.9409C41.25 33.4436 41.0525 32.9667 40.7008 32.6151C40.3492 32.2635 39.8723 32.0659 39.375 32.0659H20.625C20.1277 32.0659 19.6508 32.2635 19.2992 32.6151C18.9475 32.9667 18.75 33.4436 18.75 33.9409V35.8159C18.75 36.8105 18.3549 37.7643 17.6516 38.4676C16.9484 39.1708 15.9946 39.5659 15 39.5659ZM15 39.5659C14.0054 39.5659 13.0516 39.1708 12.3483 38.4676C11.6451 37.7643 11.25 36.8105 11.25 35.8159V9.56592C11.25 8.57136 10.8549 7.61753 10.1516 6.91427C9.44839 6.21101 8.49456 5.81592 7.5 5.81592C6.50544 5.81592 5.55161 6.21101 4.84835 6.91427C4.14509 7.61753 3.75 8.57136 3.75 9.56592V13.3159C3.75 13.8132 3.94754 14.2901 4.29917 14.6417C4.65081 14.9934 5.12772 15.1909 5.625 15.1909H11.25" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <h3>Zero-Knowledge Proofs (zk-SNARKs)</h3>
-                                <p> Verify transactions without exposing sensitive information.
-                                </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+  <path d="M39.375 31.8747L35.3325 28.3722C35.1989 28.2455 35.0309 28.161 34.8496 28.1291C34.6682 28.0973 34.4815 28.1195 34.3128 28.1931C34.144 28.2667 34.0006 28.3884 33.9005 28.5429C33.8004 28.6975 33.7481 28.8781 33.75 29.0622V29.9997C33.75 30.497 33.5525 30.9739 33.2008 31.3255C32.8492 31.6772 32.3723 31.8747 31.875 31.8747H28.125C27.6277 31.8747 27.1508 31.6772 26.7992 31.3255C26.4475 30.9739 26.25 30.497 26.25 29.9997C26.25 25.2278 18.7669 22.5559 10.3125 22.4997C9.0693 22.4997 7.87701 22.9936 6.99794 23.8726C6.11886 24.7517 5.625 25.944 5.625 27.1872C5.625 28.4304 6.11886 29.6227 6.99794 30.5018C7.87701 31.3808 9.0693 31.8747 10.3125 31.8747C18.0994 31.8747 19.2094 10.6966 21.015 6.56219C21.32 5.86431 21.7905 5.25126 22.3857 4.77609C22.981 4.30092 23.683 3.97795 24.4311 3.83512C25.1792 3.69229 25.9509 3.7339 26.6793 3.95636C27.4077 4.17882 28.071 4.57542 28.6116 5.11185C29.1523 5.64827 29.5541 6.30837 29.7823 7.03501C30.0105 7.76165 30.0582 8.53295 29.9213 9.28217C29.7844 10.0314 29.467 10.736 28.9965 11.3349C28.526 11.9339 27.9167 12.4092 27.2212 12.7197" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5.625 39.375H39.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                <h3>ECDSA (Elliptic Curve Digital Signature Algorithm)</h3>
+
                             </div>
                             <div className='card__onee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
-                                    <path d="M7.5 41.4409H33.75C34.7446 41.4409 35.6984 41.0458 36.4016 40.3426C37.1049 39.6393 37.5 38.6855 37.5 37.6909V13.3159L28.125 3.94092H11.25C10.2554 3.94092 9.30161 4.33601 8.59835 5.03927C7.89509 5.74253 7.5 6.69636 7.5 7.69092V15.1909" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M26.25 3.94092V11.4409C26.25 12.4355 26.6451 13.3893 27.3484 14.0926C28.0516 14.7958 29.0054 15.1909 30 15.1909H37.5" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M9.375 22.6909L3.75 28.3159L9.375 33.9409" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.875 33.9409L22.5 28.3159L16.875 22.6909" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <h3>Wallet-to-Wallet Confidential Transactions
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+  <path d="M36.832 21.8502L23.3958 1.50854C22.9479 0.830486 22.0521 0.830486 21.6042 1.50854L8.16795 21.8502C7.94402 22.3022 7.94402 22.7543 8.16795 23.2063L21.6042 43.548C21.8282 43.774 22.0521 44 22.5 44C22.9479 44 23.1718 43.774 23.3958 43.548L36.832 23.2063C37.056 22.7543 37.056 22.3022 36.832 21.8502ZM22.5 40.8357L12.1988 25.2405L22.0521 29.7608C22.2761 29.9869 22.7239 29.9869 22.9479 29.7608L32.8012 25.2405L22.5 40.8357ZM22.5 27.2746L10.6313 21.8502L22.5 4.22076L34.3687 22.0762L22.5 27.2746Z" fill="black"/>
+</svg>
+                                <h3>EVM-Compatible Architecture
                                 </h3>
-                                <p>Enable private and secure transfers between users.</p>
+
                             </div>
                         </div>
-                        {/* <div className='cardss_3'>
+                        <div className='cardss_3'>
                             <div className='card__onee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
-                                    <path d="M39.375 32.0661L35.3325 28.5636C35.1989 28.4369 35.0309 28.3524 34.8496 28.3205C34.6682 28.2887 34.4815 28.311 34.3128 28.3845C34.144 28.4581 34.0006 28.5798 33.9005 28.7343C33.8004 28.8889 33.7481 29.0695 33.75 29.2536V30.1911C33.75 30.6884 33.5525 31.1653 33.2008 31.5169C32.8492 31.8686 32.3723 32.0661 31.875 32.0661H28.125C27.6277 32.0661 27.1508 31.8686 26.7992 31.5169C26.4475 31.1653 26.25 30.6884 26.25 30.1911C26.25 25.4192 18.7669 22.7474 10.3125 22.6911C9.0693 22.6911 7.87701 23.185 6.99794 24.064C6.11886 24.9431 5.625 26.1354 5.625 27.3786C5.625 28.6218 6.11886 29.8141 6.99794 30.6932C7.87701 31.5722 9.0693 32.0661 10.3125 32.0661C18.0994 32.0661 19.2094 10.888 21.015 6.7536C21.32 6.05571 21.7905 5.44266 22.3857 4.96749C22.981 4.49233 23.683 4.16935 24.4311 4.02652C25.1792 3.88369 25.9509 3.92531 26.6793 4.14777C27.4077 4.37022 28.071 4.76683 28.6116 5.30325C29.1523 5.83968 29.5541 6.49977 29.7823 7.22642C30.0105 7.95306 30.0582 8.72436 29.9213 9.47358C29.7844 10.2228 29.467 10.9274 28.9965 11.5263C28.526 12.1253 27.9167 12.6006 27.2212 12.9111" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M5.625 39.5659H39.375" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <h3>User Profiles</h3>
-                                <p>To ensure qualitative results, our best smart contract development team utilizes resilient practices of smart contract architecture.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+  <path d="M28.125 22.5H18.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28.125 15H18.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35.625 31.875V9.375C35.625 8.38044 35.2299 7.42661 34.5266 6.72335C33.8234 6.02009 32.8696 5.625 31.875 5.625H7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 39.375H37.5C38.4946 39.375 39.4484 38.9799 40.1516 38.2766C40.8549 37.5734 41.25 36.6196 41.25 35.625V33.75C41.25 33.2527 41.0525 32.7758 40.7008 32.4242C40.3492 32.0725 39.8723 31.875 39.375 31.875H20.625C20.1277 31.875 19.6508 32.0725 19.2992 32.4242C18.9475 32.7758 18.75 33.2527 18.75 33.75V35.625C18.75 36.6196 18.3549 37.5734 17.6516 38.2766C16.9484 38.9799 15.9946 39.375 15 39.375ZM15 39.375C14.0054 39.375 13.0516 38.9799 12.3483 38.2766C11.6451 37.5734 11.25 36.6196 11.25 35.625V9.375C11.25 8.38044 10.8549 7.42661 10.1516 6.72335C9.44839 6.02009 8.49456 5.625 7.5 5.625C6.50544 5.625 5.55161 6.02009 4.84835 6.72335C4.14509 7.42661 3.75 8.38044 3.75 9.375V13.125C3.75 13.6223 3.94754 14.0992 4.29917 14.4508C4.65081 14.8025 5.12772 15 5.625 15H11.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                <h3>Solidity & Smart Contract Infrastructure</h3>
+
                             </div>
                             <div className='card__onee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
-                                    <path d="M39.375 32.0661L35.3325 28.5636C35.1989 28.4369 35.0309 28.3524 34.8496 28.3205C34.6682 28.2887 34.4815 28.311 34.3128 28.3845C34.144 28.4581 34.0006 28.5798 33.9005 28.7343C33.8004 28.8889 33.7481 29.0695 33.75 29.2536V30.1911C33.75 30.6884 33.5525 31.1653 33.2008 31.5169C32.8492 31.8686 32.3723 32.0661 31.875 32.0661H28.125C27.6277 32.0661 27.1508 31.8686 26.7992 31.5169C26.4475 31.1653 26.25 30.6884 26.25 30.1911C26.25 25.4192 18.7669 22.7474 10.3125 22.6911C9.0693 22.6911 7.87701 23.185 6.99794 24.064C6.11886 24.9431 5.625 26.1354 5.625 27.3786C5.625 28.6218 6.11886 29.8141 6.99794 30.6932C7.87701 31.5722 9.0693 32.0661 10.3125 32.0661C18.0994 32.0661 19.2094 10.888 21.015 6.7536C21.32 6.05571 21.7905 5.44266 22.3857 4.96749C22.981 4.49233 23.683 4.16935 24.4311 4.02652C25.1792 3.88369 25.9509 3.92531 26.6793 4.14777C27.4077 4.37022 28.071 4.76683 28.6116 5.30325C29.1523 5.83968 29.5541 6.49977 29.7823 7.22642C30.0105 7.95306 30.0582 8.72436 29.9213 9.47358C29.7844 10.2228 29.467 10.9274 28.9965 11.5263C28.526 12.1253 27.9167 12.6006 27.2212 12.9111" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M5.625 39.5659H39.375" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <h3>User Profiles</h3>
-                                <p>To ensure qualitative results, our best smart contract development team utilizes resilient practices of smart contract architecture.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+  <path d="M22.5 32C23.8807 32 25 30.8807 25 29.5C25 28.1193 23.8807 27 22.5 27C21.1193 27 20 28.1193 20 29.5C20 30.8807 21.1193 32 22.5 32Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34.5556 19H10.4444C8.54213 19 7 20.567 7 22.5V36.5C7 38.433 8.54213 40 10.4444 40H34.5556C36.4579 40 38 38.433 38 36.5V22.5C38 20.567 36.4579 19 34.5556 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 19V13.75C14 11.4294 14.8955 9.20376 16.4896 7.56282C18.0837 5.92187 20.2457 5 22.5 5C24.7543 5 26.9163 5.92187 28.5104 7.56282C30.1045 9.20376 31 11.4294 31 13.75V19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                <h3>Secure Off-Chain Communication Layer</h3>
+
                             </div>
                             <div className='card__onee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
-                                    <path d="M7.5 41.4409H33.75C34.7446 41.4409 35.6984 41.0458 36.4016 40.3426C37.1049 39.6393 37.5 38.6855 37.5 37.6909V13.3159L28.125 3.94092H11.25C10.2554 3.94092 9.30161 4.33601 8.59835 5.03927C7.89509 5.74253 7.5 6.69636 7.5 7.69092V15.1909" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M26.25 3.94092V11.4409C26.25 12.4355 26.6451 13.3893 27.3484 14.0926C28.0516 14.7958 29.0054 15.1909 30 15.1909H37.5" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M9.375 22.6909L3.75 28.3159L9.375 33.9409" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.875 33.9409L22.5 28.3159L16.875 22.6909" stroke="black" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <h3>User Profiles</h3>
-                                <p>To ensure qualitative results, our best smart contract development team utilizes resilient practices of smart contract architecture.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+  <path d="M22.5 41.25C32.8553 41.25 41.25 32.8553 41.25 22.5C41.25 12.1447 32.8553 3.75 22.5 3.75C12.1447 3.75 3.75 12.1447 3.75 22.5C3.75 32.8553 12.1447 41.25 22.5 41.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22.5 3.75C17.6854 8.80529 15 15.5189 15 22.5C15 29.4811 17.6854 36.1947 22.5 41.25C27.3146 36.1947 30 29.4811 30 22.5C30 15.5189 27.3146 8.80529 22.5 3.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3.75 22.5H41.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                <h3>Ethereum dApp Interoperability</h3>
+
                             </div>
-                        </div> */}
+                        </div>
                     </div>
-                    <div className='tecnology_div'>
+                    {/* <div className='tecnology_div'>
                         <span>Technology</span>
                         <h2>Technology We Use </h2>
                         <div className='webs_cards'>
@@ -191,7 +211,7 @@ const porfoliopriv = () => {
                                 <p>Server-side application</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className='case_studyy'>
                         <h2>Related Case Studies</h2>
                         <div className='case_cards'>

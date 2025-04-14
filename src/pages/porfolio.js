@@ -80,14 +80,15 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href='/porfoliomultichain'>
+                                        <a href='/porfoliopriv'>
                                         <div className='right_side hovercard'>
-                                            <img src='\Assets\port22.png' className='imgport' />
+                                            <img src='\Assets\port66.png' className='imgport' />
                                             <div className='buttons_div'>
                                                 {/* */}
                                             </div>
                                         </div>
                                         </a>
+
                                     </div>
                                     <div className='parent_div second_parent'>
                                     <a href='/porfolionftgallery'>
@@ -116,9 +117,9 @@ const Portfolio = () => {
                                             </div>
                                         </div>
                                         </a>
-                                        <a href='/porfoliopriv'>
+                                        <a href='/porfoliomultichain'>
                                         <div className='right_side hovercard'>
-                                            <img src='\Assets\port66.png' className='imgport' />
+                                            <img src='\Assets\port22.png' className='imgport' />
                                             <div className='buttons_div'>
                                                 {/* */}
                                             </div>
@@ -350,7 +351,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\portnew.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -358,7 +359,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port22.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -368,7 +369,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port33.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -376,7 +377,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port44.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -386,7 +387,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port55.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
 </a>
@@ -394,7 +395,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port66.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -404,7 +405,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port77.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -412,7 +413,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port88.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -422,7 +423,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port99.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -430,7 +431,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port101.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -440,7 +441,7 @@ const Portfolio = () => {
                                         <div className='left_side hovercard'>
                                             <img src='\Assets\port111.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
@@ -448,7 +449,7 @@ const Portfolio = () => {
                                         <div className='right_side hovercard'>
                                             <img src='\Assets\port12.png' className='imgport' />
                                             <div className='buttons_div'>
-                                               
+
                                             </div>
                                         </div>
                                         </a>
