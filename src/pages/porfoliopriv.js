@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
+import Link from 'next/link'
 
 const porfoliopriv = () => {
     return (
@@ -16,10 +17,13 @@ const porfoliopriv = () => {
 <p className='modullar_ptag'>Modular Zero-Knowledge Privacy Layer for EVM Chains
 </p>
                         </div>
-
-                        <button>Live Preview <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <Link href="/contact">
+                        <button>Request a Demo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M17.5 10L13.3333 5.83333M17.5 10L13.3333 14.1667M17.5 10H2.5" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></button>
+                        </Link>
+
+
                     </div>
                     {/* <div className='services_sidess'>
                         <p>Services</p>
@@ -71,7 +75,7 @@ const porfoliopriv = () => {
                         <div className='imgs_seconds'>
                             <img src='\Assets\pri14.png' className='imgnew' />
                             <div>
-                                <h2>Wallet Obfuscation Layer</h2>
+                                <h2>Indirect Wallet-to-Wallet Transactions</h2>
                                 <p>Users don’t send assets directly. Instead, transfers are routed through the protocol, enabling secure and private interactions between wallets without public traceability.</p>
                             </div>
                         </div>
