@@ -65,7 +65,7 @@ const contactusdetail = () => {
             email,
             message,
             telegram,
-            time: new Date().toLocaleString(),
+            // time: new Date().toLocaleString(),
         };
         const validationErrors = validateForm(payload);
 

@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     formData.append("b1-2", name);
     formData.append("b1-5", email);
     formData.append("b1-3", message);
-    formData.append("b1-6", telegram);
+    formData.append("b1-7", telegram);
 
     try {
         const response = await axios.post(

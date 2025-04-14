@@ -11,10 +11,16 @@ import { getAllBlogs } from "../../../Utils/Services/services"
 import { getTimeInAges } from '@/Utils/helpers';
 import { categories } from '@/Utils/constants';
 import Loader1 from '@/hooks/loader1';
+import Head from 'next/head';
+
+
+
 
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
 
 const Stories = () => {
+
+    
     const owl_option = {
         nav: true,
         dots: false,
@@ -90,6 +96,17 @@ const Stories = () => {
 
     return (
         <>
+
+            <Head>
+                <link
+                    rel="canonical"
+                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+                />
+                <meta name="publisher" content="Quecko" />
+                <meta name="robots" content="index, follow" />
+            </Head>
+
+
             <section className='blogs_divv' id="stories">
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
