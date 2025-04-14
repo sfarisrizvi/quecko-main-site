@@ -11,10 +11,29 @@ import Aboutus from './component/Landing/aboutus';
 import Stories from './component/Landing/stories';
 import Faqswebdevelp from './faqswebdevelp';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Portfolio = () => {
     return (
         <>
+
+            <Head>
+                <title>Portfolio - Quecko</title>
+                <meta property="og:title" content="About Us - Quecko" />
+                <meta
+                    property="og:description"
+                    content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
+                />
+                <meta property="og:url" content="https://quecko.com/about-us/" />
+                <link
+                    rel="canonical"
+                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+                />
+                <meta name="publisher" content="Quecko" />
+                <meta name="robots" content="index, follow" />
+
+            </Head>
+        
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

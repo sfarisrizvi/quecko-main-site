@@ -5,6 +5,7 @@ import Footer from './component/Landing/footer'
 import Link from 'next/link'
 import { fetchAllJobs, JobBasedcategory } from '@/Utils/Services/services'
 import JobLoader from '@/hooks/jobloader'
+import Head from 'next/head'
 
 const career = () => {
   const [alljobs, setalljobs] = useState([])
@@ -62,6 +63,21 @@ const career = () => {
 
   return (
     <>
+      <Head>
+         <meta property="og:title" content="About Us - Quecko" />
+        <meta
+          property="og:description"
+          content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
+        />
+        <meta property="og:url" content="https://quecko.com/about-us/" />
+        <link
+          rel="canonical"
+          href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+        />
+        <meta name="publisher" content="Quecko" />
+        <meta name="robots" content="index, follow" />
+
+      </Head>
       <Header />
       <section className='careeer_results'>
 

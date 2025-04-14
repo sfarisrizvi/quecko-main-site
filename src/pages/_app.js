@@ -131,6 +131,39 @@ export default function App({ Component, pageProps }) {
         <meta property="article:modified_time" content="2024-12-18T06:17:39+00:00" />
         <meta property="og:image" content="https://res.cloudinary.com/drt6vurtt/image/upload/c_pad,w_500/v1742572273/queckosite%20%28new%29/images/Untitled-1_rshcle.png" />
 
+     
+        <script type="application/ld+json">
+          {`
+            "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Quecko",
+          "url": "https://quecko.com/",
+          "logo": "	https://www.quecko.com/Assets/navlogo.svg",
+          "description": "Quecko is a creative agency offering full-stack Web3 marketing, development, and design solutions for blockchain projects across the globe.",
+          "founder": {
+            "@type": "Person",
+          "name": "Alee Abbasi",
+          "jobTitle": "Founder & CEO",
+          "sameAs": [
+          "https://www.linkedin.com/in/alee-abbasi-32183069",
+          ]
+  },
+          "sameAs": [
+          "https://www.linkedin.com/company/quecko.web3",
+          "https://www.instagram.com/quecko.web3",
+          "https://twitter.com/@quecko_web3"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+          "telephone": "+971-50-740-0268",
+          "contactType": "Sales & Business",
+          "email": "info@quecko.com",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English", "Urdu"]
+  },
+
+ `}
+        </script>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Quecko - Leading the Blockchain Revolution with Innovative Solutions" />
