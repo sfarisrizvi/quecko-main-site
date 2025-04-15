@@ -458,7 +458,6 @@ export default function App({ Component, pageProps }) {
     </>
   )
 }
-<<<<<<< HEAD
 
 
 
@@ -500,5 +499,3 @@ export default function App({ Component, pageProps }) {
 
 
 
-=======
->>>>>>> staging
