@@ -64,7 +64,7 @@ const career = () => {
   return (
     <>
       <Head>
-         <meta property="og:title" content="About Us - Quecko" />
+        <meta property="og:title" content="About Us - Quecko" />
         <meta
           property="og:description"
           content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
@@ -163,8 +163,9 @@ const career = () => {
                 {loading1 ? <JobLoader /> : (
                   <>
                     {designJobs.map((item, index) => (
+                      <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
 
-                      <div className='all_tab_Data' key={index}>
+                      <div className='all_tab_Data'>
                         <div className='inner_tab_cards'>
                           <div className='left_side'>
                             <h2>{item?.title?.rendered}</h2>
@@ -180,15 +181,17 @@ const career = () => {
                             </div>
                           </div>
                           <div className='right_side'>
-                            <Link href="/careerdetail">
+                            {/* <Link href="/careerdetail"> */}
                               <button>Apply Now</button>
 
-                            </Link>
+                            {/* </Link> */}
                           </div>
                         </div>
 
 
                       </div>
+                      </Link>
+
                     ))}
                   </>
                 )}
@@ -199,6 +202,8 @@ const career = () => {
                 {loading1 ? <JobLoader /> : (
                   <>
                     {developmentJobs.map((item, index) => (
+                      <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
+
 
                       <div className='inner_tab_cards' key={index}>
                         <div className='left_side'>
@@ -216,12 +221,13 @@ const career = () => {
                           </div>
                         </div>
                         <div className='right_side'>
-                          <Link href="/careerdetail">
+                          {/* <Link href="/careerdetail"> */}
                             <button>Apply Now</button>
 
-                          </Link>
+                          {/* </Link> */}
                         </div>
                       </div>
+                      </Link>
                     ))}
                   </>
                 )}
@@ -237,6 +243,7 @@ const career = () => {
                   {loading1 ? <JobLoader /> : (
                     <>
                       {marketingJobs.map((item, index) => (
+                        <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
 
                         <div className='inner_tab_cards' key={index}>
                           <div className='left_side'>
@@ -254,12 +261,14 @@ const career = () => {
                             </div>
                           </div>
                           <div className='right_side'>
-                            <Link href="/careerdetail">
+                            {/* <Link href="/careerdetail"> */}
                               <button>Apply Now</button>
 
-                            </Link>
+                            {/* </Link> */}
                           </div>
                         </div>
+                        </Link>
+
                       ))}</>
                   )}
 
