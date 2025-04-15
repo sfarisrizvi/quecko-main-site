@@ -15,7 +15,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\Legion Branding.mp4" type="video/mp4" />
+                                <source src="\Assets\videoone.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -30,7 +30,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\Legion Mobile App.mp4" type="video/mp4" />
+                                <source src="\Assets\videotwo.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -47,7 +47,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330974/queckosite%20%28new%29/videos/secondleft_vjnzap.mp4" />
+                                <source src="\Assets\videothree.mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -62,7 +62,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\multichainvideo.mp4" type="video/mp4" />
+                                <source src="\Assets\videofour.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -71,7 +71,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='parent_div'>
+                    {/* <div className='parent_div'>
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -102,7 +102,7 @@ const Projects = () => {
                                 <button>Marketing</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>
