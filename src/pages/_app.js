@@ -396,6 +396,7 @@ export default function App({ Component, pageProps }) {
   `}
         </script>
 
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Quecko - Leading the Blockchain Revolution with Innovative Solutions" />
         <meta
