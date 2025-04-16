@@ -79,6 +79,7 @@ const aboutdetail = () => {
                 <meta name="robots" content="index, follow" />     
                 
                        </Head>
+            
             <Header />
             <div>
                 <section className="main_banner1" >
