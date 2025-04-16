@@ -15,7 +15,18 @@ import Footer from './component/Landing/footer';
 import Head from 'next/head';
 
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
-const aboutdetail = () => {
+
+export async function getServerSideProps() {
+    const title = "About Us - Quecko";
+    const metaDescription = "Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions.";
+
+    return {
+        props: { title, metaDescription },
+    };
+}
+
+
+const aboutdetail = ({ title, metaDescription }) => {
     const owl_option = {
         nav: true,
         dots: false,
@@ -66,7 +77,23 @@ const aboutdetail = () => {
     };
     return (
         <>
-            
+            <Head>
+                <title>{title}</title>
+                <meta property="og:title" content={title} />
+                <meta
+                    property="og:description"
+                    content={metaDescription}
+                />
+                <meta property="og:url" content="https://quecko.com/about-us/" />
+                <link
+                    rel="canonical"
+                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+                />
+                <meta name="publisher" content="Quecko" />
+                <meta name="robots" content="index, follow" />
+
+            </Head>
+
             <Header />
             <div>
                 <section className="main_banner1" >
@@ -110,14 +137,14 @@ const aboutdetail = () => {
                     </div>
                     <div className='developers_side'>
                         <p>Delivered Products</p>
-                        <span  className='numbersdiv'>500+</span>
+                        <span className='numbersdiv'>500+</span>
                     </div>  <div className='developers_side'>
                         <p>Blockchain Developers</p>
-                        <span  className='numbersdiv'>50+ </span>
+                        <span className='numbersdiv'>50+ </span>
                     </div>
                     <div className='developers_side'>
                         <p>Experience (Years)</p>
-                        <span  className='numbersdiv'>10+</span>
+                        <span className='numbersdiv'>10+</span>
                     </div>
                 </section>
                 <section className='collab1'>
@@ -175,22 +202,22 @@ const aboutdetail = () => {
                                     <div className='cardss'>
 
                                         <img src='\Assets\walled.svg' />
-                                        <h3  className='name_cards'>Waleed Qureshi</h3>
+                                        <h3 className='name_cards'>Waleed Qureshi</h3>
                                         <h4>Chief Technology Officer </h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\shoaib.svg' />
-                                        <h3  className='name_cards'>Shoaib Jabbar</h3>
+                                        <h3 className='name_cards'>Shoaib Jabbar</h3>
                                         <h4>Director Sales </h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\shajeel.svg' />
-                                        <h3  className='name_cards'>Sharjeel Awan</h3>
+                                        <h3 className='name_cards'>Sharjeel Awan</h3>
                                         <h4>Chief Product Officer</h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\fahad.png' />
-                                        <h3  className='name_cards'>Fahad Suleman</h3>
+                                        <h3 className='name_cards'>Fahad Suleman</h3>
                                         <h4>Chief Marketing Officer</h4>
                                     </div>
                                     <div className='cardss'>
@@ -200,27 +227,27 @@ const aboutdetail = () => {
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\usman.png' />
-                                        <h3  className='name_cards'>Usman Malik</h3>
+                                        <h3 className='name_cards'>Usman Malik</h3>
                                         <h4>Team Lead Front-End</h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\jamal.png' />
-                                        <h3  className='name_cards'>Jamal Waseem</h3>
+                                        <h3 className='name_cards'>Jamal Waseem</h3>
                                         <h4>Team Lead UI/UX</h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\osama.png' />
-                                        <h3  className='name_cards'>Osama Chattha </h3>
+                                        <h3 className='name_cards'>Osama Chattha </h3>
                                         <h4>Team Lead QA</h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\wasif.png' />
-                                        <h3  className='name_cards'>Muhammad Wasif  </h3>
+                                        <h3 className='name_cards'>Muhammad Wasif  </h3>
                                         <h4>Team Lead Blockchain</h4>
                                     </div>
                                     <div className='cardss'>
                                         <img src='\Assets\zia.svg' />
-                                        <h3  className='name_cards'>M. Zia ul Rehman</h3>
+                                        <h3 className='name_cards'>M. Zia ul Rehman</h3>
                                         <h4>Team Lead React Native Developer</h4>
                                     </div>
 
