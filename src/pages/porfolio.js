@@ -17,22 +17,7 @@ const Portfolio = () => {
     return (
         <>
 
-            <Head>
-                <title>Portfolio - Quecko</title>
-                <meta property="og:title" content="About Us - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
-                />
-                <meta property="og:url" content="https://quecko.com/about-us/" />
-                <link
-                    rel="canonical"
-                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
-                />
-                <meta name="publisher" content="Quecko" />
-                <meta name="robots" content="index, follow" />
-
-            </Head>
+             
 
             <section className='smart_contract'>
                 <Header />
@@ -100,140 +85,140 @@ const Portfolio = () => {
                                             </div>
                                         </Link>
                                         <Link href='/porfoliopriv'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port66.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
 
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolionftgallery'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port33.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                        <Link href='/porfolionftgallery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port33.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfolioligion'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port44.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port44.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotdns'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port55.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                        <Link href='/porfoliotdns'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port55.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliomultichain'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port22.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port22.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioestate'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port77.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                        <Link href='/porfolioestate'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port77.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliorewardflow'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port88.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port88.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotreecoin'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port99.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* */}
+                                        <Link href='/porfoliotreecoin'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port99.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliobluemoon'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port101.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port101.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioquick'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port111.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolioquick'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port111.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliotapspace'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port12.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
 
                                     <div className='parent_div'>
-                                    <Link href='/porfoliodiet'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\portdiet.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliodiet'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portdiet.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliogoldenlooni'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\portlooni.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\portlooni.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfoliooracle'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\portorcale.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliooracle'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portorcale.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliomeme'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\portmeme1.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\portmeme1.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
 
@@ -247,111 +232,111 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                    <Link href='/porfoliolunchpad'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\portnew.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliolunchpad'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portnew.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliomultichain'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port22.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port22.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolionftgallery'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port33.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolionftgallery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port33.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfolioligion'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port44.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port44.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotdns'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port55.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliotdns'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port55.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliopriv'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port66.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioestate'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port77.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolioestate'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port77.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliorewardflow'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port88.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port88.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotreecoin'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port99.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliotreecoin'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port99.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliobluemoon'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port101.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port101.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioquick'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port111.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolioquick'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port111.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliotapspace'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port12.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
 
@@ -366,111 +351,111 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                    <Link href='/porfoliolunchpad'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\portnew.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliolunchpad'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portnew.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliomultichain'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port22.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port22.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolionftgallery'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port33.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolionftgallery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port33.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfolioligion'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port44.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port44.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotdns'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port55.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliotdns'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port55.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
-</Link>
-<Link href='/porfoliopriv'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port66.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        </Link>
+                                        <Link href='/porfoliopriv'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioestate'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port77.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolioestate'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port77.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliorewardflow'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port88.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port88.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotreecoin'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port99.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfoliotreecoin'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port99.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliobluemoon'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port101.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port101.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioquick'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port111.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                        <Link href='/porfolioquick'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port111.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliotapspace'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port12.png' className='imgport' />
-                                            <div className='buttons_div'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
 
@@ -485,135 +470,135 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                    <Link href='/porfoliolunchpad'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\portnew.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                        <Link href='/porfoliolunchpad'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portnew.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliomultichain'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port22.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port22.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolionftgallery'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port33.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                        <Link href='/porfolionftgallery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port33.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfolioligion'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port44.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port44.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotdns'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port55.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                        <Link href='/porfoliotdns'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port55.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliopriv'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port66.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioestate'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port77.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                        <Link href='/porfolioestate'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port77.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliorewardflow'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port88.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port88.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                    <Link href='/porfoliotreecoin'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port99.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                        <Link href='/porfoliotreecoin'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port99.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliobluemoon'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port101.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port101.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                    <Link href='/porfolioquick'>
-                                        <div className='left_side hovercard'>
-                                            <img src='\Assets\port111.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                        <Link href='/porfolioquick'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port111.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                         <Link href='/porfoliotapspace'>
-                                        <div className='right_side hovercard'>
-                                            <img src='\Assets\port12.png' className='imgport' />
-                                            <div className='buttons_div'>
-                                                {/* <button>Branding</button>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
                                                 <button>Development</button> */}
-                                                <button>Marketing</button>
+                                                    <button>Marketing</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Link>
                                     </div>
 
