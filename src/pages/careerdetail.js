@@ -42,7 +42,6 @@ const careerdetail = () => {
         }
     }, [item])
 
-    // Inside your component:
     const fileInputRef = useRef(null)
 
     const handleCVUploadClick = () => {
@@ -62,89 +61,6 @@ const careerdetail = () => {
     const [errorMsg, setErrorMsg] = useState("")
     const [errors, setErrors] = useState({})
 
-    // const handleSubmit = async () => {
-    //     if (!form.name || !form.email || !form.phone || !form.cvFile) {
-    //         setErrorMsg('Please fill in all fields and attach your CV.');
-    //         return;
-    //     }
-
-    //     const formData = new FormData();
-    //     formData.append('name', form.name);
-    //     formData.append('email', form.email);
-    //     formData.append('phone', form.phone);
-    //     formData.append('cvFile', form.cvFile); // Append the file
-
-    //     setLoading(true);
-    //     try {
-    //         const res = await axios.post('/api/submit', formData, {
-    //             headers: {
-    //                 'Content-Type': 'multipart/form-data',
-    //             },
-    //         });
-
-    //         if (res.data.success) {
-    //             setSuccessMsg('Your application has been submitted successfully.');
-    //         } else {
-    //             setErrorMsg('There was an error submitting your application.');
-    //         }
-    //     } catch (err) {
-    //         setErrorMsg('Something went wrong.');
-    //         console.error(err);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     setLoading(true);
-
-    //     const payload = {
-    //         name: form.name,
-    //         email: form.email,
-    //         phone: form.phone,
-    //         jobTitle: form.jobTitle,
-    //     };
-
-    //     const validationErrors = {};
-    //     if (!payload.name) validationErrors.name = 'Name is required';
-    //     if (!payload.email) validationErrors.email = 'Email is required';
-    //     if (!payload.phone) validationErrors.phone = 'Phone is required';
-    //     if (!payload.jobTitle) validationErrors.jobTitle = 'Job title is required';
-    //     if (!form.cvFile) validationErrors.cvFile = 'CV file is required';
-
-    //     if (Object.keys(validationErrors).length > 0) {
-    //         setErrors(validationErrors);
-    //         setLoading(false);
-    //         return;
-    //     }
-
-    //     // setErrors({});
-
-    //     // Prepare a FormData to send the file and fields together
-    //     const data = new FormData();
-    //     data.append('name', payload.name);
-    //     data.append('email', payload.email);
-    //     data.append('phone', payload.phone);
-    //     data.append('jobTitle', payload.jobTitle);
-    //     data.append('cvFile', form.cvFile); // Just send to your own API
-
-    //     try {
-    //         const res = await axios.post('/api/submit', data); // No need for multipart header, browser handles it
-
-    //         if (res.data.success) {
-    //             setSuccessMsg('Your application has been submitted successfully.');
-    //             setForm({ name: '', email: '', phone: '', jobTitle: '', cvFile: null });
-    //         } else {
-    //             setErrorMsg('There was an error submitting your application.');
-    //         }
-    //     } catch (error) {
-    //         console.error('Submission error:', error.response?.data || error.message);
-    //         setErrorMsg('Something went wrong.');
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -165,7 +81,6 @@ const careerdetail = () => {
         }
 
 
-        // Email validation
         if (!form.email) {
             validationErrors.email = "Email is required"
         } else {
@@ -175,7 +90,6 @@ const careerdetail = () => {
             }
         }
 
-        // Phone number validation (only digits allowed)
         if (!form.phone) {
             validationErrors.phone = "Phone is required"
         } else {
@@ -185,17 +99,13 @@ const careerdetail = () => {
             }
         }
 
-        // Job title validation
-        if (!form.jobTitle) validationErrors.jobTitle = "Job title is required"
 
-        // CV file validation (PDF only)
         if (!form.cvFile) {
             validationErrors.cvFile = "CV file is required"
         } else if (form.cvFile.type !== "application/pdf") {
             validationErrors.cvFile = "Only PDF files are allowed"
         }
 
-        // Set errors if any
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors)
             setLoading(false)
@@ -205,7 +115,6 @@ const careerdetail = () => {
 
         setErrors({})
 
-        // Create FormData to properly handle file upload
         const formData = new FormData()
         formData.append("name", form.name)
         formData.append("email", form.email)
@@ -238,7 +147,6 @@ const careerdetail = () => {
                 setSubmitted(true);
 
 
-                // Reset file input
                 const fileInput = document.querySelector('input[type="file"]')
                 if (fileInput) fileInput.value = ""
             } else {
@@ -255,13 +163,12 @@ const careerdetail = () => {
     if (!Data) {
         return <Loader />
     }
-    // successMsg && <p style={{ color: "green" }}>{successMsg}</p>
-    // errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>
+
     const handleInputFocus = () => {
         if (submitted) setSubmitted(false);
     };
 
-    
+
     return (
         <>
             <Head>
@@ -297,13 +204,13 @@ const careerdetail = () => {
                                         name="fname"
                                         placeholder="Name"
                                         value={form.name}
-                                        onChange={(e) =>{
-                                             setForm({ ...form, name: e.target.value })
+                                        onChange={(e) => {
+                                            setForm({ ...form, name: e.target.value })
                                             if (errors.name) {
                                                 setErrors((prevErrors) => ({ ...prevErrors, name: '' }))
                                             }
                                         }
-                                    }
+                                        }
                                         onFocus={handleInputFocus}
                                     />
                                     {errors.name && <p style={{
@@ -322,7 +229,7 @@ const careerdetail = () => {
                                         value={form.phone}
                                         onChange={(e) => {
                                             setForm({ ...form, phone: e.target.value })
-                                            if(errors.phone){
+                                            if (errors.phone) {
                                                 setErrors((prevErrors) => ({ ...prevErrors, phone: '' }))
                                             }
                                         }}
@@ -336,7 +243,7 @@ const careerdetail = () => {
                                         color: 'red',
                                     }} className='errror_mssg'>{errors.phone}</p>}
 
-                                    
+
                                     <input
                                         type="text"
                                         id="fname"
@@ -345,7 +252,7 @@ const careerdetail = () => {
                                         value={form.email}
                                         onChange={(e) => {
                                             setForm({ ...form, email: e.target.value })
-                                            if(errors.email){
+                                            if (errors.email) {
                                                 setErrors((prevErrors) => ({ ...prevErrors, email: '' }))
                                             }
                                         }}
@@ -361,31 +268,10 @@ const careerdetail = () => {
 
 
                                     <div className="uploaded_divv">
-                                        {/* <div className="cv_upload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
-                                                <g clip-path="url(#clip0_795_1070)">
-                                                    <path
-                                                        d="M11.4998 14.6666V9.16659M11.4998 9.16659L8.74984 10.9999M11.4998 9.16659L14.2498 10.9999M21.5832 13.7499C21.5832 11.7249 19.9415 10.0833 17.9165 10.0833C17.8948 10.0833 17.8736 10.0834 17.852 10.0838C17.4075 6.97394 14.7326 4.58325 11.4998 4.58325C8.93624 4.58325 6.72418 6.08662 5.69637 8.25983C3.30673 8.41624 1.4165 10.4039 1.4165 12.8331C1.4165 15.3644 3.46853 17.4167 5.99984 17.4167L17.9165 17.4166C19.9415 17.4166 21.5832 15.775 21.5832 13.7499Z"
-                                                        stroke="black"
-                                                        strokeWidth="1.5"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_795_1070">
-                                                        <rect width="22" height="22" fill="white" transform="translate(0.5)" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            Upload CV
-                                        </div>
-                                        <input type="file" accept="application/pdf"
-  onChange={(e) => setForm((prev) => ({ ...prev, cvFile: e.target.files[0] }))} /> */}
+                                      
 
 
-                                        {/* {errors.cvFile && <p style={{ color: 'red', fontSize: '0.9rem' }}>{errors.cvFile}</p>} */}
-                                        <div className="cv_upload" onClick={handleCVUploadClick} style={{ cursor: 'pointer' }}>
+                                         <div className="cv_upload" onClick={handleCVUploadClick} style={{ cursor: 'pointer' }}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
                                                 <g clipPath="url(#clip0_795_1070)">
                                                     <path
@@ -410,16 +296,14 @@ const careerdetail = () => {
                                             type="file"
                                             accept="application/pdf"
                                             style={{ display: 'none' }}
-                                            onChange={(e) =>
-
-                                               {
+                                            onChange={(e) => {
                                                 setForm((prev) => ({ ...prev, cvFile: e.target.files[0] }))
-                                                if(errors.cvFile){
+                                                if (errors.cvFile) {
                                                     setErrors((prevErrors) => ({ ...prevErrors, cvFile: '' }))
-                                                    
+
                                                 }
 
-                                               }
+                                            }
                                             }
                                             onFocus={handleInputFocus}
                                         />
@@ -443,7 +327,7 @@ const careerdetail = () => {
 
                                     <div className="button_div">
                                         <button onClick={handleSubmit} disabled={loading}>
-                                             {loading ? 'Submitting...' : submitted ? 'Submitted' : 'Apply Now'}
+                                            {loading ? 'Submitting...' : submitted ? 'Submitted' : 'Apply Now'}
 
                                         </button>
                                     </div>
