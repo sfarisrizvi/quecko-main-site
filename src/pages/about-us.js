@@ -12,21 +12,11 @@ import Aboutus from './component/Landing/aboutus';
 import Stories from './component/Landing/stories';
 import Work from './component/Landing/work';
 import Footer from './component/Landing/footer';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
+
 
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
-
-export async function getServerSideProps() {
-    const title = "About Us - Quecko";
-    const metaDescription = "Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions.";
-
-    return {
-        props: { title, metaDescription },
-    };
-}
-
-
-const aboutdetail = ({ title, metaDescription }) => {
+const aboutdetail = () => {
     const owl_option = {
         nav: true,
         dots: false,
@@ -77,12 +67,12 @@ const aboutdetail = ({ title, metaDescription }) => {
     };
     return (
         <>
-            <Head>
-                <title>{title}</title>
-                <meta property="og:title" content={title} />
+            {/* <Head>
+                <title>About Us - Quecko</title>
+                <meta property="og:title" content="About Us - Quecko" />
                 <meta
                     property="og:description"
-                    content={metaDescription}
+                    content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
                 />
                 <meta property="og:url" content="https://quecko.com/about-us/" />
                 <link
@@ -90,9 +80,20 @@ const aboutdetail = ({ title, metaDescription }) => {
                     href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
                 />
                 <meta name="publisher" content="Quecko" />
-                <meta name="robots" content="index, follow" />
-
-            </Head>
+                <meta name="robots" content="index, follow" />     
+                
+                       </Head> */}
+            <NextSeo
+                title="About Us - Quecko"
+                description="Learn more about Quecko – who we are, what we do, and why we're leading the blockchain revolution."
+                openGraph={{
+                    url: 'https://quecko.com/about-us',
+                    title: 'About Us - Quecko',
+                    description:
+                        'Learn more about Quecko – who we are, what we do, and why we’re leading the blockchain revolution.',
+                    site_name: 'Quecko',
+                }}
+            />
 
             <Header />
             <div>
