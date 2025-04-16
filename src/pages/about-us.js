@@ -66,22 +66,7 @@ const aboutdetail = () => {
     };
     return (
         <>
-            <Head>
-                <title>About Us - Quecko</title>
-                <meta property="og:title" content="About Us - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
-                />
-                <meta property="og:url" content="https://quecko.com/about-us/" />
-                <link
-                    rel="canonical"
-                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
-                />
-                <meta name="publisher" content="Quecko" />
-                <meta name="robots" content="index, follow" />     
-                
-                       </Head>
+            
             <Header />
             <div>
                 <section className="main_banner1" >

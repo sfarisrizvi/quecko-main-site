@@ -345,7 +345,21 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="Quecko Inc. delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
         />
+        <meta name="publisher" content="Quecko" />
+
         {/* <link rel="canonical" href="https://quecko.com/" /> */}
+        {/* <link
+          rel="canonical"
+          href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
+        /> */}
+        <link
+          rel="canonical"
+          href={`${typeof window !== 'undefined'
+              ? window.location.origin + window.location.pathname + window.location.search
+              : ''
+            }`}
+        />
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Quecko - Leading the Blockchain Revolution with Innovative Solutions" />
