@@ -74,10 +74,7 @@ const aboutdetail = () => {
                     content="Learn more about Quecko, our mission, values, and the team behind our innovative digital solutions."
                 />
                 <meta property="og:url" content="https://quecko.com/about-us/" />
-                <link
-                    rel="canonical"
-                    href={`${typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''}`}
-                />
+                <link rel="canonical" href="https://quecko.com/about-us/" />
                 <meta name="publisher" content="Quecko" />
                 <meta name="robots" content="index, follow" />     
                 
