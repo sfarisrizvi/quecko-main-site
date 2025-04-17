@@ -17,7 +17,7 @@ const Portfolio = () => {
     return (
         <>
 
-             
+
 
             <section className='smart_contract'>
                 <Header />

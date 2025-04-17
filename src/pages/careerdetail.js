@@ -214,10 +214,7 @@ const careerdetail = () => {
                                         onFocus={handleInputFocus}
                                     />
                                     {errors.name && <p style={{
-                                        display: 'flex',
-                                        alignItems: 'flex-start',
-                                        fontSize: '0.75vw',
-                                        paddingLeft: '0.625vw',
+
                                         color: 'red',
                                     }} className='errror_mssg'>{errors.name}</p>}
 
@@ -236,10 +233,7 @@ const careerdetail = () => {
                                         onFocus={handleInputFocus}
                                     />
                                     {errors.phone && <p style={{
-                                        display: 'flex',
-                                        alignItems: 'flex-start',
-                                        fontSize: '0.75vw',
-                                        paddingLeft: '0.625vw',
+
                                         color: 'red',
                                     }} className='errror_mssg'>{errors.phone}</p>}
 
@@ -259,16 +253,13 @@ const careerdetail = () => {
                                         onFocus={handleInputFocus}
                                     />
                                     {errors.email && <p style={{
-                                        display: 'flex',
-                                        alignItems: 'flex-start',
-                                        fontSize: '0.75vw',
-                                        paddingLeft: '0.625vw',
+
                                         color: 'red',
                                     }} className='errror_mssg'>{errors.email}</p>}
 
 
                                     <div className="uploaded_divv">
-                                      
+
 
 
                                          <div className="cv_upload" onClick={handleCVUploadClick} style={{ cursor: 'pointer' }}>
@@ -314,10 +305,7 @@ const careerdetail = () => {
                                         {/* Show error if any */}
                                         {errors.cvFile && (
                                             <p style={{
-                                                display: 'flex',
-                                                alignItems: 'flex-start',
-                                                fontSize: '0.75vw',
-                                                paddingLeft: '0.625vw',
+                                        
                                                 color: 'red',
                                             }} className='errror_mssg'>{errors.cvFile}</p>
                                         )}

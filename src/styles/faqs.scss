@@ -902,7 +902,8 @@ height: 32px;
                 }
 
                 .imgs_seconds {
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
                     align-items: flex-start;
                     width: 100%;
                     gap: 4.38vw; /* 70px */
