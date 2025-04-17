@@ -43,7 +43,10 @@ const alee = () => {
                             </svg>
                             </Link>
                         </div>
+                        <Link href="/contact">
                         <button>Let's Work Together</button>
+                        </Link>
+
                     </div>
                 </div>
 
