@@ -973,11 +973,14 @@
 
     .imggebottom{
         width: 100%;
+        pointer-events: none;
     }
     .postionbottomimg {
         position: absolute;
         bottom: 0px;
         width: 100%;
+        pointer-events: none;
+
         left: 0px;
 
     }
@@ -1043,6 +1046,7 @@
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
+
                 line-height: 24px;
 
                 span {
@@ -1077,12 +1081,11 @@
             p {
                 color: #FFF;
                 text-align: center;
-                font-size: 14px;
+                width: 376px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 24px;
-                max-width: 367px;
-                width: 100%;
+                line-height: normal;
             }
         }
 
