@@ -34,7 +34,8 @@
             right: 30px;
             z-index: 9999;
             cursor: pointer;
-            &.setarrowup{
+
+            &.setarrowup {
                 transform: rotate(180deg);
             }
         }
@@ -64,16 +65,19 @@
             /* 20.8px */
             text-transform: uppercase;
         }
-        .span_ptag{
+
+        .span_ptag {
             color: #000 !important;
             font-size: 16px !important;
             width: 639px;
             font-style: normal;
             padding-top: 20px;
             font-weight: 400 !important;
-            line-height: 130%; /* 20.8px */
+            line-height: 130%;
+            /* 20.8px */
             text-transform: capitalize;
         }
+
         h1 {
             color: #000;
             font-size: 80px;
@@ -99,7 +103,7 @@
 
     }
 
-    .goaldiv{
+    .goaldiv {
         color: #000;
         text-align: center;
         font-size: 80px;
@@ -146,7 +150,7 @@
             /* 24px */
         }
 
-        .numbersdiv{
+        .numbersdiv {
             color: #000;
             padding-top: 30px;
             font-size: 100px;
@@ -276,7 +280,7 @@
         justify-content: center;
         flex-direction: column;
 
-        .name_cards{
+        .name_cards {
             color: #000 !important;
             text-align: center;
             font-size: 22px !important;
@@ -303,43 +307,53 @@
     }
 }
 
-.terms_page{
+.terms_page {
     height: 462px !important;
     overflow: hidden;
     min-height: unset !important;
 }
-.terms_pagenew{
+
+.terms_pagenew {
     padding: 40px 320px;
     padding-bottom: 100px;
-    h3{
+
+    h3 {
         color: #0E1120;
-font-size: 40px;
-font-style: normal;
-font-weight: 500;
-line-height: 120%; /* 48px */
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 48px */
     }
-    p{
+
+    p {
         color: #67717D;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 25.2px */
-padding-top: 18px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 25.2px */
+        padding-top: 18px;
     }
-    h2{
+
+    h2 {
         color: #0E1120;
-font-size: 26px;
-font-style: normal;
-font-weight: 500;
-line-height: 120%; /* 31.2px */
-padding-top: 25px;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 31.2px */
+        padding-top: 25px;
     }
 
 
     .custom-list {
-        list-style-type: none; /* Remove default bullets */
-        padding-left: 20px; /* Indentation */
-        font-family: Arial, sans-serif; /* Font style */
+        list-style-type: none;
+        /* Remove default bullets */
+        padding-left: 20px;
+        /* Indentation */
+        font-family: Arial, sans-serif;
+        /* Font style */
     }
 
     .custom-list li {
@@ -352,8 +366,10 @@ padding-top: 25px;
     }
 
     .custom-list li:before {
-        content: "• "; /* Dot before list item */
-        color: black; /* Dot color */
+        content: "• ";
+        /* Dot before list item */
+        color: black;
+        /* Dot color */
     }
 }
 
@@ -371,11 +387,13 @@ padding-top: 25px;
         padding: 20px !important;
         /* padding-bottom: 100px; */
     }
+
     .terms_page {
         height: 602px !important;
         overflow: hidden;
         min-height: unset !important;
     }
+
     .terms_page .lowershadow {
         position: absolute;
         display: block !important;
@@ -384,6 +402,7 @@ padding-top: 25px;
         right: 0px;
         z-index: 99999;
     }
+
     .collab1 .inner_collab {
         position: relative;
         height: 931px !important;
@@ -392,6 +411,7 @@ padding-top: 25px;
         border-radius: 40px;
         overflow: hidden;
     }
+
     .detailss_page {
         padding: 0px !important;
         overflow: hidden;
@@ -414,7 +434,7 @@ padding-top: 25px;
         flex-direction: column;
     }
 
-    .goalss_side .goaldiv{
+    .goalss_side .goaldiv {
         color: #000;
         text-align: center;
         font-size: 40px;
@@ -451,7 +471,7 @@ padding-top: 25px;
         background: #FFF;
     }
 
-    .tags_bar .developers_side .numbersdiv{
+    .tags_bar .developers_side .numbersdiv {
         color: #000;
         padding-top: 30px;
         font-size: 60px;
@@ -520,7 +540,7 @@ padding-top: 25px;
 
     .main_banner1 {
         padding: 0px;
-        min-height:unset !important;
+        min-height: unset !important;
     }
 
     .main_banner1 .inner_banner h1 {
@@ -557,59 +577,78 @@ padding-top: 25px;
 
 @media (min-width: 1600px) {
     .terms_page {
-        height: 28.875vw !important; /* 462px */
+        height: 28.875vw !important;
+        /* 462px */
         overflow: hidden;
         min-height: unset !important;
     }
 
     .terms_pagenew {
-        padding: 2.5vw 20vw; /* 40px 320px */
-        padding-bottom: 6.25vw; /* 100px */
+        padding: 2.5vw 20vw;
+        /* 40px 320px */
+        padding-bottom: 6.25vw;
+        /* 100px */
 
         h3 {
             color: #0E1120;
-            font-size: 2.5vw; /* 40px */
+            font-size: 2.5vw;
+            /* 40px */
             font-style: normal;
             font-weight: 500;
-            line-height: 7.5vw; /* 48px */
+            line-height: 7.5vw;
+            /* 48px */
         }
 
         p {
             color: #67717D;
-            font-size: 1.125vw; /* 18px */
+            font-size: 1.125vw;
+            /* 18px */
             font-style: normal;
             font-weight: 400;
-            line-height: 1.4; /* Maintain line height ratio */
-            padding-top: 1.125vw; /* 18px */
+            line-height: 1.4;
+            /* Maintain line height ratio */
+            padding-top: 1.125vw;
+            /* 18px */
         }
 
         h4 {
             color: #0E1120;
-            font-size: 1.625vw; /* 26px */
+            font-size: 1.625vw;
+            /* 26px */
             font-style: normal;
             font-weight: 500;
-            line-height: 7.5vw; /* 31.2px */
-            padding-top: 1.5625vw; /* 25px */
+            line-height: 7.5vw;
+            /* 31.2px */
+            padding-top: 1.5625vw;
+            /* 25px */
         }
 
         .custom-list {
-            list-style-type: none; /* Remove default bullets */
-            padding-left: 1.25vw; /* 20px */
-            font-family: Arial, sans-serif; /* Font style */
+            list-style-type: none;
+            /* Remove default bullets */
+            padding-left: 1.25vw;
+            /* 20px */
+            font-family: Arial, sans-serif;
+            /* Font style */
         }
 
         .custom-list li {
             color: #67717D;
-            font-size: 1.125vw; /* 18px */
+            font-size: 1.125vw;
+            /* 18px */
             font-style: normal;
             font-weight: 400;
-            line-height: 1.4; /* Maintain line height ratio */
-            padding-top: 1.125vw; /* 18px */
+            line-height: 1.4;
+            /* Maintain line height ratio */
+            padding-top: 1.125vw;
+            /* 18px */
         }
 
         .custom-list li:before {
-            content: "• "; /* Dot before list item */
-            color: black; /* Dot color */
+            content: "• ";
+            /* Dot before list item */
+            color: black;
+            /* Dot color */
         }
     }
 
@@ -695,7 +734,7 @@ padding-top: 25px;
             padding: 3.75vw 4.375vw; // 60px 70px
         }
 
-        .goaldiv{
+        .goaldiv {
             color: #000;
             text-align: center;
             font-size: 5vw; // 80px
@@ -856,7 +895,7 @@ padding-top: 25px;
             justify-content: center;
             flex-direction: column;
 
-            .name_cards{
+            .name_cards {
                 color: #000 !important;
                 text-align: center;
                 font-size: 1.375vw !important; // 22px
@@ -884,8 +923,8 @@ padding-top: 25px;
 }
 
 
-@media (max-width: 991px){
-    .main_banner1 .inner_banner .main-banner-video{
+@media (max-width: 991px) {
+    .main_banner1 .inner_banner .main-banner-video {
         position: absolute;
         object-fit: cover;
         object-position: center;
@@ -897,6 +936,7 @@ padding-top: 25px;
         scale: 3;
         transform: unset;
     }
+
     .main_banner1 {
         padding: 0px;
         position: relative;
@@ -923,5 +963,168 @@ padding-top: 25px;
 
 }
 
+.fahadprnt {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: #141414;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+    z-index: 99;
+
+    .postionbottomimg {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .contianer {
+        width: 100%;
+        text-align: center;
+
+        .buildbloks {
+            width: 100%;
+
+            img {
+                
+                width: 100%;
+                background-color: white;
+
+            }
+        }
+
+        .profileimf {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+            max-width: 177px;
+            width: 100%;
+        margin: 0 auto;
+
+            .img-profile {
+                position: absolute;
 
 
+            }
+
+            .telegramshare {
+                position: absolute;
+                bottom: -76px;
+                right: 16px;
+
+            }
+        }
+
+        .namepalatesss {
+            margin-top: 107px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 8px;
+
+            h2 {
+                color: #EBEBEB;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+            }
+
+            p {
+                color: #F0F0F0;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+
+                span {
+                    color: #D8FF69;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .aboutfahad {
+            margin-top: 38px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h2 {
+                color: #FFF;
+                text-align: center;
+                font-family: Orbitron;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.95px;
+            }
+
+            p {
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                max-width: 367px;
+                width: 100%;
+            }
+        }
+
+        .prntlinkbtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 52px;
+
+            .social {
+
+                border-radius: 5px;
+                border: 0.54px solid #D8FF69;
+                display: inline-flex;
+                padding: 7px;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                margin-top: 38px;
+
+                a {
+
+                    svg {}
+                }
+            }
+
+            .buttonbottomgfahadcard {
+                display: inline-flex;
+                padding: 10px 24px;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                gap: 8px;
+                color: #FFF;
+                text-align: center;
+                font-family: Orbitron;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                border-radius: 4px;
+                background: rgba(235, 235, 235, 0.30);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
