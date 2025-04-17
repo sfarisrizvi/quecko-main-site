@@ -83,10 +83,13 @@ height: 100vh;
 position: relative;
 .profile_maindiv{
     position: relative;
+    width: 177px;
+    margin: 0 auto;
     .svgarrowss{
         position: absolute;
-        right: 103px;
-        top: 38px;
+        right: 9px;
+        top: 43px;
+        z-index: 9999;
     }
 }
 .linkss_div{
