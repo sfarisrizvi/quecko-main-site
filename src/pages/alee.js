@@ -1,7 +1,26 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const alee = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth <= 768); // You can adjust this breakpoint
+        };
+
+        checkScreenSize(); // Initial check
+
+        window.addEventListener('resize', checkScreenSize);
+
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
+
+    if (!isMobile) {
+        return <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h2>This page is only available on mobile devices.</h2>
+        </div>
+    }
     return (
         <>
             <section className='profile_detailpage'>

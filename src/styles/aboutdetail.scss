@@ -970,13 +970,16 @@
     background: #141414;
     border-radius: 16px 16px 0px 0px;
     overflow: hidden;
-    z-index: 99;
 
+    .imggebottom{
+        width: 100%;
+    }
     .postionbottomimg {
         position: absolute;
         bottom: 0px;
+        width: 100%;
         left: 0px;
-        z-index: -1;
+
     }
 
     .contianer {
@@ -987,7 +990,7 @@
             width: 100%;
 
             img {
-                
+
                 width: 100%;
                 background-color: white;
 
@@ -1014,6 +1017,7 @@
                 position: absolute;
                 bottom: -76px;
                 right: 16px;
+                z-index: 9999;
 
             }
         }
@@ -1110,6 +1114,7 @@
             .buttonbottomgfahadcard {
                 display: inline-flex;
                 padding: 10px 24px;
+                z-index: 9999;
                 justify-content: center;
                 align-items: center;
                 border: none;
