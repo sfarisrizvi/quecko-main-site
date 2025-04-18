@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliobluemoon = () => {
+const bluemoon = () => {
     return (
         <>
             <Header />
@@ -243,4 +243,4 @@ const porfoliobluemoon = () => {
     )
 }
 
-export default porfoliobluemoon
+export default bluemoon

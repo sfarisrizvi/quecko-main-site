@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliotdns = () => {
+const domainnamesystem = () => {
     return (
         <>
             <Header />
@@ -333,4 +333,4 @@ const porfoliotdns = () => {
     )
 }
 
-export default porfoliotdns
+export default domainnamesystem

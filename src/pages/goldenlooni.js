@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const Porfoliogoldenlooni = () => {
+const goldenlooni = () => {
     return (
         <>
             <Header />
@@ -206,4 +206,4 @@ const Porfoliogoldenlooni = () => {
     )
 }
 
-export default Porfoliogoldenlooni
+export default goldenlooni

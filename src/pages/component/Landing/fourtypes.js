@@ -53,8 +53,8 @@ const Fourtypes = () => {
     <section ref={sectionRef} className="four_types">
       <div className="inner_types">
         {[
-          { value: "$500M+", label: "Money Raised" },
-          { value: "25+", label: "Global Client Base" },
+          { value: "$300M+", label: "Funds Generated" },
+          { value: "50+", label: "Global Client Base" },
           { value: "100+", label: "Company Strength" },
           { value: "500+", label: "Total Projects Delivered" },
         ].map((stat, index) => (

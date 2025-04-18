@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfolioexchange = () => {
+const queckoexchange = () => {
     return (
         <>
             <Header />
@@ -219,4 +219,4 @@ const porfolioexchange = () => {
     )
 }
 
-export default porfolioexchange
+export default queckoexchange

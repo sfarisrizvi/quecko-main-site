@@ -3,7 +3,8 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliooracle = () => {
+const privacyprotocoloracle
+= () => {
     return (
         <>
             <Header />
@@ -315,4 +316,4 @@ const porfoliooracle = () => {
     )
 }
 
-export default porfoliooracle
+export default privacyprotocoloracle

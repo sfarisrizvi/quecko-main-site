@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliorewardflow = () => {
+const rewardflow = () => {
     return (
         <>
             <Header />
@@ -247,4 +247,4 @@ const porfoliorewardflow = () => {
     )
 }
 
-export default porfoliorewardflow
+export default rewardflow

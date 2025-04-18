@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliopriv = () => {
+const nftgallery = () => {
     return (
         <>
             <Header />
@@ -11,10 +11,10 @@ const porfoliopriv = () => {
                 <div className='inner_porfolio'>
                     <div className='first_side'>
                         <div>
-                        <h1>Privacy Protocol
+                        <h1>NFT Gallery
 
 </h1>
-<p className='modullar_ptag'>Modular Zero-Knowledge Privacy Layer for EVM Chains
+<p className='modullar_ptag'>Core Network’s Premier NFT Marketplace
 </p>
                         </div>
                         <Link href="/contact">
@@ -37,17 +37,17 @@ const porfoliopriv = () => {
                         </div>
                     </div> */}
                         <div className='img_first'>
-                        <img src='\Assets\pri11.png' className='imgggs' />
+                        <img src='\Assets\nft11.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>
 
-                            <p>Our Privacy Protocol is designed to enhance transactional discretion on Ethereum-compatible networks. By integrating cutting-edge cryptography and custom smart contract logic, it enables users to interact with
+                            <p>NFT Gallery is a top-tier NFT platform built on the Core Network, enabling secure minting, trading, and showcasing of digital assets It combines
                             </p>
                         </div>
                         <div>
 
-                            <p>decentralized applications without exposing sensitive asset or wallet details. This framework ensures smooth interoperability with the existing Ethereum ecosystem while putting privacy and control back into the hands of users.
+                            <p>performance, scalability, and user-first design to drive the next wave of NFT adoption.
 
                             </p>
                         </div>
@@ -59,32 +59,64 @@ const porfoliopriv = () => {
 
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\pri12.png' className='imgnew' />
+                            <img src='\Assets\nft12.png' className='imgnew' />
                             <div>
-                                <h2>Private Token Management System</h2>
-                                <p>Assets are stored and managed in an external privacy-focused pool. This enables transfers from external wallets while breaking the link between sender and receiver, preserving transactional privacy.</p>
+                                <h2>NFT Minting & Trading</h2>
+                                <p>Create, list, and trade digital assets with ease.<br></br>The marketplace supports:</p>
+                                <ul>
+                                    <li>On-chain minting of NFTs with customizable metadata</li>
+                                    <li>Buy/sell functionality via secure smart contracts</li>
+                                    <li>Creator royalties & seconZdary market support</li>
+                                </ul>
                             </div>
                         </div>
                         <div className='imgs_seconds newcardssss'>
                         <div>
-                                <h2>zk-SNARK Verification Without Data Exposure</h2>
-                                <p>This module verifies token ownership and transaction legitimacy using zk-proofs — without exposing sensitive wallet information or transaction history.</p>
+                        <h2>NFT Launchpad</h2>
+                                <p>Launch your NFT collections like a pro.<br></br>Tools for creators and projects to go live:</p>
+                                <ul>
+                                    <li>Schedule drops with custom release mechanics</li>
+                                    <li>Whitelisting and presale configuration</li>
+                                    <li>Token-gated access & distribution automation</li>
+                                </ul>
                             </div>
-                            <img src='\Assets\pri13.png' className='imgnew' />
+                            <img src='\Assets\nft13.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\pri14.png' className='imgnew' />
+                            <img src='\Assets\nft14.png' className='imgnew' />
                             <div>
-                                <h2>Indirect Wallet-to-Wallet Transactions</h2>
-                                <p>Users don’t send assets directly. Instead, transfers are routed through the protocol, enabling secure and private interactions between wallets without public traceability.</p>
+                                <h2>Custom Collections</h2>
+                                <p>Structure and manage your assets.<br></br> Features for collectors and artists to organize work:</p>
+                                <ul>
+                                    <li>Personalized collection pages</li>
+                                    <li>Tagging, filtering, and metadata editing</li>
+                                    <li>Support for 1/1 art and generative series</li>
+                                </ul>
                             </div>
                         </div>
                         <div className='imgs_seconds newcardssss'>
                         <div>
-                                <h2>Off-Chain Transfer Ledger</h2>
-                                <p>Transactions between wallets within the Privacy Protocol are recorded off-chain, meaning there are no visible traces on public ledgers — significantly boosting confidentiality for users.</p>
+                        <h2>Security & Performance</h2>
+                                <p>Core-first, user-focused engineering.<br></br>NFT Gallery tackles common challenges:</p>
+                                <ul>
+                                    <li>Secured smart contracts with audited logic</li>
+                                    <li>Gas fee optimization & batching support</li>
+                                    <li>Load-balanced infrastructure for traffic spikes</li>
+                                </ul>
                             </div>
-                            <img src='\Assets\pri15.png' className='imgnew' />
+                            <img src='\Assets\nft15.png' className='imgnew' />
+                        </div>
+                        <div className='imgs_seconds'>
+                            <img src='\Assets\nft16.png' className='imgnew' />
+                            <div>
+                                <h2>Wallet & Cross-Chain Support</h2>
+                                <p>Built to connect Web3’s best.<br></br> Seamless integrations make it easy to onboard:</p>
+                                <ul>
+                                    <li>Core-compatible wallet integrations</li>
+                                    <li>Planned support for multi-chain NFTs</li>
+                                    <li>Easy import/export for collectors</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className='sixcards'>
@@ -148,7 +180,7 @@ const porfoliopriv = () => {
                             </div>
                         </div>
                     </div>
-                   
+
 
                 </div>
             </section>
@@ -157,4 +189,4 @@ const porfoliopriv = () => {
     )
 }
 
-export default porfoliopriv
+export default nftgallery

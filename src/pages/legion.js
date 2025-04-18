@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfolioligion = () => {
+const legion = () => {
     return (
         <>
             <Header />
@@ -272,4 +272,4 @@ const porfolioligion = () => {
     )
 }
 
-export default porfolioligion
+export default legion

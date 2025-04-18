@@ -1,6 +1,50 @@
 .aboutus_main {
     padding: 20px 20px;
     overflow: hidden;
+.meetourteamtext{
+    width: 100% !important;
+    margin-bottom: 60px;
+}
+    .meetourteams {
+        .teamone {
+            width: 100%;
+        }
+
+        .teamsimg {
+            width: 100%;
+        }
+
+        .teamone2 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 22px;
+            margin-top: 22px;
+        }
+        .teamone3{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap: 22px;
+            margin-top: 22px;
+        }
+        .teamone4{
+            display: grid;
+            grid-template-columns:1fr 2fr;
+            gap: 22px;
+            margin-top: 22px;
+        }
+        .teamone5{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap: 22px;
+            margin-top: 22px;
+        }
+        .teamone6{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 22px;
+            margin-top: 22px;
+        }
+    }
 
     .inner_about {
         padding: 55px;
@@ -61,7 +105,7 @@
             }
 
             .midle_left {
-                .clientsname{
+                .clientsname {
                     color: #9D9D9D;
                     font-size: 16px;
                     font-style: normal;
@@ -95,25 +139,30 @@
             flex-direction: column;
             gap: 30px;
             overflow: hidden;
-height: 300px;
+            height: 300px;
+
             .imgman {
                 width: 74px;
                 height: 74px;
                 border-radius: 60px;
             }
- p {
-    color: #000;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    padding-top: 30px;
-    display: -webkit-box; /* For Safari */
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Limit to 2 lines */
-    overflow: hidden;
-    text-overflow: ellipsis;
-                }
+
+            p {
+                color: #000;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                padding-top: 30px;
+                display: -webkit-box;
+                /* For Safari */
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                /* Limit to 2 lines */
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
             .inner_cards {
                 display: flex;
                 justify-content: center;
@@ -148,7 +197,13 @@ height: 300px;
         // width: auto;
     }
 }
-
+.meetusss{
+    background-color: unset !important;
+    padding: unset !important;
+}
+.meetclass{
+    padding: 0px 0px 0px 20px !important;
+}
 .trendinganimations {
     margin: 0px;
     padding: 0px;
@@ -301,6 +356,52 @@ height: 300px;
 }
 
 @media only screen and (max-width: 991px) {
+    .meetusss {
+padding: 20px !important;
+    }
+    .aboutus_main .meetourteams .teamone2 {
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        grid-gap: 22px;
+        gap: 22px;
+        margin-top: 22px;
+    }
+    .aboutus_main .meetourteams .teamone3 {
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        grid-gap: 22px;
+        gap: 22px;
+        margin-top: 22px;
+    }
+    .aboutus_main .meetourteams .teamone4 {
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        grid-gap: 22px;
+        gap: 22px;
+        margin-top: 22px;
+    }
+    .aboutus_main .meetourteams .teamone5 {
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        grid-gap: 22px;
+        gap: 22px;
+        margin-top: 22px;
+    }
+    .aboutus_main .meetourteams .teamone6 {
+        display: grid
+    ;
+        grid-template-columns: 1fr;
+        grid-gap: 22px;
+        gap: 22px;
+        margin-top: 22px;
+    }
+    .meetourteamtext{
+        padding-bottom: 0px !important;
+    }
     .aboutus_main .inner_about .cards p {
         color: #000;
         font-size: 18px;
@@ -309,6 +410,7 @@ height: 300px;
         line-height: 120%;
         padding-top: 20px;
     }
+
     .aboutus_main .inner_about .midle_class {
         display: flex;
         align-items: flex-start;
@@ -380,19 +482,23 @@ height: 300px;
         line-height: 100%;
         // white-space: nowrap;
     }
-    .aboutus_main .inner_about .midle_class{
+
+    .aboutus_main .inner_about .midle_class {
         display: block;
     }
-    .aboutus_main .inner_about .cards{
+
+    .aboutus_main .inner_about .cards {
         padding: 15px;
         height: 270PX;
 
     }
-    .aboutus_main .inner_about .cards .imgman{
+
+    .aboutus_main .inner_about .cards .imgman {
         width: 50px;
         height: 50px;
     }
-    .aboutus_main .inner_about .cards .inner_cards{
+
+    .aboutus_main .inner_about .cards .inner_cards {
         gap: 10px;
     }
 }
@@ -440,7 +546,8 @@ height: 300px;
                     text-align: center;
                     -webkit-tap-highlight-color: transparent;
                     position: absolute;
-                    left: -40.9375vw; /* -655px */
+                    left: -40.9375vw;
+                    /* -655px */
                     bottom: 0vw;
                 }
 
@@ -449,7 +556,7 @@ height: 300px;
                 }
 
                 .midle_left {
-                    .clientsname{
+                    .clientsname {
                         color: #9D9D9D;
                         font-size: 1vw;
                         font-style: normal;
@@ -461,7 +568,8 @@ height: 300px;
                     h2 {
                         color: #000;
                         font-size: 4.375vw;
-                        width: 29.8125vw; /* 477px */
+                        width: 29.8125vw;
+                        /* 477px */
                         font-style: normal;
                         font-weight: 400;
                         line-height: 100%;
@@ -480,24 +588,32 @@ height: 300px;
                 flex-direction: column;
                 gap: 1.875vw;
                 overflow: hidden;
-                height: 18.75vw; /* 300px */
+                height: 18.75vw;
+                /* 300px */
 
                 .imgman {
-                    width: 4.625vw; /* 74px */
-                    height: 4.625vw; /* 74px */
-                    border-radius: 3.75vw; /* 60px */
+                    width: 4.625vw;
+                    /* 74px */
+                    height: 4.625vw;
+                    /* 74px */
+                    border-radius: 3.75vw;
+                    /* 60px */
                 }
 
                 p {
                     color: #000;
-                    font-size: 1.5vw; /* 24px */
+                    font-size: 1.5vw;
+                    /* 24px */
                     font-style: normal;
                     font-weight: 400;
                     line-height: 120%;
-                    padding-top: 1.875vw; /* 30px */
-                    display: -webkit-box; /* For Safari */
+                    padding-top: 1.875vw;
+                    /* 30px */
+                    display: -webkit-box;
+                    /* For Safari */
                     -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 3; /* Limit to 3 lines */
+                    -webkit-line-clamp: 3;
+                    /* Limit to 3 lines */
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
@@ -508,9 +624,10 @@ height: 300px;
                     align-items: center;
                     gap: 1.25vw;
 
-                    .nameclient{
+                    .nameclient {
                         color: #000;
-                        font-size: 1.625vw; /* 26px */
+                        font-size: 1.625vw;
+                        /* 26px */
                         font-style: normal;
                         font-weight: 400;
                         line-height: 100%;
@@ -518,9 +635,11 @@ height: 300px;
 
                     p {
                         color: #424242;
-                        font-size: 1.25vw; /* 20px */
+                        font-size: 1.25vw;
+                        /* 20px */
                         font-style: normal;
-                        padding-top: 0.625vw; /* 10px */
+                        padding-top: 0.625vw;
+                        /* 10px */
                         font-weight: 400;
                         line-height: 100%;
                     }
@@ -536,25 +655,29 @@ height: 300px;
     .trendinganimations {
         margin: 0px;
         padding: 0px;
-        margin-top: 5vw; /* 80px */
+        margin-top: 5vw;
+        /* 80px */
         margin-bottom: 0px;
         display: flex;
         align-items: center;
         overflow: hidden;
         position: relative;
-        height: 4.75vw; /* 76px */
+        height: 4.75vw;
+        /* 76px */
 
         .trendinganimationsleft {
             background: #171A1F;
             border-right: 1px solid #262930;
-            padding: 1.875vw; /* 30px */
+            padding: 1.875vw;
+            /* 30px */
             position: absolute;
             z-index: 999;
 
             .trendinghead {
                 font-style: normal;
                 font-weight: 600;
-                font-size: 1vw; /* 16px */
+                font-size: 1vw;
+                /* 16px */
                 line-height: 100%;
                 text-transform: uppercase;
                 color: #FFFFFF;
@@ -587,13 +710,17 @@ height: 300px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 0.5vw; /* 8px */
+                    gap: 0.5vw;
+                    /* 8px */
 
                     .tendingcardimg {
-                        border: 0.125vw solid #3B3D42; /* 2px */
+                        border: 0.125vw solid #3B3D42;
+                        /* 2px */
                         border-radius: 100px;
-                        width: 2.125vw; /* 34px */
-                        height: 2.125vw; /* 34px */
+                        width: 2.125vw;
+                        /* 34px */
+                        height: 2.125vw;
+                        /* 34px */
                         object-fit: cover;
                         object-position: center;
                         position: relative;
@@ -607,16 +734,20 @@ height: 300px;
                         }
 
                         .exchangeimg {
-                            border: 0.125vw solid #191B21; /* 2px */
+                            border: 0.125vw solid #191B21;
+                            /* 2px */
                             border-radius: 100px;
-                            width: 0.875vw; /* 14px */
-                            height: 0.875vw; /* 14px */
+                            width: 0.875vw;
+                            /* 14px */
+                            height: 0.875vw;
+                            /* 14px */
                             object-fit: cover;
                             object-position: center;
                             z-index: 99;
                             position: absolute;
                             bottom: 0px;
-                            right: -0.0625vw; /* -1px */
+                            right: -0.0625vw;
+                            /* -1px */
 
                             .innerexchangeimg {
                                 border-radius: 100px;
@@ -633,9 +764,11 @@ height: 300px;
                         .treandingcardhead {
                             font-style: normal;
                             font-weight: 600;
-                            font-size: 1vw; /* 16px */
+                            font-size: 1vw;
+                            /* 16px */
                             line-height: 100%;
-                            margin-bottom: 0.125vw; /* 2px */
+                            margin-bottom: 0.125vw;
+                            /* 2px */
                             text-transform: uppercase;
                             color: #4C9540;
                         }
@@ -643,7 +776,8 @@ height: 300px;
                         .trendingcardpara {
                             font-style: normal;
                             font-weight: 600;
-                            font-size: 1vw; /* 16px */
+                            font-size: 1vw;
+                            /* 16px */
                             line-height: 100%;
                             text-transform: uppercase;
                             color: #FFFFFF;

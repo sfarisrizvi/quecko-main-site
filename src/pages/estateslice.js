@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliovion = () => {
+const estateslice = () => {
     return (
         <>
             <Header />
@@ -11,10 +11,10 @@ const porfoliovion = () => {
                 <div className='inner_porfolio'>
                     <div className='first_side'>
                         <div>
-                        <h1>Vion
+                        <h1>Estate Slice
 
 </h1>
-<p className='modullar_ptag'>Layer 1 Blockchain for a Decentralized Future
+<p className='modullar_ptag'>NFT-Powered Luxury Real Estate Investment
 </p>
                         </div>
                         <Link href="/contact">
@@ -42,13 +42,13 @@ const porfoliovion = () => {
                     <div className='challenge_div'>
                         <div>
 
-                            <p>Vion is a next-gen Layer 1 blockchain protocol designed to power scalable, accessible, and secure decentralized applications. EVM-compatible and Proof-of-Stake based, Vion solves fundamental adoption barriers of Web3
+                            <p>Estate Slice is a next-gen real estate platform that merges luxury property investment with blockchain and NFT technology. Through fractional ownership and smart contract automation, the platform offers investors the
 
                             </p>
                         </div>
                         <div>
 
-                            <p>by enabling simplified participation, fair validation, and real-time interoperability — all while preserving privacy, promoting sustainability, and empowering users, developers, and validators at scale.
+                            <p>to own and trade high-end real estate using secure and transparent digital assets.Designed for global accessibility, Estate Slice breaks traditional investment barriers while delivering an elegant experience tailored to both crypto-native and traditional investors
                             </p>
                         </div>
                     </div>
@@ -61,31 +61,29 @@ const porfoliovion = () => {
                         <div className='imgs_seconds'>
                             <img src='\Assets\est12.png' className='imgnew' />
                             <div>
-                                <h2>Modular Validator Infrastructure</h2>
-                                <p>Decentralized by design, inclusive by structure.</p>
+                                <h2>NFT-Based Ownership</h2>
+                                <p>Real estate, tokenized for secure and seamless transfer.</p>
                                 <ul>
                                     <li>
-                                    Genesis NFT Validators: No technical setup — just NFT ownership to participate and earn 1.1x rewards                                    </li>
+                                    Properties minted as unique NFTs                                    </li>
                                     <li>
-                                    Standard Validators: Stake-based validation with minimal setup, lower hardware requirements, and a user-friendly dashboard                                  </li>
+                                    Legal-compliant asset representation on-chain                                    </li>
                                     <li>
-                                    FLUID Validators: Liquid staking support for accessible, flexible participation with on-chain liquidity and real-time insights                                   </li>
+                                    Enables fast and trustless ownership exchange                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div className='imgs_seconds newcardssss'>
                         <div>
-                                <h2>EVM-Compatible & Developer Friendly</h2>
-                                <p>Rapid dApp deployment with enterprise-grade tooling.</p>
+                                <h2>Fractional Ownership Model</h2>
+                                <p>Shared ownership of high-value real estate.</p>
                                 <ul>
                                     <li>
-                                    Full Solidity support + Vion-native language                             </li>
+                                    Investors can buy slices of properties using NFTs                               </li>
                                     <li>
-                                    Boilerplate smart contract templates                                </li>
+                                    Lower entry barrier to premium assets                                 </li>
                                     <li>
-                                    Dev console for building, testing, and deploying dApps                               </li>
-                                    <li>
-                                    Incentivized development model with usage-based rebates                            </li>
+                                    Simplifies property investment at scale                                    </li>
                                 </ul>
                             </div>
                             <img src='\Assets\est13.png' className='imgnew' />
@@ -93,33 +91,29 @@ const porfoliovion = () => {
                         <div className='imgs_seconds'>
                             <img src='\Assets\est14.png' className='imgnew' />
                             <div>
-                                <h2>Smart Token Economy & On-Chain Governance</h2>
-                                <p>Designed for utility, sustainability, and decentralized control.</p>
+                                <h2>Blockchain-Powered Transactions</h2>
+                                <p>Smart contracts for security and automation.</p>
                                 <ul>
                                     <li>
-                                    $VION token with vesting-based tokenomics                                 </li>
+                                    Transparent buying, selling, and leasing logic                                 </li>
                                     <li>
-                                    DAO-enabled governance via NFT-based voting rights                         </li>
+                                    Reduced need for intermediaries                         </li>
                                     <li>
-                                    Multi-stage validator rewards model with diminishing incentives                           </li>
-                                    <li>
-                                    Airdrops, bug bounties, and community grant programs                                </li>
-
-
+                                    On-chain execution ensures real-time accuracy                             </li>
                                 </ul>
                             </div>
                         </div>
                         <div className='imgs_seconds newcardssss'>
                         <div>
-                                <h2>Notifications & Motivation</h2>
-                                <p>Smart nudges to keep users on track.</p>
+                                <h2>Real Estate NFT Marketplace</h2>
+                                <p>A dedicated hub for real estate asset trading.</p>
                                 <ul>
                                     <li>
-                                    Daily reminders to log meals and stay consistent                                   </li>
+                                    Explore, buy, sell, and lease real estate NFTs                                    </li>
                                     <li>
-                                    Motivational quotes and wellness tips                            </li>
+                                    Dynamic property listings with real-time valuation                            </li>
                                     <li>
-                                    Adaptive notification scheduling based on usage patterns
+                                    Future support for rental income and staking
                                     </li>
                                 </ul>
                             </div>
@@ -128,35 +122,18 @@ const porfoliovion = () => {
                         <div className='imgs_seconds'>
                             <img src='\Assets\est16.png' className='imgnew' />
                             <div>
-                                <h2>Admin Dashboard</h2>
-                                <p>Manage, monitor, and communicate from one place.</p>
+                                <h2>Community & Ecosystem</h2>
+                                <p>Driving adoption through growth and engagement.</p>
                                 <ul>
                                     <li>
-                                    Admins can control user access, app content, and announcements                               </li>
+                                    Built-in referral and affiliate features                                </li>
                                     <li>
-                                    Push notifications for challenges, updates, or reminders                            </li>
+                                    Educational content and onboarding tools                             </li>
                                     <li>
-                                    Overview of user activity, engagement, and performance                            </li>
+                                    Community building through marketing and social platforms                            </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className='imgs_seconds newcardssss'>
-                        <div>
-                                <h2>Reports & Insights</h2>
-                                <p>Personalized health analytics at your fingertips.</p>
-                                <ul>
-                                    <li>
-                                    Auto-generated reports on eating patterns                                  </li>
-                                    <li>
-                                    Insights into dietary strengths, weaknesses, and suggestions                         </li>
-                                    <li>
-                                    Data-driven tips for optimizing nutrition habits
-                                    </li>
-                                </ul>
-                            </div>
-                            <img src='\Assets\est15.png' className='imgnew' />
-                        </div>
-
                     </div>
                     <div className='sixcards'>
                         <h2>Built With</h2>
@@ -249,4 +226,4 @@ const porfoliovion = () => {
     )
 }
 
-export default porfoliovion
+export default estateslice

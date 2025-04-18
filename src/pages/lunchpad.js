@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const Porfoliolunchpad = () => {
+const lunchpad = () => {
     return (
         <>
             <Header />
@@ -199,4 +199,4 @@ const Porfoliolunchpad = () => {
     )
 }
 
-export default Porfoliolunchpad
+export default lunchpad

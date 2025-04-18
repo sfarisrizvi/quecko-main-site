@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliodiet = () => {
+const dietandcheatmealapp = () => {
     return (
         <>
             <Header />
@@ -247,4 +247,4 @@ const porfoliodiet = () => {
     )
 }
 
-export default porfoliodiet
+export default dietandcheatmealapp

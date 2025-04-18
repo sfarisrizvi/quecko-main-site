@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const Porfoliomultichain = () => {
+const multichain = () => {
     return (
         <>
             <Header />
@@ -220,4 +220,4 @@ const Porfoliomultichain = () => {
     )
 }
 
-export default Porfoliomultichain
+export default multichain

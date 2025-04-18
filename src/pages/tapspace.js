@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliotapspace = () => {
+const tapspace = () => {
     return (
         <>
             <Header />
@@ -211,4 +211,4 @@ const porfoliotapspace = () => {
     )
 }
 
-export default porfoliotapspace
+export default tapspace

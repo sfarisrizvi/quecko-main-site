@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const Porfoliomeme = () => {
+const memecoinlaunchpad = () => {
     return (
         <>
             <Header />
@@ -230,4 +230,4 @@ const Porfoliomeme = () => {
     )
 }
 
-export default Porfoliomeme
+export default memecoinlaunchpad

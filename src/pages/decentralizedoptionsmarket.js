@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const porfoliodom = () => {
+const decentralizedoptionsmarket = () => {
     return (
         <>
             <Header />
@@ -11,7 +11,7 @@ const porfoliodom = () => {
                 <div className='inner_porfolio'>
                     <div className='first_side'>
                         <div>
-                        <h1>Decentralized options market
+                        <h1>Decentralized Options Market
 </h1>
 <p className='modullar_ptag'>Decentralized Forecasting Infrastructure
 </p>
@@ -36,7 +36,7 @@ const porfoliodom = () => {
                         </div>
                     </div> */}
                         <div className='img_first'>
-                        <img src='\Assets\dom11.png' className='imgggs' />
+                        <img src='\Assets\DOM111.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>
@@ -220,4 +220,4 @@ const porfoliodom = () => {
     )
 }
 
-export default porfoliodom
+export default decentralizedoptionsmarket

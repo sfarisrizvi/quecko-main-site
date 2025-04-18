@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Projects = () => {
@@ -8,6 +9,7 @@ const Projects = () => {
                     {/* <span className='ourwork'>Our work</span> */}
                     <h2>Our Projects</h2>
                     <div className='parent_div'>
+                        <Link href="/lunchpad">
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -15,14 +17,16 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\6.Launch pad.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/6.Launchpad.mp4" type="video/mp4" />
                             </video>
-                            <div className='buttons_div'>
+                            {/* <div className='buttons_div'>
                                 <button>Branding</button>
                                 <button>Development</button>
                                 <button>Marketing</button>
-                            </div>
+                            </div> */}
                         </div>
+                        </Link>
+                        <Link href="/multichain">
                         <div className='right_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -30,16 +34,18 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\3. Multichain Wallet.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/3.MultichainWallet.mp4" type="video/mp4" />
                             </video>
-                            <div className='buttons_div'>
+                            {/* <div className='buttons_div'>
                                 <button>Branding</button>
                                 <button>Development</button>
                                 <button>Marketing</button>
-                            </div>
+                            </div> */}
                         </div>
+                        </Link>
                     </div>
                     <div className='parent_div second_parent'>
+                    <Link href="/estateslice">
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -47,14 +53,17 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\5. Estate Slice.mp4" />
+                                <source src="https://media.quecko.com/videos/5.EstateSlice.mp4" />
                             </video>
-                            <div className='buttons_div'>
+                            {/* <div className='buttons_div'>
                                 <button>Branding</button>
                                 <button>Development</button>
                                 <button>Marketing</button>
-                            </div>
+                            </div> */}
                         </div>
+                        </Link>
+                        <Link href="/legion">
+
                         <div className='right_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -62,14 +71,15 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\1. Legion.mp4 " type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/1.Legion.mp4" type="video/mp4" />
                             </video>
-                            <div className='buttons_div'>
+                            {/* <div className='buttons_div'>
                                 <button>Branding</button>
                                 <button>Development</button>
                                 <button>Marketing</button>
-                            </div>
+                            </div> */}
                         </div>
+                        </Link>
                     </div>
                     {/* <div className='parent_div'>
                         <div className='left_side hovercard'>
