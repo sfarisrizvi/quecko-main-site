@@ -663,13 +663,11 @@ const contactusdetail = () => {
 
             {/* Toast Notification */}
             <div className='toast_mains' >  
-                <Toast show={showA} onClose={() => setShowA(false)} delay={3000} autohide>
-                    <Toast.Header closeButton={false}> {/* Optional: Remove default close button */}
-                        <strong className="me-auto">Notification</strong>
-                    </Toast.Header>
+                <Toast show={showA} onClose={() => setShowA(true)} delay={3000} autohide>
+              
                     <Toast.Body>
-                        <div className='toastt_mark' style={{ display: 'flex', alignItems: 'center' }}>
-                            <img src='\Assets\tick.svg' alt="Success Tick" style={{ marginRight: '10px', width: '24px', height: '24px' }} /> {/* Added alt text & basic styling */}
+                        <div className='toastt_mark'>
+                            <img src='\Assets\tick.svg' alt="Success Tick"   /> {/* Added alt text & basic styling */}
                             <div>
                                 <h3>Thanks for getting in touch!</h3>
                                 <p style={{ margin: 0 }}>We’ve received your request. Expect to hear from us soon!</p> {/* Removed default margin */}
