@@ -13,18 +13,15 @@ import Toast from 'react-bootstrap/Toast';
 
 const contactusdetail = () => {
 
-    const [showA, setShowA] = useState(true);
+    const [showA, setShowA] = useState(false);
+    // const toggleShowA = () => setShowA(!showA);
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setShowA(false);
+    //     }, 3000); // 3000 ms = 3 seconds
 
-
-    const toggleShowA = () => setShowA(!showA);
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowA(false);
-        }, 3000); // 3000 ms = 3 seconds
-
-        return () => clearTimeout(timer); // Cleanup in case component unmounts early
-    }, []);
-
+    //     return () => clearTimeout(timer); // Cleanup in case component unmounts early
+    // }, []);
     const [name, setName] = useState('');
     const [telegram, setTelegram] = useState('');
     const [email, setEmail] = useState('');
@@ -32,9 +29,6 @@ const contactusdetail = () => {
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState({});
     const [submitted, setSubmitted] = useState(false);
-
-
-
 
     const regex = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
@@ -108,7 +102,6 @@ const contactusdetail = () => {
         if (submitted) setSubmitted(false);
     };
 
-
     const handleTelegramChange = (e) => {
         let newValue = e.target.value;
         if (newValue && !newValue.startsWith("@")) {
@@ -119,7 +112,17 @@ const contactusdetail = () => {
     };
 
 
+    useEffect(() => {
+        if (submitted) {
+            setShowA(true);
 
+            const timeout = setTimeout(() => {
+                setShowA(false);
+            }, 2000);
+
+            return () => clearTimeout(timeout); 
+        }
+    }, [submitted]);
     return (
         <>
             <Head>
@@ -138,9 +141,6 @@ const contactusdetail = () => {
                 />
                 <meta name="publisher" content="Quecko" />
                 <meta name="robots" content="index, follow" />
-
-
-
 
             </Head>
             <Header />
@@ -286,7 +286,9 @@ const contactusdetail = () => {
                                 />
                                 {errors.message && <div className='errror_mssg' style={{ color: 'red' }}>{errors.message}</div>}
 
-                                <div show={showA} onClose={toggleShowA} className='button_div'>
+                                <div show={showA} 
+                                // onClose={toggleShowA}
+                                 className='button_div'>
                                     <button type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : submitted ? 'Submitted' : 'Get in Touch'}
                                     </button>
