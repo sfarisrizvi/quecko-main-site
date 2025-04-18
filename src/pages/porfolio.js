@@ -114,7 +114,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port55.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -122,7 +122,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port33.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -132,7 +132,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -140,7 +140,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port88.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -168,7 +168,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port111.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -178,7 +178,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\portmeme1.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -190,7 +190,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portdiet.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -198,7 +198,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -208,7 +208,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portorcale.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -235,7 +235,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\port77.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -291,7 +291,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domainphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -299,7 +299,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\galleryphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -309,7 +309,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domphonen.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -317,7 +317,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\rewardphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -345,7 +345,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\quickphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -355,7 +355,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\memephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -367,7 +367,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\dietphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -375,7 +375,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -385,7 +385,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\oraclephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -412,7 +412,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\estatephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -472,7 +472,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port55.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -480,7 +480,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port33.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -490,7 +490,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -498,7 +498,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port88.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -526,7 +526,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port111.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -536,7 +536,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\portmeme1.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -548,7 +548,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portdiet.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -556,7 +556,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -566,7 +566,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portorcale.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -593,7 +593,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\port77.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -649,7 +649,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domainphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -657,7 +657,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\galleryphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -667,7 +667,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domphonen.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -675,7 +675,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\rewardphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -703,7 +703,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\quickphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -713,7 +713,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\memephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -725,7 +725,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\dietphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -733,7 +733,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -743,7 +743,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\oraclephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -770,7 +770,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\estatephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -830,7 +830,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port55.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -838,7 +838,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port33.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -848,7 +848,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -856,7 +856,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port88.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -884,7 +884,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port111.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -894,7 +894,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\portmeme1.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -906,7 +906,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portdiet.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -914,7 +914,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -924,7 +924,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portorcale.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -951,7 +951,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\port77.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1007,7 +1007,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domainphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1015,7 +1015,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\galleryphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1025,7 +1025,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domphonen.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1033,7 +1033,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\rewardphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1061,7 +1061,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\quickphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1071,7 +1071,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\memephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1083,7 +1083,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\dietphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1091,7 +1091,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1101,7 +1101,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\oraclephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1128,7 +1128,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\estatephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1188,7 +1188,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port55.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1196,7 +1196,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port33.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1206,7 +1206,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1214,7 +1214,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port88.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1242,7 +1242,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\port111.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1252,7 +1252,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\portmeme1.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1264,7 +1264,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portdiet.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1272,7 +1272,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1282,7 +1282,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portorcale.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1309,7 +1309,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\port77.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1365,7 +1365,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div'>
-                                        <Link href='/domainnamesystem'>
+                                        <Link href='/domain-name-system'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domainphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1373,7 +1373,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/nftgallery'>
+                                        <Link href='/nft-gallery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\galleryphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1383,7 +1383,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/decentralizedoptionsmarket'>
+                                        <Link href='/decentralized-options-market'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\domphonen.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1391,7 +1391,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/rewardflow'>
+                                        <Link href='/reward-flow'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\rewardphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1419,7 +1419,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/quickgrocery'>
+                                        <Link href='/quick-grocery'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\quickphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1429,7 +1429,7 @@ const Portfolio = () => {
                                         </Link>
 
 
-                                        <Link href='/memecoinlaunchpad'>
+                                        <Link href='/meme-coin-launchpad'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\memephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1441,7 +1441,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='parent_div'>
-                                        <Link href='/dietandcheatmealapp'>
+                                        <Link href='/diet-and-cheat-meal-app'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\dietphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1449,7 +1449,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/goldenlooni'>
+                                        <Link href='/golden-looni'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1459,7 +1459,7 @@ const Portfolio = () => {
                                         </Link>
                                     </div>
                                     <div className='parent_div second_parent'>
-                                        <Link href='/privacyprotocoloracle'>
+                                        <Link href='/privacy-protocol-oracle'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\oraclephone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1486,7 +1486,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/estateslice'>
+                                        <Link href='/estate-slice'>
                                             <div className=' right_side hovercard'>
                                                 <img src='\Assets\estatephone.png' className='imgport' />
                                                 <div className='buttons_div'>

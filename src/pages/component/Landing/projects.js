@@ -45,7 +45,7 @@ const Projects = () => {
                         </Link>
                     </div>
                     <div className='parent_div second_parent'>
-                    <Link href="/estateslice">
+                    <Link href="/estate-slice">
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -82,7 +82,7 @@ const Projects = () => {
                         </Link>
                     </div>
                     <div className='parent_div'>
-                        <Link href="/decentralizedoptionsmarket">
+                        <Link href="/decentralized-options-market">
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -99,7 +99,7 @@ const Projects = () => {
                             </div> */}
                         </div>
                         </Link>
-                        <Link href="/dietandcheatmealapp">
+                        <Link href="/diet-and-cheat-meal-app">
                         <div className='right_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
