@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 import Header from './component/Landing/header'
 import Contactus from './contactus'
 import Work from './component/Landing/work'
@@ -17,6 +17,13 @@ const contactusdetail = () => {
 
 
     const toggleShowA = () => setShowA(!showA);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowA(false);
+        }, 3000); // 3000 ms = 3 seconds
+
+        return () => clearTimeout(timer); // Cleanup in case component unmounts early
+    }, []);
 
     const [name, setName] = useState('');
     const [telegram, setTelegram] = useState('');
@@ -279,7 +286,7 @@ const contactusdetail = () => {
                                 />
                                 {errors.message && <div className='errror_mssg' style={{ color: 'red' }}>{errors.message}</div>}
 
-                                <div  show={showA} onClose={toggleShowA} className='button_div'>
+                                <div show={showA} onClose={toggleShowA} className='button_div'>
                                     <button type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : submitted ? 'Submitted' : 'Get in Touch'}
                                     </button>
@@ -293,21 +300,21 @@ const contactusdetail = () => {
 
             <Work />
             <Footer />
-<div className='toast_mains'>
-<Toast show={showA}>
+            <div className='toast_mains'>
+                <Toast show={showA}>
 
-                <Toast.Body>
+                    <Toast.Body>
 
-                    <div className='toastt_mark'>
-                        <img src='\Assets\tick.svg'/>
-                        <div>
-                            <h3>Thanks for getting in touch!</h3>
-                            <p>We’ve received your request. Expect to hear from us soon!</p>
+                        <div className='toastt_mark'>
+                            <img src='\Assets\tick.svg' />
+                            <div>
+                                <h3>Thanks for getting in touch!</h3>
+                                <p>We’ve received your request. Expect to hear from us soon!</p>
+                            </div>
                         </div>
-                    </div>
-                </Toast.Body>
-            </Toast>
-</div>
+                    </Toast.Body>
+                </Toast>
+            </div>
 
         </>
     )
