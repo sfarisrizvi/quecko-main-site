@@ -216,6 +216,9 @@
     }
 }
 @media only screen and (max-width: 991px) {
+    .mineprojects{
+        display: block !important;
+    }
     .inner_projects{
         display: none;
     }
