@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <>
             <section className='projects_main' id="projects">
-                <div className='inner_projects'>
+                <div className='inner_projects mineprojects'>
                     {/* <span className='ourwork'>Our work</span> */}
                     <h2>Our Projects</h2>
                     <div className='parent_div'>
