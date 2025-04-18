@@ -632,7 +632,7 @@ const contactusdetail = () => {
                                 {errors.message && <div className='errror_mssg' style={{ color: 'red' }}>{errors.message}</div>}
 
                                 {/* Add reCAPTCHA Widget */}
-                                <div className='recaptcha-container' style={{ margin: '15px 0' }}> {/* Add some margin */}
+                                <div className='recaptcha-container'  > {/* Add some margin */}
                                     <ReCAPTCHA
                                         ref={recaptchaRef}
                                         sitekey={YOUR_RECAPTCHA_SITE_KEY}
