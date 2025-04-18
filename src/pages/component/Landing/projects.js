@@ -15,7 +15,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\videoone.mp4" type="video/mp4" />
+                                <source src="\Assets\6.Launch pad.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -30,7 +30,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\videotwo.mp4" type="video/mp4" />
+                                <source src="\Assets\3. Multichain Wallet.mp4" type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -47,7 +47,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\videothree.mp4" />
+                                <source src="\Assets\5. Estate Slice.mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
@@ -62,7 +62,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\videofour.mp4" type="video/mp4" />
+                                <source src="\Assets\1. Legion.mp4 " type="video/mp4" />
                             </video>
                             <div className='buttons_div'>
                                 <button>Branding</button>
