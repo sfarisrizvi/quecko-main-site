@@ -12,6 +12,7 @@ import axios from 'axios';
 import emailjs from '@emailjs/browser';
 import Toast from 'react-bootstrap/Toast';
 import ReCAPTCHA from "react-google-recaptcha"; // Import ReCAPTCHA
+import { SiteKey } from '@/Utils/Enviroment';
 
 const contactusdetail = () => {
     const [showA, setShowA] = useState(false);
@@ -25,10 +26,9 @@ const contactusdetail = () => {
     const [recaptchaToken, setRecaptchaToken] = useState(null); // State for reCAPTCHA token
     const recaptchaRef = useRef(null); // Ref for reCAPTCHA instance
 
-    const YOUR_RECAPTCHA_SITE_KEY = "6LcaFB0rAAAAAPYMGuBaNZU0ynh_V6_eJq6R_rxB"; // Your Site Key
+    const YOUR_RECAPTCHA_SITE_KEY = SiteKey
 
-    // Regex and validation logic remains the same
-    const regex = {
+     const regex = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
         message: /^.{5,}$/,
@@ -54,8 +54,7 @@ const contactusdetail = () => {
             validationErrors.message = "Message must be at least 5 non-space characters";
         }
 
-        // Add reCAPTCHA validation
-        if (!recaptchaToken) {
+         if (!recaptchaToken) {
             validationErrors.recaptcha = "Please complete the reCAPTCHA verification.";
         }
 
@@ -70,19 +69,19 @@ const contactusdetail = () => {
             email,
             message,
             telegram,
-            'g-recaptcha-response': recaptchaToken // Include token for backend/API verification
+            'g-recaptcha-response': recaptchaToken 
         };
 
         const validationErrors = validateForm(payload);
 
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
-            setLoading(false); // Ensure loading is stopped on validation error
+            setLoading(false);  
             return;
         }
 
         setLoading(true);
-        setErrors({}); // Clear previous errors
+        setErrors({});  
 
         try {
             // EmailJS Send - Note: EmailJS might have its own reCAPTCHA settings,

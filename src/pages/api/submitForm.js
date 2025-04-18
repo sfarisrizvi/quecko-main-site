@@ -1,10 +1,10 @@
 
+import { BitFormheaders, bitFormResponseUrl, SECRETKEY, verifyUrlGoogle } from '@/Utils/Enviroment';
 import axios from 'axios';
 import FormData from 'form-data';
 
 // Get the Secret Key from environment variables
-const RECAPTCHA_SECRET_KEY = "6LcaFB0rAAAAAGrGZUv2Y-8cpxxhxcDxFA95spVr";
-
+const RECAPTCHA_SECRET_KEY = SECRETKEY;
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ success: false, message: 'Method Not Allowed' });
@@ -28,7 +28,7 @@ export default async function handler(req, res) {
         // Construct the verification URL
         // Using POST is slightly preferred by Google, but GET works too.
         // We'll use POST with URLSearchParams for clarity.
-        const verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
+        const verifyUrl = verifyUrlGoogle;
 
         const verificationParams = new URLSearchParams();
         verificationParams.append('secret', RECAPTCHA_SECRET_KEY);
@@ -81,12 +81,14 @@ export default async function handler(req, res) {
         formData.append("b1-6", telegram || ''); // Make sure telegram is handled if optional
 
         const bitFormResponse = await axios.post(
-            'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
+            // 'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
+            bitFormResponseUrl,
             formData,
             {
                 headers: {
                     ...formData.getHeaders(),
-                    "BitForm-API-Key": "59971a5c6213ecbb4e58bf91b4a56962f05311d8", // Consider moving this to env vars too
+                    "BitForm-API-Key": BitFormheaders, 
+                    //  "59971a5c6213ecbb4e58bf91b4a56962f05311d8", // Consider moving this to env vars too
                 },
             }
         );
