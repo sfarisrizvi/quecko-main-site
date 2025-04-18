@@ -813,3 +813,48 @@ padding: 20px !important;
     }
 
 }
+
+
+.toast_mains{
+    position: fixed;
+    top: 126px;
+    right: 61px;
+    z-index: 9999;
+    overflow: hidden;
+    .toast {
+        overflow: hidden;
+        background-color: unset;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+    .toast-body {
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .toastt_mark{
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        padding: 18px;
+        border-radius: 14px;
+        background: #000;
+h3{
+    color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 19.2px */
+}
+p{
+    color: rgba(255, 255, 255, 0.51);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+padding-top: 8px;
+}
+
+    }
+}
