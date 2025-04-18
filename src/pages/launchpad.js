@@ -3,7 +3,7 @@ import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
 
-const lunchpad = () => {
+const launchpad = () => {
     return (
         <>
             <Header />
@@ -54,7 +54,7 @@ const lunchpad = () => {
                                 <h2>Token Sale Builder (Self-Service)</h2>
                                 <p>Launchpad includes a self-service interface that lets founders launch their ERC-20 token sales in minutes. Define sale terms, pricing, vesting, and whitelist rules, all without writing code.
 </p>
-                               <p>Step-by-step flow:  Sign Up → Project Details → Token Setup → Sale Parameters → Launch</p>
+                               <p>Step-by-step flow: Sign Up → Project Details → Token Setup → Sale Parameters → Launch</p>
                             </div>
                         </div>
                         <div className='imgs_seconds newcardssss'>
@@ -199,4 +199,4 @@ const lunchpad = () => {
     )
 }
 
-export default lunchpad
+export default launchpad

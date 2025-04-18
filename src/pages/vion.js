@@ -37,7 +37,7 @@ const vion = () => {
                         </div>
                     </div> */}
                         <div className='img_first'>
-                        <img src='\Assets\est11.png' className='imgggs' />
+                        <img src='\Assets\vion11.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>
@@ -59,7 +59,7 @@ const vion = () => {
 
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\est12.png' className='imgnew' />
+                            <img src='\Assets\vion12.png' className='imgnew' />
                             <div>
                                 <h2>Modular Validator Infrastructure</h2>
                                 <p>Decentralized by design, inclusive by structure.</p>
@@ -88,10 +88,10 @@ const vion = () => {
                                     Incentivized development model with usage-based rebates                            </li>
                                 </ul>
                             </div>
-                            <img src='\Assets\est13.png' className='imgnew' />
+                            <img src='\Assets\vion13.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\est14.png' className='imgnew' />
+                            <img src='\Assets\vion14.png' className='imgnew' />
                             <div>
                                 <h2>Smart Token Economy & On-Chain Governance</h2>
                                 <p>Designed for utility, sustainability, and decentralized control.</p>
@@ -111,51 +111,46 @@ const vion = () => {
                         </div>
                         <div className='imgs_seconds newcardssss'>
                         <div>
-                                <h2>Notifications & Motivation</h2>
-                                <p>Smart nudges to keep users on track.</p>
+                                <h2>Ecosystem Tools & User Services</h2>
+                                <p>End-to-end Web3 infrastructure built in.</p>
                                 <ul>
                                     <li>
-                                    Daily reminders to log meals and stay consistent                                   </li>
+                                    Token Generator: Launch custom tokens with zero code                          </li>
                                     <li>
-                                    Motivational quotes and wellness tips                            </li>
+                                    Decentralized Launchpad: Raise funds and deploy tokens                          </li>
                                     <li>
-                                    Adaptive notification scheduling based on usage patterns
+                                    Native DEX: Trade assets with liquidity from Vion Foundation
                                     </li>
+
+
+
+                                    <li>
+                                    Leaderboard & Rewards: Incentivized activity across use cases                          </li>
+                                    <li>
+                                    FLUID App: Manage validator rewards and staking                          </li>   <li>
+                                    VionWallet: Abstracted account management for all users                         </li>
+
                                 </ul>
                             </div>
-                            <img src='\Assets\est15.png' className='imgnew' />
+                            <img src='\Assets\vion15.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\est16.png' className='imgnew' />
+                            <img src='\Assets\vion16.png' className='imgnew' />
                             <div>
-                                <h2>Admin Dashboard</h2>
-                                <p>Manage, monitor, and communicate from one place.</p>
+                                <h2>Cross-Chain Connectivity & Interoperability</h2>
+                                <p>Web3 shouldn’t be fragmented — Vion bridges the gap.</p>
                                 <ul>
                                     <li>
-                                    Admins can control user access, app content, and announcements                               </li>
+                                    Native bridges to Ethereum, BSC, and Polygon                              </li>
                                     <li>
-                                    Push notifications for challenges, updates, or reminders                            </li>
+                                    Cross-chain asset transfers                          </li>
                                     <li>
-                                    Overview of user activity, engagement, and performance                            </li>
+                                    Scalable infrastructure for multi-chain apps and liquidity                           </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className='imgs_seconds newcardssss'>
-                        <div>
-                                <h2>Reports & Insights</h2>
-                                <p>Personalized health analytics at your fingertips.</p>
-                                <ul>
-                                    <li>
-                                    Auto-generated reports on eating patterns                                  </li>
-                                    <li>
-                                    Insights into dietary strengths, weaknesses, and suggestions                         </li>
-                                    <li>
-                                    Data-driven tips for optimizing nutrition habits
-                                    </li>
-                                </ul>
-                            </div>
-                            <img src='\Assets\est15.png' className='imgnew' />
-                        </div>
+
+                       
 
                     </div>
                     <div className='sixcards'>

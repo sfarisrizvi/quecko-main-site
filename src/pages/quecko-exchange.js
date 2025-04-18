@@ -36,7 +36,7 @@ const queckoexchange = () => {
                         </div>
                     </div> */}
                         <div className='img_first'>
-                        <img src='\Assets\ex1.png' className='imgggs' />
+                        <img src='\Assets\quecko11.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>
@@ -58,7 +58,7 @@ const queckoexchange = () => {
 
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\ex2.png' className='imgnew' />
+                            <img src='\Assets\quecko12.png' className='imgnew' />
                             <div>
                                 <h2>User Authentication & Access Control</h2>
                                 <p>Secure account onboarding and permissions.</p>
@@ -85,10 +85,10 @@ const queckoexchange = () => {
                                     Supports deposits and withdrawals on multiple blockchain networks                                   </li>
                                 </ul>
                             </div>
-                            <img src='\Assets\ex3.png' className='imgnew' />
+                            <img src='\Assets\quecko13.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\ex4.png' className='imgnew' />
+                            <img src='\Assets\quecko14.png' className='imgnew' />
                             <div>
                                 <h2>Real-Time Order Book & Trade Engine</h2>
                                 <p>Fast and accurate order execution.</p>
@@ -116,10 +116,10 @@ const queckoexchange = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <img src='\Assets\ex5.png' className='imgnew' />
+                            <img src='\Assets\quecko15.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\ex6.png' className='imgnew' />
+                            <img src='\Assets\quecko16.png' className='imgnew' />
                             <div>
                                 <h2>Real-Time Notifications & Balance Sync</h2>
                                 <p>WebSocket and email alerts for critical updates.</p>

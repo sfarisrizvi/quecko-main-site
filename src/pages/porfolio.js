@@ -74,7 +74,7 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -84,9 +84,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <img src='\Assets\preview.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -96,7 +96,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port22.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -104,9 +104,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\queckoexchange.png' className='imgport' />
+                                                <img src='\Assets\exchangeimg.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -200,7 +200,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\portlooni.png' className='imgport' />
+                                                <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -218,7 +218,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <img src='\Assets\spacenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -251,7 +251,7 @@ const Portfolio = () => {
                                 <div className='inner_projectsphone d-none'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\lunchphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -261,9 +261,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\privphone.png' className='imgport' />
+                                                <img src='\Assets\previewphone.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -273,7 +273,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\multiphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -281,9 +281,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\exchangephone.png' className='imgport' />
+                                                <img src='\Assets\exchangephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -377,7 +377,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\looniphone.png' className='imgport' />
+                                                <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -395,7 +395,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\spacephone.png' className='imgport' />
+                                                <img src='\Assets\spacephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -432,7 +432,7 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -442,9 +442,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <img src='\Assets\preview.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -454,7 +454,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port22.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -462,9 +462,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\queckoexchange.png' className='imgport' />
+                                                <img src='\Assets\exchangeimg.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -558,7 +558,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\portlooni.png' className='imgport' />
+                                                <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -576,7 +576,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <img src='\Assets\spacenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -609,7 +609,7 @@ const Portfolio = () => {
                                 <div className='inner_projectsphone d-none'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\lunchphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -619,9 +619,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\privphone.png' className='imgport' />
+                                                <img src='\Assets\previewphone.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -631,7 +631,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\multiphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -639,9 +639,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\exchangephone.png' className='imgport' />
+                                                <img src='\Assets\exchangephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -735,7 +735,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\looniphone.png' className='imgport' />
+                                                <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -753,7 +753,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\spacephone.png' className='imgport' />
+                                                <img src='\Assets\spacephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -790,7 +790,7 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -800,9 +800,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <img src='\Assets\preview.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -812,7 +812,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port22.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -820,9 +820,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\queckoexchange.png' className='imgport' />
+                                                <img src='\Assets\exchangeimg.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -916,7 +916,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\portlooni.png' className='imgport' />
+                                                <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -934,7 +934,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <img src='\Assets\spacenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -967,7 +967,7 @@ const Portfolio = () => {
                                 <div className='inner_projectsphone d-none'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\lunchphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -977,9 +977,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\privphone.png' className='imgport' />
+                                                <img src='\Assets\previewphone.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -989,7 +989,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\multiphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -997,9 +997,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\exchangephone.png' className='imgport' />
+                                                <img src='\Assets\exchangephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -1093,7 +1093,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\looniphone.png' className='imgport' />
+                                                <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -1111,7 +1111,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\spacephone.png' className='imgport' />
+                                                <img src='\Assets\spacephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -1148,7 +1148,7 @@ const Portfolio = () => {
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\portnew.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1158,9 +1158,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port66.png' className='imgport' />
+                                                <img src='\Assets\preview.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -1170,7 +1170,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\port22.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1178,9 +1178,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\queckoexchange.png' className='imgport' />
+                                                <img src='\Assets\exchangeimg.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -1274,7 +1274,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\portlooni.png' className='imgport' />
+                                                <img src='\Assets\lonihome.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -1292,7 +1292,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\port12.png' className='imgport' />
+                                                <img src='\Assets\spacenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -1325,7 +1325,7 @@ const Portfolio = () => {
                                 <div className='inner_projectsphone d-none'>
 
                                     <div className='parent_div'>
-                                        <Link href='/lunchpad'>
+                                        <Link href='/launchpad'>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\lunchphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1335,9 +1335,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/privacyprotocol'>
+                                        <Link href='/privacy-protocol'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\privphone.png' className='imgport' />
+                                                <img src='\Assets\previewphone.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -1347,7 +1347,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div second_parent'>
 
-                                        <Link href='/multichain'>
+                                        <Link href='/multi-chain'>
                                             <div className='right_side hovercard'>
                                                 <img src='\Assets\multiphone.png' className='imgport' />
                                                 <div className='buttons_div'>
@@ -1355,9 +1355,9 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        <Link href='/queckoexchange'>
+                                        <Link href='/quecko-exchange'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\exchangephone.png' className='imgport' />
+                                                <img src='\Assets\exchangephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -1451,7 +1451,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/goldenlooni'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\looniphone.png' className='imgport' />
+                                                <img src='\Assets\loniphone.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>
@@ -1469,7 +1469,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\spacephone.png' className='imgport' />
+                                                <img src='\Assets\spacephonenew.png' className='imgport' />
                                                 <div className='buttons_div'>
 
                                                 </div>

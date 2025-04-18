@@ -9,7 +9,7 @@ const Projects = () => {
                     {/* <span className='ourwork'>Our work</span> */}
                     <h2>Our Projects</h2>
                     <div className='parent_div'>
-                        <Link href="/lunchpad">
+                        <Link href="/launchpad">
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -17,7 +17,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://media.quecko.com/videos/6.Launchpad.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/videolunchpad.mp4" type="video/mp4" />
                             </video>
                             {/* <div className='buttons_div'>
                                 <button>Branding</button>
@@ -26,7 +26,7 @@ const Projects = () => {
                             </div> */}
                         </div>
                         </Link>
-                        <Link href="/multichain">
+                        <Link href="/multi-chain">
                         <div className='right_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -34,7 +34,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://media.quecko.com/videos/3.MultichainWallet.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/videomultii.mp4" type="video/mp4" />
                             </video>
                             {/* <div className='buttons_div'>
                                 <button>Branding</button>
@@ -53,7 +53,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://media.quecko.com/videos/5.EstateSlice.mp4" />
+                                <source src="https://media.quecko.com/videos/videostate.mp4" />
                             </video>
                             {/* <div className='buttons_div'>
                                 <button>Branding</button>
@@ -71,7 +71,7 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://media.quecko.com/videos/1.Legion.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/videolegion.mp4" type="video/mp4" />
                             </video>
                             {/* <div className='buttons_div'>
                                 <button>Branding</button>
@@ -81,7 +81,8 @@ const Projects = () => {
                         </div>
                         </Link>
                     </div>
-                    {/* <div className='parent_div'>
+                    <div className='parent_div'>
+                        <Link href="/decentralizedoptionsmarket">
                         <div className='left_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -89,14 +90,16 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331034/queckosite%20%28new%29/videos/thrdleft_mfbaul.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/videorain.mp4" type="video/mp4" />
                             </video>
-                            <div className='buttons_div'>
+                            {/* <div className='buttons_div'>
                                 <button>Branding</button>
                                 <button>Development</button>
                                 <button>Marketing</button>
-                            </div>
+                            </div> */}
                         </div>
+                        </Link>
+                        <Link href="/dietandcheatmealapp">
                         <div className='right_side hovercard'>
                             <video className='main-banner-video'
                                 muted="muted" playsinline="playsinline"
@@ -104,15 +107,16 @@ const Projects = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742331017/queckosite%20%28new%29/videos/thrdright_obhwpr.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/videodiet.mp4" type="video/mp4" />
                             </video>
-                            <div className='buttons_div'>
+                            {/* <div className='buttons_div'>
                                 <button>Branding</button>
                                 <button>Development</button>
                                 <button>Marketing</button>
-                            </div>
+                            </div> */}
                         </div>
-                    </div> */}
+                        </Link>
+                    </div>
                 </div>
             </section>
         </>
