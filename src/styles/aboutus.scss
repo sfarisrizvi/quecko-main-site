@@ -356,6 +356,13 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .toast_mains {
+        position: fixed;
+        top: 126px;
+        right: 20px !important;
+        z-index: 9999;
+        overflow: hidden;
+    }
     .meetusss {
 padding: 20px !important;
     }
