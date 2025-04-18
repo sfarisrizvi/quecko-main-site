@@ -493,7 +493,6 @@ const contactusdetail = () => {
         setRecaptchaToken(null);
     };
 
-
     return (
         <>
             <Head>
@@ -663,7 +662,7 @@ const contactusdetail = () => {
             <Footer />
 
             {/* Toast Notification */}
-            <div className='toast_mains' style={{ position: 'fixed', top: 20, right: 20, zIndex: 1050 }}> {/* Positioned Toast */}
+            <div className='toast_mains' >  
                 <Toast show={showA} onClose={() => setShowA(false)} delay={3000} autohide>
                     <Toast.Header closeButton={false}> {/* Optional: Remove default close button */}
                         <strong className="me-auto">Notification</strong>
