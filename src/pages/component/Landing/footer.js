@@ -104,19 +104,19 @@ const Footer = () => {
             </div>
             <div className="bottom_div">
               <h3 className="connecttt">Connect</h3>
-              <a href="https://www.facebook.com/QueckoInc" target="blank">
+              <a href="https://www.facebook.com/quecko.web3?mibextid=ZbWKwL" target="blank">
                 <h3>Facebook</h3>
               </a>
-              <a href=" https://youtube.com/@quecko-blockchain?si=N8afTnAuKv9Nx0vT" target="blank">
+              <a href="https://youtube.com/@quecko.web3?si=7VNWIDtqY6xGvDup" target="blank">
                 <h3>Youtube</h3>
               </a>
               <a href="https://pk.linkedin.com/company/queckoinc" target="blank">
                 <h3>Linkedin</h3>
               </a>
-              <a href="https://www.instagram.com/quecko.web3/" target="blank">
+              <a href=" https://www.instagram.com/quecko.web3?igsh=ZHlqb3ZlMW02ZXdk" target="blank">
                 <h3>Instagram</h3>
               </a>
-              <a href="https://x.com/Quecko_Inc" target="blank">
+              <a href="https://x.com/quecko_web3" target="blank">
                 <h3>Twitter (X)</h3>
               </a>
             </div>

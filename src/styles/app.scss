@@ -1,6 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 @import url(https://db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik+Regular);
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 @import "@/styles/banner.scss";
 @import "@/styles/aboutdetail.scss";
 @import "@/styles/header.scss";
@@ -106,7 +106,7 @@ body {
     background: #FFF;
     padding:0vw; /* 20px / 1600px * 100 = 1.25vw */
     min-height: 100vh;
-    font-family: 'Aeonik Regular', sans-serif;
+    font-family: 'Aeonik Regular', sans-serif ,"Orbitron";
   }
 }
 .row {

@@ -107,8 +107,121 @@
             }
         }
     }
+    .inner_projectsphone {
+        .ourwork {
+            color: #9D9D9D;
+            font-size: 16px;
+            font-style: normal;
+            margin: 0 auto;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 130%;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #000;
+            text-align: center;
+            font-size: 80px;
+            padding-top: 16px;
+            padding-bottom: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+        }
+
+
+
+        .parent_div {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            width: 100%;
+            gap: 10px;
+
+            .left_side {
+                .main-banner-video {
+                    position: absolute;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    top: 0px;
+                    right: 0;
+                    width: 100%;
+                    z-index: -2;
+                }
+
+                height: 501px;
+                position: relative;
+                width: 100%;
+                border-radius: 40px;
+                overflow: hidden;
+
+            }
+
+            .right_side {
+                .main-banner-video {
+                    position: absolute;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    top: 0px;
+                    right: 0;
+                    width: 100%;
+                    z-index: -2;
+                }
+
+                height: 501px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 40px;
+
+                width: 100%;
+            }
+        }
+
+        .second_parent {
+            display: grid;
+            grid-template-columns: 1fr 2fr !important;
+            width: 100%;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .buttons_div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+
+            button {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%;
+                /* 14px */
+                padding: 10px 20px;
+                border-radius: 30px;
+                background: #000;
+                // backdrop-filter: blur(7.5px);
+                border: unset;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 991px) {
+    .inner_projects{
+        display: none;
+    }
+    .inner_projectsphone{
+        display: block !important;
+    }
     .projects_main .inner_projects .buttons_div {
         display: flex
     ;
@@ -155,7 +268,52 @@
         border-radius: 40px;
         width: 100%;
     }
-
+    .projects_main .inner_projectsphone .buttons_div {
+        display: flex
+    ;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projects_main .inner_projectsphone h2 {
+        color: #000;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 16px;
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+    .projects_main .inner_projectsphone .parent_div {
+        display: grid
+    ;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        grid-gap: 10px;
+        gap: 10px;
+    }
+    .projects_main .inner_projectsphone .parent_div .left_side {
+        /* height: 501px; */
+        height: auto;
+        position: relative;
+        width: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    .projects_main .inner_projectsphone .parent_div .right_side {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+        width: 100%;
+    }
 
 }
 @media (min-width: 1600px){
@@ -163,6 +321,103 @@
         padding: 1.25vw 1.25vw; /* Padding in vw for responsiveness */
 
         .inner_projects {
+            .ourwork{
+                color: #9D9D9D;
+                font-size: 1vw; /* Font size in vw */
+                font-style: normal;
+                font-weight: 500;
+                text-align: center;
+                line-height: 130%;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: #000;
+                text-align: center;
+                font-size: 5vw; /* Font size in vw (80px = 5vw at 1600px) */
+                padding-top: 1vw; /* Padding in vw */
+                padding-bottom: 3vw; /* Padding in vw */
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+            }
+
+            .parent_div {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                width: 100%;
+                gap: 1.25vw; /* Gap in vw between grid items */
+
+                .left_side {
+                    .main-banner-video {
+                        position: absolute;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        top: 0px;
+                        right: 0;
+                        width: 100%;
+                        z-index: -2;
+                    }
+
+                    height: 31.3vw; /* Height in vw (501px = 31.3vw at 1600px) */
+                    position: relative;
+                    width: 100%;
+                    border-radius: 2.5vw; /* Border radius in vw */
+                    overflow: hidden;
+                }
+
+                .right_side {
+                    .main-banner-video {
+                        position: absolute;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        top: 0px;
+                        right: 0;
+                        width: 100%;
+                        z-index: -2;
+                    }
+
+                    height: 31.3vw; /* Height in vw */
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 2.5vw; /* Border radius in vw */
+                    width: 100%;
+                }
+            }
+
+            .second_parent {
+                display: grid;
+                grid-template-columns: 1fr 2fr !important;
+                width: 100%;
+                gap: 1.25vw; /* Gap in vw */
+                margin-top: 1.25vw; /* Margin in vw */
+                margin-bottom: 1.25vw; /* Margin in vw */
+            }
+
+            .buttons_div {
+                display: flex;
+                align-items: center;
+                gap: 1.25vw; /* Gap in vw */
+                position: absolute;
+                bottom: 1.875vw; /* Bottom in vw */
+                left: 1.875vw; /* Left in vw */
+
+                button {
+                    color: #FFF;
+                    font-size: 0.875vw; /* Font size in vw (14px = 0.875vw at 1600px) */
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%;
+                    padding: 0.625vw 1.25vw; /* Padding in vw */
+                    border-radius: 1.875vw; /* Border radius in vw */
+                    background: #000;
+                    border: unset;
+                }
+            }
+        }
+        .inner_projectsphone {
             .ourwork{
                 color: #9D9D9D;
                 font-size: 1vw; /* Font size in vw */

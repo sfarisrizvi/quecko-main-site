@@ -485,6 +485,7 @@
 
 
 @media only screen and (max-width: 991px) {
+
     .mails_divvvv {
         display: grid
     ;
@@ -741,7 +742,14 @@
         text-transform: capitalize;
     }
 }
-
+.details_career .uploaded_divv {
+    width: 100%;
+    align-items: end;
+    display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+}
 @media only screen and (max-width: 390px) {
     .tabs_porfolio .navsectiontabs {
         display: flex;

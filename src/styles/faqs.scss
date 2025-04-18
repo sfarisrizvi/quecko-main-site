@@ -472,7 +472,6 @@ height: 32px;
 .imgport{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 @media only screen and (max-width: 991px) {
@@ -902,7 +901,8 @@ height: 32px;
                 }
 
                 .imgs_seconds {
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
                     align-items: flex-start;
                     width: 100%;
                     gap: 4.38vw; /* 70px */
