@@ -589,6 +589,21 @@
         font-weight: 400;
         line-height: 100%;
     }
+    .new_cardss11{
+        .img_cardsse_new {
+            height: 627px !important;
+            object-fit: cover;
+        }
+    }
+    .uses_divv .inner_bloggs .bottom_side .new_cardss11 {
+        border: unset !important;
+        height: 420px !important;
+        border-radius: 20px !important;
+        overflow: hidden !important;
+        padding: 0px !important;
+        position: relative;
+    }
+
     .partner_side {
         padding: 30px 20px 60px 20px !important;
     }
@@ -1540,5 +1555,6 @@
     padding-left: 10px;
 }
 .img_cardsse_new{
-    height: 339px !important;
+    height: 400px !important;
+    object-fit: cover;
 }

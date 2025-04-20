@@ -1,10 +1,9 @@
-
-import { BitFormheaders, bitFormResponseUrl, SECRETKEY, verifyUrlGoogle } from '@/Utils/Enviroment';
 import axios from 'axios';
 import FormData from 'form-data';
 
 // Get the Secret Key from environment variables
-const RECAPTCHA_SECRET_KEY = SECRETKEY;
+const RECAPTCHA_SECRET_KEY = "6LcaFB0rAAAAAGrGZUv2Y-8cpxxhxcDxFA95spVr";
+
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ success: false, message: 'Method Not Allowed' });
@@ -28,7 +27,7 @@ export default async function handler(req, res) {
         // Construct the verification URL
         // Using POST is slightly preferred by Google, but GET works too.
         // We'll use POST with URLSearchParams for clarity.
-        const verifyUrl = verifyUrlGoogle;
+        const verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
 
         const verificationParams = new URLSearchParams();
         verificationParams.append('secret', RECAPTCHA_SECRET_KEY);
@@ -81,14 +80,12 @@ export default async function handler(req, res) {
         formData.append("b1-6", telegram || ''); // Make sure telegram is handled if optional
 
         const bitFormResponse = await axios.post(
-            // 'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
-            bitFormResponseUrl,
+            'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
             formData,
             {
                 headers: {
                     ...formData.getHeaders(),
-                    "BitForm-API-Key": BitFormheaders, 
-                    //  "59971a5c6213ecbb4e58bf91b4a56962f05311d8", // Consider moving this to env vars too
+                    "BitForm-API-Key": "59971a5c6213ecbb4e58bf91b4a56962f05311d8", // Consider moving this to env vars too
                 },
             }
         );
@@ -120,3 +117,48 @@ export default async function handler(req, res) {
         }
     }
 }
+
+///
+// // pages/api/submit.js
+// import axios from 'axios';
+// import FormData from 'form-data';
+
+// export default async function handler(req, res) {
+//     if (req.method !== 'POST') {
+//         return res.status(405).json({ message: 'Method Not Allowed' });
+//     }
+
+//     const { name, email, message, telegram } = req.body;
+
+//     // Create form-data object and append fields
+//     const formData = new FormData();
+//     formData.append("b1-2", name);
+//     formData.append("b1-5", email);
+//     formData.append("b1-3", message);
+//     formData.append("b1-6", telegram);
+
+//     try {
+//         const response = await axios.post(
+//             'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
+//             formData,
+//             {
+//                 headers: {
+//                     ...formData.getHeaders(),
+//                     "BitForm-API-Key": "59971a5c6213ecbb4e58bf91b4a56962f05311d8",
+//                 },
+//             }
+//         );
+
+//         return res.status(200).json({ success: true, data: response.data });
+
+//     } catch (error) {
+//         console.error('Submission error:', error.response?.data || error.message);
+
+//         return res.status(500).json({
+//             success: false,
+//             message: 'Server Error',
+//             error: error.response?.data || error.message,
+//         });
+//     }
+// }
+// pages/api/submit.js

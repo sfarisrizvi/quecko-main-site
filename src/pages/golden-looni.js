@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const goldenlooni = () => {
     return (
         <>
+              <NextSeo
+                                title="GoldenLoonie – Quecko"
+                                description="Canada’s premier Web3 token designed for everyday digital utility and rewards."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/golden-looni',
+                                    title: 'GoldenLoonie – Quecko',
+                                    description:
+                                        'Canada’s premier Web3 token designed for everyday digital utility and rewards.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>
