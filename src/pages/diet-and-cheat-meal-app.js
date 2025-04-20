@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const dietandcheatmealapp = () => {
     return (
         <>
+              <NextSeo
+                                title="DietCheat App – Quecko"
+                                description="The app that rewards healthy habits and smart cheat tracking with crypto incentives."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/diet-and-cheat-meal-app',
+                                    title: 'DietCheat App – Quecko',
+                                    description:
+                                        'The app that rewards healthy habits and smart cheat tracking with crypto incentives.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

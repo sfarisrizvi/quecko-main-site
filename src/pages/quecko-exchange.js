@@ -2,10 +2,23 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const queckoexchange = () => {
     return (
         <>
+
+              <NextSeo
+                                title="Quecko Exchange – Quecko"
+                                description="Experience seamless, secure, and fast crypto trading on the Quecko Exchange platform."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/quecko-exchange',
+                                    title: 'Quecko Exchange – Quecko',
+                                    description:
+                                        'Experience seamless, secure, and fast crypto trading on the Quecko Exchange platform.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

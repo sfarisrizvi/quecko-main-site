@@ -2,11 +2,23 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const privacyprotocoloracle
 = () => {
     return (
         <>
+              <NextSeo
+                                title="Privacy Protocol Oracle – Quecko"
+                                description="A next-gen protocol enabling secure, decentralized data sharing and monetization."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/privacy-protocol-oracle',
+                                    title: 'Privacy Protocol Oracle – Quecko',
+                                    description:
+                                        'A next-gen protocol enabling secure, decentralized data sharing and monetization.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

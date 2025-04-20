@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const decentralizedoptionsmarket = () => {
     return (
         <>
+              <NextSeo
+                                title="DOM – Quecko"
+                                description="A smart layer for digital ownership and asset management in the Web3 world."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/decentralized-options-market',
+                                    title: 'DOM – Quecko',
+                                    description:
+                                        'A smart layer for digital ownership and asset management in the Web3 world.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

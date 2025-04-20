@@ -12,11 +12,22 @@ import Stories from './component/Landing/stories';
 import Faqswebdevelp from './faqswebdevelp';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Portfolio = () => {
     return (
         <>
-
+            <NextSeo
+                title="Our Portfolio - Quecko"
+                description="Explore Quecko’s diverse portfolio showcasing our top design, development, and marketing projects."
+                openGraph={{
+                    url: 'https://www.quecko.com/porfolio',
+                    title: 'Our Portfolio - Quecko',
+                    description:
+                        'Explore Quecko’s diverse portfolio showcasing our top design, development, and marketing projects.',
+                    site_name: 'Quecko',
+                }}
+            />
 
 
             <section className='smart_contract'>
@@ -428,7 +439,7 @@ const Portfolio = () => {
                             </section>
                         </div>
                         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <section className='projects_main' id="projects">
+                            <section className='projects_main' id="projects">
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
@@ -786,7 +797,7 @@ const Portfolio = () => {
                             </section>
                         </div>
                         <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <section className='projects_main' id="projects">
+                            <section className='projects_main' id="projects">
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>
@@ -1144,7 +1155,7 @@ const Portfolio = () => {
                             </section>
                         </div>
                         <div className="tab-pane fade  " id="nav-home1" role="tabpanel" aria-labelledby="nav-home1-tab">
-                        <section className='projects_main' id="projects">
+                            <section className='projects_main' id="projects">
                                 <div className='inner_projects'>
 
                                     <div className='parent_div'>

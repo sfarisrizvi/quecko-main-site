@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const bluemoon = () => {
     return (
         <>
+              <NextSeo
+                                title="Bluemoon – Quecko"
+                                description="A creative ecosystem for virtual worlds, NFTs, and digital experiences."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/bluemoon',
+                                    title: 'Bluemoon – Quecko',
+                                    description:
+                                        'A creative ecosystem for virtual worlds, NFTs, and digital experiences.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

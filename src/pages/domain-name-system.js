@@ -2,10 +2,23 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const domainnamesystem = () => {
     return (
         <>
+
+              <NextSeo
+                                title="Web3 DNS – Quecko"
+                                description="The decentralized naming system for the next generation of the internet."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/domain-name-system',
+                                    title: 'Web3 DNS – Quecko',
+                                    description:
+                                        'The decentralized naming system for the next generation of the internet.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

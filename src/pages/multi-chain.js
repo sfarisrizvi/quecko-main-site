@@ -2,10 +2,23 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const multichain = () => {
     return (
         <>
+
+                 <NextSeo
+                                title="Multichain Wallet – Quecko"
+                                description="Manage all your crypto assets in one place with our multichain wallet."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/multi-chain',
+                                    title: 'Multichain Wallet – Quecko',
+                                    description:
+                                        'Manage all your crypto assets in one place with our multichain wallet.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

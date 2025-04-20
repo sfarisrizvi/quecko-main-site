@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const rewardflow = () => {
     return (
         <>
+              <NextSeo
+                                title="Reward Flow – Quecko"
+                                description="Automate and enhance your loyalty program with seamless crypto rewards."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/reward-flow',
+                                    title: 'Reward Flow – Quecko',
+                                    description:
+                                        'Automate and enhance your loyalty program with seamless crypto rewards.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

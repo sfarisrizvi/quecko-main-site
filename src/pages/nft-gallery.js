@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const nftgallery = () => {
     return (
         <>
+              <NextSeo
+                                title="NFT Gallery – Quecko"
+                                description="Explore, collect, and showcase unique NFTs in a dynamic gallery experience."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/nft-gallery',
+                                    title: 'NFT Gallery – Quecko',
+                                    description:
+                                        'Explore, collect, and showcase unique NFTs in a dynamic gallery experience.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>

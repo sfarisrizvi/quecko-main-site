@@ -2,10 +2,22 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 const estateslice = () => {
     return (
         <>
+              <NextSeo
+                                title="Estate Slice – Quecko"
+                                description="Invest in real estate like never before through fractionalized blockchain ownership."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/estate-slice',
+                                    title: 'Estate Slice – Quecko',
+                                    description:
+                                        'Invest in real estate like never before through fractionalized blockchain ownership.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
             <Header />
             <section className='TDNS_section'>
                 <div className='inner_porfolio'>
