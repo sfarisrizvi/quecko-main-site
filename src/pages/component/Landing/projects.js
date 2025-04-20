@@ -15,6 +15,10 @@ const Projects = () => {
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videolunchpad.mp4"
                                 thumbnail="/Assets/thumbnails/launchh.png"
+                                height={{
+                                    default: '501px',
+                                    responsive: '255px'
+                                }}
                             />
                         </div>
                     </Link>
@@ -24,6 +28,10 @@ const Projects = () => {
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videomultii.mp4"
                                 thumbnail="/Assets/thumbnails/multii.png"
+                                height={{
+                                    default: '501px',
+                                    responsive: '255px'
+                                }}
                             />
                         </div>
                     </Link>
@@ -35,6 +43,10 @@ const Projects = () => {
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videostate.mp4"
                                 thumbnail="/Assets/thumbnails/estatee.png"
+                                height={{
+                                    default: '501px',
+                                    responsive: '255px'
+                                }}
                             />
                         </div>
                     </Link>
@@ -44,6 +56,10 @@ const Projects = () => {
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videolegion.mp4"
                                 thumbnail="/Assets/thumbnails/legionn.png"
+                                height={{
+                                    default: '501px',
+                                    responsive: '255px'
+                                }}
                             />
                         </div>
                     </Link>
@@ -55,6 +71,10 @@ const Projects = () => {
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videorain.mp4"
                                 thumbnail="/Assets/thumbnails/domm.png"
+                                height={{
+                                    default: '501px',
+                                    responsive: '255px'
+                                }}
                             />
                         </div>
                     </Link>
@@ -64,6 +84,10 @@ const Projects = () => {
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videodiet.mp4"
                                 thumbnail="/Assets/thumbnails/diett.png"
+                                height={{
+                                    default: '501px',
+                                    responsive: '255px'
+                                }}
                             />
                         </div>
                     </Link>

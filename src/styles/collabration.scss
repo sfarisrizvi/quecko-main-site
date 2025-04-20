@@ -4,7 +4,7 @@
         position: relative;
         height: 636px;
         z-index: 999;
-        padding: 55px;
+        // padding: 55px;
         border-radius: 40px;
         overflow: hidden;
 
@@ -77,6 +77,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .responsive-video {
+        height: 581px !important;
+      }
     .collab {
         padding: 20px 5px;
     }
@@ -92,7 +95,7 @@
         position: relative;
         height: 581px;
         z-index: 999;
-        padding: 29px;
+        padding: 0px;
         border-radius: 40px;
         overflow: hidden;
     }
