@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "Aeonik";
+  src: url(../Aeonik/Aeonik-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url(../Aeonik/Aeonik-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url(../Aeonik/Aeonik-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(../Aeonik/Aeonik-Light.ttf);
+  font-weight: 250;
+}
+
+
 @import "bootstrap/scss/bootstrap";
 @import url(https://db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik+Regular);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
@@ -98,7 +121,7 @@ body {
   // background: #FFF;
   padding:0px;
   min-height: 100vh;
-  font-family: 'Aeonik Regular', sans-serif;
+  font-family: 'Aeonik';
 
 }
 @media (min-width: 1600px){
@@ -106,7 +129,7 @@ body {
     background: #FFF;
     padding:0vw; /* 20px / 1600px * 100 = 1.25vw */
     min-height: 100vh;
-    font-family: 'Aeonik Regular', sans-serif ,"Orbitron";
+    font-family: 'Aeonik';
   }
 }
 .row {

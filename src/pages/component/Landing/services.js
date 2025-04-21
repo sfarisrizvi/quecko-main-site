@@ -75,7 +75,7 @@ const Services = () => {
                                     <Link href="/frontend">   <div><p>Frontend Developers</p></div></Link>
                                     <Link href="/technical">   <div><p>Technical Writer</p></div></Link>
                                     <Link href="/marketingexpert">    <div><p> Marketing Expert</p></div></Link>
-                                       <div className='view_moree less_div' onClick={() => handleExpand(2)}>
+                                       <div className='view_moree less_div lesss_newwww' onClick={() => handleExpand(2)}>
                                         View Less
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                                             <path d="M2.25 9.64144L6 5.68311M2.25 9.64144L6 13.5998M2.25 9.64144H15.75" stroke="black" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -113,7 +113,7 @@ const Services = () => {
                                     <Link href="/community-management">       <div><p>Community Management
                                     </p></div></Link>
                                     <Link href="/blog-and-article-writing">        <div><p>Blog Writing</p></div></Link>
-                                    <div className='view_moree less_div' onClick={() => handleExpand(3)}>
+                                    <div className='view_moree less_div lesss_newwww' onClick={() => handleExpand(3)}>
                                         View Less
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                                             <path d="M2.25 9.64144L6 5.68311M2.25 9.64144L6 13.5998M2.25 9.64144H15.75" stroke="black" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
