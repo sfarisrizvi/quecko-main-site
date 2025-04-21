@@ -324,14 +324,17 @@
 }
 @media (min-width: 1600px){
     .projects_main {
-        padding: 1.25vw 1.25vw; /* Padding in vw for responsiveness */
-
+        padding: 1.042vw 1.042vw;
         .inner_projects {
-            .ourwork{
+            .ourwork {
                 color: #9D9D9D;
-                font-size: 1vw; /* Font size in vw */
+                font-size: 0.833vw;
                 font-style: normal;
+                margin: 0 auto;
                 font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
                 line-height: 130%;
                 text-transform: uppercase;
@@ -340,9 +343,9 @@
             h2 {
                 color: #000;
                 text-align: center;
-                font-size: 5vw; /* Font size in vw (80px = 5vw at 1600px) */
-                padding-top: 1vw; /* Padding in vw */
-                padding-bottom: 3vw; /* Padding in vw */
+                font-size: 4.167vw;
+                padding-top: 0.833vw;
+                padding-bottom: 2.604vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100%;
@@ -352,7 +355,7 @@
                 display: grid;
                 grid-template-columns: 2fr 1fr;
                 width: 100%;
-                gap: 1.25vw; /* Gap in vw between grid items */
+                gap: 0.521vw;
 
                 .left_side {
                     .main-banner-video {
@@ -360,16 +363,16 @@
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
-                        top: 0px;
+                        top: 0;
                         right: 0;
                         width: 100%;
                         z-index: -2;
                     }
 
-                    height: 31.3vw; /* Height in vw (501px = 31.3vw at 1600px) */
+                    height: 26.042vw;
                     position: relative;
                     width: 100%;
-                    border-radius: 2.5vw; /* Border radius in vw */
+                    border-radius: 2.083vw;
                     overflow: hidden;
                 }
 
@@ -379,16 +382,16 @@
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
-                        top: 0px;
+                        top: 0;
                         right: 0;
                         width: 100%;
                         z-index: -2;
                     }
 
-                    height: 31.3vw; /* Height in vw */
+                    height: 26.042vw;
                     position: relative;
                     overflow: hidden;
-                    border-radius: 2.5vw; /* Border radius in vw */
+                    border-radius: 2.083vw;
                     width: 100%;
                 }
             }
@@ -397,38 +400,43 @@
                 display: grid;
                 grid-template-columns: 1fr 2fr !important;
                 width: 100%;
-                gap: 1.25vw; /* Gap in vw */
-                margin-top: 1.25vw; /* Margin in vw */
-                margin-bottom: 1.25vw; /* Margin in vw */
+                gap: 0.521vw;
+                margin-top: 0.521vw;
+                margin-bottom: 0.521vw;
             }
 
             .buttons_div {
                 display: flex;
                 align-items: center;
-                gap: 1.25vw; /* Gap in vw */
+                gap: 0.260vw;
                 position: absolute;
-                bottom: 1.875vw; /* Bottom in vw */
-                left: 1.875vw; /* Left in vw */
+                bottom: 1.042vw;
+                left: 1.042vw;
 
                 button {
                     color: #FFF;
-                    font-size: 0.875vw; /* Font size in vw (14px = 0.875vw at 1600px) */
+                    font-size: 0.729vw;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 100%;
-                    padding: 0.625vw 1.25vw; /* Padding in vw */
-                    border-radius: 1.875vw; /* Border radius in vw */
+                    padding: 0.521vw 1.042vw;
+                    border-radius: 1.563vw;
                     background: #000;
                     border: unset;
                 }
             }
         }
+
         .inner_projectsphone {
-            .ourwork{
+            .ourwork {
                 color: #9D9D9D;
-                font-size: 1vw; /* Font size in vw */
+                font-size: 0.833vw;
                 font-style: normal;
+                margin: 0 auto;
                 font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
                 line-height: 130%;
                 text-transform: uppercase;
@@ -437,9 +445,9 @@
             h2 {
                 color: #000;
                 text-align: center;
-                font-size: 5vw; /* Font size in vw (80px = 5vw at 1600px) */
-                padding-top: 1vw; /* Padding in vw */
-                padding-bottom: 3vw; /* Padding in vw */
+                font-size: 4.167vw;
+                padding-top: 0.833vw;
+                padding-bottom: 2.604vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100%;
@@ -449,7 +457,7 @@
                 display: grid;
                 grid-template-columns: 2fr 1fr;
                 width: 100%;
-                gap: 1.25vw; /* Gap in vw between grid items */
+                gap: 0.521vw;
 
                 .left_side {
                     .main-banner-video {
@@ -457,16 +465,16 @@
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
-                        top: 0px;
+                        top: 0;
                         right: 0;
                         width: 100%;
                         z-index: -2;
                     }
 
-                    height: 31.3vw; /* Height in vw (501px = 31.3vw at 1600px) */
+                    height: 26.042vw;
                     position: relative;
                     width: 100%;
-                    border-radius: 2.5vw; /* Border radius in vw */
+                    border-radius: 2.083vw;
                     overflow: hidden;
                 }
 
@@ -476,16 +484,16 @@
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
-                        top: 0px;
+                        top: 0;
                         right: 0;
                         width: 100%;
                         z-index: -2;
                     }
 
-                    height: 31.3vw; /* Height in vw */
+                    height: 26.042vw;
                     position: relative;
                     overflow: hidden;
-                    border-radius: 2.5vw; /* Border radius in vw */
+                    border-radius: 2.083vw;
                     width: 100%;
                 }
             }
@@ -494,33 +502,34 @@
                 display: grid;
                 grid-template-columns: 1fr 2fr !important;
                 width: 100%;
-                gap: 1.25vw; /* Gap in vw */
-                margin-top: 1.25vw; /* Margin in vw */
-                margin-bottom: 1.25vw; /* Margin in vw */
+                gap: 0.521vw;
+                margin-top: 0.521vw;
+                margin-bottom: 0.521vw;
             }
 
             .buttons_div {
                 display: flex;
                 align-items: center;
-                gap: 1.25vw; /* Gap in vw */
+                gap: 0.260vw;
                 position: absolute;
-                bottom: 1.875vw; /* Bottom in vw */
-                left: 1.875vw; /* Left in vw */
+                bottom: 1.042vw;
+                left: 1.042vw;
 
                 button {
                     color: #FFF;
-                    font-size: 0.875vw; /* Font size in vw (14px = 0.875vw at 1600px) */
+                    font-size: 0.729vw;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 100%;
-                    padding: 0.625vw 1.25vw; /* Padding in vw */
-                    border-radius: 1.875vw; /* Border radius in vw */
+                    padding: 0.521vw 1.042vw;
+                    border-radius: 1.563vw;
                     background: #000;
                     border: unset;
                 }
             }
         }
     }
+
 
 }
 

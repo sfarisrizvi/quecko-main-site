@@ -124,15 +124,14 @@
     }
 }
 @media (min-width: 1600px){
-    .collab {
-        padding: 20px 20px;
 
+    .collab {
+        padding: 1.04vw 1.04vw; /* 20px */
         .inner_collab {
             position: relative;
-            height: 33.13vw; /* Converted from 636px */
+            height: 33.13vw; /* 636px */
             z-index: 999;
-            padding: 2.86vw; /* Converted from 55px */
-            border-radius: 40px;
+            border-radius: 2.92vw; /* 40px */
             overflow: hidden;
 
             .main-banner-video {
@@ -140,15 +139,15 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
-                top: 0px;
+                top: 0;
                 right: 0;
                 width: 100%;
                 z-index: -2;
             }
 
-            .ourstory{
+            .ourstory {
                 color: #000;
-                font-size: 0.94vw; /* Converted from 18px */
+                font-size: 0.52vw; /* 10px */
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%;
@@ -159,18 +158,18 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
-                width: calc(94.27vw); /* Converted from 100% - 110px */
+                width: calc(100% - 5.21vw); /* 110px */
                 position: absolute;
-                bottom: 2.86vw; /* Converted from 55px */
-                left: 2.86vw;  /* Converted from 55px */
-                right: 2.86vw; /* Converted from 55px */
+                bottom: 2.86vw; /* 55px */
+                left: 2.86vw; /* 55px */
+                right: 2.86vw; /* 55px */
                 z-index: 99999;
             }
 
             .middle_colab h2 {
                 color: #000;
-                font-size: 3.13vw; /* Converted from 60px */
-                width: 38.54vw; /* Converted from 740px */
+                font-size: 3.13vw; /* 60px */
+                width: 38.54vw; /* 740px */
                 font-style: normal;
                 font-weight: 700;
                 line-height: 100%;
@@ -178,27 +177,26 @@
 
             .middle_colab p {
                 color: #000;
-                font-size: 1.04vw; /* Converted from 20px */
+                font-size: 1.04vw; /* 20px */
                 font-style: normal;
-                width: 21.93vw; /* Converted from 421px */
+                width: 21.95vw; /* 421px */
                 font-weight: 400;
                 line-height: 110%;
-                margin-right: 45px;
             }
         }
     }
 
     .detailss_page {
-        padding: 1.25vw; // 20px
+        padding: 1.04vw; /* 20px */
         overflow: hidden;
 
         .mycontactus {
-            border-radius: 2.5vw; // 40px
-            padding-top: 7.5vw; // 120px
+            border-radius: 2.92vw; /* 40px */
+            padding-top: 6.25vw; /* 120px */
         }
 
         .contact_us_detailss {
-            border-radius: 2.5vw; // 40px
+            border-radius: 2.92vw; /* 40px */
             background: #F4F4F4;
         }
     }
