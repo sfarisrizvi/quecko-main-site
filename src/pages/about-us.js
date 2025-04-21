@@ -180,8 +180,51 @@ const aboutdetail = () => {
             </section> */}
                 </section>
 
+                <section className='aboutus_main '>
+                    <div className='inner_about meetusss'>
+                        <div className='midle_class meetclass'>
+                            <div className='midle_left'>
+                                <span className='clientsname'>TEAM</span>
+                                <h2 className='meetourteamtext'>Meet Our Team</h2>
+                            </div>
 
-                <section className='blogs_divv myblogsss' id="stories">
+                        </div>
+                        <div className='meetourteams'>
+                            <div className='teamone'>
+                                <img src='\Assets\team1.png' className='teamsimg' />
+                            </div>
+                            <div className='teamone2'>
+                                <img src='\Assets\team2.png' className='teamsimg' />
+                                <img src='\Assets\team3.png' className='teamsimg' />
+                            </div>
+                            <div className='teamone3'>
+                                <img src='\Assets\team4.png' className='teamsimg' />
+                                <img src='\Assets\team5.png' className='teamsimg' />
+                                <img src='\Assets\team6.png' className='teamsimg' />
+                            </div>
+                            <div className='teamone4'>
+                                <img src='\Assets\team7.png' className='teamsimg' />
+                                <img src='\Assets\team8.png' className='teamsimg' />
+
+                            </div>
+                            <div className='teamone5'>
+                                <img src='\Assets\team9.png' className='teamsimg' />
+                                <img src='\Assets\team10.png' className='teamsimg' />
+                                <img src='\Assets\team11.png' className='teamsimg' />
+                            </div>
+                            <div className='teamone6'>
+                                <img src='\Assets\team12.png' className='teamsimg' />
+                                <img src='\Assets\team13.png' className='teamsimg' />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+                {/* <section className='blogs_divv myblogsss' id="stories">
                     <div className='inner_bloggs'>
                         <div className='textual_div'>
                             <span className='teamss_head'>TEAM</span>
@@ -259,7 +302,7 @@ const aboutdetail = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
             <Aboutus />
             <Stories />
