@@ -209,6 +209,13 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .aboutus_main .meetourteams .teamsimg {
+        width: 100%;
+        height: 385px;
+        object-fit: cover;
+        border-radius: 20px;
+        overflow: hidden;
+    }
     .services_main .smart_contracts {
         display: flex;
         align-items: flex-start;

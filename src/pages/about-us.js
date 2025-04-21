@@ -180,7 +180,7 @@ const aboutdetail = () => {
             </section>
                 </section>
 
-                {/* <section className='aboutus_main '>
+                <section className='aboutus_main '>
                     <div className='inner_about meetusss'>
                         <div className='midle_class meetclass'>
                             <div className='midle_left'>
@@ -221,10 +221,10 @@ const aboutdetail = () => {
                         </div>
 
                     </div>
-                </section> */}
+                </section>
 
 
-                <section className='blogs_divv myblogsss' id="stories">
+                {/* <section className='blogs_divv myblogsss' id="stories">
                     <div className='inner_bloggs'>
                         <div className='textual_div'>
                             <span className='teamss_head'>TEAM</span>
@@ -302,7 +302,7 @@ const aboutdetail = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
             <Aboutus />
             <Stories />
