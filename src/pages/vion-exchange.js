@@ -49,7 +49,7 @@ const vionexchange = () => {
                         </div>
                     </div> */}
                         <div className='img_first'>
-                        <img src='\Assets\vion111.png' className='imgggs' />
+                        <img src='\Assets\vioon.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>
