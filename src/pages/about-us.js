@@ -168,19 +168,19 @@ const aboutdetail = () => {
                             </div>
                         </div> {/* Closing div for top_middle */}
                     </div> {/* Closing div for inner_collab */}
-                    <section className='goalss_side1'>
+                    {/* <section className='goalss_side1'>
                 <div className='goals_details'>
                     <h1>Since 2020</h1>
                     <div>
-                    <p>Our story began with a small, passionate team of four visionaries who believed in the transformative power of blockchain technology. From these humble beginnings, Quecko. has grown into a powerhouse of over 100+ talented professionals. Each team member represents a unique building block, much like the individual blocks in a blockchain, contributing to the strength, resilience, and innovation of our company. Our commitment to pioneering Web3 solutions has enabled us to help businesses navigate the complexities of blockchain, creating decentralized applications and software that drive progress and innovation. We take pride in our role as the architects of a decentralized future, where every block—and every team member—plays a crucial part in building a more connected and empowered world.</p>
-
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+                    <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                     </div>
 
                 </div>
-            </section>
+            </section> */}
                 </section>
 
-                {/* <section className='aboutus_main '>
+                <section className='aboutus_main '>
                     <div className='inner_about meetusss'>
                         <div className='midle_class meetclass'>
                             <div className='midle_left'>
@@ -221,10 +221,10 @@ const aboutdetail = () => {
                         </div>
 
                     </div>
-                </section> */}
+                </section>
 
 
-                <section className='blogs_divv myblogsss' id="stories">
+                {/* <section className='blogs_divv myblogsss' id="stories">
                     <div className='inner_bloggs'>
                         <div className='textual_div'>
                             <span className='teamss_head'>TEAM</span>
@@ -302,7 +302,7 @@ const aboutdetail = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
             <Aboutus />
             <Stories />
