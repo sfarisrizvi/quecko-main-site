@@ -104,9 +104,9 @@ const Footer = () => {
             </div>
             <div className="bottom_div">
               <h3 className="connecttt">Connect</h3>
-              <a href="https://www.facebook.com/quecko.web3?mibextid=ZbWKwL" target="blank">
+              {/* <a href="https://www.facebook.com/quecko.web3?mibextid=ZbWKwL" target="blank">
                 <h3>Facebook</h3>
-              </a>
+              </a> */}
               <a href="https://youtube.com/@quecko.web3?si=7VNWIDtqY6xGvDup" target="blank">
                 <h3>Youtube</h3>
               </a>
