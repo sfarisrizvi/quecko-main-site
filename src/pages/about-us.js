@@ -168,60 +168,17 @@ const aboutdetail = () => {
                             </div>
                         </div> {/* Closing div for top_middle */}
                     </div> {/* Closing div for inner_collab */}
-                    <section className='goalss_side1'>
+                    {/* <section className='goalss_side1'>
                 <div className='goals_details'>
                     <h1>Since 2020</h1>
                     <div>
-                    <p>Our story began with a small, passionate team of four visionaries who believed in the transformative power of blockchain technology. From these humble beginnings, Quecko. has grown into a powerhouse of over 100+ talented professionals. Each team member represents a unique building block, much like the individual blocks in a blockchain, contributing to the strength, resilience, and innovation of our company. Our commitment to pioneering Web3 solutions has enabled us to help businesses navigate the complexities of blockchain, creating decentralized applications and software that drive progress and innovation. We take pride in our role as the architects of a decentralized future, where every block—and every team member—plays a crucial part in building a more connected and empowered world.</p>
-
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+                    <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                     </div>
 
                 </div>
-            </section>
+            </section> */}
                 </section>
-
-                {/* <section className='aboutus_main '>
-                    <div className='inner_about meetusss'>
-                        <div className='midle_class meetclass'>
-                            <div className='midle_left'>
-                                <span className='clientsname'>TEAM</span>
-                                <h2 className='meetourteamtext'>Meet Our Team</h2>
-                            </div>
-
-                        </div>
-                        <div className='meetourteams'>
-                            <div className='teamone'>
-                                <img src='\Assets\team1.png' className='teamsimg' />
-                            </div>
-                            <div className='teamone2'>
-                                <img src='\Assets\team2.png' className='teamsimg' />
-                                <img src='\Assets\team3.png' className='teamsimg' />
-                            </div>
-                            <div className='teamone3'>
-                                <img src='\Assets\team4.png' className='teamsimg' />
-                                <img src='\Assets\team5.png' className='teamsimg' />
-                                <img src='\Assets\team6.png' className='teamsimg' />
-                            </div>
-                            <div className='teamone4'>
-                                <img src='\Assets\team7.png' className='teamsimg' />
-                                <img src='\Assets\team8.png' className='teamsimg' />
-
-                            </div>
-                            <div className='teamone5'>
-                                <img src='\Assets\team9.png' className='teamsimg' />
-                                <img src='\Assets\team10.png' className='teamsimg' />
-                                <img src='\Assets\team11.png' className='teamsimg' />
-                            </div>
-                            <div className='teamone6'>
-                                <img src='\Assets\team12.png' className='teamsimg' />
-                                <img src='\Assets\team13.png' className='teamsimg' />
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </section> */}
 
 
                 <section className='blogs_divv myblogsss' id="stories">

@@ -30,7 +30,7 @@ function Loader() {
             style={{
                 zIndex: 999999999,
                 height: "100%",
-                background: "#fff",
+                background: "#F3F3F3",
                 top: "0px",
                 left: "0px",
                 overflow: "hidden"
