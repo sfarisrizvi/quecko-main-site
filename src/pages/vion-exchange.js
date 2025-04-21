@@ -23,10 +23,11 @@ const vionexchange = () => {
                 <div className='inner_porfolio'>
                     <div className='first_side'>
                         <div>
-                        <h1>VION EXCHANGE
+                        <h1>P2P Trading Platform
 
 </h1>
 <p className='modullar_ptag'>Decentralized Crypto Exchange for Direct User Trades
+
 </p>
                         </div>
                         <Link href="/contact">
@@ -49,7 +50,7 @@ const vionexchange = () => {
                         </div>
                     </div> */}
                         <div className='img_first'>
-                        <img src='\Assets\vioon.png' className='imgggs' />
+                        <img src='\Assets\VIONNN.png' className='imgggs' />
                     </div>
                     <div className='challenge_div'>
                         <div>

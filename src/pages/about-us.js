@@ -203,8 +203,8 @@ const aboutdetail = () => {
                                 <img src='\Assets\row6.png' className='teamsimg' />
                             </div>
                             <div className='teamone4'>
-                                <img src='\Assets\row7.png' className='teamsimg' />
-                                <img src='\Assets\row8.png' className='teamsimg' />
+                                <img src='\Assets\IMG_5206.jpg' className='teamsimg' />
+                                <img src='\Assets\DSC_3928.png' className='teamsimg' />
 
                             </div>
                             {/* <div className='teamone5'>
