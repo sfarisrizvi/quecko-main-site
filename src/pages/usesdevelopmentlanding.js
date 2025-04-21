@@ -65,7 +65,7 @@ const Usesdevelopmentlanding = () => {
                 <div className='inner_bloggs'>
                     <div className='textual_div new_texxxt_div'>
                         <span className='story_div'>Quecko Studio</span>
-                        <h2>Quecko Studio</h2>
+                        <h2>Knowledge Base</h2>
                     </div>
                     <div className='bottom_side'>
                         <div className="owl_option">
