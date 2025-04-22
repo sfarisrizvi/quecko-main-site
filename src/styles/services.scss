@@ -1,7 +1,8 @@
 .services_main {
     padding: 20px 20px;
     overflow: hidden;
-    .whatwedo{
+
+    .whatwedo {
         color: #9D9D9D;
         font-size: 16px;
         text-align: center !important;
@@ -15,11 +16,12 @@
         position: unset;
         -webkit-background-clip: unset;
         -webkit-text-fill-color: unset;
-        transition:unset;
+        transition: unset;
         font-weight: unset;
         line-height: unset;
         text-transform: unset;
     }
+
     p {
         background-image: linear-gradient(to right,
                 #000,
@@ -57,9 +59,16 @@
 
     /* Presentational Styles */
 
+    .lesss_newwww {
+        margin-left: 67px;
+        position: absolute;
+        right: -147px;
+        top: 145px;
+    }
 
     .less_div {
         justify-content: end !important;
+
     }
 
     .view_moree {
@@ -101,7 +110,7 @@
     .inner_services {
         padding: 70px 86px;
 
-        .whatwedo{
+        .whatwedo {
             color: #9D9D9D;
             font-size: 16px;
             text-align: center;
@@ -209,13 +218,29 @@
 }
 
 @media only screen and (max-width: 991px) {
+
+        .thirple_divs.card-2 .text_ual_div2 {
+            top: 50% !important;
+            right: 0% !important;
+        }
+        .thirple_divs.card-3 .text_ual_div3 {
+            top: 50% !important;
+            right: 0% !important;
+        }
+
+
+    .services_main .lesss_newwww {
+        position: unset !important;
+    }
+
     .aboutus_main .meetourteams .teamsimg {
         width: 100%;
-        height: 385px;
+        // height: 385px;
         object-fit: cover;
         border-radius: 20px;
         overflow: hidden;
     }
+
     .services_main .smart_contracts {
         display: flex;
         align-items: flex-start;
@@ -252,6 +277,7 @@
         padding-bottom: 10px;
         line-height: 100%;
     }
+
     .services_main .inner_services .thirple_divs h3 {
         background-image: linear-gradient(to right, #000, #000 50%, #000 50%);
         background-size: 200% 100%;
@@ -292,6 +318,23 @@
 }
 
 @media (min-width: 1600px) {
+    .services_main .lesss_newwww {
+        margin-left: 4.19vw !important;
+        position: absolute;
+        right: -9.19vw !important;
+        top: 9.06vw !important;
+    }
+
+    .lesss_newwww {
+        margin-left: 4.19vw;
+        /* 67 / 1600 * 100 */
+        position: absolute;
+        right: -9.19vw;
+        /* -147 / 1600 * 100 */
+        top: 9.06vw;
+        /* 145 / 1600 * 100 */
+    }
+
     .services_main {
         padding: 1.25vw;
 
@@ -311,7 +354,7 @@
         .inner_services {
             padding: 3.65vw 4.48vw;
 
-            .whatwedo{
+            .whatwedo {
                 color: #9D9D9D !important;
                 font-size: 0.83vw;
                 text-align: center;
@@ -371,7 +414,8 @@
                 }
             }
         }
-         .view_moree{
+
+        .view_moree {
             font-size: 1vw;
         }
     }
@@ -448,7 +492,7 @@
     top: 50%;
     right: 0%;
     transform: translate(0%, -50%);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out 0.2s;
+    // transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out 0.2s;
     opacity: 0;
     pointer-events: none;
 }
@@ -461,11 +505,15 @@
 .thirple_divs.card-2 .text_ual_div2 {
     opacity: 1;
     pointer-events: all;
+    right: 19% ;
+    top: 41% ;
 }
 
 .thirple_divs.card-3 .text_ual_div3 {
     opacity: 1;
     pointer-events: all;
+    right: 17% ;
+    top: 41%;
 }
 
 

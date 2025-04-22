@@ -4,7 +4,7 @@ import Footer from './component/Landing/footer'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 
-const privacyprotocol = () => {
+const privacyprotocol = () => { 
     return (
         <>
          <NextSeo
