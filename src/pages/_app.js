@@ -101,13 +101,7 @@ export default function App({ Component, pageProps }) {
     }
   }, [router])
 
-  const [canonicalUrl, setCanonicalUrl] = useState('')
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setCanonicalUrl(window.location.origin + window.location.pathname + window.location.search)
-    }
-  }, [router.asPath])
+ 
 
   return (
     <>

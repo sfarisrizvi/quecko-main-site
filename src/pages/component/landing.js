@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Banner from "./Landing/banner";
@@ -106,6 +106,14 @@ const Landing = () => {
       <FadeInSection><Work /></FadeInSection>
     </div>,
   ];
+
+  const [canonicalUrl, setCanonicalUrl] = useState('')
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setCanonicalUrl(window.location.origin + window.location.pathname + window.location.search)
+    }
+  }, [router.asPath])
 
   return (
     <>
