@@ -126,6 +126,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
         <>
             <Head>
                 <title>{item?.title?.rendered || "Blog Details | Quecko"}</title>
+                <meta name="title" content={item?.yoast_head_json?.description || "Read the latest blogs on Quecko"} />
                 <meta name="description" content={item?.yoast_head_json?.description || "Read the latest blogs on Quecko"} />
                 <link rel="canonical" href={`https://www.quecko.com/${slug}` || "#"} />
                 <meta property="og:locale" content="en_US" />

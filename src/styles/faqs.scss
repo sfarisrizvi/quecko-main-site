@@ -295,6 +295,7 @@ line-height: 120%; /* 26.4px */
             .imgnew {
                 width: 100%;
                 object-fit: cover;
+                border-radius: 30px;
             }
         }
 
@@ -471,10 +472,71 @@ height: 32px;
 }
 .imgport{
     width: 100%;
-    height: 100%;
+    height: 501px;
+    object-fit: cover;
+}
+
+.new_chanlngee{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding-bottom: 0px !important;
+}
+
+
+.number_side_div_Section{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+.inner_numbers{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+p{
+    color: #5F5F5F;
+text-align: center;
+padding-top: 20px;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 24px */
+}
+span{
+    color: #000;
+text-align: center;
+font-size: 90px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 90px */
+}
+}
 }
 
 @media only screen and (max-width: 991px) {
+    .number_side_div_Section {
+        padding: 20px;
+        display: grid
+    ;
+        grid-template-columns: 1fr !important;
+    }
+    .number_side_div_Section .inner_numbers span {
+        color: #000;
+        text-align: center;
+        font-size: 57px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+    .number_side_div_Section .inner_numbers {
+        padding: 20px;
+        display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgport {
+        height: unset !important;
+    }
     .newcardssss {
         flex-direction: column-reverse !important;
     }
@@ -597,6 +659,7 @@ height: 32px;
 .TDNS_section .inner_porfolio .goals_sidee {
     padding: 30px;
     border-radius: 40px;
+    margin-top: 20px;
     background: #F4F4F4;
 }
 .TDNS_section .inner_porfolio .goals_sidee .inner_goal .h2 {
@@ -1105,6 +1168,7 @@ height: 32px;
 
     .imgport {
         width: 100%;
+        height: 32.3125vw;
     }
 
     .main_faqs {
