@@ -111,53 +111,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <DefaultSeo
-        title="Quecko - Leading the Blockchain Revolution with Innovative Solutions"
-        description="Quecko Inc. delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
-        canonical={canonicalUrl}
-        openGraph={{
-          type: 'website',
-          locale: 'en_US',
-          url: 'https://quecko.com/',
-          site_name: 'Quecko',
-          title: 'Quecko - Leading the Blockchain Revolution with Innovative Solutions',
-          description:
-            'Revolutionizing businesses with our cutting-edge blockchain solutions. Secure, decentralized, and scalable – transforming industries for a better, transparent future.',
-          images: [
-            {
-              url: 'https://res.cloudinary.com/drt6vurtt/image/upload/c_pad,w_500/v1742572273/queckosite%20%28new%29/images/Untitled-1_rshcle.png',
-              width: 1200,
-              height: 630,
-              alt: 'Quecko OG Image',
-            },
-          ],
-        }}
-        twitter={{
-          cardType: 'summary_large_image',
-          title: 'Quecko - Leading the Blockchain Revolution with Innovative Solutions',
-          description:
-            'Revolutionizing businesses with our cutting-edge blockchain solutions. Secure, decentralized, and scalable – transforming industries for a better, transparent future.',
-          site: '@Quecko_Inc',
-        }}
-        additionalMetaTags={[
-          { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
-          { name: 'publisher', content: 'Quecko' },
-          { name: 'google-site-verification', content: 'qg-vlsl7xXj6TIgnIr47Pk9EjJYr272LdGlqNP6cTwM' },
-        ]}
-        additionalLinkTags={[
-          { rel: 'profile', href: 'https://gmpg.org/xfn/11' },
-          {
-            rel: 'preload',
-            as: 'video',
-            href: 'https://res.cloudinary.com/drt6vurtt/video/upload/v1742330920/queckosite%20(new)/videos/bannervideo_ns7oz8.mp4',
-            type: 'video/mp4',
-          },
-          {
-            rel: 'stylesheet',
-            href: 'https://db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik+Regular',
-          },
-        ]}
-      />
+   
 
       <Script
         type="application/ld+json"
