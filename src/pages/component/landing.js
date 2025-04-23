@@ -14,6 +14,7 @@ import Footer from "./Landing/footer";
 import Header from "./Landing/header";
 import { useRouter } from "next/router";
 import Usesdevelopmentlanding from "../usesdevelopmentlanding";
+import { DefaultSeo } from "next-seo";
 
 const FadeInSection = ({ children, disableAnimation = false }) => {
   const controls = useAnimation();
