@@ -808,6 +808,38 @@ line-height: 100%; /* 90px */
 }
 
 @media (min-width: 1600px) {
+    .number_side_div_Section {
+        padding: 1.25vw; /* 20px */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .inner_numbers {
+            padding: 3.125vw; /* 50px */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                color: #5F5F5F;
+                text-align: center;
+                padding-top: 1.25vw; /* 20px */
+                font-size: 1.25vw; /* 20px */
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5vw; /* 24px */
+            }
+
+            span {
+                color: #000;
+                text-align: center;
+                font-size: 5.625vw; /* 90px */
+                font-style: normal;
+                font-weight: 400;
+                line-height: 5.625vw; /* 90px */
+            }
+        }
+    }
+
     .TDNS_section {
         padding: 1.25vw; /* 20px converted to vw */
 
