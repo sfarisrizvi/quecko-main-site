@@ -38,7 +38,7 @@ export async function getServerSideProps(context) {
             props: {
                 initialBlogDetail: [],
                 initialRelatedBlogs: [],
-                slug: slug || null,                                                                  
+                slug: slug || null,
                 error: true,
             },
         }
@@ -112,9 +112,9 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
     const copyToClipboard = () => {
         navigator.clipboard.writeText(window.location.href)
             .then(() => {
-                setIsCopied(true);   
+                setIsCopied(true);
                 setTimeout(() => {
-                    setIsCopied(false);   
+                    setIsCopied(false);
                 }, 1000);
             })
             .catch(err => {
@@ -162,7 +162,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
 
                 <>
                  {loading ? <Loader/> : (
-                    <> 
+                    <>
                             {item && (
                                 <>
                                     <div className="blogdetail">
@@ -237,7 +237,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug }) => {
                                                     <span>{getTimeInAges(item?.date)}</span>
                                                 </div>
 
-                                                <div>
+                                                <div className="links_blogsss">
                                                     <p className="para">Share on</p>
                                                     <div className="socialicons">
 

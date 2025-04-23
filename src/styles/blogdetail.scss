@@ -95,6 +95,29 @@
         padding: 50px 80px;
         align-items: flex-start;
         gap: 80px;
+        .left{
+            a{
+                border-bottom: unset !important;
+
+            }
+        }
+        .links_blogsss{
+            a{
+                border-bottom: unset !important;
+
+            }
+        }
+a{
+    color: #000 !important;
+    font-weight: bold !important;
+ border-bottom: 1px solid #000;
+    // padding-bottom: 6px;
+}
+
+        td {
+            border: 1px solid #9D9D9D;
+            padding: 14px;
+        }
 
         .left {
           max-width: 300px;
