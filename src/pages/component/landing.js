@@ -108,6 +108,7 @@ const Landing = () => {
 
   return (
     <>
+    
       <Header />
       {sections.map((Component, index) => (
         <React.Fragment key={index}>{Component}</React.Fragment>
