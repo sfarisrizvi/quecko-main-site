@@ -165,10 +165,10 @@ const tapspacemarketing = () => {
                                 <p>Our thumb-stopping videos did the talking and tapping. Whether it was quick gameplay clips or cool sci-fi knowledge base, we kept users entertained yet curious about space exploration. Platform wise, YouTube and TikTok helped us reach new players and turn views into real engagement.</p>
 
                             </div>
-                            <img src='\Assets\sp13.png' className='imgnew' />
+                            <img src='\Assets\ta3.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\sp14.png' className='imgnew' />
+                            <img src='\Assets\ta4.png' className='imgnew' />
                             <div>
                                 <h2>Community Management</h2>
                                 <p>TapSpace isn't just a game. It's a growing galaxy of players. We focused on building a strong community through fun conversations, AMAs, and in-game activities on X (Twitter) and Telegram. It’s where players feel like they truly belong as they receive daily rewards by engaging with the community.</p>
@@ -182,7 +182,7 @@ const tapspacemarketing = () => {
                                 </p>
 
                             </div>
-                            <img src='\Assets\sp15.png' className='imgnew' />
+                            <img src='\Assets\ta5.png' className='imgnew' />
                         </div>
 
 

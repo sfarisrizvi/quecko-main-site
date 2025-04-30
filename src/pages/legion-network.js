@@ -40,7 +40,7 @@ const legionenetwork = () => {
                     </div>
 
                     <div className='img_first'>
-                        <img src='\Assets\newly.png' className='imgggs' />
+                        <img src='\Assets\lm1.png' className='imgggs' />
                     </div>
                     <div className='challenge_div new_chanlngee'>
                         <div>
@@ -153,7 +153,7 @@ const legionenetwork = () => {
 
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\ly11.png' className='imgnew' />
+                            <img src='\Assets\lm2.png' className='imgnew' />
                             <div>
                                 <h2>Social’s Mastery</h2>
                                 <p>We gave Legion a strong social identity by curating engaging posts, educational carousels, reels, and community-centric updates across Facebook, Instagram, and LinkedIn. From crypto education to product highlights, we kept users informed and intrigued.
@@ -166,10 +166,10 @@ const legionenetwork = () => {
                                 <p>We didn’t just build a following, we built a movement. Daily engagement, AMAs, reward-based games, and constant communication made Legion’s Telegram and X the go-to hubs for loyal users and newcomers alike.</p>
 
                             </div>
-                            <img src='\Assets\ly12.png' className='imgnew' />
+                            <img src='\Assets\lm3.png' className='imgnew' />
                         </div>
                         <div className='imgs_seconds'>
-                            <img src='\Assets\ly13.png' className='imgnew' />
+                            <img src='\Assets\lm4.png' className='imgnew' />
                             <div>
                                 <h2>Paid Media</h2>
                                 <p>With strategic ad placements across Twitter and Facebook, we targeted crypto-savvy audiences at the perfect moment. Our ad creatives turned impressions into active users, boosting both downloads and community growth.</p>
@@ -183,7 +183,7 @@ const legionenetwork = () => {
                                 </p>
 
                             </div>
-                            <img src='\Assets\ly14.png' className='imgnew' />
+                            <img src='\Assets\lm5.png' className='imgnew' />
                         </div>
 
 
