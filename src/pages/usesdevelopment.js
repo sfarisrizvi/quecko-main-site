@@ -50,7 +50,7 @@ const Usesdevelopment = () => {
                 margin: 10,
             },
             1200: {
-                items: 4.1,
+                items: 6.1,
                 margin: 10,
             },
 
@@ -65,7 +65,7 @@ const Usesdevelopment = () => {
                 <div className='inner_bloggs'>
                     <div className='textual_div new_texxxt_div'>
                         <span className='story_div'>Quecko Stories</span>
-                        <h2>Quecko Stories</h2>
+                        <h2>Knowledge Base</h2>
                     </div>
                     <div className='bottom_side'>
                         <div className="owl_option">
@@ -74,7 +74,7 @@ const Usesdevelopment = () => {
                                 {...owl_option}
                             >
 
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                     <a href='https://www.youtube.com/watch?v=NUOoiurGT2U' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                                         <g clip-path="url(#clip0_969_2395)">
@@ -90,7 +90,7 @@ const Usesdevelopment = () => {
                                     </a>
                                     <img src='\Assets\videoimg1.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/qFUpxw1mcYk' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                                         <g clip-path="url(#clip0_969_2395)">
@@ -106,7 +106,7 @@ const Usesdevelopment = () => {
                                     </a>
                                     <img src='\Assets\videoimg2.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='
 https://www.youtube.com/shorts/hW7STeucGts' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -123,7 +123,7 @@ https://www.youtube.com/shorts/hW7STeucGts' target='blank'>
                                     </a>
                                     <img src='\Assets\videoimg3.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='
 https://www.youtube.com/shorts/Sac7lR3x_So' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -140,7 +140,7 @@ https://www.youtube.com/shorts/Sac7lR3x_So' target='blank'>
                                     </a>
                                     <img src='\Assets\videoimg4.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='
 https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
@@ -157,7 +157,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                     </a>
                                     <img src='\Assets\videoimg5.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/gXBVxw1i7bY' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                                         <g clip-path="url(#clip0_969_2395)">
@@ -173,7 +173,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                     </a>
                                     <img src='\Assets\videoimg6.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/dzBMQoZmCNQ' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                                         <g clip-path="url(#clip0_969_2395)">
@@ -189,7 +189,7 @@ https://www.youtube.com/shorts/cOIVVZRx2z4 66666' target='blank'>
                                     </a>
                                     <img src='\Assets\videoimg7.png' />
                                 </div>
-                                <div className='cardss new_cardss'>
+                                <div className='cardss new_cardss11'>
                                 <a href='https://www.youtube.com/shorts/10Cfa9ZmkJs' target='blank'>
                                     <svg className='imgplay' xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                                         <g clip-path="url(#clip0_969_2395)">
