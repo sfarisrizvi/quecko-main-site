@@ -144,6 +144,9 @@ line-height: 120%; /* 36px */
                     font-size: 20px;
                     font-style: normal;
                     cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
                     font-weight: 400;
                     line-height: 120%;
                     display: inline-block;
@@ -571,4 +574,10 @@ line-height: 120%; /* 36px */
 .imgunder {
     width: 77.435px;
     height: 20.775px;
+}
+.img_whatsapp {
+    height: 23px;
+margin-bottom: 3px;
+margin-right: 5px;
+    width: 23px;
 }

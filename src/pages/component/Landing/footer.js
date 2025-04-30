@@ -72,11 +72,11 @@ const Footer = () => {
             <div className="midle_div">
               <div className="name_div">
                 <h3>
-                  <a href="mailto:info@quecko.com">info@quecko.com</a>
+                  <a href="mailto:info@quecko.com" target="blank">info@quecko.com</a>
                 </h3>
               </div>
               <div className="name_div">
-                <h3><a href="tel:+971507400268">+971-50-740-0268</a></h3>
+                <h3><a href="https://wa.me/971507400268"target="blank"> <img className="img_whatsapp" src="\Assets\whatsappw.svg"/> +971-50-740-0268</a></h3>
 
               </div>
               <div className="carrres_div">
