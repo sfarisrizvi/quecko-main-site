@@ -475,60 +475,98 @@ const Portfolio = () => {
                                 </div>
                                 <div className='inner_projects'>
 
-<div className='parent_div'>
-    <Link href='/legion-network'>
-        <div className='left_side hovercard'>
-            <img src='\Assets\bgly.png' className='imgport' />
-            <div className='buttons_div'>
-                {/* <button>Branding</button>
+                                    <div className='parent_div'>
+                                        <Link href='/legion-network'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\bgly.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
 <button>Development</button>
 <button>Marketing</button> */}
-            </div>
-        </div>
-    </Link>
-    <Link href='/tapspace-marketing'>
-        <div className='right_side hovercard'>
-            <img src='\Assets\phonetap.png' className='imgport' />
-            <div className='buttons_div'>
-                {/* */}
-            </div>
-        </div>
-    </Link>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/tapspace-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\phonetap.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
 
-</div>
-
-
+                                    </div>
 
 
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/syrupal-protocol'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\syn.png' className='imgport' />
+                                                <div className='buttons_div'>
 
-</div>
-<div className='inner_projectsphone d-none'>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/memecoin-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\syyy.png' className='imgport' />
+                                                <div className='buttons_div'>
 
-<div className='parent_div'>
-    <Link href='/legion-network'>
-        <div className='left_side hovercard'>
-            <img src='\Assets\phonely.png' className='imgport' />
-            <div className='buttons_div'>
-                {/* <button>Branding</button>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+
+
+                                </div>
+                                <div className='inner_projectsphone d-none'>
+
+                                    <div className='parent_div'>
+                                        <Link href='/legion-network'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\phonely.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
 <button>Development</button>
 <button>Marketing</button> */}
-            </div>
-        </div>
-    </Link>
-    <Link href='/tapspace-marketing'>
-        <div className='right_side hovercard'>
-            <img src='\Assets\phonetap.png' className='imgport' />
-            <div className='buttons_div'>
-                {/* */}
-            </div>
-        </div>
-    </Link>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/tapspace-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\phonetap.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
 
-</div>
+                                    </div>
+
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/syrupal-protocol'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\syn.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/memecoin-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\syyyphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
 
 
+                                </div>
 
-</div>
                             </section>
                         </div>
 
@@ -953,7 +991,25 @@ const Portfolio = () => {
 
                                     </div>
 
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/syrupal-protocol'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\syn.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/memecoin-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\syyy.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
 
 
 
@@ -982,7 +1038,25 @@ const Portfolio = () => {
 
                                     </div>
 
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/syrupal-protocol'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\syn.png' className='imgport' />
+                                                <div className='buttons_div'>
 
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/memecoin-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\syyyphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
 
                                 </div>
                             </section>
