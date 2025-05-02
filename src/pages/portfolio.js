@@ -478,7 +478,7 @@ const Portfolio = () => {
                                     <div className='parent_div'>
                                         <Link href='/legion-network'>
                                             <div className='left_side hovercard'>
-                                                <img src='\Assets\bgly.png' className='imgport' />
+                                                <img src='\Assets\mainm.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* <button>Branding</button>
 <button>Development</button>
@@ -488,7 +488,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace-marketing'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\phonetap.png' className='imgport' />
+                                                <img src='\Assets\ptab.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -525,7 +525,7 @@ const Portfolio = () => {
                                     <div className='parent_div'>
                                         <Link href='/legion-network'>
                                             <div className='left_side hovercard'>
-                                                <img src='\Assets\phonely.png' className='imgport' />
+                                                <img src='\Assets\gp.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* <button>Branding</button>
 <button>Development</button>
@@ -535,7 +535,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace-marketing'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\phonetap.png' className='imgport' />
+                                                <img src='\Assets\ptab.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -972,7 +972,7 @@ const Portfolio = () => {
                                     <div className='parent_div'>
                                         <Link href='/legion-network'>
                                             <div className='left_side hovercard'>
-                                                <img src='\Assets\bgly.png' className='imgport' />
+                                                <img src='\Assets\mainm.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* <button>Branding</button>
                 <button>Development</button>
@@ -982,7 +982,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace-marketing'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\phonetap.png' className='imgport' />
+                                                <img src='\Assets\ptab.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
@@ -1019,7 +1019,7 @@ const Portfolio = () => {
                                     <div className='parent_div'>
                                         <Link href='/legion-network'>
                                             <div className='left_side hovercard'>
-                                                <img src='\Assets\phonely.png' className='imgport' />
+                                                <img src='\Assets\gp.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* <button>Branding</button>
 <button>Development</button>
@@ -1029,7 +1029,7 @@ const Portfolio = () => {
                                         </Link>
                                         <Link href='/tapspace-marketing'>
                                             <div className='right_side hovercard'>
-                                                <img src='\Assets\phonetap.png' className='imgport' />
+                                                <img src='\Assets\ptab.png' className='imgport' />
                                                 <div className='buttons_div'>
                                                     {/* */}
                                                 </div>
