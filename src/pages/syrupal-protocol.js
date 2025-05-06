@@ -9,12 +9,12 @@ const Syrupal = () => {
         <>
             <NextSeo
                 title="Syrupal Protocol"
-                description="Designed for visionary Web3 teams looking to raise capital and build early momentum."
+                description="A next-gen DeFi protocol boosting liquidity, yield, and cross-chain performance built for serious on-chain growth."
                 openGraph={{
                     url: 'https://www.quecko.com/launchpad',
                     title: 'Syrupal Protocol',
                     description:
-                        'Designed for visionary Web3 teams looking to raise capital and build early momentum.',
+                        'A next-gen DeFi protocol boosting liquidity, yield, and cross-chain performance built for serious on-chain growth.',
                     site_name: 'Quecko',
                 }}
             />

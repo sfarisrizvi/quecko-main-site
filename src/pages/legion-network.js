@@ -8,13 +8,13 @@ const legionenetwork = () => {
     return (
         <>
             <NextSeo
-                title="Legion – Quecko"
-                description="Designed for visionary Web3 teams looking to raise capital and build early momentum."
+                title="Legion Network - Quecko"
+                description="All-in-one Web3 app with DeFi, NFTs, gaming, and more. Legion powers the future of digital ownership."
                 openGraph={{
                     url: 'https://www.quecko.com/launchpad',
-                    title: 'Legion – Quecko',
+                    title: 'Legion Network - Quecko',
                     description:
-                        'Designed for visionary Web3 teams looking to raise capital and build early momentum.',
+                        'All-in-one Web3 app with DeFi, NFTs, gaming, and more. Legion powers the future of digital ownership.',
                     site_name: 'Quecko',
                 }}
             />

@@ -8,13 +8,13 @@ const Memecoinmarketing = () => {
     return (
         <>
             <NextSeo
-                title="Memecoin Marketing"
-                description="Designed for visionary Web3 teams looking to raise capital and build early momentum."
+                title="MemeCoin Launch Campaigns"
+                description="Hype your meme coin with viral stunts, airdrops, and meme wars. Build fast, grow faster, and dominate the timeline."
                 openGraph={{
                     url: 'https://www.quecko.com/launchpad',
                     title: 'Memecoin Marketing',
                     description:
-                        'Designed for visionary Web3 teams looking to raise capital and build early momentum.',
+                        'Hype your meme coin with viral stunts, airdrops, and meme wars. Build fast, grow faster, and dominate the timeline.',
                     site_name: 'Quecko',
                 }}
             />
@@ -23,7 +23,7 @@ const Memecoinmarketing = () => {
                 <div className='inner_porfolio'>
                     <div className='first_side'>
                         <div>
-                            <h1>Memecoin Marketing
+                            <h1>Memecoin Launch Campaigns
 
 
 

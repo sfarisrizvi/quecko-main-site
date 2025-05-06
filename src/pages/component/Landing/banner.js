@@ -107,9 +107,18 @@ const Banner = () => {
             </p>
           </div>
 
-          <img onMouseDown={() => setScrolling(true)}
-        onMouseUp={() => setScrolling(false)}
-        onMouseLeave={() => setScrolling(false)} className={direction === "down" ? "downarrow" : "downarrow setarrowup"} src="\Assets\downarrow.svg" />
+          <img
+  onClick={() => {
+    const currentScroll = window.scrollY;
+    const newScroll = direction === "down"
+      ? currentScroll + 700
+      : currentScroll - 700;
+
+    window.scrollTo({ top: newScroll, behavior: 'smooth' });
+  }}
+  className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
+  src="/Assets/downarrow.svg"
+/>
         </div>
 
 

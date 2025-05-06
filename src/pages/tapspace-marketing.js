@@ -9,12 +9,12 @@ const tapspacemarketing = () => {
         <>
             <NextSeo
                 title="Tapspace – Quecko"
-                description="Designed for visionary Web3 teams looking to raise capital and build early momentum."
+                description=" A Telegram mini-game where every tap brings rewards and interstellar adventures."
                 openGraph={{
                     url: 'https://www.quecko.com/launchpad',
                     title: 'Tapspace – Quecko',
                     description:
-                        'Designed for visionary Web3 teams looking to raise capital and build early momentum.',
+                        ' A Telegram mini-game where every tap brings rewards and interstellar adventures.',
                     site_name: 'Quecko',
                 }}
             />
