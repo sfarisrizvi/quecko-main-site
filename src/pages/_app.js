@@ -113,7 +113,7 @@ export default function App({ Component, pageProps }) {
     <>
       <DefaultSeo
         title="Quecko - Leading the Blockchain Revolution with Innovative Solutions"
-        description="Quecko Inc. delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
+        // description="Quecko Inc. delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
         canonical={canonicalUrl}
         openGraph={{
           type: 'website',
