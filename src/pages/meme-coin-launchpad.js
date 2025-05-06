@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './component/Landing/header'
 import Footer from './component/Landing/footer'
 import Link from 'next/link'
-
+import { NextSeo } from 'next-seo'
 const memecoinlaunchpad = () => {
     return (
         <>

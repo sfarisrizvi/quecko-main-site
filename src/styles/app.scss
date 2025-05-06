@@ -834,3 +834,35 @@ input {
   border-radius: 0 4px 4px 0;
   background: #000 !important;
 }
+.maindetailss{
+
+  h3{
+    color: #000;
+    font-size: 24px !important;
+    font-style: bold !important;
+    font-weight: 500 !important;
+    line-height: 100%;
+    text-transform: capitalize;
+  }
+  .custom-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+li::before {
+    content: "•" !important;
+    color: black !important;
+    /* You can change the color */
+    font-weight: bold !important;
+    display: inline-block !important;
+    width: 1em !important;
+    margin-left: 10px !important;
+    color: #000;
+    font-size: 22px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 200%;
+    /* 44px */
+
+}
+}
