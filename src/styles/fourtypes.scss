@@ -220,6 +220,27 @@
     }
 
     .descriptions {
+        .custom-list {
+            list-style: none !important;
+            padding-left: 0 !important;
+        }
+
+        li::before {
+            content: "•" !important;
+            color: black !important;
+            /* You can change the color */
+            font-weight: bold !important;
+            display: inline-block !important;
+            width: 1em !important;
+            margin-left: -18px !important;
+            color: #000;
+            font-size: 22px !important;
+            font-style: normal;
+            font-weight: 400 !important;
+            line-height: 200%;
+            /* 44px */
+
+        }
         h4 {
             color: #000;
             font-size: 22px;

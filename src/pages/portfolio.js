@@ -543,6 +543,7 @@ const Portfolio = () => {
                                         </div>
 
 
+
                                         <div className='parent_div second_parent'>
                                             <Link href='/syrupal-protocol'>
                                                 <div className='left_side hovercard'>
@@ -563,6 +564,14 @@ const Portfolio = () => {
 
                                         </div>
 
+
+                                    </div>
+                                    <div className="parent_div one_parentss">
+                                        <Link href="/quick-marketing">
+                                            <div className="right_side hovercard">
+                                                <img src="/Assets/quickdesk.png" className="imgport lassst_img" />
+                                            </div>
+                                        </Link>
 
                                     </div>
                                     <div className='inner_projectsphone d-none'>
@@ -1039,6 +1048,14 @@ const Portfolio = () => {
                                                 <img src="/Assets/mainm.png" className="imgport" />
                                             </div>
                                         </Link>
+                                    </div>
+                                    <div className="parent_div one_parentss">
+                                        <Link href="/quick-marketing">
+                                            <div className="right_side hovercard">
+                                                <img src="/Assets/quickdesk.png" className="imgport" />
+                                            </div>
+                                        </Link>
+
                                     </div>
                                 </div>
 
