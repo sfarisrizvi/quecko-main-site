@@ -856,7 +856,7 @@ li::before {
     font-weight: bold !important;
     display: inline-block !important;
     width: 1em !important;
-    margin-left: 10px !important;
+    margin-left: -18px !important;
     color: #000;
     font-size: 22px !important;
     font-style: normal;
@@ -865,4 +865,14 @@ li::before {
     /* 44px */
 
 }
+}
+.one_parentss{
+  display: grid;
+  grid-template-columns: 1fr !important;
+  width: 100%;
+  border-radius: 30px;
+}
+.lassst_img{
+  overflow: hidden;
+  border-radius: 30px;
 }
