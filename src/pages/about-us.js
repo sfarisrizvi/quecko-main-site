@@ -404,3 +404,6 @@ const aboutdetail = () => {
 }
 
 export default aboutdetail
+
+
+
