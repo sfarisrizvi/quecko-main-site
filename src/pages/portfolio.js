@@ -1,7 +1,7 @@
 
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from 'next/router';
 import Header from './component/Landing/header';
 import Footer from './component/Landing/footer';
@@ -11,6 +11,81 @@ import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
 const Portfolio = () => {
+    const textRef = useRef(null);
+
+    useEffect(() => {
+      if (!textRef.current) return;
+
+      const element = textRef.current;
+      const text = element.innerText;
+
+      element.innerHTML = text
+        .split("")
+        .map(
+          (char) =>
+            `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
+        )
+        .join("");
+
+
+      gsap.timeline()
+        .set(".style-1 .char", { opacity: 0, y: 50 })
+        .to(".style-1 .char", {
+          y: 0,
+          opacity: 1,
+          duration: 1.8,
+          ease: "power4.out",
+          stagger: {
+            amount: 1,
+            ease: "power2.inOut",
+          },
+        });
+
+    }, []);
+
+
+    const [scrolling, setScrolling] = useState(false);
+    const [direction, setDirection] = useState("down");
+    const scrollSpeed = 20;
+    const threshold = 50;
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+      const checkScrollPosition = () => {
+        const scrollY = window.scrollY;
+        const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+        if (scrollY >= pageHeight - threshold) {
+          setDirection("up");
+        } else if (scrollY <= threshold) {
+          setDirection("down");
+        }
+      };
+
+
+      const smoothScroll = () => {
+        if (!scrolling) return;
+        window.scrollBy({
+          top: direction === "down" ? scrollSpeed : -scrollSpeed,
+          behavior: "smooth",
+        });
+        scrollRef.current = requestAnimationFrame(smoothScroll);
+      };
+
+
+      if (scrolling) {
+        scrollRef.current = requestAnimationFrame(smoothScroll);
+      }
+
+      window.addEventListener("scroll", checkScrollPosition);
+
+      return () => {
+        cancelAnimationFrame(scrollRef.current);
+        window.removeEventListener("scroll", checkScrollPosition);
+      };
+    }, [scrolling, direction]);
+
+
     const router = useRouter();
     const { tab } = router.query;
 
@@ -52,7 +127,19 @@ const Portfolio = () => {
             <section className="smart_contract">
                 <Header />
                 <div className="inner_data">
-                    <img className="downarrow" src="/Assets/downarrow.svg" />
+                <img
+            onClick={() => {
+              const currentScroll = window.scrollY;
+              const newScroll = direction === "down"
+                ? currentScroll + 700
+                : currentScroll - 700;
+
+              window.scrollTo({ top: newScroll, behavior: 'smooth' });
+            }}
+            className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
+            src="/Assets/downarrow.svg"
+          />
+                    {/* <img className="downarrow" src="/Assets/downarrow.svg" /> */}
                     <video
                         className="main-banner-video"
                         muted
@@ -617,7 +704,18 @@ const Portfolio = () => {
                                             </Link>
 
                                         </div>
+                                        <div className='parent_div'>
 
+                                            <Link href='/quick-marketing'>
+                                                <div className='right_side hovercard'>
+                                                    <img src='\Assets\smallquick.png' className='imgport' />
+                                                    <div className='buttons_div'>
+                                                        {/* */}
+                                                    </div>
+                                                </div>
+                                            </Link>
+
+                                        </div>
 
                                     </div>
 
@@ -1085,6 +1183,18 @@ const Portfolio = () => {
                                             </div>
                                         </Link>
                                     </div>
+                                    <div className='parent_div'>
+
+<Link href='/quick-marketing'>
+    <div className='right_side hovercard'>
+        <img src='\Assets\smallquick.png' className='imgport' />
+        <div className='buttons_div'>
+            {/* */}
+        </div>
+    </div>
+</Link>
+
+</div>
                                 </div>
                             </section>
                         )}
