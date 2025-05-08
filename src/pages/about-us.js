@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from "react";
 import Header from './component/Landing/header'
 import dynamic from 'next/dynamic';
 var $ = require('jquery');
@@ -17,6 +17,82 @@ import { NextSeo } from 'next-seo';
 
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
 const aboutdetail = () => {
+
+
+    const textRef = useRef(null);
+
+      useEffect(() => {
+        if (!textRef.current) return;
+
+        const element = textRef.current;
+        const text = element.innerText;
+
+        element.innerHTML = text
+          .split("")
+          .map(
+            (char) =>
+              `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
+          )
+          .join("");
+
+
+        gsap.timeline()
+          .set(".style-1 .char", { opacity: 0, y: 50 })
+          .to(".style-1 .char", {
+            y: 0,
+            opacity: 1,
+            duration: 1.8,
+            ease: "power4.out",
+            stagger: {
+              amount: 1,
+              ease: "power2.inOut",
+            },
+          });
+
+      }, []);
+
+
+      const [scrolling, setScrolling] = useState(false);
+      const [direction, setDirection] = useState("down");
+      const scrollSpeed = 20;
+      const threshold = 50;
+      const scrollRef = useRef(null);
+
+      useEffect(() => {
+        const checkScrollPosition = () => {
+          const scrollY = window.scrollY;
+          const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+          if (scrollY >= pageHeight - threshold) {
+            setDirection("up");
+          } else if (scrollY <= threshold) {
+            setDirection("down");
+          }
+        };
+
+
+        const smoothScroll = () => {
+          if (!scrolling) return;
+          window.scrollBy({
+            top: direction === "down" ? scrollSpeed : -scrollSpeed,
+            behavior: "smooth",
+          });
+          scrollRef.current = requestAnimationFrame(smoothScroll);
+        };
+
+
+        if (scrolling) {
+          scrollRef.current = requestAnimationFrame(smoothScroll);
+        }
+
+        window.addEventListener("scroll", checkScrollPosition);
+
+        return () => {
+          cancelAnimationFrame(scrollRef.current);
+          window.removeEventListener("scroll", checkScrollPosition);
+        };
+      }, [scrolling, direction]);
+
     const owl_option = {
         nav: true,
         dots: false,
@@ -118,8 +194,19 @@ const aboutdetail = () => {
                                 <p className='span_ptag'>At Quecko, we don’t just provide solutions; we build them. We’re actively involved in creating the foundation for a decentralized future, one block at a time.</p>
                             </div>
                         </div>
+                        <img
+            onClick={() => {
+              const currentScroll = window.scrollY;
+              const newScroll = direction === "down"
+                ? currentScroll + 700
+                : currentScroll - 700;
 
-                        <img className="downarrow" src="\Assets\downarrow.svg" />
+              window.scrollTo({ top: newScroll, behavior: 'smooth' });
+            }}
+            className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
+            src="/Assets/downarrow.svg"
+          />
+                        {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     </div>
 
 

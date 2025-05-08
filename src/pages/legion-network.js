@@ -27,7 +27,8 @@ const legionenetwork = () => {
 
 
                             </h1>
-                            <p className='modullar_ptag'>Fueling the Next Wave of Token Launches
+                            <p className='modullar_ptag'>The Best of Blockchain in One Super App
+
                             </p>
                         </div>
                         <Link href="/contact">
