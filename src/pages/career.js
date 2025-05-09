@@ -103,7 +103,7 @@ const career = () => {
 
                       <>
                         {/* <Link href="/careerdetail"> */}
-                        <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
+                        <Link href={`/jobs/${item?.slug}`} key={index}>
                           {/* /blogdetail?slug=${item?.slug} */}
 
 
