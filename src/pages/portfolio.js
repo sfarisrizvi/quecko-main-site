@@ -14,32 +14,32 @@ const Portfolio = () => {
     const textRef = useRef(null);
 
     useEffect(() => {
-      if (!textRef.current) return;
+        if (!textRef.current) return;
 
-      const element = textRef.current;
-      const text = element.innerText;
+        const element = textRef.current;
+        const text = element.innerText;
 
-      element.innerHTML = text
-        .split("")
-        .map(
-          (char) =>
-            `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
-        )
-        .join("");
+        element.innerHTML = text
+            .split("")
+            .map(
+                (char) =>
+                    `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
+            )
+            .join("");
 
 
-      gsap.timeline()
-        .set(".style-1 .char", { opacity: 0, y: 50 })
-        .to(".style-1 .char", {
-          y: 0,
-          opacity: 1,
-          duration: 1.8,
-          ease: "power4.out",
-          stagger: {
-            amount: 1,
-            ease: "power2.inOut",
-          },
-        });
+        gsap.timeline()
+            .set(".style-1 .char", { opacity: 0, y: 50 })
+            .to(".style-1 .char", {
+                y: 0,
+                opacity: 1,
+                duration: 1.8,
+                ease: "power4.out",
+                stagger: {
+                    amount: 1,
+                    ease: "power2.inOut",
+                },
+            });
 
     }, []);
 
@@ -51,38 +51,38 @@ const Portfolio = () => {
     const scrollRef = useRef(null);
 
     useEffect(() => {
-      const checkScrollPosition = () => {
-        const scrollY = window.scrollY;
-        const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const checkScrollPosition = () => {
+            const scrollY = window.scrollY;
+            const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-        if (scrollY >= pageHeight - threshold) {
-          setDirection("up");
-        } else if (scrollY <= threshold) {
-          setDirection("down");
+            if (scrollY >= pageHeight - threshold) {
+                setDirection("up");
+            } else if (scrollY <= threshold) {
+                setDirection("down");
+            }
+        };
+
+
+        const smoothScroll = () => {
+            if (!scrolling) return;
+            window.scrollBy({
+                top: direction === "down" ? scrollSpeed : -scrollSpeed,
+                behavior: "smooth",
+            });
+            scrollRef.current = requestAnimationFrame(smoothScroll);
+        };
+
+
+        if (scrolling) {
+            scrollRef.current = requestAnimationFrame(smoothScroll);
         }
-      };
 
+        window.addEventListener("scroll", checkScrollPosition);
 
-      const smoothScroll = () => {
-        if (!scrolling) return;
-        window.scrollBy({
-          top: direction === "down" ? scrollSpeed : -scrollSpeed,
-          behavior: "smooth",
-        });
-        scrollRef.current = requestAnimationFrame(smoothScroll);
-      };
-
-
-      if (scrolling) {
-        scrollRef.current = requestAnimationFrame(smoothScroll);
-      }
-
-      window.addEventListener("scroll", checkScrollPosition);
-
-      return () => {
-        cancelAnimationFrame(scrollRef.current);
-        window.removeEventListener("scroll", checkScrollPosition);
-      };
+        return () => {
+            cancelAnimationFrame(scrollRef.current);
+            window.removeEventListener("scroll", checkScrollPosition);
+        };
     }, [scrolling, direction]);
 
 
@@ -127,18 +127,18 @@ const Portfolio = () => {
             <section className="smart_contract">
                 <Header />
                 <div className="inner_data">
-                <img
-            onClick={() => {
-              const currentScroll = window.scrollY;
-              const newScroll = direction === "down"
-                ? currentScroll + 700
-                : currentScroll - 700;
+                    <img
+                        onClick={() => {
+                            const currentScroll = window.scrollY;
+                            const newScroll = direction === "down"
+                                ? currentScroll + 700
+                                : currentScroll - 700;
 
-              window.scrollTo({ top: newScroll, behavior: 'smooth' });
-            }}
-            className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
-            src="/Assets/downarrow.svg"
-          />
+                            window.scrollTo({ top: newScroll, behavior: 'smooth' });
+                        }}
+                        className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
+                        src="/Assets/downarrow.svg"
+                    />
                     {/* <img className="downarrow" src="/Assets/downarrow.svg" /> */}
                     <video
                         className="main-banner-video"
@@ -650,17 +650,24 @@ const Portfolio = () => {
                                             </Link>
 
                                         </div>
+                                        <div className="parent_div ">
+
+                                            <Link href="/prodex">
+                                                <div className="right_side hovercard">
+                                                    <img src="/Assets/prodexd.png" className="imgport lassst_img" />
+                                                </div>
+                                            </Link>
+                                            <Link href="/quick-marketing">
+                                                <div className="right_side hovercard">
+                                                    <img src="/Assets/smallquick.png" className="imgport lassst_img" />
+                                                </div>
+                                            </Link>
+
+                                        </div>
 
 
                                     </div>
-                                    <div className="parent_div one_parentss">
-                                        <Link href="/quick-marketing">
-                                            <div className="right_side hovercard">
-                                                <img src="/Assets/quickdesk.png" className="imgport lassst_img" />
-                                            </div>
-                                        </Link>
 
-                                    </div>
                                     <div className='inner_projectsphone d-none'>
 
                                         <div className='parent_div'>
@@ -714,6 +721,13 @@ const Portfolio = () => {
                                                     </div>
                                                 </div>
                                             </Link>
+                                            <Link href="/prodex">
+                                                <div className="right_side hovercard">
+                                                    <img src="/Assets/prodexp.png" className="imgport lassst_img" />
+                                                </div>
+                                            </Link>
+
+
 
                                         </div>
 
@@ -724,399 +738,399 @@ const Portfolio = () => {
                         )}
                         {activeTab === 'web3' && (
                             // <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                <section className='projects_main' id="projects">
-                                    <div className='inner_projects'>
+                            <section className='projects_main' id="projects">
+                                <div className='inner_projects'>
 
-                                        <div className='parent_div'>
-                                            <Link href='/launchpad'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\portnew.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* <button>Branding</button>
+                                    <div className='parent_div'>
+                                        <Link href='/launchpad'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portnew.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
 <button>Development</button>
 <button>Marketing</button> */}
-                                                    </div>
                                                 </div>
-                                            </Link>
-                                            <Link href='/privacy-protocol'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\preview.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/privacy-protocol'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\preview.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
                                                 </div>
-                                            </Link>
-
-                                        </div>
-                                        <div className='parent_div second_parent'>
-
-                                            <Link href='/multi-chain'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\port22.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/quecko-exchange'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\exchangeimg.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/domain-name-system'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\port55.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/nft-gallery'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\port33.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/decentralized-options-market'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\domnew.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/reward-flow'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\port88.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/vion'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\vion.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/bluemoon'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\port101.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/vion-exchange'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\vionanother.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/high-yield-dollar-protocol'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\hybt.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/diet-and-cheat-meal-app'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\portdiet.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/golden-looni'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\lonihome.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/quick-grocery'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\port111.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-
-
-                                            <Link href='/meme-coin-launchpad'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\portmeme1.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/legion'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\port44.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/estate-slice'>
-                                                <div className=' right_side hovercard'>
-                                                    <img src='\Assets\port77.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/privacy-protocol-oracle'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\portorcale.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/tapspace'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\spacenew.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-
-                                        </div>
-
-
-
+                                            </div>
+                                        </Link>
 
                                     </div>
-                                    <div className='inner_projectsphone d-none'>
+                                    <div className='parent_div second_parent'>
 
-                                        <div className='parent_div'>
-                                            <Link href='/launchpad'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\lunchphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* <button>Branding</button>
+                                        <Link href='/multi-chain'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port22.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/quecko-exchange'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\exchangeimg.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/domain-name-system'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port55.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/nft-gallery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port33.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/decentralized-options-market'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\domnew.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/reward-flow'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port88.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/vion'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\vion.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/bluemoon'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\port101.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/vion-exchange'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\vionanother.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/high-yield-dollar-protocol'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\hybt.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/diet-and-cheat-meal-app'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portdiet.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/golden-looni'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\lonihome.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/quick-grocery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port111.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+
+                                        <Link href='/meme-coin-launchpad'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\portmeme1.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/legion'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\port44.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/estate-slice'>
+                                            <div className=' right_side hovercard'>
+                                                <img src='\Assets\port77.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/privacy-protocol-oracle'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\portorcale.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/tapspace'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\spacenew.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+
+
+
+
+                                </div>
+                                <div className='inner_projectsphone d-none'>
+
+                                    <div className='parent_div'>
+                                        <Link href='/launchpad'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\lunchphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* <button>Branding</button>
 <button>Development</button>
 <button>Marketing</button> */}
-                                                    </div>
                                                 </div>
-                                            </Link>
-                                            <Link href='/privacy-protocol'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\previewphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/privacy-protocol'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\previewphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
                                                 </div>
-                                            </Link>
-
-                                        </div>
-                                        <div className='parent_div second_parent'>
-
-                                            <Link href='/multi-chain'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\multiphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/quecko-exchange'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\exchangephonenew.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/domain-name-system'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\domainphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/nft-gallery'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\galleryphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/decentralized-options-market'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\domphonen.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/reward-flow'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\rewardphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/vion'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\vionphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/bluemoon'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\moonphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/vion-exchange'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\vionanother.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/high-yield-dollar-protocol'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\hybtphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/quick-grocery'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\quickphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-
-
-                                            <Link href='/meme-coin-launchpad'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\memephone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-
-                                        </div>
-
-                                        <div className='parent_div'>
-                                            <Link href='/diet-and-cheat-meal-app'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\dietphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/golden-looni'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\loniphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-                                        <div className='parent_div second_parent'>
-                                            <Link href='/privacy-protocol-oracle'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\oraclephone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/tapspace'>
-                                                <div className='right_side hovercard'>
-                                                    <img src='\Assets\spacephonenew.png' className='imgport' />
-                                                    <div className='buttons_div'>
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-
-                                        </div>
-                                        <div className='parent_div'>
-                                            <Link href='/legion'>
-                                                <div className='left_side hovercard'>
-                                                    <img src='\Assets\legionphone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <Link href='/estate-slice'>
-                                                <div className=' right_side hovercard'>
-                                                    <img src='\Assets\estatephone.png' className='imgport' />
-                                                    <div className='buttons_div'>
-                                                        {/* */}
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </div>
-
-
+                                            </div>
+                                        </Link>
 
                                     </div>
-                                </section>
+                                    <div className='parent_div second_parent'>
+
+                                        <Link href='/multi-chain'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\multiphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/quecko-exchange'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\exchangephonenew.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/domain-name-system'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\domainphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/nft-gallery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\galleryphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/decentralized-options-market'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\domphonen.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/reward-flow'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\rewardphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/vion'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\vionphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/bluemoon'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\moonphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/vion-exchange'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\vionanother.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/high-yield-dollar-protocol'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\hybtphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/quick-grocery'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\quickphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+
+                                        <Link href='/meme-coin-launchpad'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\memephone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+
+                                    <div className='parent_div'>
+                                        <Link href='/diet-and-cheat-meal-app'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\dietphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/golden-looni'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\loniphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='parent_div second_parent'>
+                                        <Link href='/privacy-protocol-oracle'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\oraclephone.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/tapspace'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\spacephonenew.png' className='imgport' />
+                                                <div className='buttons_div'>
+
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+                                    <div className='parent_div'>
+                                        <Link href='/legion'>
+                                            <div className='left_side hovercard'>
+                                                <img src='\Assets\legionphone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <Link href='/estate-slice'>
+                                            <div className=' right_side hovercard'>
+                                                <img src='\Assets\estatephone.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+
+
+                                </div>
+                            </section>
                             // </div>
                         )}
                         {activeTab === 'marketing' && (
@@ -1185,16 +1199,16 @@ const Portfolio = () => {
                                     </div>
                                     <div className='parent_div'>
 
-<Link href='/quick-marketing'>
-    <div className='right_side hovercard'>
-        <img src='\Assets\smallquick.png' className='imgport' />
-        <div className='buttons_div'>
-            {/* */}
-        </div>
-    </div>
-</Link>
+                                        <Link href='/quick-marketing'>
+                                            <div className='right_side hovercard'>
+                                                <img src='\Assets\smallquick.png' className='imgport' />
+                                                <div className='buttons_div'>
+                                                    {/* */}
+                                                </div>
+                                            </div>
+                                        </Link>
 
-</div>
+                                    </div>
                                 </div>
                             </section>
                         )}
