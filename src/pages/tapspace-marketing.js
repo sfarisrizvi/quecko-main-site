@@ -185,7 +185,14 @@ const tapspacemarketing = () => {
                             <img src='\Assets\ta5.png' className='imgnew' />
                         </div>
 
+                        <div className='imgs_seconds'>
+                            <img src='\Assets\tapb.png' className='imgnew' />
+                            <div>
+                                <h2>Whitepaper & Technical Writing</h2>
+                                <p>We crafted a clear and concise whitepaper to explain TapSpace’s vision, gameplay, tokenomics, and roadmap. It builds trust with players, partners, and investors while highlighting the value of our play-and-earn ecosystem.</p>
 
+                            </div>
+                        </div>
                     </div>
 
 
