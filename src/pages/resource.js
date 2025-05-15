@@ -317,7 +317,7 @@ const Resource = () => {
 
                             </h3>
                         </div>
-                        {/* <div className='tech_cardssss'>
+                        <div className='tech_cardssss'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                                 <path d="M13.125 3.75H31.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M9.375 11.25H35.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -327,7 +327,7 @@ const Resource = () => {
 
 
                             </h3>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
                 <div className='Application'>
