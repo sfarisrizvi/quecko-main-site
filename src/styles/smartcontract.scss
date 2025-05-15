@@ -512,6 +512,23 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .forms_div_section {
+    display: flex
+;
+    flex-direction: column;
+    gap: 15px ;
+    width: 100% !important;
+    position: absolute;
+    right: 0px !important;
+    bottom: 6px !important;
+    padding: 20px;
+}
+.smart_contract .mydata {
+    position: relative;
+    height: 830px !important;
+    border-radius: 40px;
+    overflow: hidden;
+}
     .Development .innnner_tecnlogies {
         display: grid;
         grid-template-columns: 1fr;
@@ -557,23 +574,25 @@
 
     .developer_div_mains .wasifimg {
         position: absolute;
-                top: 53%;
+        top: 53%;
         width: 482px;
         height: 355px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .developer_div_mains .thenew{
-         position: absolute;
-                top: 44% !important;
+
+    .developer_div_mains .thenew {
+        position: absolute;
+        top: 44% !important;
         width: 482px;
         height: 355px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-        .developer_div_mains .umarimg{
-         position: absolute;
-                top: 47% !important;
+
+    .developer_div_mains .umarimg {
+        position: absolute;
+        top: 47% !important;
         width: 482px;
         height: 355px;
         left: 50%;
@@ -672,6 +691,11 @@
     .smart_contract .inner_data .blogdetail .parenttext {
         position: absolute;
         bottom: 101px;
+        left: 15px;
+    }
+   .smart_contract .inner_data .blogdetail .newtext {
+        position: absolute;
+        top: 101px;
         left: 15px;
     }
 
@@ -1070,4 +1094,109 @@
     }
 
 
+}
+@media only screen and (max-width: 1300px) {
+        .smart_contract .inner_data .blogdetail .newtext {
+        position: absolute;
+        top: 101px;
+        left: 15px;
+    }
+        .smart_contract .mydata {
+        position: relative;
+        height: 830px !important;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+        .forms_div_section {
+        display: flex
+;
+        flex-direction: column;
+        gap: 15px;
+        width: 100% !important;
+        position: absolute;
+        right: 0px !important;
+        bottom: 6px !important;
+        padding: 20px;
+    }
+}
+
+// .new_details_pagee{
+//     display: flex;
+//     align-items: center;
+// }
+.forms_div_section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 467px;
+position: absolute;
+right: 30px;
+bottom: 85px;
+    button {
+        color: #C1FF14;
+        font-size: 16px;
+        font-style: normal;
+        padding: 21px 32px;
+        margin-top: 25px;
+        border-radius: 150px;
+        background: #000;
+        border: unset;
+        font-weight: 400;
+        line-height: 120%;
+        /* 19.2px */
+    }
+
+    .inputttunner {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    input {
+        padding: 20px 22px;
+        border-radius: 15px;
+        border: unset;
+        outline: unset;
+        width: 100%;
+        background: #FFF;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+    }
+
+    ::placeholder {
+        color: #9D9D9D;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+    }
+
+    textarea {
+        padding: 20px 22px;
+        border-radius: 15px;
+        border: unset;
+        outline: unset;
+        background: #FFF;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+    }
+
+    ::placeholder {
+        color: #9D9D9D;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+    }
 }
