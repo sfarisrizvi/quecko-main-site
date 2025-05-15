@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const Marketingexpert = () => {
     return (
-           <>
+        <>
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
@@ -24,7 +24,7 @@ const Marketingexpert = () => {
                         id="myVideo">
                         <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330989/queckosite%20%28new%29/videos/servicevieo_cujepj.mp4" type="video/mp4" />
                     </video>
-                      <div className='blogdetail'>
+                    <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
                                 <p>Services</p>
@@ -64,11 +64,11 @@ const Marketingexpert = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
-                        <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
+                {/* <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Fahad Suleman
-</h2>
+                        </h2>
                         <h3>Senior Marketing Manager</h3>
                         <p>Fahad is a Web3 Marketing Expert with a proven track record of driving growth, engagement, and adoption for blockchain and decentralized applications. Currently at Quecko, he leads the marketing team, blends traditional marketing know-how with deep on-chain insights to craft campaigns that fuel token sales, expand DAOs, and build thriving crypto communities.
 
@@ -79,7 +79,7 @@ const Marketingexpert = () => {
                             <div>
                                 <span>Experience</span>
                                 <p>10+ years
-</p>
+                                </p>
                             </div>
                             <div>
                                 <span>Availability:</span>
@@ -87,21 +87,21 @@ const Marketingexpert = () => {
                             </div>
                         </div>
                         <p>Expert in:
-Digital Marketing Strategy, SEO & SEM (Google Ads), Content Marketing & Editorial Planning, Social Media Strategy, Paid Media & Performance Analysis
+                            Digital Marketing Strategy, SEO & SEM (Google Ads), Content Marketing & Editorial Planning, Social Media Strategy, Paid Media & Performance Analysis
 
 
                         </p>
-                        {/* <p>Also worked with: Database Administration, Object-Oriented Programming, Data Analysis
-</p> */}
+                        <p>Also worked with: Database Administration, Object-Oriented Programming, Data Analysis
+                        </p>
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>S. Faris Rizvi</h2>
                         <h3> Marketing Manager
 
-</h3>
+                        </h3>
                         <p>Faris is a Web3-focused marketing specialist with 5+ years of experience in driving growth for 50+ blockchain and fintech projects. Currently working in Quecko as a marketing manager, he manages community growth, influencer marketing, or viral campaigns of various projects.
 
                         </p>
@@ -120,9 +120,9 @@ Digital Marketing Strategy, SEO & SEM (Google Ads), Content Marketing & Editoria
                         <p>Expert in building high-converting funnels, community-led strategies, and data-driven campaigns. Backed by strong case studies and a track record of delivering measurable results in emerging tech markets.
 
                         </p>
-                        {/* <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p> */}
+                        <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='Development'>
                     <h2>Marketing Experts for Hire Will Provide
@@ -188,7 +188,7 @@ Digital Marketing Strategy, SEO & SEM (Google Ads), Content Marketing & Editoria
 
                             </h3>
                             <p> Enhance your brand’s visibility with SEO professionals who optimize search rankings and establish industry authority in the decentralized space.
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -398,7 +398,7 @@ Digital Marketing Strategy, SEO & SEM (Google Ads), Content Marketing & Editoria
                                 <h3>Community-First Approach
                                 </h3>
                                 <p>Our experts build and engage real Web3 communities, ensuring organic growth and long-term brand loyalty.
-</p>
+                                </p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">

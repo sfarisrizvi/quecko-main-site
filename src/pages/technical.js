@@ -24,7 +24,7 @@ const Technical = () => {
                         id="myVideo">
                         <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330989/queckosite%20%28new%29/videos/servicevieo_cujepj.mp4" type="video/mp4" />
                     </video>
-                 <div className='blogdetail'>
+                    <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
                                 <p>Services</p>
@@ -61,13 +61,13 @@ const Technical = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
-                        <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\women.png'/>
+                {/* <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\women.png' />
                     <div className='left_side___new'>
                         <h2>Aamna Zahid
-</h2>
+                        </h2>
                         <h3>Technical Writer
-</h3>
+                        </h3>
                         <p>Aamna is a detail-oriented Technical Writer specializing in Web3 projects, with a proven ability to turn complex blockchain concepts into clear, engaging content. Her expertise lies in crafting clear, concise, and accurate materials for both developer audiences and non-technical stakeholders.
 
 
@@ -78,7 +78,7 @@ const Technical = () => {
                             <div>
                                 <span>Experience</span>
                                 <p>3+ years
-</p>
+                                </p>
                             </div>
                             <div>
                                 <span>Availability:</span>
@@ -86,21 +86,21 @@ const Technical = () => {
                             </div>
                         </div>
                         <p>Expert in:
-Technical Documentation, Whitepapers, Gitbooks, User Manuals, Blog posts, case studies, and knowledge-base articles.
+                            Technical Documentation, Whitepapers, Gitbooks, User Manuals, Blog posts, case studies, and knowledge-base articles.
 
 
                         </p>
-                        {/* <p>Also worked with: Database Administration, Object-Oriented Programming, Data Analysis
-</p> */}
+                        <p>Also worked with: Database Administration, Object-Oriented Programming, Data Analysis
+</p>
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\women.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\women.png' />
                     <div className='left_side___new'>
                         <h2>Areej Fatima
-</h2>
+                        </h2>
                         <h3>Technical Writer
-</h3>
+                        </h3>
                         <p>Areej is a passionate and skilled writer with a strong command of blog writing and SEO based technical writing. She structures complex information into intuitive, user-friendly formats, enabling effortless navigation and discoverability.
 
                         </p>
@@ -117,13 +117,13 @@ Technical Documentation, Whitepapers, Gitbooks, User Manuals, Blog posts, case s
                             </div>
                         </div>
                         <p>Expert in:
-Blog posts, Case studies, Knowledge-base articles, Technical Documentation, Whitepapers, Gitbooks and User Manuals.
+                            Blog posts, Case studies, Knowledge-base articles, Technical Documentation, Whitepapers, Gitbooks and User Manuals.
 
 
                         </p>
-                        {/* <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p> */}
+                        <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='Development'>
                     <h2>Technical Writer for Hire Will Provide
@@ -188,7 +188,7 @@ Blog posts, Case studies, Knowledge-base articles, Technical Documentation, Whit
                             <h3 className='names_tags'>Information Architecture
                             </h3>
                             <p>Organize and structure complex information into intuitive, user-friendly formats, ensuring easy navigation and accessibility.
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -259,7 +259,7 @@ Blog posts, Case studies, Knowledge-base articles, Technical Documentation, Whit
                 </div> */}
                 <div className='Development'>
                     <h2>
-                       Deliverables of Technical Writers for hire
+                        Deliverables of Technical Writers for hire
                     </h2>
                     <div className='innnner_tecnlogies'>
                         <div className='tech_cardssss'>
@@ -357,7 +357,7 @@ Blog posts, Case studies, Knowledge-base articles, Technical Documentation, Whit
                                     </defs>
                                 </svg>
                                 <h3>Time-Saving
-                            </h3>
+                                </h3>
                                 <p>Skip the lengthy hiring process and onboard pre-vetted talent in days.
 
                                 </p>
@@ -400,7 +400,7 @@ Blog posts, Case studies, Knowledge-base articles, Technical Documentation, Whit
 
                                 </h3>
                                 <p>Easily scale your team up or down based on project demands.
-</p>
+                                </p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">

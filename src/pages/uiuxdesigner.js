@@ -60,7 +60,7 @@ const Uiuxdesigner = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
-                        <div className='developer_div_mains'>
+                        {/* <div className='developer_div_mains'>
                     <img className='wasifimg img-fluid umarimg' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Umar Ali Butt</h2>
@@ -89,7 +89,7 @@ const Uiuxdesigner = () => {
 
 </p>
                     </div>
-                </div>
+                </div> */}
                 {/* <div className='developer_div_mains'>
                     <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
                     <div className='left_side___new'>

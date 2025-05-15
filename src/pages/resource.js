@@ -24,7 +24,7 @@ const Resource = () => {
                         id="myVideo">
                         <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330989/queckosite%20%28new%29/videos/servicevieo_cujepj.mp4" type="video/mp4" />
                     </video>
-                   <div className='blogdetail'>
+                    <div className='blogdetail'>
                         <div className='parenttext'>
                             <div className='twicebtn'>
                                 <p>Services</p>
@@ -61,13 +61,13 @@ const Resource = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
-                        <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
+                {/* <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Adnan Akhtar
-</h2>
+                        </h2>
                         <h3>React Native Developer
-</h3>
+                        </h3>
                         <p>Adnan is a skilled mobile app developer with a strong command of React Native and full-stack development. With hands-on experience building high-performance cross-platform mobile applications, he bridges the gap between front-end elegance and back-end functionality, delivering seamless user experiences across Android and iOS.
 
 
@@ -79,7 +79,7 @@ const Resource = () => {
                                 <span>Experience</span>
                                 <p>3+ years
 
-</p>
+                                </p>
                             </div>
                             <div>
                                 <span>Availability:</span>
@@ -90,16 +90,16 @@ const Resource = () => {
 
                         </p>
                         <p>Also worked with:  JavaScript, Git, Swagger/OpenAPI
-</p>
+                        </p>
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg thenew  img-fluid' src='\Assets\user.png'/>
+                    <img className='wasifimg thenew  img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Farhan Razzaq
-</h2>
+                        </h2>
                         <h3>React Native Developer
-</h3>
+                        </h3>
                         <p>Farhan is a skilled React Native Developer with deep expertise in building robust, scalable, and user-friendly mobile applications—especially within the Web3 ecosystem. With a strong command of modern JavaScript, TypeScript, and mobile architecture patterns, he develops high-performance dApps and integrates advanced blockchain functionality seamlessly into mobile experiences.
                         </p>
                     </div>
@@ -118,9 +118,9 @@ const Resource = () => {
 
                         </p>
                         <p>Also worked with: Firebase, GraphQL, Axios, WebSockets, SQLite, React Hooks, Custom Hooks, Native Modules, Deep Linking, Push Notifications
-</p>
+                        </p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='Development'>
                     <h2>Mobile App Developers for Hire Will Provide
@@ -182,7 +182,7 @@ const Resource = () => {
 
                             </h3>
                             <p>Our developers can help you in connecting your mobile app to robust backends with RESTful APIs, GraphQL, Firebase, and cloud services. Our developers ensure secure and efficient data flow, real-time updates, and seamless authentication mechanisms.
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -391,7 +391,7 @@ const Resource = () => {
                                 <h3>Cost-Efficient Solutions
                                 </h3>
                                 <p>We provide a cost-effective outsourcing solution and risk-free team onboarding by managing the majority of the process for you.
-</p>
+                                </p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">

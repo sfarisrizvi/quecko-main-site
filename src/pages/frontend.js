@@ -61,7 +61,7 @@ const Frontend = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
-                <div className='developer_div_mains'>
+                {/* <div className='developer_div_mains'>
                     <img className='wasifimg img-fluid umarimg' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Usman Malik</h2>
@@ -125,10 +125,7 @@ const Frontend = () => {
                         </p>
                     </div>
                 </div>
-
-
-
-      <div className='developer_div_mains'>
+                <div className='developer_div_mains'>
                     <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Hamza Chaudhary
@@ -155,11 +152,11 @@ const Frontend = () => {
 
                         </p>
                         <p>Also worked with:
-UI/UX and animation-driven interfaces
+                            UI/UX and animation-driven interfaces
 
                         </p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='Development'>
                     <h2>Frontend Developers for Hire Will Provide
@@ -190,7 +187,7 @@ UI/UX and animation-driven interfaces
 
                             </h3>
                             <p>Augment your team with experts skilled in JavaScript, CSS, and browser dev tools to optimize code, reduce load times, and resolve performance bottlenecks.
-</p>
+                            </p>
                         </div>
                         <div className='card__one'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
@@ -224,7 +221,7 @@ UI/UX and animation-driven interfaces
 
                             </h3>
                             <p>Add developers experienced in integrating RESTful APIs, GraphQL, and managing state with tools like Redux, Context API, or Vuex to streamline your application’s functionality.
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +292,7 @@ UI/UX and animation-driven interfaces
                 </div> */}
                 <div className='Development'>
                     <h2>
-                       Tools & Technologies of Frontend Developers for hire
+                        Tools & Technologies of Frontend Developers for hire
 
                     </h2>
                     <div className='innnner_tecnlogies'>

@@ -62,7 +62,7 @@ const Blockchaindev = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
-                        <div className='developer_div_mains'>
+                        {/* <div className='developer_div_mains'>
                     <img className='wasifimg img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Muhammad Waleed</h2>
@@ -115,7 +115,7 @@ const Blockchaindev = () => {
                         </p>
                         <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='Development'>
                     <h2>Blockchain Developers for Hire Will Provide
