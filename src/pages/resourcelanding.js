@@ -288,28 +288,28 @@ const Resourcelanding = () => {
                     <h2 className='partnerss'>Clients Who Partnered With Us For Resource Augmentation</h2>
                     <div className='cards_partners'>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\de.svg' className="img-fluid" />
+                            <img src='\Assets\legionlogo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\be.svg' className="img-fluid" />
+                            <img src='\Assets\wizardlogo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\cee.svg' className="img-fluid" />
+                            <img src='\Assets\tapspacelogo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\di.svg' className="img-fluid" />
+                            <img src='\Assets\estatelogo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\st.svg' className="img-fluid" />
+                            <img src='\Assets\dietlogo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\re.svg' className="img-fluid" />
+                            <img src='\Assets\moonlogo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\ti.svg' className="img-fluid" />
+                            <img src='\Assets\prologo.png' className="img-fluid" />
                         </div>
                         <div className='imgs_tabs'>
-                            <img src='\Assets\dia.svg' className="img-fluid" />
+                            <img src='\Assets\vionlogo.png' className="img-fluid" />
                         </div>
 
                     </div>
@@ -583,8 +583,9 @@ const Resourcelanding = () => {
             <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h2  className='cliiient'>Become a client</h2>
-                    <p className='spantextt'>Collaboration was at the heart of their process, as they listened intently to their clients' stories and aspirations. They believed that the best designs were born from understanding, empathy, and a deep connection with the essence of each brand.
+                    <h2  className='cliiient'>Let's Get Started with Resource Augmentation</h2>
+                    <p className='spantextt'>Contact us to discuss what kind of Web3 professionals you need and let's start working together!
+
                     </p>
                     <span>Get in touch</span>
                     <div className='svgs_divv'>

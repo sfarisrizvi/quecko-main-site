@@ -41,10 +41,11 @@ const Blockchaindev = () => {
                                 </svg>
                                 <span>Blockchain Developers </span>
                             </div>
-                            <h1 className='mainpara'>Elite Developers for Your Web3 Projects
+                            <h1 className='mainpara'>Hire a Blockchain Developer
 
                             </h1>
-                            <p className='para'>Finding skilled Blockchain Developers can be challenging, but we make it easy. Our resource augmentation model allows you to outsource seasoned professionals who seamlessly integrate with your team. Whether you need expertise in smart contracts, DeFi protocols, or blockchain integrations, we provide the right talent to drive your Web3 success.
+                            <p className='para'>Finding skilled blockchain developers can be challenging, we make it easy. Our resource augmentation model allows you to outsource seasoned professionals who seamlessly integrate with your team accelerating your project outcomes.
+
 
                             </p>
 
@@ -61,54 +62,61 @@ const Blockchaindev = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
+                        <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
+                    <div className='left_side___new'>
+                        <h2>Muhammad Waleed</h2>
+                        <h3>Senior Blockchain Developer</h3>
+                        <p>Waleed is a highly skilled Blockchain Developer with expertise in building real-world dApps using Solidity and the EVM stack. With extensive experience of 7 years in Web3, he currently works at Quecko with a strong background in both front-end and back-end technologies across various complex Web3  projects.
+
+                        </p>
+                    </div>
+                    <div className='right_side_new'>
+                        <div className='nnnew_innner'>
+                            <div>
+                                <span>Experience</span>
+                                <p>6+ years
+</p>
+                            </div>
+                            <div>
+                                <span>Availability:</span>
+                                <p>On project</p>
+                            </div>
+                        </div>
+                        <p>Expert in: Solidity, Node.js, React.js, Next.js, DevOps, TypeScript, JavaScript, MongoDB, Hardhat, Foundry, Ethers.js.
+
+                        </p>
+                        <p>Also worked with: Database Administration, Object-Oriented Programming, Data Analysis
+</p>
+                    </div>
+                </div>
                 <div className='developer_div_mains'>
                     <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
                     <div className='left_side___new'>
                         <h2>Muhammad Wasif</h2>
-                        <h3>Senior Software Developer</h3>
-                        <p>Marton is a highly accomplished Senior Software Engineer with extensive experience in the IT and services industry, particularly in Java development. Currently working at Bluebird International, he has a strong background in both front-end and back-end technologies across various complex projects.
+                        <h3>Senior Blockchain Developer
+</h3>
+                        <p>Wasif is a highly accomplished Senior Blockchain Developer with extensive experience in Web3, building and scaling EVM-based dapps and DeFi protocols. He currently leads a team at Quecko, where he mentors junior developers, manages programming tasks, and ensures that all software meets the highest standards of quality.
                         </p>
                     </div>
                     <div className='right_side_new'>
                         <div className='nnnew_innner'>
                             <div>
                                 <span>Experience</span>
-                                <p>19+ Years</p>
+                                <p>5+ years</p>
                             </div>
                             <div>
                                 <span>Availability:</span>
                                 <p>On project</p>
                             </div>
                         </div>
-                        <p>Expert in: Java (Java SE, JEE), Microservices Architecture, Full Stack, Angular, ReactJS, Docker, MongoDB, MSSQL, Oracle
+                        <p>Expert in: Solidity, Node.js, TypeScript, JavaScript, MongoDB, Hardhat, Foundry, Ethers.js.
+
                         </p>
-                        <p>Also worked with: Hibernate, Maven, Servlets, Spring, JavaScript, Angular 11, ReactJS, JUnit, Git, Swagger/OpenAPI</p>
+                        <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p>
                     </div>
                 </div>
-                   <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png'/>
-                    <div className='left_side___new'>
-                        <h2>Muhammad Waleed</h2>
-                        <h3>Senior Software Developer</h3>
-                        <p>Marton is a highly accomplished Senior Software Engineer with extensive experience in the IT and services industry, particularly in Java development. Currently working at Bluebird International, he has a strong background in both front-end and back-end technologies across various complex projects.
-                        </p>
-                    </div>
-                    <div className='right_side_new'>
-                        <div className='nnnew_innner'>
-                            <div>
-                                <span>Experience</span>
-                                <p>19+ Years</p>
-                            </div>
-                            <div>
-                                <span>Availability:</span>
-                                <p>On project</p>
-                            </div>
-                        </div>
-                        <p>Expert in: Java (Java SE, JEE), Microservices Architecture, Full Stack, Angular, ReactJS, Docker, MongoDB, MSSQL, Oracle
-                        </p>
-                        <p>Also worked with: Hibernate, Maven, Servlets, Spring, JavaScript, Angular 11, ReactJS, JUnit, Git, Swagger/OpenAPI</p>
-                    </div>
-                </div>
+
                 <div className='Development'>
                     <h2>Blockchain Developers for Hire Will Provide
                     </h2>
@@ -246,7 +254,7 @@ const Blockchaindev = () => {
                                 <path d="M6.1875 13.125L22.5 22.5L38.8125 13.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M22.5 41.25V22.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3>Web3.js, Ethers.js, Solana Web3, BitcoinJS
+                            <h3>Solidity
                             </h3>
                         </div>
                         <div className='tech_cardssss'>
@@ -255,7 +263,8 @@ const Blockchaindev = () => {
                                 <path d="M35.625 18.75H9.375C7.30393 18.75 5.625 20.4289 5.625 22.5V37.5C5.625 39.5711 7.30393 41.25 9.375 41.25H35.625C37.6961 41.25 39.375 39.5711 39.375 37.5V22.5C39.375 20.4289 37.6961 18.75 35.625 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M13.125 18.75V13.125C13.125 10.6386 14.1127 8.25403 15.8709 6.49587C17.629 4.73772 20.0136 3.75 22.5 3.75C24.9864 3.75 27.371 4.73772 29.1291 6.49587C30.8873 8.25403 31.875 10.6386 31.875 13.125V18.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3>Biometric APIs, Encrypted Keystore, MEV Protection
+                            <h3>Hardhat
+
                             </h3>
                         </div>
                         <div className='tech_cardssss'>
@@ -274,7 +283,8 @@ const Blockchaindev = () => {
                                 <path d="M37.5 40.3125C38.0178 40.3125 38.4375 39.8928 38.4375 39.375C38.4375 38.8572 38.0178 38.4375 37.5 38.4375C36.9822 38.4375 36.5625 38.8572 36.5625 39.375C36.5625 39.8928 36.9822 40.3125 37.5 40.3125Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M37.5 15.9375C38.0178 15.9375 38.4375 15.5178 38.4375 15C38.4375 14.4822 38.0178 14.0625 37.5 14.0625C36.9822 14.0625 36.5625 14.4822 36.5625 15C36.5625 15.5178 36.9822 15.9375 37.5 15.9375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3>Whisper (OpenAI), GPT, Google STT
+                            <h3>Foundry
+
                             </h3>
                         </div>
                         <div className='tech_cardssss'>
@@ -283,7 +293,8 @@ const Blockchaindev = () => {
                                 <path d="M13.125 20.625V28.125C13.125 29.1196 13.5201 30.0734 14.2233 30.7766C14.9266 31.4799 15.8804 31.875 16.875 31.875H24.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M35.625 24.375H28.125C26.0539 24.375 24.375 26.0539 24.375 28.125V35.625C24.375 37.6961 26.0539 39.375 28.125 39.375H35.625C37.6961 39.375 39.375 37.6961 39.375 35.625V28.125C39.375 26.0539 37.6961 24.375 35.625 24.375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3> WalletConnect, dApp browser SDK
+                            <h3>Truffle
+
                             </h3>
                         </div>
                         <div className='tech_cardssss'>
@@ -292,7 +303,8 @@ const Blockchaindev = () => {
                                 <path d="M7.5 18.75C6.50544 18.75 5.55161 18.3549 4.84835 17.6516C4.14509 16.9484 3.75 15.9946 3.75 15V7.5C3.75 6.50544 4.14509 5.55161 4.84835 4.84835C5.55161 4.14509 6.50544 3.75 7.5 3.75H15C15.9946 3.75 16.9484 4.14509 17.6516 4.84835C18.3549 5.55161 18.75 6.50544 18.75 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M26.25 37.5C26.25 38.4946 26.6451 39.4484 27.3484 40.1516C28.0516 40.8549 29.0054 41.25 30 41.25H37.5C38.4946 41.25 39.4484 40.8549 40.1516 40.1516C40.8549 39.4484 41.25 38.4946 41.25 37.5V30C41.25 29.0054 40.8549 28.0516 40.1516 27.3484C39.4484 26.6451 38.4946 26.25 37.5 26.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3>React Native, Expo
+                            <h3>Ethers.js
+
                             </h3>
                         </div>
                         <div className='tech_cardssss'>
@@ -301,7 +313,8 @@ const Blockchaindev = () => {
                                 <path d="M9.375 11.25H35.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M35.625 18.75H9.375C7.30393 18.75 5.625 20.4289 5.625 22.5V37.5C5.625 39.5711 7.30393 41.25 9.375 41.25H35.625C37.6961 41.25 39.375 39.5711 39.375 37.5V22.5C39.375 20.4289 37.6961 18.75 35.625 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3> Node.js, Firebase, PostgreSQL
+                            <h3>Web3.js
+
 
                             </h3>
                         </div>
