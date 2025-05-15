@@ -513,22 +513,23 @@
 
 @media only screen and (max-width: 991px) {
     .forms_div_section {
-    display: flex
-;
-    flex-direction: column;
-    gap: 15px ;
-    width: 100% !important;
-    position: absolute;
-    right: 0px !important;
-    bottom: 6px !important;
-    padding: 20px;
-}
-.smart_contract .mydata {
-    position: relative;
-    height: 830px !important;
-    border-radius: 40px;
-    overflow: hidden;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100% !important;
+        position: absolute;
+        right: 0px !important;
+        bottom: 6px !important;
+        padding: 20px;
+    }
+
+    .smart_contract .mydata {
+        position: relative;
+        height: 830px !important;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
     .Development .innnner_tecnlogies {
         display: grid;
         grid-template-columns: 1fr;
@@ -693,7 +694,8 @@
         bottom: 101px;
         left: 15px;
     }
-   .smart_contract .inner_data .blogdetail .newtext {
+
+    .smart_contract .inner_data .blogdetail .newtext {
         position: absolute;
         top: 101px;
         left: 15px;
@@ -771,6 +773,79 @@
 }
 
 @media (min-width: 1600px) {
+    .forms_div_section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9375vw !important; // 15px
+        width: 29.1875vw !important; // 467px
+        position: absolute;
+        right: 1.875vw !important; // 30px
+        bottom: 5.3125vw !important; // 85px
+
+        button {
+            color: #C1FF14;
+            font-size: 1vw !important; // 16px
+            font-style: normal;
+            padding: 1.3125vw 2vw !important; // 21px 32px
+            margin-top: 1.5625vw !important; // 25px
+            border-radius: 9.375vw !important; // 150px
+            background: #000;
+            border: unset;
+            font-weight: 400;
+            line-height: 120%; // or use 1.2
+        }
+
+        .inputttunner {
+            display: flex;
+            align-items: center;
+            gap: 0.9375vw !important; // 15px
+            width: 100%;
+        }
+
+        input {
+            padding: 1.25vw 1.375vw !important; // 20px 22px
+            border-radius: 0.9375vw !important; // 15px
+            border: unset;
+            outline: unset;
+            width: 100%;
+            background: #FFF;
+            color: #000;
+            font-size: 1vw; // 16px
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; // or use 1.3
+        }
+
+        ::placeholder {
+            color: #9D9D9D;
+            font-size: 1vw !important; // 16px
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
+        textarea {
+            padding: 1.25vw 1.375vw; // 20px 22px
+            border-radius: 0.9375vw; // 15px
+            border: unset;
+            outline: unset;
+            background: #FFF;
+            color: #000;
+            font-size: 1vw; // 16px
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
+        ::placeholder {
+            color: #9D9D9D;
+            font-size: 1vw; // 16px
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+
     .resourse_cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1095,21 +1170,23 @@
 
 
 }
+
 @media only screen and (max-width: 1300px) {
-        .smart_contract .inner_data .blogdetail .newtext {
+    .smart_contract .inner_data .blogdetail .newtext {
         position: absolute;
         top: 101px;
         left: 15px;
     }
-        .smart_contract .mydata {
+
+    .smart_contract .mydata {
         position: relative;
         height: 830px !important;
         border-radius: 40px;
         overflow: hidden;
     }
-        .forms_div_section {
-        display: flex
-;
+
+    .forms_div_section {
+        display: flex;
         flex-direction: column;
         gap: 15px;
         width: 100% !important;
@@ -1129,9 +1206,10 @@
     flex-direction: column;
     gap: 15px;
     width: 467px;
-position: absolute;
-right: 30px;
-bottom: 85px;
+    position: absolute;
+    right: 30px;
+    bottom: 85px;
+
     button {
         color: #C1FF14;
         font-size: 16px;
