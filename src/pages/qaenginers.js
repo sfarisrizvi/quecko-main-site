@@ -62,7 +62,7 @@ const Qaenginers = () => {
                     </div>
                 </div> */}
                         <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png'/>
+                    <img className='wasifimg img-fluid umarimg' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Murtaza Naqvi</h2>
                         <h3>QA Engineer</h3>
@@ -91,7 +91,7 @@ const Qaenginers = () => {
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Ibrahim Qureshi
 </h2>

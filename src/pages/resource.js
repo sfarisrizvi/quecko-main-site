@@ -62,7 +62,7 @@ const Resource = () => {
                     </div>
                 </div> */}
                         <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Adnan Akhtar
 </h2>
@@ -94,7 +94,7 @@ const Resource = () => {
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
+                    <img className='wasifimg thenew  img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Farhan Razzaq
 </h2>
@@ -117,7 +117,7 @@ const Resource = () => {
                         <p>Expert in: React Native, JavaScript, TypeScript, Redux, Redux Toolkit, Context API, Expo, REST APIs, Git/GitHub/GitLab, Performance Optimization, Agile & Scrum, Web3.js, Ethers.js, WalletConnect integration, MetaMask Mobile integration, Decentralized Application (dApp) UI/UX, Smart Contract Interactions, Ethereum & EVM-Compatible Chains, Transaction Signing & Broadcast, Token Standards (ERC-20, ERC-721), NFT Marketplace Integration, Blockchain Wallets
 
                         </p>
-                        <p>Also worked with: Firebase, GraphQL, Axios, WebSockets, SQLite, React Hooks, Custom Hooks, Native Modules, Deep Linking, Push Notifications, Google Maps & Geolocation, Lottie Animations, In-App Purchases, AsyncStorage, Zustand, MMKV, Moralis, Wallet SDKs, ENS Integration, DeFi Protocol APIs
+                        <p>Also worked with: Firebase, GraphQL, Axios, WebSockets, SQLite, React Hooks, Custom Hooks, Native Modules, Deep Linking, Push Notifications
 </p>
                     </div>
                 </div>

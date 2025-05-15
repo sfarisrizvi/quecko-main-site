@@ -62,7 +62,7 @@ const Technical = () => {
                     </div>
                 </div> */}
                         <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\women.png'/>
                     <div className='left_side___new'>
                         <h2>Aamna Zahid
 </h2>
@@ -95,7 +95,7 @@ Technical Documentation, Whitepapers, Gitbooks, User Manuals, Blog posts, case s
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\women.png'/>
                     <div className='left_side___new'>
                         <h2>Areej Fatima
 </h2>

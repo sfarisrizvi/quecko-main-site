@@ -61,7 +61,7 @@ const Uiuxdesigner = () => {
                     </div>
                 </div> */}
                         <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png'/>
+                    <img className='wasifimg img-fluid umarimg' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Umar Ali Butt</h2>
                         <h3>Product Designer

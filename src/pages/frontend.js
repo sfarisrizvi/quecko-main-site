@@ -62,7 +62,7 @@ const Frontend = () => {
                     </div>
                 </div> */}
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png' />
+                    <img className='wasifimg img-fluid umarimg' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Usman Malik</h2>
                         <h3>Senior Frontend Developer</h3>
@@ -95,7 +95,7 @@ const Frontend = () => {
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png' />
+                    <img className='wasifimg img-fluid umarimg' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Aman Ullah
                         </h2>
@@ -129,7 +129,7 @@ const Frontend = () => {
 
 
       <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png' />
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Hamza Chaudhary
                         </h2>

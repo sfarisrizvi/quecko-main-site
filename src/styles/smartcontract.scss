@@ -432,15 +432,17 @@
 
     .wasifimg {
         position: absolute;
-        width: 501px;
-        height: 478px;
-        top: 50%;
+        width: 490px;
+        // object-fit: cover;
+        height: 468px;
+        top: 52%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .left_side___new {
         z-index: 9999;
+
         h2 {
             color: #000;
             font-size: 56px;
@@ -555,7 +557,25 @@
 
     .developer_div_mains .wasifimg {
         position: absolute;
-        top: 46%;
+                top: 53%;
+        width: 482px;
+        height: 355px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .developer_div_mains .thenew{
+         position: absolute;
+                top: 41% !important;
+        width: 482px;
+        height: 355px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+        .developer_div_mains .umarimg{
+         position: absolute;
+                top: 47% !important;
+        width: 482px;
+        height: 355px;
         left: 50%;
         transform: translate(-50%, -50%);
     }

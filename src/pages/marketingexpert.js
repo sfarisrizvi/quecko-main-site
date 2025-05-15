@@ -65,7 +65,7 @@ const Marketingexpert = () => {
                     </div>
                 </div> */}
                         <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Fahad Suleman
 </h2>
@@ -96,7 +96,7 @@ Digital Marketing Strategy, SEO & SEM (Google Ads), Content Marketing & Editoria
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>S. Faris Rizvi</h2>
                         <h3> Marketing Manager

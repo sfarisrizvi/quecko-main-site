@@ -66,7 +66,7 @@ const Backend = () => {
                     </div>
                 </div> */}
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\waleed.png' />
+                    <img className='wasifimg img-fluid umarimg' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Akash Sabir</h2>
                         <h3>Backend Developer
@@ -97,7 +97,7 @@ const Backend = () => {
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png' />
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Usama Saif
                         </h2>
@@ -132,7 +132,7 @@ const Backend = () => {
 
 
                    <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png' />
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
                     <div className='left_side___new'>
                         <h2>Muhammad Shoaib
 

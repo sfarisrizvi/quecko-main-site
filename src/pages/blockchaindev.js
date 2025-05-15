@@ -91,7 +91,7 @@ const Blockchaindev = () => {
                     </div>
                 </div>
                 <div className='developer_div_mains'>
-                    <img className='wasifimg img-fluid' src='\Assets\wasifnew.png'/>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
                     <div className='left_side___new'>
                         <h2>Muhammad Wasif</h2>
                         <h3>Senior Blockchain Developer
