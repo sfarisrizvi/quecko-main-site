@@ -121,7 +121,7 @@ const Qaenginers = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>QA Engineers for Hire Will Provide
+                    <h2>Hired QA Engineers Will Provide
                     </h2>
                     <div className='mains_cardss'>
                         <div className='card__one'>

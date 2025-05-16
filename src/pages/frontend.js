@@ -159,7 +159,7 @@ const Frontend = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Frontend Developers for Hire Will Provide
+                    <h2>Hired Frontend Developers Will Provide
 
                     </h2>
                     <div className='mains_cardss'>

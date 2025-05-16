@@ -118,7 +118,7 @@ const Uiuxdesigner = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Designers for Hire Will Provide
+                    <h2>Hired Designers Will Provide
                     </h2>
                     <div className='mains_cardss'>
                         <div className='card__one'>
@@ -247,7 +247,7 @@ const Uiuxdesigner = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Deliverables of UI UX Designers for hire
+                        Deliverables of UI/UX Designers for hire
                     </h2>
                     <div className='innnner_tecnlogies'>
                         <div className='tech_cardssss'>

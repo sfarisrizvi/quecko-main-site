@@ -126,7 +126,7 @@ const Technical = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Technical Writer for Hire Will Provide
+                    <h2>Hired Technical Writer Will Provide
 
                     </h2>
                     <div className='mains_cardss'>

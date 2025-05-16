@@ -167,7 +167,7 @@ const Backend = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Backend Developers for Hire Will Provide
+                    <h2>Hired Backend Developers  Will Provide
 
                     </h2>
                     <div className='mains_cardss'>

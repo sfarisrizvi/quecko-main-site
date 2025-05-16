@@ -125,7 +125,7 @@ const Marketingexpert = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Marketing Experts for Hire Will Provide
+                    <h2>Hired Marketing Experts Will Provide
 
 
                     </h2>

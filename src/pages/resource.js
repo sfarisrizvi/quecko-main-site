@@ -123,7 +123,7 @@ const Resource = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Mobile App Developers for Hire Will Provide
+                    <h2>Hired Mobile App Developers Will Provide
                     </h2>
                     <div className='mains_cardss'>
                         <div className='card__one'>
