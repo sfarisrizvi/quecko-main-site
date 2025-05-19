@@ -41,12 +41,17 @@ const Blockchaindev = () => {
                                 </svg>
                                 <span>Blockchain Developers </span>
                             </div>
-                            <h1 className='mainpara'>Elite Developers for Your Web3 Projects
+                            <h1 className='mainpara'>Hire a Blockchain Developer
 
                             </h1>
-                            <p className='para'>Finding skilled Blockchain Developers can be challenging, but we make it easy. Our resource augmentation model allows you to outsource seasoned professionals who seamlessly integrate with your team. Whether you need expertise in smart contracts, DeFi protocols, or blockchain integrations, we provide the right talent to drive your Web3 success.
+                            <p className='para'>Finding skilled blockchain developers can be challenging, we make it easy. Our resource augmentation model allows you to outsource seasoned professionals who seamlessly integrate with your team accelerating your project outcomes.
+
 
                             </p>
+                                <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -61,9 +66,63 @@ const Blockchaindev = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
+                        {/* <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
+                    <div className='left_side___new'>
+                        <h2>Muhammad Waleed</h2>
+                        <h3>Senior Blockchain Developer</h3>
+                        <p>Waleed is a highly skilled Blockchain Developer with expertise in building real-world dApps using Solidity and the EVM stack. With extensive experience of 7 years in Web3, he currently works at Quecko with a strong background in both front-end and back-end technologies across various complex Web3  projects.
+
+                        </p>
+                    </div>
+                    <div className='right_side_new'>
+                        <div className='nnnew_innner'>
+                            <div>
+                                <span>Experience</span>
+                                <p>6+ years
+</p>
+                            </div>
+                            <div>
+                                <span>Availability:</span>
+                                <p>On project</p>
+                            </div>
+                        </div>
+                        <p>Expert in: Solidity, Node.js, React.js, Next.js, DevOps, TypeScript, JavaScript, MongoDB, Hardhat, Foundry, Ethers.js.
+
+                        </p>
+                        <p>Also worked with: Database Administration, Object-Oriented Programming, Data Analysis
+</p>
+                    </div>
+                </div>
+                <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png'/>
+                    <div className='left_side___new'>
+                        <h2>Muhammad Wasif</h2>
+                        <h3>Senior Blockchain Developer
+</h3>
+                        <p>Wasif is a highly accomplished Senior Blockchain Developer with extensive experience in Web3, building and scaling EVM-based dapps and DeFi protocols. He currently leads a team at Quecko, where he mentors junior developers, manages programming tasks, and ensures that all software meets the highest standards of quality.
+                        </p>
+                    </div>
+                    <div className='right_side_new'>
+                        <div className='nnnew_innner'>
+                            <div>
+                                <span>Experience</span>
+                                <p>5+ years</p>
+                            </div>
+                            <div>
+                                <span>Availability:</span>
+                                <p>On project</p>
+                            </div>
+                        </div>
+                        <p>Expert in: Solidity, Node.js, TypeScript, JavaScript, MongoDB, Hardhat, Foundry, Ethers.js.
+
+                        </p>
+                        <p>Also worked with: GraphQL, web3.js, DevOps, Express.js, Ethereum, Smart Contracts</p>
+                    </div>
+                </div> */}
 
                 <div className='Development'>
-                    <h2>What We Offer
+                    <h2>Hired Blockchain Developers  Will Provide
                     </h2>
                     <div className='mains_cardss'>
                         <div className='card__one'>
@@ -71,7 +130,7 @@ const Blockchaindev = () => {
                                 <path d="M39.375 31.8749L35.3325 28.3724C35.1989 28.2458 35.0309 28.1612 34.8496 28.1294C34.6682 28.0975 34.4815 28.1198 34.3128 28.1934C34.144 28.267 34.0006 28.3886 33.9005 28.5432C33.8004 28.6977 33.7481 28.8783 33.75 29.0624V29.9999C33.75 30.4972 33.5525 30.9741 33.2008 31.3258C32.8492 31.6774 32.3723 31.8749 31.875 31.8749H28.125C27.6277 31.8749 27.1508 31.6774 26.7992 31.3258C26.4475 30.9741 26.25 30.4972 26.25 29.9999C26.25 25.2281 18.7669 22.5562 10.3125 22.4999C9.0693 22.4999 7.87701 22.9938 6.99794 23.8729C6.11886 24.752 5.625 25.9442 5.625 27.1874C5.625 28.4306 6.11886 29.6229 6.99794 30.502C7.87701 31.3811 9.0693 31.8749 10.3125 31.8749C18.0994 31.8749 19.2094 10.6968 21.015 6.56244C21.32 5.86455 21.7905 5.2515 22.3857 4.77633C22.981 4.30116 23.683 3.97819 24.4311 3.83536C25.1792 3.69253 25.9509 3.73415 26.6793 3.9566C27.4077 4.17906 28.071 4.57566 28.6116 5.11209C29.1523 5.64852 29.5541 6.30861 29.7823 7.03525C30.0105 7.76189 30.0582 8.5332 29.9213 9.28242C29.7844 10.0316 29.467 10.7362 28.9965 11.3352C28.526 11.9341 27.9167 12.4094 27.2212 12.7199" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M5.625 39.375H39.375" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3  className='names_tags'>Strategic Technical Augmentation
+                            <h3 className='names_tags'>Strategic Technical Augmentation
 
                             </h3>
                             <p>Our blockchain developers become extensions of your team, working within your established frameworks while contributing specialized expertise in distributed ledger technologies, smart contract development, and decentralized application (dApps)  architecture.
@@ -85,7 +144,7 @@ const Blockchaindev = () => {
                                 <path d="M36.375 31.875V9.375C36.375 8.38044 35.9799 7.42661 35.2766 6.72335C34.5734 6.02009 33.6196 5.625 32.625 5.625H8.25" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M15.75 39.375H38.25C39.2446 39.375 40.1984 38.9799 40.9016 38.2766C41.6049 37.5734 42 36.6196 42 35.625V33.75C42 33.2527 41.8025 32.7758 41.4508 32.4242C41.0992 32.0725 40.6223 31.875 40.125 31.875H21.375C20.8777 31.875 20.4008 32.0725 20.0492 32.4242C19.6975 32.7758 19.5 33.2527 19.5 33.75V35.625C19.5 36.6196 19.1049 37.5734 18.4016 38.2766C17.6984 38.9799 16.7446 39.375 15.75 39.375ZM15.75 39.375C14.7554 39.375 13.8016 38.9799 13.0983 38.2766C12.3951 37.5734 12 36.6196 12 35.625V9.375C12 8.38044 11.6049 7.42661 10.9016 6.72335C10.1984 6.02009 9.24456 5.625 8.25 5.625C7.25544 5.625 6.30161 6.02009 5.59835 6.72335C4.89509 7.42661 4.5 8.38044 4.5 9.375V13.125C4.5 13.6223 4.69754 14.0992 5.04917 14.4508C5.40081 14.8025 5.87772 15 6.375 15H12" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>Full-Stack Blockchain Implementation
+                            <h3 className='names_tags'>Full-Stack Blockchain Implementation
 
                             </h3>
                             <p>Access comprehensive blockchain development capabilities across multiple chains and frameworks, including Ethereum, Solidity, BSC, Polygon, Avalanche, and all EVM-compatible networks. Our professionals navigate complex technical requirements while maintaining best practices in security and efficiency.</p>
@@ -97,7 +156,7 @@ const Blockchaindev = () => {
                                 <path d="M9.875 22.5L4.25 28.125L9.875 33.75" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M17.375 33.75L23 28.125L17.375 22.5" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>Smart Contract & DeFi Protocol Engineering
+                            <h3 className='names_tags'>Smart Contract & DeFi Protocol Engineering
                             </h3>
                             <p>Implement secure, auditable, and gas-efficient smart contracts that power your decentralized products. Our engineers excel in developing complex DeFi mechanisms including liquidity pools, lending protocols, yield optimization, and governance systems with thorough security considerations.
 
@@ -117,7 +176,7 @@ const Blockchaindev = () => {
                                 <path d="M18.4375 29.0625L16.75 28.3125" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M11.5 31.875C14.6066 31.875 17.125 29.3566 17.125 26.25C17.125 23.1434 14.6066 20.625 11.5 20.625C8.3934 20.625 5.875 23.1434 5.875 26.25C5.875 29.3566 8.3934 31.875 11.5 31.875Z" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>Custom Blockchain Integration Solutions
+                            <h3 className='names_tags'>Custom Blockchain Integration Solutions
                             </h3>
                             <p>Bridge your existing systems with blockchain networks through elegant integration solutions. Our developers create robust connections between traditional infrastructure and decentralized technologies, ensuring seamless data flow and transaction processing across environments.</p>
                         </div>
@@ -125,11 +184,152 @@ const Blockchaindev = () => {
                 </div>
 
 
+
+                {/* <div className='how_its_works'>
+                    <div>
+                        <h2  className='workss_div'>How does it work?</h2>
+                    </div>
+                    <div className='works_cards_mains'>
+                        <div className='works_cards'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M22.366 12.4911C24.72 12.4911 26.635 10.5761 26.635 8.2221V5.3691C26.635 3.0151 24.72 1.1001 22.366 1.1001H9.63399C7.27999 1.1001 5.36499 3.0151 5.36499 5.3691V8.2231C5.36499 10.5771 7.27999 12.4921 9.63399 12.4921H12.635L14.787 14.8211C15.099 15.1581 15.541 15.3511 16 15.3511C16.459 15.3511 16.901 15.1581 17.213 14.8211L19.365 12.4921L22.366 12.4911ZM18.31 10.9801L16 13.4801L13.69 10.9801C13.52 10.7951 13.28 10.6911 13.029 10.6911H9.63399C8.27299 10.6911 7.16499 9.5831 7.16499 8.2221V5.3691C7.16499 4.0081 8.27199 2.9001 9.63399 2.9001H22.365C23.726 2.9001 24.834 4.0071 24.834 5.3691V8.2231C24.834 9.5841 23.727 10.6921 22.365 10.6921H18.97C18.72 10.6911 18.48 10.7961 18.31 10.9801Z" fill="black" />
+                                <path d="M12.0999 5.896H11.7669C11.2699 5.896 10.8669 6.299 10.8669 6.796C10.8669 7.293 11.2699 7.696 11.7669 7.696H12.0999C12.5969 7.696 12.9999 7.293 12.9999 6.796C12.9999 6.299 12.5969 5.896 12.0999 5.896Z" fill="black" />
+                                <path d="M16.1658 5.896H15.8338C15.3368 5.896 14.9338 6.299 14.9338 6.796C14.9338 7.293 15.3368 7.696 15.8338 7.696H16.1658C16.6628 7.696 17.0658 7.293 17.0658 6.796C17.0658 6.299 16.6628 5.896 16.1658 5.896Z" fill="black" />
+                                <path d="M20.232 5.896H19.9C19.403 5.896 19 6.299 19 6.796C19 7.293 19.403 7.696 19.9 7.696H20.233C20.73 7.696 21.133 7.293 21.133 6.796C21.133 6.299 20.729 5.896 20.232 5.896Z" fill="black" />
+                                <path d="M27.0929 23.4982C27.9679 22.6562 28.5179 21.4792 28.5179 20.1712C28.5179 17.6202 26.4419 15.5442 23.8909 15.5442C21.3399 15.5442 19.2639 17.6202 19.2639 20.1712C19.2639 21.4792 19.8139 22.6562 20.6889 23.4982C18.9729 24.3122 17.7749 26.0472 17.7749 28.0692V28.6652C17.7749 29.5412 18.3969 30.2962 19.2539 30.4592C20.7789 30.7512 22.3389 30.8992 23.8899 30.8992C25.4409 30.8992 27.0009 30.7512 28.5259 30.4592C29.3829 30.2952 30.0049 29.5412 30.0049 28.6652V28.0692C30.0069 26.0482 28.8089 24.3122 27.0929 23.4982ZM23.8919 17.3442C25.4509 17.3442 26.7189 18.6122 26.7189 20.1712C26.7189 21.7302 25.4509 22.9982 23.8919 22.9982C22.3329 22.9982 21.0649 21.7302 21.0649 20.1712C21.0649 18.6122 22.3329 17.3442 23.8919 17.3442ZM28.1899 28.6922C25.5679 29.1942 22.8529 29.2092 20.2169 28.7812C20.0029 28.7442 19.7889 28.7102 19.5759 28.6652V28.0692C19.5759 26.2652 21.0429 24.7982 22.8469 24.7982H24.9359C26.7399 24.7982 28.2069 26.2652 28.2069 28.0692L28.1899 28.6922Z" fill="black" />
+                                <path d="M11.3099 23.4982C12.1849 22.6562 12.7349 21.4792 12.7349 20.1712C12.7349 17.6202 10.6589 15.5442 8.10794 15.5442C5.55694 15.5442 3.48094 17.6202 3.48094 20.1712C3.48094 21.4792 4.03094 22.6562 4.90594 23.4982C3.18994 24.3122 1.99194 26.0472 1.99194 28.0692V28.6652C1.99194 29.5412 2.61394 30.2962 3.47094 30.4592C4.99594 30.7512 6.55594 30.8992 8.10694 30.8992C9.65794 30.8992 11.2179 30.7512 12.7429 30.4592C13.5999 30.2952 14.2219 29.5412 14.2219 28.6652V28.0692C14.2239 26.0482 13.0259 24.3122 11.3099 23.4982ZM8.10794 17.3442C9.66694 17.3442 10.9349 18.6122 10.9349 20.1712C10.9349 21.7302 9.66694 22.9982 8.10794 22.9982C6.54894 22.9982 5.28094 21.7302 5.28094 20.1712C5.28094 18.6122 6.54894 17.3442 8.10794 17.3442ZM12.4069 28.6922C9.78494 29.1942 7.06994 29.2092 4.43394 28.7812C4.21994 28.7442 4.00594 28.7102 3.79294 28.6652V28.0692C3.79294 26.2652 5.25994 24.7982 7.06394 24.7982H9.15294C10.9569 24.7982 12.4239 26.2652 12.4239 28.0692L12.4069 28.6922Z" fill="black" />
+                            </svg>
+                            <h3>Step 1: Consultation
+
+                            </h3>
+                            <p>We understand your business goals and project requirements to analyze the perfect skill set needed to get the job done.
+                            </p>
+                        </div>
+                        <div className='works_cards'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M27.9934 14.8475L27.9015 14.7555L30.7425 11.9144C30.9074 11.7496 31 11.5261 31 11.293C31 11.0599 30.9074 10.8363 30.7425 10.6715L27.9015 7.8305L27.9934 7.7385C28.7 7.63936 29.354 7.31493 29.8647 6.80434C31.1519 5.51704 31.1519 3.4226 29.8647 2.13542C29.2411 1.51168 28.412 1.16827 27.5302 1.16827C26.6484 1.16827 25.8193 1.51168 25.1958 2.13524C24.6852 2.64588 24.3608 3.29991 24.2616 4.00655L24.1696 4.09848L21.3285 1.25739C20.9853 0.914204 20.4288 0.914204 20.0855 1.25739L7.8304 13.5126L7.73847 13.4206C7.63933 12.714 7.31489 12.06 6.80425 11.5493C5.51707 10.2621 3.42264 10.2621 2.13534 11.5493C0.848155 12.8366 0.848155 14.9311 2.13534 16.2183C2.64598 16.7289 3.29994 17.0533 4.00658 17.1525L4.09858 17.2444L1.25743 20.0856C0.91419 20.4287 0.91419 20.9853 1.25743 21.3285L10.6715 30.7425C10.8363 30.9074 11.0598 31 11.2929 31C11.5261 31 11.7495 30.9074 11.9144 30.7425L15.3769 27.2799C15.7201 26.9368 15.7201 26.3802 15.3769 26.037L14.4374 25.0975C14.2786 24.9386 14.0649 24.8467 13.8403 24.8404C13.4444 24.8294 13.0722 24.6692 12.7923 24.3893C12.5007 24.0978 12.3402 23.7101 12.3402 23.2978C12.3402 22.8855 12.5007 22.4979 12.7923 22.2063C13.3941 21.6045 14.3734 21.6044 14.9753 22.2063C15.2552 22.4862 15.4153 22.8584 15.4263 23.2543C15.4325 23.4789 15.5245 23.6925 15.6833 23.8514L16.6229 24.791C16.7877 24.9558 17.0113 25.0485 17.2444 25.0485C17.4775 25.0485 17.701 24.9559 17.8658 24.791L24.1695 18.4873L24.2614 18.5792C24.3606 19.2859 24.685 19.9399 25.1957 20.4505C26.4828 21.7378 28.5773 21.7378 29.8646 20.4505C30.4881 19.8269 30.8315 18.9979 30.8315 18.1161C30.8315 17.2342 30.4881 16.4052 29.8646 15.7816C29.354 15.2711 28.7 14.9466 27.9934 14.8475ZM17.2445 22.9266L17.1525 22.8347C17.0534 22.128 16.7289 21.4741 16.2183 20.9634C14.931 19.6762 12.8366 19.6762 11.5493 20.9634C10.9258 21.587 10.5824 22.4161 10.5824 23.2979C10.5824 24.1797 10.9258 25.0088 11.5493 25.6323C12.0599 26.143 12.714 26.4674 13.4206 26.5666L13.5125 26.6585L11.2929 28.8781L3.12188 20.707L5.96296 17.8659C6.12779 17.7011 6.22042 17.4776 6.22042 17.2445C6.22042 17.0114 6.12779 16.7878 5.96296 16.623L5.02342 15.6835C4.86457 15.5246 4.65088 15.4327 4.42629 15.4264C4.03037 15.4154 3.65819 15.2553 3.37828 14.9754C2.77647 14.3735 2.77647 13.3943 3.37828 12.7923C3.98016 12.1905 4.95937 12.1905 5.56125 12.7923C5.84115 13.0722 6.00134 13.4445 6.0123 13.8404C6.01851 14.065 6.1105 14.2787 6.26941 14.4375L7.2089 15.377C7.55208 15.7202 8.1086 15.7202 8.45184 15.377L11.2929 12.5359L14.134 15.377C14.4773 15.7203 15.0337 15.7203 15.377 15.377L16.3165 14.4375C16.4754 14.2787 16.5674 14.065 16.5736 13.8403C16.5846 13.4445 16.7448 13.0723 17.0246 12.7923C17.6265 12.1905 18.6058 12.1905 19.2076 12.7923C19.8095 13.3942 19.8095 14.3735 19.2076 14.9754C18.9277 15.2553 18.5555 15.4155 18.1596 15.4264C17.935 15.4326 17.7213 15.5246 17.5625 15.6835L16.623 16.623C16.2798 16.9662 16.2798 17.5227 16.623 17.866L19.4641 20.7071L17.2445 22.9266ZM28.6217 19.2077C28.0198 19.8095 27.0405 19.8095 26.4387 19.2077C26.1588 18.9277 25.9986 18.5555 25.9877 18.1596C25.9815 17.935 25.8895 17.7213 25.7306 17.5625L24.7911 16.623C24.6195 16.4513 24.3945 16.3655 24.1696 16.3655C23.9447 16.3655 23.7197 16.4513 23.5482 16.623L20.7071 19.4641L18.4875 17.2444L18.5795 17.1525C19.286 17.0533 19.9401 16.7289 20.4507 16.2183C21.7379 14.9311 21.7379 12.8366 20.4507 11.5493C19.1635 10.2621 17.069 10.2621 15.7817 11.5493C15.2711 12.06 14.9467 12.7141 14.8476 13.4206L14.7556 13.5126L12.5361 11.2929L20.707 3.12184L23.5481 5.96288C23.8913 6.30606 24.4478 6.30606 24.7911 5.96288L25.7306 5.02339C25.8894 4.86454 25.9815 4.65085 25.9877 4.42626C25.9986 4.03034 26.1588 3.65815 26.4387 3.37825C26.7303 3.08669 27.1179 2.92608 27.5302 2.92608C27.9425 2.92608 28.3301 3.08669 28.6217 3.37825C29.2235 3.98006 29.2235 4.95934 28.6217 5.56122C28.3418 5.84112 27.9696 6.00132 27.5737 6.01227C27.3491 6.01848 27.1354 6.11048 26.9765 6.26938L26.037 7.20893C25.6938 7.55218 25.6938 8.10864 26.037 8.45188L28.8781 11.2929L26.037 14.134C25.6938 14.4772 25.6938 15.0337 26.037 15.377L26.9765 16.3165C27.1353 16.4754 27.349 16.5673 27.5736 16.5736C27.9695 16.5846 28.3417 16.7447 28.6216 17.0246C28.9132 17.3162 29.0737 17.7038 29.0737 18.1161C29.0738 18.5284 28.9132 18.9161 28.6217 19.2077Z" fill="black" />
+                            </svg>
+                            <h3>Step 2: Talent Matching</h3>
+                            <p>We select top professionals from our network who match your requirements. You have the final say in choosing the right fit for your team.
+                            </p>
+                        </div>
+                        <div className='works_cards'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16.0001 23.6666C14.2801 23.6666 12.6534 23.4666 11.4268 23.0933C9.22677 22.44 8.77344 21.3466 8.77344 20.56C8.77344 17.2133 12.0134 14.48 16.0001 14.48C19.9868 14.48 23.2268 17.2 23.2268 20.56C23.2268 23.44 17.6934 23.6666 16.0001 23.6666ZM10.7734 20.5466C10.9734 20.9466 12.8668 21.6666 16.0001 21.6666C19.1334 21.6666 21.0534 20.9466 21.2268 20.5333C21.2268 18.3066 18.8801 16.48 16.0001 16.48C13.1201 16.48 10.7868 18.2933 10.7734 20.5333V20.5466Z" fill="black" />
+                                <path d="M15.9599 16.12C13.4532 16.12 11.3999 14.08 11.3999 11.56C11.3999 9.04 13.4399 7 15.9599 7C18.4799 7 20.5199 9.04 20.5199 11.56C20.5199 14.08 18.4799 16.12 15.9599 16.12ZM15.9599 9C14.5466 9 13.3999 10.1467 13.3999 11.56C13.3999 12.9733 14.5466 14.12 15.9599 14.12C17.3732 14.12 18.5199 12.9733 18.5199 11.56C18.5199 10.1467 17.3732 9 15.9599 9Z" fill="black" />
+                                <path d="M25.3334 26.52C25.08 26.52 24.8134 26.4133 24.6134 26.2133C24.2267 25.8133 24.2267 25.1867 24.6267 24.8C27.0134 22.4667 28.32 19.3333 28.32 15.9867C28.32 9.18665 22.7867 3.65332 15.9867 3.65332C14.72 3.65332 13.48 3.83999 12.2934 4.21332C11.76 4.37332 11.2 4.07999 11.04 3.55999C10.88 3.02665 11.1734 2.46665 11.6934 2.30665C13.08 1.86665 14.52 1.65332 16 1.65332C23.9067 1.65332 30.3334 8.07999 30.3334 15.9867C30.3334 19.8667 28.8 23.5067 26.04 26.2267C25.84 26.4133 25.5867 26.5067 25.3467 26.5067L25.3334 26.52Z" fill="black" />
+                                <path d="M16.0001 30.3332C8.09342 30.3332 1.66675 23.9066 1.66675 15.9999C1.66675 12.2266 3.12008 8.66656 5.76008 5.95989C6.14675 5.55989 6.77342 5.55989 7.17342 5.94656C7.57342 6.33322 7.57341 6.97322 7.18675 7.35989C4.90675 9.67989 3.66675 12.7466 3.66675 15.9999C3.66675 22.7999 9.20008 28.3332 16.0001 28.3332C17.2667 28.3332 18.5068 28.1466 19.6934 27.7732C20.2267 27.6132 20.7867 27.9066 20.9467 28.4266C21.1067 28.9599 20.8134 29.5199 20.2934 29.6799C18.9067 30.1199 17.4667 30.3332 15.9867 30.3332H16.0001Z" fill="black" />
+                                <path d="M26.6667 27.6667H24C23.4533 27.6667 23 27.2133 23 26.6667V24C23 23.4533 23.4533 23 24 23C24.5467 23 25 23.4533 25 24V25.6667H26.6667C27.2133 25.6667 27.6667 26.12 27.6667 26.6667C27.6667 27.2133 27.2133 27.6667 26.6667 27.6667Z" fill="black" />
+                                <path d="M7.99992 8.99992C7.45325 8.99992 6.99992 8.54659 6.99992 7.99992V6.33325H5.33325C4.78659 6.33325 4.33325 5.87992 4.33325 5.33325C4.33325 4.78659 4.78659 4.33325 5.33325 4.33325H7.99992C8.54659 4.33325 8.99992 4.78659 8.99992 5.33325V7.99992C8.99992 8.54659 8.54659 8.99992 7.99992 8.99992Z" fill="black" />
+                            </svg>
+                            <h3>Step 3: Onboarding
+
+                            </h3>
+                            <p>Your chosen resources integrate seamlessly into your processes and begin contributing immediately.
+                            </p>
+                        </div>
+                        <div className='works_cards'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <g clip-path="url(#clip0_973_194)">
+                                    <path d="M30.999 15.7869C29.9291 14.905 28.2379 14.8294 27.128 16.0206L24.3726 18.9785C24.0163 17.8336 22.947 16.9999 21.6865 16.9999H16.7693C16.3962 16.9999 16.2712 16.8574 15.6231 16.3581C13.152 14.2039 9.44038 14.2107 6.97675 16.3787L5.16938 17.9699C4.35694 17.5399 3.40825 17.5292 2.59138 17.9374L0.518375 18.9735C0.0552505 19.2054 -0.132187 19.7685 0.0990005 20.2316L5.72369 31.4809C5.95556 31.944 6.51863 32.1315 6.98175 31.9003L9.05475 30.8635C10.0766 30.3529 10.6452 29.3104 10.6084 28.2493H21.6864C23.7407 28.2493 25.7037 27.2681 26.9361 25.6245L31.4365 19.6236C32.3096 18.4605 32.1714 16.7549 30.999 15.7869ZM8.216 29.1867L6.98169 29.8041L2.19513 20.2316L3.43006 19.6142C3.89319 19.3829 4.45563 19.5698 4.6875 20.0335L8.63538 27.9293C8.86662 28.3924 8.67912 28.9548 8.216 29.1867ZM29.9366 18.4986L25.4363 24.4995C24.5557 25.6738 23.1539 26.3744 21.6865 26.3744H9.95406L6.44113 19.3479L8.21537 17.7862C9.98088 16.2331 12.6432 16.2331 14.4087 17.7862C15.4487 18.7017 16.0955 18.8749 16.7693 18.8749H21.6864C22.2033 18.8749 22.6239 19.2955 22.6239 19.8123C22.6239 20.3291 22.2033 20.7497 21.6864 20.7497H16.8986C16.3811 20.7497 15.9612 21.1697 15.9612 21.6872C15.9612 22.2046 16.3812 22.6246 16.8986 22.6246H22.3146C23.0926 22.6246 23.8426 22.2984 24.3726 21.729L28.4998 17.2987C28.8773 16.8937 29.456 16.9274 29.811 17.238C30.1822 17.563 30.2222 18.1186 29.9366 18.4986Z" fill="black" />
+                                    <path d="M19.7114 6.3981C20.3533 5.72504 20.7489 4.8151 20.7489 3.81323C20.7489 1.7496 19.0815 0.000976562 16.9991 0.000976562C14.9324 0.000976562 13.1869 1.74648 13.1869 3.81323C13.1869 4.78441 13.5675 5.70123 14.2587 6.4056C12.5444 7.36679 11.312 9.21166 11.312 11.3753V12.3127C11.312 12.8302 11.732 13.2502 12.2494 13.2502H21.6864C22.2038 13.2502 22.6238 12.8302 22.6238 12.3127V11.3753C22.6238 9.25416 21.4571 7.38054 19.7114 6.3981ZM16.9991 1.87591C18.0153 1.87591 18.874 2.76335 18.874 3.81329C18.874 4.84698 18.0328 5.68816 16.9991 5.68816C15.9492 5.68816 15.0618 4.82948 15.0618 3.81329C15.0618 2.78148 15.9673 1.87591 16.9991 1.87591ZM13.1869 11.3753C13.1869 9.30854 14.9324 7.56304 16.9991 7.56304C19.0665 7.56304 20.7489 9.27291 20.7489 11.3753H13.1869Z" fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_973_194">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h3>Step 4: Ongoing Support</h3>
+                            <p>
+                                We stay in touch to ensure everything runs smoothly and adjust resources as needed to meet evolving project’s requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div> */}
+                <div className='Development'>
+                    <h2>
+                    Tech Stacks
+                    </h2>
+                    <div className='innnner_tecnlogies'>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M39.375 15.0001C39.3743 14.3424 39.2007 13.6966 38.8716 13.1272C38.5425 12.5579 38.0695 12.0851 37.5 11.7563L24.375 4.25631C23.8049 3.92718 23.1583 3.75391 22.5 3.75391C21.8417 3.75391 21.1951 3.92718 20.625 4.25631L7.5 11.7563C6.93049 12.0851 6.45746 12.5579 6.12837 13.1272C5.79927 13.6966 5.62567 14.3424 5.625 15.0001V30.0001C5.62567 30.6577 5.79927 31.3035 6.12837 31.8729C6.45746 32.4422 6.93049 32.915 7.5 33.2438L20.625 40.7438C21.1951 41.0729 21.8417 41.2462 22.5 41.2462C23.1583 41.2462 23.8049 41.0729 24.375 40.7438L37.5 33.2438C38.0695 32.915 38.5425 32.4422 38.8716 31.8729C39.2007 31.3035 39.3743 30.6577 39.375 30.0001V15.0001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.1875 13.125L22.5 22.5L38.8125 13.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 41.25V22.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Solidity
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M22.5 31.875C23.5355 31.875 24.375 31.0355 24.375 30C24.375 28.9645 23.5355 28.125 22.5 28.125C21.4645 28.125 20.625 28.9645 20.625 30C20.625 31.0355 21.4645 31.875 22.5 31.875Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M35.625 18.75H9.375C7.30393 18.75 5.625 20.4289 5.625 22.5V37.5C5.625 39.5711 7.30393 41.25 9.375 41.25H35.625C37.6961 41.25 39.375 39.5711 39.375 37.5V22.5C39.375 20.4289 37.6961 18.75 35.625 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.125 18.75V13.125C13.125 10.6386 14.1127 8.25403 15.8709 6.49587C17.629 4.73772 20.0136 3.75 22.5 3.75C24.9864 3.75 27.371 4.73772 29.1291 6.49587C30.8873 8.25403 31.875 10.6386 31.875 13.125V18.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Hardhat
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M22.5 9.37497C22.5022 8.62503 22.3544 7.88222 22.0654 7.19022C21.7763 6.49823 21.3518 5.87102 20.8167 5.3455C20.2817 4.81997 19.647 4.40673 18.95 4.13009C18.2529 3.85345 17.5076 3.71899 16.7578 3.73462C16.008 3.75025 15.2689 3.91565 14.584 4.2211C13.8991 4.52654 13.2821 4.96587 12.7695 5.51323C12.2568 6.06059 11.8588 6.70494 11.5988 7.40838C11.3388 8.11182 11.2222 8.86015 11.2556 9.60935C10.1535 9.89273 9.1303 10.4232 8.26354 11.1606C7.39679 11.8979 6.70919 12.8229 6.25282 13.8653C5.79645 14.9078 5.58329 16.0404 5.62947 17.1774C5.67565 18.3145 5.97996 19.4261 6.51936 20.4281C5.57095 21.1986 4.82516 22.1891 4.34687 23.3136C3.86858 24.438 3.67228 25.6623 3.77504 26.8799C3.87781 28.0976 4.27652 29.2716 4.9365 30.3C5.59648 31.3284 6.49773 32.18 7.56186 32.7806C7.43046 33.7973 7.50887 34.8301 7.79228 35.8153C8.07568 36.8005 8.55804 37.7172 9.20958 38.5086C9.86112 39.3001 10.668 39.9496 11.5804 40.417C12.4928 40.8844 13.4913 41.1598 14.5143 41.2262C15.5373 41.2926 16.5631 41.1486 17.5282 40.803C18.4934 40.4574 19.3774 39.9176 20.1258 39.217C20.8742 38.5164 21.4709 37.6698 21.8793 36.7295C22.2876 35.7892 22.4989 34.7751 22.5 33.75V9.37497Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.875 24.375C18.4492 23.8212 19.8238 22.8131 20.825 21.4781C21.8263 20.1432 22.4091 18.5413 22.5 16.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.2556 9.60938C11.2927 10.5164 11.5487 11.4009 12.0019 12.1875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.51935 20.43C6.86236 20.1506 7.22942 19.9022 7.61622 19.6875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.25 33.75C9.95782 33.7506 8.68739 33.4173 7.56189 32.7825" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 24.375H30" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 33.75H33.75C34.7446 33.75 35.6984 34.1451 36.4016 34.8484C37.1049 35.5516 37.5 36.5054 37.5 37.5V39.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 15H37.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M30 15V9.375C30 8.38044 30.3951 7.42661 31.0984 6.72335C31.8016 6.02009 32.7554 5.625 33.75 5.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M30 25.3125C30.5178 25.3125 30.9375 24.8928 30.9375 24.375C30.9375 23.8572 30.5178 23.4375 30 23.4375C29.4822 23.4375 29.0625 23.8572 29.0625 24.375C29.0625 24.8928 29.4822 25.3125 30 25.3125Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M33.75 6.5625C34.2678 6.5625 34.6875 6.14277 34.6875 5.625C34.6875 5.10723 34.2678 4.6875 33.75 4.6875C33.2322 4.6875 32.8125 5.10723 32.8125 5.625C32.8125 6.14277 33.2322 6.5625 33.75 6.5625Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M37.5 40.3125C38.0178 40.3125 38.4375 39.8928 38.4375 39.375C38.4375 38.8572 38.0178 38.4375 37.5 38.4375C36.9822 38.4375 36.5625 38.8572 36.5625 39.375C36.5625 39.8928 36.9822 40.3125 37.5 40.3125Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M37.5 15.9375C38.0178 15.9375 38.4375 15.5178 38.4375 15C38.4375 14.4822 38.0178 14.0625 37.5 14.0625C36.9822 14.0625 36.5625 14.4822 36.5625 15C36.5625 15.5178 36.9822 15.9375 37.5 15.9375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Foundry
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M16.875 5.625H9.375C7.30393 5.625 5.625 7.30393 5.625 9.375V16.875C5.625 18.9461 7.30393 20.625 9.375 20.625H16.875C18.9461 20.625 20.625 18.9461 20.625 16.875V9.375C20.625 7.30393 18.9461 5.625 16.875 5.625Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.125 20.625V28.125C13.125 29.1196 13.5201 30.0734 14.2233 30.7766C14.9266 31.4799 15.8804 31.875 16.875 31.875H24.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M35.625 24.375H28.125C26.0539 24.375 24.375 26.0539 24.375 28.125V35.625C24.375 37.6961 26.0539 39.375 28.125 39.375H35.625C37.6961 39.375 39.375 37.6961 39.375 35.625V28.125C39.375 26.0539 37.6961 24.375 35.625 24.375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Truffle
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M26.25 15H18.75C16.6789 15 15 16.6789 15 18.75V26.25C15 28.3211 16.6789 30 18.75 30H26.25C28.3211 30 30 28.3211 30 26.25V18.75C30 16.6789 28.3211 15 26.25 15Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 18.75C6.50544 18.75 5.55161 18.3549 4.84835 17.6516C4.14509 16.9484 3.75 15.9946 3.75 15V7.5C3.75 6.50544 4.14509 5.55161 4.84835 4.84835C5.55161 4.14509 6.50544 3.75 7.5 3.75H15C15.9946 3.75 16.9484 4.14509 17.6516 4.84835C18.3549 5.55161 18.75 6.50544 18.75 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M26.25 37.5C26.25 38.4946 26.6451 39.4484 27.3484 40.1516C28.0516 40.8549 29.0054 41.25 30 41.25H37.5C38.4946 41.25 39.4484 40.8549 40.1516 40.1516C40.8549 39.4484 41.25 38.4946 41.25 37.5V30C41.25 29.0054 40.8549 28.0516 40.1516 27.3484C39.4484 26.6451 38.4946 26.25 37.5 26.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Ethers.js
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M13.125 3.75H31.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.375 11.25H35.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M35.625 18.75H9.375C7.30393 18.75 5.625 20.4289 5.625 22.5V37.5C5.625 39.5711 7.30393 41.25 9.375 41.25H35.625C37.6961 41.25 39.375 39.5711 39.375 37.5V22.5C39.375 20.4289 37.6961 18.75 35.625 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Web3.js
+
+
+                            </h3>
+                        </div>
+                    </div>
+                </div>
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h2   className='contratt'>Why Choose Us?
+                        <h2 className='contratt'>Why hire blockchain developers from Quecko?
 
                         </h2>
+                        <p>A strong social media presence is crucial for any Web3 and crypto project. We specialize in leveraging key platforms to boost brand awareness, engage communities, and attract investors. Our tailored strategies ensure that your project reaches the right audience with the right messaging.</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>
@@ -231,134 +431,12 @@ const Blockchaindev = () => {
                         </div> */}
                     </div>
                 </div>
-                <div className='how_its_works'>
-                    <div>
-                        <h2  className='workss_div'>How does it work?</h2>
-                    </div>
-                    <div className='works_cards_mains'>
-                        <div className='works_cards'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M22.366 12.4911C24.72 12.4911 26.635 10.5761 26.635 8.2221V5.3691C26.635 3.0151 24.72 1.1001 22.366 1.1001H9.63399C7.27999 1.1001 5.36499 3.0151 5.36499 5.3691V8.2231C5.36499 10.5771 7.27999 12.4921 9.63399 12.4921H12.635L14.787 14.8211C15.099 15.1581 15.541 15.3511 16 15.3511C16.459 15.3511 16.901 15.1581 17.213 14.8211L19.365 12.4921L22.366 12.4911ZM18.31 10.9801L16 13.4801L13.69 10.9801C13.52 10.7951 13.28 10.6911 13.029 10.6911H9.63399C8.27299 10.6911 7.16499 9.5831 7.16499 8.2221V5.3691C7.16499 4.0081 8.27199 2.9001 9.63399 2.9001H22.365C23.726 2.9001 24.834 4.0071 24.834 5.3691V8.2231C24.834 9.5841 23.727 10.6921 22.365 10.6921H18.97C18.72 10.6911 18.48 10.7961 18.31 10.9801Z" fill="black" />
-                                <path d="M12.0999 5.896H11.7669C11.2699 5.896 10.8669 6.299 10.8669 6.796C10.8669 7.293 11.2699 7.696 11.7669 7.696H12.0999C12.5969 7.696 12.9999 7.293 12.9999 6.796C12.9999 6.299 12.5969 5.896 12.0999 5.896Z" fill="black" />
-                                <path d="M16.1658 5.896H15.8338C15.3368 5.896 14.9338 6.299 14.9338 6.796C14.9338 7.293 15.3368 7.696 15.8338 7.696H16.1658C16.6628 7.696 17.0658 7.293 17.0658 6.796C17.0658 6.299 16.6628 5.896 16.1658 5.896Z" fill="black" />
-                                <path d="M20.232 5.896H19.9C19.403 5.896 19 6.299 19 6.796C19 7.293 19.403 7.696 19.9 7.696H20.233C20.73 7.696 21.133 7.293 21.133 6.796C21.133 6.299 20.729 5.896 20.232 5.896Z" fill="black" />
-                                <path d="M27.0929 23.4982C27.9679 22.6562 28.5179 21.4792 28.5179 20.1712C28.5179 17.6202 26.4419 15.5442 23.8909 15.5442C21.3399 15.5442 19.2639 17.6202 19.2639 20.1712C19.2639 21.4792 19.8139 22.6562 20.6889 23.4982C18.9729 24.3122 17.7749 26.0472 17.7749 28.0692V28.6652C17.7749 29.5412 18.3969 30.2962 19.2539 30.4592C20.7789 30.7512 22.3389 30.8992 23.8899 30.8992C25.4409 30.8992 27.0009 30.7512 28.5259 30.4592C29.3829 30.2952 30.0049 29.5412 30.0049 28.6652V28.0692C30.0069 26.0482 28.8089 24.3122 27.0929 23.4982ZM23.8919 17.3442C25.4509 17.3442 26.7189 18.6122 26.7189 20.1712C26.7189 21.7302 25.4509 22.9982 23.8919 22.9982C22.3329 22.9982 21.0649 21.7302 21.0649 20.1712C21.0649 18.6122 22.3329 17.3442 23.8919 17.3442ZM28.1899 28.6922C25.5679 29.1942 22.8529 29.2092 20.2169 28.7812C20.0029 28.7442 19.7889 28.7102 19.5759 28.6652V28.0692C19.5759 26.2652 21.0429 24.7982 22.8469 24.7982H24.9359C26.7399 24.7982 28.2069 26.2652 28.2069 28.0692L28.1899 28.6922Z" fill="black" />
-                                <path d="M11.3099 23.4982C12.1849 22.6562 12.7349 21.4792 12.7349 20.1712C12.7349 17.6202 10.6589 15.5442 8.10794 15.5442C5.55694 15.5442 3.48094 17.6202 3.48094 20.1712C3.48094 21.4792 4.03094 22.6562 4.90594 23.4982C3.18994 24.3122 1.99194 26.0472 1.99194 28.0692V28.6652C1.99194 29.5412 2.61394 30.2962 3.47094 30.4592C4.99594 30.7512 6.55594 30.8992 8.10694 30.8992C9.65794 30.8992 11.2179 30.7512 12.7429 30.4592C13.5999 30.2952 14.2219 29.5412 14.2219 28.6652V28.0692C14.2239 26.0482 13.0259 24.3122 11.3099 23.4982ZM8.10794 17.3442C9.66694 17.3442 10.9349 18.6122 10.9349 20.1712C10.9349 21.7302 9.66694 22.9982 8.10794 22.9982C6.54894 22.9982 5.28094 21.7302 5.28094 20.1712C5.28094 18.6122 6.54894 17.3442 8.10794 17.3442ZM12.4069 28.6922C9.78494 29.1942 7.06994 29.2092 4.43394 28.7812C4.21994 28.7442 4.00594 28.7102 3.79294 28.6652V28.0692C3.79294 26.2652 5.25994 24.7982 7.06394 24.7982H9.15294C10.9569 24.7982 12.4239 26.2652 12.4239 28.0692L12.4069 28.6922Z" fill="black" />
-                            </svg>
-                            <h3>Step 1: Consultation
-
-                            </h3>
-                            <p>We understand your business goals and project requirements to analyze the perfect skill set needed to get the job done.
-                            </p>
-                        </div>
-                        <div className='works_cards'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M27.9934 14.8475L27.9015 14.7555L30.7425 11.9144C30.9074 11.7496 31 11.5261 31 11.293C31 11.0599 30.9074 10.8363 30.7425 10.6715L27.9015 7.8305L27.9934 7.7385C28.7 7.63936 29.354 7.31493 29.8647 6.80434C31.1519 5.51704 31.1519 3.4226 29.8647 2.13542C29.2411 1.51168 28.412 1.16827 27.5302 1.16827C26.6484 1.16827 25.8193 1.51168 25.1958 2.13524C24.6852 2.64588 24.3608 3.29991 24.2616 4.00655L24.1696 4.09848L21.3285 1.25739C20.9853 0.914204 20.4288 0.914204 20.0855 1.25739L7.8304 13.5126L7.73847 13.4206C7.63933 12.714 7.31489 12.06 6.80425 11.5493C5.51707 10.2621 3.42264 10.2621 2.13534 11.5493C0.848155 12.8366 0.848155 14.9311 2.13534 16.2183C2.64598 16.7289 3.29994 17.0533 4.00658 17.1525L4.09858 17.2444L1.25743 20.0856C0.91419 20.4287 0.91419 20.9853 1.25743 21.3285L10.6715 30.7425C10.8363 30.9074 11.0598 31 11.2929 31C11.5261 31 11.7495 30.9074 11.9144 30.7425L15.3769 27.2799C15.7201 26.9368 15.7201 26.3802 15.3769 26.037L14.4374 25.0975C14.2786 24.9386 14.0649 24.8467 13.8403 24.8404C13.4444 24.8294 13.0722 24.6692 12.7923 24.3893C12.5007 24.0978 12.3402 23.7101 12.3402 23.2978C12.3402 22.8855 12.5007 22.4979 12.7923 22.2063C13.3941 21.6045 14.3734 21.6044 14.9753 22.2063C15.2552 22.4862 15.4153 22.8584 15.4263 23.2543C15.4325 23.4789 15.5245 23.6925 15.6833 23.8514L16.6229 24.791C16.7877 24.9558 17.0113 25.0485 17.2444 25.0485C17.4775 25.0485 17.701 24.9559 17.8658 24.791L24.1695 18.4873L24.2614 18.5792C24.3606 19.2859 24.685 19.9399 25.1957 20.4505C26.4828 21.7378 28.5773 21.7378 29.8646 20.4505C30.4881 19.8269 30.8315 18.9979 30.8315 18.1161C30.8315 17.2342 30.4881 16.4052 29.8646 15.7816C29.354 15.2711 28.7 14.9466 27.9934 14.8475ZM17.2445 22.9266L17.1525 22.8347C17.0534 22.128 16.7289 21.4741 16.2183 20.9634C14.931 19.6762 12.8366 19.6762 11.5493 20.9634C10.9258 21.587 10.5824 22.4161 10.5824 23.2979C10.5824 24.1797 10.9258 25.0088 11.5493 25.6323C12.0599 26.143 12.714 26.4674 13.4206 26.5666L13.5125 26.6585L11.2929 28.8781L3.12188 20.707L5.96296 17.8659C6.12779 17.7011 6.22042 17.4776 6.22042 17.2445C6.22042 17.0114 6.12779 16.7878 5.96296 16.623L5.02342 15.6835C4.86457 15.5246 4.65088 15.4327 4.42629 15.4264C4.03037 15.4154 3.65819 15.2553 3.37828 14.9754C2.77647 14.3735 2.77647 13.3943 3.37828 12.7923C3.98016 12.1905 4.95937 12.1905 5.56125 12.7923C5.84115 13.0722 6.00134 13.4445 6.0123 13.8404C6.01851 14.065 6.1105 14.2787 6.26941 14.4375L7.2089 15.377C7.55208 15.7202 8.1086 15.7202 8.45184 15.377L11.2929 12.5359L14.134 15.377C14.4773 15.7203 15.0337 15.7203 15.377 15.377L16.3165 14.4375C16.4754 14.2787 16.5674 14.065 16.5736 13.8403C16.5846 13.4445 16.7448 13.0723 17.0246 12.7923C17.6265 12.1905 18.6058 12.1905 19.2076 12.7923C19.8095 13.3942 19.8095 14.3735 19.2076 14.9754C18.9277 15.2553 18.5555 15.4155 18.1596 15.4264C17.935 15.4326 17.7213 15.5246 17.5625 15.6835L16.623 16.623C16.2798 16.9662 16.2798 17.5227 16.623 17.866L19.4641 20.7071L17.2445 22.9266ZM28.6217 19.2077C28.0198 19.8095 27.0405 19.8095 26.4387 19.2077C26.1588 18.9277 25.9986 18.5555 25.9877 18.1596C25.9815 17.935 25.8895 17.7213 25.7306 17.5625L24.7911 16.623C24.6195 16.4513 24.3945 16.3655 24.1696 16.3655C23.9447 16.3655 23.7197 16.4513 23.5482 16.623L20.7071 19.4641L18.4875 17.2444L18.5795 17.1525C19.286 17.0533 19.9401 16.7289 20.4507 16.2183C21.7379 14.9311 21.7379 12.8366 20.4507 11.5493C19.1635 10.2621 17.069 10.2621 15.7817 11.5493C15.2711 12.06 14.9467 12.7141 14.8476 13.4206L14.7556 13.5126L12.5361 11.2929L20.707 3.12184L23.5481 5.96288C23.8913 6.30606 24.4478 6.30606 24.7911 5.96288L25.7306 5.02339C25.8894 4.86454 25.9815 4.65085 25.9877 4.42626C25.9986 4.03034 26.1588 3.65815 26.4387 3.37825C26.7303 3.08669 27.1179 2.92608 27.5302 2.92608C27.9425 2.92608 28.3301 3.08669 28.6217 3.37825C29.2235 3.98006 29.2235 4.95934 28.6217 5.56122C28.3418 5.84112 27.9696 6.00132 27.5737 6.01227C27.3491 6.01848 27.1354 6.11048 26.9765 6.26938L26.037 7.20893C25.6938 7.55218 25.6938 8.10864 26.037 8.45188L28.8781 11.2929L26.037 14.134C25.6938 14.4772 25.6938 15.0337 26.037 15.377L26.9765 16.3165C27.1353 16.4754 27.349 16.5673 27.5736 16.5736C27.9695 16.5846 28.3417 16.7447 28.6216 17.0246C28.9132 17.3162 29.0737 17.7038 29.0737 18.1161C29.0738 18.5284 28.9132 18.9161 28.6217 19.2077Z" fill="black" />
-                            </svg>
-                            <h3>Step 2: Talent Matching</h3>
-                            <p>We select top professionals from our network who match your requirements. You have the final say in choosing the right fit for your team.
-                            </p>
-                        </div>
-                        <div className='works_cards'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M16.0001 23.6666C14.2801 23.6666 12.6534 23.4666 11.4268 23.0933C9.22677 22.44 8.77344 21.3466 8.77344 20.56C8.77344 17.2133 12.0134 14.48 16.0001 14.48C19.9868 14.48 23.2268 17.2 23.2268 20.56C23.2268 23.44 17.6934 23.6666 16.0001 23.6666ZM10.7734 20.5466C10.9734 20.9466 12.8668 21.6666 16.0001 21.6666C19.1334 21.6666 21.0534 20.9466 21.2268 20.5333C21.2268 18.3066 18.8801 16.48 16.0001 16.48C13.1201 16.48 10.7868 18.2933 10.7734 20.5333V20.5466Z" fill="black" />
-                                <path d="M15.9599 16.12C13.4532 16.12 11.3999 14.08 11.3999 11.56C11.3999 9.04 13.4399 7 15.9599 7C18.4799 7 20.5199 9.04 20.5199 11.56C20.5199 14.08 18.4799 16.12 15.9599 16.12ZM15.9599 9C14.5466 9 13.3999 10.1467 13.3999 11.56C13.3999 12.9733 14.5466 14.12 15.9599 14.12C17.3732 14.12 18.5199 12.9733 18.5199 11.56C18.5199 10.1467 17.3732 9 15.9599 9Z" fill="black" />
-                                <path d="M25.3334 26.52C25.08 26.52 24.8134 26.4133 24.6134 26.2133C24.2267 25.8133 24.2267 25.1867 24.6267 24.8C27.0134 22.4667 28.32 19.3333 28.32 15.9867C28.32 9.18665 22.7867 3.65332 15.9867 3.65332C14.72 3.65332 13.48 3.83999 12.2934 4.21332C11.76 4.37332 11.2 4.07999 11.04 3.55999C10.88 3.02665 11.1734 2.46665 11.6934 2.30665C13.08 1.86665 14.52 1.65332 16 1.65332C23.9067 1.65332 30.3334 8.07999 30.3334 15.9867C30.3334 19.8667 28.8 23.5067 26.04 26.2267C25.84 26.4133 25.5867 26.5067 25.3467 26.5067L25.3334 26.52Z" fill="black" />
-                                <path d="M16.0001 30.3332C8.09342 30.3332 1.66675 23.9066 1.66675 15.9999C1.66675 12.2266 3.12008 8.66656 5.76008 5.95989C6.14675 5.55989 6.77342 5.55989 7.17342 5.94656C7.57342 6.33322 7.57341 6.97322 7.18675 7.35989C4.90675 9.67989 3.66675 12.7466 3.66675 15.9999C3.66675 22.7999 9.20008 28.3332 16.0001 28.3332C17.2667 28.3332 18.5068 28.1466 19.6934 27.7732C20.2267 27.6132 20.7867 27.9066 20.9467 28.4266C21.1067 28.9599 20.8134 29.5199 20.2934 29.6799C18.9067 30.1199 17.4667 30.3332 15.9867 30.3332H16.0001Z" fill="black" />
-                                <path d="M26.6667 27.6667H24C23.4533 27.6667 23 27.2133 23 26.6667V24C23 23.4533 23.4533 23 24 23C24.5467 23 25 23.4533 25 24V25.6667H26.6667C27.2133 25.6667 27.6667 26.12 27.6667 26.6667C27.6667 27.2133 27.2133 27.6667 26.6667 27.6667Z" fill="black" />
-                                <path d="M7.99992 8.99992C7.45325 8.99992 6.99992 8.54659 6.99992 7.99992V6.33325H5.33325C4.78659 6.33325 4.33325 5.87992 4.33325 5.33325C4.33325 4.78659 4.78659 4.33325 5.33325 4.33325H7.99992C8.54659 4.33325 8.99992 4.78659 8.99992 5.33325V7.99992C8.99992 8.54659 8.54659 8.99992 7.99992 8.99992Z" fill="black" />
-                            </svg>
-                            <h3>Step 3: Onboarding
-
-                            </h3>
-                            <p>Your chosen resources integrate seamlessly into your processes and begin contributing immediately.
-                            </p>
-                        </div>
-                        <div className='works_cards'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <g clip-path="url(#clip0_973_194)">
-                                    <path d="M30.999 15.7869C29.9291 14.905 28.2379 14.8294 27.128 16.0206L24.3726 18.9785C24.0163 17.8336 22.947 16.9999 21.6865 16.9999H16.7693C16.3962 16.9999 16.2712 16.8574 15.6231 16.3581C13.152 14.2039 9.44038 14.2107 6.97675 16.3787L5.16938 17.9699C4.35694 17.5399 3.40825 17.5292 2.59138 17.9374L0.518375 18.9735C0.0552505 19.2054 -0.132187 19.7685 0.0990005 20.2316L5.72369 31.4809C5.95556 31.944 6.51863 32.1315 6.98175 31.9003L9.05475 30.8635C10.0766 30.3529 10.6452 29.3104 10.6084 28.2493H21.6864C23.7407 28.2493 25.7037 27.2681 26.9361 25.6245L31.4365 19.6236C32.3096 18.4605 32.1714 16.7549 30.999 15.7869ZM8.216 29.1867L6.98169 29.8041L2.19513 20.2316L3.43006 19.6142C3.89319 19.3829 4.45563 19.5698 4.6875 20.0335L8.63538 27.9293C8.86662 28.3924 8.67912 28.9548 8.216 29.1867ZM29.9366 18.4986L25.4363 24.4995C24.5557 25.6738 23.1539 26.3744 21.6865 26.3744H9.95406L6.44113 19.3479L8.21537 17.7862C9.98088 16.2331 12.6432 16.2331 14.4087 17.7862C15.4487 18.7017 16.0955 18.8749 16.7693 18.8749H21.6864C22.2033 18.8749 22.6239 19.2955 22.6239 19.8123C22.6239 20.3291 22.2033 20.7497 21.6864 20.7497H16.8986C16.3811 20.7497 15.9612 21.1697 15.9612 21.6872C15.9612 22.2046 16.3812 22.6246 16.8986 22.6246H22.3146C23.0926 22.6246 23.8426 22.2984 24.3726 21.729L28.4998 17.2987C28.8773 16.8937 29.456 16.9274 29.811 17.238C30.1822 17.563 30.2222 18.1186 29.9366 18.4986Z" fill="black" />
-                                    <path d="M19.7114 6.3981C20.3533 5.72504 20.7489 4.8151 20.7489 3.81323C20.7489 1.7496 19.0815 0.000976562 16.9991 0.000976562C14.9324 0.000976562 13.1869 1.74648 13.1869 3.81323C13.1869 4.78441 13.5675 5.70123 14.2587 6.4056C12.5444 7.36679 11.312 9.21166 11.312 11.3753V12.3127C11.312 12.8302 11.732 13.2502 12.2494 13.2502H21.6864C22.2038 13.2502 22.6238 12.8302 22.6238 12.3127V11.3753C22.6238 9.25416 21.4571 7.38054 19.7114 6.3981ZM16.9991 1.87591C18.0153 1.87591 18.874 2.76335 18.874 3.81329C18.874 4.84698 18.0328 5.68816 16.9991 5.68816C15.9492 5.68816 15.0618 4.82948 15.0618 3.81329C15.0618 2.78148 15.9673 1.87591 16.9991 1.87591ZM13.1869 11.3753C13.1869 9.30854 14.9324 7.56304 16.9991 7.56304C19.0665 7.56304 20.7489 9.27291 20.7489 11.3753H13.1869Z" fill="black" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_973_194">
-                                        <rect width="32" height="32" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <h3>Step 4: Ongoing Support</h3>
-                            <p>
-                                We stay in touch to ensure everything runs smoothly and adjust resources as needed to meet evolving project’s requirements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </section>
-            <section className='main_faqs_new'>
-                <div className='inner_faqs'>
-                    <div className='middle_left'>
-                        <span  className='faqqs_div'>FAQ</span>
-                        <h2>FAQs About Blockchain Developer
 
-
-
-                        </h2>
-                    </div>
-                    <div className='middle_right'>
-                        <Accordion defaultActiveKey="0">
-                            <Accordion.Item eventKey="0">
-                                <Accordion.Header> <span>01.</span>How quickly can blockchain developers join our project?
-
-
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    Our blockchain specialists can typically integrate with your team within 1-2 weeks, with expedited options available for urgent requirements.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="1">
-                                <Accordion.Header> <span>02.</span>What blockchain technologies do your developers specialize in?
-
-                                    ?</Accordion.Header>
-                                <Accordion.Body>
-                                    Our developers maintain expertise across Ethereum, Solidity, Web3.js, BSC, Polygon, Avalanche, Arbitrum, Binance Chain, Fantom, Tron, and all EVM-compatible chains.                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="2">
-                                <Accordion.Header> <span>03.</span> How do you ensure code quality and security?
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    We implement comprehensive code review processes, static analysis, formal verification methods, and third-party audit preparation as standard practices in our development workflow.                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="3">
-                                <Accordion.Header> <span>04.</span>What engagement models do you offer?
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    We provide flexible engagement options including project-based allocation, dedicated resources, and team augmentation with part-time or full-time availability to suit your specific requirements.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            {/* <Accordion.Item eventKey="4">
-                                <Accordion.Header> <span>05.</span> Will working with an augmented React Native developer slow down my project?
-
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                No, resource augmentation accelerates development by providing ready-to-deploy experts who require minimal onboarding, allowing faster execution without sacrificing quality.                                </Accordion.Body>
-                            </Accordion.Item> */}
-
-
-
-
-                        </Accordion>
-                    </div>
-                </div>
-            </section>
-            <section className='contact_us_main'>
+            {/* <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h2  className='cliiient'>Become a client</h2>
+                    <h2 className='cliiient'>Become a client</h2>
                     <p className='spantextt'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
                     </p>
                     <p>Get in touch</p>
@@ -401,7 +479,7 @@ const Blockchaindev = () => {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
 
             <Footer />
         </>

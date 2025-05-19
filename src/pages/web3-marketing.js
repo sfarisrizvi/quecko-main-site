@@ -29,7 +29,7 @@ const Webmarketing = () => {
             </Head>
             <section className='smart_contract'>
                 <Header />
-                <div className='inner_data'>
+                <div className='inner_data mydata'>
                     <img className="downarrow" src="\Assets\downarrow.svg" />
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
@@ -40,7 +40,7 @@ const Webmarketing = () => {
                         <source src="\Assets\webdevelp.mp4" type="video/mp4" />
                     </video>
                     <div className='blogdetail'>
-                        <div className='parenttext'>
+                        <div className='parenttext newtext'>
                             <div className='twicebtn'>
                                 <p>Services</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
@@ -59,7 +59,15 @@ const Webmarketing = () => {
                             </p>
 
                         </div>
-
+     <div className='forms_div_section'>
+                            <div className='inputttunner'>
+                                <input placeholder='Name' type="text" id="fname" name="fname" />
+                                <input placeholder='Email@company.com' type="text" id="fname" name="fname" />
+                            </div>
+                            <input placeholder='Telegram' type="text" id="fname" name="fname" />
+                            <textarea placeholder='Your Message' id="w3review" name="w3review" rows="4" cols="50" />
+                            <button>Get in Touch</button>
+                        </div>
                     </div>
                 </div>
                 {/* <div className='solution'>

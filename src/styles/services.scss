@@ -218,6 +218,18 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .services_main .inner_services .thirple_divs p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    display: inline-block;
+}
 
         .thirple_divs.card-2 .text_ual_div2 {
             top: 50% !important;
@@ -424,7 +436,20 @@
 }
 
 
-
+@media only screen and (max-width: 1200px) {
+.services_main .inner_services .thirple_divs p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    display: inline-block;
+}
+}
 
 
 

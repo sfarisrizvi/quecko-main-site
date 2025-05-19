@@ -25,31 +25,39 @@ const Backend = () => {
                         <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330989/queckosite%20%28new%29/videos/servicevieo_cujepj.mp4" type="video/mp4" />
                     </video>
                     <div className='blogdetail'>
-                        <div className='parenttext'>
-                            <div className='twicebtn'>
-                                <p>Services</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <Link href="/resourcelanding">
+                        <div className='blogdetail'>
+                            <div className='parenttext'>
+                                <div className='twicebtn'>
+                                    <p>Services</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                        <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                    <Link href="/resourcelanding">
 
-                                    <p>Resource Augmentation</p>
-                                </Link>
+                                        <p>Resource Augmentation</p>
+                                    </Link>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-                                    <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <span>Backend Engineers</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                        <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                    <span>Backend Engineers</span>
+                                </div>
+                                <h1 className='mainpara'>Hire a Backend Developer
+
+                                </h1>
+                                <p className='para'>Our resource augmentation model allows you to outsource top-tier Backend Developers who specialize in building robust server-side architectures, optimizing APIs, and managing databases to ensure seamless performance and scalability.
+
+
+
+                                </p>
+                                    <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
+
                             </div>
-                            <h1 className='mainpara'>Power Your Applications with Skilled Backend Engineers
-
-                            </h1>
-                            <p className='para'>A strong backend is the backbone of any successful application. Our resource augmentation model allows you to outsource top-tier Backend Developers who specialize in building robust server-side architectures, optimizing APIs, and managing databases to ensure seamless performance and scalability.
-
-                            </p>
 
                         </div>
-
                     </div>
                 </div>
                 {/* <div className='solution'>
@@ -61,9 +69,110 @@ const Backend = () => {
                         <h2>Smart contracts are innovating the future of several industries including supply chain, healthcare, telecommunication, real estate, and much more! Quecko Inc. has sheered expertise in smart contracts development, perfectly tailored to multiple industries and businesses. The process is backed by expert smart contract developers helping create top-trending machine-based protocols to innovate business agreements.</h2>
                     </div>
                 </div> */}
+                {/* <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid umarimg' src='\Assets\user.png' />
+                    <div className='left_side___new'>
+                        <h2>Akash Sabir</h2>
+                        <h3>Backend Developer
+                        </h3>
+                        <p>Akash is a skilled and versatile Software Engineer with a strong command of back-end development, microservices architecture, and modern database management systems. With hands-on experience in fast-paced, scalable environments, he excels in building robust APIs and distributed systems using Node.js and Golang.
+
+
+                        </p>
+                    </div>
+                    <div className='right_side_new'>
+                        <div className='nnnew_innner'>
+                            <div>
+                                <span>Experience</span>
+                                <p> 4+ years
+
+                                </p>
+                            </div>
+                            <div>
+                                <span>Availability:</span>
+                                <p>On project</p>
+                            </div>
+                        </div>
+                        <p>Expert in: NodeJS (Express, NestJS), Golang(Echo), Microservices Architecture, Docker, Kafka,  Databases(PostgrSQL, MySQL, MongoDB, TimescaleDB, Redis)
+
+                        </p>
+                        <p>Also worked with: ORM (Sequelize, TypeORM, Mongoose),  Testing(Jest, testing, gomock), Git, Swagger/OpenAPI, gRPC
+                        </p>
+                    </div>
+                </div>
+                <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
+                    <div className='left_side___new'>
+                        <h2>Usama Saif
+                        </h2>
+                        <h3>Backend Developer
+
+                        </h3>
+                        <p>Usama is a skilled and versatile Software Engineer with a strong command of back-end development, microservices architecture, and modern database management systems. With hands-on experience in fast-paced, scalable environments, he excels in building robust APIs and distributed systems using Node.js and Golang.
+
+                        </p>
+                    </div>
+                    <div className='right_side_new'>
+                        <div className='nnnew_innner'>
+                            <div>
+                                <span>Experience</span>
+                                <p> 3+ years
+                                </p>
+                            </div>
+                            <div>
+                                <span>Availability:</span>
+                                <p>On project</p>
+                            </div>
+                        </div>
+                        <p>Expert in: Nodejs(Express), Databases(MongoDb, MySql, Postgresql), Golang(Echo), Microservices Architecture
+
+
+                        </p>
+                        <p>Also worked with: Git, Swagger, JavaScript, Jest, Docker
+                        </p>
+                    </div>
+                </div>
+
+
+
+                   <div className='developer_div_mains'>
+                    <img className='wasifimg img-fluid' src='\Assets\user.png' />
+                    <div className='left_side___new'>
+                        <h2>Muhammad Shoaib
+
+                        </h2>
+                        <h3>Backend Developer
+
+                        </h3>
+                        <p>Shoaib is a highly capable backend developer with deep expertise in building scalable and maintainable server-side applications using Node.js and modern JavaScript/TypeScript frameworks. With a strong foundation in NestJS, ExpressJS, and TypeScript, he specializes in developing clean, modular, and efficient APIs.
+
+
+                        </p>
+                    </div>
+                    <div className='right_side_new'>
+                        <div className='nnnew_innner'>
+                            <div>
+                                <span>Experience</span>
+                                <p> 3+ years
+                                </p>
+                            </div>
+                            <div>
+                                <span>Availability:</span>
+                                <p>On project</p>
+                            </div>
+                        </div>
+                        <p>Expert in: NodeJs, NestJs, ExpressJs, JavaScript, TypeScript
+
+
+                        </p>
+                        <p>Also worked with: MongoDB, MSSQL, postgresql
+                        </p>
+                    </div>
+                </div> */}
 
                 <div className='Development'>
-                    <h2>What We Offer
+                    <h2>Hired Backend Developers  Will Provide
+
                     </h2>
                     <div className='mains_cardss'>
                         <div className='card__one'>
@@ -71,9 +180,12 @@ const Backend = () => {
                                 <path d="M39.375 31.8749L35.3325 28.3724C35.1989 28.2458 35.0309 28.1612 34.8496 28.1294C34.6682 28.0975 34.4815 28.1198 34.3128 28.1934C34.144 28.267 34.0006 28.3886 33.9005 28.5432C33.8004 28.6977 33.7481 28.8783 33.75 29.0624V29.9999C33.75 30.4972 33.5525 30.9741 33.2008 31.3258C32.8492 31.6774 32.3723 31.8749 31.875 31.8749H28.125C27.6277 31.8749 27.1508 31.6774 26.7992 31.3258C26.4475 30.9741 26.25 30.4972 26.25 29.9999C26.25 25.2281 18.7669 22.5562 10.3125 22.4999C9.0693 22.4999 7.87701 22.9938 6.99794 23.8729C6.11886 24.752 5.625 25.9442 5.625 27.1874C5.625 28.4306 6.11886 29.6229 6.99794 30.502C7.87701 31.3811 9.0693 31.8749 10.3125 31.8749C18.0994 31.8749 19.2094 10.6968 21.015 6.56244C21.32 5.86455 21.7905 5.2515 22.3857 4.77633C22.981 4.30116 23.683 3.97819 24.4311 3.83536C25.1792 3.69253 25.9509 3.73415 26.6793 3.9566C27.4077 4.17906 28.071 4.57566 28.6116 5.11209C29.1523 5.64852 29.5541 6.30861 29.7823 7.03525C30.0105 7.76189 30.0582 8.5332 29.9213 9.28242C29.7844 10.0316 29.467 10.7362 28.9965 11.3352C28.526 11.9341 27.9167 12.4094 27.2212 12.7199" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M5.625 39.375H39.375" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3  className='names_tags'>Scalable Backend Architecture
+                            <h3 className='names_tags'>Scalable Backend Architecture
+
+
                             </h3>
                             <p>Our developers design and implement efficient, secure, and scalable backend systems to support high-traffic applications.
+
 
                             </p>
                         </div>
@@ -84,9 +196,11 @@ const Backend = () => {
                                 <path d="M36.375 31.875V9.375C36.375 8.38044 35.9799 7.42661 35.2766 6.72335C34.5734 6.02009 33.6196 5.625 32.625 5.625H8.25" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M15.75 39.375H38.25C39.2446 39.375 40.1984 38.9799 40.9016 38.2766C41.6049 37.5734 42 36.6196 42 35.625V33.75C42 33.2527 41.8025 32.7758 41.4508 32.4242C41.0992 32.0725 40.6223 31.875 40.125 31.875H21.375C20.8777 31.875 20.4008 32.0725 20.0492 32.4242C19.6975 32.7758 19.5 33.2527 19.5 33.75V35.625C19.5 36.6196 19.1049 37.5734 18.4016 38.2766C17.6984 38.9799 16.7446 39.375 15.75 39.375ZM15.75 39.375C14.7554 39.375 13.8016 38.9799 13.0983 38.2766C12.3951 37.5734 12 36.6196 12 35.625V9.375C12 8.38044 11.6049 7.42661 10.9016 6.72335C10.1984 6.02009 9.24456 5.625 8.25 5.625C7.25544 5.625 6.30161 6.02009 5.59835 6.72335C4.89509 7.42661 4.5 8.38044 4.5 9.375V13.125C4.5 13.6223 4.69754 14.0992 5.04917 14.4508C5.40081 14.8025 5.87772 15 6.375 15H12" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>API Development & Optimization
+                            <h3 className='names_tags'>API Development & Optimization
+
                             </h3>
-                            <p>Building RESTful & GraphQL APIs that provide clear, well-structured interfaces for frontend applications. Designing microservice architectures to support independent scaling and modular deployment. Creating CI/CD pipeline integrations for seamless automated testing and deployment. Implementing monitoring & logging systems for actionable insights into application performance.</p>
+                            <p>Building RESTful & GraphQL APIs that provide clear, well-structured interfaces for frontend applications. Designing microservice architectures to support independent scaling and modular deployment. Creating CI/CD pipeline integrations for seamless automated testing and deployment. Implementing monitoring & logging systems for actionable insights into application performance.
+</p>
                         </div>
                         <div className='card__one'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
@@ -95,11 +209,11 @@ const Backend = () => {
                                 <path d="M9.875 22.5L4.25 28.125L9.875 33.75" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M17.375 33.75L23 28.125L17.375 22.5" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>Database Technologies
-
+                            <h3 className='names_tags'>Database Technologies
                             </h3>
-                            <p> We implement tailored database solutions to match your specific application needs:
-                                SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & complex relations. NoSQL solutions (MongoDB, DynamoDB) for horizontally scalable & schema-flexible data storage. Caching strategies with Redis or Memcached to reduce database load and optimize response times.
+                            <p>We implement tailored database solutions to match your specific application needs:
+SQL databases (PostgreSQL, MySQL) for applications requiring ACID compliance & complex relations. NoSQL solutions (MongoDB, DynamoDB) for horizontally scalable & schema-flexible data storage. Caching strategies with Redis or Memcached to reduce database load and optimize response times.
+
 
                             </p>
                         </div>
@@ -117,120 +231,17 @@ const Backend = () => {
                                 <path d="M18.4375 29.0625L16.75 28.3125" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M11.5 31.875C14.6066 31.875 17.125 29.3566 17.125 26.25C17.125 23.1434 14.6066 20.625 11.5 20.625C8.3934 20.625 5.875 23.1434 5.875 26.25C5.875 29.3566 8.3934 31.875 11.5 31.875Z" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>Security & Compliance Implementation
+                            <h3 className='names_tags'>Security & Compliance Implementation
 
                             </h3>
-                            <p>We ensure your backend follows best security practices to protect against SQL injections, DDoS attacks, and data breaches while maintaining compliance with industry standards.
-                            </p>
+                            <p>We ensure your backend follows best security practices to protect against SQL injections, DDoS attacks, and data breaches while maintaining compliance with industry standards.</p>
                         </div>
                     </div>
                 </div>
 
 
-                <div className='Application'>
-                    <div className='inner__textt'>
-                        <h2  className='contratt'>Why Choose Us?
 
-                        </h2>
-                    </div>
-                    <div className='top_parents'>
-                        <div className='parents_cards'>
-                            <div className='cardee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <g clip-path="url(#clip0_973_207)">
-                                        <path d="M5.70323 7.72716C5.88029 8.21372 6.41829 8.46453 6.90485 8.28747C7.39142 8.11041 7.64223 7.57241 7.46517 7.08591L7.03004 5.89041L11.9951 8.20559C13.5798 8.94453 14.6689 10.3824 14.9696 12.0698C13.2269 12.5271 11.9375 14.1158 11.9375 16C11.9375 18.24 13.7599 20.0625 16 20.0625C18.24 20.0625 20.0625 18.24 20.0625 16C20.0625 14.1158 18.7731 12.5271 17.0304 12.0698C17.3312 10.3824 18.4202 8.94453 20.0049 8.20559L24.9699 5.89041L24.5348 7.08591C24.3577 7.57247 24.6085 8.11041 25.0951 8.28747C25.5817 8.46453 26.1196 8.21372 26.2967 7.72716L27.5059 4.40484C27.683 3.91828 27.4322 3.38034 26.9456 3.20328L23.6233 1.99403C23.1367 1.81697 22.5988 2.06778 22.4217 2.55434C22.2447 3.04091 22.4955 3.57884 22.982 3.75597L24.1775 4.19109L19.2125 6.50628C18.3461 6.91028 17.5744 7.48066 16.9375 8.18228V3.20078L17.8372 4.10041C18.2033 4.46653 18.7969 4.46653 19.163 4.10041C19.5291 3.73428 19.5291 3.14072 19.163 2.77459L16.663 0.274594C16.2969 -0.0915312 15.7033 -0.0915312 15.3372 0.274594L12.8372 2.77459C12.471 3.14072 12.471 3.73428 12.8372 4.10041C13.2033 4.46653 13.7969 4.46653 14.163 4.10041L15.0625 3.20078V8.18228C14.4256 7.48066 13.6539 6.91028 12.7875 6.50628L7.82248 4.19103L9.01798 3.75591C9.50454 3.57884 9.75536 3.04084 9.57829 2.55428C9.40123 2.06772 8.86323 1.81691 8.37673 1.99397L5.05436 3.20328C4.56779 3.38034 4.31698 3.91834 4.49404 4.40484L5.70323 7.72716ZM18.1875 16C18.1875 17.2062 17.2062 18.1875 16 18.1875C14.7938 18.1875 13.8125 17.2062 13.8125 16C13.8125 14.7938 14.7938 13.8125 16 13.8125C17.2062 13.8125 18.1875 14.7938 18.1875 16Z" fill="black" />
-                                        <path d="M31.0625 14.4375H24.75C24.2323 14.4375 23.8125 14.8572 23.8125 15.375V16C23.8125 20.3078 20.3078 23.8125 16 23.8125C11.6922 23.8125 8.1875 20.3078 8.1875 16V15.375C8.1875 14.8572 7.76775 14.4375 7.25 14.4375H0.9375C0.41975 14.4375 0 14.8572 0 15.375V19.138C0 19.6256 0.37375 20.0318 0.859625 20.0723L2.23775 20.1871C2.83613 20.237 3.3305 20.5979 3.56031 21.1526C3.79012 21.7074 3.69575 22.3122 3.30787 22.7706L2.41462 23.8263C2.09969 24.1986 2.12263 24.75 2.46738 25.0948L6.90519 29.5327C7.24988 29.8776 7.80138 29.9004 8.17369 29.5854L9.22937 28.6922C9.68775 28.3043 10.2926 28.2098 10.8473 28.4398C11.402 28.6695 11.763 29.1639 11.8129 29.7623L11.9277 31.1404C11.9682 31.6262 12.3744 32.0001 12.8619 32.0001H19.138C19.6256 32.0001 20.0317 31.6263 20.0723 31.1404L20.1871 29.7623C20.2369 29.1639 20.5979 28.6695 21.1526 28.4398C21.7073 28.2098 22.3122 28.3043 22.7706 28.6921L23.8263 29.5854C24.1985 29.9005 24.75 29.8775 25.0947 29.5327L29.5326 25.0948C29.8774 24.75 29.9002 24.1986 29.5853 23.8263L28.6921 22.7706C28.3042 22.3122 28.2099 21.7074 28.4396 21.1526C28.6694 20.5979 29.1638 20.237 29.7622 20.1871L31.1403 20.0723C31.6262 20.0318 31.9999 19.6256 31.9999 19.138V15.375C32 14.8572 31.5802 14.4375 31.0625 14.4375ZM30.125 18.2754L29.6066 18.3186C28.3145 18.4262 27.2036 19.2372 26.7074 20.4351C26.2113 21.6329 26.4233 22.9919 27.2608 23.9818L27.5969 24.3789L24.379 27.5968L23.9818 27.2606C22.9921 26.4232 21.6331 26.2111 20.4352 26.7073C19.2373 27.2034 18.4263 28.3143 18.3186 29.6064L18.2754 30.125H13.7246L13.6814 29.6065C13.5737 28.3144 12.7627 27.2036 11.5649 26.7074C10.3669 26.2111 9.008 26.4233 8.01825 27.2607L7.62113 27.5968L4.40325 24.3789L4.73931 23.9818C5.57681 22.992 5.78881 21.633 5.29269 20.4351C4.79656 19.2373 3.68563 18.4262 2.39363 18.3186L1.875 18.2754V16.3125H6.3175C6.48319 21.51 10.7629 25.6875 16 25.6875C21.2371 25.6875 25.5169 21.51 25.6825 16.3125H30.125V18.2754Z" fill="black" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_973_207">
-                                            <rect width="32" height="32" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <h3> Specialized Technical Expertise                                </h3>
-                                <p>Access backend developers with deep knowledge of Node.js, Express, Nest.js, and related technologies without lengthy recruitment processes
-                                </p>
-                            </div>
-                            <div className='cardee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <g clip-path="url(#clip0_973_212)">
-                                        <path d="M16.0449 22.4492L14.0977 25.0488L11.0237 26.0973L12.8943 28.7525L12.9416 32L16.0448 31.0415L19.1481 32L19.1954 28.7524L21.0661 26.0972L17.9921 25.0487L16.0449 22.4492ZM17.3274 28.1455L17.3082 29.4675L16.0449 29.0773L14.7817 29.4675L14.7624 28.1455L14.0009 27.0647L15.2523 26.6378L16.0449 25.5796L16.8376 26.6378L18.0889 27.0647L17.3274 28.1455Z" fill="black" />
-                                        <path d="M5.02119 17.8237L3.07406 20.4233L0 21.4718L1.87063 24.127L1.91794 27.3745L5.02119 26.4159L8.12444 27.3745L8.17175 24.127L10.0424 21.4718L6.96838 20.4233L5.02119 17.8237ZM6.30369 23.52L6.28444 24.842L5.02119 24.4518L3.75794 24.842L3.73869 23.52L2.97725 22.4392L4.22856 22.0124L5.02125 20.9541L5.81394 22.0124L7.06525 22.4392L6.30369 23.52Z" fill="black" />
-                                        <path d="M28.9258 20.4233L26.9787 17.8237L25.0316 20.4233L21.9575 21.4718L23.8281 24.127L23.8755 27.3745L26.9787 26.4159L30.082 27.3745L30.1293 24.127L31.9999 21.4718L28.9258 20.4233ZM28.2612 23.52L28.242 24.842L26.9787 24.4518L25.7155 24.842L25.6962 23.52L24.9347 22.4392L26.1861 22.0124L26.9787 20.9541L27.7714 22.0124L29.0227 22.4392L28.2612 23.52Z" fill="black" />
-                                        <path d="M15.9691 19.4757C21.3386 19.4757 25.707 15.1073 25.707 9.73781C25.707 4.36837 21.3386 0 15.9691 0C10.5996 0 6.2312 4.36837 6.2312 9.73787C6.2312 15.1073 10.5996 19.4757 15.9691 19.4757ZM15.9691 17.5991C13.7226 17.5991 11.6934 16.6516 10.2595 15.1356V14.7753C10.2595 14.2228 10.5834 13.7178 11.0851 13.4872L13.4248 12.4611L15.9805 15.1032L18.436 12.4783L20.7801 13.4883C21.318 13.7361 21.6787 14.2523 21.6787 14.7753V15.1356C20.2448 16.6516 18.2155 17.5991 15.9691 17.5991ZM16.74 11.5442L15.9577 12.3804L15.0858 11.4789L15.3095 10.8166C15.5109 10.8572 15.7188 10.8791 15.9315 10.8791C16.1185 10.8791 16.3018 10.862 16.4805 10.8304L16.74 11.5442ZM17.2969 6.92844L17.1862 7.88438C17.1125 8.52175 16.573 9.00237 15.9313 9.00237C15.2897 9.00237 14.7503 8.52175 14.6765 7.88438L14.5658 6.92844C14.5201 6.53363 14.6406 6.15275 14.905 5.85594C15.1694 5.55919 15.5339 5.39575 15.9313 5.39575C16.3288 5.39575 16.6933 5.55919 16.9576 5.85594C17.2221 6.15275 17.3426 6.53363 17.2969 6.92844ZM15.9691 1.87669C20.3038 1.87669 23.8303 5.40325 23.8303 9.73787C23.8303 10.9421 23.5577 12.0839 23.0716 13.1051C22.7211 12.5399 22.1961 12.0706 21.5497 11.7766L18.3145 10.3826L18.158 9.95231C18.64 9.46769 18.9666 8.82494 19.0505 8.10019L19.1611 7.14425C19.2677 6.22394 18.9753 5.29931 18.359 4.60763C17.7427 3.91587 16.8579 3.51912 15.9315 3.51912C15.005 3.51912 14.1202 3.91587 13.5039 4.60763C12.8876 5.29938 12.5952 6.22394 12.7018 7.14425L12.8124 8.10013C12.8926 8.79331 13.1945 9.41187 13.6421 9.88844L13.4724 10.3911L10.3248 11.7714L10.3132 11.7766C9.69476 12.0579 9.19195 12.5182 8.85464 13.0794C8.37614 12.0647 8.10795 10.9321 8.10795 9.73781C8.10789 5.40319 11.6344 1.87669 15.9691 1.87669Z" fill="black" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_973_212">
-                                            <rect width="32" height="32" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <h3>Immediate Productivity
-                                </h3>
-                                <p> Our specialists integrate quickly with established workflows and begin contributing value within days, not weeks
-                                    .
-                                </p>
-                            </div>
-                        </div>
-                        <div className='parents_cards'>
-                            <div className='cardee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path d="M9.12583 14.6396C9.1155 13.7299 9.24207 12.8246 9.50196 11.9487L11.4705 12.5318C11.2691 13.2107 11.171 13.912 11.179 14.6163L9.12583 14.6396Z" fill="black" />
-                                    <path d="M23.5201 24.0614L21.5793 23.3914C22.0954 21.8995 22.8937 20.5267 23.952 19.311C25.1048 17.9869 25.7396 16.2894 25.7396 14.5311C25.7396 10.5267 22.3676 7.1876 18.3547 7.24845C15.8989 7.28271 13.5543 8.64804 12.2362 10.8115L10.4822 9.745C12.1645 6.9839 15.17 5.24134 18.326 5.19731C23.4693 5.12052 27.7928 9.40018 27.7928 14.531C27.7928 16.784 26.9789 18.9597 25.5012 20.6571C24.6163 21.6737 23.9498 22.819 23.5201 24.0614Z" fill="black" />
-                                    <path d="M22.0027 25.2307H19.4886V18.5679C21.1312 18.1157 22.3729 16.5953 22.3729 14.7935C22.3729 12.6365 20.6172 10.8816 18.46 10.8816C16.3027 10.8816 14.5486 12.6365 14.5486 14.7935C14.5486 16.5954 15.7927 18.1157 17.4353 18.5679V25.2307H14.9221C14.3314 25.2307 13.8533 25.7519 13.9043 26.3408C13.9099 26.4052 13.9149 26.4695 13.9196 26.5336C12.9983 28.0979 11.3296 29.0597 9.50392 29.0597C6.67746 29.0597 4.37797 26.7592 4.37797 23.9315C4.37797 21.1038 6.67746 18.8033 9.50392 18.8033C9.89038 18.8033 10.2758 18.8465 10.6494 18.9318L11.1067 16.9321C10.5832 16.8126 10.0441 16.752 9.50392 16.752C5.54529 16.752 2.32471 19.9727 2.32471 23.9315C2.32471 27.8903 5.54529 31.111 9.50392 31.111C11.1486 31.111 12.7021 30.5537 13.9448 29.5741V30.017C13.9448 31.1103 14.8253 31.9999 15.9196 31.9999H20.9988C22.0933 31.9999 22.9792 31.1103 22.9792 30.017C22.9792 30.017 22.9953 26.6418 23.0227 26.3473C23.0775 25.7585 22.5959 25.2307 22.0027 25.2307ZM16.6002 14.7935C16.6002 13.7675 17.4341 12.9328 18.4592 12.9328C19.4843 12.9328 20.3182 13.7675 20.3182 14.7935C20.3182 15.8194 19.4843 16.6542 18.4592 16.6542C17.4341 16.6542 16.6002 15.8194 16.6002 14.7935ZM20.9259 29.9486H15.998V27.2819H20.9259V29.9486Z" fill="black" />
-                                    <path d="M17.4353 0H19.4886V3.35043H17.4353V0Z" fill="black" />
-                                    <path d="M7.24243 5.00244L8.69341 3.55146L11.1103 5.96831L9.65928 7.41929L7.24243 5.00244Z" fill="black" />
-                                    <path d="M25.7983 5.96631L28.2118 3.54604L29.6648 4.99497L27.2514 7.41524L25.7983 5.96631Z" fill="black" />
-                                    <path d="M9.95645 23.1138C9.18565 22.7946 9.18565 22.674 9.18565 22.5677C9.18565 22.321 9.49553 22.2944 9.6288 22.2944C10.1332 22.2944 10.5178 22.5489 10.9373 22.7889L11.4685 21.3661C11.0814 21.1389 10.7281 20.9312 10.249 20.8542V19.9658H8.81177V20.9444C8.05888 21.2112 7.5345 21.8657 7.5345 22.6698C7.5345 23.7555 8.39098 24.2367 9.22483 24.5638C9.89922 24.8371 9.90066 25.0337 9.90066 25.1511C9.90066 25.4278 9.61539 25.5263 9.3477 25.5263C8.7728 25.5263 8.34558 25.2157 7.89156 24.913L7.36377 26.3588C7.7944 26.6667 8.26428 26.8922 8.74333 26.9782V27.8974H10.1806V26.8923C11.0019 26.6147 11.5394 25.9159 11.5394 25.0916C11.5394 23.9168 10.7012 23.4175 9.95645 23.1138Z" fill="black" />
-                                </svg>
-                                <h3>Quality Assurance
-                                </h3>
-                                <p>All solutions are implemented with comprehensive testing, documentation, and maintainability standards.</p>
-                            </div>
-                            <div className='cardee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <g clip-path="url(#clip0_973_231)">
-                                        <path d="M1.875 16C1.875 8.21144 8.21144 1.875 16 1.875C18.9292 1.875 21.7227 2.76319 24.0748 4.41169H22.2576C21.7399 4.41169 21.3201 4.83144 21.3201 5.34919C21.3201 5.86694 21.7399 6.28669 22.2576 6.28669H26.6509C27.1686 6.28669 27.5884 5.86694 27.5884 5.34919V0.955938C27.5884 0.438187 27.1686 0.0184375 26.6509 0.0184375C26.1331 0.0184375 25.7134 0.438187 25.7134 0.955938V3.28962C22.9367 1.15619 19.5569 0 16 0C11.7262 0 7.70831 1.66431 4.68625 4.68625C1.66431 7.70831 0 11.7262 0 16C0 18.8076 0.741938 21.5739 2.14563 23.9999C2.31938 24.3002 2.63425 24.468 2.95794 24.468C3.11731 24.468 3.27881 24.4273 3.42663 24.3418C3.87475 24.0825 4.02781 23.509 3.76856 23.0608C2.52981 20.9199 1.875 18.4783 1.875 16Z" fill="black" />
-                                        <path d="M29.8543 8.00008C29.5949 7.5519 29.0213 7.3989 28.5733 7.65821C28.1252 7.91752 27.9721 8.49102 28.2314 8.93921C29.4701 11.08 30.1249 13.5216 30.1249 16C30.1249 23.7885 23.7885 30.125 15.9999 30.125C13.071 30.125 10.278 29.2365 7.92618 27.5883H9.74231C10.2601 27.5883 10.6798 27.1685 10.6798 26.6508C10.6798 26.133 10.2601 25.7133 9.74231 25.7133H5.34912C4.83137 25.7133 4.41162 26.133 4.41162 26.6508V31.044C4.41162 31.5618 4.83137 31.9815 5.34912 31.9815C5.86687 31.9815 6.28662 31.5618 6.28662 31.044V28.708C9.06325 30.8421 12.4426 32 15.9999 32C20.2737 32 24.2916 30.3356 27.3137 27.3137C30.3356 24.2916 31.9999 20.2737 31.9999 16C31.9999 13.1923 31.258 10.426 29.8543 8.00008Z" fill="black" />
-                                        <path d="M24.3384 14.1164C24.4027 13.8763 24.3691 13.6204 24.2447 13.4051L22.3697 10.1574C22.2454 9.94212 22.0406 9.785 21.8005 9.72062C21.5603 9.65631 21.3044 9.68994 21.0891 9.81431L20.0219 10.4305C19.6423 10.1551 19.2382 9.921 18.8126 9.72994V8.5C18.8126 7.98225 18.3929 7.5625 17.8751 7.5625H14.1251C13.6074 7.5625 13.1876 7.98225 13.1876 8.5V9.72987C12.762 9.921 12.358 10.1551 11.9784 10.4304L10.9111 9.81425C10.6958 9.68987 10.4397 9.65619 10.1997 9.72056C9.95955 9.78488 9.7548 9.942 9.63049 10.1574L7.75549 13.405C7.63118 13.6203 7.59749 13.8762 7.6618 14.1164C7.72618 14.3566 7.8833 14.5613 8.09861 14.6856L9.16068 15.2987C9.13699 15.5316 9.12511 15.7658 9.12511 16C9.12511 16.2342 9.13699 16.4684 9.16068 16.7011L8.09861 17.3143C7.8833 17.4386 7.72618 17.6434 7.6618 17.8835C7.59749 18.1237 7.63118 18.3796 7.75549 18.5949L9.63049 21.8425C9.7548 22.0578 9.95961 22.2149 10.1997 22.2793C10.44 22.3438 10.6959 22.31 10.9111 22.1856L11.9784 21.5694C12.3579 21.8449 12.762 22.0789 13.1876 22.27V23.5C13.1876 24.0177 13.6074 24.4375 14.1251 24.4375H17.8751C18.3929 24.4375 18.8126 24.0177 18.8126 23.5V22.2701C19.2382 22.0791 19.6422 21.8449 20.0219 21.5696L21.0891 22.1857C21.3044 22.3101 21.5604 22.3438 21.8005 22.2794C22.0407 22.2151 22.2454 22.058 22.3697 21.8426L24.2447 18.595C24.3691 18.3797 24.4027 18.1237 24.3384 17.8836C24.2741 17.6434 24.1169 17.4387 23.9016 17.3144L22.8396 16.7013C22.8632 16.4684 22.8751 16.2342 22.8751 16C22.8751 15.7658 22.8632 15.5316 22.8396 15.2989L23.9016 14.6858C24.1169 14.5614 24.2741 14.3566 24.3384 14.1164ZM20.8989 14.994C20.9661 15.3229 21.0001 15.6614 21.0001 16C21.0001 16.3386 20.9661 16.6771 20.8989 17.006C20.8182 17.4013 20.9994 17.8038 21.3487 18.0055L22.1522 18.4694L21.2147 20.0931L20.4045 19.6254C20.055 19.4236 19.6154 19.4681 19.3134 19.7361C18.8021 20.1899 18.2186 20.528 17.5789 20.741C17.1959 20.8685 16.9376 21.2268 16.9376 21.6305V22.5625H15.0626V21.6305C15.0626 21.2269 14.8042 20.8685 14.4212 20.741C13.7816 20.528 13.198 20.1899 12.6867 19.7361C12.3848 19.4681 11.9452 19.4236 11.5956 19.6254L10.7854 20.0931L9.84793 18.4694L10.6514 18.0055C11.0007 17.8038 11.1819 17.4013 11.1012 17.006C11.0342 16.6771 11.0001 16.3386 11.0001 16C11.0001 15.6614 11.0342 15.3229 11.1013 14.994C11.1821 14.5988 11.0009 14.1962 10.6516 13.9945L9.84805 13.5306L10.7856 11.9069L11.5957 12.3746C11.9453 12.5765 12.3849 12.5319 12.6869 12.2639C13.1981 11.8101 13.7817 11.472 14.4214 11.259C14.8043 11.1314 15.0627 10.7731 15.0627 10.3695V9.4375H16.9377V10.3695C16.9377 10.7731 17.1961 11.1314 17.579 11.259C18.2187 11.472 18.8022 11.8101 19.3135 12.2639C19.6154 12.5319 20.0551 12.5764 20.4046 12.3746L21.2148 11.9069L22.1523 13.5306L21.3488 13.9945C20.9994 14.1962 20.8182 14.5988 20.8989 14.994Z" fill="black" />
-                                        <path d="M16 12.5625C14.1046 12.5625 12.5625 14.1046 12.5625 16C12.5625 17.8954 14.1046 19.4375 16 19.4375C17.8954 19.4375 19.4375 17.8954 19.4375 16C19.4375 14.1046 17.8954 12.5625 16 12.5625ZM16 17.5625C15.1384 17.5625 14.4375 16.8616 14.4375 16C14.4375 15.1384 15.1384 14.4375 16 14.4375C16.8616 14.4375 17.5625 15.1384 17.5625 16C17.5625 16.8616 16.8616 17.5625 16 17.5625Z" fill="black" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_973_231">
-                                            <rect width="32" height="32" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <h3>Cost Efficiency
-
-                                </h3>
-                                <p> Eliminate recruitment, onboarding, and retention costs while accessing specialized expertise on demand.</p>
-                            </div>
-                        </div>
-                        {/* <div className='parents_cards'>
-                            <div className='cardee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path d="M14.6667 22.6666L17.3334 25.3333C17.596 25.5959 17.9078 25.8042 18.251 25.9464C18.5941 26.0885 18.9619 26.1617 19.3334 26.1617C19.7048 26.1617 20.0726 26.0885 20.4157 25.9464C20.7589 25.8042 21.0707 25.5959 21.3334 25.3333C21.596 25.0706 21.8043 24.7588 21.9465 24.4156C22.0886 24.0725 22.1618 23.7047 22.1618 23.3333C22.1618 22.9618 22.0886 22.594 21.9465 22.2509C21.8043 21.9077 21.596 21.5959 21.3334 21.3333" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M18.6667 18.6666L22 21.9999C22.5304 22.5304 23.2499 22.8284 24 22.8284C24.7501 22.8284 25.4696 22.5304 26 21.9999C26.5304 21.4695 26.8284 20.7501 26.8284 19.9999C26.8284 19.2498 26.5304 18.5304 26 17.9999L20.8267 12.8266C20.0767 12.0775 19.06 11.6568 18 11.6568C16.94 11.6568 15.9233 12.0775 15.1733 12.8266L14 13.9999C13.4696 14.5304 12.7501 14.8284 12 14.8284C11.2499 14.8284 10.5304 14.5304 10 13.9999C9.46956 13.4695 9.17157 12.7501 9.17157 11.9999C9.17157 11.2498 9.46956 10.5304 10 9.99994L13.7467 6.25327C14.963 5.04013 16.5492 4.26734 18.2542 4.05724C19.9592 3.84713 21.6855 4.21171 23.16 5.09327L23.7867 5.46661C24.3544 5.80925 25.0294 5.9281 25.68 5.79994L28 5.33327" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M28 4L29.3334 18.6667H26.6667" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M4.00002 4L2.66669 18.6667L11.3334 27.3333C11.8638 27.8638 12.5832 28.1618 13.3334 28.1618C14.0835 28.1618 14.8029 27.8638 15.3334 27.3333C15.8638 26.8029 16.1618 26.0835 16.1618 25.3333C16.1618 24.5832 15.8638 23.8638 15.3334 23.3333" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M4 5.33325H14.6667" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <h2>Disintermediation</h2>
-                                <p>A smart contract is a way parties reach agreements, at the same time eliminating third-party interaction.</p>
-                            </div>
-                            <div className='cardee'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path d="M2.74936 16.464C2.63824 16.1646 2.63824 15.8353 2.74936 15.536C3.83162 12.9118 5.66871 10.668 8.02772 9.08919C10.3867 7.51034 13.1614 6.66748 16 6.66748C18.8386 6.66748 21.6133 7.51034 23.9723 9.08919C26.3313 10.668 28.1684 12.9118 29.2507 15.536C29.3618 15.8353 29.3618 16.1646 29.2507 16.464C28.1684 19.0882 26.3313 21.3319 23.9723 22.9108C21.6133 24.4897 18.8386 25.3325 16 25.3325C13.1614 25.3325 10.3867 24.4897 8.02772 22.9108C5.66871 21.3319 3.83162 19.0882 2.74936 16.464Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <h2>Transparency</h2>
-                                <p>Transparency is the most entertaining feature of smart contracts. The information is visible to all the people throughout the blockchain network in this contract, hence ensuring a surrounding of trust.</p>
-                            </div>
-                        </div> */}
-                    </div>
-                </div>
-                <div className='how_its_works'>
+                {/* <div className='how_its_works'>
                     <div>
                         <h2  className='workss_div'>How does it work?</h2>
                     </div>
@@ -291,66 +302,198 @@ const Backend = () => {
                             </p>
                         </div>
                     </div>
+                </div> */}
+                <div className='Development'>
+                    <h2>
+                 Tech Stacks
+                    </h2>
+                    <div className='innnner_tecnlogies'>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M39.375 15.0001C39.3743 14.3424 39.2007 13.6966 38.8716 13.1272C38.5425 12.5579 38.0695 12.0851 37.5 11.7563L24.375 4.25631C23.8049 3.92718 23.1583 3.75391 22.5 3.75391C21.8417 3.75391 21.1951 3.92718 20.625 4.25631L7.5 11.7563C6.93049 12.0851 6.45746 12.5579 6.12837 13.1272C5.79927 13.6966 5.62567 14.3424 5.625 15.0001V30.0001C5.62567 30.6577 5.79927 31.3035 6.12837 31.8729C6.45746 32.4422 6.93049 32.915 7.5 33.2438L20.625 40.7438C21.1951 41.0729 21.8417 41.2462 22.5 41.2462C23.1583 41.2462 23.8049 41.0729 24.375 40.7438L37.5 33.2438C38.0695 32.915 38.5425 32.4422 38.8716 31.8729C39.2007 31.3035 39.3743 30.6577 39.375 30.0001V15.0001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.1875 13.125L22.5 22.5L38.8125 13.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 41.25V22.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>NodeJS
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M22.5 31.875C23.5355 31.875 24.375 31.0355 24.375 30C24.375 28.9645 23.5355 28.125 22.5 28.125C21.4645 28.125 20.625 28.9645 20.625 30C20.625 31.0355 21.4645 31.875 22.5 31.875Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M35.625 18.75H9.375C7.30393 18.75 5.625 20.4289 5.625 22.5V37.5C5.625 39.5711 7.30393 41.25 9.375 41.25H35.625C37.6961 41.25 39.375 39.5711 39.375 37.5V22.5C39.375 20.4289 37.6961 18.75 35.625 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.125 18.75V13.125C13.125 10.6386 14.1127 8.25403 15.8709 6.49587C17.629 4.73772 20.0136 3.75 22.5 3.75C24.9864 3.75 27.371 4.73772 29.1291 6.49587C30.8873 8.25403 31.875 10.6386 31.875 13.125V18.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>Golang
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M22.5 9.37497C22.5022 8.62503 22.3544 7.88222 22.0654 7.19022C21.7763 6.49823 21.3518 5.87102 20.8167 5.3455C20.2817 4.81997 19.647 4.40673 18.95 4.13009C18.2529 3.85345 17.5076 3.71899 16.7578 3.73462C16.008 3.75025 15.2689 3.91565 14.584 4.2211C13.8991 4.52654 13.2821 4.96587 12.7695 5.51323C12.2568 6.06059 11.8588 6.70494 11.5988 7.40838C11.3388 8.11182 11.2222 8.86015 11.2556 9.60935C10.1535 9.89273 9.1303 10.4232 8.26354 11.1606C7.39679 11.8979 6.70919 12.8229 6.25282 13.8653C5.79645 14.9078 5.58329 16.0404 5.62947 17.1774C5.67565 18.3145 5.97996 19.4261 6.51936 20.4281C5.57095 21.1986 4.82516 22.1891 4.34687 23.3136C3.86858 24.438 3.67228 25.6623 3.77504 26.8799C3.87781 28.0976 4.27652 29.2716 4.9365 30.3C5.59648 31.3284 6.49773 32.18 7.56186 32.7806C7.43046 33.7973 7.50887 34.8301 7.79228 35.8153C8.07568 36.8005 8.55804 37.7172 9.20958 38.5086C9.86112 39.3001 10.668 39.9496 11.5804 40.417C12.4928 40.8844 13.4913 41.1598 14.5143 41.2262C15.5373 41.2926 16.5631 41.1486 17.5282 40.803C18.4934 40.4574 19.3774 39.9176 20.1258 39.217C20.8742 38.5164 21.4709 37.6698 21.8793 36.7295C22.2876 35.7892 22.4989 34.7751 22.5 33.75V9.37497Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.875 24.375C18.4492 23.8212 19.8238 22.8131 20.825 21.4781C21.8263 20.1432 22.4091 18.5413 22.5 16.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.2556 9.60938C11.2927 10.5164 11.5487 11.4009 12.0019 12.1875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.51935 20.43C6.86236 20.1506 7.22942 19.9022 7.61622 19.6875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.25 33.75C9.95782 33.7506 8.68739 33.4173 7.56189 32.7825" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 24.375H30" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 33.75H33.75C34.7446 33.75 35.6984 34.1451 36.4016 34.8484C37.1049 35.5516 37.5 36.5054 37.5 37.5V39.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22.5 15H37.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M30 15V9.375C30 8.38044 30.3951 7.42661 31.0984 6.72335C31.8016 6.02009 32.7554 5.625 33.75 5.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M30 25.3125C30.5178 25.3125 30.9375 24.8928 30.9375 24.375C30.9375 23.8572 30.5178 23.4375 30 23.4375C29.4822 23.4375 29.0625 23.8572 29.0625 24.375C29.0625 24.8928 29.4822 25.3125 30 25.3125Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M33.75 6.5625C34.2678 6.5625 34.6875 6.14277 34.6875 5.625C34.6875 5.10723 34.2678 4.6875 33.75 4.6875C33.2322 4.6875 32.8125 5.10723 32.8125 5.625C32.8125 6.14277 33.2322 6.5625 33.75 6.5625Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M37.5 40.3125C38.0178 40.3125 38.4375 39.8928 38.4375 39.375C38.4375 38.8572 38.0178 38.4375 37.5 38.4375C36.9822 38.4375 36.5625 38.8572 36.5625 39.375C36.5625 39.8928 36.9822 40.3125 37.5 40.3125Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M37.5 15.9375C38.0178 15.9375 38.4375 15.5178 38.4375 15C38.4375 14.4822 38.0178 14.0625 37.5 14.0625C36.9822 14.0625 36.5625 14.4822 36.5625 15C36.5625 15.5178 36.9822 15.9375 37.5 15.9375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>NestJs
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M16.875 5.625H9.375C7.30393 5.625 5.625 7.30393 5.625 9.375V16.875C5.625 18.9461 7.30393 20.625 9.375 20.625H16.875C18.9461 20.625 20.625 18.9461 20.625 16.875V9.375C20.625 7.30393 18.9461 5.625 16.875 5.625Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.125 20.625V28.125C13.125 29.1196 13.5201 30.0734 14.2233 30.7766C14.9266 31.4799 15.8804 31.875 16.875 31.875H24.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M35.625 24.375H28.125C26.0539 24.375 24.375 26.0539 24.375 28.125V35.625C24.375 37.6961 26.0539 39.375 28.125 39.375H35.625C37.6961 39.375 39.375 37.6961 39.375 35.625V28.125C39.375 26.0539 37.6961 24.375 35.625 24.375Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>ExpressJs
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M26.25 15H18.75C16.6789 15 15 16.6789 15 18.75V26.25C15 28.3211 16.6789 30 18.75 30H26.25C28.3211 30 30 28.3211 30 26.25V18.75C30 16.6789 28.3211 15 26.25 15Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 18.75C6.50544 18.75 5.55161 18.3549 4.84835 17.6516C4.14509 16.9484 3.75 15.9946 3.75 15V7.5C3.75 6.50544 4.14509 5.55161 4.84835 4.84835C5.55161 4.14509 6.50544 3.75 7.5 3.75H15C15.9946 3.75 16.9484 4.14509 17.6516 4.84835C18.3549 5.55161 18.75 6.50544 18.75 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M26.25 37.5C26.25 38.4946 26.6451 39.4484 27.3484 40.1516C28.0516 40.8549 29.0054 41.25 30 41.25H37.5C38.4946 41.25 39.4484 40.8549 40.1516 40.1516C40.8549 39.4484 41.25 38.4946 41.25 37.5V30C41.25 29.0054 40.8549 28.0516 40.1516 27.3484C39.4484 26.6451 38.4946 26.25 37.5 26.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>JavaScript
+
+                            </h3>
+                        </div>
+                        <div className='tech_cardssss'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                                <path d="M13.125 3.75H31.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.375 11.25H35.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M35.625 18.75H9.375C7.30393 18.75 5.625 20.4289 5.625 22.5V37.5C5.625 39.5711 7.30393 41.25 9.375 41.25H35.625C37.6961 41.25 39.375 39.5711 39.375 37.5V22.5C39.375 20.4289 37.6961 18.75 35.625 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3>TypeScript
+
+
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-
-            </section>
-            <section className='main_faqs_new'>
-                <div className='inner_faqs'>
-                    <div className='middle_left'>
-                        <span   className='faqqs_div'>FAQ</span>
-                        <h2>FAQs About Backend Developer
-
-
+                <div className='Application'>
+                    <div className='inner__textt'>
+                        <h2 className='contratt'>Why hire Backend Developers from Quecko?
 
                         </h2>
+                        {/* <p>A strong social media presence is crucial for any Web3 and crypto project. We specialize in leveraging key platforms to boost brand awareness, engage communities, and attract investors. Our tailored strategies ensure that your project reaches the right audience with the right messaging.</p> */}
                     </div>
-                    <div className='middle_right'>
-                        <Accordion defaultActiveKey="0">
-                            <Accordion.Item eventKey="0">
-                                <Accordion.Header> <span>01.</span>How quickly can I hire a Backend Developer?
+                    <div className='top_parents'>
+                        <div className='parents_cards'>
+                            <div className='cardee'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <g clip-path="url(#clip0_973_207)">
+                                        <path d="M5.70323 7.72716C5.88029 8.21372 6.41829 8.46453 6.90485 8.28747C7.39142 8.11041 7.64223 7.57241 7.46517 7.08591L7.03004 5.89041L11.9951 8.20559C13.5798 8.94453 14.6689 10.3824 14.9696 12.0698C13.2269 12.5271 11.9375 14.1158 11.9375 16C11.9375 18.24 13.7599 20.0625 16 20.0625C18.24 20.0625 20.0625 18.24 20.0625 16C20.0625 14.1158 18.7731 12.5271 17.0304 12.0698C17.3312 10.3824 18.4202 8.94453 20.0049 8.20559L24.9699 5.89041L24.5348 7.08591C24.3577 7.57247 24.6085 8.11041 25.0951 8.28747C25.5817 8.46453 26.1196 8.21372 26.2967 7.72716L27.5059 4.40484C27.683 3.91828 27.4322 3.38034 26.9456 3.20328L23.6233 1.99403C23.1367 1.81697 22.5988 2.06778 22.4217 2.55434C22.2447 3.04091 22.4955 3.57884 22.982 3.75597L24.1775 4.19109L19.2125 6.50628C18.3461 6.91028 17.5744 7.48066 16.9375 8.18228V3.20078L17.8372 4.10041C18.2033 4.46653 18.7969 4.46653 19.163 4.10041C19.5291 3.73428 19.5291 3.14072 19.163 2.77459L16.663 0.274594C16.2969 -0.0915312 15.7033 -0.0915312 15.3372 0.274594L12.8372 2.77459C12.471 3.14072 12.471 3.73428 12.8372 4.10041C13.2033 4.46653 13.7969 4.46653 14.163 4.10041L15.0625 3.20078V8.18228C14.4256 7.48066 13.6539 6.91028 12.7875 6.50628L7.82248 4.19103L9.01798 3.75591C9.50454 3.57884 9.75536 3.04084 9.57829 2.55428C9.40123 2.06772 8.86323 1.81691 8.37673 1.99397L5.05436 3.20328C4.56779 3.38034 4.31698 3.91834 4.49404 4.40484L5.70323 7.72716ZM18.1875 16C18.1875 17.2062 17.2062 18.1875 16 18.1875C14.7938 18.1875 13.8125 17.2062 13.8125 16C13.8125 14.7938 14.7938 13.8125 16 13.8125C17.2062 13.8125 18.1875 14.7938 18.1875 16Z" fill="black" />
+                                        <path d="M31.0625 14.4375H24.75C24.2323 14.4375 23.8125 14.8572 23.8125 15.375V16C23.8125 20.3078 20.3078 23.8125 16 23.8125C11.6922 23.8125 8.1875 20.3078 8.1875 16V15.375C8.1875 14.8572 7.76775 14.4375 7.25 14.4375H0.9375C0.41975 14.4375 0 14.8572 0 15.375V19.138C0 19.6256 0.37375 20.0318 0.859625 20.0723L2.23775 20.1871C2.83613 20.237 3.3305 20.5979 3.56031 21.1526C3.79012 21.7074 3.69575 22.3122 3.30787 22.7706L2.41462 23.8263C2.09969 24.1986 2.12263 24.75 2.46738 25.0948L6.90519 29.5327C7.24988 29.8776 7.80138 29.9004 8.17369 29.5854L9.22937 28.6922C9.68775 28.3043 10.2926 28.2098 10.8473 28.4398C11.402 28.6695 11.763 29.1639 11.8129 29.7623L11.9277 31.1404C11.9682 31.6262 12.3744 32.0001 12.8619 32.0001H19.138C19.6256 32.0001 20.0317 31.6263 20.0723 31.1404L20.1871 29.7623C20.2369 29.1639 20.5979 28.6695 21.1526 28.4398C21.7073 28.2098 22.3122 28.3043 22.7706 28.6921L23.8263 29.5854C24.1985 29.9005 24.75 29.8775 25.0947 29.5327L29.5326 25.0948C29.8774 24.75 29.9002 24.1986 29.5853 23.8263L28.6921 22.7706C28.3042 22.3122 28.2099 21.7074 28.4396 21.1526C28.6694 20.5979 29.1638 20.237 29.7622 20.1871L31.1403 20.0723C31.6262 20.0318 31.9999 19.6256 31.9999 19.138V15.375C32 14.8572 31.5802 14.4375 31.0625 14.4375ZM30.125 18.2754L29.6066 18.3186C28.3145 18.4262 27.2036 19.2372 26.7074 20.4351C26.2113 21.6329 26.4233 22.9919 27.2608 23.9818L27.5969 24.3789L24.379 27.5968L23.9818 27.2606C22.9921 26.4232 21.6331 26.2111 20.4352 26.7073C19.2373 27.2034 18.4263 28.3143 18.3186 29.6064L18.2754 30.125H13.7246L13.6814 29.6065C13.5737 28.3144 12.7627 27.2036 11.5649 26.7074C10.3669 26.2111 9.008 26.4233 8.01825 27.2607L7.62113 27.5968L4.40325 24.3789L4.73931 23.9818C5.57681 22.992 5.78881 21.633 5.29269 20.4351C4.79656 19.2373 3.68563 18.4262 2.39363 18.3186L1.875 18.2754V16.3125H6.3175C6.48319 21.51 10.7629 25.6875 16 25.6875C21.2371 25.6875 25.5169 21.51 25.6825 16.3125H30.125V18.2754Z" fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_973_207">
+                                            <rect width="32" height="32" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h3>Specialized Technical Expertise                                </h3>
+                                <p>Access backend developers with deep knowledge of Node.js, Express, Nest.js, and related technologies without lengthy recruitment processes
+
+                                </p>
+                            </div>
+                            <div className='cardee'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <g clip-path="url(#clip0_973_212)">
+                                        <path d="M16.0449 22.4492L14.0977 25.0488L11.0237 26.0973L12.8943 28.7525L12.9416 32L16.0448 31.0415L19.1481 32L19.1954 28.7524L21.0661 26.0972L17.9921 25.0487L16.0449 22.4492ZM17.3274 28.1455L17.3082 29.4675L16.0449 29.0773L14.7817 29.4675L14.7624 28.1455L14.0009 27.0647L15.2523 26.6378L16.0449 25.5796L16.8376 26.6378L18.0889 27.0647L17.3274 28.1455Z" fill="black" />
+                                        <path d="M5.02119 17.8237L3.07406 20.4233L0 21.4718L1.87063 24.127L1.91794 27.3745L5.02119 26.4159L8.12444 27.3745L8.17175 24.127L10.0424 21.4718L6.96838 20.4233L5.02119 17.8237ZM6.30369 23.52L6.28444 24.842L5.02119 24.4518L3.75794 24.842L3.73869 23.52L2.97725 22.4392L4.22856 22.0124L5.02125 20.9541L5.81394 22.0124L7.06525 22.4392L6.30369 23.52Z" fill="black" />
+                                        <path d="M28.9258 20.4233L26.9787 17.8237L25.0316 20.4233L21.9575 21.4718L23.8281 24.127L23.8755 27.3745L26.9787 26.4159L30.082 27.3745L30.1293 24.127L31.9999 21.4718L28.9258 20.4233ZM28.2612 23.52L28.242 24.842L26.9787 24.4518L25.7155 24.842L25.6962 23.52L24.9347 22.4392L26.1861 22.0124L26.9787 20.9541L27.7714 22.0124L29.0227 22.4392L28.2612 23.52Z" fill="black" />
+                                        <path d="M15.9691 19.4757C21.3386 19.4757 25.707 15.1073 25.707 9.73781C25.707 4.36837 21.3386 0 15.9691 0C10.5996 0 6.2312 4.36837 6.2312 9.73787C6.2312 15.1073 10.5996 19.4757 15.9691 19.4757ZM15.9691 17.5991C13.7226 17.5991 11.6934 16.6516 10.2595 15.1356V14.7753C10.2595 14.2228 10.5834 13.7178 11.0851 13.4872L13.4248 12.4611L15.9805 15.1032L18.436 12.4783L20.7801 13.4883C21.318 13.7361 21.6787 14.2523 21.6787 14.7753V15.1356C20.2448 16.6516 18.2155 17.5991 15.9691 17.5991ZM16.74 11.5442L15.9577 12.3804L15.0858 11.4789L15.3095 10.8166C15.5109 10.8572 15.7188 10.8791 15.9315 10.8791C16.1185 10.8791 16.3018 10.862 16.4805 10.8304L16.74 11.5442ZM17.2969 6.92844L17.1862 7.88438C17.1125 8.52175 16.573 9.00237 15.9313 9.00237C15.2897 9.00237 14.7503 8.52175 14.6765 7.88438L14.5658 6.92844C14.5201 6.53363 14.6406 6.15275 14.905 5.85594C15.1694 5.55919 15.5339 5.39575 15.9313 5.39575C16.3288 5.39575 16.6933 5.55919 16.9576 5.85594C17.2221 6.15275 17.3426 6.53363 17.2969 6.92844ZM15.9691 1.87669C20.3038 1.87669 23.8303 5.40325 23.8303 9.73787C23.8303 10.9421 23.5577 12.0839 23.0716 13.1051C22.7211 12.5399 22.1961 12.0706 21.5497 11.7766L18.3145 10.3826L18.158 9.95231C18.64 9.46769 18.9666 8.82494 19.0505 8.10019L19.1611 7.14425C19.2677 6.22394 18.9753 5.29931 18.359 4.60763C17.7427 3.91587 16.8579 3.51912 15.9315 3.51912C15.005 3.51912 14.1202 3.91587 13.5039 4.60763C12.8876 5.29938 12.5952 6.22394 12.7018 7.14425L12.8124 8.10013C12.8926 8.79331 13.1945 9.41187 13.6421 9.88844L13.4724 10.3911L10.3248 11.7714L10.3132 11.7766C9.69476 12.0579 9.19195 12.5182 8.85464 13.0794C8.37614 12.0647 8.10795 10.9321 8.10795 9.73781C8.10789 5.40319 11.6344 1.87669 15.9691 1.87669Z" fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_973_212">
+                                            <rect width="32" height="32" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h3>Immediate Productivity
+                                </h3>
+                                <p> Our specialists integrate quickly with established workflows and begin contributing value within days, not weeks
 
 
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    We provide you with pre-vetted candidates within 48 hours, and onboarding can be done within a week.                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="1">
-                                <Accordion.Header> <span>02.</span> Do I have control over the developer’s tasks?
-                                    ?</Accordion.Header>
-                                <Accordion.Body>
-                                    Yes! The developer works directly with your team, following your project’s workflow and requirements.                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="2">
-                                <Accordion.Header> <span>03.</span> What if I need to scale my backend team later?
+                                </p>
+                            </div>
+                        </div>
+                        <div className='parents_cards'>
+                            <div className='cardee'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M9.12583 14.6396C9.1155 13.7299 9.24207 12.8246 9.50196 11.9487L11.4705 12.5318C11.2691 13.2107 11.171 13.912 11.179 14.6163L9.12583 14.6396Z" fill="black" />
+                                    <path d="M23.5201 24.0614L21.5793 23.3914C22.0954 21.8995 22.8937 20.5267 23.952 19.311C25.1048 17.9869 25.7396 16.2894 25.7396 14.5311C25.7396 10.5267 22.3676 7.1876 18.3547 7.24845C15.8989 7.28271 13.5543 8.64804 12.2362 10.8115L10.4822 9.745C12.1645 6.9839 15.17 5.24134 18.326 5.19731C23.4693 5.12052 27.7928 9.40018 27.7928 14.531C27.7928 16.784 26.9789 18.9597 25.5012 20.6571C24.6163 21.6737 23.9498 22.819 23.5201 24.0614Z" fill="black" />
+                                    <path d="M22.0027 25.2307H19.4886V18.5679C21.1312 18.1157 22.3729 16.5953 22.3729 14.7935C22.3729 12.6365 20.6172 10.8816 18.46 10.8816C16.3027 10.8816 14.5486 12.6365 14.5486 14.7935C14.5486 16.5954 15.7927 18.1157 17.4353 18.5679V25.2307H14.9221C14.3314 25.2307 13.8533 25.7519 13.9043 26.3408C13.9099 26.4052 13.9149 26.4695 13.9196 26.5336C12.9983 28.0979 11.3296 29.0597 9.50392 29.0597C6.67746 29.0597 4.37797 26.7592 4.37797 23.9315C4.37797 21.1038 6.67746 18.8033 9.50392 18.8033C9.89038 18.8033 10.2758 18.8465 10.6494 18.9318L11.1067 16.9321C10.5832 16.8126 10.0441 16.752 9.50392 16.752C5.54529 16.752 2.32471 19.9727 2.32471 23.9315C2.32471 27.8903 5.54529 31.111 9.50392 31.111C11.1486 31.111 12.7021 30.5537 13.9448 29.5741V30.017C13.9448 31.1103 14.8253 31.9999 15.9196 31.9999H20.9988C22.0933 31.9999 22.9792 31.1103 22.9792 30.017C22.9792 30.017 22.9953 26.6418 23.0227 26.3473C23.0775 25.7585 22.5959 25.2307 22.0027 25.2307ZM16.6002 14.7935C16.6002 13.7675 17.4341 12.9328 18.4592 12.9328C19.4843 12.9328 20.3182 13.7675 20.3182 14.7935C20.3182 15.8194 19.4843 16.6542 18.4592 16.6542C17.4341 16.6542 16.6002 15.8194 16.6002 14.7935ZM20.9259 29.9486H15.998V27.2819H20.9259V29.9486Z" fill="black" />
+                                    <path d="M17.4353 0H19.4886V3.35043H17.4353V0Z" fill="black" />
+                                    <path d="M7.24243 5.00244L8.69341 3.55146L11.1103 5.96831L9.65928 7.41929L7.24243 5.00244Z" fill="black" />
+                                    <path d="M25.7983 5.96631L28.2118 3.54604L29.6648 4.99497L27.2514 7.41524L25.7983 5.96631Z" fill="black" />
+                                    <path d="M9.95645 23.1138C9.18565 22.7946 9.18565 22.674 9.18565 22.5677C9.18565 22.321 9.49553 22.2944 9.6288 22.2944C10.1332 22.2944 10.5178 22.5489 10.9373 22.7889L11.4685 21.3661C11.0814 21.1389 10.7281 20.9312 10.249 20.8542V19.9658H8.81177V20.9444C8.05888 21.2112 7.5345 21.8657 7.5345 22.6698C7.5345 23.7555 8.39098 24.2367 9.22483 24.5638C9.89922 24.8371 9.90066 25.0337 9.90066 25.1511C9.90066 25.4278 9.61539 25.5263 9.3477 25.5263C8.7728 25.5263 8.34558 25.2157 7.89156 24.913L7.36377 26.3588C7.7944 26.6667 8.26428 26.8922 8.74333 26.9782V27.8974H10.1806V26.8923C11.0019 26.6147 11.5394 25.9159 11.5394 25.0916C11.5394 23.9168 10.7012 23.4175 9.95645 23.1138Z" fill="black" />
+                                </svg>
+                                <h3>Quality Assurance
+                                </h3>
+                                <p>All solutions are implemented with comprehensive testing, documentation, and maintainability standards</p>
+                            </div>
+                            <div className='cardee'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <g clip-path="url(#clip0_973_231)">
+                                        <path d="M1.875 16C1.875 8.21144 8.21144 1.875 16 1.875C18.9292 1.875 21.7227 2.76319 24.0748 4.41169H22.2576C21.7399 4.41169 21.3201 4.83144 21.3201 5.34919C21.3201 5.86694 21.7399 6.28669 22.2576 6.28669H26.6509C27.1686 6.28669 27.5884 5.86694 27.5884 5.34919V0.955938C27.5884 0.438187 27.1686 0.0184375 26.6509 0.0184375C26.1331 0.0184375 25.7134 0.438187 25.7134 0.955938V3.28962C22.9367 1.15619 19.5569 0 16 0C11.7262 0 7.70831 1.66431 4.68625 4.68625C1.66431 7.70831 0 11.7262 0 16C0 18.8076 0.741938 21.5739 2.14563 23.9999C2.31938 24.3002 2.63425 24.468 2.95794 24.468C3.11731 24.468 3.27881 24.4273 3.42663 24.3418C3.87475 24.0825 4.02781 23.509 3.76856 23.0608C2.52981 20.9199 1.875 18.4783 1.875 16Z" fill="black" />
+                                        <path d="M29.8543 8.00008C29.5949 7.5519 29.0213 7.3989 28.5733 7.65821C28.1252 7.91752 27.9721 8.49102 28.2314 8.93921C29.4701 11.08 30.1249 13.5216 30.1249 16C30.1249 23.7885 23.7885 30.125 15.9999 30.125C13.071 30.125 10.278 29.2365 7.92618 27.5883H9.74231C10.2601 27.5883 10.6798 27.1685 10.6798 26.6508C10.6798 26.133 10.2601 25.7133 9.74231 25.7133H5.34912C4.83137 25.7133 4.41162 26.133 4.41162 26.6508V31.044C4.41162 31.5618 4.83137 31.9815 5.34912 31.9815C5.86687 31.9815 6.28662 31.5618 6.28662 31.044V28.708C9.06325 30.8421 12.4426 32 15.9999 32C20.2737 32 24.2916 30.3356 27.3137 27.3137C30.3356 24.2916 31.9999 20.2737 31.9999 16C31.9999 13.1923 31.258 10.426 29.8543 8.00008Z" fill="black" />
+                                        <path d="M24.3384 14.1164C24.4027 13.8763 24.3691 13.6204 24.2447 13.4051L22.3697 10.1574C22.2454 9.94212 22.0406 9.785 21.8005 9.72062C21.5603 9.65631 21.3044 9.68994 21.0891 9.81431L20.0219 10.4305C19.6423 10.1551 19.2382 9.921 18.8126 9.72994V8.5C18.8126 7.98225 18.3929 7.5625 17.8751 7.5625H14.1251C13.6074 7.5625 13.1876 7.98225 13.1876 8.5V9.72987C12.762 9.921 12.358 10.1551 11.9784 10.4304L10.9111 9.81425C10.6958 9.68987 10.4397 9.65619 10.1997 9.72056C9.95955 9.78488 9.7548 9.942 9.63049 10.1574L7.75549 13.405C7.63118 13.6203 7.59749 13.8762 7.6618 14.1164C7.72618 14.3566 7.8833 14.5613 8.09861 14.6856L9.16068 15.2987C9.13699 15.5316 9.12511 15.7658 9.12511 16C9.12511 16.2342 9.13699 16.4684 9.16068 16.7011L8.09861 17.3143C7.8833 17.4386 7.72618 17.6434 7.6618 17.8835C7.59749 18.1237 7.63118 18.3796 7.75549 18.5949L9.63049 21.8425C9.7548 22.0578 9.95961 22.2149 10.1997 22.2793C10.44 22.3438 10.6959 22.31 10.9111 22.1856L11.9784 21.5694C12.3579 21.8449 12.762 22.0789 13.1876 22.27V23.5C13.1876 24.0177 13.6074 24.4375 14.1251 24.4375H17.8751C18.3929 24.4375 18.8126 24.0177 18.8126 23.5V22.2701C19.2382 22.0791 19.6422 21.8449 20.0219 21.5696L21.0891 22.1857C21.3044 22.3101 21.5604 22.3438 21.8005 22.2794C22.0407 22.2151 22.2454 22.058 22.3697 21.8426L24.2447 18.595C24.3691 18.3797 24.4027 18.1237 24.3384 17.8836C24.2741 17.6434 24.1169 17.4387 23.9016 17.3144L22.8396 16.7013C22.8632 16.4684 22.8751 16.2342 22.8751 16C22.8751 15.7658 22.8632 15.5316 22.8396 15.2989L23.9016 14.6858C24.1169 14.5614 24.2741 14.3566 24.3384 14.1164ZM20.8989 14.994C20.9661 15.3229 21.0001 15.6614 21.0001 16C21.0001 16.3386 20.9661 16.6771 20.8989 17.006C20.8182 17.4013 20.9994 17.8038 21.3487 18.0055L22.1522 18.4694L21.2147 20.0931L20.4045 19.6254C20.055 19.4236 19.6154 19.4681 19.3134 19.7361C18.8021 20.1899 18.2186 20.528 17.5789 20.741C17.1959 20.8685 16.9376 21.2268 16.9376 21.6305V22.5625H15.0626V21.6305C15.0626 21.2269 14.8042 20.8685 14.4212 20.741C13.7816 20.528 13.198 20.1899 12.6867 19.7361C12.3848 19.4681 11.9452 19.4236 11.5956 19.6254L10.7854 20.0931L9.84793 18.4694L10.6514 18.0055C11.0007 17.8038 11.1819 17.4013 11.1012 17.006C11.0342 16.6771 11.0001 16.3386 11.0001 16C11.0001 15.6614 11.0342 15.3229 11.1013 14.994C11.1821 14.5988 11.0009 14.1962 10.6516 13.9945L9.84805 13.5306L10.7856 11.9069L11.5957 12.3746C11.9453 12.5765 12.3849 12.5319 12.6869 12.2639C13.1981 11.8101 13.7817 11.472 14.4214 11.259C14.8043 11.1314 15.0627 10.7731 15.0627 10.3695V9.4375H16.9377V10.3695C16.9377 10.7731 17.1961 11.1314 17.579 11.259C18.2187 11.472 18.8022 11.8101 19.3135 12.2639C19.6154 12.5319 20.0551 12.5764 20.4046 12.3746L21.2148 11.9069L22.1523 13.5306L21.3488 13.9945C20.9994 14.1962 20.8182 14.5988 20.8989 14.994Z" fill="black" />
+                                        <path d="M16 12.5625C14.1046 12.5625 12.5625 14.1046 12.5625 16C12.5625 17.8954 14.1046 19.4375 16 19.4375C17.8954 19.4375 19.4375 17.8954 19.4375 16C19.4375 14.1046 17.8954 12.5625 16 12.5625ZM16 17.5625C15.1384 17.5625 14.4375 16.8616 14.4375 16C14.4375 15.1384 15.1384 14.4375 16 14.4375C16.8616 14.4375 17.5625 15.1384 17.5625 16C17.5625 16.8616 16.8616 17.5625 16 17.5625Z" fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_973_231">
+                                            <rect width="32" height="32" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h3>Cost Efficiency
 
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    You can easily add more developers based on your project’s growth and evolving needs.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="3">
-                                <Accordion.Header> <span>04.</span>What engagement models do you offer?
-
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    We provide hourly, part-time, and full-time engagement options tailored to your business needs.
-
-                                </Accordion.Body>
-                            </Accordion.Item>
-
-
-
-
-
-                        </Accordion>
+                                </h3>
+                                <p>Eliminate recruitment, onboarding, and retention costs while accessing specialized expertise on demand
+                                </p>
+                            </div>
+                        </div>
+                        {/* <div className='parents_cards'>
+                            <div className='cardee'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M14.6667 22.6666L17.3334 25.3333C17.596 25.5959 17.9078 25.8042 18.251 25.9464C18.5941 26.0885 18.9619 26.1617 19.3334 26.1617C19.7048 26.1617 20.0726 26.0885 20.4157 25.9464C20.7589 25.8042 21.0707 25.5959 21.3334 25.3333C21.596 25.0706 21.8043 24.7588 21.9465 24.4156C22.0886 24.0725 22.1618 23.7047 22.1618 23.3333C22.1618 22.9618 22.0886 22.594 21.9465 22.2509C21.8043 21.9077 21.596 21.5959 21.3334 21.3333" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M18.6667 18.6666L22 21.9999C22.5304 22.5304 23.2499 22.8284 24 22.8284C24.7501 22.8284 25.4696 22.5304 26 21.9999C26.5304 21.4695 26.8284 20.7501 26.8284 19.9999C26.8284 19.2498 26.5304 18.5304 26 17.9999L20.8267 12.8266C20.0767 12.0775 19.06 11.6568 18 11.6568C16.94 11.6568 15.9233 12.0775 15.1733 12.8266L14 13.9999C13.4696 14.5304 12.7501 14.8284 12 14.8284C11.2499 14.8284 10.5304 14.5304 10 13.9999C9.46956 13.4695 9.17157 12.7501 9.17157 11.9999C9.17157 11.2498 9.46956 10.5304 10 9.99994L13.7467 6.25327C14.963 5.04013 16.5492 4.26734 18.2542 4.05724C19.9592 3.84713 21.6855 4.21171 23.16 5.09327L23.7867 5.46661C24.3544 5.80925 25.0294 5.9281 25.68 5.79994L28 5.33327" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M28 4L29.3334 18.6667H26.6667" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M4.00002 4L2.66669 18.6667L11.3334 27.3333C11.8638 27.8638 12.5832 28.1618 13.3334 28.1618C14.0835 28.1618 14.8029 27.8638 15.3334 27.3333C15.8638 26.8029 16.1618 26.0835 16.1618 25.3333C16.1618 24.5832 15.8638 23.8638 15.3334 23.3333" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M4 5.33325H14.6667" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                                <h2>Disintermediation</h2>
+                                <p>A smart contract is a way parties reach agreements, at the same time eliminating third-party interaction.</p>
+                            </div>
+                            <div className='cardee'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M2.74936 16.464C2.63824 16.1646 2.63824 15.8353 2.74936 15.536C3.83162 12.9118 5.66871 10.668 8.02772 9.08919C10.3867 7.51034 13.1614 6.66748 16 6.66748C18.8386 6.66748 21.6133 7.51034 23.9723 9.08919C26.3313 10.668 28.1684 12.9118 29.2507 15.536C29.3618 15.8353 29.3618 16.1646 29.2507 16.464C28.1684 19.0882 26.3313 21.3319 23.9723 22.9108C21.6133 24.4897 18.8386 25.3325 16 25.3325C13.1614 25.3325 10.3867 24.4897 8.02772 22.9108C5.66871 21.3319 3.83162 19.0882 2.74936 16.464Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z" stroke="black" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                                <h2>Transparency</h2>
+                                <p>Transparency is the most entertaining feature of smart contracts. The information is visible to all the people throughout the blockchain network in this contract, hence ensuring a surrounding of trust.</p>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
-            <section className='contact_us_main'>
+
+            {/* <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h2  className='cliiient'>Become a client</h2>
+                    <h2 className='cliiient'>Become a client</h2>
                     <p className='spantextt'>Share your marketing challenge with us, and we'll craft a tailored solution just for you. Get a proposal!
                     </p>
                     <p>Get in touch</p>
@@ -393,7 +536,7 @@ const Backend = () => {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
 
             <Footer />
         </>

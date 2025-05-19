@@ -111,7 +111,7 @@ const Footer = () => {
                 <h3>Youtube</h3>
               </a>
               <a href="https://pk.linkedin.com/company/queckoinc" target="blank">
-                <h3>Linkedin</h3>
+                <h3>LinkedIn</h3>
               </a>
               <a href=" https://www.instagram.com/quecko.web3?igsh=ZHlqb3ZlMW02ZXdk" target="blank">
                 <h3>Instagram</h3>
