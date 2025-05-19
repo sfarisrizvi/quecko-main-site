@@ -8,10 +8,23 @@ import Projects from './component/Landing/projects';
 import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Marketingexpert = () => {
     return (
         <>
+         <NextSeo
+                        title="Marketing Expert - Quecko
+"
+                        description="Drive growth with tailored SEO, content, and paid strategies that boost traffic and conversions."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Marketing Expert - Quecko',
+                            description:
+                                'Drive growth with tailored SEO, content, and paid strategies that boost traffic and conversions.',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

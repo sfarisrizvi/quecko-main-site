@@ -9,20 +9,23 @@ import Work from './component/Landing/work';
 import Mobileappfaqs from './mobileappfaqs';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Mobileapp = () => {
     return (
         <>
-            <Head>
-                <title>Mobile App Development - Quecko</title>
-                <meta property="og:title" content="Mobile App Development - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Get top-tier mobile app development services for iOS and Android with Quecko."
-                />
-                <meta property="og:url" content="https://quecko.com/mobile-app-development" />
-                <link rel="canonical" href="https://quecko.com/mobile-app-development" />
-            </Head>
+               <NextSeo
+                        title="Mobile App Development - Quecko"
+                        description="Get top-tier mobile app development services for iOS and Android with Quecko."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Mobile App Development - Quecko',
+                            description:
+                                'DGet top-tier mobile app development services for iOS and Android with Quecko.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

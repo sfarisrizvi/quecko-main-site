@@ -257,7 +257,7 @@ const aboutdetail = () => {
                     </div> {/* Closing div for inner_collab */}
                     <section className='goalss_side1'>
                 <div className='goals_details'>
-                    <h1>Since 2020</h1>
+                    <h2  className='goaldiv'>Since 2020</h2>
                     <div>
                     <p>Our story began with a small, passionate team of four visionaries who believed in the transformative power of blockchain technology. From these humble beginnings, Quecko. has grown into a powerhouse of over 100+ talented professionals. Each team member represents a unique building block, much like the individual blocks in a blockchain, contributing to the strength, resilience, and innovation of our company. Our commitment to pioneering Web3 solutions has enabled us to help businesses navigate the complexities of blockchain, creating decentralized applications and software that drive progress and innovation. We take pride in our role as the architects of a decentralized future, where every block—and every team member—plays a crucial part in building a more connected and empowered world.</p>
 

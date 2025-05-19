@@ -12,10 +12,23 @@ import Aboutus from './component/Landing/aboutus';
 import Stories from './component/Landing/stories';
 import Faqswebdevelp from './faqswebdevelp';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Resourcelanding = () => {
     return (
         <>
+         <NextSeo
+                        title="Resource Augmetation - Quecko
+"
+                        description="Add skilled tech talent to your team on-demand. Flexible, fast, and scalable resource support for your growing business needs."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Resource Augmetation - Quecko',
+                            description:
+                                'Add skilled tech talent to your team on-demand. Flexible, fast, and scalable resource support for your growing business needs.',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data mydata'>
@@ -130,7 +143,7 @@ const Resourcelanding = () => {
                         </Link>
 
 
-                        <Link href="/resource">
+                        <Link href="/mobileapp-development">
                             <div className='card__one'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
                                     <g clip-path="url(#clip0_969_2126)">

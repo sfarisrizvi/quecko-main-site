@@ -10,20 +10,22 @@ import Rawuses from './rawuses';
 import Rawfaqs from './rawfaqs';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Rawdetails = () => {
     return (
         <>
-            <Head>
-                <title>Real World Assets (RWA) - Quecko</title>
-                <meta property="og:title" content="Real World Assets (RWA) - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Discover how Quecko bridges the gap between digital and real-world assets (RWA)."
-                />
-                <meta property="og:url" content="https://quecko.com/rwa" />
-                <link rel="canonical" href="https://quecko.com/rwa" />
-            </Head>
+         <NextSeo
+                        title="Real World Assets (RWA) - Quecko"
+                        description="Discover how Quecko bridges the gap between digital and real-world assets (RWA)."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Real World Assets (RWA) - Quecko',
+                            description:
+                                'Discover how Quecko bridges the gap between digital and real-world assets (RWA).',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

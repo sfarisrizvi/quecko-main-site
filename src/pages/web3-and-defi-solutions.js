@@ -10,20 +10,24 @@ import Defiuses from './defiuses';
 import Defifaqs from './defifaqs';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Webdefi = () => {
     return (
         <>
-            <Head>
-                <title>Web3 & DeFi Solutions - Quecko</title>
-                <meta property="og:title" content="Web3 & DeFi Solutions - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Unlock the potential of Web3 and DeFi with Quecko’s innovative blockchain solutions."
-                />
-                <meta property="og:url" content="https://quecko.com/web3-and-defi-solutions" />
-                <link rel="canonical" href="https://quecko.com/web3-and-defi-solutions" />
-            </Head>
+
+         <NextSeo
+                        title="Web3 & DeFi Solutions - Quecko"
+                        description="Unlock the potential of Web3 and DeFi with Quecko’s innovative blockchain solutions."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Web3 & DeFi Solutions - Quecko',
+                            description:
+                                'Unlock the potential of Web3 and DeFi with Quecko’s innovative blockchain solutions.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

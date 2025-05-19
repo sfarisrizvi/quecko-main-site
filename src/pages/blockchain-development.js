@@ -8,20 +8,24 @@ import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Smartcontract = () => {
     return (
         <>
-            <Head>
-                <title>Blockchain Development - Quecko</title>
-                <meta property="og:title" content="Blockchain Development - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Explore blockchain development services by Quecko for secure and decentralized solutions."
-                />
-                <meta property="og:url" content="https://quecko.com/blockchain-development" />
-                <link rel="canonical" href="https://quecko.com/blockchain-development" />
-            </Head>
+             <NextSeo
+                                title="Blockchain Development - Quecko
+        "
+                                description="Explore blockchain development services by Quecko for secure and decentralized solutions."
+                                openGraph={{
+                                    url: 'https://www.quecko.com/launchpad',
+                                    title: 'Blockchain Development - Quecko',
+                                    description:
+                                        'Explore blockchain development services by Quecko for secure and decentralized solutions.',
+                                    site_name: 'Quecko',
+                                }}
+                            />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

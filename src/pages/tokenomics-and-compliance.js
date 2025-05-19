@@ -10,20 +10,23 @@ import Usescompliance from './usescompliance';
 import Faqscompliance from './faqscompliance';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Compliance = () => {
     return (
         <>
-            <Head>
-                <title>Tokenomics & Compliance - Quecko</title>
-                <meta property="og:title" content="Tokenomics & Compliance - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Ensure regulatory compliance and optimized tokenomics with Quecko’s expert solutions."
-                />
-                <meta property="og:url" content="https://quecko.com/tokenomics-and-compliance" />
-                <link rel="canonical" href="https://quecko.com/tokenomics-and-compliance" />
-            </Head>
+               <NextSeo
+                        title="Tokenomics & Compliance - Quecko"
+                        description="Ensure regulatory compliance and optimized tokenomics with Quecko’s expert solutions."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Tokenomics & Compliance - Quecko',
+                            description:
+                                'Ensure regulatory compliance and optimized tokenomics with Quecko’s expert solutions.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

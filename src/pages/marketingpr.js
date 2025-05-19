@@ -10,10 +10,22 @@ import Partners from './partners';
 import Marketingfaqs from './marketingfaqs';
 import Contactus from './contactus';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Marketingpr = () => {
     return (
         <>
+               <NextSeo
+                        title="PR & Influencer Marketing – Quecko"
+                        description="PR & Influencer Marketing"
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'PR & Influencer Marketing – Quecko',
+                            description:
+                                'PR & Influencer Marketing',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

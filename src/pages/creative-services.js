@@ -11,20 +11,23 @@ import Marketingfaqs from './marketingfaqs';
 import Contactus from './contactus';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Marketingcreative = () => {
     return (
         <>
-            <Head>
-                <title>Creative Services - Quecko</title>
-                <meta property="og:title" content="Creative Services - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Creative design and branding services by Quecko to enhance your digital presence."
-                />
-                <meta property="og:url" content="https://quecko.com/creative-services" />
-                <link rel="canonical" href="https://quecko.com/creative-services" />
-            </Head>
+               <NextSeo
+                        title="Creative Services - Quecko"
+                        description="Creative design and branding services by Quecko to enhance your digital presence."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Creative Services - Quecko',
+                            description:
+                                'Creative design and branding services by Quecko to enhance your digital presence.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

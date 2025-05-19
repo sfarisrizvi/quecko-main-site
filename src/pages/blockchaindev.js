@@ -8,10 +8,23 @@ import Projects from './component/Landing/projects';
 import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Blockchaindev = () => {
     return (
         <>
+         <NextSeo
+                        title="Blockchain developers - Quecko
+"
+                        description="Build Web3 apps, smart contracts, and NFT platforms with experienced blockchain developers."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Blockchain developers - Quecko',
+                            description:
+                                'Build Web3 apps, smart contracts, and NFT platforms with experienced blockchain developers.',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

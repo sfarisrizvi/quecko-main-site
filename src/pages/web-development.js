@@ -12,20 +12,23 @@ import Stories from './component/Landing/stories';
 import Faqswebdevelp from './faqswebdevelp';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Webdevelopment = () => {
     return (
         <>
-            <Head>
-                <title>Web Development - Quecko</title>
-                <meta property="og:title" content="Web Development - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Quecko provides expert web development services tailored to your business needs."
-                />
-                <meta property="og:url" content="https://quecko.com/web-development" />
-                <link rel="canonical" href="https://quecko.com/web-development" />
-            </Head>
+               <NextSeo
+                        title="Web Development - Quecko"
+                        description="Quecko provides expert web development services tailored to your business needs."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Web Development - Quecko',
+                            description:
+                                'Quecko provides expert web development services tailored to your business needs.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data mydata'>

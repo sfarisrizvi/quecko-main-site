@@ -8,10 +8,22 @@ import Projects from './component/Landing/projects';
 import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Resource = () => {
     return (
         <>
+         <NextSeo
+                        title="Mobile App - Quecko"
+                        description="We create fast, user-friendly mobile apps for iOS and Android to help brands engage customers and grow efficiently."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Mobile App - Quecko',
+                            description:
+                                'We create fast, user-friendly mobile apps for iOS and Android to help brands engage customers and grow efficiently.',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
