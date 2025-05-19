@@ -47,7 +47,10 @@ const Frontend = () => {
 
 
                             </p>
+    <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
 
+                            </Link>
                         </div>
 
                     </div>
@@ -292,7 +295,7 @@ const Frontend = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Tools & Technologies of Frontend Developers for hire
+                       Tech Stacks
 
                     </h2>
                     <div className='innnner_tecnlogies'>

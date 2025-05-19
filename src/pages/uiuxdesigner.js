@@ -46,6 +46,10 @@ const Uiuxdesigner = () => {
                             <p className='para'>Managing UI/UX design demands while maintaining quality can be challenging. Our resource augmentation services provide the perfect solution. We connect you with pre-vetted, highly skilled UI/UX designers proficient in all you need.
 
                             </p>
+                                <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -247,7 +251,8 @@ const Uiuxdesigner = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Deliverables of UI/UX Designers for hire
+                        Tech stacks
+
                     </h2>
                     <div className='innnner_tecnlogies'>
                         <div className='tech_cardssss'>
@@ -326,7 +331,7 @@ const Uiuxdesigner = () => {
                 </div>
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h2 className='contratt'>Why hire UI UX Designers from Quecko?
+                        <h2 className='contratt'>Why hire UI/UX Designers from Quecko?
 
                         </h2>
                         {/* <p>A strong social media presence is crucial for any Web3 and crypto project. We specialize in leveraging key platforms to boost brand awareness, engage communities, and attract investors. Our tailored strategies ensure that your project reaches the right audience with the right messaging.</p> */}

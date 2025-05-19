@@ -50,6 +50,10 @@ const Marketingexpert = () => {
 
 
                             </p>
+                                <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -259,7 +263,7 @@ const Marketingexpert = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Deliverables of marketing managers for hire
+                   Deliverables
 
                     </h2>
                     <div className='innnner_tecnlogies'>

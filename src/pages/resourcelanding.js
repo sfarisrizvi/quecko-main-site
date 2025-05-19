@@ -81,7 +81,7 @@ const Resourcelanding = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h3 className='names_tags'> UI UX Designer
+                                <h3 className='names_tags'> UI/UX Designer
 
                                 </h3>
                                 <p>For crafting intuitive and visually appealing designs that enhance user experience.

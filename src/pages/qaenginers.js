@@ -47,6 +47,10 @@ const Qaenginers = () => {
                             <p className='para'>Quecko’s resource augmentation services provide pre-vetted QA engineers skilled with leading testing tools. With a structured approach and flexible engagement, your business can scale efficiently while delivering high-quality, reliable products.
 
                             </p>
+                                <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -253,7 +257,7 @@ const Qaenginers = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                      Deliverables of QA Engineers for hire
+                        Tech Stacks
                     </h2>
                     <div className='innnner_tecnlogies'>
                         <div className='tech_cardssss'>

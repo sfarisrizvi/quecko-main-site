@@ -48,6 +48,10 @@ const Blockchaindev = () => {
 
 
                             </p>
+                                <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -245,7 +249,7 @@ const Blockchaindev = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Tools & Technologies of blockchain developers for hire
+                    Tech Stacks
                     </h2>
                     <div className='innnner_tecnlogies'>
                         <div className='tech_cardssss'>

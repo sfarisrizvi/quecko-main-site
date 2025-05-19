@@ -47,6 +47,10 @@ const Technical = () => {
 
 
                             </p>
+                                <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -126,7 +130,7 @@ const Technical = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Hired Technical Writer Will Provide
+                    <h2>Hired Technical Writers Will Provide
 
                     </h2>
                     <div className='mains_cardss'>
@@ -259,7 +263,7 @@ const Technical = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Deliverables of Technical Writers for hire
+                        Deliverables
                     </h2>
                     <div className='innnner_tecnlogies'>
                         <div className='tech_cardssss'>

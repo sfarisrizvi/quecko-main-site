@@ -47,6 +47,10 @@ const Resource = () => {
                             <p className='para'>Are you looking for skilled mobile app developers who excel in both Android and iOS? We make it easy. Our resource augmentation model allows you to scale your development team with experts who seamlessly integrate into your workflow.
 
                             </p>
+                            <Link href="https://calendly.com/quecko" target='blank'>
+                                                        <button className='bookinterview_button'>Book an Interview</button>
+
+                            </Link>
 
                         </div>
 
@@ -253,7 +257,7 @@ const Resource = () => {
                 </div> */}
                 <div className='Development'>
                     <h2>
-                        Tools & Technologies of Mobile App developers for hire
+                         Tech Stacks
 
                     </h2>
                     <div className='innnner_tecnlogies'>
