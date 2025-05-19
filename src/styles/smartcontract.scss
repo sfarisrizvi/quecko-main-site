@@ -512,6 +512,20 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .smart_contract .inner_data .blogdetail .parenttext .twicebtn {
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.smart_contract .inner_data .blogdetail .parenttext .twicebtn span {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
     .forms_div_section {
         display: flex;
         flex-direction: column;
@@ -773,6 +787,7 @@
 }
 
 @media (min-width: 1600px) {
+
     .forms_div_section {
         display: flex;
         flex-direction: column;
