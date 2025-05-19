@@ -8,10 +8,23 @@ import Projects from './component/Landing/projects';
 import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Qaenginers = () => {
     return (
              <>
+              <NextSeo
+                             title="QA Engineers - Quecko
+"
+                             description="Our QA engineers ensure your product works perfectly with expert testing and quality checks at every stage."
+                             openGraph={{
+                                 url: 'https://www.quecko.com/launchpad',
+                                 title: 'QA Engineers - Quecko',
+                                 description:
+                                     'Our QA engineers ensure your product works perfectly with expert testing and quality checks at every stage.',
+                                 site_name: 'Quecko',
+                             }}
+                         />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

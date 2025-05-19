@@ -10,20 +10,23 @@ import Usesnode from './usesnode';
 import Faqsnodes from './faqsnodes';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Nodeservice = () => {
     return (
         <>
-            <Head>
-                <title>Infrastructure Solutions - Quecko</title>
-                <meta property="og:title" content="Infrastructure Solutions - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Quecko delivers robust infrastructure solutions to power your digital transformation."
-                />
-                <meta property="og:url" content="https://quecko.com/infrastructure" />
-                <link rel="canonical" href="https://quecko.com/infrastructure" />
-            </Head>
+               <NextSeo
+                        title="Infrastructure Solutions - Quecko"
+                        description="Quecko delivers robust infrastructure solutions to power your digital transformation."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Infrastructure Solutions - Quecko',
+                            description:
+                                'Quecko delivers robust infrastructure solutions to power your digital transformation.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

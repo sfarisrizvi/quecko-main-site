@@ -13,20 +13,23 @@ import Stories from './component/Landing/stories';
 import Faqswebdevelp from './faqswebdevelp';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Webmarketing = () => {
     return (
         <>
-            <Head>
-                <title>Web3 Marketing - Quecko</title>
-                <meta property="og:title" content="Web3 Marketing - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Quecko offers cutting-edge Web3 marketing strategies to boost your brand’s visibility."
-                />
-                <meta property="og:url" content="https://quecko.com/web3-marketing" />
-                <link rel="canonical" href="https://quecko.com/web3-marketing" />
-            </Head>
+               <NextSeo
+                        title="Web3 Marketing - Quecko"
+                        description="Quecko offers cutting-edge Web3 marketing strategies to boost your brand’s visibility."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Web3 Marketing - Quecko',
+                            description:
+                                'Quecko offers cutting-edge Web3 marketing strategies to boost your brand’s visibility.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data mydata'>

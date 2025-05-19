@@ -9,10 +9,22 @@ import Work from './component/Landing/work';
 import Consultinguses from './consultinguses';
 import Consultingfaqs from './consultingfaqs';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Consulting = () => {
     return (
         <>
+               <NextSeo
+                        title="Enterprise & Consulting – Quecko"
+                        description="Enhance Enterprise & Consulting Transforming Businesses with Quecko."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Enterprise & Consulting – Quecko',
+                            description:
+                                'Enhance Enterprise & Consulting Transforming Businesses with Quecko.',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

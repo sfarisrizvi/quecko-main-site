@@ -58,7 +58,7 @@ const Services = () => {
                             </div></Link>
                             <div className='smart_contracts'>
                                 <div>
-                                    <Link href="/resource"><div><p>Mobile App</p></div></Link>
+                                    <Link href="/mobileapp-development"><div><p>Mobile App</p></div></Link>
                                     <Link href="/uiuxdesigner">  <div><p>UI/UX Designers</p></div></Link>
                                     <Link href="/qaenginers">  <div><p>QA Engineers</p></div></Link>
                                     <Link href="/blockchaindev">   <div><p>Blockchain developers</p></div></Link>

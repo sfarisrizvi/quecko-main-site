@@ -8,10 +8,23 @@ import Projects from './component/Landing/projects';
 import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Frontend = () => {
     return (
         <>
+         <NextSeo
+                        title="Frontend Developers - Quecko
+"
+                        description="Clean, responsive frontend development for modern web apps using React, Vue, and more."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Frontend Developers - Quecko',
+                            description:
+                                'Clean, responsive frontend development for modern web apps using React, Vue, and more.',
+                            site_name: 'Quecko',
+                        }}
+                    />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

@@ -10,20 +10,23 @@ import Crossuses from './crossuses';
 import Faqscross from './faqscross';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Crosschain = () => {
     return (
         <>
-            <Head>
-                <title>Interoperability & Cross-Chain Solutions - Quecko</title>
-                <meta property="og:title" content="Interoperability & Cross-Chain Solutions - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Enhance blockchain interoperability and cross-chain functionality with Quecko."
-                />
-                <meta property="og:url" content="https://quecko.com/interoperability-and-cross-chain-solutions" />
-                <link rel="canonical" href="https://quecko.com/interoperability-and-cross-chain-solutions" />
-            </Head>
+               <NextSeo
+                        title="Interoperability & Cross-Chain Solutions - Quecko"
+                        description="Enhance blockchain interoperability and cross-chain functionality with Quecko."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Interoperability & Cross-Chain Solutions - Quecko',
+                            description:
+                                'Enhance blockchain interoperability and cross-chain functionality with Quecko.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

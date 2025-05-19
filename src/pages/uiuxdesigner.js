@@ -8,10 +8,22 @@ import Projects from './component/Landing/projects';
 import Faqscontract from './faqscontract';
 import Work from './component/Landing/work';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Uiuxdesigner = () => {
     return (
          <>
+          <NextSeo
+                         title="UI/UX Designers - Quecko"
+                         description="Get sleek, user-focused designs that enhance product usability, boost engagement, and deliver a great digital experience."
+                         openGraph={{
+                             url: 'https://www.quecko.com/launchpad',
+                             title: 'UI/UX Designers - Quecko',
+                             description:
+                                 'Get sleek, user-focused designs that enhance product usability, boost engagement, and deliver a great digital experience.',
+                             site_name: 'Quecko',
+                         }}
+                     />
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>

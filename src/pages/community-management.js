@@ -11,20 +11,23 @@ import Marketingfaqs from './marketingfaqs';
 import Contactus from './contactus';
 import Link from 'next/link';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Marketingcomunity = () => {
     return (
         <>
-            <Head>
-                <title>Community Management - Quecko</title>
-                <meta property="og:title" content="Community Management - Quecko" />
-                <meta
-                    property="og:description"
-                    content="Build and nurture your Web3 community with Quecko’s expert management services."
-                />
-                <meta property="og:url" content="https://quecko.com/community-management" />
-                <link rel="canonical" href="https://quecko.com/community-management" />
-            </Head>
+               <NextSeo
+                        title="Community Management - Quecko"
+                        description="Build and nurture your Web3 community with Quecko’s expert management services."
+                        openGraph={{
+                            url: 'https://www.quecko.com/launchpad',
+                            title: 'Community Management - Quecko',
+                            description:
+                                'Build and nurture your Web3 community with Quecko’s expert management services.',
+                            site_name: 'Quecko',
+                        }}
+                    />
+
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
