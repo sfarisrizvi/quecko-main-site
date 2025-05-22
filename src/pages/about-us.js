@@ -191,7 +191,7 @@ const aboutdetail = () => {
                             <div className="animation-section style-1">
 
                                 <h1>About Us</h1>
-                                <p className='span_ptag'>At Quecko, we don’t just provide solutions; we build them. We’re actively involved in creating the foundation for a decentralized future, one block at a time.</p>
+                                <p className='span_ptag newtagsss'>At Quecko, we don’t just provide solutions; we build them. We’re actively involved in creating the foundation for a decentralized future, one block at a time.</p>
                             </div>
                         </div>
                         <img
@@ -250,7 +250,7 @@ const aboutdetail = () => {
                         <div className='top_middle'>
                             <div className='middle_colab'>
                                 <h2>Who we are?</h2>
-                                <p>Our story began with a small, passionate team of four visionaries who believed in the transformative power of blockchain technology. From these humble beginnings, Quecko. has grown into a powerhouse of over 100+ talented professionals. Each team member represents a unique building block, much like the individual blocks in a blockchain, contributing to the strength, resilience, and innovation of our company. Our commitment to pioneering Web3 solutions has enabled us to help businesses navigate the complexities of blockchain, creating decentralized applications and software that drive progress and innovation. We take pride in our role as the architects of a decentralized future, where every block—and every team member—plays a crucial part in building a more connected and empowered world.
+                                <p>We are a team of designers, developers and marketers that blend design, development, and strategy to bring bold Web3 ideas to life. From startups building their first smart contracts to established brands entering the blockchain space, we craft tailored solutions that are technically sound, creatively sharp, and strategically smart.
                                 </p>
                             </div>
                         </div> {/* Closing div for top_middle */}

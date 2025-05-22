@@ -30,7 +30,7 @@ const Crosschain = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -134,7 +134,7 @@ const Crosschain = () => {
                         <h2   className='contratt'>
                             Why Choose Interoperability & Cross-Chain Solutions for Your Business?
                         </h2>
-                        {/* <p>Blockchain technology is revolutionizing industries by offering unmatched security, transparency, and efficiency. Whether you’re exploring DeFi, NFT marketplaces, enterprise solutions, or custom blockchain networks, adopting blockchain is a strategic move toward a more secure, scalable, and decentralized future.</p> */}
+                        <p>Interoperability and cross-chain solutions empower your business to expand across ecosystems, reduce fragmentation, and stay future-ready. by unlocking seamless communication between multiple blockchain networks to enhance scalability, flexibility, and user experience.</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>

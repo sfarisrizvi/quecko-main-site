@@ -31,7 +31,7 @@ const Marketingcomunity = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -90,7 +90,7 @@ const Marketingcomunity = () => {
                             <h3   className='names_tags'>Active Engagement & Relationship Building
 
                             </h3>
-                            <p>We create personalized engagement strategies to interact with your community across platforms like Discord, Telegram, Twitter (X), and Reddit. Our team responds to comments, messages, and inquiries promptly, ensuring your audience feels heard and valued.
+                            <p>We create personalized engagement strategies to interact with your community across platforms like Discord, Telegram, X (twitter), and Reddit. Our team responds to comments, messages, and inquiries promptly, ensuring your audience feels heard and valued.
 
                             </p>
                         </div>
@@ -146,7 +146,8 @@ const Marketingcomunity = () => {
                         <h2   className='contratt'>Why Choose Quecko for Community Management?
 
                         </h2>
-                        <p>In the fast-paced world of Web3, your community is your most valuable asset. A well-managed community not only boosts brand loyalty but also drives organic growth, amplifies your project’s reach, and creates a space for meaningful interactions.</p>
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>
@@ -266,7 +267,7 @@ const Marketingcomunity = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    We manage communities on Discord, Telegram, Twitter (X), Reddit, LinkedIn, and more, tailoring our approach to your project’s needs.
+                                    We manage communities on Discord, Telegram, X (twitter), Reddit, LinkedIn, and more, tailoring our approach to your project’s needs.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">

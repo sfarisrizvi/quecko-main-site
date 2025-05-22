@@ -117,7 +117,7 @@ const Footer = () => {
                 <h3>Instagram</h3>
               </a>
               <a href="https://x.com/quecko_web3" target="blank">
-                <h3>Twitter (X)</h3>
+                <h3>X (twitter)</h3>
               </a>
             </div>
           </div>

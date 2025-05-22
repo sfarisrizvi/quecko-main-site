@@ -31,7 +31,7 @@ const Marketingcreative = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -138,6 +138,8 @@ const Marketingcreative = () => {
                     <div className='inner__textt'>
                         <h2  className='contratt'>Why Choose Us?
                         </h2>
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>
@@ -188,7 +190,7 @@ const Marketingcreative = () => {
                                     </defs>
                                 </svg>
                                 <h3>Measurable Results</h3>
-                                <p>We focus on creating designs that drive specific outcomes—whether increasing conversion rates, improving user retention, or strengthening brand recognition in competitive markets.</p>
+                                <p>We focus on creating designs that drive specific outcomes,whether increasing conversion rates, improving user retention, or strengthening brand recognition in competitive markets.</p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">

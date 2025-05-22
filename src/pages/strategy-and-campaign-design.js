@@ -31,7 +31,7 @@ const Marketingstrategy = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -87,7 +87,7 @@ const Marketingstrategy = () => {
                                 <path d="M39.375 31.8749L35.3325 28.3724C35.1989 28.2458 35.0309 28.1612 34.8496 28.1294C34.6682 28.0975 34.4815 28.1198 34.3128 28.1934C34.144 28.267 34.0006 28.3886 33.9005 28.5432C33.8004 28.6977 33.7481 28.8783 33.75 29.0624V29.9999C33.75 30.4972 33.5525 30.9741 33.2008 31.3258C32.8492 31.6774 32.3723 31.8749 31.875 31.8749H28.125C27.6277 31.8749 27.1508 31.6774 26.7992 31.3258C26.4475 30.9741 26.25 30.4972 26.25 29.9999C26.25 25.2281 18.7669 22.5562 10.3125 22.4999C9.0693 22.4999 7.87701 22.9938 6.99794 23.8729C6.11886 24.752 5.625 25.9442 5.625 27.1874C5.625 28.4306 6.11886 29.6229 6.99794 30.502C7.87701 31.3811 9.0693 31.8749 10.3125 31.8749C18.0994 31.8749 19.2094 10.6968 21.015 6.56244C21.32 5.86455 21.7905 5.2515 22.3857 4.77633C22.981 4.30116 23.683 3.97819 24.4311 3.83536C25.1792 3.69253 25.9509 3.73415 26.6793 3.9566C27.4077 4.17906 28.071 4.57566 28.6116 5.11209C29.1523 5.64852 29.5541 6.30861 29.7823 7.03525C30.0105 7.76189 30.0582 8.5332 29.9213 9.28242C29.7844 10.0316 29.467 10.7362 28.9965 11.3352C28.526 11.9341 27.9167 12.4094 27.2212 12.7199" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M5.625 39.375H39.375" stroke="black" strokeWidth="2.33333" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <h3   className='names_tags'>Twitter (X)
+                            <h3   className='names_tags'>X (twitter)
 
                             </h3>
                             <p>The go-to platform for crypto discussions, news, and influencer interactions. We create compelling content, execute viral campaigns, and engage the community to maximize visibility.
@@ -151,7 +151,8 @@ const Marketingstrategy = () => {
                         <h3  className='contratt'>Why Choose Us?
 
                         </h3>
-                        <p>Marketing in Web3 and blockchain requires a specialized approach. At Quecko, we don’t just market projects, we build movements. Here’s what sets us apart
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+
                         </p>
                     </div>
                     <div className='top_parents'>

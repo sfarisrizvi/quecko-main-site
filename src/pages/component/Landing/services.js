@@ -61,7 +61,7 @@ const Services = () => {
                                     <Link href="/mobileapp-development"><div><p>Mobile App</p></div></Link>
                                     <Link href="/uiuxdesigner">  <div><p>UI/UX Designers</p></div></Link>
                                     <Link href="/qaenginers">  <div><p>QA Engineers</p></div></Link>
-                                    <Link href="/blockchaindev">   <div><p>Blockchain developers</p></div></Link>
+                                    <Link href="/blockchaindev">   <div><p>Blockchain Developers</p></div></Link>
                                     <div className='view_moree' onClick={() => handleExpand(2)}>
                                         View More
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">

@@ -27,7 +27,7 @@ const Uiuxdesigner = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -343,10 +343,11 @@ const Uiuxdesigner = () => {
                 </div>
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h2 className='contratt'>Why hire UI/UX Designers from Quecko?
+                        <h2 className='contratt'>Why Hire UI/UX Designers from Quecko?
 
                         </h2>
-                        {/* <p>A strong social media presence is crucial for any Web3 and crypto project. We specialize in leveraging key platforms to boost brand awareness, engage communities, and attract investors. Our tailored strategies ensure that your project reaches the right audience with the right messaging.</p> */}
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>

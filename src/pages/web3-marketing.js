@@ -33,7 +33,7 @@ const Webmarketing = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data mydata'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -45,7 +45,10 @@ const Webmarketing = () => {
                     <div className='blogdetail'>
                         <div className='parenttext newtext'>
                             <div className='twicebtn'>
+                                <Link href="/?section=services">
                                 <p>Services</p>
+                                </Link>
+
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -288,7 +291,7 @@ const Webmarketing = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    We leverage Twitter (X), LinkedIn, Reddit, Instagram, Telegram, and Medium, tailoring strategies to maximize engagement and reach.
+                                    We leverage X (twitter), LinkedIn, Reddit, Instagram, Telegram, and Medium, tailoring strategies to maximize engagement and reach.
 
                                 </Accordion.Body>
                             </Accordion.Item>

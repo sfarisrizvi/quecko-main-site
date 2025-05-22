@@ -103,7 +103,7 @@ const Banner = () => {
               <h1 ref={textRef}> Building Blocks</h1>
             </div>
 
-            <p>Quecko is a leading blockchain development & marketing company. We empower Web3 startups to turn ideas into reality by building scalable, secure solutions including L1/L2 chains, CEXs and DEXs, multichain wallets and all kinds of dApps
+            <p>Quecko is a leading blockchain development & marketing company. We empower Web3 startups to turn ideas into reality by building scalable, secure solutions including L1/L2 chains, CEXs and DEXs, multichain wallets and all kinds of dApps.
             </p>
           </div>
 
