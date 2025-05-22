@@ -32,7 +32,7 @@ const Resourcelanding = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data mydata'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -49,7 +49,7 @@ const Resourcelanding = () => {
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-                                <span>Staff Augmentation</span>
+                                <span>Resource Augmentation</span>
                             </div>
                             <h1 className='mainpara'>Resource Augmentation Services</h1>
                             <p className='para'>Our resource augmentation services equip you with on-demand tech talent for rapid growth, cost reduction, and adaptability to market shifts. We can help you streamline project development, fill staffing gaps and find the experts who match your needs best.
@@ -78,7 +78,7 @@ const Resourcelanding = () => {
                 </div> */}
 
                 <div className='Development'>
-                    <h2>Resource Augmentation Services For Different Roles</h2>
+                    <h2>Role-Based Services</h2>
                     <div className='mains_cardss'>
                         <Link href="/uiuxdesigner">
                             <div className='card__one'>
@@ -303,7 +303,7 @@ const Resourcelanding = () => {
             <section className='partner_side'>
                 <div className='inner_partners'>
                     <p>PARTNERS</p>
-                    <h2 className='partnerss'>Clients Who Partnered With Us For Resource Augmentation</h2>
+                    <h2 className='partnerss'>Expertise Delivered To</h2>
                     <div className='cards_partners'>
                         <div className='imgs_tabs'>
                             <img src='\Assets\legionlogo.png' className="img-fluid" />
@@ -602,7 +602,7 @@ const Resourcelanding = () => {
                 <div className='left_siide'>
                     <p>Contact us</p>
                     <h2 className='cliiient'>Let's Get Started with Resource Augmentation</h2>
-                    <p className='spantextt'>Contact us to discuss what kind of Web3 professionals you need and let's start working together!
+                    <p className='spantextt2 minetextneww'>Contact us to discuss what kind of Web3 professionals you need and let's start working together!
 
                     </p>
                     <span>Get in touch</span>

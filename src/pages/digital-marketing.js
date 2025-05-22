@@ -31,7 +31,7 @@ const Marketingdigital = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -90,7 +90,7 @@ const Marketingdigital = () => {
                             </svg>
                             <h3   className='names_tags'>Paid Advertising (PPC)
                             </h3>
-                            <p>Strategic paid ad campaigns are run on platforms like Google Ads, Twitter (X), LinkedIn, Facebook, and Instagram to deliver immediate visibility. These campaigns drive targeted traffic and generate high-quality leads for your Web3 project.
+                            <p>Strategic paid ad campaigns are run on platforms like Google Ads, X (twitter), LinkedIn, Facebook, and Instagram to deliver immediate visibility. These campaigns drive targeted traffic and generate high-quality leads for your Web3 project.
 
 
                             </p>
@@ -116,7 +116,7 @@ const Marketingdigital = () => {
                             </svg>
                             <h3   className='names_tags'>Social Media Ads
                             </h3>
-                            <p>Targeted ad campaigns on Twitter (X), LinkedIn, Instagram, and Reddit promote your project to crypto enthusiasts, investors, and developers. These ads build brand awareness, engage communities, and drive meaningful conversions.
+                            <p>Targeted ad campaigns on X (twitter), LinkedIn, Instagram, and Reddit promote your project to crypto enthusiasts, investors, and developers. These ads build brand awareness, engage communities, and drive meaningful conversions.
                             </p>
                         </div>
                         <div className='card__one'>
@@ -147,6 +147,8 @@ const Marketingdigital = () => {
                         <h2  className='contratt'>Why Choose Us for Digital Marketing?
 
                         </h2>
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+</p>
 
                     </div>
                     <div className='top_parents'>
@@ -180,8 +182,8 @@ const Marketingdigital = () => {
                                     </defs>
                                 </svg>
                                 <h3>Tailored Campaigns</h3>
-                                <p>We customize our strategies to align with your project’s goals, audience, and budget. Every campaign is designed to meet your specific needs and objectives
-                                    .
+                                <p>We customize our strategies to align with your project’s goals, audience, and budget. Every campaign is designed to meet your specific needs and objectives.
+
                                 </p>
                             </div>
                         </div>
@@ -262,7 +264,7 @@ const Marketingdigital = () => {
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    We run ads on Google, Twitter (X), LinkedIn, Facebook, Instagram, and Reddit, depending on your target audience.
+                                    We run ads on Google, X (twitter), LinkedIn, Facebook, Instagram, and Reddit, depending on your target audience.
 
                                 </Accordion.Body>
                             </Accordion.Item>

@@ -31,7 +31,7 @@ const Marketingwriting = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -140,7 +140,8 @@ const Marketingwriting = () => {
                     <div className='inner__textt'>
                         <h2   className='contratt'>Why Choose Us for Technical Writing?
                         </h2>
-                        <p>Our writers have deep knowledge of blockchain technology, smart contracts, DeFi, NFTs, and other Web3 concepts and we ensure to deliver the best content tailored to our client’s needs.
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+
                         </p>
                     </div>
                     <div className='top_parents'>

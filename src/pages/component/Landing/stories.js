@@ -20,7 +20,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
 
 const Stories = () => {
 
-    
+
     const owl_option = {
         nav: true,
         dots: false,
@@ -111,11 +111,11 @@ const Stories = () => {
                 <div className='inner_bloggs'>
                     <div className='textual_div'>
                         <span className='blogstag'>Blogs</span>
-                        <h2>Latest stories from Quecko</h2>
+                        <h2>Latest Stories from Quecko</h2>
                     </div>
                     <div className='bottom_side'>
-                     
-                        
+
+
                          {Loader ? <Loader1/> : (
                             <div className="owl_option">
 
@@ -152,7 +152,7 @@ const Stories = () => {
                             </div>
 
                         )}
-                 
+
                     </div>
                 </div>
             </section>

@@ -28,7 +28,7 @@ const Blockchaindev = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -339,10 +339,11 @@ const Blockchaindev = () => {
                 </div>
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h2 className='contratt'>Why hire blockchain developers from Quecko?
+                        <h2 className='contratt'>Why Hire blockchain developers from Quecko?
 
                         </h2>
-                        <p>A strong social media presence is crucial for any Web3 and crypto project. We specialize in leveraging key platforms to boost brand awareness, engage communities, and attract investors. Our tailored strategies ensure that your project reaches the right audience with the right messaging.</p>
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>
@@ -359,7 +360,7 @@ const Blockchaindev = () => {
                                     </defs>
                                 </svg>
                                 <h3> Specialized Expertise                                </h3>
-                                <p>Access blockchain specialists with proven experience across multiple protocols, languages, and frameworks
+                                <p>Access blockchain specialists with proven experience across multiple protocols, languages, and frameworks.
                                 </p>
                             </div>
                             <div className='cardee'>
@@ -378,7 +379,7 @@ const Blockchaindev = () => {
                                 </svg>
                                 <h3>Accelerated Development
                                 </h3>
-                                <p>Reduce time-to-market by leveraging our developers' pre-existing knowledge of blockchain best practices
+                                <p>Reduce time-to-market by leveraging our developers' pre-existing knowledge of blockchain best practices.
 
                                 </p>
                             </div>
@@ -396,7 +397,7 @@ const Blockchaindev = () => {
                                 </svg>
                                 <h3>Security-First Approach
                                 </h3>
-                                <p>Implement solutions that prioritize rigorous security standards through established audit protocols</p>
+                                <p>Implement solutions that prioritize rigorous security standards through established audit protocols.</p>
                             </div>
                             <div className='cardee'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -415,7 +416,7 @@ const Blockchaindev = () => {
                                 <h3>Cost Efficiency
 
                                 </h3>
-                                <p> Eliminate recruitment and onboarding expenses while accessing specialized talent immediately
+                                <p> Eliminate recruitment and onboarding expenses while accessing specialized talent immediately.
 
                                     Our blockchain specialists adapt to your team's workflow and tools while maintaining the highest standards of code quality and security practices, allowing your projects to achieve faster time-to-market without compromising on technical excellence.
                                 </p>

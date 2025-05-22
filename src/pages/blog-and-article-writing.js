@@ -31,7 +31,7 @@ const Marketingblog = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -154,7 +154,8 @@ const Marketingblog = () => {
 
 
                         </h2>
-                        <p>High-quality, SEO-optimized content not only educates your audience but also builds trust, drives traffic, and enhances your brand’s credibility. In the Web3 world, where innovation is constant, thought leadership sets you apart as a pioneer in the industry.
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+
                         </p>
                     </div>
                     <div className='top_parents'>

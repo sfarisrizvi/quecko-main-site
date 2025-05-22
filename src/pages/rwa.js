@@ -29,7 +29,7 @@ const Rawdetails = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -56,7 +56,7 @@ const Rawdetails = () => {
                             <h1 className='mainpara'>
                                 Real World Assets (RWA)
                             </h1>
-                            <p className='para'>Unlock liquidity, accessibility, and security by tokenizing real estate, commodities, and more—bridging traditional assets with the future of finance.
+                            <p className='para'>Unlock liquidity, accessibility, and security by tokenizing real estate, commodities, and more bridging traditional assets with the future of finance.
                             </p>
 
                         </div>

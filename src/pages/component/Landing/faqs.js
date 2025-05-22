@@ -8,7 +8,7 @@ const Faqs = () => {
                 <div className='inner_faqs'>
                     <div className='middle_left'>
                         <span className='faqstag'>FAQ</span>
-                        <h2>Answer to your questions</h2>
+                        <h2>Answers to Your Questions</h2>
                     </div>
                     <div className='middle_right'>
                         <Accordion defaultActiveKey="0">

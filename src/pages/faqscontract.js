@@ -8,7 +8,7 @@ const Faqscontract = () => {
                 <div className='inner_faqs'>
                     <div className='middle_left'>
                         <span className='faqqs_div'>FAQ</span>
-                        <h2>Frequently Asked Questions (FAQs) About Blockchain Development</h2>
+                        <h2>FAQs About Blockchain Development</h2>
                     </div>
                     <div className='middle_right'>
                         <Accordion defaultActiveKey="0">

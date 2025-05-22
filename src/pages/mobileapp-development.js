@@ -27,7 +27,7 @@ const Resource = () => {
             <section className='smart_contract'>
                 <Header />
                 <div className='inner_data'>
-                    <img className="downarrow" src="\Assets\downarrow.svg" />
+                    {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay
@@ -279,7 +279,7 @@ const Resource = () => {
                                 <path d="M6.1875 13.125L22.5 22.5L38.8125 13.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M22.5 41.25V22.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <h3>React-Native,
+                            <h3>React-Native
 
                             </h3>
                         </div>
@@ -348,10 +348,11 @@ const Resource = () => {
                 </div>
                 <div className='Application'>
                     <div className='inner__textt'>
-                        <h2 className='contratt'>Why hire mobile app developers from Quecko?
+                        <h2 className='contratt'>Why Hire mobile app developers from Quecko?
 
                         </h2>
-                        {/* <p>A strong social media presence is crucial for any Web3 and crypto project. We specialize in leveraging key platforms to boost brand awareness, engage communities, and attract investors. Our tailored strategies ensure that your project reaches the right audience with the right messaging.</p> */}
+                        <p>We combine deep industry knowledge with a commitment to delivering tailored, high-quality solutions. Our team focuses on understanding your needs and providing value-driven results you can trust.
+</p>
                     </div>
                     <div className='top_parents'>
                         <div className='parents_cards'>
