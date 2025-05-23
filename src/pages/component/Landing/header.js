@@ -56,7 +56,7 @@ const Header = () => {
 
 
         gsap.to(navbarRef.current, {
-          width: "50vw",
+          width: "60vw",
           left: "50%",
           x: "-50%",
           duration: 0.5,
@@ -135,7 +135,7 @@ const Header = () => {
           </Link>
 
           <div className="left_side" ref={navLinksRef}>
-            <Link href="/" ref={newLogoRef} className="newlogo"><img ref={newLogoRefRotate} src="/Assets/phonennav.svg" alt="img" className="img-fluid" /></Link>
+            <Link href="/" ref={newLogoRef} className="newlogo" style={{flexShrink: "0"}}><img ref={newLogoRefRotate} src="/Assets/phonennav.svg" alt="img" className="img-fluid" /></Link>
             <Link href="/?section=services" scroll={false}>
               <p className="nav-link">Service</p>
             </Link>
