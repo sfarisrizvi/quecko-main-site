@@ -85,7 +85,7 @@ const Footer = () => {
                 </Link>
 
 
-                <h3 className="connecttt">Get Updates</h3>
+                {/* <h3 className="connecttt">Get Updates</h3> */}
                 <a href="/privacypolicy">
                 <h3>Privacy Policy <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path d="M4.66669 4.86377H11.3334V11.5304" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />

@@ -48,13 +48,13 @@ const Marketingdetail = () => {
                                 </svg>
                                 <Link href="/web3-marketing">
 
-                                    <p>web3-marketing</p>
+                                    <p>Web3-Marketing</p>
                                 </Link>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                                <span>social-media-management</span>
+                                <span>Social-Media-Management</span>
                             </div>
                             <h1 className='mainpara'>Social Media Management
 

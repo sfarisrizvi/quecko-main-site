@@ -7,7 +7,7 @@ const Consultingfaqs = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h6  className='faqqs_div'>FAQ</h6>
+                        <h6  className='faqqs_div'>FAQ<span className='small_text'>s</span></h6>
                         <h2>Frequently Asked Questions (FAQs) About Enterprise & Consulting Services</h2>
                     </div>
                     <div className='middle_right'>

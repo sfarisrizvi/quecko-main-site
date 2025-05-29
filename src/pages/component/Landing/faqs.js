@@ -7,7 +7,7 @@ const Faqs = () => {
             <section className='main_faqs'id="faqs">
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <span className='faqstag'>FAQ</span>
+                        <span className='faqstag'>FAQ<span className='small_text'>s</span></span>
                         <h2>Answers to Your Questions</h2>
                     </div>
                     <div className='middle_right'>

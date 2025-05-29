@@ -7,7 +7,7 @@ const Faqscontract = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <span className='faqqs_div'>FAQ</span>
+                        <span className='faqqs_div'>FAQ<span className='small_text'>s</span></span>
                         <h2>FAQs About Blockchain Development</h2>
                     </div>
                     <div className='middle_right'>

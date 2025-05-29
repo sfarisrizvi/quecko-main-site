@@ -81,7 +81,7 @@ const Aboutus = () => {
                                             <p>Stable33 Protocol</p>
                                         </div>
                                     </div>
-                                    <p>I believe that with hard work, determination, and an amazing team of Quecko Inc., we can overcome any obstacle and achieve anything we set our minds to. As we enter 2023, we&apos;re more committed than ever to finalizing the protocol and focusing on adding more and more utility to the STABL33 PROTOCOL Ecosystem.</p>
+                                    <p>I believe that with hard work, determination, and an amazing team of Quecko, we can overcome any obstacle and achieve anything we set our minds to. As we enter 2023, we&apos;re more committed than ever to finalizing the protocol and focusing on adding more and more utility to the STABL33 PROTOCOL Ecosystem.</p>
                                 </div>
                                 <div className="cards">
                                     <div className="inner_cards">

@@ -53,7 +53,7 @@ const Webmarketing = () => {
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-                                <span>web3-marketing
+                                <span>Web3-Marketing
                                 </span>
                             </div>
                             <h1 className='mainpara'>Web3 Marketing
@@ -263,7 +263,7 @@ const Webmarketing = () => {
             <section className='main_faqs_new'>
                 <div className='inner_faqs'>
                     <div className='middle_left'>
-                        <h6  className='faqqs_div'>FAQ</h6>
+                        <h6  className='faqqs_div'>FAQ<span className='small_text'>s</span></h6>
                         <h2>FAQs About Web3 Marketing
                         </h2>
                     </div>
