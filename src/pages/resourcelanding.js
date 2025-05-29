@@ -603,7 +603,7 @@ const Resourcelanding = () => {
             <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
-                    <h2 className='cliiient'>Let's Get Started with Resource Augmentation</h2>
+                    <h2 className='cliiient'>Let's get started with resource augmentation</h2>
                     <p className='spantextt2 minetextneww'>Contact us to discuss what kind of Web3 professionals you need and let's start working together!
 
                     </p>
