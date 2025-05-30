@@ -4,6 +4,8 @@ const webpack = require("webpack");
 const nextConfig = {
   reactStrictMode: false,
 
+  output: 'standalone',
+
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.plugins.push(
