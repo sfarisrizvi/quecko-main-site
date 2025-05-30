@@ -1,6 +1,3 @@
-
-"use client"
-
 import "@/styles/app.scss"
 import Script from "next/script"
 import useLenisGsap from "@/hooks/useLenis"
