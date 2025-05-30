@@ -104,6 +104,16 @@ export default function App({ Component, pageProps }) {
     <>
 
 
+      <AnimatePresence mode="wait">
+        <PageTransition key={router.route}>
+          {loading && <Loader />}
+          {!loading && <Component {...pageProps} />}
+          <TawkTo />
+        </PageTransition>
+      </AnimatePresence>
+
+
+      
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -168,13 +178,6 @@ export default function App({ Component, pageProps }) {
         />
       </noscript>
 
-      <AnimatePresence mode="wait">
-        <PageTransition key={router.route}>
-          {loading && <Loader />}
-          {!loading && <Component {...pageProps} />}
-          <TawkTo />
-        </PageTransition>
-      </AnimatePresence>
 
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
