@@ -78,7 +78,7 @@ export default async function handler(req, res) {
         formData.append("b1-2", name || ''); // Handle potentially undefined fields
         formData.append("b1-5", email || '');
         formData.append("b1-3", message || '');
-        formData.append("b1-6", telegram || ''); // Make sure telegram is handled if optional
+        formData.append("b1-7", telegram || ''); // Make sure telegram is handled if optional
 
         const bitFormResponse = await axios.post(
             // 'https://dev.quecko.com/wp-json/bitform/v1/entry/1',
