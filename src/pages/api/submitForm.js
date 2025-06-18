@@ -47,7 +47,7 @@ export default async function handler(req, res) {
 
         const verificationData = recaptchaVerificationResponse.data;
 
-        console.log("reCAPTCHA Verification Data:", verificationData); // Log for debugging
+        // console.log("reCAPTCHA Verification Data:", verificationData); // Log for debugging
 
         // Check if verification was successful
         if (!verificationData.success) {
@@ -71,7 +71,7 @@ export default async function handler(req, res) {
         // Optional: Check score threshold if using v3
 
         // --- 2. If reCAPTCHA is valid, proceed to submit to BitForm ---
-        console.log("reCAPTCHA verified successfully. Submitting to BitForm...");
+        // console.log("reCAPTCHA verified successfully. Submitting to BitForm...");
 
         // Create form-data object and append fields (original logic)
         const formData = new FormData();
@@ -93,7 +93,7 @@ export default async function handler(req, res) {
             }
         );
 
-        console.log("BitForm submission successful.");
+        // console.log("BitForm submission successful.");
         return res.status(200).json({ success: true, data: bitFormResponse.data });
 
     } catch (error) {
