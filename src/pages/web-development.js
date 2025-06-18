@@ -18,11 +18,11 @@ const Webdevelopment = () => {
     return (
         <>
                <NextSeo
-                        title="Web Development - Quecko"
+                        title="Web3 Development - Quecko"
                         description="Quecko provides expert web development services tailored to your business needs."
                         openGraph={{
                             url: 'https://www.quecko.com/launchpad',
-                            title: 'Web Development - Quecko',
+                            title: 'Web3 Development - Quecko',
                             description:
                                 'Quecko provides expert web development services tailored to your business needs.',
                             site_name: 'Quecko',
@@ -51,10 +51,10 @@ const Webdevelopment = () => {
                                     <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
 
-                                <span>Web Development</span>
+                                <span>Web3 Development</span>
                             </div>
-                            <h1 className='mainpara'>Web Development</h1>
-                            <p className='para'>Quecko empowers businesses with cutting-edge Web3 development solutions, helping you build secure, scalable, and innovative blockchain applications. Whether you're launching DeFi platforms, tokenizing real-world assets, or developing enterprise-grade blockchain infrastructure, our expert developers deliver tailored solutions to meet your needs.
+                            <h1 className='mainpara'>Web3 Development</h1>
+                            <p className='para'>Quecko empowers businesses with cutting-edge Web3 development solutions, helping you build secure, scalable and innovative blockchain applications. Whether you're launching DeFi platforms, tokenizing real-world assets, or developing enterprise-grade blockchain infrastructure, our expert developers deliver tailored solutions to meet your needs.
 
                             </p>
 

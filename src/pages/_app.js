@@ -10,7 +10,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import TawkTo from "./component/Tawkto"
 import Loader from "@/hooks/loader"
-import { DefaultSeo } from "next-seo"
+// import { DefaultSeo } from "next-seo"
 
 export default function App({ Component, pageProps }) {
   useLenisGsap()

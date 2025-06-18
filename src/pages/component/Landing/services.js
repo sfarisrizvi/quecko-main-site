@@ -58,7 +58,7 @@ const Services = () => {
                             </div></Link>
                             <div className='smart_contracts'>
                                 <div>
-                                    <Link href="/mobileapp-development"><div><p>Mobile App</p></div></Link>
+                                    <Link href="/mobileapp-development"><div><p>Mobile App Developers</p></div></Link>
                                     <Link href="/uiuxdesigner">  <div><p>UI/UX Designers</p></div></Link>
                                     <Link href="/qaenginers">  <div><p>QA Engineers</p></div></Link>
                                     <Link href="/blockchaindev">   <div><p>Blockchain Developers</p></div></Link>
@@ -73,8 +73,8 @@ const Services = () => {
                                 <div className='text_ual_div text_ual_div2'>
                                     <Link href="/backend"><div><p>Backend Developers</p></div></Link>
                                     <Link href="/frontend">   <div><p>Frontend Developers</p></div></Link>
-                                    <Link href="/technical">   <div><p>Technical Writer</p></div></Link>
-                                    <Link href="/marketingexpert">    <div><p> Marketing Expert</p></div></Link>
+                                    <Link href="/technical">   <div><p>Technical Writers</p></div></Link>
+                                    <Link href="/marketingexpert">    <div><p> Marketing Experts</p></div></Link>
                                        <div className='view_moree less_div lesss_newwww' onClick={() => handleExpand(2)}>
                                         View Less
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">

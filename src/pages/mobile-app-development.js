@@ -55,7 +55,7 @@ const Mobileapp = () => {
                             </div>
                             <h1 className='mainpara'>Mobile App Development
                             </h1>
-                            <p className='para'>Mobile applications are transforming the future of several industries, including finance, healthcare, telecommunication, real estate, and more. From blockchain wallets and decentralized apps to traditional mobile solutions, we build secure, scalable, and high-performance applications tailored to your needs.
+                            <p className='para'>Mobile applications are transforming the future of several industries, including finance, healthcare, telecommunication, real estate and more. From blockchain wallets and decentralized apps to traditional mobile solutions, we build secure, scalable and high-performance applications tailored to your needs.
                             </p>
 
                         </div>

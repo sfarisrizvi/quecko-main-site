@@ -56,7 +56,7 @@ const Smartcontract = () => {
                                 <span>Blockchain Development</span>
                             </div>
                             <h1 className='mainpara'>Blockchain Development</h1>
-                            <p className='para'>Quecko specializes in next-gen blockchain development, providing battle-tested blockchain solutions for DeFi, GameFi, and enterprise applications. With experience across Solana, Ethereum, Polygon, and other top chains, we create solutions that are secure, scalable, and optimized for mass adoption.</p>
+                            <p className='para'>Quecko specializes in next-gen blockchain development, providing battle-tested blockchain solutions for DeFi, GameFi and enterprise applications. With experience across Solana, Ethereum, Polygon, and other top chains, we create solutions that are secure, scalable, and optimized for mass adoption.</p>
 
                         </div>
 
