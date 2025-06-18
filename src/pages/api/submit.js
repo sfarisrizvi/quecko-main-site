@@ -22,14 +22,14 @@ export default async function handler(req, res) {
             console.error('Form parse error:', err);
             return res.status(500).json({ success: false, message: 'Form parse error' });
         }
-        console.log('req: ', req.body);
+        // console.log('req: ', req.body);
 
         
         try {
             const { name, email, phone, jobTitle } = fields;
             const cvFile = files.cvFile;
 
-            console.log('cvFile:', cvFile);
+            // console.log('cvFile:', cvFile);
 
             const bitFormData = new FormData();
             bitFormData.append('b2-2', name);

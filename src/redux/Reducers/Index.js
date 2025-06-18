@@ -9,7 +9,7 @@ let initState = {
 export const UserReducer = (state = initState, action) => {
 
   const { type, payload } = action; //object destr
-  console.log(payload);
+  // console.log(payload);
   switch (type) {
     case "GETUSER":
       return {

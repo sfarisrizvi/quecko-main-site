@@ -13,6 +13,7 @@ import Faqswebdevelp from './faqswebdevelp';
 import Link from 'next/link';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import Getintouch from './GetinTouch';
 
 const Webdevelopment = () => {
     return (
@@ -59,7 +60,8 @@ const Webdevelopment = () => {
                             </p>
 
                         </div>
-                             <div className='forms_div_section'>
+                        <Getintouch/>
+                             {/* <div className='forms_div_section'>
                             <div className='inputttunner'>
                                 <input placeholder='Name' type="text" id="fname" name="fname" />
                                 <input placeholder='Email@company.com' type="text" id="fname" name="fname" />
@@ -67,7 +69,7 @@ const Webdevelopment = () => {
                             <input placeholder='Telegram' type="text" id="fname" name="fname" />
                             <textarea placeholder='Your Message' id="w3review" name="w3review" rows="4" cols="50" />
                             <button>Get in Touch</button>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

@@ -96,8 +96,7 @@ const contactusdetail = () => {
                 emailjsPayload, // Send payload (potentially without token)
                 '5_dvI4T78SrG6vKnY'
             );
-            console.log('EmailJS sent:', result.text);
-
+ 
             // --- IMPORTANT: Backend Verification ---
             // Your '/api/submitForm' endpoint *must* verify the 'g-recaptcha-response' token
             // using your SECRET KEY ("6Lde_wIlAAAAAEy4cJehUYb9cAcc2_OPfnLnpz_R") before processing the form.
@@ -158,7 +157,7 @@ const contactusdetail = () => {
 
     // Function to handle reCAPTCHA token changes
     const handleRecaptchaChange = (token) => {
-        console.log("reCAPTCHA token:", token);
+        // console.log("reCAPTCHA token:", token);
         setRecaptchaToken(token);
         // Clear reCAPTCHA specific error when user interacts
         if (errors.recaptcha) {
@@ -168,7 +167,7 @@ const contactusdetail = () => {
 
     // Function to handle reCAPTCHA expiration
     const handleRecaptchaExpire = () => {
-        console.log("reCAPTCHA expired");
+        // console.log("reCAPTCHA expired");
         setRecaptchaToken(null);
     };
 

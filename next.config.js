@@ -3,6 +3,9 @@ const webpack = require("webpack");
 
 const nextConfig = {
   reactStrictMode: false,
+  productionBrowserSourceMaps: true,
+
+  output: 'standalone',
 
   webpack: (config, { isServer }) => {
     if (!isServer) {
