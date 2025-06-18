@@ -64,7 +64,7 @@ const getPages = async () => {
         return [];  // Return an empty array or handle this case as needed
     }
 
-    console.log("blogSlugs: ", blogSlugs);
+    // console.log("blogSlugs: ", blogSlugs);
 
     return files
         .map((file) => {

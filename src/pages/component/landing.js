@@ -120,7 +120,8 @@ const Landing = () => {
     <>
       <DefaultSeo
         title="Quecko - Leading the Blockchain Revolution with Innovative Solutions"
-        // description="Quecko Inc. delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
+        
+        description="Quecko delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
         canonical={canonicalUrl}
         openGraph={{
           type: 'website',
@@ -128,8 +129,7 @@ const Landing = () => {
           url: 'https://quecko.com/',
           site_name: 'Quecko',
           title: 'Quecko - Leading the Blockchain Revolution with Innovative Solutions',
-          description:
-            'Revolutionizing businesses with our cutting-edge blockchain solutions. Secure, decentralized, and scalable – transforming industries for a better, transparent future.',
+          description: 'Revolutionizing businesses with our cutting-edge blockchain solutions. Secure, decentralized, and scalable – transforming industries for a better, transparent future.',
           images: [
             {
               url: 'https://res.cloudinary.com/drt6vurtt/image/upload/c_pad,w_500/v1742572273/queckosite%20%28new%29/images/Untitled-1_rshcle.png',
@@ -144,7 +144,7 @@ const Landing = () => {
           title: 'Quecko - Leading the Blockchain Revolution with Innovative Solutions',
           description:
             'Revolutionizing businesses with our cutting-edge blockchain solutions. Secure, decentralized, and scalable – transforming industries for a better, transparent future.',
-          site: '@Quecko_Inc',
+          site: '@Quecko',
         }}
         additionalMetaTags={[
           { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },

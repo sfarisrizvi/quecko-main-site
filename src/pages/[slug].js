@@ -128,8 +128,8 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
     };
 
 
-    console.log(blogdetail?.yoast_head_json?.description, 'yoast_head_json?.description')
-    console.log(blogdetail, 'blogdetail')
+    // console.log(blogdetail?.yoast_head_json?.description, 'yoast_head_json?.description')
+    // console.log(blogdetail, 'blogdetail')
     // if (error) {
     //     return (
     //         <>

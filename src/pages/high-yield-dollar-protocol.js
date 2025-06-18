@@ -8,13 +8,13 @@ const highprotocol = () => {
     return (
         <>
          <NextSeo
-                        title="High Yield Dollar Protocol (HYDT)"
-                        description="A next-gen protocol enabling secure, decentralized data sharing and monetization."
+                        title="high-yield-dollar-protocol"
+                        description="decentralized stablecoin protocol offering high-yield opportunities through innovative DeFi mechanisms."
                         openGraph={{
                             url: 'https://www.quecko.com/high-yield-dollar-protocol',
-                            title: 'High Yield Dollar Protocol (HYDT)',
+                            title: 'high-yield-dollar-protocol',
                             description:
-                                'A next-gen protocol enabling secure, decentralized data sharing and monetization.',
+                                'decentralized stablecoin protocol offering high-yield opportunities through innovative DeFi mechanisms.',
                             site_name: 'Quecko',
                         }}
                     />

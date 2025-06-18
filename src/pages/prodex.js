@@ -9,12 +9,12 @@ const prodex = () => {
         <>
               <NextSeo
                                 title="Prodex – Quecko"
-                                description="Automate and enhance your loyalty program with seamless crypto rewards."
+                                description="A decentralized exchange with advanced trading features, real-time data, and seamless token swaps."
                                 openGraph={{
                                     url: 'https://www.quecko.com/reward-flow',
                                     title: 'Prodex – Quecko',
                                     description:
-                                        'Automate and enhance your loyalty program with seamless crypto rewards.',
+                                        'A decentralized exchange with advanced trading features, real-time data, and seamless token swaps.',
                                     site_name: 'Quecko',
                                 }}
                             />

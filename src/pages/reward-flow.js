@@ -9,12 +9,12 @@ const rewardflow = () => {
         <>
               <NextSeo
                                 title="Reward Flow – Quecko"
-                                description="Automate and enhance your loyalty program with seamless crypto rewards."
+                                description="A gamified reward system designed to boost user engagement and retention through on-chain incentives."
                                 openGraph={{
                                     url: 'https://www.quecko.com/reward-flow',
                                     title: 'Reward Flow – Quecko',
                                     description:
-                                        'Automate and enhance your loyalty program with seamless crypto rewards.',
+                                        'A gamified reward system designed to boost user engagement and retention through on-chain incentives.',
                                     site_name: 'Quecko',
                                 }}
                             />

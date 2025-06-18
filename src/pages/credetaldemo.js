@@ -50,15 +50,15 @@ const careerdetail = () => {
         jobTitle: '',
     });
 
-    console.log('form: ', form);
-    console.log(form.cvFile, 'form.cvFile');
+    // console.log('form: ', form);
+    // console.log(form.cvFile, 'form.cvFile');
 
     const [loading, setLoading] = useState(false);
     const [successMsg, setSuccessMsg] = useState('');
     const [errorMsg, setErrorMsg] = useState('');
     const [errors, setErrors] = useState({});
     const [file, setFile] = useState(null);
-    console.log("file: ", file)
+    // console.log("file: ", file)
 
 
     // const handleSubmit = async () => {
@@ -147,10 +147,10 @@ const careerdetail = () => {
     // };
 
     const handleSubmit = async (e) => {
-        console.log("first")
+        // console.log("first")
         e.preventDefault();
         setLoading(true);
-        console.log("file", file)
+        // console.log("file", file)
 
         const payload = {
             name: form.name,
@@ -163,8 +163,8 @@ const careerdetail = () => {
 
 
 
-        console.log('payload: ', payload);
-        console.log(payload.cvFile, 'payload.cvFile');
+        // console.log('payload: ', payload);
+        // console.log(payload.cvFile, 'payload.cvFile');
         const validationErrors = {};
         if (!payload.name) validationErrors.name = 'Name is required';
         if (!payload.email) validationErrors.email = 'Email is required';
@@ -189,16 +189,16 @@ const careerdetail = () => {
 
 
 
-        console.log('formData: ', formData);
+        // console.log('formData: ', formData);
 
         // const data = new FormData();
         // Object.entries(payload).forEach(([key, value]) => data.append(key, value));
         // data.append('cvFile', form.cvFile); // this is the only file
         try {
 
-            console.log('data: ', payload);
+            // console.log('data: ', payload);
             const res = await axios.post('/api/submit', formData); // let browser handle headers
-            console.log('res: ', res.data);
+            // console.log('res: ', res.data);
             if (res.data.success) {
                 setSuccessMsg('Application submitted!');
                 setForm({ name: '', email: '', phone: '', jobTitle: '', cvFile: null });
@@ -225,7 +225,7 @@ const careerdetail = () => {
     const handleCsvFileSelect = (e) => {
         const file = e.target.files[0];
         if (!file) {
-            console.log("No file selected");
+            // console.log("No file selected");
             return;
         }
         setFile(file);

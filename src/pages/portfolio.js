@@ -10,6 +10,13 @@ import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 const Portfolio = () => {
     const textRef = useRef(null);
 

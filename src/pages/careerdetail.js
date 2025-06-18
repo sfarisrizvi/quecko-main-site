@@ -127,7 +127,7 @@ const careerdetail = () => {
         }
 
         try {
-            console.log("Submitting form with file:", form.cvFile ? form.cvFile.name : "No file")
+            // console.log("Submitting form with file:", form.cvFile ? form.cvFile.name : "No file")
 
             const res = await axios.post("/api/submit", formData, {
                 headers: {
