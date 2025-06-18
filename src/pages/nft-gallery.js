@@ -9,12 +9,12 @@ const nftgallery = () => {
         <>
               <NextSeo
                                 title="NFT Gallery – Quecko"
-                                description="Explore, collect, and showcase unique NFTs in a dynamic gallery experience."
+                                description="A dynamic NFT gallery platform for creators and collectors to showcase, mint, and trade digital art effortlessly."
                                 openGraph={{
                                     url: 'https://www.quecko.com/nft-gallery',
                                     title: 'NFT Gallery – Quecko',
                                     description:
-                                        'Explore, collect, and showcase unique NFTs in a dynamic gallery experience.',
+                                        'A dynamic NFT gallery platform for creators and collectors to showcase, mint, and trade digital art effortlessly.',
                                     site_name: 'Quecko',
                                 }}
                             />

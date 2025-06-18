@@ -8,13 +8,14 @@ const vionexchange = () => {
     return (
         <>
               <NextSeo
-                                title="Vion Exchange"
-                                description="Explore, collect, and showcase unique NFTs in a dynamic gallery experience."
+                                title="Vion Exchange - Quecko
+"
+                                description="A high-speed crypto exchange offering intuitive UI, deep liquidity, and secure trading experiences."
                                 openGraph={{
                                     url: 'https://www.quecko.com/vion-exchange',
-                                    title: 'Vion Exchange',
+                                    title: 'Vion Exchange - Quecko',
                                     description:
-                                        'Explore, collect, and showcase unique NFTs in a dynamic gallery experience.',
+                                        'A high-speed crypto exchange offering intuitive UI, deep liquidity, and secure trading experiences.',
                                     site_name: 'Quecko',
                                 }}
                             />
