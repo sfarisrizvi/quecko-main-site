@@ -171,7 +171,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
     //         </>
     //     );
     // }
-        
+
     return (
         <>
             <Head>

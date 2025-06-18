@@ -101,7 +101,7 @@ const Blog = () => {
                                         </div>
                                     </Link>
 
-
+{/* 
                                     <div className='parenttext'>
                                         <div className='twicebtn'>
                                             <button className="animated-button">
@@ -121,7 +121,7 @@ const Blog = () => {
                                         <p className='mainpara'>{posts[0]?.title?.rendered}</p>
                                         <p className='para'>{posts[0]?.excerpt?.rendered?.replace(/<[^>]+>/g, '').slice(0, 120)}...</p>
 
-                                    </div>
+                                    </div> */}
                                 </div>
                             )}
                             <div className='right'>
