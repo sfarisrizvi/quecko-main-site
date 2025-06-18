@@ -10,12 +10,12 @@ const privacyprotocoloracle
         <>
               <NextSeo
                                 title="Privacy Protocol Oracle – Quecko"
-                                description="A next-gen privacy protocol enabling confidential transactions and zero-knowledge proof integration for Web3."
+                                description="A next-gen protocol enabling secure, decentralized data sharing and monetization."
                                 openGraph={{
                                     url: 'https://www.quecko.com/privacy-protocol-oracle',
                                     title: 'Privacy Protocol Oracle – Quecko',
                                     description:
-                                        'A next-gen privacy protocol enabling confidential transactions and zero-knowledge proof integration for Web3.',
+                                        'A next-gen protocol enabling secure, decentralized data sharing and monetization.',
                                     site_name: 'Quecko',
                                 }}
                             />

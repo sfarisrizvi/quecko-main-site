@@ -1,6 +1,6 @@
 import { SiteKey } from '@/Utils/Enviroment';
-import React, { useRef, useState,useEffect } from 'react'
-import ReCAPTCHA from "react-google-recaptcha"; 
+import React, { useRef, useState, useEffect } from 'react'
+import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
 import Toast from 'react-bootstrap/Toast';
 import axios from 'axios';
@@ -15,8 +15,8 @@ const Getintouch = () => {
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState({});
     const [submitted, setSubmitted] = useState(false);
-    const [recaptchaToken, setRecaptchaToken] = useState(null); 
-    const recaptchaRef = useRef(null); 
+    const [recaptchaToken, setRecaptchaToken] = useState(null);
+    const recaptchaRef = useRef(null);
     const YOUR_RECAPTCHA_SITE_KEY = SiteKey
 
     const regex = {
@@ -75,26 +75,26 @@ const Getintouch = () => {
             const result = await emailjs.send(
                 'service_ppg76cf',
                 'template_bymdrau',
-                emailjsPayload, 
+                emailjsPayload,
                 '5_dvI4T78SrG6vKnY'
             );
-             await axios.post('/api/submitForm', payload);  
-             setName('');
+            await axios.post('/api/submitForm', payload);
+            setName('');
             setEmail('');
             setTelegram('');
             setMessage('');
             setSubmitted(true);
-            setRecaptchaToken(null);  
-            recaptchaRef.current?.reset(); 
+            setRecaptchaToken(null);
+            recaptchaRef.current?.reset();
         } catch (error) {
             console.error('Submission error:', error.response?.data || error.message);
             if (error.response?.data?.error === 'recaptcha_failed') {
                 setErrors({ recaptcha: 'reCAPTCHA verification failed. Please try again.' });
             } else {
-                setErrors({ submit: 'An error occurred during submission. Please try again.' });  
+                setErrors({ submit: 'An error occurred during submission. Please try again.' });
             }
-            setRecaptchaToken(null); 
-            recaptchaRef.current?.reset();  
+            setRecaptchaToken(null);
+            recaptchaRef.current?.reset();
         } finally {
             setLoading(false);
         }
@@ -110,27 +110,27 @@ const Getintouch = () => {
             newValue = "@" + newValue;
         }
         setTelegram(newValue);
-        handleInputFocus('telegram');  
+        handleInputFocus('telegram');
     };
     useEffect(() => {
         if (submitted) {
             setShowA(true);
             const timeout = setTimeout(() => {
                 setShowA(false);
-            }, 3000);  
+            }, 3000);
             return () => clearTimeout(timeout);
         }
     }, [submitted]);
 
-     const handleRecaptchaChange = (token) => {
+    const handleRecaptchaChange = (token) => {
         // console.log("reCAPTCHA token:", token);
         setRecaptchaToken(token);
-         if (errors.recaptcha) {
+        if (errors.recaptcha) {
             setErrors(prevErrors => ({ ...prevErrors, recaptcha: '' }));
         }
     };
 
-     const handleRecaptchaExpire = () => {
+    const handleRecaptchaExpire = () => {
         // console.log("reCAPTCHA expired");
         setRecaptchaToken(null);
     };
@@ -141,25 +141,30 @@ const Getintouch = () => {
             <form onSubmit={handleSubmit}>
                 <div className='forms_div_section'>
                     <div className='inputttunner'>
-                        <input placeholder='Name' type="text" id="fname" name="fname"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            onFocus={() => handleInputFocus('name')}
+                        <div>
+                            <input placeholder='Name' type="text" id="fname" name="fname"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                onFocus={() => handleInputFocus('name')}
 
-                        />
-                        {errors.name && <div className='errror_mssg' style={{ color: 'red' }}>{errors.name}</div>}
-                        <input placeholder='Email@company.com' type="text" id="fname" name="fname"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            onFocus={() => handleInputFocus('email')}
-                        />
-                        {errors.email && <div className='errror_mssg' style={{ color: 'red' }}>{errors.email}</div>}
+                            />
+                            {errors.name && <div className='errror_mssg' style={{ color: 'red' }}>{errors.name}</div>}
+                        </div>
+                        <div>
+                            <input placeholder='Email@company.com' type="text" id="fname" name="fname"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                onFocus={() => handleInputFocus('email')}
+                            />
+                            {errors.email && <div className='errror_mssg' style={{ color: 'red' }}>{errors.email}</div>}
+                        </div>
+
 
                     </div>
                     <input placeholder='Telegram' type="text" id="fname" name="fname"
                         value={telegram}
                         onChange={handleTelegramChange}
-                                    onFocus={() => handleInputFocus('telegram')}
+                        onFocus={() => handleInputFocus('telegram')}
                     />
                     {errors.telegram && <div className='errror_mssg' style={{ color: 'red' }}>{errors.telegram}</div>}
                     <textarea placeholder='Your Message' id="w3review" name="w3review" rows="4" cols="50"
@@ -168,32 +173,32 @@ const Getintouch = () => {
                         onFocus={() => handleInputFocus('message')}
                     />
                     {errors.message && <div className='errror_mssg' style={{ color: 'red' }}>{errors.message}</div>}
-                    <div className='recaptcha-container'  >  
+                    <div className='recaptcha-container'  >
                         <ReCAPTCHA
                             ref={recaptchaRef}
                             sitekey={YOUR_RECAPTCHA_SITE_KEY}
                             onChange={handleRecaptchaChange}
-                            onExpired={handleRecaptchaExpire} 
+                            onExpired={handleRecaptchaExpire}
                         />
                         {errors.recaptcha && <div className='errror_mssg' style={{ color: 'red', marginTop: '5px' }}>{errors.recaptcha}</div>}
                     </div>
                     {errors.submit && <div className='errror_mssg' style={{ color: 'red', marginBottom: '10px' }}>{errors.submit}</div>}
 
 
-                    <button type="submit" disabled={loading || submitted}>  
+                    <button type="submit" disabled={loading || submitted}>
                         {loading ? 'Submitting...' : submitted ? 'Submitted ✓' : 'Get in Touch'}
                     </button>
                 </div>
             </form>
-             <div className='toast_mains' >
+            <div className='toast_mains' >
                 <Toast show={showA} onClose={() => setShowA(true)} delay={3000} autohide>
 
                     <Toast.Body>
                         <div className='toastt_mark'>
-                            <img src='\Assets\tick.svg' alt="Success Tick"   />  
+                            <img src='\Assets\tick.svg' alt="Success Tick" />
                             <div>
                                 <h3>Thanks for getting in touch!</h3>
-                                <p style={{ margin: 0 }}>We’ve received your request. Expect to hear from us soon!</p>  
+                                <p style={{ margin: 0 }}>We’ve received your request. Expect to hear from us soon!</p>
                             </div>
                         </div>
                     </Toast.Body>

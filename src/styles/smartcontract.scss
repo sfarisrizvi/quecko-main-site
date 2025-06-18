@@ -1230,7 +1230,10 @@
     width: 467px;
     position: absolute;
     right: 30px;
-    bottom: 85px;
+    bottom: 28px;
+    .errror_mssg{
+        padding-top: 10px;
+    }
 
     button {
         color: #C1FF14;
