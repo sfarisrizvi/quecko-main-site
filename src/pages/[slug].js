@@ -232,11 +232,11 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                                             </div>
                                         </div>
                                         <p
-                                            className="" // Ensure this class handles potential long text
+                                            className="truncate-text" // Ensure this class handles potential long text
                                             dangerouslySetInnerHTML={{ __html: item.authors[0].description }}
                                         />
                                         <div className="socialicons">
-                                            {item.authors[0].linkedinl && <a href={item.authors[0].linkedin} target="_blank" rel="noopener noreferrer"><img src="/Assets/Frame.png" alt="LinkedIn" /></a>}
+                                            {item.authors[0].user_url && <a href={item.authors[0].user_url} target="_blank" rel="noopener noreferrer"><img src="/Assets/Frame2.png" alt="LinkedIn" /></a>}
                                             {/* ... other social icons for author ... */}
                                         </div>
                                     </>
