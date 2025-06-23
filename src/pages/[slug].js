@@ -232,7 +232,7 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                                             </div>
                                         </div>
                                         <p
-                                            className="truncate-text" // Ensure this class handles potential long text
+                                            className="" // Ensure this class handles potential long text
                                             dangerouslySetInnerHTML={{ __html: item.authors[0].description }}
                                         />
                                         <div className="socialicons">
