@@ -74,13 +74,12 @@ const Landing = () => {
   };
 
   useEffect(() => {
-    if (router.query.section) {
-      const sectionRef = sectionRefs[router.query.section];
-      if (sectionRef?.current) {
-        sectionRef.current.scrollIntoView({ behavior: "smooth" });
-      }
+    const hash = window.location.hash.replace("#", "");
+    const sectionRef = sectionRefs[hash];
+    if (sectionRef?.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [router.query.section]);
+  }, []);
 
   const sections = [
     <FadeInSection disableAnimation={true}><Banner /></FadeInSection>,
@@ -120,7 +119,7 @@ const Landing = () => {
     <>
       <DefaultSeo
         title="Quecko - Leading the Blockchain Revolution with Innovative Solutions"
-        
+
         description="Quecko delivers innovative blockchain and Web3 solutions tailored to your needs. Empowering fintech with secure, scalable, and decentralized solutions."
         canonical={canonicalUrl}
         openGraph={{
