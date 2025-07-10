@@ -136,7 +136,7 @@ const Header = () => {
 
           <div className="left_side" ref={navLinksRef}>
             <Link href="/" ref={newLogoRef} className="newlogo" style={{flexShrink: "0"}}><img ref={newLogoRefRotate} src="/Assets/phonennav.svg" alt="img" className="img-fluid" /></Link>
-            <Link href="#services" scroll={false}>
+            <Link href="/#services" scroll={false}>
               <p className="nav-link">Service</p>
             </Link>
             <Link href="/about-us">
@@ -149,7 +149,7 @@ const Header = () => {
             <Link href="/blog" scroll={false}>
               <p className="nav-link">Blogs</p>
             </Link>
-            <Link href="#faqs" scroll={false}>
+            <Link href="/#faqs" scroll={false}>
               <p className="nav-link">FAQs</p>
             </Link>
 
@@ -216,7 +216,7 @@ const Header = () => {
             custom={0}
             variants={menuVariants}
           >
-            <Link href="#services" scroll={false} onClick={handleClose}>
+            <Link href="/#services" scroll={false} onClick={handleClose}>
               <p  className="nav-link">Service</p>
             </Link>
           </motion.div>
@@ -260,7 +260,7 @@ const Header = () => {
             custom={0.4}
             variants={menuVariants}
           >
-            <Link href="#faqs" scroll={false}>
+            <Link href="/#faqs" scroll={false}>
               <p onClick={handleClose} className="nav-link">FAQs</p>
             </Link>
           </motion.div>

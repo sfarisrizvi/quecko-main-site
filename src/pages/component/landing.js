@@ -73,13 +73,16 @@ const Landing = () => {
     work: useRef(null),
   };
 
-  useEffect(() => {
-    const hash = window.location.hash.replace("#", "");
+   useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
     const sectionRef = sectionRefs[hash];
     if (sectionRef?.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+      const timeout = setTimeout(() => {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      }, 500);
+      return () => clearTimeout(timeout);
     }
-  }, []);
+  }, [router.asPath]);
 
   const sections = [
     <FadeInSection disableAnimation={true}><Banner /></FadeInSection>,
