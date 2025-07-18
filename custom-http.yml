@@ -1,0 +1,37 @@
+# custom-http.yml
+
+headers:
+  - pattern: "**/_next/static/**"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+
+  - pattern: "**/*.js"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+
+  - pattern: "**/*.css"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+
+  - pattern: "**/*.woff2"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+
+  - pattern: "**/*.svg"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+
+  - pattern: "**/*.png"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
+
+  - pattern: "**/*.jpg"
+    headers:
+      - key: "Cache-Control"
+        value: "public, max-age=31536000, immutable"
