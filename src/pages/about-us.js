@@ -21,77 +21,77 @@ const aboutdetail = () => {
 
     const textRef = useRef(null);
 
-      useEffect(() => {
+    useEffect(() => {
         if (!textRef.current) return;
 
         const element = textRef.current;
         const text = element.innerText;
 
         element.innerHTML = text
-          .split("")
-          .map(
-            (char) =>
-              `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
-          )
-          .join("");
+            .split("")
+            .map(
+                (char) =>
+                    `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
+            )
+            .join("");
 
 
         gsap.timeline()
-          .set(".style-1 .char", { opacity: 0, y: 50 })
-          .to(".style-1 .char", {
-            y: 0,
-            opacity: 1,
-            duration: 1.8,
-            ease: "power4.out",
-            stagger: {
-              amount: 1,
-              ease: "power2.inOut",
-            },
-          });
+            .set(".style-1 .char", { opacity: 0, y: 50 })
+            .to(".style-1 .char", {
+                y: 0,
+                opacity: 1,
+                duration: 1.8,
+                ease: "power4.out",
+                stagger: {
+                    amount: 1,
+                    ease: "power2.inOut",
+                },
+            });
 
-      }, []);
+    }, []);
 
 
-      const [scrolling, setScrolling] = useState(false);
-      const [direction, setDirection] = useState("down");
-      const scrollSpeed = 20;
-      const threshold = 50;
-      const scrollRef = useRef(null);
+    const [scrolling, setScrolling] = useState(false);
+    const [direction, setDirection] = useState("down");
+    const scrollSpeed = 20;
+    const threshold = 50;
+    const scrollRef = useRef(null);
 
-      useEffect(() => {
+    useEffect(() => {
         const checkScrollPosition = () => {
-          const scrollY = window.scrollY;
-          const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollY = window.scrollY;
+            const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-          if (scrollY >= pageHeight - threshold) {
-            setDirection("up");
-          } else if (scrollY <= threshold) {
-            setDirection("down");
-          }
+            if (scrollY >= pageHeight - threshold) {
+                setDirection("up");
+            } else if (scrollY <= threshold) {
+                setDirection("down");
+            }
         };
 
 
         const smoothScroll = () => {
-          if (!scrolling) return;
-          window.scrollBy({
-            top: direction === "down" ? scrollSpeed : -scrollSpeed,
-            behavior: "smooth",
-          });
-          scrollRef.current = requestAnimationFrame(smoothScroll);
+            if (!scrolling) return;
+            window.scrollBy({
+                top: direction === "down" ? scrollSpeed : -scrollSpeed,
+                behavior: "smooth",
+            });
+            scrollRef.current = requestAnimationFrame(smoothScroll);
         };
 
 
         if (scrolling) {
-          scrollRef.current = requestAnimationFrame(smoothScroll);
+            scrollRef.current = requestAnimationFrame(smoothScroll);
         }
 
         window.addEventListener("scroll", checkScrollPosition);
 
         return () => {
-          cancelAnimationFrame(scrollRef.current);
-          window.removeEventListener("scroll", checkScrollPosition);
+            cancelAnimationFrame(scrollRef.current);
+            window.removeEventListener("scroll", checkScrollPosition);
         };
-      }, [scrolling, direction]);
+    }, [scrolling, direction]);
 
     const owl_option = {
         nav: true,
@@ -175,8 +175,8 @@ const aboutdetail = () => {
             <div>
                 <section className="main_banner1" >
                     {/* <Header/> */}
-                    <img className="upper_shadow d-none" src="\Assets\shadowupper.png" />
-                    <img className="lowershadow  d-none" src="\Assets\shadowlower.png" />
+                    <img loading="lazy" className="upper_shadow d-none" src="\Assets\shadowupper.png" alt="about-us" />
+                    <img loading="lazy" className="lowershadow  d-none" src="\Assets\shadowlower.png" alt="about-us" />
                     <div className="inner_banner">
                         <video className='main-banner-video'
                             muted="muted" playsinline="playsinline"
@@ -195,18 +195,18 @@ const aboutdetail = () => {
                             </div>
                         </div>
                         <img
-            onClick={() => {
-              const currentScroll = window.scrollY;
-              const newScroll = direction === "down"
-                ? currentScroll + 700
-                : currentScroll - 700;
+                            loading="lazy"
+                            onClick={() => {
+                                const currentScroll = window.scrollY;
+                                const newScroll = direction === "down"
+                                    ? currentScroll + 700
+                                    : currentScroll - 700;
 
-              window.scrollTo({ top: newScroll, behavior: 'smooth' });
-            }}
-            className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
-            src="/Assets/downarrow.svg"
-          />
-                        {/* <img className="downarrow" src="\Assets\downarrow.svg" /> */}
+                                window.scrollTo({ top: newScroll, behavior: 'smooth' });
+                            }}
+                            className={direction === "down" ? "downarrow" : "downarrow setarrowup"}
+                            src="/Assets/downarrow.svg"
+                        />
                     </div>
 
 
@@ -256,15 +256,15 @@ const aboutdetail = () => {
                         </div> {/* Closing div for top_middle */}
                     </div> {/* Closing div for inner_collab */}
                     <section className='goalss_side1'>
-                <div className='goals_details'>
-                    <h2  className='goaldiv'>Since 2020</h2>
-                    <div>
-                    <p>Our story began with a small, passionate team of four visionaries who believed in the transformative power of blockchain technology. From these humble beginnings, Quecko has grown into a powerhouse of over 100+ talented professionals. Each team member represents a unique building block, much like the individual blocks in a blockchain, contributing to the strength, resilience, and innovation of our company. Our commitment to pioneering Web3 solutions has enabled us to help businesses navigate the complexities of blockchain, creating decentralized applications and software that drive progress and innovation. We take pride in our role as the architects of a decentralized future, where every block and every team member plays a crucial part in building a more connected and empowered world.</p>
+                        <div className='goals_details'>
+                            <h2 className='goaldiv'>Since 2020</h2>
+                            <div>
+                                <p>Our story began with a small, passionate team of four visionaries who believed in the transformative power of blockchain technology. From these humble beginnings, Quecko has grown into a powerhouse of over 100+ talented professionals. Each team member represents a unique building block, much like the individual blocks in a blockchain, contributing to the strength, resilience, and innovation of our company. Our commitment to pioneering Web3 solutions has enabled us to help businesses navigate the complexities of blockchain, creating decentralized applications and software that drive progress and innovation. We take pride in our role as the architects of a decentralized future, where every block and every team member plays a crucial part in building a more connected and empowered world.</p>
 
-                    </div>
+                            </div>
 
-                </div>
-            </section>
+                        </div>
+                    </section>
                 </section>
 
                 <section className='aboutus_main '>
@@ -278,20 +278,20 @@ const aboutdetail = () => {
                         </div>
                         <div className='meetourteams'>
                             <div className='teamone'>
-                                <img src='\Assets\row1.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\row1.png' className='teamsimg' />
                             </div>
                             <div className='teamone2'>
-                                <img src='\Assets\row2.png' className='teamsimg' />
-                                <img src='\Assets\row3.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\row2.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\row3.png' className='teamsimg' />
                             </div>
                             <div className='teamone3'>
-                                <img src='\Assets\row4.png' className='teamsimg' />
-                                <img src='\Assets\row5.png' className='teamsimg' />
-                                <img src='\Assets\row6.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\row4.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\row5.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\row6.png' className='teamsimg' />
                             </div>
                             <div className='teamone4'>
-                                <img src='\Assets\IMG_5206.jpg' className='teamsimg' />
-                                <img src='\Assets\DSC_3928.png' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\IMG_5206.jpg' className='teamsimg' />
+                                <img loading="lazy" alt="about-us" src='\Assets\DSC_3928.png' className='teamsimg' />
 
                             </div>
                             {/* <div className='teamone5'>
