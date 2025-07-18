@@ -23,16 +23,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/assets/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=86400, stale-while-revalidate=3600",
-          },
-        ],
-      },
-      {
-        source: "/:path*.(jpg|jpeg|png|gif|webp|svg|ico)",
+        source: "/_next/static/:path*",
         headers: [
           {
             key: "Cache-Control",
@@ -41,16 +32,28 @@ const nextConfig = {
         ],
       },
       {
-        source: "/_next/static/css/:path*",
+
+        source: "/:path*\\.(jpg|jpeg|png|gif|webp|svg|ico|woff2?)",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=86400, stale-while-revalidate=3600",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+
+        source: "/assets/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
     ];
   },
+
 
   async rewrites() {
     return [
