@@ -39,9 +39,10 @@ const contactusdetail = () => {
 
         if (!payload.name) {
             validationErrors.name = "Name is required";
-        } else if (!regex.name.test(payload.name)) {
-            validationErrors.name = "Name must contain only letters and spaces";
-        }
+        } 
+        // else if (!regex.name.test(payload.name)) {
+        //     validationErrors.name = "Name must contain only letters and spaces";
+        // }
         if (!payload.email) {
             validationErrors.email = "Email is required";
         } else if (!regex.email.test(payload.email)) {
