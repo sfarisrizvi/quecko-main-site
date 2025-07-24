@@ -6,7 +6,7 @@ const Work = () => {
         <>
             <section className='works_main' >
                 <div className='inner_work'>
-                    <img src="\Assets\bgvideolayer.png" alt="img" className='img-fluid bgvideolayer' />
+                    <img loading="lazy" src="\Assets\bgvideolayer.png" alt="img" className='img-fluid bgvideolayer' />
                     <video className='main-banner-video'
                         muted="muted" playsinline="playsinline"
                         autoPlay

@@ -75,7 +75,7 @@ const Aboutus = () => {
                             >
                                 <div className="cards">
                                     <div className="inner_cards">
-                                        <img className="imgman" src="\Assets\mennimg.png" />
+                                        <img loading="lazy" alt='about-us' className="imgman" src="\Assets\mennimg.png" />
                                         <div>
                                             <h3 className='nameclient'>Mateen O Dawood</h3>
                                             <p>Stable33 Protocol</p>
@@ -85,7 +85,7 @@ const Aboutus = () => {
                                 </div>
                                 <div className="cards">
                                     <div className="inner_cards">
-                                        <img className="imgman" src="\Assets\man.svg" />
+                                        <img loading="lazy" alt='about-us' className="imgman" src="\Assets\man.svg" />
                                         <div>
                                             <h3 className='crds_name'>Anonymous Client </h3>
                                             <p>DAO Project</p>
@@ -95,7 +95,7 @@ const Aboutus = () => {
                                 </div>
                                 <div className="cards">
                                     <div className="inner_cards">
-                                        <img className="imgman" src="\Assets\mennimg.png" />
+                                        <img loading="lazy" alt='about-us' className="imgman" src="\Assets\mennimg.png" />
                                         <div>
                                             <h3  className='crds_name'>Anonymous Client  </h3>
                                             <p> NFT marketplace Project</p>
@@ -105,7 +105,7 @@ const Aboutus = () => {
                                 </div>
                                 <div className="cards">
                                     <div className="inner_cards">
-                                        <img className="imgman" src="\Assets\man.svg" />
+                                        <img loading="lazy" alt='about-us' className="imgman" src="\Assets\man.svg" />
                                         <div>
                                             <h3  className='crds_name'>Anonymous Client </h3>
                                             <p>UI/UX</p>
@@ -115,7 +115,7 @@ const Aboutus = () => {
                                 </div>
                                 <div className="cards">
                                     <div className="inner_cards">
-                                        <img className="imgman" src="\Assets\man.svg" />
+                                        <img loading="lazy" alt='about-us' className="imgman" src="\Assets\man.svg" />
                                         <div>
                                             <h3  className='crds_name'>Anonymous Client  </h3>
                                             <p>Decentralised DNS Project</p>
@@ -133,158 +133,158 @@ const Aboutus = () => {
                                 <div className="marquee">
                                     <div className="marquee__group">
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Alchemy 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\Alchemy 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\avalanche 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\avalanche 1.svg"/>
                                     </div>
                                     <div>
-                                        <img  className='imgunder' src="\Assets\marqueeassets\aws-svgrepo-com 1.svg"/>
+                                        <img alt='about-us' loading="lazy"  className='imgunder' src="\Assets\marqueeassets\aws-svgrepo-com 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\azure 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\azure 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\band-svgrepo-com 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\band-svgrepo-com 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\BNB (BNB) 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\BNB (BNB) 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_ledger-new 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_ledger-new 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_the-graph 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_the-graph 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_trezor 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_trezor 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Certik 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\Certik 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Chainalysis 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\Chainalysis 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\chainlink 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\chainlink 1.svg"/>
                                     </div>
+
 
 
 
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\ethereum (1) 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\google-cloud-svgrepo-com 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\idW_EOLSIp_logos 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\Infura 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\Layer_1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\metamask-grayscale-logo 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\MoonPay 1.svg"/>
+                                    </div>
 
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\ethereum (1) 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\polkadot 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\google-cloud-svgrepo-com 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\polygon 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\idW_EOLSIp_logos 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Infura 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Layer_1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\metamask-grayscale-logo 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\MoonPay 1.svg"/>
-                                    </div>
-
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\polkadot 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\polygon 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Slowmist 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\Slowmist 1.svg"/>
                                     </div>  <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\solana (1) 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\solana (1) 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\tether 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\tether 1.svg"/>
                                     </div>
                                     </div>
                                     <div aria-hidden="true" className="marquee__group">
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Alchemy 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\Alchemy 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\avalanche 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\avalanche 1.svg"/>
                                     </div>
                                     <div>
-                                        <img  className='imgunder' src="\Assets\marqueeassets\aws-svgrepo-com 1.svg"/>
+                                        <img loading="lazy" alt='about-us'  className='imgunder' src="\Assets\marqueeassets\aws-svgrepo-com 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\azure 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\azure 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\band-svgrepo-com 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\band-svgrepo-com 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\BNB (BNB) 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\BNB (BNB) 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_ledger-new 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_ledger-new 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_the-graph 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_the-graph 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_trezor 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\cdnlogo.com_trezor 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Certik 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\Certik 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Chainalysis 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\Chainalysis 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\chainlink 1.svg"/>
+                                        <img loading="lazy" alt='about-us' className='imgunder' src="\Assets\marqueeassets\chainlink 1.svg"/>
                                     </div>
+
 
 
 
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\ethereum (1) 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\google-cloud-svgrepo-com 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\idW_EOLSIp_logos 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\Infura 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\Layer_1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\metamask-grayscale-logo 1.svg"/>
+                                    </div>
+                                    <div>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\MoonPay 1.svg"/>
+                                    </div>
 
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\ethereum (1) 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\polkadot 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\google-cloud-svgrepo-com 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\polygon 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\idW_EOLSIp_logos 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Infura 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Layer_1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\metamask-grayscale-logo 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\MoonPay 1.svg"/>
-                                    </div>
-
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\polkadot 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\polygon 1.svg"/>
-                                    </div>
-                                    <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\Slowmist 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\Slowmist 1.svg"/>
                                     </div>  <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\solana (1) 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\solana (1) 1.svg"/>
                                     </div>
                                     <div>
-                                        <img className='imgunder' src="\Assets\marqueeassets\tether 1.svg"/>
+                                        <img alt='about-us' loading="lazy" className='imgunder' src="\Assets\marqueeassets\tether 1.svg"/>
                                     </div>
                                     </div>
                                 </div>

@@ -127,7 +127,7 @@ const Stories = () => {
 
                                                 <div className='cardss'>
                                                     <div className='blogs_img'>
-                                                        <img className='imginnner' src={item?.jetpack_featured_media_url} />
+                                                        <img className='imginnner' src={item?.jetpack_featured_media_url} alt='about-us' loading="lazy" />
                                                     </div>
                                                      <span>ARTICLE
                                                         <span>
