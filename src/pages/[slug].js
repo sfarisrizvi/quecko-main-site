@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Header from "./component/Landing/header";
@@ -210,13 +210,18 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                     <div className="bottomparent">
                         <div className="right">
                             {item.jetpack_featured_media_url && (
+                                <div>
+                                    <img className="img_top_Side" src={item.jetpack_featured_media_url} alt="Featured" />
+                                </div>
+                            )}
+                            {/* {item.jetpack_featured_media_url && (
                                 <div
                                     className="img_top_Side"
                                     style={{
                                         backgroundImage: `url(${item.jetpack_featured_media_url})`,
                                     }}
                                 />
-                            )}
+                            )} */}
                             <div dangerouslySetInnerHTML={{ __html: item.content?.rendered }} />
                         </div>
                         <div className="left">

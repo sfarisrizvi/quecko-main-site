@@ -3,13 +3,8 @@
 
     .img_top_Side {
         width: 100%;
-        height: 37vw;
-        /* Use a responsive unit for height (adjust based on design) */
-        max-height: 480px;
-        /* Maximum height for larger screens */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        height: auto;
+        object-fit: cover;
         margin-bottom: 40px;
         border-radius: 30px;
     }
