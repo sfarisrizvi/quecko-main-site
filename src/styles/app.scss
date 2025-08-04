@@ -3,11 +3,13 @@
   src: url(../Aeonik/Aeonik-Bold.ttf);
   font-weight: 700;
 }
+
 @font-face {
   font-family: "Aeonik";
   src: url(../Aeonik/Aeonik-Medium.ttf);
   font-weight: 500;
 }
+
 @font-face {
   font-family: "Aeonik";
   src: url(../Aeonik/Aeonik-Regular.ttf);
@@ -48,27 +50,34 @@
 //   font-family: Exan;
 //   src: url(../src/font/Exan_Font.ttf);
 // }
-h1{
+h1 {
   margin: 0px;
 }
-p{
+
+p {
   margin: 0px;
 }
-h2{
-   margin: 0px;
-}
-h3{
+
+h2 {
   margin: 0px;
 }
-h4{
+
+h3 {
   margin: 0px;
 }
-h5{
+
+h4 {
   margin: 0px;
 }
-h6{
+
+h5 {
   margin: 0px;
 }
+
+h6 {
+  margin: 0px;
+}
+
 .weblines {
   position: absolute;
   bottom: 0px;
@@ -101,37 +110,45 @@ html {
   scroll-behavior: auto;
 }
 
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
- }
- .lenis.lenis-smooth {
+}
+
+.lenis.lenis-smooth {
   scroll-behavior: auto !important;
- }
- .lenis.lenis-smooth [data-lenis-prevent] {
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
- }
- .lenis.lenis-stopped {
+}
+
+.lenis.lenis-stopped {
   overflow: hidden;
- }
- .lenis.lenis-smooth iframe {
+}
+
+.lenis.lenis-smooth iframe {
   pointer-events: none;
- }
+}
 
 body {
   // background: #FFF;
-  padding:0px;
+  padding: 0px;
   min-height: 100vh;
   font-family: 'Aeonik';
 
 }
-@media (min-width: 1600px){
+
+@media (min-width: 1600px) {
   body {
     background: #FFF;
-    padding:0vw; /* 20px / 1600px * 100 = 1.25vw */
+    padding: 0vw;
+    /* 20px / 1600px * 100 = 1.25vw */
     min-height: 100vh;
     font-family: 'Aeonik';
   }
 }
+
 .row {
   margin: 0;
   padding: 0;
@@ -755,12 +772,14 @@ input {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 9px;
-  .disclaimerpara{
+
+  .disclaimerpara {
     color: #D5FF2F;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; /* 14.4px */
+    line-height: 120%;
+    /* 14.4px */
     letter-spacing: 0.1px;
   }
 }
@@ -796,6 +815,7 @@ input {
 .animation-section {
   overflow: hidden;
 }
+
 // .imgs_divv{
 //   border-radius: 250px;
 // background: #F4F4F4;
@@ -812,6 +832,7 @@ input {
   border-radius: 0;
   background-color: #000 !important;
 }
+
 .tawk-no-toolbar-elements .tawk-toolbar {
   padding: .5rem;
   background: #000 !important;
@@ -828,15 +849,17 @@ input {
   background-color: var(--tawk-header-background-color);
   background: #000 !important;
 }
+
 .tawk-search-button.tawk-search-right-button {
   right: 1px;
   left: auto;
   border-radius: 0 4px 4px 0;
   background: #000 !important;
 }
-.maindetailss{
 
-  h3{
+.maindetailss {
+
+  h3 {
     color: #000;
     font-size: 24px !important;
     font-style: bold !important;
@@ -844,44 +867,47 @@ input {
     line-height: 100%;
     text-transform: capitalize;
   }
+
   .custom-list {
     list-style: none !important;
     padding-left: 0 !important;
-}
+  }
 
-li::before {
-    content: "•" !important;
-    color: black !important;
-    /* You can change the color */
-    font-weight: bold !important;
-    display: inline-block !important;
-    width: 1em !important;
-    margin-left: -18px !important;
-    color: #000;
-    font-size: 22px !important;
-    font-style: normal;
-    font-weight: 400 !important;
-    line-height: 200%;
-    /* 44px */
 
 }
+ ol li::before {
+  content: none !important; /* Completely disables pseudo-element */
 }
-.one_parentss{
+
+ul li::before {
+  content: "•";
+  color: #000;
+  font-weight: 400;
+  display: inline-block;
+  width: 1em;
+  margin-left: -18px;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 200%;
+}
+
+.one_parentss {
   display: grid;
   grid-template-columns: 1fr !important;
   width: 100%;
   border-radius: 30px;
 }
-.lassst_img{
+
+.lassst_img {
   overflow: hidden;
   border-radius: 30px;
 }
 
-.minetextneww{
+.minetextneww {
   text-transform: lowercase !important;
-      color: #000 !important;
-    font-size: 22px !important;
-    font-style: normal;
-    font-weight: 400 !important;
-    line-height: 140%;
+  color: #000 !important;
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 140%;
 }
