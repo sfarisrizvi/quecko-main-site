@@ -4,40 +4,40 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Header from "./header";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 const Banner = () => {
-  const textRef = useRef(null);
+  // const textRef = useRef(null);
 
-  useEffect(() => {
-    if (!textRef.current) return;
+  // useEffect(() => {
+  //   if (!textRef.current) return;
 
-    const element = textRef.current;
-    const text = element.innerText;
+  //   const element = textRef.current;
+  //   const text = element.innerText;
 
-    element.innerHTML = text
-      .split("")
-      .map(
-        (char) =>
-          `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
-      )
-      .join("");
+  //   element.innerHTML = text
+  //     .split("")
+  //     .map(
+  //       (char) =>
+  //         `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
+  //     )
+  //     .join("");
 
 
-    gsap.timeline()
-      .set(".style-1 .char", { opacity: 0, y: 50 })
-      .to(".style-1 .char", {
-        y: 0,
-        opacity: 1,
-        duration: 1.8,
-        ease: "power4.out",
-        stagger: {
-          amount: 1,
-          ease: "power2.inOut",
-        },
-      });
+  //   gsap.timeline()
+  //     .set(".style-1 .char", { opacity: 0, y: 50 })
+  //     .to(".style-1 .char", {
+  //       y: 0,
+  //       opacity: 1,
+  //       duration: 1.8,
+  //       ease: "power4.out",
+  //       stagger: {
+  //         amount: 1,
+  //         ease: "power2.inOut",
+  //       },
+  //     });
 
-  }, []);
+  // }, []);
 
 
   const [scrolling, setScrolling] = useState(false);
@@ -100,7 +100,7 @@ const Banner = () => {
           <div className="textual_inner">
             <span className="para_new">We’re the</span>
             <div className="animation-section style-1">
-              <h1 ref={textRef}> Building Blocks</h1>
+              <h1> Building Blocks</h1>
             </div>
 
             <p>Quecko is a leading blockchain development & marketing company. We empower Web3 startups to turn ideas into reality by building scalable, secure solutions including L1/L2 chains, CEXs and DEXs, multichain wallets and all kinds of dApps.
