@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const VideoWithFallback = ({
   videoSrc,
   thumbnailAlt = "Video thumbnail",
   thumbnail,
-  height = '501px', // default value
+  height = '501px',
 }) => {
+  const [isInView, setIsInView] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef();
   const [currentHeight, setCurrentHeight] = useState(
     typeof height === 'object' ? height.default : height
   );
@@ -18,14 +20,27 @@ const VideoWithFallback = ({
         setCurrentHeight(isMobile ? height.responsive : height.default);
       }
     };
-
-    handleResize(); // run once on load
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [height]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect(); // only load once
+        }
+      },
+      { threshold: 0.25 }
+    );
+    if (videoRef.current) observer.observe(videoRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="video-container" style={{ position: 'relative' }}>
+    <div className="video-container" style={{ position: 'relative' }} ref={videoRef}>
       {!isVideoLoaded && (
         <img
           src={thumbnail}
@@ -42,22 +57,25 @@ const VideoWithFallback = ({
           }}
         />
       )}
-      <video
-        className="main-banner-video newbanner_videoss"
-        muted
-        playsInline
-        autoPlay
-        loop
-        onCanPlay={() => setIsVideoLoaded(true)}
-        width="100%"
-        style={{
-          position: 'relative',
-          height: currentHeight,
-          zIndex: 2,
-        }}
-      >
-        <source src={videoSrc} type="video/mp4" />
-      </video>
+      {isInView && (
+        <video
+          className="main-banner-video newbanner_videoss"
+          muted
+          playsInline
+          autoPlay
+          loop
+          onCanPlay={() => setIsVideoLoaded(true)}
+          preload="none"
+          width="100%"
+          style={{
+            position: 'relative',
+            height: currentHeight,
+            zIndex: 2,
+          }}
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      )}
     </div>
   );
 };
