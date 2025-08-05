@@ -6,23 +6,14 @@ const Collabration = () => {
     <>
       <section className='collab' id="work">
         <div className='inner_collab'>
-          {/* <video className='main-banner-video'
-            muted
-            playsInline
-            autoPlay
-            loop
-            width="100%"
-            id="myVideo">
-            <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330995/queckosite%20%28new%29/videos/stonesvideo_gqzerz.webm" type="video/webm" />
-          </video> */}
-   <VideoWithFallback
-  videoSrc="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330995/queckosite%20%28new%29/videos/stonesvideo_gqzerz.webm"
-  thumbnail="/Assets/thumbnails/circles.png"
-  height={{
-    default: '639px',
-    responsive: '581px'
-  }}
-/>
+          <VideoWithFallback
+            videoSrc="\Assets\stonesvideo.mp4"
+            thumbnail="/Assets/thumbnails/circles.png"
+            height={{
+              default: '639px',
+              responsive: '581px'
+            }}
+          />
           {/* <span className='ourstory'>Our story</span> */}
           <div className='top_middle'>
             <div className='middle_colab'>

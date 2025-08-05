@@ -158,7 +158,7 @@ const Landing = () => {
           {
             rel: 'preload',
             as: 'video',
-            href: 'https://res.cloudinary.com/drt6vurtt/video/upload/v1742330920/queckosite%20(new)/videos/bannervideo_ns7oz8.mp4',
+            href: '/Assets/bannervideo.mp4',
             type: 'video/mp4',
           },
           {

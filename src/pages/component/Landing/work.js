@@ -13,7 +13,7 @@ const Work = () => {
                         loop
                         width="100%"
                         id="myVideo">
-                        <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330928/queckosite%20%28new%29/videos/collabvideo_iqsntv.mp4" />
+                        <source src="\Assets\collabvideo.mp4" />
                     </video>
 
                     <div className='innner_text_div'>

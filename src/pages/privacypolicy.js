@@ -20,7 +20,7 @@ const Privacypolicy = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="https://res.cloudinary.com/drt6vurtt/video/upload/v1742330920/queckosite%20(new)/videos/bannervideo_ns7oz8.mp4" type="video/mp4" />
+                                <source src="\Assets\bannervideo.mp4" type="video/mp4" />
                             </video>
                             <div className="textual_inner myinnner_data" >
                                 <p>Privacy policy</p>
