@@ -13,7 +13,7 @@ const Work = () => {
                         loop
                         width="100%"
                         id="myVideo">
-                        <source src="\Assets\collabvideo.mp4" />
+                        <source src="https://media.quecko.com/videos/collabvideo.mp4" />
                     </video>
 
                     <div className='innner_text_div'>

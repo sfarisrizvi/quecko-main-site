@@ -95,7 +95,7 @@ const Banner = () => {
             loop
             width="100%"
             id="myVideo">
-            <source src="\Assets\bannervideo.mp4" type="video/mp4" />
+            <source src="https://media.quecko.com/videos/bannervideo.mp4" type="video/mp4" />
           </video>
           <div className="textual_inner">
             <span className="para_new">We’re the</span>

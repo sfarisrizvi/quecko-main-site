@@ -7,7 +7,7 @@ const Collabration = () => {
       <section className='collab' id="work">
         <div className='inner_collab'>
           <VideoWithFallback
-            videoSrc="\Assets\stonesvideo.mp4"
+            videoSrc="https://media.quecko.com/videos/stonesvideo.mp4"
             thumbnail="/Assets/thumbnails/circles.webp"
             height={{
               default: '639px',

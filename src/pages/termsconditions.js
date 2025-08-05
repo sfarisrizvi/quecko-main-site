@@ -20,7 +20,7 @@ const termsconditions = () => {
                                 loop
                                 width="100%"
                                 id="myVideo">
-                                <source src="\Assets\bannervideo.mp4" type="video/mp4" />
+                                <source src="https://media.quecko.com/videos/bannervideo.mp4" type="video/mp4" />
                             </video>
                             <div className="textual_inner myinnner_data" >
                                 <p>Terms of use</p>
