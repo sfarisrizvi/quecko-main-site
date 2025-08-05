@@ -27,7 +27,7 @@ const Projects = () => {
                         <div className='right_side hovercard'>
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videomultii.mp4"
-                                thumbnail="/Assets/thumbnails/multii.png"
+                                thumbnail="/Assets/thumbnails/multii.webp"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
@@ -42,7 +42,7 @@ const Projects = () => {
                         <div className='left_side hovercard'>
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videostate.mp4"
-                                thumbnail="/Assets/thumbnails/estatee.png"
+                                thumbnail="/Assets/thumbnails/estatee.webp"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
@@ -55,7 +55,7 @@ const Projects = () => {
                         <div className='right_side hovercard'>
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videolegion.mp4"
-                                thumbnail="/Assets/thumbnails/legionn.png"
+                                thumbnail="/Assets/thumbnails/legionn.webp"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
@@ -70,7 +70,7 @@ const Projects = () => {
                         <div className='left_side hovercard'>
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videorain.mp4"
-                                thumbnail="/Assets/thumbnails/domm.png"
+                                thumbnail="/Assets/thumbnails/domm.webp"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
@@ -83,7 +83,7 @@ const Projects = () => {
                         <div className='right_side hovercard'>
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videodiet.mp4"
-                                thumbnail="/Assets/thumbnails/diett.png"
+                                thumbnail="/Assets/thumbnails/diett.webp"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
