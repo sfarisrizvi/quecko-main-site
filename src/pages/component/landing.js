@@ -1,19 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Banner from "./Landing/banner";
-import Services from "./Landing/services";
-import Collabration from "./Landing/collabration";
-import Fourtypes from "./Landing/fourtypes";
-import Projects from "./Landing/projects";
-import Aboutus from "./Landing/aboutus";
-import Stories from "./Landing/stories";
-import Faqs from "./Landing/faqs";
-import Work from "./Landing/work";
+import dynamic from 'next/dynamic';
+const Banner = dynamic(() => import('./Landing/banner'));
+const Services = dynamic(() => import('./Landing/services'));
+const Collabration = dynamic(() => import('./Landing/collabration'));
+const Fourtypes = dynamic(() => import('./Landing/fourtypes'));
+const Projects = dynamic(() => import('./Landing/projects'));
+const Aboutus = dynamic(() => import('./Landing/aboutus'));
+const Stories = dynamic(() => import('./Landing/stories'));
+const Faqs = dynamic(() => import('./Landing/faqs'));
+const Work = dynamic(() => import('./Landing/work'));
+const Usesdevelopmentlanding = dynamic(() => import('../usesdevelopmentlanding'));
 import Footer from "./Landing/footer";
 import Header from "./Landing/header";
 import { useRouter } from "next/router";
-import Usesdevelopmentlanding from "../usesdevelopmentlanding";
 import { DefaultSeo } from "next-seo";
 
 const FadeInSection = ({ children, disableAnimation = false }) => {
