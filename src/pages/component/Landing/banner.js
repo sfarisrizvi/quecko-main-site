@@ -10,34 +10,34 @@ const Banner = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
-    if (!textRef.current) return;
+  if (window.innerWidth <= 768) return;
 
-    const element = textRef.current;
-    const text = element.innerText;
+  if (!textRef.current) return;
 
-    element.innerHTML = text
-      .split("")
-      .map(
-        (char) =>
-          `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
-      )
-      .join("");
+  const element = textRef.current;
+  const text = element.innerText;
 
+  element.innerHTML = text
+    .split("")
+    .map(
+      (char) =>
+        `<span class="char">${char === " " ? "&nbsp;" : char}</span>`
+    )
+    .join("");
 
-    gsap.timeline()
-      .set(".style-1 .char", { opacity: 0, y: 50 })
-      .to(".style-1 .char", {
-        y: 0,
-        opacity: 1,
-        duration: 1.8,
-        ease: "power4.out",
-        stagger: {
-          amount: 1,
-          ease: "power2.inOut",
-        },
-      });
-
-  }, []);
+  gsap.timeline()
+    .set(".style-1 .char", { opacity: 0, y: 50 })
+    .to(".style-1 .char", {
+      y: 0,
+      opacity: 1,
+      duration: 1.8,
+      ease: "power4.out",
+      stagger: {
+        amount: 1,
+        ease: "power2.inOut",
+      },
+    });
+}, []);
 
 
   const [scrolling, setScrolling] = useState(false);
@@ -94,6 +94,7 @@ const Banner = () => {
             autoPlay
             loop
             width="100%"
+            preload="none"
             id="myVideo">
             <source src="https://media.quecko.com/videos/bannervideo.mp4" type="video/mp4" />
           </video>
