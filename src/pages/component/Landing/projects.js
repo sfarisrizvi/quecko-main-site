@@ -25,14 +25,14 @@ const Projects = () => {
 
                     <Link href="/multi-chain">
                         <div className='right_side hovercard'>
-                            <VideoWithFallback
+                            {/* <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videomultii.mp4"
                                 thumbnail="/Assets/thumbnails/multii.png"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
                                 }}
-                            />
+                            /> */}
                         </div>
                     </Link>
                 </div>
@@ -40,27 +40,27 @@ const Projects = () => {
                 <div className='parent_div second_parent'>
                     <Link href="/estate-slice">
                         <div className='left_side hovercard'>
-                            <VideoWithFallback
+                            {/* <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videostate.mp4"
                                 thumbnail="/Assets/thumbnails/estatee.png"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
                                 }}
-                            />
+                            /> */}
                         </div>
                     </Link>
 
                     <Link href="/legion">
                         <div className='right_side hovercard'>
-                            <VideoWithFallback
+                            {/* <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videolegion.mp4"
                                 thumbnail="/Assets/thumbnails/legionn.png"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
                                 }}
-                            />
+                            /> */}
                         </div>
                     </Link>
                 </div>
@@ -68,27 +68,27 @@ const Projects = () => {
                 <div className='parent_div'>
                     <Link href="/decentralized-options-market">
                         <div className='left_side hovercard'>
-                            <VideoWithFallback
+                            {/* <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videorain.mp4"
                                 thumbnail="/Assets/thumbnails/domm.png"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
                                 }}
-                            />
+                            /> */}
                         </div>
                     </Link>
 
                     <Link href="/diet-and-cheat-meal-app">
                         <div className='right_side hovercard'>
-                            <VideoWithFallback
+                            {/* <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videodiet.mp4"
                                 thumbnail="/Assets/thumbnails/diett.png"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'
                                 }}
-                            />
+                            /> */}
                         </div>
                     </Link>
                 </div>
