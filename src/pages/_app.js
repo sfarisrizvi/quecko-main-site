@@ -9,7 +9,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import TawkTo from "./component/Tawkto"
 import Loader from "@/hooks/loader"
- // import { DefaultSeo } from "next-seo"
+// import { DefaultSeo } from "next-seo"
 
 export default function App({ Component, pageProps }) {
     useLenisGsap()
@@ -17,93 +17,13 @@ export default function App({ Component, pageProps }) {
     const [showLoader, setShowLoader] = useState(true)
 
     useEffect(() => {
-        const isNewUser = localStorage.getItem("visited") === null
-         const minLoaderTime = isNewUser ? 1000 : 500
-        const maxLoaderTime = 2000
+        const timer = setTimeout(() => {
+            setShowLoader(false)
+        }, 1000) 
 
-        localStorage.setItem("visited", "true")
+        return () => clearTimeout(timer)
+    }, [router.pathname])
 
-        let imagesLoaded = false
-        let videosLoaded = false
-        let stylesLoaded = false
-
-        const checkAllLoaded = () => {
-            if (imagesLoaded && videosLoaded ) {
-                 setTimeout(() => setShowLoader(false), 300)
-            }
-        }
-        const allImages = typeof window !== 'undefined' ? document.querySelectorAll("img") : [];
-        let loadedImages = 0;
-        if (allImages.length === 0) {
-            imagesLoaded = true;
-        } else {
-            allImages.forEach((img) => {
-                const imgElement = img;
-                const handleLoad = () => {
-                    loadedImages++;
-                    if (loadedImages === allImages.length) {
-                        imagesLoaded = true;
-                        checkAllLoaded();
-                    }
-                    imgElement.removeEventListener('load', handleLoad);
-                    imgElement.removeEventListener('error', handleError);
-                };
-                const handleError = () => {
-                    loadedImages++;
-                    if (loadedImages === allImages.length) {
-                        imagesLoaded = true;
-                        checkAllLoaded();
-                    }
-                    imgElement.removeEventListener('load', handleLoad);
-                    imgElement.removeEventListener('error', handleError);
-                };
-                imgElement.addEventListener('load', handleLoad);
-                imgElement.addEventListener('error', handleError);
-                 if (imgElement.complete) {
-                    handleLoad();
-                }
-            });
-        }
-        const allVideos = typeof window !== 'undefined' ? document.querySelectorAll("video") : [];
-        let loadedVideos = 0;
-        if (allVideos.length === 0) {
-            videosLoaded = true;
-        } else {
-            allVideos.forEach((video) => {
-                const vidElement = video;
-                const handleVideoLoad = () => {
-                    loadedVideos++;
-                    if (loadedVideos === allVideos.length) {
-                        videosLoaded = true;
-                        checkAllLoaded();
-                    }
-                    vidElement.removeEventListener('loadeddata', handleVideoLoad);
-                };
-                vidElement.addEventListener('loadeddata', handleVideoLoad);
-                 if (vidElement.readyState >= 2) {
-                    handleVideoLoad();
-                }
-            });
-        }
-
-
-         const minLoaderTimer = setTimeout(() => {
-             checkAllLoaded();
-        }, minLoaderTime);
-
-         const maxLoaderTimer = setTimeout(() => {
-            setShowLoader(false);
-        }, maxLoaderTime);
-
-         checkAllLoaded();
-
-        return () => {
-            clearTimeout(minLoaderTimer);
-            clearTimeout(maxLoaderTimer);
-             allImages.forEach((img) => (img.onload = img.onerror = null));
-            allVideos.forEach((video) => (video.onloadeddata = null));
-        };
-    }, [router.pathname]);
 
     useEffect(() => {
         const handleRouteChange = (url) => {
@@ -111,7 +31,7 @@ export default function App({ Component, pageProps }) {
             const section = urlParams.get("section")
 
             if (!section) {
-                 const scrollTimer = setTimeout(() => {
+                const scrollTimer = setTimeout(() => {
                     window.scrollTo(0, 0)
                 }, PageTransition.duration ? PageTransition.duration * 1000 : 1000)
             }
@@ -127,7 +47,7 @@ export default function App({ Component, pageProps }) {
         <>
 
 
-             <Script
+            <Script
                 id="ld-json-org" // Unique id for script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -195,12 +115,12 @@ export default function App({ Component, pageProps }) {
             </noscript>
 
             <AnimatePresence mode="wait">
-                  <div key={router.route} style={{ position: 'relative', minHeight: '100vh' }}>
-                     <PageTransition>
+                <div key={router.route} style={{ position: 'relative', minHeight: '100vh' }}>
+                    <PageTransition>
                         <Component {...pageProps} />
                     </PageTransition>
 
-                     {showLoader && <Loader />}
+                    {showLoader && <Loader />}
                     <TawkTo />
                 </div>
             </AnimatePresence>
