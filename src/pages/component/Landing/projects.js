@@ -14,7 +14,7 @@ const Projects = () => {
                         <div className='left_side hovercard'>
                             <VideoWithFallback
                                 videoSrc="https://media.quecko.com/videos/videolunchpad.mp4"
-                                thumbnail="/Assets/thumbnails/launchh.png"
+                                thumbnail="/Assets/thumbnails/launchh.webp"
                                 height={{
                                     default: '501px',
                                     responsive: '255px'

@@ -8,7 +8,7 @@ const Collabration = () => {
         <div className='inner_collab'>
           <VideoWithFallback
             videoSrc="\Assets\stonesvideo.mp4"
-            thumbnail="/Assets/thumbnails/circles.png"
+            thumbnail="/Assets/thumbnails/circles.webp"
             height={{
               default: '639px',
               responsive: '581px'
