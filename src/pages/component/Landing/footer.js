@@ -121,14 +121,14 @@ const Footer = () => {
                   <h3>X (twitter)</h3>
                 </a>
               </div>
-              <Link href="/cryptoconverter">
+              {/* <Link href="/cryptoconverter"> */}
                <div className="bottom_div lasstside">
                 <h3>Crypto Converter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path d="M4.6665 5.24268H11.3332V11.9093" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M4.6665 11.9093L11.3332 5.24268" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg></h3>
               </div>
-              </Link>
+              {/* </Link> */}
 
             </div>
 
