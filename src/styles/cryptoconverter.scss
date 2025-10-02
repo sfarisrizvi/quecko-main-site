@@ -1,43 +1,47 @@
 .crypto_side_main {
     background: #FFF !important;
     padding-top: 20px;
-.leftinput {
-  border: 1px solid transparent; /* default */
-  padding: 8px;
-  border-radius: 6px;
-}
-.arrow-icon {
-  transition: transform 0.3s ease;
-}
 
-.arrow-icon.rotate {
-  transform: rotate(180deg);
-}
-.leftinput,
-.rightinput {
-  border: 1px solid transparent;
-  padding: 8px;
-  border-radius: 6px;
-}
-
-.active-border {
-  border: 1px solid #000;
-}
-
-.arrow-icon {
-  transition: transform 0.3s ease;
-}
-
-.arrow-icon.rotate {
-  transform: rotate(180deg);
-}
-
-.leftinput.active-border {
-  border: 1px solid #000; /* active state when dropdown open */
-}
-    .dropppmenu {
-
+    .leftinput {
+        border: 1px solid transparent;
+        /* default */
+        padding: 8px;
+        border-radius: 6px;
     }
+
+    .arrow-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .arrow-icon.rotate {
+        transform: rotate(180deg);
+    }
+
+    .leftinput,
+    .rightinput {
+        border: 1px solid transparent;
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    .active-border {
+        border: 1px solid #000;
+    }
+
+    .arrow-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .arrow-icon.rotate {
+        transform: rotate(180deg);
+    }
+
+    .leftinput.active-border {
+        border: 1px solid #000;
+        /* active state when dropdown open */
+    }
+
+    .dropppmenu {}
 
     .myydivv {
         display: flex;
@@ -81,30 +85,31 @@
         }
     }
 
-  .myflexxx {
-  height: 347px;
-  overflow-y: auto;
-}
+    .myflexxx {
+        height: 347px;
+        overflow-y: auto;
+    }
 
-.myflexxx::-webkit-scrollbar {
-  width: 5px;
-height: 106px;
+    .myflexxx::-webkit-scrollbar {
+        width: 5px;
+        height: 106px;
 
-}
+    }
 
-.myflexxx::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--border);
-  border-radius: 10px;
-}
+    .myflexxx::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px var(--border);
+        border-radius: 10px;
+    }
 
-.myflexxx::-webkit-scrollbar-thumb {
-  background: #000; /* fixed */
-  border-radius: 10px;
-}
+    .myflexxx::-webkit-scrollbar-thumb {
+        background: #000;
+        /* fixed */
+        border-radius: 10px;
+    }
 
-.myflexxx::-webkit-scrollbar-thumb:hover {
-  background: #000;
-}
+    .myflexxx::-webkit-scrollbar-thumb:hover {
+        background: #000;
+    }
 
     .rightinput {
 
@@ -314,6 +319,16 @@ height: 106px;
             align-items: center;
             gap: 15px;
 
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
 
 
             .rightinput {
@@ -501,221 +516,14 @@ height: 106px;
         padding-top: 25px;
     }
 }
+
 .currency-offcanvas {
-  border-radius: 20px 20px 0 0;
-  background: #F4F4F4;
-  height: 70vh !important;
-  .offcanvas-body {
-    padding: 0px;
-      .inpppput {
-            padding: 12px 22px;
-            border-bottom: 1px solid #EBEBEB;
-            position: relative;
+    border-radius: 20px 20px 0 0;
+    background: #F4F4F4;
+    height: 70vh !important;
 
-            input {
-                padding: 14px 16px !important;
-                border-radius: 10px !important;
-                background: #FFF !important;
-                color: #000 !important;
-                outline: unset !important;
-                border: unset;
-                font-size: 12px !important;
-                font-style: normal;
-                width: 100%;
-                font-weight: 400 !important;
-                line-height: 100%;
-                /* 12px */
-            }
-
-            ::placeholder {
-                color: #888 !important;
-                font-size: 12px !important;
-                font-style: normal;
-                font-weight: 400 !important;
-
-                line-height: 100%;
-                /* 12px */
-            }
-
-            .searchicon {
-                position: absolute;
-                right: 33px;
-                cursor: pointer;
-                top: 26px;
-            }
-        }
-    .leftinput {
-  border: 1px solid transparent; /* default */
-  padding: 8px;
-  border-radius: 6px;
-}
-.arrow-icon {
-  transition: transform 0.3s ease;
-}
-
-.arrow-icon.rotate {
-  transform: rotate(180deg);
-}
-.leftinput,
-.rightinput {
-  border: 1px solid transparent;
-  padding: 8px;
-  border-radius: 6px;
-}
-
-.active-border {
-  border: 1px solid #000;
-}
-
-.arrow-icon {
-  transition: transform 0.3s ease;
-}
-
-.arrow-icon.rotate {
-  transform: rotate(180deg);
-}
-
-.leftinput.active-border {
-  border: 1px solid #000; /* active state when dropdown open */
-}
-    .dropppmenu {
-
-    }
-
-    .myydivv {
-        display: flex;
-        padding: 14px 22px;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #EBEBEB;
-    }
-
-    .unnnderside {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        h6 {
-            color: #000;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            // white-space: nowrap;
-            line-height: 100%;
-
-        }
-
-        .imggcoinnn {
-            width: 30px;
-            height: 30px;
-            border-radius: 360px;
-        }
-
-        .myyysppan {
-            color: #9D9D9D !important;
-            font-size: 12px !important;
-            font-style: normal;
-            height: unset !important;
-            padding: 0px !important;
-            border: unset !important;
-            font-weight: 500 !important;
-            line-height: 100%;
-            /* 12px */
-        }
-    }
-
-  .myflexxx {
-max-height: 80vh;
-  overflow-y: auto;
-}
-
-.myflexxx::-webkit-scrollbar {
-  width: 5px;
-height: 106px;
-
-}
-
-.myflexxx::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--border);
-  border-radius: 10px;
-}
-
-.myflexxx::-webkit-scrollbar-thumb {
-  background: #000; /* fixed */
-  border-radius: 10px;
-}
-
-.myflexxx::-webkit-scrollbar-thumb:hover {
-  background: #000;
-}
-
-    .rightinput {
-
-        .dropdown-menu.show {
-            // transform: translate3d(10px, 70px, 0px) !important;
-            z-index: 99999;
-        }
-    }
-
-    button#dropdown-basic {
-        background-color: unset;
-        padding: unset;
-        border: unset;
-        box-shadow: unset;
-    }
-
-    .dropdown-toggle::after {
-        display: none;
-    }
-
-    .select_currency_div {
-        border-radius: 15px;
-        background: #F4F4F4;
-        width: 427px;
-
-        .bottom_drrrop {
-            .innnnner_fdrop {
-                display: flex;
-                padding: 14px 22px;
-                justify-content: space-between;
-                align-items: center;
-                align-self: stretch;
-                border-bottom: 1px solid #EBEBEB;
-                cursor: pointer;
-
-                &:last-child {
-                    border-bottom: unset;
-                }
-
-            }
-
-            .lowerstn {
-                display: flex;
-                align-items: center;
-                gap: 5px;
-
-                h4 {
-                    color: #000;
-                    text-align: center;
-                    font-size: 14px;
-                    font-style: normal;
-                    margin-left: 5px;
-                    font-weight: 500;
-                    line-height: 100%;
-                    /* 14px */
-                }
-
-                h5 {
-                    color: #9D9D9D;
-                    font-size: 12px !important;
-                    font-style: normal;
-                    position: unset !important;
-                    font-weight: 500 !important;
-                    line-height: 100%;
-                    /* 12px */
-                }
-            }
-        }
+    .offcanvas-body {
+        padding: 0px;
 
         .inpppput {
             padding: 12px 22px;
@@ -755,286 +563,514 @@ height: 106px;
             }
         }
 
-        span {
-            color: #141519;
-            font-size: 16px;
-            padding: 22px;
+        .leftinput {
+            border: 1px solid transparent;
+            /* default */
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .arrow-icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        .leftinput,
+        .rightinput {
+            border: 1px solid transparent;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .active-border {
+            border: 1px solid #000;
+        }
+
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .arrow-icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        .leftinput.active-border {
+            border: 1px solid #000;
+            /* active state when dropdown open */
+        }
+
+        .dropppmenu {}
+
+        .myydivv {
+            display: flex;
+            padding: 14px 22px;
+            justify-content: space-between;
+            align-items: center;
             border-bottom: 1px solid #EBEBEB;
-            font-style: normal;
-            width: 100%;
-            height: 60px;
+        }
+
+        .unnnderside {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            line-height: 100%;
-            /* 16px */
-        }
-    }
+            gap: 10px;
 
-    .dropdown-menu.show {
-        padding: 0px;
-        background-color: unset;
-        border: unset;
-        transform: translate3d(-270px, 70px, 0px) !important;
-        width: 427px;
-    }
-
-    .outer_crpto {
-        max-width: 940px;
-        width: 100%;
-        margin: 0 auto;
-
-        .mainnnnnside {
-            padding: 22px 25px;
-            border-radius: 30px;
-            border: 1px solid #EAEAEA;
-            background: #FFF;
-
-            h3 {
+            h6 {
                 color: #000;
-                text-align: center;
-                font-size: 16px;
-                padding-bottom: 20px;
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
+                // white-space: nowrap;
                 line-height: 100%;
-                /* 16px */
+
             }
 
-            .popular_div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
+            .imggcoinnn {
+                width: 30px;
+                height: 30px;
+                border-radius: 360px;
             }
 
-            .outer_converstion {
-                display: flex;
-                cursor: pointer;
-                padding: 12px;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-                border-radius: 55px;
-                border: 1px solid #EAEAEA;
-                background: #FFF;
-            }
-
-            .innner_coversion {
-                display: flex;
-                align-items: center;
-                gap: 4px;
-
-                h6 {
-                    color: #000;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 100%;
-                    /* 12px */
-                }
+            .myyysppan {
+                color: #9D9D9D !important;
+                font-size: 12px !important;
+                font-style: normal;
+                height: unset !important;
+                padding: 0px !important;
+                border: unset !important;
+                font-weight: 500 !important;
+                line-height: 100%;
+                /* 12px */
             }
         }
 
-        p {
-            color: #9D9D9D;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
-            /* 16.8px */
-            padding-top: 20px;
-            justify-content: center;
-            padding-bottom: 30px;
+        .myflexxx {
+            max-height: 80vh;
+            overflow-y: auto;
         }
 
-        .top_crypto {
-            display: flex;
-            align-items: center;
-            gap: 15px;
+        .myflexxx::-webkit-scrollbar {
+            width: 5px;
+            height: 106px;
 
+        }
 
+        .myflexxx::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px var(--border);
+            border-radius: 10px;
+        }
 
-            .rightinput {
-                h5 {
-                    color: #656565;
-                    font-size: 20px;
-                    position: absolute;
-                    left: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 100%;
-                    /* 20px */
-                }
+        .myflexxx::-webkit-scrollbar-thumb {
+            background: #000;
+            /* fixed */
+            border-radius: 10px;
+        }
 
-                input {
-                    padding-left: 20px !important;
-                }
+        .myflexxx::-webkit-scrollbar-thumb:hover {
+            background: #000;
+        }
+
+        .rightinput {
+
+            .dropdown-menu.show {
+                // transform: translate3d(10px, 70px, 0px) !important;
+                z-index: 99999;
             }
+        }
 
-            .leftinput {
-                display: flex;
-                padding: 10px 10px 10px 19px;
-                justify-content: space-between;
-                align-items: center;
-                flex: 1 0 0;
-                border-radius: 15px;
-                background: #F4F4F4;
-                position: relative;
+        button#dropdown-basic {
+            background-color: unset;
+            padding: unset;
+            border: unset;
+            box-shadow: unset;
+        }
 
-                .innner_inputs {
-                    width: 125px;
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .select_currency_div {
+            border-radius: 15px;
+            background: #F4F4F4;
+            width: 427px;
+
+            .bottom_drrrop {
+                .innnnner_fdrop {
                     display: flex;
-                    padding: 10px;
+                    padding: 14px 22px;
+                    justify-content: space-between;
                     align-items: center;
-                    border-radius: 60px;
-                    border: 1px solid #F2F2F2;
-                    background: #FFF;
-                    margin-left: 20px;
-                    gap: 10px;
+                    align-self: stretch;
+                    border-bottom: 1px solid #EBEBEB;
+                    cursor: pointer;
 
-                    img {
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 360px;
+                    &:last-child {
+                        border-bottom: unset;
                     }
 
-                    h3 {
+                }
+
+                .lowerstn {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    h4 {
                         color: #000;
                         text-align: center;
                         font-size: 14px;
                         font-style: normal;
+                        margin-left: 5px;
                         font-weight: 500;
                         line-height: 100%;
                         /* 14px */
-                        display: flex;
-                        align-items: center;
-                        gap: 24px;
+                    }
+
+                    h5 {
+                        color: #9D9D9D;
+                        font-size: 12px !important;
+                        font-style: normal;
+                        position: unset !important;
+                        font-weight: 500 !important;
+                        line-height: 100%;
+                        /* 12px */
                     }
                 }
+            }
+
+            .inpppput {
+                padding: 12px 22px;
+                border-bottom: 1px solid #EBEBEB;
+                position: relative;
 
                 input {
-                    background-color: unset;
+                    padding: 14px 16px !important;
+                    border-radius: 10px !important;
+                    background: #FFF !important;
+                    color: #000 !important;
+                    outline: unset !important;
                     border: unset;
-                    outline: unset;
-                    padding: 0px;
-                    color: #000;
-                    font-size: 20px;
+                    font-size: 12px !important;
                     font-style: normal;
-                    font-weight: 400;
                     width: 100%;
+                    font-weight: 400 !important;
                     line-height: 100%;
-                    /* 20px */
+                    /* 12px */
                 }
 
                 ::placeholder {
-                    color: #000;
-                    font-size: 20px;
+                    color: #888 !important;
+                    font-size: 12px !important;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 400 !important;
+
                     line-height: 100%;
-                    /* 20px */
+                    /* 12px */
+                }
+
+                .searchicon {
+                    position: absolute;
+                    right: 33px;
+                    cursor: pointer;
+                    top: 26px;
                 }
             }
 
-            .midddle_side {
+            span {
+                color: #141519;
+                font-size: 16px;
+                padding: 22px;
+                border-bottom: 1px solid #EBEBEB;
+                font-style: normal;
+                width: 100%;
+                height: 60px;
                 display: flex;
-                padding: 10px 20px;
                 align-items: center;
-                gap: 18px;
-                border-radius: 15px;
                 justify-content: center;
+                font-weight: 700;
+                line-height: 100%;
+                /* 16px */
+            }
+        }
+
+        .dropdown-menu.show {
+            padding: 0px;
+            background-color: unset;
+            border: unset;
+            transform: translate3d(-270px, 70px, 0px) !important;
+            width: 427px;
+        }
+
+        .outer_crpto {
+            max-width: 940px;
+            width: 100%;
+            margin: 0 auto;
+
+            .mainnnnnside {
+                padding: 22px 25px;
+                border-radius: 30px;
                 border: 1px solid #EAEAEA;
                 background: #FFF;
-                height: 72px;
-                cursor: pointer;
-                width: 56px;
+
+                h3 {
+                    color: #000;
+                    text-align: center;
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%;
+                    /* 16px */
+                }
+
+                .popular_div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .outer_converstion {
+                    display: flex;
+                    cursor: pointer;
+                    padding: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                    border-radius: 55px;
+                    border: 1px solid #EAEAEA;
+                    background: #FFF;
+                }
+
+                .innner_coversion {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+
+                    h6 {
+                        color: #000;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 100%;
+                        /* 12px */
+                    }
+                }
+            }
+
+            p {
+                color: #9D9D9D;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                /* 16.8px */
+                padding-top: 20px;
+                justify-content: center;
+                padding-bottom: 30px;
+            }
+
+            .top_crypto {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+
+
+                .rightinput {
+                    h5 {
+                        color: #656565;
+                        font-size: 20px;
+                        position: absolute;
+                        left: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%;
+                        /* 20px */
+                    }
+
+                    input {
+                        padding-left: 20px !important;
+                    }
+                }
+
+                .leftinput {
+                    display: flex;
+                    padding: 10px 10px 10px 19px;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex: 1 0 0;
+                    border-radius: 15px;
+                    background: #F4F4F4;
+                    position: relative;
+
+                    .innner_inputs {
+                        width: 125px;
+                        display: flex;
+                        padding: 10px;
+                        align-items: center;
+                        border-radius: 60px;
+                        border: 1px solid #F2F2F2;
+                        background: #FFF;
+                        margin-left: 20px;
+                        gap: 10px;
+
+                        img {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 360px;
+                        }
+
+                        h3 {
+                            color: #000;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 100%;
+                            /* 14px */
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                        }
+                    }
+
+                    input {
+                        background-color: unset;
+                        border: unset;
+                        outline: unset;
+                        padding: 0px;
+                        color: #000;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        width: 100%;
+                        line-height: 100%;
+                        /* 20px */
+                    }
+
+                    ::placeholder {
+                        color: #000;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%;
+                        /* 20px */
+                    }
+                }
+
+                .midddle_side {
+                    display: flex;
+                    padding: 10px 20px;
+                    align-items: center;
+                    gap: 18px;
+                    border-radius: 15px;
+                    justify-content: center;
+                    border: 1px solid #EAEAEA;
+                    background: #FFF;
+                    height: 72px;
+                    cursor: pointer;
+                    width: 56px;
+                }
             }
         }
     }
-  }
-  .offcanvas-header {
-    padding: 0px;
-  }
-}
-    .currency-offcanvas{
-        display: none ;
+
+    .offcanvas-header {
+        padding: 0px;
     }
-    .offcanvas-backdrop.show {
+}
+
+.currency-offcanvas {
+    display: none;
+}
+
+.offcanvas-backdrop.show {
     opacity: 0;
     pointer-events: none;
 }
+
 @media only screen and (max-width: 991px) {
-    .currency-offcanvas{
-        display: block !important ;
+    .currency-offcanvas {
+        display: block !important;
     }
+
     .offcanvas-backdrop.show {
-    opacity: 0.5 !important;
-    pointer-events: unset;
-}
+        opacity: 0.5 !important;
+        pointer-events: unset;
+    }
+
     .crypto_side_main .dropdown-menu.show {
 
-    display: none;
-}
+        display: none;
+    }
+
     .crypto_side_main .outer_crpto .top_crypto {
-    display: flex
-;
-    align-items: center;
-    gap: 15px;
-    flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
 
-}
-.crypto_side_main .outer_crpto {
-  padding: 20px 20px;
-}
-.bottom_converter p {
-    color: #67717D;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    padding-bottom: 25px;
-}
-.crypto_side_main .outer_crpto .top_crypto .midddle_side {
-   display: flex;
-height: 72px;
-transform: rotate(90deg);
-padding: 10px 20px;
-align-items: center;
-gap: 18px;
+    }
 
-}
-.ules {
-    padding: 0px 20px;
+    .crypto_side_main .outer_crpto {
+        padding: 20px 20px;
+    }
 
-}
+    .bottom_converter p {
+        color: #67717D;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding-bottom: 25px;
+    }
+
+    .crypto_side_main .outer_crpto .top_crypto .midddle_side {
+        display: flex;
+        height: 72px;
+        transform: rotate(90deg);
+        padding: 10px 20px;
+        align-items: center;
+        gap: 18px;
+
+    }
+
+    .ules {
+        padding: 0px 20px;
+
+    }
 
 
-.crypto_side_main .outer_crpto .mainnnnnside .popular_div {
-    display: flex
-;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-.bottom_converter {
-padding: 40px 20px 70px 20px;
+    .crypto_side_main .outer_crpto .mainnnnnside .popular_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 
-}
-.bottom_converter h4, .bottom_converter .h4 {
-    color: #0E1120;
-    font-size: 24px;
-    padding-bottom: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-}
-       .cryptomainnss .lowershadow {
+    .bottom_converter {
+        padding: 40px 20px 70px 20px;
+
+    }
+
+    .bottom_converter h4,
+    .bottom_converter .h4 {
+        color: #0E1120;
+        font-size: 24px;
+        padding-bottom: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    .cryptomainnss .lowershadow {
         position: absolute;
         display: block !important;
         bottom: 266px;
@@ -1042,29 +1078,32 @@ padding: 40px 20px 70px 20px;
         right: 0px;
         z-index: 99999;
     }
-    .cryptomainnss {
-    min-height: 716px !important;
-    background: #F3F3F3;
-}
-.cryptomainnss .myinnner_data .animation-section span {
-    color: #9D9D9D !important;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-    padding-top: 400px;
-    text-transform: uppercase;
-}
-.cryptomainnss .inner_banner {
-    height: 716px !important;
-}
-.cryptomainnss .myinnner_data h1 {
-    color: #000;
-    font-size: 35px !important;
-    font-style: normal;
-    width: 100% !important;
-    font-weight: 400 !important;
-    line-height: 100%;
-}
-}
 
+    .cryptomainnss {
+        min-height: 716px !important;
+        background: #F3F3F3;
+    }
+
+    .cryptomainnss .myinnner_data .animation-section span {
+        color: #9D9D9D !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        padding-top: 400px;
+        text-transform: uppercase;
+    }
+
+    .cryptomainnss .inner_banner {
+        height: 716px !important;
+    }
+
+    .cryptomainnss .myinnner_data h1 {
+        color: #000;
+        font-size: 35px !important;
+        font-style: normal;
+        width: 100% !important;
+        font-weight: 400 !important;
+        line-height: 100%;
+    }
+}

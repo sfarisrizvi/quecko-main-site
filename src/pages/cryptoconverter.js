@@ -5,6 +5,10 @@ import Header from "./component/Landing/header";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Offcanvas from "react-bootstrap/Offcanvas";
 const Cryptoconverter = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -177,10 +181,10 @@ const Cryptoconverter = () => {
                   value={fromValue}
                   onChange={(e) => convert(e.target.value, "from")}
                 />
-                <Dropdown onToggle={(isOpen) => setOpen(isOpen)}>
+                <Dropdown show={open} onToggle={(isOpen) => setOpen(isOpen)}>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     {fromCoin ? (
-                      <div className="innner_inputs" onClick={handleShow}>
+                      <div className="innner_inputs" onClick={() => setOpen(!open)}>
                         <img
                           src={fromCoin.image}
                           alt={fromCoin.symbol}
@@ -221,9 +225,6 @@ const Cryptoconverter = () => {
                           onChange={(e) => setSearch(e.target.value)}
                           className="form-control mb-2"
                         />
-                        <svg className="searchicon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                          <path d="M9.57429 9.57551L11.6654 11.6666L9.57429 9.57551ZM10.8169 6.57566C10.8169 8.91868 8.91752 10.8181 6.5745 10.8181C4.23144 10.8181 2.33203 8.91868 2.33203 6.57566C2.33203 4.23264 4.23144 2.33325 6.5745 2.33325C8.91752 2.33325 10.8169 4.23264 10.8169 6.57566Z" stroke="#141519" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
                       </div>
 
                       <div className="myflexxx">
@@ -235,6 +236,7 @@ const Cryptoconverter = () => {
                             onClick={async () => {
                               setFromCoin(coin);
                               setSearch("");
+                              setOpen(false); // ✅ dropdown close
                               await convert(fromValue, "from", coin, toCoin);
                             }}
                           >
@@ -249,16 +251,13 @@ const Cryptoconverter = () => {
                                 ({coin.symbol.toUpperCase()})
                               </span>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                              <path d="M12 5.33331L14.6667 7.99998L12 10.6666" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M1.33203 8H14.6654" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
                           </div>
                         ))}
                       </div>
                     </div>
                   </Dropdown.Menu>
                 </Dropdown>
+
               </div>
 
               {/* SWAP BUTTON */}
@@ -276,106 +275,108 @@ const Cryptoconverter = () => {
               </div>
 
 
-              <div className={`leftinput rightinput ${openRight ? "active-border" : ""}`}>
-                <input
-                  type="number"
-                  placeholder="0"
-                  value={toValue}               // 👈 bind to state
-                  onChange={(e) => convert(e.target.value, "to")}
+           <div className={`leftinput rightinput ${openRight ? "active-border" : ""}`}>
+  <input
+    type="number"
+    placeholder="0"
+    value={toValue} // 👈 bind to state
+    onChange={(e) => convert(e.target.value, "to")}
+  />
+
+  <Dropdown show={openRight} onToggle={(isOpen) => setOpenRight(isOpen)}>
+    <Dropdown.Toggle variant="success" id="dropdown-basic">
+      {toCoin ? (
+        <div className="innner_inputs" onClick={() => setOpenRight(!openRight)}>
+          <img
+            src={toCoin.image}
+            alt={toCoin.symbol}
+            width="20"
+            height="20"
+          />
+          <h3>{toCoin.symbol.toUpperCase()}</h3>
+          <svg
+            className={`arrow-icon ${openRight ? "rotate" : ""}`} // 👈 rotate based on right dropdown state
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="14"
+            viewBox="0 0 13 14"
+            fill="none"
+          >
+            <path
+              d="M9.75 5.375L6.5 8.625L3.25 5.375"
+              stroke="black"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+      ) : (
+        "Select Coin"
+      )}
+    </Dropdown.Toggle>
+
+    <Dropdown.Menu className="dropppmenu">
+      <div className="select_currency_div">
+        <span>Select Currency</span>
+        <div className="inpppput">
+          <svg
+            className="searchicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+          >
+            <path
+              d="M9.57429 9.57551L11.6654 11.6666L9.57429 9.57551ZM10.8169 6.57566C10.8169 8.91868 8.91752 10.8181 6.5745 10.8181C4.23144 10.8181 2.33203 8.91868 2.33203 6.57566C2.33203 4.23264 4.23144 2.33325 6.5745 2.33325C8.91752 2.33325 10.8169 4.23264 10.8169 6.57566Z"
+              stroke="#141519"
+              strokeWidth="1.33333"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <input
+            placeholder="Search Currency"
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="form-control mb-2"
+          />
+        </div>
+
+        <div className="myflexxx">
+          {filteredCoins.map((coin) => (
+            <div
+              key={coin.id}
+              className="myydivv"
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setToCoin(coin);
+                setSearch("");
+                setOpenRight(false); // ✅ close dropdown on select
+              }}
+            >
+              <div className="unnnderside">
+                <img
+                  src={coin.image}
+                  alt={coin.symbol}
+                  className="imggcoinnn"
                 />
-
-                <Dropdown onToggle={(isOpen) => setOpenRight(isOpen)}>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic" >
-                    {toCoin ? (
-                      <div className="innner_inputs" onClick={handleShow1}>
-                        <img
-                          src={toCoin.image}
-                          alt={toCoin.symbol}
-                          width="20"
-                          height="20"
-                        />
-                        <h3>{toCoin.symbol.toUpperCase()}</h3>
-                        <svg
-                          className={`arrow-icon ${openRight ? "rotate" : ""}`} // 👈 rotate based on right dropdown state
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="13"
-                          height="14"
-                          viewBox="0 0 13 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M9.75 5.375L6.5 8.625L3.25 5.375"
-                            stroke="black"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    ) : (
-                      "Select Coin"
-                    )}
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu className="dropppmenu">
-                    <div className="select_currency_div">
-                      <span>Select Currency</span>
-                      <div className="inpppput">
-                        <svg
-                          className="searchicon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 14 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M9.57429 9.57551L11.6654 11.6666L9.57429 9.57551ZM10.8169 6.57566C10.8169 8.91868 8.91752 10.8181 6.5745 10.8181C4.23144 10.8181 2.33203 8.91868 2.33203 6.57566C2.33203 4.23264 4.23144 2.33325 6.5745 2.33325C8.91752 2.33325 10.8169 4.23264 10.8169 6.57566Z"
-                            stroke="#141519"
-                            strokeWidth="1.33333"
-                            strokeMiterlimit="10"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                        <input
-                          placeholder="Search Currency"
-                          type="text"
-                          value={search}
-                          onChange={(e) => setSearch(e.target.value)}
-                          className="form-control mb-2"
-                        />
-                      </div>
-
-                      <div className="myflexxx">
-                        {filteredCoins.map((coin) => (
-                          <div
-                            key={coin.id}
-                            className="myydivv"
-                            style={{ cursor: "pointer" }}
-                            onClick={() => {
-                              setToCoin(coin);
-                              setSearch("");
-                            }}
-                          >
-                            <div className="unnnderside">
-                              <img
-                                src={coin.image}
-                                alt={coin.symbol}
-                                className="imggcoinnn"
-                              />
-                              <h6>{coin.name}</h6>
-                              <span className="myyysppan">
-                                ({coin.symbol.toUpperCase()})
-                              </span>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </Dropdown.Menu>
-                </Dropdown>
+                <h6>{coin.name}</h6>
+                <span className="myyysppan">
+                  ({coin.symbol.toUpperCase()})
+                </span>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Dropdown.Menu>
+  </Dropdown>
+</div>
+
             </div>
 
             {/* Rate info */}
