@@ -5,6 +5,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+
 import { motion } from "framer-motion";
 
 
@@ -135,9 +137,8 @@ const Header = () => {
     };
   }, []);
 
-
-  
-
+ const router = useRouter();
+  const isLanding = router.pathname === "/"; // 👈 check if landing page
 
 
 
@@ -146,7 +147,7 @@ const Header = () => {
       {
         isDesktop && (
           <div className="mainnavbar" >
-            <div className="inner_nav" ref={navbarRef}>
+            <div className={`inner_nav ${isLanding ? "landing-top" : ""}`}  ref={navbarRef}>
               <Link href="/" ref={logoRef} className="main-logo">
                 <img src="/Assets/navlogo.svg" alt="Logo" className="navbar__logo" />
               </Link>

@@ -15,6 +15,7 @@ import Header from "./Landing/header";
 import { useRouter } from "next/router";
 import Usesdevelopmentlanding from "../usesdevelopmentlanding";
 import { DefaultSeo } from "next-seo";
+import Marquee from "./Landing/marquee";
 
 const FadeInSection = ({ children, disableAnimation = false }) => {
   const controls = useAnimation();
@@ -167,8 +168,8 @@ const Landing = () => {
           },
         ]}
       />
-
-      <Header />
+<Marquee/>
+      <Header style={{ position: "relative", top: "60px" }} />
       {sections.map((Component, index) => (
         <React.Fragment key={index}>{Component}</React.Fragment>
       ))}
