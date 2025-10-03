@@ -28,7 +28,7 @@ const Marquee = () => {
     };
 
     fetchPrices();
-    const interval = setInterval(fetchPrices, 30000);
+    const interval = setInterval(fetchPrices, 90000);
     return () => clearInterval(interval);
   }, []);
 
