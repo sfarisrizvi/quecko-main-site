@@ -30,9 +30,9 @@ const Cryptoconverter = () => {
 
   // ✅ Hardcoded fiat currencies
   const fiatCurrencies = [
-    { id: "usd", symbol: "USD", name: "US Dollar", image: "/assets/dollar.svg" },
-    { id: "gbp", symbol: "GBP", name: "British Pound", image: "/assets/gbp.svg" },
-    { id: "eur", symbol: "EUR", name: "Euro", image: "/assets/euro.svg" },
+    { id: "usd", symbol: "USD", name: "US Dollar", image: "/Assets/dollar.svg" },
+    { id: "gbp", symbol: "GBP", name: "British Pound", image: "/Assets/gbp.svg" },
+    { id: "eur", symbol: "EUR", name: "Euro", image: "/Assets/euro.svg" },
   ];
 
   useEffect(() => {
@@ -398,7 +398,7 @@ const Cryptoconverter = () => {
                   onClick={() => handlePopularClick("BTC", "GBP")}
                 >
                   <div className="innner_coversion">
-                    <img src="\assets\smallimgcoin.svg" alt="BTC" />
+                    <img src="\Assets\smallimgcoin.svg" alt="BTC" />
                     <h6>BTC</h6>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
@@ -408,7 +408,7 @@ const Cryptoconverter = () => {
                     <path d="M13.8334 11.3333H3.16675" stroke="#9D9D9D" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div className="innner_coversion">
-                    <img src="\assets\gbp.svg" alt="GBP" />
+                    <img src="\Assets\gbp.svg" alt="GBP" />
                     <h6>GBP</h6>
                   </div>
                 </div>
@@ -418,7 +418,7 @@ const Cryptoconverter = () => {
                   onClick={() => handlePopularClick("BTC", "ETH")}
                 >
                   <div className="innner_coversion">
-                    <img src="\assets\smallimgcoin.svg" alt="BTC" />
+                    <img src="\Assets\smallimgcoin.svg" alt="BTC" />
                     <h6>BTC</h6>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
@@ -428,7 +428,7 @@ const Cryptoconverter = () => {
                     <path d="M13.8334 11.3333H3.16675" stroke="#9D9D9D" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div className="innner_coversion">
-                    <img src="\assets\ethh.svg" alt="ETH" />
+                    <img src="\Assets\ethh.svg" alt="ETH" />
                     <h6>ETH</h6>
                   </div>
                 </div>
@@ -438,7 +438,7 @@ const Cryptoconverter = () => {
                   onClick={() => handlePopularClick("XRP", "ETH")}
                 >
                   <div className="innner_coversion">
-                    <img src="\assets\xrp.svg" alt="XRP" />
+                    <img src="\Assets\xrp.svg" alt="XRP" />
                     <h6>XRP</h6>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
@@ -448,7 +448,7 @@ const Cryptoconverter = () => {
                     <path d="M13.8334 11.3333H3.16675" stroke="#9D9D9D" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div className="innner_coversion">
-                    <img src="\assets\ethh.svg" alt="ETH" />
+                    <img src="\Assets\ethh.svg" alt="ETH" />
                     <h6>ETH</h6>
                   </div>
                 </div>
@@ -458,7 +458,7 @@ const Cryptoconverter = () => {
                   onClick={() => handlePopularClick("ETH", "USD")}
                 >
                   <div className="innner_coversion">
-                    <img src="\assets\ethh.svg" alt="ETH" />
+                    <img src="\Assets\ethh.svg" alt="ETH" />
                     <h6>ETH</h6>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
@@ -468,7 +468,7 @@ const Cryptoconverter = () => {
                     <path d="M13.8334 11.3333H3.16675" stroke="#9D9D9D" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div className="innner_coversion">
-                    <img src="\assets\dollar.svg" alt="USD" />
+                    <img src="\Assets\dollar.svg" alt="USD" />
                     <h6>USD</h6>
                   </div>
                 </div>
@@ -478,7 +478,7 @@ const Cryptoconverter = () => {
                   onClick={() => handlePopularClick("SOL", "USDT")}
                 >
                   <div className="innner_coversion">
-                    <img src="\assets\sol.svg" alt="SOL" />
+                    <img src="\Assets\sol.svg" alt="SOL" />
                     <h6>SOL</h6>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
@@ -488,7 +488,7 @@ const Cryptoconverter = () => {
                     <path d="M13.8334 11.3333H3.16675" stroke="#9D9D9D" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div className="innner_coversion">
-                    <img src="\assets\usdt.svg" alt="USDT" />
+                    <img src="\Assets\usdt.svg" alt="USDT" />
                     <h6>USDT</h6>
                   </div>
                 </div>

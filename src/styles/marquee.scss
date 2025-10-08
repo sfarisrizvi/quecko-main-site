@@ -33,11 +33,11 @@
             align-items: center;
             gap: 20px;
             width: max-content;
-            animation: marquee 20s linear infinite;
+            animation: marquee 190s linear infinite;
             position: fixed !important;
             z-index: 999999;
             left: 0px;
-            top: 0px;
+            top: 5px;
 
             .howworks_chain {
                 display: flex;
@@ -52,6 +52,7 @@
                     margin-bottom: 0px !important;
                     font-weight: 700;
                     line-height: 100%;
+                    white-space: nowrap;
                     /* 12px */
                 }
 
@@ -128,7 +129,7 @@
     }
 
     100% {
-        transform: translateX(-30%);
+        transform: translateX(-50%);
     }
 }
 

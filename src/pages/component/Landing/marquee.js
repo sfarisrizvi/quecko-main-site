@@ -4,21 +4,10 @@ const Marquee = () => {
   const [coins, setCoins] = useState([]);
 
   useEffect(() => {
-    const coinIds = [
-      "bitcoin",
-      "ethereum",
-      "dogecoin",
-      "tron",
-      "the-open-network", // TON
-      "avalanche-2",      // AVAX
-      "cardano",          // ADA
-      "ripple"            // XRP
-    ];
-
     const fetchPrices = async () => {
       try {
         const res = await fetch(
-          `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coinIds.join(",")}`
+          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1"
         );
         const data = await res.json();
         setCoins(data);
@@ -32,7 +21,7 @@ const Marquee = () => {
     return () => clearInterval(interval);
   }, []);
 
-
+  // Repeat the list to create a continuous marquee effect
   const repeatedCoins = [...coins, ...coins, ...coins, ...coins];
 
   return (
@@ -47,7 +36,10 @@ const Marquee = () => {
                   <h4>${coin.current_price.toLocaleString()}</h4>
                   <h5
                     style={{
-                      color: coin.price_change_percentage_24h >= 0 ? "#38B550" : "#F32828",
+                      color:
+                        coin.price_change_percentage_24h >= 0
+                          ? "#38B550"
+                          : "#F32828",
                     }}
                   >
                     {coin.price_change_percentage_24h?.toFixed(2)}%
