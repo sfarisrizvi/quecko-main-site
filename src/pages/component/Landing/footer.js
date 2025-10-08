@@ -218,7 +218,7 @@ const Footer = () => {
                   <h3>X (twitter)</h3>
                 </a>
               </div>
-              <Link href="/cryptoconverter">
+              {/* <Link href="/cryptoconverter">
                 <div className="bottom_div lasstside">
                   <h3>
                     Crypto Converter{" "}
@@ -246,7 +246,7 @@ const Footer = () => {
                     </svg>
                   </h3>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
