@@ -4,6 +4,7 @@ import Footer from "./component/Landing/footer";
 import Header from "./component/Landing/header";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Table from 'react-bootstrap/Table';
 const Cryptoconverter = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const toggleDropdown = () => {
@@ -146,7 +147,7 @@ const Cryptoconverter = () => {
                 {/* <h3 className="para_new11">We’re the</h3> */}
                 <div className="animation-section style-1">
                   <span>Crypto Converter</span>
-                  <h1>Cryptocurrency Converter & Calculator</h1>
+                  <h1>Cryptocurrency Converter</h1>
                   <p className='span_ptag newtagsss'>Easily convert crypto to fiat or between digital assets with real-time exchange rates and accurate calculations.</p>
                 </div>
               </div>
@@ -275,107 +276,107 @@ const Cryptoconverter = () => {
               </div>
 
 
-           <div className={`leftinput rightinput ${openRight ? "active-border" : ""}`}>
-  <input
-    type="number"
-    placeholder="0"
-    value={toValue} // 👈 bind to state
-    onChange={(e) => convert(e.target.value, "to")}
-  />
-
-  <Dropdown show={openRight} onToggle={(isOpen) => setOpenRight(isOpen)}>
-    <Dropdown.Toggle variant="success" id="dropdown-basic">
-      {toCoin ? (
-        <div className="innner_inputs" onClick={() => setOpenRight(!openRight)}>
-          <img
-            src={toCoin.image}
-            alt={toCoin.symbol}
-            width="20"
-            height="20"
-          />
-          <h3>{toCoin.symbol.toUpperCase()}</h3>
-          <svg
-            className={`arrow-icon ${openRight ? "rotate" : ""}`} // 👈 rotate based on right dropdown state
-            xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="14"
-            viewBox="0 0 13 14"
-            fill="none"
-          >
-            <path
-              d="M9.75 5.375L6.5 8.625L3.25 5.375"
-              stroke="black"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
-      ) : (
-        "Select Coin"
-      )}
-    </Dropdown.Toggle>
-
-    <Dropdown.Menu className="dropppmenu">
-      <div className="select_currency_div">
-        <span>Select Currency</span>
-        <div className="inpppput">
-          <svg
-            className="searchicon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-          >
-            <path
-              d="M9.57429 9.57551L11.6654 11.6666L9.57429 9.57551ZM10.8169 6.57566C10.8169 8.91868 8.91752 10.8181 6.5745 10.8181C4.23144 10.8181 2.33203 8.91868 2.33203 6.57566C2.33203 4.23264 4.23144 2.33325 6.5745 2.33325C8.91752 2.33325 10.8169 4.23264 10.8169 6.57566Z"
-              stroke="#141519"
-              strokeWidth="1.33333"
-              strokeMiterlimit="10"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          <input
-            placeholder="Search Currency"
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="form-control mb-2"
-          />
-        </div>
-
-        <div className="myflexxx">
-          {filteredCoins.map((coin) => (
-            <div
-              key={coin.id}
-              className="myydivv"
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                setToCoin(coin);
-                setSearch("");
-                setOpenRight(false); // ✅ close dropdown on select
-              }}
-            >
-              <div className="unnnderside">
-                <img
-                  src={coin.image}
-                  alt={coin.symbol}
-                  className="imggcoinnn"
+              <div className={`leftinput rightinput ${openRight ? "active-border" : ""}`}>
+                <input
+                  type="number"
+                  placeholder="0"
+                  value={toValue} // 👈 bind to state
+                  onChange={(e) => convert(e.target.value, "to")}
                 />
-                <h6>{coin.name}</h6>
-                <span className="myyysppan">
-                  ({coin.symbol.toUpperCase()})
-                </span>
+
+                <Dropdown show={openRight} onToggle={(isOpen) => setOpenRight(isOpen)}>
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    {toCoin ? (
+                      <div className="innner_inputs" onClick={() => setOpenRight(!openRight)}>
+                        <img
+                          src={toCoin.image}
+                          alt={toCoin.symbol}
+                          width="20"
+                          height="20"
+                        />
+                        <h3>{toCoin.symbol.toUpperCase()}</h3>
+                        <svg
+                          className={`arrow-icon ${openRight ? "rotate" : ""}`} // 👈 rotate based on right dropdown state
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="14"
+                          viewBox="0 0 13 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M9.75 5.375L6.5 8.625L3.25 5.375"
+                            stroke="black"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    ) : (
+                      "Select Coin"
+                    )}
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu className="dropppmenu">
+                    <div className="select_currency_div">
+                      <span>Select Currency</span>
+                      <div className="inpppput">
+                        <svg
+                          className="searchicon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M9.57429 9.57551L11.6654 11.6666L9.57429 9.57551ZM10.8169 6.57566C10.8169 8.91868 8.91752 10.8181 6.5745 10.8181C4.23144 10.8181 2.33203 8.91868 2.33203 6.57566C2.33203 4.23264 4.23144 2.33325 6.5745 2.33325C8.91752 2.33325 10.8169 4.23264 10.8169 6.57566Z"
+                            stroke="#141519"
+                            strokeWidth="1.33333"
+                            strokeMiterlimit="10"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        <input
+                          placeholder="Search Currency"
+                          type="text"
+                          value={search}
+                          onChange={(e) => setSearch(e.target.value)}
+                          className="form-control mb-2"
+                        />
+                      </div>
+
+                      <div className="myflexxx">
+                        {filteredCoins.map((coin) => (
+                          <div
+                            key={coin.id}
+                            className="myydivv"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => {
+                              setToCoin(coin);
+                              setSearch("");
+                              setOpenRight(false); // ✅ close dropdown on select
+                            }}
+                          >
+                            <div className="unnnderside">
+                              <img
+                                src={coin.image}
+                                alt={coin.symbol}
+                                className="imggcoinnn"
+                              />
+                              <h6>{coin.name}</h6>
+                              <span className="myyysppan">
+                                ({coin.symbol.toUpperCase()})
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </Dropdown.Menu>
-  </Dropdown>
-</div>
 
             </div>
 
@@ -498,34 +499,365 @@ const Cryptoconverter = () => {
           </div>
         </section>
         <div className="bottom_converter">
-          <h4>Vel rerum dolor id pariatur cupiditate non minima perspiciatis vel sapiente magni est nihil nihil quo obcaecati iste</h4>
-          <p>Lorem ipsum dolor sit amet. Vel esse doloremque est quaerat commodi sit laudantium itaque qui rerum repellat in unde dolore. Sit facere veniam qui dolores autem aut nihil laborum. Vel molestiae ipsa est animi repudiandae et fugit quisquam. Ut rerum velit ab odio aliquid in perferendis consequatur a possimus consequatur qui mollitia saepe ut nostrum adipisci.</p>
-          <h5>Eos voluptatem dolores id</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          {/* <h4>Vel rerum dolor id pariatur cupiditate non minima perspiciatis vel sapiente magni est nihil nihil quo obcaecati iste</h4> */}
+          {/* <p>Lorem ipsum dolor sit amet. Vel esse doloremque est quaerat commodi sit laudantium itaque qui rerum repellat in unde dolore. Sit facere veniam qui dolores autem aut nihil laborum. Vel molestiae ipsa est animi repudiandae et fugit quisquam. Ut rerum velit ab odio aliquid in perferendis consequatur a possimus consequatur qui mollitia saepe ut nostrum adipisci.</p> */}
+          <h5>Why You Need a Crypto Rate Converter</h5>
+          <p>Here’s why it’s essential:</p>
           <div className="ules">
             <ul>
-              <li><span>Integer vitae </span>dignissim natoque a egestas. Fames hendrerit lacus ad lacinia sociosqu nascetur nibh a dapibus leo dis vitae, tellus scelerisque mi. Sed praesent auctor</li>
-              <li><span>Curabitur semper</span>magnis congue volutpat senectus, dictum egestas tortor. Metus facilisis facilisi nullam tempus, diam nascetur.</li>
-              <li><span>Eu commodo </span>orci efficitur etiam quam sem tortor netus etiam viverra posuere. Netus donec suspendisse arcu fusce quisque leo.</li>
+              <li><span> Real-Time Price Tracking</span>Crypto markets never close. They operate 24/7. A crypto converter helps you keep up with price movements at any time, whether you’re in New York, London, or Mumbai.</li>
+              <li><span>Smarter Trading Decisions
+              </span>Even small price differences can impact profit margins. By knowing the exact conversion rate before you trade, you can avoid losses and make more profitable decisions.
+              </li>
+              <li><span>Global Accessibility
+              </span>Crypto rate conversion breaks geographical barriers. You can easily find out how much your coins are worth in your local currency or any major fiat worldwide.
+              </li>
+
+
+              <li><span>Transparency and Convenience
+              </span>Instead of checking multiple exchanges manually, you can use one converter to see combined, up-to-date rates all in one place.
+              </li>
+              <li><span>Portfolio Management
+              </span>Investors often hold multiple cryptocurrencies. Conversion tools allow you to calculate your total holdings’ worth in one currency, giving you a complete financial overview.
+              </li>
             </ul>
           </div>
 
-          <h5 className="topppec">Et tempore mollitia nam molestias</h5>
-          <p>Eros dictum ante class sagittis dolor suspendisse pretium. Rutrum amet penatibus velit amet arcu sociosqu vivamus id.</p>
+          <h5 className="topppec">How Crypto Rate Conversion Works</h5>
+          <p>Behind the scenes, a crypto rate converter uses sophisticated technology to deliver accurate and fast results. Here’s how it functions:
+          </p>
           <div className="ules">
             <ul>
-              <li><span>Accounts </span>Viverra habitant nisl aptent neque faucibus.</li>
-              <li><span>Fee on Tomi </span>Integer quisque nisl fermentum mi at convallis quisque elementum.</li>
-              <li><span>Transactions </span> Sem tortor netus etiam viverra posuere netus donec suspendisse.</li>
-              <li><span>Programs Derived Address  </span> Metus aptent facilisi nullam nibh ante pharetra tortor.</li>
-              <li><span>Fee on Tomi </span>Integer quisque nisl fermentum mi at convallis quisque elementum.</li>
-              <li><span>Cross Program Invocation </span> Himenaeos vitae natoque class; elit malesuada maximus fringilla congue dictum scelerisque.</li>
+              <li><span>Data Aggregation </span>The converter collects live price feeds from multiple crypto exchanges.
+              </li>
+              <li><span>Average Calculation </span>It calculates an average price to balance out fluctuations across platforms.
+              </li>
+              <li><span>User Input </span> You enter the crypto amount and the currency you want to convert into.
+              </li>
+              <li><span>Instant Output  </span> The tool displays the converted value within seconds.
+              </li>
+              <p>For example:</p>
+              <p> If Bitcoin (BTC) trades at $68,000 and you want to convert 0.05 BTC to USD, the converter instantly calculates:
+                0.05 × 68,000 = $3,400 USD<br></br>
+                That’s it , simple, fast, and always accurate.
+              </p>
+
             </ul>
           </div>
 
-          <h5 className="topppec">Aut beatae nihil ex odit laudantium</h5>
-          <p>At praesent consectetur elit etiam quam vitae. Morbi litora dictum iaculis enim lectus pretium. Dis hendrerit cras platea facilisis a rutrum. Tristique ligula vivamus habitasse imperdiet fringilla dapibus. Aliquet cursus convallis nisi rhoncus tortor neque. Placerat praesent maecenas; primis et eu tincidunt mattis. Aenean dis luctus magnis; potenti augue amet velit.</p>
-          <p>usto molestie orci habitant vehicula sodales phasellus. Scelerisque ridiculus fusce nisi in platea. Sem conubia arcu eleifend aptent adipiscing.</p>
+          <h5 className="topppec">Conversion Tables; Get the Latest Crypto Rates
+          </h5>
+          <p>One of the most useful features of crypto converters is the conversion tables section. These tables show the latest exchange rates for popular cryptocurrencies and trading pairs, making it easy to see how the market is moving right this minute.
+          </p>
+          <p>You can track top cryptocurrencies like Bitcoin, Ethereum, Cardano, Solana, Dogecoin, Binance Coin, and many others, all in one place.
+          </p>
+
+
+          {/* <h5 className="topppec">Example: Popular Crypto Conversion Table
+          </h5>
+          <div>
+            <Table responsive>
+              <thead>
+                <tr>
+                  <th>Cryptocurrency</th>
+                  <th>Symbol</th>
+                  <th>USD Value</th>
+                  <th>BTC Equivalent</th>
+                  <th>24h Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bitcoin</td>
+                  <td>BTC</td>
+                  <td>$68,000</td>
+                     <td>1 BTC </td>
+
+                  <td>+1.8%</td>
+
+                </tr>
+                <tr>
+                  <td>Ethereum</td>
+                  <td>ETH</td>
+                  <td>$2,450</td>
+                     <td>0.036 BTC</td>
+
+                  <td>+2.2%</td>
+
+
+
+
+
+                </tr>
+                <tr>
+
+                  <td>Cardano</td>
+                  <td>ADA</td>
+                  <td>$0.42</td>
+                    <td>0.000006 BTC</td>
+
+                  <td>+0.6%</td>
+
+
+
+                </tr>
+                <tr>
+                  <td>Solana</td>
+  <td>SOL</td>
+    <td>$158</td>
+<td>0.0023 BTC</td>
+   <td>+3.1%</td>
+
+
+
+
+
+
+                </tr>
+                <tr>
+
+  <td>Dogecoin</td>
+    <td>DOGE</td>
+
+
+
+
+                  <td>Binance Coin</td>
+                  <td>Tether</td>
+
+
+
+
+                  <td>BNB</td>
+                  <td>USDT</td>
+
+
+
+
+
+                  <td>$0.13</td>
+                  <td>$585</td>
+                  <td>$1.00</td>
+
+                  <td>0.0000019 BTC</td>
+                  <td>0.0085 BTC</td>
+                  <td>0.000015 BTC</td>
+
+
+                  <td>+0.9%</td>
+                  <td>+1.0%</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div> */}
+
+          <h5  className="topppec">Popular Crypto Conversion Pairs</h5>
+          <p>While thousands of conversion combinations exist, some pairs are traded and tracked more frequently than others. The most common ones include:
+          </p>
+          <div className="ules">
+            <ul>
+              <li><span>BTC/USD -- </span> Bitcoin to US Dollar
+
+              </li>
+              <li><span>ETH/USD -- </span>Ethereum to US Dollar
+              </li>
+              <li><span>BTC/ETHt -- </span> Bitcoin to Ethereum
+              </li>
+              <li><span>BNB/USDT --  </span> Binance Coin to Tether
+              </li>
+              <li><span>ADA/INR -- </span> Cardano to Indian Rupee
+              </li>
+              <li><span>SOL/EUR -- </span> Solana to Euro
+
+              </li>
+              <li><span>DOGE/USD -- </span> Dogecoin to US Dollar
+
+
+              </li>
+
+            </ul>
+          </div>
+          <p>These pairs are useful for traders worldwide because they represent the most active and liquid markets.
+          </p>
+          <h5>Key Features of a Reliable Crypto Conversion Tool</h5>
+          <p>When choosing a crypto conversion tool or calculator, look for these must-have features:
+          </p>
+          <div className="ules">
+            <ul>
+              <li><span>Live Data Updates </span> Prices should refresh in real time.
+
+
+              </li>
+              <li><span>Global Currency Support </span>Covering both crypto and fiat currencies.
+
+              </li>
+              <li><span>User-Friendly Interface </span> Simple, intuitive, and responsive across all devices.
+
+              </li>
+              <li><span>Historical Data </span> To view past price trends and performance.
+              </li>
+              <li><span>Security and Accuracy  </span> Sourced from reputable exchanges with verified APIs.
+              </li>
+
+            </ul>
+          </div>
+          <h5  className="topppec">Factors That Affect Crypto Conversion Rates</h5>
+          <p>Understanding what influences crypto rates helps you interpret conversion data more effectively. Some key factors include:
+          </p>
+          <div className="ules">
+            <ul>
+              <li><span>Supply and Demand </span> The more people want a coin, the higher its price climbs.
+
+
+
+              </li>
+              <li><span>Exchange Volume </span> Markets with more trading activity often have more stable rates.
+
+
+              </li>
+              <li><span>News & Events </span>  Announcements, partnerships, or regulations can shift prices overnight.
+
+
+              </li>
+              <li><span>Global Economy </span> Inflation, interest rates, and political events affect investor confidence.
+              </li>
+              <li><span>Technology Upgrades </span> Network updates or hard forks can temporarily affect conversion values.
+
+              </li>
+
+            </ul>
+          </div>
+          <h5  className="topppec">Crypto Rate Conversion vs. Exchange Rate: What’s the Difference?
+          </h5>
+          <p>While both terms sound similar, they serve slightly different purposes.
+          </p>
+          <div className="ules">
+            <ul>
+              <li><span>Crypto Rate Conversion </span> Used for informational purposes, shows live market value of one crypto versus another.
+              </li>
+              <li><span>Exchange Rate </span> The exact rate you get when trading on an exchange, which may include transaction fees or small variations (slippage).
+
+
+
+              </li>
+
+
+            </ul>
+          </div>
+          <p>Conversion tools help you monitor prices; exchanges help you execute transactions.
+          </p>
+          <h5  className="topppec">How to Use a Crypto Rate Converter</h5>
+          <div className="ules">
+            <ul>
+              <li><span>Select Your Currency Pair  </span>  Choose the crypto you have and the currency you want to convert to.
+              </li>
+              <li><span>Enter the Amount </span> Input your desired amount (e.g., 1 BTC or 100 DOGE).
+
+              </li>
+              <li><span>View Real-Time Results </span>  Instantly see how much your crypto is worth.
+
+
+
+              </li>
+              <li><span>Optional </span> Explore conversion tables or charts for deeper insights.
+              </li>
+              <li><span>Bookmark the Page </span>Check daily to stay updated with market movements.
+
+
+              </li>
+
+            </ul>
+          </div>
+          <h5  className="topppec">Real-World Example: Converting Ethereum to USD
+          </h5>
+          <p>Let’s say you own 3 ETH, and the current rate is $2,450 per Ethereum.</p>
+          <p>3 × 2,450 = $7,350 USD
+          </p>
+          <p>Now, if Ethereum rises by 10% tomorrow, your holdings become worth $8,085 USD. This simple example shows why real-time conversion is crucial, the value of your assets can change within hours.
+          </p>
+          <h5  className="topppec">Benefits of Using a Crypto Conversion Tool
+          </h5>
+          <div className="ules">
+            <ul>
+              <li><span>Instant Access to Market Data  </span>
+              </li>
+              <li><span>Supports Dozens of Currencies and Trading Pairs
+              </span>
+              </li>
+              <li><span>Completely Free to Use
+              </span>
+              </li>
+              <li><span>Easy Portfolio Value Calculation
+              </span>
+              </li>
+              <li><span>No Sign-Up Required
+              </span>
+
+
+              </li>
+              <li><span>Works 24/7 Across All Devices
+
+              </span>
+
+
+              </li>
+
+            </ul>
+          </div>
+          <p>With these advantages, crypto converters are an essential part of every trader’s toolkit.
+          </p>
+          <h5  className="topppec">Frequently Asked Questions (FAQ)
+          </h5>
+          <div className="ules">
+            <ul>
+              <li><span> How accurate are crypto conversion rates?
+  </span>
+
+              </li>
+              <p>They’re very accurate if the converter pulls live data from reputable exchanges like Binance or Coinbase.
+</p>
+              <li><span> How often do conversion rates change?
+
+              </span>
+              </li>
+              <p>Prices update every few seconds to reflect real-time market conditions.</p>
+              <li><span>Can I convert crypto to my local currency?
+
+              </span>
+              </li>
+              <p>Yes, most tools support major global fiat currencies like USD, EUR, GBP, INR, AUD, and CAD.
+</p>
+              <li><span>Are crypto converters free?
+              </span>
+              </li>
+              <p>Yes. Crypto rate converters are free informational tools for quick calculations.
+</p>
+              <li><span> Do converters include exchange fees?
+              </span>
+
+
+              </li>
+              <p>No. Displayed rates are market prices. Actual trading may include small fees depending on the platform.
+</p>
+              <li><span> How often do conversion rates change?
+
+
+              </span>
+
+
+              </li>
+              <p> Crypto markets operate 24/7, and rates can change every second.</p>
+
+            </ul>
+          </div>
+          <h5 className="topppec">Conclusion:
+</h5>
+<p>In the fast-paced world of digital currencies, information is power. A crypto rates conversion tool keeps you informed, accurate, and ready to make smart decisions.
+</p>
+<p>You can check live BTC/USD prices and compare dozens of coins in a conversion table. This lets you see how the market is moving right now. Whether you’re tracking your portfolio, exploring trading opportunities, or just watching crypto trends, a converter helps you stay one step ahead.
+</p>
+<p>Bookmark your favorite crypto converter page, check daily rates, and always stay updated. In crypto, timing isn’t just important; it’s everything.
+</p>
         </div>
 
       </div>
