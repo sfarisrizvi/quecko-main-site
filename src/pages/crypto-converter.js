@@ -185,7 +185,10 @@ const Cryptoconverter = () => {
                 <Dropdown show={open} onToggle={(isOpen) => setOpen(isOpen)}>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     {fromCoin ? (
-                      <div className="innner_inputs" onClick={() => setOpen(!open)}>
+                      <div className="innner_inputs" onClick={() => {
+                        handleShow();    // first action
+                        setOpen(!open);  // second action
+                      }}>
                         <img
                           src={fromCoin.image}
                           alt={fromCoin.symbol}
@@ -194,6 +197,7 @@ const Cryptoconverter = () => {
                         />
                         <h3>{fromCoin.symbol.toUpperCase()}</h3>
                         <svg
+
                           className={`arrow-icon ${open ? "rotate" : ""}`}
                           xmlns="http://www.w3.org/2000/svg"
                           width="13"
@@ -287,7 +291,12 @@ const Cryptoconverter = () => {
                 <Dropdown show={openRight} onToggle={(isOpen) => setOpenRight(isOpen)}>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     {toCoin ? (
-                      <div className="innner_inputs" onClick={() => setOpenRight(!openRight)}>
+                      <div className="innner_inputs"
+                      onClick={() => {
+                        handleShow();    // first action
+                       setOpenRight(!openRight);  // second action
+                      }}
+                    >
                         <img
                           src={toCoin.image}
                           alt={toCoin.symbol}
@@ -651,7 +660,7 @@ const Cryptoconverter = () => {
             </Table>
           </div> */}
 
-          <h5  className="topppec">Popular Crypto Conversion Pairs</h5>
+          <h5 className="topppec">Popular Crypto Conversion Pairs</h5>
           <p>While thousands of conversion combinations exist, some pairs are traded and tracked more frequently than others. The most common ones include:
           </p>
           <div className="ules">
@@ -701,7 +710,7 @@ const Cryptoconverter = () => {
 
             </ul>
           </div>
-          <h5  className="topppec">Factors That Affect Crypto Conversion Rates</h5>
+          <h5 className="topppec">Factors That Affect Crypto Conversion Rates</h5>
           <p>Understanding what influences crypto rates helps you interpret conversion data more effectively. Some key factors include:
           </p>
           <div className="ules">
@@ -727,7 +736,7 @@ const Cryptoconverter = () => {
 
             </ul>
           </div>
-          <h5  className="topppec">Crypto Rate Conversion vs. Exchange Rate: What’s the Difference?
+          <h5 className="topppec">Crypto Rate Conversion vs. Exchange Rate: What’s the Difference?
           </h5>
           <p>While both terms sound similar, they serve slightly different purposes.
           </p>
@@ -746,7 +755,7 @@ const Cryptoconverter = () => {
           </div>
           <p>Conversion tools help you monitor prices; exchanges help you execute transactions.
           </p>
-          <h5  className="topppec">How to Use a Crypto Rate Converter</h5>
+          <h5 className="topppec">How to Use a Crypto Rate Converter</h5>
           <div className="ules">
             <ul>
               <li><span>Select Your Currency Pair  </span>  Choose the crypto you have and the currency you want to convert to.
@@ -768,14 +777,14 @@ const Cryptoconverter = () => {
 
             </ul>
           </div>
-          <h5  className="topppec">Real-World Example: Converting Ethereum to USD
+          <h5 className="topppec">Real-World Example: Converting Ethereum to USD
           </h5>
           <p>Let’s say you own 3 ETH, and the current rate is $2,450 per Ethereum.</p>
           <p>3 × 2,450 = $7,350 USD
           </p>
           <p>Now, if Ethereum rises by 10% tomorrow, your holdings become worth $8,085 USD. This simple example shows why real-time conversion is crucial, the value of your assets can change within hours.
           </p>
-          <h5  className="topppec">Benefits of Using a Crypto Conversion Tool
+          <h5 className="topppec">Benefits of Using a Crypto Conversion Tool
           </h5>
           <div className="ules">
             <ul>
@@ -806,16 +815,16 @@ const Cryptoconverter = () => {
           </div>
           <p>With these advantages, crypto converters are an essential part of every trader’s toolkit.
           </p>
-          <h5  className="topppec">Frequently Asked Questions (FAQ)
+          <h5 className="topppec">Frequently Asked Questions (FAQ)
           </h5>
           <div className="ules">
             <ul>
               <li><span> How accurate are crypto conversion rates?
-  </span>
+              </span>
 
               </li>
               <p>They’re very accurate if the converter pulls live data from reputable exchanges like Binance or Coinbase.
-</p>
+              </p>
               <li><span> How often do conversion rates change?
 
               </span>
@@ -826,19 +835,19 @@ const Cryptoconverter = () => {
               </span>
               </li>
               <p>Yes, most tools support major global fiat currencies like USD, EUR, GBP, INR, AUD, and CAD.
-</p>
+              </p>
               <li><span>Are crypto converters free?
               </span>
               </li>
               <p>Yes. Crypto rate converters are free informational tools for quick calculations.
-</p>
+              </p>
               <li><span> Do converters include exchange fees?
               </span>
 
 
               </li>
               <p>No. Displayed rates are market prices. Actual trading may include small fees depending on the platform.
-</p>
+              </p>
               <li><span> How often do conversion rates change?
 
 
@@ -851,13 +860,13 @@ const Cryptoconverter = () => {
             </ul>
           </div>
           <h5 className="topppec">Conclusion:
-</h5>
-<p>In the fast-paced world of digital currencies, information is power. A crypto rates conversion tool keeps you informed, accurate, and ready to make smart decisions.
-</p>
-<p>You can check live BTC/USD prices and compare dozens of coins in a conversion table. This lets you see how the market is moving right now. Whether you’re tracking your portfolio, exploring trading opportunities, or just watching crypto trends, a converter helps you stay one step ahead.
-</p>
-<p>Bookmark your favorite crypto converter page, check daily rates, and always stay updated. In crypto, timing isn’t just important; it’s everything.
-</p>
+          </h5>
+          <p>In the fast-paced world of digital currencies, information is power. A crypto rates conversion tool keeps you informed, accurate, and ready to make smart decisions.
+          </p>
+          <p>You can check live BTC/USD prices and compare dozens of coins in a conversion table. This lets you see how the market is moving right now. Whether you’re tracking your portfolio, exploring trading opportunities, or just watching crypto trends, a converter helps you stay one step ahead.
+          </p>
+          <p>Bookmark your favorite crypto converter page, check daily rates, and always stay updated. In crypto, timing isn’t just important; it’s everything.
+          </p>
         </div>
 
       </div>
@@ -888,11 +897,12 @@ const Cryptoconverter = () => {
                   key={coin.id}
                   className="myydivv"
                   style={{ cursor: "pointer" }}
-                  onClick={async () => {
-                    setFromCoin(coin);
-                    setSearch("");
-                    await convert(fromValue, "from", coin, toCoin);
-                  }}
+                 onClick={async () => {
+  setFromCoin(coin);
+  setSearch("");
+  await convert(fromValue, "from", coin, toCoin);
+  handleClose(); // ✅ This will close the offcanvas
+}}
                 >
                   <div className="unnnderside">
                     <img
@@ -952,10 +962,10 @@ const Cryptoconverter = () => {
                   className="myydivv"
                   style={{ cursor: "pointer" }}
                   onClick={() => {
-                    setToCoin(coin);
-                    setSearch("");
-                    handleClose1
-                  }}
+  setToCoin(coin);
+  setSearch("");
+  handleClose1(); // ✅ Close on click
+}}
                 >
                   <div className="unnnderside">
                     <img
