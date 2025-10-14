@@ -6,7 +6,7 @@ const Marquee = () => {
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const res = await fetch("/api/prices");
+        const res = await fetch("/api/prices", { cache: "no-store" });
         const data = await res.json();
         setCoins(data);
       } catch (err) {
@@ -15,11 +15,11 @@ const Marquee = () => {
     };
 
     fetchPrices();
-    const interval = setInterval(fetchPrices, 90000);
+    const interval = setInterval(fetchPrices, 30000);
+
     return () => clearInterval(interval);
   }, []);
 
-  // Repeat the list to create a continuous marquee effect
   const repeatedCoins = [...coins, ...coins, ...coins, ...coins];
 
   return (
