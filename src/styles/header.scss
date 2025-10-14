@@ -153,6 +153,10 @@
     }
 }
 
+.landing-top {
+    position: relative;
+    top: 29px !important;
+}
 
 .mainsidebar {
     background: #000;
@@ -225,7 +229,7 @@
             align-items: center;
             justify-content: space-between;
             position: fixed;
-            padding: 19px;
+            padding: 58px 19px 19px 19px;
             z-index: 9999;
             width: 100%;
 
