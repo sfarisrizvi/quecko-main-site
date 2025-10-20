@@ -197,8 +197,8 @@ const Blogdetail = ({ initialBlogDetail, initialRelatedBlogs, slug, error }) => 
                         <div className="parenttext">
                             <div className="twicebtn">
                                 {/* TODO: Dynamically render categories if possible */}
-                                <button>Development</button>
-                                <button>Product</button>
+                                {/* <button>Development</button>
+                                <button>Product</button> */}
                             </div>
                             <h1 className="mainpara" dangerouslySetInnerHTML={{ __html: item.title?.rendered }} />
                             <p className="para">
