@@ -167,8 +167,8 @@ const Header = () => {
                 <Link href="/blog" scroll={false}>
                   <p className="nav-link">Blogs</p>
                 </Link>
-                <Link href="/#faqs" scroll={false}>
-                  <p className="nav-link">FAQs</p>
+                <Link href="/career" scroll={false}>
+                  <p className="nav-link">Careers</p>
                 </Link>
 
 

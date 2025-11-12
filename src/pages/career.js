@@ -12,6 +12,7 @@ const career = () => {
   const [designJobs, setDesignJobs] = useState([]);
   const [developmentJobs, setDevelopmentJobs] = useState([]);
   const [marketingJobs, setMarketingJobs] = useState([]);
+  const [businessJobs, setBusinessJobs] = useState([]);
   const [loading, setloading] = useState(false);
   const [loading1, setloading1] = useState(false);
 
@@ -33,6 +34,7 @@ const career = () => {
 
   const getSingleJob = async (id) => {
     try {
+      console.log('getSingleJob called with ID:', id);
       setloading1(true)
       const data = await JobBasedcategory(id)
       setalljobs(data)
@@ -43,6 +45,8 @@ const career = () => {
         setDevelopmentJobs(data);
       } else if (id === 151) {
         setMarketingJobs(data);
+      } else if (id === 166) {
+        setBusinessJobs(data);
       }
 
 
@@ -63,7 +67,7 @@ const career = () => {
 
   return (
     <>
-      
+
       <Header />
       <section className='careeer_results'>
 
@@ -88,6 +92,13 @@ const career = () => {
                   onClick={() => getSingleJob(151)}
 
                 >Marketing</button>
+
+                <button className="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="false"
+                  onClick={() => {
+                    console.log('Button clicked, calling getSingleJob with 166');
+                    getSingleJob(166);
+                  }}
+                >Business Development</button>
 
               </div>
             </nav>
@@ -151,31 +162,31 @@ const career = () => {
                     {designJobs.map((item, index) => (
                       <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
 
-                      <div className='all_tab_Data'>
-                        <div className='inner_tab_cards'>
-                          <div className='left_side'>
-                            <h2>{item?.title?.rendered}</h2>
-                            <p
-                              dangerouslySetInnerHTML={{
-                                __html: item?.acf?.job_description
-                                  ?.replace(/&#8211;\s*/g, '')
-                                  ?.replace(/–\s*/g, '')
-                              }}
-                            />                      <div className='buttons_innner'>
-                              <button className='full'>Fulltime</button>
-                              <button className='remote'>Remote</button>
+                        <div className='all_tab_Data'>
+                          <div className='inner_tab_cards'>
+                            <div className='left_side'>
+                              <h2>{item?.title?.rendered}</h2>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: item?.acf?.job_description
+                                    ?.replace(/&#8211;\s*/g, '')
+                                    ?.replace(/–\s*/g, '')
+                                }}
+                              />                      <div className='buttons_innner'>
+                                <button className='full'>Fulltime</button>
+                                <button className='remote'>Remote</button>
+                              </div>
                             </div>
-                          </div>
-                          <div className='right_side'>
-                            {/* <Link href="/careerdetail"> */}
+                            <div className='right_side'>
+                              {/* <Link href="/careerdetail"> */}
                               <button>Apply Now</button>
 
-                            {/* </Link> */}
+                              {/* </Link> */}
+                            </div>
                           </div>
+
+
                         </div>
-
-
-                      </div>
                       </Link>
 
                     ))}
@@ -190,46 +201,6 @@ const career = () => {
                     {developmentJobs.map((item, index) => (
                       <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
 
-
-                      <div className='inner_tab_cards' key={index}>
-                        <div className='left_side'>
-                          <h2>{item?.title?.rendered}</h2>
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html: item?.acf?.job_description
-                                ?.replace(/&#8211;\s*/g, '')
-                                ?.replace(/–\s*/g, '')
-                            }}
-                          />
-                          <div className='buttons_innner'>
-                            <button className='full'>Fulltime</button>
-                            <button className='remote'>Remote</button>
-                          </div>
-                        </div>
-                        <div className='right_side'>
-                          {/* <Link href="/careerdetail"> */}
-                            <button>Apply Now</button>
-
-                          {/* </Link> */}
-                        </div>
-                      </div>
-                      </Link>
-                    ))}
-                  </>
-                )}
-
-
-              </div>
-              </div>
-              {/* Marketing */}
-              <div className="tab-pane fade  " id="nav-home1" role="tabpanel" aria-labelledby="nav-home1-tab">
-                <div className='all_tab_Data'>
-
-
-                  {loading1 ? <JobLoader /> : (
-                    <>
-                      {marketingJobs.map((item, index) => (
-                        <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
 
                         <div className='inner_tab_cards' key={index}>
                           <div className='left_side'>
@@ -248,11 +219,51 @@ const career = () => {
                           </div>
                           <div className='right_side'>
                             {/* <Link href="/careerdetail"> */}
-                              <button>Apply Now</button>
+                            <button>Apply Now</button>
 
                             {/* </Link> */}
                           </div>
                         </div>
+                      </Link>
+                    ))}
+                  </>
+                )}
+
+
+              </div>
+              </div>
+              {/* Marketing */}
+              <div className="tab-pane fade  " id="nav-home1" role="tabpanel" aria-labelledby="nav-home1-tab">
+                <div className='all_tab_Data'>
+
+
+                  {loading1 ? <JobLoader /> : (
+                    <>
+                      {marketingJobs.map((item, index) => (
+                        <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
+
+                          <div className='inner_tab_cards' key={index}>
+                            <div className='left_side'>
+                              <h2>{item?.title?.rendered}</h2>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: item?.acf?.job_description
+                                    ?.replace(/&#8211;\s*/g, '')
+                                    ?.replace(/–\s*/g, '')
+                                }}
+                              />
+                              <div className='buttons_innner'>
+                                <button className='full'>Fulltime</button>
+                                <button className='remote'>Remote</button>
+                              </div>
+                            </div>
+                            <div className='right_side'>
+                              {/* <Link href="/careerdetail"> */}
+                              <button>Apply Now</button>
+
+                              {/* </Link> */}
+                            </div>
+                          </div>
                         </Link>
 
                       ))}</>
@@ -261,9 +272,38 @@ const career = () => {
 
                 </div>
               </div>
-
-
-
+              {/* Business Development */}
+              <div className="tab-pane fade" id="nav-business" role="tabpanel" aria-labelledby="nav-business-tab">
+                <div className='all_tab_Data'>
+                  {loading1 ? <JobLoader /> : (
+                    <>
+                      {businessJobs.map((item, index) => (
+                        <Link href={`/careerdetail?slug=${item?.slug}`} key={index}>
+                          <div className='inner_tab_cards'>
+                            <div className='left_side'>
+                              <h2>{item?.title?.rendered}</h2>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: item?.acf?.job_description
+                                    ?.replace(/&#8211;\s*/g, '')
+                                    ?.replace(/–\s*/g, '')
+                                }}
+                              />
+                              <div className='buttons_innner'>
+                                <button className='full'>Fulltime</button>
+                                <button className='remote'>Remote</button>
+                              </div>
+                            </div>
+                            <div className='right_side'>
+                              <button>Apply Now</button>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>
