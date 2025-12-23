@@ -193,7 +193,7 @@ const Header = () => {
       }
 
 
-      <div className="phone_nav d-none">
+      <div className={`phone_nav d-none ${!isLanding ? "landing-top-mbl" : ""}`}>
         <div className="inner_navv">
           <Link href="/">
             <img src="/Assets/phonennav.svg" alt="Phone Logo" />
