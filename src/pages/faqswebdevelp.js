@@ -8,47 +8,57 @@ const Faqswebdevelp = () => {
                 <div className='inner_faqs'>
                     <div className='middle_left'>
                         <span  className='faqqs_div'>FAQ<span className='small_text'>s</span></span>
-                        <h2>FAQs About Web 3 Development</h2>
+                        <h2>FAQs About Prediction Market Development
+</h2>
                     </div>
                     <div className='middle_right'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header> <span>01.</span>What industries can benefit from Web3 development?
+                                <Accordion.Header> <span>01.</span>What industries use prediction markets?
+
+
+
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Web3 solutions are transforming industries like finance (DeFi), gaming (GameFi), real estate (RWA tokenization), supply chain, healthcare, and enterprise solutions by enhancing transparency, security, and decentralization.
+                              Sports, DeFi, governance, real estate, climate initiatives, cultural events, enterprise forecasting anywhere collective intelligence provides value.
+
 
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header> <span>02.</span>  How long does it take to develop a Web3 application?
+                                <Accordion.Header> <span>02.</span>  How long does development take?
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                The timeline depends on the complexity of your project. A basic dApp may take a few weeks, while enterprise-grade blockchain solutions may require several months. Our team provides detailed project timelines after consultation.
+                               Typical build time ranges from 8 to 20 weeks, depending on functionality, oracle complexity, and network selection.
 
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header> <span>03.</span> What blockchain networks do you support?
+                                <Accordion.Header> <span>03.</span> Which blockchain networks do you support?
+
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                We develop on Ethereum, BNB Chain, Solana, Polygon, Avalanche, Near, Cosmos, and other custom blockchain networks, depending on your project requirements.
+                                Solana, Ethereum, Polygon, Arbitrum, Optimism, Base, and multi-chain environments.
 
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
-                                <Accordion.Header> <span>04.</span> Do you offer post-launch support?
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                Absolutely! We provide ongoing maintenance, security updates, and feature enhancements to keep your Web3 application running smoothly.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="4">
-                                <Accordion.Header> <span>05.</span> Can you integrate smart contracts with existing applications?
+                                <Accordion.Header> <span>04.</span>  Do you provide post-launch support?
 
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                Yes! We specialize in integrating smart contracts, decentralized storage, and blockchain functionalities into existing apps, ensuring seamless Web3 adoption.
+                                Yes monitoring, oracle management, market tools, governance, upgrades, and ongoing scaling.
+
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="4">
+                                <Accordion.Header> <span>05.</span> Can prediction markets be integrated into existing applications?
+
+
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                Yes, we can plug prediction logic, AMMs, or oracle layers into any Web2 or Web3 product.
+
 
                                 </Accordion.Body>
                             </Accordion.Item>

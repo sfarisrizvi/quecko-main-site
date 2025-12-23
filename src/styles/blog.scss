@@ -420,7 +420,12 @@
                     display: inline-block;
                     text-decoration: none;
                     width: 100%;
-                    height: 43px;
+                    height: 57px;
+    perspective: 1000px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
                     perspective: 1000px;
                 }
