@@ -14,7 +14,7 @@ const useSmoothScroll = () => {
         el: scrollRef.current,
         smooth: true, 
         lerp: 0.1,
-        multiplier: 1.2, 
+        multiplier: 0.8, 
       });
 
       
