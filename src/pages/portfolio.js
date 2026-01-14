@@ -678,16 +678,14 @@ const Portfolio = () => {
                                     <div className='inner_projectsphone d-none'>
 
                                         <div className='parent_div'>
-                                            <Link href='/legion-network' prefetch={false}>
+                                            {/* <Link href='/legion-network' prefetch={false}>
                                                 <div className='left_side hovercard'>
                                                     <img src='\Assets\gp.png' className='imgport' />
                                                     <div className='buttons_div'>
-                                                        {/* <button>Branding</button>
-<button>Development</button>
-<button>Marketing</button> */}
+                                  
                                                     </div>
                                                 </div>
-                                            </Link>
+                                            </Link> */}
                                             <Link href='/tapspace-marketing' prefetch={false}>
                                                 <div className='right_side hovercard'>
                                                     <img src='\Assets\ptab.png' className='imgport' />
@@ -1162,20 +1160,20 @@ const Portfolio = () => {
                                                 <img src="/Assets/ptab.png" className="imgport" />
                                             </div>
                                         </Link>
-                                        <Link href="/legion-network" prefetch={false}>
+                                        <Link href="/quick-marketing" prefetch={false}>
                                             <div className="left_side hovercard">
-                                                <img src="/Assets/mainm.png" className="imgport" />
+                                                <img src="\Assets\quicknewone.png" className="imgport" />
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className="parent_div one_parentss">
+                                    {/* <div className="parent_div one_parentss">
                                         <Link href="/quick-marketing" prefetch={false}>
                                             <div className="right_side hovercard">
                                                 <img src="/Assets/quickdesk.png" className="imgport" />
                                             </div>
                                         </Link>
 
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="inner_projectsphone d-none">
@@ -1193,11 +1191,11 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className="parent_div">
-                                        <Link href="/legion-network" prefetch={false}>
+                                        {/* <Link href="/legion-network" prefetch={false}>
                                             <div className="left_side hovercard">
                                                 <img src="/Assets/gp.png" className="imgport" />
                                             </div>
-                                        </Link>
+                                        </Link> */}
                                         <Link href="/tapspace-marketing" prefetch={false}>
                                             <div className="right_side hovercard">
                                                 <img src="/Assets/ptab.png" className="imgport" />
