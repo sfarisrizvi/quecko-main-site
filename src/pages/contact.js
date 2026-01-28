@@ -11,7 +11,7 @@ import emailjs from "@emailjs/browser";
 import Toast from "react-bootstrap/Toast";
 import ReCAPTCHA from "react-google-recaptcha"; // Import ReCAPTCHA
 import { SiteKey } from "@/Utils/Enviroment";
-import { validateForm } from "@/Utils/constants";
+// import { validateForm } from "@/Utils/constants";
 import { toast } from "react-toastify";
 
 const contactusdetail = () => {
@@ -25,8 +25,42 @@ const contactusdetail = () => {
   const [submitted, setSubmitted] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null); // State for reCAPTCHA token
   const recaptchaRef = useRef(null); // Ref for reCAPTCHA instance
-
   const YOUR_RECAPTCHA_SITE_KEY = SiteKey;
+
+
+   const regex = {
+        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
+        message: /^.{5,}$/,
+    };
+
+ const validateForm = (payload) => {
+        const validationErrors = {};
+
+        if (!payload.name) {
+            validationErrors.name = "Name is required";
+        } 
+        // else if (!regex.name.test(payload.name)) {
+        //     validationErrors.name = "Name must contain only letters and spaces";
+        // }
+        if (!payload.email) {
+            validationErrors.email = "Email is required";
+        } else if (!regex.email.test(payload.email)) {
+            validationErrors.email = "Invalid email format";
+        }
+        const cleanedMessage = payload.message.replace(/\s/g, '');
+        if (!payload.message) {
+            validationErrors.message = "Message is required";
+        } else if (cleanedMessage.length < 5) {
+            validationErrors.message = "Message must be at least 5 non-space characters";
+        }
+
+         if (!recaptchaToken) {
+            validationErrors.recaptcha = "Please complete the reCAPTCHA verification.";
+        }
+
+        return validationErrors;
+    };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
