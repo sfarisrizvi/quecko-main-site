@@ -114,13 +114,11 @@ const contactusdetail = () => {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
-                data: {
-                  name: name,
-                  email: email,
-                  message: message,
-                  telegram: telegram,
-                  timestamp: new Date().toISOString(),
-                },
+                name: name,
+                email: email,
+                message: message,
+                telegram: telegram,
+                timestamp: new Date().toISOString(),
               }),
             },
           );
