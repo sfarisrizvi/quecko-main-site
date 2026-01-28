@@ -106,32 +106,32 @@ const contactusdetail = () => {
       const apiResponse = await axios.post("/api/submitForm", payload); // Send full payload including token to your API
       console.log(apiResponse, "apiResponse : /api/submitForm");
 
-      if (apiResponse) {
-        try {
-          const response = await fetch(
-            "https://sheetdb.io/api/v1/htpewqzlp4ton",
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                name: name,
-                email: email,
-                message: message,
-                telegram: telegram,
-                timestamp: new Date().toISOString(),
-              }),
-            },
-          );
-          
-          if (!response.ok) {
-            throw new Error(`SheetDB error: ${response.status}`);
-          }
-          
-          const result = await response.json();
-          console.log(result, 'SheetDB success');
-        } catch (error) {
-          console.log(error, 'SheetDB error');
+      try {
+        const response = await fetch(
+          "https://sheetdb.io/api/v1/htpewqzlp4ton",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name,
+              email,
+              message,
+              telegram,
+              timestamp: new Date().toISOString(),
+            }),
+          },
+        );
+        
+        if (!response.ok) {
+          const errorText = await response.text();
+          console.error('SheetDB error response:', errorText);
+          throw new Error(`SheetDB error: ${response.status} - ${errorText}`);
         }
+        
+        const result = await response.json();
+        console.log(result, 'SheetDB success');
+      } catch (error) {
+        console.error('SheetDB error:', error);
       }
 
 
