@@ -11,8 +11,6 @@ import emailjs from "@emailjs/browser";
 import Toast from "react-bootstrap/Toast";
 import ReCAPTCHA from "react-google-recaptcha"; // Import ReCAPTCHA
 import { SiteKey } from "@/Utils/Enviroment";
-// import { validateForm } from "@/Utils/constants";
-import { toast } from "react-toastify";
 
 const contactusdetail = () => {
   const [showA, setShowA] = useState(false);
@@ -25,42 +23,44 @@ const contactusdetail = () => {
   const [submitted, setSubmitted] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState(null); // State for reCAPTCHA token
   const recaptchaRef = useRef(null); // Ref for reCAPTCHA instance
+
   const YOUR_RECAPTCHA_SITE_KEY = SiteKey;
 
+  const regex = {
+    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
+    message: /^.{5,}$/,
+  };
 
-   const regex = {
-        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-        name: /^[A-Za-z]+(?: [A-Za-z]+)*$/,
-        message: /^.{5,}$/,
-    };
+  const validateForm = (payload) => {
+    const validationErrors = {};
 
- const validateForm = (payload) => {
-        const validationErrors = {};
+    if (!payload.name) {
+      validationErrors.name = "Name is required";
+    }
+    // else if (!regex.name.test(payload.name)) {
+    //     validationErrors.name = "Name must contain only letters and spaces";
+    // }
+    if (!payload.email) {
+      validationErrors.email = "Email is required";
+    } else if (!regex.email.test(payload.email)) {
+      validationErrors.email = "Invalid email format";
+    }
+    const cleanedMessage = payload.message.replace(/\s/g, "");
+    if (!payload.message) {
+      validationErrors.message = "Message is required";
+    } else if (cleanedMessage.length < 5) {
+      validationErrors.message =
+        "Message must be at least 5 non-space characters";
+    }
 
-        if (!payload.name) {
-            validationErrors.name = "Name is required";
-        } 
-        // else if (!regex.name.test(payload.name)) {
-        //     validationErrors.name = "Name must contain only letters and spaces";
-        // }
-        if (!payload.email) {
-            validationErrors.email = "Email is required";
-        } else if (!regex.email.test(payload.email)) {
-            validationErrors.email = "Invalid email format";
-        }
-        const cleanedMessage = payload.message.replace(/\s/g, '');
-        if (!payload.message) {
-            validationErrors.message = "Message is required";
-        } else if (cleanedMessage.length < 5) {
-            validationErrors.message = "Message must be at least 5 non-space characters";
-        }
+    if (!recaptchaToken) {
+      validationErrors.recaptcha =
+        "Please complete the reCAPTCHA verification.";
+    }
 
-         if (!recaptchaToken) {
-            validationErrors.recaptcha = "Please complete the reCAPTCHA verification.";
-        }
-
-        return validationErrors;
-    };
+    return validationErrors;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -97,18 +97,16 @@ const contactusdetail = () => {
         emailjsPayload, // Send payload (potentially without token)
         "5_dvI4T78SrG6vKnY",
       );
-      console.log(result, "result");
 
       // --- IMPORTANT: Backend Verification ---
       // Your '/api/submitForm' endpoint *must* verify the 'g-recaptcha-response' token
       // using your SECRET KEY ("6Lde_wIlAAAAAEy4cJehUYb9cAcc2_OPfnLnpz_R") before processing the form.
       // If verification fails there, it should return an error.
-      const apiResponse = await axios.post("/api/submitForm", payload); // Send full payload including token to your API
-      console.log(apiResponse , 'apiResponse : /api/submitForm')
 
-      if (apiResponse.data.success !== true) {
-        const currentTime = Date.now(); // e.g., 1712748357782
-        const timestamp = new Date(currentTime).toLocaleString();
+      const apiResponse = await axios.post("/api/submitForm", payload); // Send full payload including token to your API
+      console.log(apiResponse, "apiResponse : /api/submitForm");
+
+      if (apiResponse) {
         try {
           const response = await fetch(
             "https://sheetdb.io/api/v1/htpewqzlp4ton",
@@ -127,16 +125,8 @@ const contactusdetail = () => {
             },
           );
           console.log(response , 'response')
-          if(response.ok){
-         toast.success("Form submitted successfully!");
-
-          }else{
-            toast.error("There was an error. Please try again later.");
-          }
-
-        } catch (err) {
-          console.error(err);
-          toast.error("There was an error. Please try again later.");
+        } catch (error) {
+            console.log(error,'error' )
         }
       }
 
