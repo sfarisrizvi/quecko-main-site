@@ -124,11 +124,19 @@ const contactusdetail = () => {
               }),
             },
           );
-          console.log(response , 'response')
+          
+          if (!response.ok) {
+            throw new Error(`SheetDB error: ${response.status}`);
+          }
+          
+          const result = await response.json();
+          console.log(result, 'SheetDB success');
         } catch (error) {
-            console.log(error,'error' )
+          console.log(error, 'SheetDB error');
         }
       }
+
+
 
       // Reset form on success
       setName("");
