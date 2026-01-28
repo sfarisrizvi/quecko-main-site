@@ -32,7 +32,7 @@ const contactusdetail = () => {
     message: /^.{5,}$/,
   };
 
-  const validateForm = (payload) => {
+  const validateForm = (payload, token) => {
     const validationErrors = {};
 
     if (!payload.name) {
@@ -54,7 +54,7 @@ const contactusdetail = () => {
         "Message must be at least 5 non-space characters";
     }
 
-    if (!recaptchaToken) {
+    if (!token) {
       validationErrors.recaptcha =
         "Please complete the reCAPTCHA verification.";
     }
@@ -73,7 +73,7 @@ const contactusdetail = () => {
       "g-recaptcha-response": recaptchaToken,
     };
 
-    const validationErrors = validateForm(payload);
+    const validationErrors = validateForm(payload, recaptchaToken);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -119,7 +119,7 @@ const contactusdetail = () => {
                   email: email,
                   message: message,
                   telegram: telegram,
-                  timestamp: timestamp,
+                  timestamp: new Date().toISOString(),
                 },
               }),
             },
