@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import Toast from "react-bootstrap/Toast";
 import ReCAPTCHA from "react-google-recaptcha"; // Import ReCAPTCHA
 import { SiteKey } from "@/Utils/Enviroment";
+import { Sendsheetdb } from "@/Utils/Services/googleapis";
 
 const contactusdetail = () => {
   const [showA, setShowA] = useState(false);
@@ -105,36 +106,11 @@ const contactusdetail = () => {
 
       const apiResponse = await axios.post("/api/submitForm", payload); // Send full payload including token to your API
       console.log(apiResponse, "apiResponse : /api/submitForm");
+
       try {
-        const response = await fetch(
-          "https://sheetdb.io/api/v1/6z7x8yahe2q60",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              data: {
-                timestamp: new Date().toISOString(),
-                name,
-                email,
-                telegram,
-                message,
-              },
-            }),
-          },
-        );
-
-        if (!response.ok) {
-          const errorText = await response.text();
-          console.error("SheetDB error response:", errorText);
-          throw new Error(`SheetDB error: ${response.status}`);
-        }
-
-        const result = await response.json();
-        console.log("SheetDB success:", result);
+        await Sendsheetdb({ name, email, telegram, message });
       } catch (error) {
-        console.error("SheetDB error:", error);
+        console.error('SheetDB error:', error);
       }
 
       // Reset form on success
