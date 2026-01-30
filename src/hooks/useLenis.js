@@ -1,46 +1,68 @@
 // hooks/useLenisGsap.js
-import { useEffect } from "react";
-import dynamic from "next/dynamic";
+import { useEffect, useRef } from "react"
 
-export default function useLenisGsap() {
+export default function useLenisGsap(enabled = true) {
+  const lenisRef = useRef(null)
+  const rafRef = useRef(null)
+
   useEffect(() => {
-    import("lenis").then(({ default: Lenis }) => {
-      import("gsap").then(({ gsap }) => {
-        import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
-          gsap.registerPlugin(ScrollTrigger);
+    if (!enabled) return
 
-          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-          const isMac = /Macintosh/i.test(navigator.userAgent);
+    let isMounted = true
 
-         
-          const duration = isMobile ? 3.5 : isMac ? 2.5 : 2;
-          const touchMultiplier = isMobile ? 1.2 : 2;
-          const easing = (t) => 1 - Math.pow(1 - t, isMobile ? 5 : (isMac ? 3.5 : 4)); 
+    Promise.all([
+      import("lenis"),
+      import("gsap"),
+      import("gsap/ScrollTrigger"),
+    ]).then(([{ default: Lenis }, { gsap }, { ScrollTrigger }]) => {
+      if (!isMounted) return
 
-          const lenis = new Lenis({
-            duration,
-            easing,
-            smoothWheel: true,
-            smoothTouch: true,
-            touchMultiplier,
-            infinite: false,
-          });
+      gsap.registerPlugin(ScrollTrigger)
 
-          lenis.on("scroll", ScrollTrigger.update);
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+      const isMac = /Macintosh/i.test(navigator.userAgent)
 
-          gsap.ticker.add((time) => {
-            lenis.raf(time * 1000);
-          });
+      const duration = isMobile ? 3.5 : isMac ? 2.5 : 2
+      const touchMultiplier = isMobile ? 1.2 : 2
+      const easing = (t) =>
+        1 - Math.pow(1 - t, isMobile ? 5 : isMac ? 3.5 : 4)
 
-          
-          gsap.ticker.lagSmoothing(300); 
+      const lenis = new Lenis({
+        duration,
+        easing,
+        smoothWheel: true,
+        smoothTouch: true,
+        touchMultiplier,
+        infinite: false,
+      })
 
-          return () => {
-            lenis.destroy();
-            gsap.ticker.remove(() => lenis.raf());
-          };
-        });
-      });
-    });
-  }, []);
+      lenis.on("scroll", ScrollTrigger.update)
+
+      const raf = (time) => {
+        lenis.raf(time * 1000)
+      }
+
+      gsap.ticker.add(raf)
+      gsap.ticker.lagSmoothing(300)
+
+      lenisRef.current = lenis
+      rafRef.current = raf
+    })
+
+    return () => {
+      isMounted = false
+
+      if (lenisRef.current) {
+        lenisRef.current.destroy()
+        lenisRef.current = null
+      }
+
+      if (rafRef.current) {
+        import("gsap").then(({ gsap }) => {
+          gsap.ticker.remove(rafRef.current)
+        })
+        rafRef.current = null
+      }
+    }
+  }, [enabled])
 }

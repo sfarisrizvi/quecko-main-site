@@ -1,138 +1,143 @@
-"use client"
-
 import "@/styles/app.scss"
 import Script from "next/script"
-import useLenisGsap from "@/hooks/useLenis"
-import { AnimatePresence } from "framer-motion"
-import PageTransition from "@/hooks/PageTransition"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import TawkTo from "./component/Tawkto"
-import Loader from "@/hooks/loader"
-// import { DefaultSeo } from "next-seo"
+import dynamic from "next/dynamic"
+
+// ---------------- Client-only dynamic imports ----------------
+
+const PageTransition = dynamic(() => import("@/hooks/PageTransition"), {
+  ssr: false,
+})
+
+const AnimatePresence = dynamic(
+  () => import("framer-motion").then((mod) => mod.AnimatePresence),
+  { ssr: false }
+)
+
+const Loader = dynamic(() => import("@/hooks/loader"), { ssr: false })
+const TawkTo = dynamic(() => import("./component/Tawkto"), { ssr: false })
+const ClientEffects = dynamic(() => import("./component/ClientEffects"), {
+  ssr: false,
+})
 
 export default function App({ Component, pageProps }) {
-    useLenisGsap()
-    const router = useRouter()
-    const [showLoader, setShowLoader] = useState(true)
+  const router = useRouter()
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowLoader(false)
-        }, 1000) 
+  // 🚫 NO loader on first paint
+  const [showLoader, setShowLoader] = useState(false)
+  const [isFirstLoad, setIsFirstLoad] = useState(true)
 
-        return () => clearTimeout(timer)
-    }, [router.pathname])
+  // Detect first render
+  useEffect(() => {
+    setIsFirstLoad(false)
+  }, [])
 
+  // Loader ONLY during route changes
+  useEffect(() => {
+    const start = () => setShowLoader(true)
+    const end = () => setShowLoader(false)
 
-    useEffect(() => {
-        const handleRouteChange = (url) => {
-            const urlParams = new URLSearchParams(url.split("?")[1])
-            const section = urlParams.get("section")
+    router.events.on("routeChangeStart", start)
+    router.events.on("routeChangeComplete", end)
+    router.events.on("routeChangeError", end)
 
-            if (!section) {
-                const scrollTimer = setTimeout(() => {
-                    window.scrollTo(0, 0)
-                }, PageTransition.duration ? PageTransition.duration * 1000 : 1000)
-            }
-        }
+    return () => {
+      router.events.off("routeChangeStart", start)
+      router.events.off("routeChangeComplete", end)
+      router.events.off("routeChangeError", end)
+    }
+  }, [router.events])
 
-        router.events.on("routeChangeComplete", handleRouteChange)
-        return () => {
-            router.events.off("routeChangeComplete", handleRouteChange)
-        }
-    }, [router.events])
+  return (
+    <>
+      {/* ---------------- SEO / Analytics ---------------- */}
 
-    return (
-        <>
+      <Script
+        id="ld-json-org"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Quecko",
+            "url": "https://quecko.com/",
+            "logo": "https://www.quecko.com/Assets/navlogo.svg",
+            "description": "Quecko is a creative agency offering full-stack Web3 marketing and development.",
+            "sameAs": [
+              "https://www.linkedin.com/company/quecko.web3",
+              "https://www.instagram.com/quecko.web3",
+              "https://twitter.com/@quecko_web3"
+            ]
+          }`,
+        }}
+      />
 
+      <Script
+        id="clarity-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `(function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;
+            t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "qq5oixz9lv");`,
+        }}
+      />
 
-            <Script
-                id="ld-json-org" // Unique id for script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: `{
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Quecko",
-              "url": "https://quecko.com/",
-              "logo": "https://www.quecko.com/Assets/navlogo.svg",
-              "description": "Quecko is a creative agency offering full-stack Web3 marketing, development, and design solutions for blockchain projects across the globe.",
-              "founder": {
-                "@type": "Person",
-                "name": "Alee Abbasi",
-                "jobTitle": "Founder & CEO",
-                "sameAs": [
-                  "https://www.linkedin.com/in/alee-abbasi-32183069"
-                ]
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/quecko.web3",
-                "https://www.instagram.com/quecko.web3",
-                "https://twitter.com/@quecko_web3"
-              ],
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+971-50-740-0268",
-                "contactType": "Sales & Business",
-                "email": "info@quecko.com",
-                "areaServed": "Worldwide",
-                "availableLanguage": ["English", "Urdu"]
-              }
-            }`,
-                }}
-                strategy="afterInteractive" // Strategy define karein
-            />
-            <Script
-                id="clarity-script" // Unique id
-                dangerouslySetInnerHTML={{
-                    __html: `(function(c,l,a,r,i,t,y){
-              c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "qq5oixz9lv");`,
-                }}
-                strategy="afterInteractive"
-            />
-            <Script
-                id="gtm-script" // Unique id
-                dangerouslySetInnerHTML={{
-                    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5NTG2D3Z');`,
-                }}
-                strategy="afterInteractive"
-            />
-            <noscript>
-                <iframe
-                    src="https://www.googletagmanager.com/ns.html?id=GTM-5NTG2D3Z"
-                    height="0"
-                    width="0"
-                    style={{ display: 'none', visibility: 'hidden' }}
-                />
-            </noscript>
+      <Script
+        id="gtm-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5NTG2D3Z');`,
+        }}
+      />
 
-            <AnimatePresence mode="wait">
-                <div key={router.route} style={{ position: 'relative', minHeight: '100vh' }}>
-                    <PageTransition>
-                        <Component {...pageProps} />
-                    </PageTransition>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5NTG2D3Z"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        />
+      </noscript>
 
-                    {showLoader && <Loader />}
-                    <TawkTo />
-                </div>
-            </AnimatePresence>
+      {/* ---------------- App Rendering ---------------- */}
 
-            <Script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                crossOrigin="anonymous"
-                strategy="lazyOnload"
-            />
-        </>
-    )
+      {isFirstLoad ? (
+        // 🚀 FIRST LOAD — zero animation, zero blocking
+        <Component {...pageProps} />
+      ) : (
+        // 🎬 Route changes only
+        <AnimatePresence mode="wait">
+          <PageTransition key={router.route}>
+            <Component {...pageProps} />
+          </PageTransition>
+        </AnimatePresence>
+      )}
+
+      {showLoader && <Loader />}
+
+      {/* Lenis + GSAP (delayed, safe) */}
+      <ClientEffects />
+
+      {/* Chat widget (lazy) */}
+      <TawkTo />
+
+      {/* Bootstrap JS */}
+      <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        strategy="lazyOnload"
+      />
+    </>
+  )
 }
-
-
