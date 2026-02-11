@@ -9,7 +9,7 @@ const Projects = () => {
             <div className='inner_projects mineprojects'>
                 <h2>Our Projects</h2>
 
-                <div className='parent_div'>
+                <div className='parent_div second_parent'>
                     <Link href="/launchpad">
                         <div className='left_side hovercard'>
                             <VideoWithFallback
@@ -36,7 +36,7 @@ const Projects = () => {
                         </div>
                     </Link>
                 </div>
-
+{/* 
                 <div className='parent_div second_parent'>
                     <Link href="/estate-slice">
                         <div className='left_side hovercard'>
@@ -63,7 +63,7 @@ const Projects = () => {
                             />
                         </div>
                     </Link>
-                </div>
+                </div> */}
 
                 <div className='parent_div'>
                     <Link href="/decentralized-options-market">

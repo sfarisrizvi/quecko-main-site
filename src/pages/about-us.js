@@ -312,7 +312,7 @@ const aboutdetail = () => {
 
 
 
-                {/* <section className='blogs_divv myblogsss' id="stories">
+                <section className='blogs_divv myblogsss' id="stories">
                     <div className='inner_bloggs'>
                         <div className='textual_div'>
                             <span className='teamss_head'>TEAM</span>
@@ -390,7 +390,7 @@ const aboutdetail = () => {
                             </div>
                         </div>
                     </div>
-                </section> */}
+                </section>
             </div>
             <Aboutus />
             <Stories />
