@@ -285,11 +285,34 @@
 }
 
 .myblogsss {
+    padding: 0px !important;
     .cardss {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        img{
+            width: 100%     ;
+        }
+        .textual_div{
+            span{
+                color: #9D9D9D;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 20.8px */
+text-transform: uppercase;
+            }
+            h2{
+                color: #000 !important;
+font-size: 50px !important;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 70px */
+margin-top: unset !important;
+padding-top: 16px   ;
+            }
+        }
 
         .name_cards {
             color: #000 !important;
@@ -901,10 +924,13 @@
 
     .myblogsss {
         .cardss {
-            display: flex;
+            display: unset !important;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            .imgusers{
+                padding: 0px 100px 0px 50px  ;
+            }
 
             .name_cards {
                 color: #000 !important;
@@ -1146,4 +1172,28 @@
             }
         }
     }
+}
+.owl-stage {
+  display: flex;
+  align-items: stretch;
+  transition-timing-function: ease-in-out !important;
+}
+
+.owl-stage-outer {
+  overflow: hidden;
+}
+
+.owl-item {
+  transition: transform 0.9s ease-in-out;
+  will-change: transform;
+}
+.owl-item {
+  transform: scale(0.95);
+  opacity: 0.6;
+  transition: all 0.6s ease-in-out;
+}
+
+.owl-item.active {
+  transform: scale(1);
+  opacity: 1;
 }
