@@ -16,10 +16,8 @@ const AnimatePresence = dynamic(
 )
 
 const Loader = dynamic(() => import("@/hooks/loader"), { ssr: false })
-const TawkTo = dynamic(() => import("./component/Tawkto"), { ssr: false })
-const ClientEffects = dynamic(() => import("./component/ClientEffects"), {
-  ssr: false,
-})
+const TawkTo = dynamic(() => import("./component/Tawkto"), { ssr: false, loading: () => null });
+const ClientEffects = dynamic(() => import("./component/ClientEffects"), { ssr: false, loading: () => null });
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
@@ -49,6 +47,13 @@ export default function App({ Component, pageProps }) {
     }
   }, [router.events])
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      import("./component/Tawkto");
+    }, 5000); 
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       {/* ---------------- SEO / Analytics ---------------- */}
@@ -76,7 +81,7 @@ export default function App({ Component, pageProps }) {
 
       <Script
         id="clarity-script"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -125,7 +130,7 @@ export default function App({ Component, pageProps }) {
         </AnimatePresence>
       )}
 
-      {showLoader && <Loader />}
+      {showLoader && !isFirstLoad && <Loader />}
 
       {/* Lenis + GSAP (delayed, safe) */}
       <ClientEffects />
