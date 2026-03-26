@@ -86,61 +86,61 @@ const aboutdetail = () => {
     };
   }, [scrolling, direction]);
 
- const owl_option = {
-  nav: true,
-  dots: false,
-  dotsEach: false,
-  loop: true,
-  autoplay: false,
+  const owl_option = {
+    nav: true,
+    dots: false,
+    dotsEach: false,
+    loop: true,
+    autoplay: true,
 
-  // 🔥 Smoothness Controls
-  smartSpeed: 900,          // main transition speed
-  fluidSpeed: 900,          // smooth dragging
-  dragEndSpeed: 700,        // smooth drag release
-  autoplaySpeed: 900,
-  navSpeed: 900,
-  slideTransition: "ease-in-out", // easing instead of linear
+    // 🔥 Smoothness Controls
+    smartSpeed: 900, // main transition speed
+    fluidSpeed: 900, // smooth dragging
+    dragEndSpeed: 700, // smooth drag release
+    autoplaySpeed: 900,
+    navSpeed: 900,
+    slideTransition: "ease-in-out", // easing instead of linear
 
-  navText: [
-    "<img src='/Assets/leftarrow.svg' alt='img' />",
-    "<img src='/Assets/rightarrow.svg' alt='img' />",
-  ],
+    navText: [
+      "<img src='/Assets/leftarrow.svg' alt='img' />",
+      "<img src='/Assets/rightarrow.svg' alt='img' />",
+    ],
 
-  responsive: {
-    0: {
-      items: 1,
-      margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 10,
+      },
+      361: {
+        items: 1,
+        margin: 10,
+        loop: true,
+        nav: false,
+        dots: true,
+        dotsEach: true,
+      },
+      600: {
+        items: 1,
+        margin: 10,
+        loop: true,
+        nav: false,
+        dots: true,
+        dotsEach: true,
+      },
+      700: {
+        items: 1,
+        margin: 10,
+      },
+      1000: {
+        items: 1,
+        margin: 10,
+      },
+      1200: {
+        items: 1,
+        margin: 10,
+      },
     },
-    361: {
-      items: 1,
-      margin: 10,
-      loop: true,
-      nav: false,
-      dots: true,
-      dotsEach: true,
-    },
-    600: {
-      items: 1,
-      margin: 10,
-      loop: true,
-      nav: false,
-      dots: true,
-      dotsEach: true,
-    },
-    700: {
-      items: 1,
-      margin: 10,
-    },
-    1000: {
-      items: 1,
-      margin: 10,
-    },
-    1200: {
-      items: 1,
-      margin: 10,
-    },
-  },
-};
+  };
 
   return (
     <>
@@ -316,6 +316,26 @@ const aboutdetail = () => {
               </div>
             </div>
           </section>
+          <section className="videomainsite">
+            {/* <video autoplay className="videoinner" muted loop playsinline>
+              <source src="\Assets\queckov.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
+             <video
+            className="main-banner-video"
+            muted
+            playsInline
+            autoPlay
+            loop
+            poster="/Assets/banner-poster.jpg" 
+            width="100%"
+          >
+            <source
+              src="\Assets\queckov.mp4"
+              type="video/mp4"
+            />
+          </video>
+          </section>
         </section>
 
         {/* <section className='aboutus_main '>
@@ -388,7 +408,7 @@ const aboutdetail = () => {
                   <div className="cardss">
                     <div className="textual_div">
                       <span className="teamss_head">TEAM</span>
-                      <h2>Meet Our Mobile Application  Team</h2>
+                      <h2>Meet Our Mobile Application Team</h2>
                     </div>
                     <div className="imgusers">
                       <img src="\Assets\reactnative.png" />
@@ -404,6 +424,33 @@ const aboutdetail = () => {
                     </div>
                   </div>
 
+                  <div className="cardss">
+                    <div className="textual_div">
+                      <span className="teamss_head">TEAM</span>
+                      <h2>Meet Our Integration Devs Team</h2>
+                    </div>
+                    <div className="imgusers">
+                      <img src="\Assets\usama.png" />
+                    </div>
+                  </div>
+                  <div className="cardss">
+                    <div className="textual_div">
+                      <span className="teamss_head">TEAM</span>
+                      <h2>Meet Our Frontend Engineers Team</h2>
+                    </div>
+                    <div className="imgusers">
+                      <img src="\Assets\usmant.png" />
+                    </div>
+                  </div>
+                  <div className="cardss">
+                    <div className="textual_div">
+                      <span className="teamss_head">TEAM</span>
+                      <h2>Meet Our Marketing Team</h2>
+                    </div>
+                    <div className="imgusers">
+                      <img src="\Assets\mark.png" />
+                    </div>
+                  </div>
                   {/* <div className='cardss'>
                                         <img src='\Assets\fahad.png' />
                                         <h3 className='name_cards'>Fahad Suleman</h3>
