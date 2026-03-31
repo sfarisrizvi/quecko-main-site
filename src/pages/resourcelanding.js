@@ -602,7 +602,7 @@ const Resourcelanding = () => {
                     </div>
                 </div>
             </section>
-            <section className='contact_us_main'>
+            {/* <section className='contact_us_main'>
                 <div className='left_siide'>
                     <p>Contact us</p>
                     <h2 className='cliiient'>Let's get started with resource augmentation</h2>
@@ -649,7 +649,7 @@ const Resourcelanding = () => {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
             <Work />
             <Footer />
         </>
