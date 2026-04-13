@@ -304,12 +304,11 @@ const Portfolio = () => {
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className='parent_div'>
+                                        {/* <div className='parent_div'>
                                             <Link href='/vion' prefetch={false}>
                                                 <div className='left_side hovercard'>
                                                     <img src='\Assets\vion.png' className='imgport' />
                                                     <div className='buttons_div'>
-                                                        {/* */}
                                                     </div>
                                                 </div>
                                             </Link>
@@ -321,7 +320,7 @@ const Portfolio = () => {
                                                     </div>
                                                 </div>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         <div className='parent_div second_parent'>
                                             <Link href='/vion-exchange' prefetch={false}>
                                                 <div className='left_side hovercard'>
@@ -501,12 +500,12 @@ const Portfolio = () => {
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className='parent_div'>
+                                        {/* <div className='parent_div'>
                                             <Link href='/vion' prefetch={false}>
                                                 <div className='left_side hovercard'>
                                                     <img src='\Assets\vionphone.png' className='imgport' />
                                                     <div className='buttons_div'>
-                                                        {/* */}
+                                                     
                                                     </div>
                                                 </div>
                                             </Link>
@@ -518,7 +517,7 @@ const Portfolio = () => {
                                                     </div>
                                                 </div>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         <div className='parent_div second_parent'>
                                             <Link href='/vion-exchange' prefetch={false}>
                                                 <div className='left_side hovercard'>
@@ -820,12 +819,12 @@ const Portfolio = () => {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className='parent_div'>
+                                    {/* <div className='parent_div'>
                                         <Link href='/vion' prefetch={false}>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\vion.png' className='imgport' />
                                                 <div className='buttons_div'>
-                                                    {/* */}
+                                              
                                                 </div>
                                             </div>
                                         </Link>
@@ -837,7 +836,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                    </div>
+                                    </div> */}
                                     <div className='parent_div second_parent'>
                                         <Link href='/vion-exchange' prefetch={false}>
                                             <div className='left_side hovercard'>
@@ -1009,12 +1008,11 @@ const Portfolio = () => {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className='parent_div'>
+                                    {/* <div className='parent_div'>
                                         <Link href='/vion' prefetch={false}>
                                             <div className='left_side hovercard'>
                                                 <img src='\Assets\vionphone.png' className='imgport' />
                                                 <div className='buttons_div'>
-                                                    {/* */}
                                                 </div>
                                             </div>
                                         </Link>
@@ -1026,7 +1024,7 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                    </div>
+                                    </div> */}
                                     <div className='parent_div second_parent'>
                                         <Link href='/vion-exchange' prefetch={false}>
                                             <div className='left_side hovercard'>
