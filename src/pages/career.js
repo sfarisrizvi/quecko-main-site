@@ -64,7 +64,12 @@ const career = () => {
 
 
 
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // optional
+    });
+  }, []);
   return (
     <>
 

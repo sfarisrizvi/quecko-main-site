@@ -50,7 +50,12 @@ const Portfolio = () => {
 
     }, []);
 
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // optional
+    });
+  }, []);
     const [scrolling, setScrolling] = useState(false);
     const [direction, setDirection] = useState("down");
     const scrollSpeed = 20;
