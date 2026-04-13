@@ -50,11 +50,15 @@ const Portfolio = () => {
 
     }, []);
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // optional
-    });
+ useEffect(() => {
+    const timer = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, []);
     const [scrolling, setScrolling] = useState(false);
     const [direction, setDirection] = useState("down");
