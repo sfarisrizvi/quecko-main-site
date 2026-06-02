@@ -146,3 +146,7 @@ export default function App({ Component, pageProps }) {
     </>
   )
 }
+
+
+
+//genius code, no doubt!
