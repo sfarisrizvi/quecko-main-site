@@ -15,7 +15,7 @@ export const metadata = {
       "Revolutionizing businesses with our cutting-edge blockchain solutions. Secure, decentralized, and scalable – transforming industries for a better, transparent future.",
     images: [
       {
-        url: "https://res.cloudinary.com/drt6vurtt/image/upload/c_pad,w_500/v1742572273/queckosite%20%28new%29/images/Untitled-1_rshcle.png",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "Quecko OG Image",
