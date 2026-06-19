@@ -1,0 +1,185 @@
+// Swiper carousel — visual replacement for Owl Carousel
+// Maintains identical positioning, navigation arrow images, and responsive behavior
+
+// Swiper CSS is imported globally in _app.js via:
+//   import 'swiper/css'; import 'swiper/css/pagination';
+// Do NOT import plain CSS files from SCSS — Sass generates @import at-rules, not bundled CSS.
+
+// Swiper's Navigation module injects a default chevron <svg class="swiper-navigation-icon">
+// into every nav button. This project uses custom ::after SVG arrows, so hide the
+// injected default icon globally to avoid double arrows.
+.swiper-button-prev .swiper-navigation-icon,
+.swiper-button-next .swiper-navigation-icon {
+  display: none !important;
+}
+
+// .bottom_side wraps the carousel section in uses and stories components
+.bottom_side {
+  // clip-x prevents the Swiper wrapper's full slide layout from causing page horizontal scroll.
+  // overflow-x: clip (not hidden) keeps overflow-y: visible so nav arrows at top:-90px remain visible.
+  overflow-x: clip;
+
+  .swiper {
+    overflow: visible; // allow partial slides to peek (items: 1.1 effect)
+
+    // Navigation arrows — positioned identically to Owl nav (top: -90px, right: 60px)
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: -90px;
+      left: auto;
+      width: 40px;
+      height: 40px;
+      margin-top: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      // Hide Swiper's default arrow icon
+      &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      &:hover {
+        background: none;
+        opacity: 0.7;
+      }
+    }
+
+    .swiper-button-prev {
+      right: 110px; // left of next button (60px gap + 40px width + 10px spacing)
+      left: auto;
+
+      &::after {
+        background-image: url('/Assets/leftarrow.svg');
+      }
+    }
+
+    .swiper-button-next {
+      right: 60px;
+
+      &::after {
+        background-image: url('/Assets/rightarrow.svg');
+      }
+    }
+
+    // Mobile: hide navigation arrows, show dots
+    @media (max-width: 700px) {
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+    }
+
+    // Desktop: hide pagination dots, show navigation arrows
+    @media (min-width: 701px) {
+      .swiper-pagination {
+        display: none;
+      }
+    }
+
+    // Pagination dots — styled to match Owl Carousel defaults
+    .swiper-pagination {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background: #d6d6d6;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #000;
+    }
+  }
+}
+
+// Testimonials / About-us carousel variant (single-slide, same nav positioning)
+.owl_option {
+  position: relative;
+  overflow-x: clip; // same as .bottom_side — clips slide horizontal overflow, leaves vertical (nav arrows) unclipped
+
+  .swiper {
+    overflow: visible;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: -90px;
+      left: auto;
+      width: 40px;
+      height: 40px;
+      margin-top: 0;
+      background: none;
+      border: none;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      &:hover { background: none; opacity: 0.7; }
+    }
+
+    .swiper-button-prev {
+      right: 110px;
+      left: auto;
+      &::after { background-image: url('/Assets/leftarrow.svg'); }
+    }
+
+    .swiper-button-next {
+      right: 60px;
+      &::after { background-image: url('/Assets/rightarrow.svg'); }
+    }
+
+    @media (max-width: 700px) {
+      .swiper-button-prev,
+      .swiper-button-next { display: none; }
+    }
+
+    @media (min-width: 701px) {
+      .swiper-pagination { display: none; }
+    }
+
+    .swiper-pagination {
+      position: static;
+      margin-top: 20px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #d6d6d6;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #000;
+    }
+  }
+}
+
+// 1600px vw overrides for nav arrow positioning
+@media (min-width: 1600px) {
+  .bottom_side .swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: -5.625vw;
+    }
+    .swiper-button-next { right: 3.75vw; }
+    .swiper-button-prev { right: calc(3.75vw + 50px); }
+  }
+}

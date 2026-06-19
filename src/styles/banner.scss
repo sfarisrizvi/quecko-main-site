@@ -18,14 +18,14 @@
     .inner_banner {
         border-radius: 40px;
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-between;
         // height: 750px;
         height: calc(100vh - 20px);
         padding: 35px 30px 40px 30px;
         overflow: hidden;
         position: relative;
+        z-index: 99;
         background-color: #F3F3F3;
 
         .downarrow {
@@ -40,15 +40,25 @@
             }
         }
 
+        .bannershadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+        }
+
         .main-banner-video {
             position: absolute;
             height: 100%;
             object-fit: cover;
             object-position: center;
             top: 0px;
-            right: -20%;
+            left: 0;
             width: 100%;
-            z-index: 99;
+            z-index: -2;
             mix-blend-mode: darken;
         }
 
@@ -59,6 +69,7 @@
             font-weight: 400;
             line-height: 130%;
             width: 591px;
+            margin-bottom: 30px;
         }
 
         h1 {
@@ -70,7 +81,98 @@
             font-weight: 700;
             line-height: 100%;
             padding-top: 0px;
-            padding-bottom: 20px;
+        }
+
+        .start-label {
+            color: #0F0F15;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 8px;
+            margin-bottom: 28px;
+        }
+
+        .twice-btns {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+
+            .btn-explore {
+                border-radius: 150px;
+                background: #000;
+                border: none;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 12px 22px;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                cursor: pointer;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+                svg {
+                    transition: transform 0.2s ease;
+                }
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
+                    svg {
+                        transform: translateX(4px);
+                    }
+                }
+            }
+
+            .btn-contact {
+                border-radius: 150px;
+                border: 1px solid #000;
+                background: #F3F4F6;
+                padding: 12px 22px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                color: #000;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                cursor: pointer;
+                transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+
+                svg {
+                    transition: transform 0.2s ease;
+                }
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+                    background: #e8e9eb;
+
+                    svg {
+                        transform: translateX(4px);
+                    }
+                }
+            }
+        }
+
+        .right-side{
+            max-width: 515px;
+            width: 100%;
         }
     }
 }
@@ -233,11 +335,14 @@
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-end;
-        height: 729px;
-        padding: 35px 30px 40px 30px;
+        height: auto;
+        padding: 120px 15px;
+        padding-top: 140px;
+        padding-bottom: 80px;
         overflow: hidden;
         position: relative;
         background-color: #F3F3F3;
+        gap: 76px;
     }
 
     .textual_inner {
@@ -252,8 +357,7 @@
         top: 0px;
         right: 0;
         width: 100%;
-        z-index: 99;
-        height: 422px;
+        height: 100%;
     }
 
     .main_banner {
@@ -303,11 +407,38 @@
         font-weight: 400 !important;
         line-height: 100%;
     }
+    .main_banner .inner_banner p{
+        text-align: center;
+    }
+    .main_banner .para_new{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .main_banner .inner_banner h1{
+        text-align: center;
+    }
+    .main_banner .inner_banner h2{
+        text-align: center;
+        font-size: 14px;
+    }
+    .main_banner .inner_banner .start-label{
+        font-size: 14px;
+    }
+    .main_banner .inner_banner .twice-btns{
+        justify-content: center;
+    }
+    .main_banner .inner_banner .twice-btns .btn-explore{
+        padding: 15px;
+    }
+    .main_banner .inner_banner .twice-btns .btn-contact{
+        padding: 15px;
+    }
 }
 
 @media (min-width: 1600px) {
     .main_banner {
-        padding: 20px;
+        padding: 1.875vw 1.25vw 1.25vw 1.25vw;
         min-height: calc(100vh - 20px);
 
         .para_new {
@@ -316,7 +447,6 @@
             font-style: normal;
             font-weight: 400;
             line-height: 100%;
-            /* 60px */
         }
 
         .textual_inner {
@@ -326,35 +456,22 @@
         .inner_banner {
             border-radius: 40px;
             display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-end;
+            align-items: center;
+            justify-content: space-between;
             height: calc(100vh - 20px);
-            /* Converted from 674px */
-            padding: 2.19vw 1.88vw 2.5vw 1.88vw;
+            padding: 2.1875vw 1.875vw 2.5vw 1.875vw;
             overflow: hidden;
             position: relative;
             background-color: #F3F3F3;
 
             .downarrow {
                 position: fixed;
-                bottom: 5.5vw;
-                right: 1.88vw;
+                bottom: 7.5vw;
+                right: 1.875vw;
                 z-index: 9999;
                 cursor: pointer;
                 width: 3.5vw;
             }
-
-            // .main-banner-video {
-            //     position: absolute;
-            //     height: 100%;
-            //     object-fit: cover;
-            //     object-position: -100%;
-            //     top: 0px;
-            //     right: 20%;
-            //     width: 100%;
-            //     z-index: 99;
-            // }
 
             p {
                 color: #000;
@@ -363,7 +480,7 @@
                 font-weight: 400;
                 line-height: 130%;
                 width: 36.94vw;
-                /* This value can be converted if necessary */
+                margin-bottom: 1.875vw;
             }
 
             h1 {
@@ -371,15 +488,48 @@
                 font-size: 5vw;
                 z-index: 999;
                 width: 39.94vw;
-                /* This value can be converted if necessary */
                 font-style: normal;
                 font-weight: 700;
                 line-height: 100%;
                 padding-top: 0px;
-                padding-bottom: 1.25vw;
+            }
+
+            .start-label {
+                font-size: 1vw;
+                margin-bottom: 1.25vw;
+            }
+
+            h2 {
+                font-size: 1.5vw;
+                margin-top: 0.5vw;
+                margin-bottom: 1.75vw;
+            }
+
+            .twice-btns {
+                gap: 0.625vw;
+
+                .btn-explore {
+                    gap: 0.9375vw;
+                    padding: 0.75vw 1.375vw;
+                    font-size: 0.875vw;
+                }
+
+                .btn-contact {
+                    gap: 0.9375vw;
+                    padding: 0.75vw 1.375vw;
+                    font-size: 0.875vw;
+                }
+            }
+
+            .right-side {
+                max-width: 42.1875vw;
+                width: 100%;
+
+                .banner-grid-img {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
-
-
 }

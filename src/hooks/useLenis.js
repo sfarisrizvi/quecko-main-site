@@ -1,3 +1,5 @@
+"use client"
+
 // hooks/useLenisGsap.js
 import { useEffect, useRef } from "react"
 
@@ -19,20 +21,28 @@ export default function useLenisGsap(enabled = true) {
 
       gsap.registerPlugin(ScrollTrigger)
 
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-      const isMac = /Macintosh/i.test(navigator.userAgent)
+      const isMobileUA = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+      const isMobileViewport = window.innerWidth <= 768
 
-      const duration = isMobile ? 3.5 : isMac ? 2.5 : 2
-      const touchMultiplier = isMobile ? 1.2 : 2
-      const easing = (t) =>
-        1 - Math.pow(1 - t, isMobile ? 5 : isMac ? 3.5 : 4)
+      // Skip Lenis on real mobile OR DevTools mobile simulation (375px etc.)
+      // smoothTouch:false + DevTools simulated touch = scroll gets stuck.
+      // Mobile uses native scroll — matches the old site's feel.
+      if (isMobileUA || isMobileViewport) {
+        isMounted = false
+        return
+      }
+
+      // Reduced durations: original Mac 2.5s caused heavy lag on MacBook trackpads.
+      // Native-feeling target: 0.8–1.2s. smoothTouch disabled — overrides iOS momentum scroll.
+      const duration = 1.0
+      const easing = (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
 
       const lenis = new Lenis({
         duration,
         easing,
         smoothWheel: true,
-        smoothTouch: true,
-        touchMultiplier,
+        smoothTouch: false,
+        wheelMultiplier: 1,
         infinite: false,
       })
 
@@ -43,10 +53,21 @@ export default function useLenisGsap(enabled = true) {
       }
 
       gsap.ticker.add(raf)
-      gsap.ticker.lagSmoothing(300)
+      gsap.ticker.lagSmoothing(0)
 
       lenisRef.current = lenis
       rafRef.current = raf
+
+      // Expose for scroll helpers (hash anchors, route-change reset).
+      window.lenis = lenis
+
+      // If the page loaded with a hash (e.g. /#services), scroll to it now
+      // that Lenis controls the scroll position.
+      if (window.location.hash) {
+        import("@/Utils/scroll").then(({ scrollToHash }) => {
+          scrollToHash(window.location.hash)
+        })
+      }
     })
 
     return () => {
@@ -55,6 +76,7 @@ export default function useLenisGsap(enabled = true) {
       if (lenisRef.current) {
         lenisRef.current.destroy()
         lenisRef.current = null
+        if (typeof window !== "undefined") window.lenis = null
       }
 
       if (rafRef.current) {

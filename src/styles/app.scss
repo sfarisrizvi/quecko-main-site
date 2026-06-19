@@ -1,51 +1,88 @@
 @font-face {
   font-family: "Aeonik";
-  src: url(../Aeonik/Aeonik-Bold.ttf);
+  src: url(/Aeonik/Aeonik-Bold.ttf) format("truetype");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Aeonik";
-  src: url(../Aeonik/Aeonik-Medium.ttf);
+  src: url(/Aeonik/Aeonik-Medium.ttf) format("truetype");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Aeonik";
-  src: url(../Aeonik/Aeonik-Regular.ttf);
+  src: url(/Aeonik/Aeonik-Regular.ttf) format("truetype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Aeonik";
-  src: url(../Aeonik/Aeonik-Light.ttf);
+  src: url(/Aeonik/Aeonik-Light.ttf) format("truetype");
   font-weight: 250;
+  font-display: swap;
 }
 
 
-@import "bootstrap/scss/bootstrap";
-// @import url(https://db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik+Regular);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
-@import "@/styles/banner.scss";
-@import "@/styles/aboutdetail.scss";
-@import "@/styles/header.scss";
-@import "@/styles/footer.scss";
-@import "@/styles/services.scss";
-@import "@/styles/collabration.scss";
-@import "@/styles/fourtypes.scss";
-@import "@/styles/projects.scss";
-@import "@/styles/aboutus.scss";
-@import "@/styles/faqs.scss";
-@import "@/styles/stories.scss";
-@import "@/styles/work.scss";
-@import "@/styles/blog.scss";
-@import "@/styles/smartcontract.scss";
-@import "@/styles/uses.scss";
-@import "@/styles/blogdetail.scss";
-@import "@/styles/faqscontract.scss";
-@import "@/styles/marquee.scss";
+// Bootstrap loaded as pre-compiled CSS in layout.js to avoid Turbopack SCSS resolution issues
+@import "./banner.scss";
+@import "./aboutdetail.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./services.scss";
+@import "./collabration.scss";
+@import "./fourtypes.scss";
+@import "./projects.scss";
+@import "./clients.scss";
+@import "./aboutus.scss";
+@import "./testimonials.scss";
+@import "./faqs.scss";
+@import "./stories.scss";
+@import "./work.scss";
+@import "./cnt.scss";
+@import "./blog.scss";
+@import "./smartcontract.scss";
+@import "./uses.scss";
+@import "./blogdetail.scss";
+@import "./faqscontract.scss";
+@import "./marquee.scss";
 
-@import "@/styles/cryptoconverter.scss";
+@import "./cryptoconverter.scss";
+@import "./carousel.scss";
+@import "./trusted.scss";
+
+// Skeleton loader (replaces Lottie loader1 — no JS dependency)
+.skeleton-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  height: 340px;
+  padding: 0 4px;
+}
+
+.skeleton-card {
+  flex: 1;
+  min-width: 0;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ebebeb 25%, #d6d6d6 50%, #ebebeb 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (max-width: 700px) {
+  .skeleton-row {
+    gap: 10px;
+    height: 260px;
+  }
+}
 // @font-face {
 //   font-family: Exan;
 //   src: url(../src/font/Exan_Font.ttf);
@@ -421,24 +458,7 @@ table.table {
   padding: 0px;
 }
 
-// All transitions
-div,
-ul,
-a,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-button {
-  -webkit-transition: background-color 0.7s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}
+// Scoped transitions — removed global rule that caused forced paints on every element during scroll
 
 textarea {
   resize: none;
@@ -808,8 +828,6 @@ input {
 
 .style-1 .char {
   display: inline-block;
-  opacity: 0;
-  transform: translateY(40px);
 }
 
 .animation-section {
@@ -876,10 +894,11 @@ input {
 
 }
  ol li::before {
-  content: none !important; /* Completely disables pseudo-element */
+  content: none !important;
 }
 
-ul li::before {
+// Scoped to blog/article content only — global rule was adding bullets to nav, carousel, and footer lists
+.maindetailss ul li::before {
   content: "•";
   color: #000;
   font-weight: 400;

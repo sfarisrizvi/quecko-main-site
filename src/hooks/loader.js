@@ -1,27 +1,22 @@
-import dynamic from "next/dynamic";
-import React, { useEffect, useRef } from "react";
+"use client"
 
-const Lottie = dynamic(() => import("lottie-web"), { ssr: false });
+import React, { useEffect, useRef } from "react";
+import Lottie from "lottie-web";
+import animationData from "../../public/queckoloader.json";
 
 function Loader() {
     const containerRef = useRef(null);
 
     useEffect(() => {
-        if (containerRef.current) {
-            import("lottie-web").then((Lottie) => {
-                const animation = Lottie.default.loadAnimation({
-                    container: containerRef.current,
-                    renderer: "svg",
-                    loop: true,
-                    autoplay: true,
-                    animationData: require("../../public/queckoloader.json"),
-                });
+        const animation = Lottie.loadAnimation({
+            container: containerRef.current,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData,
+        });
 
-                return () => {
-                    animation.destroy();
-                };
-            });
-        }
+        return () => animation.destroy();
     }, []);
 
     return (

@@ -18,7 +18,7 @@
         h2 {
             color: #000;
             text-align: center;
-            font-size: 80px;
+            font-size: 60px;
             padding-top: 16px;
             padding-bottom: 50px;
             font-style: normal;
@@ -227,6 +227,34 @@
     }
     .inner_projectsphone{
         display: block !important;
+    }
+    .tabs_porfolio .inner_projects{
+        display: block !important;
+    }
+    /* Portfolio tab cards on mobile: keep the SAME proportioned 2-column layout as
+       desktop so wide images stay in wide slots and narrow images in narrow slots
+       (each card image is pre-sized to its slot). This makes mobile match desktop. */
+    .tabs_porfolio .projects_main .inner_projects .parent_div{
+        grid-template-columns: 2fr 1fr !important;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    .tabs_porfolio .projects_main .inner_projects .parent_div.second_parent{
+        grid-template-columns: 1fr 2fr !important;
+        gap: 8px;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .tabs_porfolio .projects_main .inner_projects .parent_div .left_side,
+    .tabs_porfolio .projects_main .inner_projects .parent_div .right_side{
+        height: auto !important;
+        border-radius: 14px;
+    }
+    .tabs_porfolio .projects_main .inner_projects .imgport{
+        height: auto !important;
+        width: 100%;
+        display: block;
+        object-fit: cover;
     }
     .projects_main .inner_projects .buttons_div {
         display: flex

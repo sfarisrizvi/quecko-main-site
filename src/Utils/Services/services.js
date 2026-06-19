@@ -4,9 +4,9 @@ import { api_url, BASE_URL } from "../Enviroment"
 
 const get_all_blogs = `${api_url}posts`
 
-export const getAllBlogs = async () => {
+export const getAllBlogs = async (perPage = 100) => {
     try {
-        const blogsResponse = await axios.get(`${get_all_blogs}?per_page=100`)
+        const blogsResponse = await axios.get(`${get_all_blogs}?per_page=${perPage}`)
         return blogsResponse?.data
     }
     catch (error) {

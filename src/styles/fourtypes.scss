@@ -1,35 +1,41 @@
 .four_types {
-    padding: 20px 20px;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    background: #FFF;
+    padding: 50px 0;
 
     .inner_types {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(40px, 10.5vw, 168px);
+        padding: 0 40px;
 
         .inner_text {
-            padding: 50px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: center;
             flex-direction: column;
-            gap: 20px;
+            gap: 4px;
+
 
             .ptagss {
                 color: #000;
                 text-align: center;
-                font-size: 90px;
+                font-size: 53px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: 100%;
                 /* 90px */
             }
 
             p {
-                color: #5F5F5F;
-                text-align: center;
-                font-size: 20px;
+                color: #000;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 120%;
-                /* 24px */
+                line-height: 140%;
+                text-align: start;
             }
         }
     }
@@ -241,6 +247,7 @@
             /* 44px */
 
         }
+
         h4 {
             color: #000;
             font-size: 22px;
@@ -508,8 +515,7 @@
 @media only screen and (max-width: 991px) {
 
     .mails_divvvv {
-        display: grid
-    ;
+        display: grid;
         align-items: center;
         grid-template-columns: 1fr !important;
         grid-gap: 13px;
@@ -517,23 +523,24 @@
         width: 100% !important;
         margin-top: 10px;
     }
+
     .contact_us_main .left_siide .svgs_divv {
-        display: flex
-    ;
+        display: flex;
         align-items: center;
         gap: 11px;
         width: 100%;
     }
+
     .mails_divvvv .projectss_runs {
         padding: 20px;
         border-radius: 15px;
         width: 100%;
         background: #FFF;
-        display: flex
-    ;
+        display: flex;
         align-items: flex-start;
         flex-direction: column;
     }
+
     .tabs_porfolio .navsectiontabs {
         display: flex;
         align-items: center;
@@ -717,30 +724,31 @@
     .four_types .inner_types {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 0;
+        padding: 0;
     }
 
     .four_types .inner_types .inner_text .ptagss {
         color: #000;
         text-align: center;
-        font-size: 36px;
+        font-size: 44px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 100%;
     }
+
     .smalll_svgsss {
-        display: flex
-    ;
+        display: flex;
         align-items: center;
         gap: 10px;
         margin-top: 36px;
     }
+
     .four_types .inner_types .inner_text {
-        padding: 40px 15px;
 
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
     }
 
     .four_types .inner_types .inner_text p {
@@ -752,6 +760,7 @@
         font-weight: 400;
         line-height: 120%;
     }
+
     .main_banner1 .inner_banner .span_ptag {
         color: #000 !important;
         font-size: 16px !important;
@@ -763,14 +772,15 @@
         text-transform: capitalize;
     }
 }
+
 .details_career .uploaded_divv {
     width: 100%;
-    align-items: end;
-    display: flex
-;
+    align-items: flex-end;
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 @media only screen and (max-width: 390px) {
     .tabs_porfolio .navsectiontabs {
         display: flex;
@@ -799,9 +809,9 @@
     .four_types .inner_types .inner_text .ptagss {
         color: #000;
         text-align: center;
-        font-size: 36px;
+        font-size: 44px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 100%;
     }
 
@@ -843,6 +853,8 @@
     .four_types .inner_types {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 0 60px;
+        padding: 0 40px;
     }
 }
 
@@ -925,40 +937,20 @@
     }
 
     .four_types {
-        padding: 1.25vw 1.25vw;
         /* 20px */
 
         .inner_types {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
 
             .inner_text {
-                padding: 3.13vw;
-                /* 50px */
-                display: flex;
-                align-items: center;
-                flex-direction: column;
                 gap: 1.25vw;
                 /* 20px */
 
                 .ptagss {
-                    color: #000;
-                    text-align: center;
-                    font-size: 5.625vw;
-                    /* 90px */
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 100%;
+                    font-size: 3.3125vw;
                 }
 
                 p {
-                    color: #5F5F5F;
-                    text-align: center;
                     font-size: 1.25vw;
-                    /* 20px */
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 120%;
                 }
             }
         }
@@ -1342,12 +1334,15 @@
 
 @media only screen and (max-width: 400px) {
     .four_types .inner_types .inner_text {
-        padding: 40px 15px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        gap: 20px;
     }
+    .four_types .inner_types{
+        gap: 44px;
+        padding: 0 15px;
+    }
+    
 }
 
 .odometer-wrapper {
@@ -1362,7 +1357,8 @@
 .odometer-digit-inner {
     text-align: end !important;
 }
-.svgs_divv{
+
+.svgs_divv {
     .mails_divvvv {
         display: grid;
         align-items: center;
@@ -1370,14 +1366,17 @@
         gap: 13px;
         width: 90%;
         margin-top: 30px;
-.projectss_runs svg {
-  transition: fill 0.3s ease;
-  fill: black; /* Default color */
-}
 
-.projectss_runs:hover svg {
-  fill: grey;
-}
+        .projectss_runs svg {
+            transition: fill 0.3s ease;
+            fill: black;
+            /* Default color */
+        }
+
+        .projectss_runs:hover svg {
+            fill: grey;
+        }
+
         .projectss_runs {
             padding: 20px;
             border-radius: 15px;
@@ -1386,36 +1385,38 @@
             align-items: flex-start;
             flex-direction: column;
             width: 100%;
-            &:hover{
+
+            &:hover {
                 background: #F4F4F4;
                 box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06);
             }
 
-        p {
-            color: #000;
-            padding-top: 10px;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            text-transform: lowercase;
-            line-height: 100%;
-            margin-top: 0px !important;
-            /* 14px */
+            p {
+                color: #000;
+                padding-top: 10px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: lowercase;
+                line-height: 100%;
+                margin-top: 0px !important;
+                /* 14px */
 
-        }
+            }
 
         }
 
     }
 }
 
-.smalll_svgsss{
+.smalll_svgsss {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 30px;
 }
-.telegramimg{
+
+.telegramimg {
     width: 26px;
     height: 25px;
 }

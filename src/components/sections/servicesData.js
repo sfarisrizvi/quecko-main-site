@@ -1,0 +1,508 @@
+export const services = [
+  {
+    id: 1,
+    number: "01",
+    title: "Web3 & Blockchain Engineering",
+    description: "Building the decentralized foundations of tomorrow.",
+
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="80"
+        height="80"
+        viewBox="0 0 80 80"
+        fill="none"
+      >
+        <g clipPath="url(#clip0_3217_1269)">
+          <path
+            d="M68.2844 11.7156C60.7294 4.16078 50.6844 0 40.0002 0C29.3159 0 19.2708 4.16078 11.7159 11.7156C4.16109 19.2705 0 29.3156 0 40.0002C0 50.6847 4.16094 60.7294 11.7158 68.2844C19.2706 75.8392 29.3158 80 40 80C50.6842 80 60.7292 75.8392 68.2842 68.2844C75.8394 60.7294 80 50.6845 80 40C80 29.3155 75.8394 19.2708 68.2844 11.7156ZM64.9755 15.0248C67.1114 17.1606 68.9383 19.5228 70.4375 22.0559H54.8887C54.2031 18.5992 53.3155 15.3933 52.2403 12.5441C51.2397 9.89266 50.0991 7.63453 48.8486 5.79297C54.897 7.34641 60.4439 10.4931 64.9755 15.0248ZM51.8747 40C51.8747 44.5395 51.5673 48.9448 50.9802 53.0486H29.0202C28.4328 48.9447 28.1258 44.5394 28.1258 40C28.1258 35.3809 28.4438 30.9003 29.0514 26.7353H50.9491C51.5566 30.9005 51.8747 35.3809 51.8747 40ZM40.0002 4.67953C42.6738 4.67953 45.6128 8.23734 47.862 14.1964C48.7556 16.5639 49.5103 19.2072 50.1159 22.0558H29.8842C30.4897 19.2072 31.2444 16.5639 32.1381 14.1964C34.3873 8.23734 37.3264 4.67953 40.0002 4.67953ZM15.0248 15.0247C19.5564 10.493 25.1033 7.34625 31.1519 5.79281C29.9014 7.63438 28.7608 9.89266 27.7602 12.5439C26.6848 15.3931 25.797 18.5991 25.1116 22.0558H9.56266C11.062 19.5228 12.8889 17.1605 15.0248 15.0247ZM4.67969 40.0002C4.67969 35.3789 5.56328 30.8937 7.24688 26.7355H24.3283C23.7488 30.9373 23.4459 35.4106 23.4459 40.0002C23.4459 44.5108 23.738 48.91 24.2981 53.0487H7.16047C5.53344 48.9512 4.67969 44.5414 4.67969 40.0002ZM15.0248 64.9752C12.8284 62.7789 10.9592 60.343 9.43672 57.7281H25.0689C25.7602 61.2673 26.6623 64.5475 27.76 67.4559C28.7608 70.1073 29.9013 72.3655 31.1517 74.207C25.1033 72.6536 19.5564 69.5069 15.0248 64.9752ZM40.0002 75.3205C37.3264 75.3205 34.3875 71.7627 32.1383 65.8036C31.2222 63.3766 30.4527 60.6591 29.8397 57.7281H50.1606C49.5477 60.6589 48.7781 63.3764 47.862 65.8036C45.6128 71.7628 42.6738 75.3205 40.0002 75.3205ZM64.9755 64.9753C60.4437 69.507 54.897 72.6537 48.8484 74.2072C50.0989 72.3656 51.2395 70.1073 52.2402 67.4561C53.3378 64.5475 54.24 61.2675 54.9313 57.7283H70.5636C69.0409 60.3431 67.1717 62.7789 64.9755 64.9753ZM55.7019 53.0486C56.2622 48.9098 56.5542 44.5105 56.5542 40C56.5541 35.4106 56.2512 30.937 55.6719 26.7353H72.7534C74.437 30.8936 75.3206 35.3787 75.3206 40C75.3206 44.5416 74.4669 48.9511 72.8398 53.0486H55.7019Z"
+            fill="black"
+            fillOpacity="0.2"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_3217_1269">
+            <rect width="80" height="80" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "Layer 1 & Layer 2 Development",
+        href: "",
+      },
+      {
+        title: "Smart Contract Development",
+        href: "",
+      },
+      {
+        title: "DeFi Platforms",
+        href: "/services/web3/web3-and-defi-solutions",
+      },
+      {
+        title: "Crypto Exchanges (CEX & DEX)",
+        href: "",
+      },
+      {
+        title: "Crypto Wallet Development",
+        href: "",
+      },
+      {
+        title: "Launchpads",
+        href: "",
+      },
+      {
+        title: "NFT Marketplaces",
+        href: "",
+      },
+      {
+        title: "RWA Tokenization",
+        href: "/services/web3/rwa",
+      },
+      {
+        title: "Prediction & Opinion Markets",
+        href: "/services/web3/prediction-market",
+      },
+    ],
+  },
+  {
+    id: 2,
+    number: "02",
+    title: "AI Development & Intelligent Systems",
+    description: "Intelligence embedded into every workflow.",
+
+    icon: (
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <g clipPath="url(#clip0_3217_1281)">
+          <path d="M67.4531 29.9638C67.4531 14.8262 55.1377 2.51074 40 2.51074C24.8624 2.51074 12.5471 14.8263 12.5471 29.9638C12.5471 41.5027 19.5529 49.0916 24.6683 54.6326C26.5552 56.6766 28.3705 58.644 29.3576 60.3413C26.7394 61.0829 27.2073 64.89 29.9566 64.9495H30.1232V70.138C30.1232 74.1884 33.3982 77.5039 37.4891 77.5039H37.6558V77.6706C37.7712 80.7776 42.23 80.7753 42.3442 77.6706V77.5039H42.511C46.58 77.5039 49.8769 74.2137 49.8769 70.138V64.9495H50.0434C52.7947 64.8892 53.2589 61.0818 50.6425 60.3413C57.0826 51.2576 67.2823 45.0915 67.4531 29.9638ZM45.1886 70.138C45.1886 71.6147 43.9955 72.8155 42.5111 72.8155H37.4892C36.0305 72.8155 34.8117 71.6362 34.8117 70.138V64.9495H45.1886V70.138ZM45.5592 60.2611H34.4409C33.5149 57.3039 30.9687 54.5459 28.113 51.4525C23.2666 46.2029 17.2353 39.6697 17.2353 29.964C17.2353 17.4115 27.4475 7.19927 40 7.19927C52.5525 7.19927 62.7647 17.4115 62.7647 29.964C62.7647 39.6697 56.7334 46.2029 51.8871 51.4525C49.0314 54.5459 46.4853 57.3039 45.5592 60.2611Z" fill="black" fillOpacity="0.2" />
+          <path d="M77.663 27.6196H75.1521C72.0451 27.735 72.0475 32.1938 75.1521 32.308H77.663C80.77 32.1928 80.7677 27.7339 77.663 27.6196Z" fill="black" fillOpacity="0.2" />
+          <path d="M65.9621 0.68667L63.1989 3.45C62.2836 4.36548 62.2836 5.84966 63.1989 6.76514C64.1143 7.68031 65.5985 7.68078 66.5141 6.76514L69.2773 4.00182C70.1926 3.08633 70.1926 1.60215 69.2773 0.68667C68.3618 -0.228812 66.8776 -0.228968 65.9621 0.68667Z" fill="black" fillOpacity="0.2" />
+          <path d="M66.5142 53.1629C65.5987 52.2475 64.1145 52.2474 63.1991 53.1629C62.2836 54.0784 62.2836 55.5625 63.1991 56.478L65.9622 59.2413C66.8774 60.1565 68.3616 60.157 69.2774 59.2413C70.1929 58.3259 70.1929 56.8417 69.2774 55.9262L66.5142 53.1629Z" fill="black" fillOpacity="0.2" />
+          <path d="M4.84762 27.6196H2.33668C-0.770301 27.735 -0.767956 32.1938 2.33668 32.308H4.84762C7.9546 32.1928 7.95226 27.7339 4.84762 27.6196Z" fill="black" fillOpacity="0.2" />
+          <path d="M13.4858 6.76502C14.4014 7.68066 15.8856 7.68019 16.8009 6.76502C17.7164 5.84954 17.7164 4.36536 16.8009 3.44988L14.0379 0.686553C13.1226 -0.228929 11.6382 -0.228773 10.7227 0.686553C9.80726 1.60204 9.80726 3.08622 10.7227 4.0017L13.4858 6.76502Z" fill="black" fillOpacity="0.2" />
+          <path d="M13.4858 53.1629L10.7226 55.9261C9.8073 56.8415 9.8073 58.3257 10.7226 59.2412C11.6384 60.1568 13.1226 60.1564 14.0378 59.2412L16.8009 56.4779C17.7163 55.5624 17.7163 54.0782 16.8009 53.1627C15.8855 52.2474 14.4014 52.2472 13.4858 53.1629Z" fill="black" fillOpacity="0.2" />
+          <path d="M32.634 20.087C28.6015 20.087 25.2681 23.3456 25.2681 27.4529V37.4965C25.3834 40.6035 29.8422 40.6012 29.9564 37.4965V34.819H35.3116V37.4965C35.427 40.6035 39.8858 40.6012 40 37.4965V27.4529C39.9999 23.4281 36.7486 20.087 32.634 20.087ZM35.3115 30.1306H29.9563V27.4529C30.0857 23.907 35.1805 23.9035 35.3115 27.4529V30.1306Z" fill="black" fillOpacity="0.2" />
+          <path d="M52.5544 24.7754C55.6614 24.6601 55.659 20.2013 52.5544 20.087H45.0217C41.9148 20.2024 41.9171 24.6612 45.0217 24.7754H46.4439V35.1523H45.0217C41.9148 35.2677 41.9171 39.7265 45.0217 39.8407H52.5544C55.6614 39.7254 55.659 35.2666 52.5544 35.1523H51.1323V24.7754H52.5544Z" fill="black" fillOpacity="0.2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_3217_1281">
+            <rect width="80" height="80" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "AI Agents & Copilots",
+        href: "",
+      },
+      {
+        title: "Conversational AI",
+        href: "",
+      },
+      {
+        title: "Custom AI Applications",
+        href: "",
+      },
+      {
+        title: "AI Automation",
+        href: "",
+      },
+      {
+        title: "Intelligent Document Processing",
+        href: "",
+      },
+      {
+        title: "Predictive Analytics",
+        href: "",
+      },
+      {
+        title: "Data Engineering & MLOps",
+        href: "",
+      },
+      {
+        title: "AI Governance",
+        href: "",
+      },
+      {
+        title: "AI Strategy & Consulting",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    number: "03",
+    title: "Gaming & iGaming Solutions",
+    description: "Interactive experiences designed to engage millions.",
+
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M79.7661 48.9923L75.2612 24.5267C74.1948 18.7348 69.1564 14.5312 63.2808 14.5312H55.0068C54.4437 14.5312 53.8993 14.7341 53.4736 15.1023L48.7136 19.2197H31.2862L26.5262 15.1023C26.1003 14.7339 25.5561 14.5312 24.9929 14.5312H16.719C10.8434 14.5312 5.80497 18.7348 4.73856 24.5266L0.233718 48.9923C-1.1416 56.4608 3.69012 63.6522 11.1151 65.1789C16.3222 66.2494 21.5904 64.3069 24.8643 60.1094L30.0103 53.5117H49.9898L55.1357 60.1094C58.3897 64.2814 63.6458 66.2558 68.885 65.1789C76.2925 63.6558 81.1442 56.4766 79.7661 48.9923ZM67.9408 60.5878C64.4926 61.297 61.0018 60.0091 58.8318 57.2269L52.9822 49.727C52.5381 49.1577 51.8562 48.8247 51.134 48.8247H28.8657C28.1436 48.8247 27.4617 49.1577 27.0176 49.727L21.1679 57.2269C18.9979 60.0091 15.5075 61.297 12.059 60.5878C7.13934 59.5764 3.92966 54.8044 4.84356 49.8411L9.34841 25.3752C10.0053 21.8075 13.105 19.2181 16.7189 19.2181H24.1197L28.8797 23.3355C29.3056 23.7039 29.8498 23.9066 30.4129 23.9066H49.5864C50.1495 23.9066 50.6939 23.7037 51.1197 23.3355L55.8797 19.2181H63.2804C66.8943 19.2181 69.994 21.8075 70.6509 25.3752L75.1562 49.8409C76.0693 54.8 72.8648 59.5756 67.9408 60.5878ZM26.0612 34.0333H22.6654V30.6376C22.6654 29.3434 21.616 28.2942 20.3217 28.2942C19.0273 28.2942 17.9779 29.3434 17.9779 30.6376V34.0333H14.5823C13.2879 34.0333 12.2385 35.0825 12.2385 36.3767C12.2385 37.6709 13.2879 38.7201 14.5823 38.7201H17.9781V42.1156C17.9781 43.4098 19.0274 44.459 20.3218 44.459C21.6162 44.459 22.6656 43.4098 22.6656 42.1156V38.7203H26.0613C27.3557 38.7203 28.4051 37.6711 28.4051 36.3768C28.4049 35.0825 27.3556 34.0333 26.0612 34.0333ZM60.5232 27.4744C55.614 27.4744 51.6201 31.468 51.6201 36.3769C51.6201 41.2856 55.614 45.2792 60.5232 45.2792C65.4325 45.2792 69.4264 41.2856 69.4264 36.3769C69.4262 31.4678 65.4323 27.4744 60.5232 27.4744ZM60.5232 40.592C58.1987 40.592 56.3076 38.7011 56.3076 36.3767C56.3076 34.0523 58.1987 32.1612 60.5232 32.1612C62.8478 32.1612 64.7389 34.0523 64.7389 36.3767C64.7389 38.7011 62.8478 40.592 60.5232 40.592Z" fill="black" fillOpacity="0.2" />
+      </svg>
+
+    ),
+
+    links: [
+      {
+        title: "Telegram Game Development ",
+        href: "",
+      },
+      {
+        title: "Tap-to-Earn Games",
+        href: "",
+      },
+      {
+        title: "Play-to-Earn Platforms",
+        href: "",
+      },
+      {
+        title: "Web3 Gaming",
+        href: "",
+      },
+      {
+        title: "Unity Game Development",
+        href: "",
+      },
+      {
+        title: "GameFi Infrastructure",
+        href: "",
+      },
+      {
+        title: "NFT Gaming",
+        href: "",
+      },
+      {
+        title: "Tournament Platforms",
+        href: "",
+      },
+      {
+        title: "Reward Systems",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 4,
+    number: "04 ",
+    title: "SaaS Platforms & Enterprise Software",
+    description: "Scalable software built for growth.",
+
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M36.6666 43.3334C34.8335 43.3324 33.036 42.8276 31.4704 41.8741C29.9048 40.9206 28.6314 39.5552 27.7893 37.9269C26.9473 36.2986 26.569 34.4703 26.6958 32.6415C26.8227 30.8128 27.4497 29.0542 28.5084 27.5577C29.5672 26.0613 31.0168 24.8847 32.6991 24.1564C34.3813 23.4282 36.2313 23.1763 38.047 23.4284C39.8627 23.6805 41.5742 24.4268 42.9944 25.5857C44.4146 26.7447 45.4889 28.2718 46.1 30H46.6666C48.4347 30 50.1304 30.7024 51.3807 31.9527C52.6309 33.2029 53.3333 34.8986 53.3333 36.6667C53.3333 38.4348 52.6309 40.1305 51.3807 41.3808C50.1304 42.631 48.4347 43.3334 46.6666 43.3334H36.6666Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M40 56.6666V70" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26.6667 70H53.3334" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M66.6667 10H13.3334C9.65152 10 6.66675 12.9848 6.66675 16.6667V50C6.66675 53.6819 9.65152 56.6667 13.3334 56.6667H66.6667C70.3486 56.6667 73.3334 53.6819 73.3334 50V16.6667C73.3334 12.9848 70.3486 10 66.6667 10Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "CRM Solutions",
+        href: "",
+      },
+      {
+        title: "ERP Systems",
+        href: "",
+      },
+      {
+        title: "HRM Platforms",
+        href: "",
+      },
+      {
+        title: "LMS Platforms",
+        href: "",
+      },
+      {
+        title: "Retail Management Systems",
+        href: "",
+      },
+      {
+        title: "White-Label SaaS Development",
+        href: "",
+      },
+      {
+        title: "Subscription & Billing Platforms",
+        href: "",
+      },
+      {
+        title: "Multi-Tenant SaaS Architecture",
+        href: "",
+      },
+      {
+        title: "Business Intelligence Dashboards",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 5,
+    number: "05 ",
+    title: "Mobile App Development",
+    description: "Native and cross-platform mobile experiences. iOS App Development",
+
+    icon: (
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M36.6667 26.6666H16.6667C12.9848 26.6666 10 29.6514 10 33.3333V66.6666C10 70.3485 12.9848 73.3333 16.6667 73.3333H36.6667C40.3486 73.3333 43.3333 70.3485 43.3333 66.6666V33.3333C43.3333 29.6514 40.3486 26.6666 36.6667 26.6666Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M16.6665 13.3333C16.6665 11.5652 17.3689 9.86949 18.6191 8.61925C19.8694 7.369 21.5651 6.66663 23.3332 6.66663H63.3332C65.1013 6.66663 66.797 7.369 68.0472 8.61925C69.2975 9.86949 69.9998 11.5652 69.9998 13.3333V66.6666C69.9998 68.4347 69.2975 70.1304 68.0472 71.3807C66.797 72.6309 65.1013 73.3333 63.3332 73.3333H55.3332" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26.6665 60H26.6998" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "iOS App Development",
+        href: "",
+      },
+      {
+        title: "Android App Development",
+        href: "",
+      },
+      {
+        title: "Flutter Development",
+        href: "",
+      },
+      {
+        title: "React Native Development",
+        href: "",
+      },
+      {
+        title: "Enterprise Mobile Apps",
+        href: "",
+      },
+      {
+        title: "Fintech Apps",
+        href: "",
+      },
+      {
+        title: "E-commerce Apps",
+        href: "",
+      },
+      {
+        title: "Super Apps",
+        href: "",
+      },
+      {
+        title: "App Maintenance & Scaling",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    number: "06 ",
+    title: "E-Commerce & CMS Solutions",
+    description: "Digital commerce optimized for conversion.",
+
+    icon: (
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M53.3332 33.3334C53.3332 36.8696 51.9284 40.261 49.4279 42.7615C46.9274 45.2619 43.5361 46.6667 39.9998 46.6667C36.4636 46.6667 33.0722 45.2619 30.5717 42.7615C28.0713 40.261 26.6665 36.8696 26.6665 33.3334" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10.3433 20.1135H69.6566" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M11.3333 18.2233C10.4679 19.3773 10 20.7808 10 22.2233V66.6666C10 68.4347 10.7024 70.1304 11.9526 71.3807C13.2029 72.6309 14.8986 73.3333 16.6667 73.3333H63.3333C65.1014 73.3333 66.7971 72.6309 68.0474 71.3807C69.2976 70.1304 70 68.4347 70 66.6666V22.2233C70 20.7808 69.5321 19.3773 68.6667 18.2233L62 9.33329C61.379 8.50532 60.5738 7.8333 59.6481 7.37044C58.7224 6.90759 57.7016 6.66663 56.6667 6.66663H23.3333C22.2984 6.66663 21.2776 6.90759 20.3519 7.37044C19.4262 7.8333 18.621 8.50532 18 9.33329L11.3333 18.2233Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "Shopify Development",
+        href: "",
+      },
+      {
+        title: "Shopify Plus",
+        href: "",
+      },
+      {
+        title: "WooCommerce Development",
+        href: "",
+      },
+      {
+        title: "WordPress Development",
+        href: "",
+      },
+      {
+        title: "Headless Commerce",
+        href: "",
+      },
+      {
+        title: "Marketplace Development",
+        href: "",
+      },
+      {
+        title: "Custom E-Commerce Platforms",
+        href: "",
+      },
+      {
+        title: "Payment Integrations",
+        href: "",
+      },
+      {
+        title: "Conversion Optimization",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 7,
+    number: "07 ",
+    title: "Automation & Customer Engagement",
+    description: "Eliminate repetitive work. Increase efficiency.",
+
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M53.5034 42.0532C53.7237 41.3777 54.154 40.7902 54.7317 40.3765C55.3093 39.9627 56.0041 39.7444 56.7145 39.7533C57.425 39.7622 58.114 39.998 58.6811 40.4261C59.2482 40.8542 59.6636 41.4524 59.8668 42.1332L62.3234 46.9732C62.5625 47.4437 62.9099 47.8508 63.337 48.1608C63.7641 48.4708 64.2587 48.675 64.7801 48.7566L70.2268 49.6099C70.9281 49.6126 71.6108 49.8365 72.1775 50.2497C72.7442 50.6629 73.1662 51.2443 73.3833 51.9113C73.6005 52.5782 73.6017 53.2966 73.3869 53.9642C73.172 54.6319 72.7521 55.2148 72.1868 55.6299L68.2801 59.5232C67.9061 59.8956 67.6258 60.3515 67.4624 60.8533C67.299 61.3552 67.2571 61.8887 67.3401 62.4099L68.2034 67.7866C68.441 68.4605 68.4556 69.1928 68.2453 69.8757C68.035 70.5586 67.6108 71.1558 67.0353 71.5793C66.4598 72.0028 65.7635 72.2302 65.0489 72.2279C64.3344 72.2256 63.6395 71.9938 63.0668 71.5666L58.1834 69.0666C57.713 68.8255 57.192 68.6998 56.6634 68.6998C56.1349 68.6998 55.6139 68.8255 55.1434 69.0666L50.2601 71.5666C49.6874 71.9902 48.994 72.2192 48.2816 72.22C47.5692 72.2208 46.8753 71.9934 46.3016 71.5711C45.7279 71.1487 45.3046 70.5537 45.0938 69.8732C44.883 69.1927 44.8957 68.4626 45.1301 67.7899L45.9901 62.4132C46.0732 61.892 46.0312 61.3585 45.8678 60.8567C45.7044 60.3548 45.4241 59.8989 45.0501 59.5266L41.1968 55.6832C40.6123 55.2783 40.1726 54.6971 39.942 54.0245C39.7113 53.3519 39.7018 52.6232 39.9148 51.9448C40.1277 51.2664 40.5521 50.6739 41.1257 50.2538C41.6994 49.8337 42.3924 49.6081 43.1034 49.6099L48.5468 48.7566C49.0682 48.675 49.5628 48.4708 49.9899 48.1608C50.417 47.8508 50.7644 47.4437 51.0034 46.9732L53.5034 42.0532Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26.6667 50H23.3333C19.7971 50 16.4057 51.4048 13.9052 53.9052C11.4048 56.4057 10 59.7971 10 63.3333V70" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M33.3333 36.6667C40.6971 36.6667 46.6667 30.6971 46.6667 23.3333C46.6667 15.9695 40.6971 10 33.3333 10C25.9695 10 20 15.9695 20 23.3333C20 30.6971 25.9695 36.6667 33.3333 36.6667Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "WhatsApp Automation",
+        href: "",
+      },
+      {
+        title: "AI Chatbots",
+        href: "",
+      },
+      {
+        title: "Customer Support Automation",
+        href: "",
+      },
+      {
+        title: "Marketing Automation",
+        href: "",
+      },
+      {
+        title: "Lead Generation Systems",
+        href: "",
+      },
+      {
+        title: "Sales Automation",
+        href: "",
+      },
+      {
+        title: "Telegram Automation",
+        href: "",
+      },
+      {
+        title: "Workflow Automation",
+        href: "",
+      },
+      {
+        title: "Omnichannel Engagement",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 8,
+    number: "08 ",
+    title: "Dedicated Engineering Teams",
+    description: "Extend your team with world-class talent.",
+
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M53.3335 60L73.3335 40L53.3335 20" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26.6665 20L6.6665 40L26.6665 60" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "Blockchain Developers",
+        href: "/services/web3/blockchain-development",
+      },
+      {
+        title: "AI Engineers",
+        href: "",
+      },
+      {
+        title: "Full-Stack Developers",
+        href: "",
+      },
+      {
+        title: "Mobile Developers",
+        href: "/services/development/mobile-app-development",
+      },
+      {
+        title: "Product Designers",
+        href: "/uiuxdesigner",
+      },
+      {
+        title: "QA Engineers",
+        href: "/qaenginers",
+      },
+      {
+        title: "DevOps Engineers",
+        href: "",
+      },
+      {
+        title: "Product Managers",
+        href: "",
+      },
+      {
+        title: "Fractional CTO Services",
+        href: "",
+      },
+    ],
+  },
+  {
+    id: 9,
+    number: "09 ",
+    title: "Growth, Branding & Go-To-Market",
+    description: "Helping great products find their audience.",
+
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M10 10V63.3333C10 65.1014 10.7024 66.7971 11.9526 68.0474C13.2029 69.2976 14.8986 70 16.6667 70H70" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M63.3335 30L46.6668 46.6667L33.3335 33.3333L23.3335 43.3333" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+
+    links: [
+      {
+        title: "Web3 Marketing",
+        href: "/services/marketing/web3-marketing",
+      },
+      {
+        title: "Digital Marketing",
+        href: "/services/marketing/digital-marketing",
+      },
+      {
+        title: "Branding & Positioning",
+        href: "",
+      },
+      {
+        title: "UI/UX Design",
+        href: "/uiuxdesigner",
+      },
+      {
+        title: "Motion Graphics",
+        href: "",
+      },
+      {
+        title: "Video Production",
+        href: "",
+      },
+      {
+        title: "Community Building",
+        href: "/services/marketing/community-management",
+      },
+      {
+        title: "Content Marketing",
+        href: "/services/marketing/blog-and-article-writing",
+      },
+      {
+        title: "Influencer & KOL Campaigns",
+        href: "/services/marketing/marketingpr",
+      },
+    ],
+  },
+];

@@ -28,24 +28,9 @@
         }
 
         .bottom_side {
-            .owl-theme .owl-nav {
-                margin-top: 10px;
-                text-align: center;
-                -webkit-tap-highlight-color: transparent;
-                position: absolute;
-                top: 0px;
-                right: 60px;
-            }
-
-            .owl-theme .owl-nav [class*='owl-']:hover {
-                background: unset !important;
-                color: #FFF;
-                text-decoration: none;
-            }
-
-            .cardss {
+.cardss {
                 overflow: hidden;
-                 padding: 0px 100px 0px 50px;
+                padding: 0;
 
                 h1 {
                     color: #9D9D9D;
@@ -207,7 +192,7 @@
 @media only screen and (max-width: 991px) {
     .blogs_divv .inner_bloggs .bottom_side .cardss {
     overflow: hidden;
-    padding: 20px;
+    padding: 0;
 }
 .goalss_side1 .goaldiv {
     font-size: 40px;

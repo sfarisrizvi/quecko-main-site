@@ -59,11 +59,11 @@
             }
 
             .accordion-button:not(.collapsed)::after {
-                background-image: url(../Assests/mins.svg);
+                background-image: url(/Assets/mins.svg);
             }
 
             .accordion-button::after {
-                background-image: url(../Assests/plus.svg);
+                background-image: url(/Assets/plus.svg);
             }
 
             .accordion-body {
@@ -109,7 +109,7 @@
                 /* 72px */
             }
 
-            button {
+            button, a span {
                 color: #000;
                 font-size: 20px;
                 font-style: normal;
@@ -613,7 +613,8 @@
         line-height: 120%;
     }
 
-    .TDNS_section .inner_porfolio .first_side button {
+    .TDNS_section .inner_porfolio .first_side button,
+    .TDNS_section .inner_porfolio .first_side a span {
         color: #000;
         font-size: 20px;
         font-style: normal;
@@ -916,7 +917,7 @@
                     /* 72px */
                 }
 
-                button {
+                button, a span {
                     color: #000;
                     font-size: 1.25vw;
                     /* 20px */
@@ -1378,11 +1379,11 @@
                 }
 
                 .accordion-button:not(.collapsed)::after {
-                    background-image: url(../Assests/mins.svg);
+                    background-image: url(/Assets/mins.svg);
                 }
 
                 .accordion-button::after {
-                    background-image: url(../Assests/plus.svg);
+                    background-image: url(/Assets/plus.svg);
                 }
 
                 .accordion-body {
