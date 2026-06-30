@@ -56,6 +56,7 @@ const Header = () => {
         gsap.to(logoRef.current, {
           x: 200,
           opacity: 0,
+          width: 0,
           duration: 0.5,
           ease: "power2.out",
           scrollTrigger: {
@@ -72,7 +73,7 @@ const Header = () => {
         });
 
         gsap.to(navbarRef.current, {
-          width: "60vw",
+          width: "53vw",
           left: "50%",
           x: "-50%",
           duration: 0.5,
