@@ -81,7 +81,7 @@
       gap: 12px;
       flex-wrap: wrap;
 
-      margin-bottom: 88px;
+      margin-bottom: 32px;
 
       .social-pill {
         display: inline-flex;
@@ -131,6 +131,98 @@
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
+      }
+    }
+  }
+
+  .footer-offices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+    .office-card {
+      background: #FFF;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.08);
+      }
+
+      .office-flag {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+        color: #FFF;
+      }
+
+      .office-title {
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 120%;
+        margin: 0;
+      }
+
+      .office-address {
+        color: #616161;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+      }
+
+      .office-license {
+        color: #8E8E93;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        margin-top: 2px;
+      }
+
+      .office-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 4px;
+      }
+
+      .contact-line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #636366;
+        }
+
+        .contact-label {
+          color: #8E8E93;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 0.04em;
+          min-width: 62px;
+        }
       }
     }
   }
@@ -197,6 +289,13 @@
 
         }
       }
+    }
+
+    .footer-offices {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 32px;
+      margin-bottom: 32px;
     }
 
     .footer-bottom {

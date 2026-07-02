@@ -1,15 +1,36 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Mousewheel, FreeMode } from "swiper/modules";
 import "swiper/css";
 import { services } from "./servicesData";
 
+const getSlug = (text) => {
+  return text
+    .toLowerCase()
+    .replace(/[&\/\\#,+()$~%.'":*?<>{}[\]]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+};
+
 const Services = () => {
+  const router = useRouter();
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
   const [offset, setOffset] = useState(100);
+
+  const handleCardClick = (e, href) => {
+    // If the click is inside a pill link, let the link handle it
+    if (e.target.closest('.innerlink')) {
+      return;
+    }
+    router.push(href);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,7 +49,8 @@ const Services = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
-    setInit(true);
+    const t = setTimeout(() => setInit(true), 0);
+    return () => clearTimeout(t);
   }, []);
 
   useEffect(() => {
@@ -119,12 +141,14 @@ const Services = () => {
 
       <div className="card-slider">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Mousewheel, FreeMode]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={16}
           slidesPerView={2.3}
           slidesOffsetBefore={offset}
           slidesOffsetAfter={offset}
+          mousewheel={{ forceToAxis: true }}
+          freeMode={true}
           breakpoints={{
             100: { slidesPerView: 1.05 },
             768: { slidesPerView: 1.3 },
@@ -134,13 +158,22 @@ const Services = () => {
         >
           {services.map((service) => (
             <SwiperSlide key={service.id}>
-              <div className="flip-card">
+              <div
+                className="flip-card"
+                onClick={(e) => handleCardClick(e, service.href || "#")}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
+                  <div
+                    className="flip-card-front"
+                    style={{ textDecoration: "none", color: "inherit", display: "flex", width: "100%", height: "100%" }}
+                  >
+                    <Image
                       src="/cardshade.svg"
                       alt="cardshade"
                       className="cardshade"
+                      width={400}
+                      height={500}
                     />
 
                     {service.icon}
@@ -156,13 +189,18 @@ const Services = () => {
                   </div>
 
                   <div className="flip-card-back">
-                    <img
+                    <Image
                       src="/carddetailshade.svg"
                       alt="carddetailshade"
                       className="carddetailshade"
+                      width={400}
+                      height={500}
                     />
 
-                    <div className="detailtop">
+                    <div
+                      className="detailtop"
+                      style={{ textDecoration: "none", color: "inherit", display: "flex", width: "100%" }}
+                    >
                       <div className="topleft">
                         <h5 className="detailhead">{service.title}</h5>
                         <p className="detailpara">{service.description}</p>
@@ -172,15 +210,20 @@ const Services = () => {
                     </div>
 
                     <div className="mainlinks">
-                      {service.links.map((link, index) => (
-                        <a
-                          key={index}
-                          href={link.href || undefined}
-                          className="innerlink"
-                        >
-                          {link.title}
-                        </a>
-                      ))}
+                      {service.links.map((link, index) => {
+                        const href = service.slug
+                          ? `/services/${service.slug}?tab=${getSlug(link.title)}`
+                          : (link.href || "#");
+                        return (
+                          <Link
+                            key={index}
+                            href={href}
+                            className="innerlink"
+                          >
+                            {link.title}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

@@ -53,6 +53,7 @@
 @import "./cryptoconverter.scss";
 @import "./carousel.scss";
 @import "./trusted.scss";
+@import "./web3-service.scss";
 
 // Skeleton loader (replaces Lottie loader1 — no JS dependency)
 .skeleton-row {
@@ -907,7 +908,7 @@ input {
   margin-left: -18px;
   font-size: 22px;
   font-style: normal;
-  line-height: 200%;
+  line-height: 140%;
 }
 
 .one_parentss {

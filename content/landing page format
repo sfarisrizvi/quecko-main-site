@@ -1,0 +1,182 @@
+---
+title: Quecko — Services Landing Page Copy
+page-type: Core Services Page
+audience: Mixed (founders, institutional/enterprise buyers, technical decision-makers)
+goal: Establish breadth + credibility, route visitors to the right service vertical
+primary-cta: Start a Project
+---
+
+# QUECKO — SERVICES LANDING PAGE
+
+---
+
+## 1. HERO
+
+### Headline
+We're the Building Blocks Behind the Next Generation of AI & Digital Products
+
+### Subhead
+From AI agents and blockchain infrastructure to enterprise platforms and mobile
+apps, Quecko helps ambitious companies design, build, and scale category-defining
+products used by millions worldwide.
+
+### CTA
+[Start a Project] [Explore Our Work]
+
+---
+
+## 2. TRUST BAR
+
+400+ clients across 20+ countries  •  250+ products built  •  1,500+ engineers
+500+ global client base  •  Working across time zones since day one
+
+> Note: keep stat selection consistent with the flagged figures in
+> `quecko-business-details.md` — use only confirmed numbers in final published copy.
+
+---
+
+## 3. PROBLEM
+
+### Headline
+Most teams don't fail on the idea. They fail on execution.
+
+### Body
+Building AI and Web3 products takes more than one skill set — it takes
+engineers who understand blockchain infrastructure, AI systems, mobile
+platforms, and growth, all working from the same playbook. Most teams patch
+this together with freelancers, agencies, and in-house gaps. The result:
+missed timelines, security risk, and products that never reach the market
+they were built for.
+
+---
+
+## 4. SOLUTION / HOW IT WORKS
+
+### Headline
+One team. Every layer of the product, built end-to-end.
+
+1. **Consult** — We map your product, audience, and technical requirements
+   across AI, Web3, mobile, or SaaS.
+2. **Build** — Dedicated engineers, designers, and strategists execute against
+   a defined roadmap — audited, tested, and shipped.
+3. **Scale** — Ongoing support, marketing, and engineering augmentation as your
+   product grows.
+
+---
+
+## 5. FEATURES (Services Grid)
+Based on the page title, this section will have specific sub-services details. Make sure to use the same details from `../About.md` for accuracy. THIS section will be content switcher pills based on sub-cateogy in that service. e.g If page title is Web3 & Blockchain Engineering, then show all the sub-services under Web3 & Blockchain Engineering in switcher tab and upon selecting the sub-cateogry it shows that content which you will write for that. AND each sub-category will have its own `sub-category landing page format` which you can use to generate the content for that. for e.g. if user clicks on "smart contracts", then it shows the content for that sub-category. You have to make sure the content is relevant to the sub-category selected.
+
+---
+
+## 6. DIFFERENTIATION
+
+### Headline
+Most agencies specialize. We engineer full products.
+
+### Body
+Quecko isn't a single-service shop. We're a full-spectrum product engineering
+partner — combining AI, blockchain, mobile, and growth under one roof, so your
+product doesn't lose context moving between vendors. One team, one roadmap,
+one accountable partner from architecture to launch.
+
+---
+
+## 7. PROOF / SOCIAL PROOF
+
+> "The work Quecko has done has been absolutely brilliant. Extremely
+> responsive, reliable, and fast — we can throw last minute requests in and
+> they'll get them done by the end of the day."
+> **Tom Blears**, Chief Executive Officer, Bitcast
+
+> "With hard work, determination, and an amazing team at Quecko, we can
+> overcome any obstacle and achieve anything we set our minds to."
+> **Mateen O Dawood**, Stable33 Protocol
+
+---
+
+## 8. SECURITY / TRUST
+
+### Headline
+Security isn't an afterthought — it's built in.
+
+### Body
+Every blockchain solution we ship follows rigorous smart contract auditing
+and security best practices, with encryption protocols designed to keep
+products resistant to vulnerabilities from day one.
+
+---
+
+## 9. FEATURED WORK
+
+### Headline
+Built by experts. Used by millions.
+
+- **Launchpad** — Web3 token launch infrastructure
+- **Multi-Chain** — Cross-chain product engineering
+- **Decentralized Options Market** — DeFi trading infrastructure
+- **Diet & Cheat Meal App** — Consumer mobile product
+
+[Explore Our Work →]
+
+---
+
+## 10. OBJECTION HANDLING / FAQ
+
+**What services does Quecko offer?**
+Quecko specializes in Web3 development — dApps, smart contracts, DeFi, DAOs,
+NFT marketplaces, and blockchain consulting — alongside resource augmentation
+and Web3 marketing to help businesses scale efficiently.
+
+**How does Quecko ensure the security of blockchain solutions?**
+We follow best practices, conduct rigorous smart contract audits, and
+implement robust encryption protocols to keep every solution secure and
+resistant to vulnerabilities.
+
+**Can Quecko help with Web3 marketing and community building?**
+Yes — including brand positioning, community engagement, influencer
+partnerships, social growth, and performance marketing.
+
+**How does the resource augmentation process work?**
+Four steps: consultation, talent matching, onboarding, and ongoing support —
+selecting top-tier Web3 developers, designers, and marketers to integrate
+directly with your team.
+
+**How can I get started with Quecko?**
+Contact us via the website, email, or social channels — we'll schedule a
+consultation to understand your needs and recommend the right solutions.
+
+---
+
+## 11. TEAM / BACKERS
+
+### Headline
+Trusted by founders and teams across 20+ countries
+
+400+ clients. 1,500+ engineers. One team working across every time zone since
+day one.
+
+---
+
+## 12. FINAL CTA
+
+### Headline
+Whatever you're building, we're ready.
+
+### Body
+Whether you're creating an AI platform, launching a Web3 ecosystem, or scaling
+enterprise software, Quecko is ready to help you build the future.
+
+### CTA
+[Start a Project]   [Read Our FAQs]
+
+---
+
+## 13. FOOTER / COMPLIANCE
+
+Quecko © 2026. All rights reserved.
+Sales@Quecko.com
+Facebook · Telegram · Instagram · Twitter/X
+
+> Standard disclaimer line if any service messaging touches financial/investment
+> framing (e.g. DeFi, launchpads, tokenization): "Not financial advice. DYOR."

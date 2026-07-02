@@ -7,32 +7,41 @@ const Marquee = () => {
 
   useEffect(() => {
     let timeoutId;
+    let failCount = 0;
+    const MAX_RETRIES = 3;
 
     const fetchPrices = async () => {
       try {
-        const res = await fetch("https://stg-api.price.agency/api/v1/markets-data/top", { cache: "no-store" });
-        
-        // Safety: Ensure the response is actually okay
+        const controller = new AbortController();
+        const abortTimeout = setTimeout(() => controller.abort(), 8000);
+
+        const res = await fetch("https://stg-api.price.agency/api/v1/markets-data/top", {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+        clearTimeout(abortTimeout);
+
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        
+
         const data = await res.json();
 
-        // Safety: Only update state if we actually got an array
         if (Array.isArray(data)) {
           setCoins(data);
+          failCount = 0; // reset on success
         }
-      } catch (err) {
-        console.error("Error fetching coin data:", err);
-      } finally {
-        // RECURSIVE TIMEOUT: This is safer than setInterval.
-        // It waits 30s AFTER the fetch finishes before starting the next one.
+      } catch {
+        failCount++;
+        if (failCount >= MAX_RETRIES) return; // stop retrying
+      }
+
+      // Only schedule next fetch if we haven't exceeded retries
+      if (failCount < MAX_RETRIES) {
         timeoutId = setTimeout(fetchPrices, 30000);
       }
     };
 
     fetchPrices();
 
-    // Cleanup: Stop the timer if the user leaves the page
     return () => clearTimeout(timeoutId);
   }, []);
 
