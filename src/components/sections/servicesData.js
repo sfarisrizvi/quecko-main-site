@@ -77,6 +77,31 @@ export const services = [
     ]
   },
   {
+    id: 8,
+    number: "06",
+    title: "Dedicated Engineering Teams",
+    description: "Extend your team with world-class talent.",
+    slug: "dedicated-teams",
+    href: "/services/dedicated-teams",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <path d="M53.3335 60L73.3335 40L53.3335 20" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26.6665 20L6.6665 40L26.6665 60" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+    links: [
+      { title: "Dedicated Frontend Developers", href: "/services/dedicated-teams?tab=dedicated-frontend-developers" },
+      { title: "Dedicated Backend Developers", href: "/services/dedicated-teams?tab=dedicated-backend-developers" },
+      { title: "Dedicated Full-Stack Engineers", href: "/services/dedicated-teams?tab=dedicated-full-stack-engineers" },
+      { title: "Mobile App Developers", href: "/services/dedicated-teams?tab=mobile-app-developers" },
+      { title: "UI/UX Designers & Researchers", href: "/services/dedicated-teams?tab=uiux-designers-researchers" },
+      { title: "QA Engineers & Test Automation", href: "/services/dedicated-teams?tab=qa-engineers-test-automation" },
+      { title: "Project Managers & Product Owners", href: "/services/dedicated-teams?tab=project-managers-product-owners" },
+      { title: "DevOps & Cloud Architects", href: "/services/dedicated-teams?tab=devops-cloud-architects" },
+      { title: "Blockchain Developers", href: "/services/dedicated-teams?tab=blockchain-developers" }
+    ]
+  },
+  {
     id: 5,
     number: "03",
     title: "Mobile App Development",
@@ -153,31 +178,6 @@ export const services = [
       { title: "Legacy Software Modernization", href: "/services/saas-platforms?tab=legacy-software-modernization" },
       { title: "Cloud Migration & DevOps Setup", href: "/services/saas-platforms?tab=cloud-migration-devops-setup" },
       { title: "SLA-Backed Support & Maintenance", href: "/services/saas-platforms?tab=sla-backed-support-maintenance" }
-    ]
-  },
-  {
-    id: 8,
-    number: "06",
-    title: "Dedicated Engineering Teams",
-    description: "Extend your team with world-class talent.",
-    slug: "dedicated-teams",
-    href: "/services/dedicated-teams",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-        <path d="M53.3335 60L73.3335 40L53.3335 20" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M26.6665 20L6.6665 40L26.6665 60" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    links: [
-      { title: "Dedicated Frontend Developers", href: "/services/dedicated-teams?tab=dedicated-frontend-developers" },
-      { title: "Dedicated Backend Developers", href: "/services/dedicated-teams?tab=dedicated-backend-developers" },
-      { title: "Dedicated Full-Stack Engineers", href: "/services/dedicated-teams?tab=dedicated-full-stack-engineers" },
-      { title: "Mobile App Developers", href: "/services/dedicated-teams?tab=mobile-app-developers" },
-      { title: "UI/UX Designers & Researchers", href: "/services/dedicated-teams?tab=uiux-designers-researchers" },
-      { title: "QA Engineers & Test Automation", href: "/services/dedicated-teams?tab=qa-engineers-test-automation" },
-      { title: "Project Managers & Product Owners", href: "/services/dedicated-teams?tab=project-managers-product-owners" },
-      { title: "DevOps & Cloud Architects", href: "/services/dedicated-teams?tab=devops-cloud-architects" },
-      { title: "Blockchain Developers", href: "/services/dedicated-teams?tab=blockchain-developers" }
     ]
   },
   {
