@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Mousewheel, FreeMode } from "swiper/modules";
 import "swiper/css";
 import { services } from "./servicesData";
+import { allServicesData } from "./allServicesData";
 
 const getSlug = (text) => {
   return text
@@ -210,20 +211,27 @@ const Services = () => {
                     </div>
 
                     <div className="mainlinks">
-                      {service.links.map((link, index) => {
-                        const href = service.slug
-                          ? `/services/${service.slug}/${getSlug(link.title)}`
-                          : (link.href || "#");
-                        return (
-                          <Link
-                            key={index}
-                            href={href}
-                            className="innerlink"
-                          >
-                            {link.title}
-                          </Link>
-                        );
-                      })}
+                      {(() => {
+                        const subServices = allServicesData[service.slug]?.subServices;
+                        const linksToRender = subServices 
+                          ? Object.values(subServices).map(sub => ({ title: sub.title, slug: sub.slug }))
+                          : service.links;
+                        
+                        return linksToRender.map((link, index) => {
+                          const href = service.slug
+                            ? `/services/${service.slug}/${link.slug || getSlug(link.title)}`
+                            : (link.href || "#");
+                          return (
+                            <Link
+                              key={index}
+                              href={href}
+                              className="innerlink"
+                            >
+                              {link.title}
+                            </Link>
+                          );
+                        });
+                      })()}
                     </div>
                   </div>
                 </div>
