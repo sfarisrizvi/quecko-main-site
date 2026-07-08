@@ -212,7 +212,7 @@ const Services = () => {
                     <div className="mainlinks">
                       {service.links.map((link, index) => {
                         const href = service.slug
-                          ? `/services/${service.slug}?tab=${getSlug(link.title)}`
+                          ? `/services/${service.slug}/${getSlug(link.title)}`
                           : (link.href || "#");
                         return (
                           <Link

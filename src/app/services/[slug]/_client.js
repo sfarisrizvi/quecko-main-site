@@ -251,9 +251,15 @@ export default function Web3ClientPage({ slug }) {
                 <Link href="/contact" className="btn-primary">
                   {serviceData.hero.ctaPrimary || "Start a Project"}
                 </Link>
-                <a href="#sub-services" onClick={handleScrollToTabs} className="btn-secondary">
-                  {serviceData.hero.ctaSecondary || `Explore ${cleanTitle}`}
-                </a>
+                {serviceData.hero.ctaSecondaryLink ? (
+                  <a href={serviceData.hero.ctaSecondaryLink} className="btn-secondary" target="_blank" rel="noopener noreferrer">
+                    {serviceData.hero.ctaSecondary || `Explore ${cleanTitle}`}
+                  </a>
+                ) : (
+                  <a href="#sub-services" onClick={handleScrollToTabs} className="btn-secondary">
+                    {serviceData.hero.ctaSecondary || `Explore ${cleanTitle}`}
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -457,9 +463,15 @@ export default function Web3ClientPage({ slug }) {
             <Link href="/contact" className="btn-primary">
               Start a Project
             </Link>
-            <a href="#sub-services" onClick={handleScrollToTabs} className="btn-secondary">
-              {serviceData.hero.ctaSecondary || `Read ${cleanTitle} FAQs`}
-            </a>
+            {serviceData.hero.ctaSecondaryLink ? (
+              <a href={serviceData.hero.ctaSecondaryLink} className="btn-secondary" target="_blank" rel="noopener noreferrer">
+                {serviceData.hero.ctaSecondary || `Read ${cleanTitle} FAQs`}
+              </a>
+            ) : (
+              <a href="#sub-services" onClick={handleScrollToTabs} className="btn-secondary">
+                {serviceData.hero.ctaSecondary || `Read ${cleanTitle} FAQs`}
+              </a>
+            )}
           </div>
         </div>
       </section>

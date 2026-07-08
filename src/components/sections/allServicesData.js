@@ -6,7 +6,8 @@ export const allServicesData = {
       "headline": "Building the Decentralized Foundations of Tomorrow",
       "subhead": "From Layer 1 protocols and smart contract systems to institutional DeFi and real-world asset tokenization, Quecko engineers secure, gas-optimized, and highly scalable Web3 infrastructure built to scale.",
       "ctaPrimary": "Start a Project",
-      "ctaSecondary": "Explore Web3 Work"
+      "ctaSecondary": "Explore Web3 Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com/case-studies/blockchain-development"
     },
     "problem": {
       "tagline": "The Web3 Threat",
@@ -182,7 +183,8 @@ export const allServicesData = {
       "headline": "Intelligence Embedded into Every Workflow",
       "subhead": "From custom AI agents and autonomous copilots to predictive analytics and enterprise MLOps, Quecko designs, builds, and deploys intelligent systems that automate complex work and scale business capabilities.",
       "ctaPrimary": "Start a Project",
-      "ctaSecondary": "Explore AI Work"
+      "ctaSecondary": "Explore AI Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com/case-studies/ai"
     },
     "problem": {
       "tagline": "The AI Barrier",
@@ -516,7 +518,8 @@ export const allServicesData = {
       "headline": "Scalable Software Built for Growth",
       "subhead": "From multi-tenant SaaS architectures and billing platforms to custom CRM, ERP, and Business Intelligence dashboards, Quecko builds secure, cloud-native enterprise software designed to scale.",
       "ctaPrimary": "Start a Project",
-      "ctaSecondary": "Explore Enterprise Work"
+      "ctaSecondary": "Explore Enterprise Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com/case-studies/saas-apps"
     },
     "problem": {
       "tagline": "The SaaS Challenge",
@@ -683,7 +686,8 @@ export const allServicesData = {
       "headline": "Native and Cross-Platform Mobile Experiences",
       "subhead": "From native iOS and Android applications to cross-platform React Native and Flutter builds, Quecko engineers high-performance mobile products designed for conversion.",
       "ctaPrimary": "Start a Project",
-      "ctaSecondary": "Explore Mobile Work"
+      "ctaSecondary": "Explore Mobile Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com/case-studies/mobile-app-development"
     },
     "problem": {
       "tagline": "The Mobile Challenge",
@@ -850,7 +854,8 @@ export const allServicesData = {
       "headline": "Digital Commerce Optimized for Conversion",
       "subhead": "From custom Shopify Plus stores and headless commerce systems to enterprise marketplace platforms and custom WordPress setups, Quecko engineers high-converting e-commerce experiences built to scale.",
       "ctaPrimary": "Start a Project",
-      "ctaSecondary": "Explore E-Commerce Work"
+      "ctaSecondary": "Explore E-Commerce Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com/case-studies/ecommerce"
     },
     "problem": {
       "tagline": "The E-Commerce Challenge",
@@ -1351,7 +1356,8 @@ export const allServicesData = {
       "headline": "Helping Great Products Find Their Audience",
       "subhead": "From Web3 marketing and performance campaigns to brand positioning, premium UI/UX design, and influencer campaigns, Quecko engineers growth systems that scale businesses.",
       "ctaPrimary": "Start a Project",
-      "ctaSecondary": "Explore Growth Work"
+      "ctaSecondary": "Explore Growth Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com/case-studies/marketing"
     },
     "problem": {
       "tagline": "The Growth Barrier",

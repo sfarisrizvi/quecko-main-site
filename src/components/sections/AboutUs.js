@@ -10,10 +10,9 @@ const Aboutus = () => {
           <div className="custom-container">
             <div className="aboutusinner">
               <div className="innerleft">
-                <div className="toppara">
+                {/* <div className="toppara">
                   <p className="innerpara">About Us</p>
-                </div>
-                <h1 className="aboutushead">Building Blocks To Build On</h1>
+                </div> */}
                 <div className="leftlower">
                   <h6 className="lowerpara">
                     Trusted by 400+ clients across 20+ countries — shipping AI
@@ -21,6 +20,7 @@ const Aboutus = () => {
                   </h6>
                   <h1 className="lowerhead">400+</h1>
                 </div>
+                <h1 className="aboutushead">Building Blocks To Build On</h1>
               </div>
               <div className="innerright">
                 <div className="righttop">

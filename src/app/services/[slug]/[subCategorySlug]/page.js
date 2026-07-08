@@ -1,0 +1,853 @@
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import Projects from "@/components/sections/Projects";
+import Testimonials from "@/components/sections/Testimonials";
+import Stories from "@/components/sections/Stories";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import FAQAccordion from "@/components/sections/FAQAccordion";
+import { getInternalPageData, getAllInternalPages } from "@/Utils/internalPagesParser";
+
+// Dynamic SVG Icon Selector for Capabilities
+function getIconForCapability(title = "") {
+  const t = title.toLowerCase();
+
+  // 1. Agent / Bot / Assistant
+  if (t.includes("agent") || t.includes("copilot") || t.includes("assistant") || t.includes("chatbot")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 8V4H8" />
+        <rect width="16" height="12" x="4" y="8" rx="2" />
+        <path d="M2 14h2" />
+        <path d="M20 14h2" />
+        <path d="M15 13v2" />
+        <path d="M9 13v2" />
+      </svg>
+    );
+  }
+
+  // 2. Database / Memory / Vector Store / Ledger
+  if (t.includes("database") || t.includes("memory") || t.includes("vector") || t.includes("storage") || t.includes("ledger") || t.includes("rwa") || t.includes("data")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+      </svg>
+    );
+  }
+
+  // 3. API / Connection / Orchestration / Integration
+  if (t.includes("api") || t.includes("orchestration") || t.includes("integration") || t.includes("tool") || t.includes("bridge") || t.includes("cross-chain")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" />
+        <path d="M8 20v-4" />
+        <path d="M12 20v-8" />
+        <path d="M16 20v-6" />
+      </svg>
+    );
+  }
+
+  // 4. Security / Audit / Shield / Guardrails / Governance
+  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z" />
+      </svg>
+    );
+  }
+
+  // 5. Analytics / Chart / Dashboards / Prediction
+  if (t.includes("analytics") || t.includes("predictive") || t.includes("charts") || t.includes("dashboard") || t.includes("market") || t.includes("conversion")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="18" y1="20" x2="18" y2="10" />
+        <line x1="12" y1="20" x2="12" y2="4" />
+        <line x1="6" y1="20" x2="6" y2="14" />
+      </svg>
+    );
+  }
+
+  // 6. Commerce / Cart / Checkout / Payment
+  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="8" cy="21" r="1" />
+        <circle cx="19" cy="21" r="1" />
+        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+      </svg>
+    );
+  }
+
+  // 7. Automation / Process / Workflow
+  if (t.includes("automation") || t.includes("workflow") || t.includes("process") || t.includes("whatsapp") || t.includes("telegram")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
+    );
+  }
+
+  // 8. Design / Creative / Brand / UI / UX
+  if (t.includes("design") || t.includes("creative") || t.includes("brand") || t.includes("ui") || t.includes("ux") || t.includes("positioning") || t.includes("graphics")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+        <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+    );
+  }
+
+  // Default: Code Bracket
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </svg>
+  );
+}
+
+export async function generateStaticParams() {
+  const pages = getAllInternalPages();
+  return pages.map(p => ({
+    slug: p.categorySlug,
+    subCategorySlug: p.subCategorySlug
+  }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug, subCategorySlug } = await params;
+  const pageData = getInternalPageData(slug, subCategorySlug);
+
+  if (!pageData) {
+    return {
+      title: "Service – Quecko",
+      description: "Explore Quecko's digital product engineering and Web3 services."
+    };
+  }
+
+  return {
+    title: `${pageData.frontmatter.title}`,
+    description: pageData.frontmatter["seo-meta-description"] || pageData.frontmatter.goal || "",
+    keywords: pageData.frontmatter["seo-primary-keywords"] || [],
+    alternates: {
+      canonical: `https://quecko.com/services/${slug}/${subCategorySlug}`
+    }
+  };
+}
+
+// Helper to parse markdown links [Text](url) and return them styled as hyperlinks with domains prepended
+function parseTextWithMarkdownLinks(text) {
+  if (!text) return "";
+  
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  
+  while ((match = regex.exec(text)) !== null) {
+    const matchIndex = match.index;
+    
+    if (matchIndex > lastIndex) {
+      parts.push(text.substring(lastIndex, matchIndex));
+    }
+    
+    const linkText = match[1];
+    let linkUrl = match[2];
+    
+    if (linkUrl.startsWith('/')) {
+      linkUrl = `https://quecko.com${linkUrl}`;
+    }
+    
+    parts.push(
+      <a 
+        key={matchIndex} 
+        href={linkUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="not-a-fit-link"
+      >
+        {linkText}
+      </a>
+    );
+    
+    lastIndex = regex.lastIndex;
+  }
+  
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+  
+  return parts.length > 0 ? parts : text;
+}
+
+// Helpers for Gantt timeline parser and rendering
+function getTimelineMetrics(timeframe, index, totalPhases) {
+  const match = timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)/i) || timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)/i);
+  if (match) {
+    return { start: parseInt(match[1]), end: parseInt(match[2]) };
+  }
+  const step = 90 / totalPhases;
+  const start = Math.round(index * step) + 1;
+  const end = Math.round((index + 1) * step);
+  return { start, end };
+}
+
+function parsePhaseParts(timeframe) {
+  const match = timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)(?:\s*\(([^)]+)\))?/i) || timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)(?:\s*\(([^)]+)\))?/i);
+  if (match) {
+    return {
+      days: `Day ${match[1]}–${match[2]}`,
+      title: match[3] ? match[3].trim() : 'Execution Phase'
+    };
+  }
+  return {
+    days: timeframe,
+    title: 'Execution Phase'
+  };
+}
+
+function getIconForPhase(index) {
+  switch (index) {
+    case 0:
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+      );
+    case 1:
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          <rect width="20" height="14" x="2" y="6" rx="2" />
+        </svg>
+      );
+    case 2:
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+          <path d="M9 18h6" />
+          <path d="M10 22h4" />
+        </svg>
+      );
+    case 3:
+    default:
+      return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect width="18" height="12" x="3" y="4" rx="2" ry="2" />
+          <line x1="2" y1="20" x2="22" y2="20" />
+          <line x1="12" y1="16" x2="12" y2="20" />
+        </svg>
+      );
+  }
+}
+
+export default async function SubCategoryPage({ params }) {
+  const { slug, subCategorySlug } = await params;
+  const pageData = getInternalPageData(slug, subCategorySlug);
+
+  if (!pageData) {
+    return (
+      <div style={{ padding: "120px 20px", textAlign: "center", minHeight: "60vh", background: "#FFFFFF", color: "#000000" }}>
+        <h1 style={{ fontSize: "2rem", marginBottom: "20px" }}>404 - Service Page Not Found</h1>
+        <p style={{ marginBottom: "30px", color: "#666" }}>We couldn&apos;t find the subcategory page you were looking for.</p>
+        <Link href="/services" style={{ background: "#C1FF14", color: "#000", padding: "12px 24px", borderRadius: "100px", textDecoration: "none", fontWeight: "500" }}>
+          Return to Services
+        </Link>
+      </div>
+    );
+  }
+
+  const { frontmatter, sections, categoryName } = pageData;
+  const cleanCategoryName = categoryName
+    .replace(" Copy", "")
+    .replace(" Solutions", "")
+    .replace(" Engineering", "")
+    .replace(" Systems", "")
+    .replace(" Teams", "")
+    .replace(" & Go-To-Market", "");
+
+  const cleanSubTitle = frontmatter.title.split("|")[0].trim();
+
+  return (
+    <div className="web3-service-page">
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://quecko.com" },
+          { name: "Services", url: "https://quecko.com/services" },
+          { name: cleanCategoryName, url: `https://quecko.com/services/${slug}` },
+          { name: cleanSubTitle, url: `https://quecko.com/services/${slug}/${subCategorySlug}` }
+        ]}
+      />
+
+      {/* 1. HERO SECTION */}
+      <section className="smart_contract">
+        <Header />
+        <div className="inner_data">
+          <video
+            className="main-banner-video"
+            muted
+            playsInline
+            autoPlay
+            loop
+            poster="/Assets/landing/banner/banner-preview.png"
+            width="100%"
+            id="myVideo"
+            style={{ display: "block" }}
+          >
+            <source
+              src="https://media.quecko.com/videos/banner.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <Image
+            src="/Assets/landing/banner/bannershadow.png"
+            alt=""
+            aria-hidden="true"
+            className="bannershadow"
+            width={1920}
+            height={1080}
+            priority
+          />
+
+          <div className="blogdetail">
+            <div className="parenttext">
+              <div className="twicebtn">
+                <Link href="/services"><p>Services</p></Link>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                  <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <Link href={`/services/${slug}`}><p>{cleanCategoryName}</p></Link>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                  <path d="M5.25 11L8.75 7.5L5.25 4" stroke="#9D9D9D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span>{cleanSubTitle}</span>
+              </div>
+              <h1 className="mainpara">{sections.hero?.headline}</h1>
+              <p className="para">{sections.hero?.subhead}</p>
+              <div className="hero-ctas">
+                <Link href="/contact" className="btn-primary">
+                  {frontmatter["primary-cta"] || "Talk to an Engineer"}
+                </Link>
+                {sections.hero?.ctas?.[1] && (
+                  <Link href="#portfolio" className="btn-secondary">
+                    {sections.hero.ctas[1]}
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. GLOBAL STAT STRIP TICKER (Consistent Numeric Stats) */}
+      <div className="trust-bar">
+        <div className="trust-container">
+          {[0, 1, 2, 3].map((i) => (
+            <React.Fragment key={i}>
+              <div className="trust-stat">
+                <strong>400+</strong>
+                <span>clients across 20+ countries</span>
+              </div>
+              <div className="trust-stat">
+                <strong>$300M+</strong>
+                <span>in funds generated</span>
+              </div>
+              <div className="trust-stat">
+                <strong>250+</strong>
+                <span>products built</span>
+              </div>
+              <div className="trust-stat">
+                <strong>150+</strong>
+                <span>engineers worldwide</span>
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+
+      {/* 3 & 4. PROBLEM & SOLUTION SECTION (THE CHALLENGE) */}
+      {sections.challenge && (
+        <section className="service-section">
+          <div className="section-container">
+            <div className="problem-solution-grid">
+              <div className="problem-side">
+                <span className="tagline">The Challenge</span>
+                <div className="problem-card">
+                  <h3>{sections.challenge.headline}</h3>
+                  <p>{sections.challenge.body}</p>
+                </div>
+              </div>
+
+              <div className="solution-side">
+                <span className="tagline">The Solution</span>
+                <h3 className="section-head" style={{ fontSize: "28px", marginBottom: "30px", lineHeight: "1.25" }}>
+                  Engineering Production-Grade {cleanSubTitle} Infrastructure
+                </h3>
+                
+                {sections.process?.steps && sections.process.steps.length > 0 ? (
+                  <div className="solution-steps">
+                    {sections.process.steps.map((step, idx) => (
+                      <div key={idx} className="step-item">
+                        <div className="step-num">{idx + 1}</div>
+                        <div className="step-body">
+                          <h4>{step.title}</h4>
+                          <p>{step.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p style={{ color: "#3A3A3C", fontSize: "16px", lineHeight: "1.6" }}>
+                    Quecko approaches subcategory product challenges with full lifecycle planning, rigorous testing, and strict compliance alignment to guarantee long-term stability and seamless operation under heavy production load.
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 5. CORE CAPABILITIES SECTION */}
+      {sections.capabilities?.items && sections.capabilities.items.length > 0 && (
+        <section className="service-section light-bg">
+          <div className="section-container">
+            <span className="tagline">Capabilities</span>
+            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.capabilities.headline || "Our Core Capabilities"}</h2>
+            <p className="section-desc" style={{ marginBottom: "50px" }}>
+              Explore our technical specialties, engineering practices, and developer skills.
+            </p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "24px" }}>
+              {sections.capabilities.items.map((item, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    background: "#FFFFFF",
+                    border: "1px solid rgba(0,0,0,0.06)",
+                    padding: "36px",
+                    borderRadius: "28px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  }}
+                  className="capability-hover-card"
+                >
+                  <div
+                    style={{
+                      background: "#000000",
+                      width: "48px",
+                      height: "48px",
+                      borderRadius: "14px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginBottom: "24px",
+                      color: "#C1FF14"
+                    }}
+                  >
+                    {getIconForCapability(item.title)}
+                  </div>
+                  <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#000000", marginBottom: "12px", fontFamily: "Aeonik" }}>
+                    {item.title || `Specialized Service ${idx + 1}`}
+                  </h3>
+                  <p style={{ fontSize: "15px", color: "#48484A", lineHeight: "1.5", margin: 0 }}>
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 6. TARGET QUALIFIER (Ideal Fit vs Not a Fit) */}
+      {(sections.targetQualifier?.idealFit?.length > 0 || sections.targetQualifier?.notFit?.length > 0) && (
+        <section className="service-section">
+          <div className="section-container">
+            <span className="tagline">Target Fit</span>
+            <h2 className="section-head" style={{ marginBottom: "50px" }}>Is This Service a Fit for You?</h2>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
+              {/* Ideal Fit */}
+              {sections.targetQualifier.idealFit && sections.targetQualifier.idealFit.length > 0 && (
+                <div style={{ background: "rgba(193, 255, 20, 0.04)", border: "1px solid rgba(193, 255, 20, 0.15)", padding: "40px", borderRadius: "32px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px" }}>
+                    <div style={{ background: "#C1FF14", width: "32px", height: "32px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 6L9 17L4 12" stroke="#000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <h3 style={{ fontSize: "22px", fontWeight: "600", margin: 0 }}>Ideal Match</h3>
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {sections.targetQualifier.idealFit.map((fit, idx) => (
+                      <li key={idx} style={{ position: "relative", paddingLeft: "28px", marginBottom: "16px", fontSize: "16px", color: "#1C1C1E", lineHeight: "1.5" }}>
+                        <span style={{ position: "absolute", left: 0, color: "#C1FF14", fontWeight: "bold" }}>✓</span>
+                        {parseTextWithMarkdownLinks(fit)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Not a Fit */}
+              {sections.targetQualifier.notFit && sections.targetQualifier.notFit.length > 0 && (
+                <div style={{ background: "#F4F4F4", border: "1px solid rgba(0, 0, 0, 0.05)", padding: "40px", borderRadius: "32px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px" }}>
+                    <div style={{ background: "#E5E5EA", width: "32px", height: "32px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <h3 style={{ fontSize: "22px", fontWeight: "600", margin: 0 }}>Not a Fit</h3>
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {sections.targetQualifier.notFit.map((fit, idx) => (
+                      <li key={idx} style={{ position: "relative", paddingLeft: "28px", marginBottom: "16px", fontSize: "16px", color: "#636366", lineHeight: "1.5" }}>
+                        <span style={{ position: "absolute", left: 0, color: "#8E8E93" }}>—</span>
+                        {parseTextWithMarkdownLinks(fit)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 7. PROJECT BLUEPRINT / TIMELINE */}
+      {sections.blueprint?.timeline && sections.blueprint.timeline.length > 0 && (
+        <section className="service-section light-bg">
+          <div className="section-container">
+            <span className="tagline">Execution Blueprint</span>
+            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.blueprint.headline || "Project Execution Timeline"}</h2>
+            <p className="section-desc" style={{ marginBottom: "50px" }}>
+              How we take your {cleanSubTitle} requirements from day 1 to production delivery.
+            </p>
+
+            {/* Horizontal Gantt chart layout replacing vertical timeline */}
+            {(() => {
+              const parsedPhases = sections.blueprint.timeline
+                .map((phase, idx) => {
+                  if (!phase.timeframe && !phase.desc) return null;
+                  const metrics = getTimelineMetrics(phase.timeframe, idx, sections.blueprint.timeline.length);
+                  return { ...phase, ...metrics };
+                })
+                .filter(Boolean);
+
+              const totalDays = parsedPhases.reduce((max, p) => Math.max(max, p.end), 90);
+
+              return (
+                <div className="gantt-timeline-container">
+                  {/* Horizontal Gantt Board Grid for Desktop/Tablet */}
+                  <div className="gantt-board-wrapper">
+                    {/* Header Columns and Bracket braces */}
+                    <div className="gantt-headers">
+                      <div className="gantt-header-col group-discovery">
+                        <span className="gantt-header-title">Discovery</span>
+                        <div className="gantt-bracket-line" />
+                      </div>
+                      <div className="gantt-header-col group-design">
+                        <span className="gantt-header-title">Design & Build</span>
+                        <div className="gantt-bracket-line" />
+                      </div>
+                      <div className="gantt-header-col group-delivery">
+                        <span className="gantt-header-title">Delivery & Launch</span>
+                        <div className="gantt-bracket-line" />
+                      </div>
+                    </div>
+
+                    {/* Chart Area */}
+                    <div className="gantt-chart-area">
+                      {/* Grid Lines */}
+                      {[...Array(8)].map((_, i) => (
+                        <div
+                          key={i}
+                          className="gantt-grid-line"
+                          style={{ left: `${(i + 1) * 11.1}%` }}
+                        />
+                      ))}
+
+                      {/* Staggered Rows */}
+                      <div className="gantt-rows-container">
+                        {parsedPhases.map((phase, idx) => {
+                          const { days, title } = parsePhaseParts(phase.timeframe);
+                          const isLast = idx === parsedPhases.length - 1;
+                          const left = ((phase.start - 1) / totalDays) * 100;
+                          const width = ((phase.end - phase.start + 1) / totalDays) * 100;
+
+                          return (
+                            <div key={idx} className="gantt-row">
+                              <div
+                                className={`gantt-capsule ${isLast ? 'gantt-capsule-active' : ''}`}
+                                style={{
+                                  left: `${left}%`,
+                                  width: `${width}%`
+                                }}
+                              >
+                                <div className="gantt-capsule-content">
+                                  <span className="gantt-capsule-title">{title}</span>
+                                  <span className="gantt-capsule-days">{days}</span>
+                                </div>
+                                <div className="gantt-tooltip">
+                                  <div className="gantt-tooltip-arrow" />
+                                  <span className="gantt-tooltip-timeframe">{days} — {title}</span>
+                                  <p className="gantt-tooltip-desc">{phase.desc}</p>
+                                </div>
+                                <div className="gantt-capsule-icon-circle">
+                                  {getIconForPhase(idx)}
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Accessible descriptive list (Visible on all viewports, becomes mobile fallback) */}
+                  <div className="gantt-details-list">
+                    {parsedPhases.map((phase, idx) => {
+                      const { days, title } = parsePhaseParts(phase.timeframe);
+                      return (
+                        <div key={idx} className="gantt-details-item">
+                          <div className="gantt-details-num">{idx + 1}</div>
+                          <div className="gantt-details-body">
+                            <h4>{days} — {title}</h4>
+                            <p>{phase.desc}</p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        </section>
+      )}
+
+      {/* 8. TECH STACK SECTION */}
+      {sections.techStack?.categories && sections.techStack.categories.length > 0 && (
+        <section className="service-section">
+          <div className="section-container">
+            <span className="tagline">Technology</span>
+            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.techStack.headline || "Our Tech Stack"}</h2>
+            <p className="section-desc" style={{ marginBottom: "50px" }}>
+              Tools, frameworks, and protocols we use to build secure and scalable solutions.
+            </p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+              {sections.techStack.categories.map((cat, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    background: "#F4F4F4",
+                    border: "1px solid rgba(0,0,0,0.03)",
+                    padding: "30px",
+                    borderRadius: "24px",
+                  }}
+                >
+                  <h4 style={{ fontSize: "16px", fontWeight: "600", textTransform: "uppercase", color: "#8E8E93", marginBottom: "20px", letterSpacing: "0.05em", fontFamily: "Orbitron" }}>
+                    {cat.name}
+                  </h4>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                    {cat.items.map((tech, tIdx) => (
+                      <span
+                        key={tIdx}
+                        style={{
+                          background: "#FFFFFF",
+                          border: "1px solid rgba(0,0,0,0.05)",
+                          padding: "6px 12px",
+                          borderRadius: "100px",
+                          fontSize: "14px",
+                          color: "#1C1C1E",
+                          fontWeight: "500",
+                        }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 9. WHY CHOOSE QUECKO / DIFFERENTIATION (OUR EDGE) */}
+      {sections.whyChoose && (
+        <section className="service-section light-bg">
+          <div className="section-container">
+            {/* Header Layout */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "40px", flexWrap: "wrap", marginBottom: "50px" }}>
+              <div style={{ flex: "1", minWidth: "280px" }}>
+                <span className="tagline">Our Edge</span>
+                <h2 className="section-head" style={{ fontSize: "clamp(36px, 5vw, 60px)", lineHeight: "1.1", margin: "0 0 20px 0" }}>
+                  {sections.whyChoose.headline || "Why Choose Quecko"}
+                </h2>
+                <p style={{ fontSize: "17px", color: "#48484A", lineHeight: "1.5", maxWidth: "800px" }}>
+                  {sections.whyChoose.items?.[0]?.desc || "We apply traditional software engineering rigor to next-generation AI and blockchain solutions, creating resilient systems that scale."}
+                </p>
+              </div>
+              <div style={{ background: "#FFFFFF", border: "1px solid #000000", padding: "24px 32px", borderRadius: "24px", minWidth: "250px" }}>
+                <span style={{ fontSize: "12px", fontFamily: "Orbitron", letterSpacing: "0.1em", textTransform: "uppercase", color: "#8E8E93" }}>Builder Ecosystem</span>
+                <h4 style={{ fontSize: "20px", fontWeight: "600", margin: "8px 0 0 0" }}>Full-Spectrum Partners</h4>
+              </div>
+            </div>
+
+            {/* Differentiators Cards Grid */}
+            {sections.whyChoose.items && sections.whyChoose.items.length > 0 && (
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 520px), 2fr))", gap: "24px" }}>
+                {sections.whyChoose.items.map((diff, idx) => {
+                  if (!diff.title && !diff.desc) return null;
+                  return (
+                    <div
+                      key={idx}
+                      style={{
+                        background: "#FFFFFF",
+                        border: "1px solid #E5E5EA",
+                        padding: "36px",
+                        borderRadius: "28px",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "16px",
+                        transition: "border-color 0.3s ease",
+                      }}
+                      className="edge-hover-card"
+                    >
+                      <div style={{ background: "rgba(193, 255, 20, 0.08)", width: "36px", height: "36px", borderRadius: "50%", display: "flex", alignItems: "center", justifyCenter: "center" }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ margin: "auto" }}>
+                          <path d="M20 6L9 17L4 12" stroke="#000000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 style={{ fontSize: "18px", fontWeight: "600", color: "#000000", marginBottom: "8px", fontFamily: "Aeonik" }}>
+                          {diff.title}
+                        </h4>
+                        <p style={{ fontSize: "14px", color: "#48484A", lineHeight: "1.55", margin: 0 }}>
+                          {diff.desc}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* 10. PORTFOLIO SHOWCASE */}
+      <div id="portfolio">
+        <Projects />
+      </div>
+
+      {/* 11. SOCIAL PROOF / SERVICE-SPECIFIC SOCIAL PROOF */}
+      {sections.socialProof?.quotes && sections.socialProof.quotes.length > 0 ? (
+        <section className="service-section light-bg">
+          <div className="section-container" style={{ maxWidth: "900px", textAlign: "center" }}>
+            <span className="tagline">Social Proof</span>
+            
+            {sections.socialProof.quotes.map((q, idx) => (
+              <div key={idx} style={{ marginTop: "30px" }}>
+                <p style={{ fontSize: "clamp(18px, 3vw, 26px)", fontStyle: "italic", lineHeight: "1.45", color: "#000000", marginBottom: "30px" }}>
+                  &ldquo;{q.quote}&rdquo;
+                </p>
+                <div style={{ display: "inline-flex", flexDirection: "column", alignItems: "center" }}>
+                  <h4 style={{ fontSize: "18px", fontWeight: "600", color: "#000", margin: "0 0 4px 0" }}>{q.author}</h4>
+                  <span style={{ fontSize: "14px", color: "#636366" }}>{q.title}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <Testimonials />
+      )}
+
+      {/* 12. ENGAGEMENT MODELS */}
+      {sections.engagement?.items && sections.engagement.items.length > 0 && (
+        <section className="service-section">
+          <div className="section-container">
+            <span className="tagline">Engagement</span>
+            <h2 className="section-head" style={{ marginBottom: "50px" }}>How We Collaborate</h2>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+              {sections.engagement.items.map((model, idx) => {
+                if (!model.name && !model.desc) return null;
+                return (
+                  <div
+                    key={idx}
+                    style={{
+                      background: "#F4F4F4",
+                      border: "1px solid rgba(0,0,0,0.03)",
+                      padding: "36px",
+                      borderRadius: "28px",
+                      display: "flex",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <h3 style={{ fontSize: "18px", fontWeight: "600", color: "#000", marginBottom: "16px", fontFamily: "Aeonik" }}>
+                      {model.name}
+                    </h3>
+                    <p style={{ fontSize: "14px", color: "#48484A", lineHeight: "1.55", margin: 0 }}>
+                      {model.desc}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 13. OBJECTION HANDLING / FAQS */}
+      {sections.faqs?.faqs && sections.faqs.faqs.length > 0 && (
+        <section className="service-section light-bg">
+          <div className="section-container">
+            <span className="tagline">FAQ</span>
+            <h2 className="section-head" style={{ textAlign: "center", margin: "0 auto 40px auto" }}>
+              Frequently Asked Questions
+            </h2>
+
+            <FAQAccordion faqs={sections.faqs.faqs} />
+          </div>
+        </section>
+      )}
+
+      {/* 14. BLOG & STORIES */}
+      <Stories />
+
+      {/* 15. FINAL CTA SECTION */}
+      {sections.finalCta && (
+        <section className="cta-section">
+          <div className="section-container">
+            <h2>{sections.finalCta.headline}</h2>
+            <p>{sections.finalCta.body}</p>
+            <div className="cta-buttons">
+              <Link href="/contact" className="btn-primary">
+                {frontmatter["primary-cta"] || "Talk to an Engineer"}
+              </Link>
+              <Link href="/portfolio" className="btn-secondary">
+                View Our Portfolio
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <Footer />
+    </div>
+  );
+}
