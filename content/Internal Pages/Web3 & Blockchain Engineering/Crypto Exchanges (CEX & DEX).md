@@ -1,7 +1,7 @@
 ---
 title: Crypto Exchange Development Services (CEX & DEX) | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/crypto-exchanges
+slug: /services/web3/crypto-exchanges-cex-dex
 audience: Fintech entrepreneurs, crypto startups, and financial institutions building centralized or decentralized trading platforms.
 goal: Position Quecko as the engineering partner for building secure, high-performance crypto exchange infrastructure.
 primary-cta: Talk to an Exchange Engineer

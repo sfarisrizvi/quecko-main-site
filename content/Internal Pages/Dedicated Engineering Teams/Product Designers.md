@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated Product Designers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/product-designers
+slug: /services/dedicated-teams/product-designers
 audience: CTOs, product managers, and founders looking to scale their product teams with senior UI/UX and product designers.
 goal: Position Quecko as the premium provider of vetted, dedicated product designers.
 primary-cta: Hire Product Designers

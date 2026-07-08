@@ -1,7 +1,7 @@
 ---
 title: Enterprise Mobile App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/enterprise-mobile-apps
+slug: /services/mobile-app-development/enterprise-mobile-apps
 audience: CIOs, COOs, and enterprise IT leaders looking to deploy highly secure, scalable internal or customer-facing mobile systems.
 goal: Position Quecko as the elite engineering team for developing secure, scalable, and compliant mobile applications integrated with enterprise systems.
 primary-cta: Talk to an Enterprise Mobile Architect

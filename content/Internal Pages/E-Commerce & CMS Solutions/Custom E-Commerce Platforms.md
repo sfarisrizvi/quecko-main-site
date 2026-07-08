@@ -1,7 +1,7 @@
 ---
 title: Custom E-Commerce Platform Development Services | Quecko
 page-type: Internal Service Page — E-Commerce & CMS Solutions
-slug: /services/ecommerce-cms/custom-ecommerce-platforms
+slug: /services/ecommerce-cms/custom-e-commerce-platforms
 audience: High-volume brands, enterprise retail conglomerates, and SaaS founders building proprietary commerce solutions.
 goal: Position Quecko as the elite engineering partner for building high-performance, secure, and fully customized proprietary e-commerce platforms.
 primary-cta: Talk to a Custom E-commerce Architect

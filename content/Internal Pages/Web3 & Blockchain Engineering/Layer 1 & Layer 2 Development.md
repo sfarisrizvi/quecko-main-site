@@ -1,7 +1,7 @@
 ---
 title: Layer 1 & Layer 2 Blockchain Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/layer-1-layer-2-development
+slug: /services/web3/layer-1-layer-2-development
 audience: Blockchain founders, protocol architects, and CTOs building custom chains or scaling existing networks.
 goal: Position Quecko as a deep-infrastructure blockchain partner capable of building production-grade L1/L2 networks.
 primary-cta: Talk to a Protocol Engineer

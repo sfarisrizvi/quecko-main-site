@@ -1,7 +1,7 @@
 ---
 title: White-Label SaaS Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/white-label-saas
+slug: /services/saas-platforms/white-label-saas-development
 audience: Entrepreneurs, agencies, and enterprise brands looking to launch scalable software products under their own branding.
 goal: Position Quecko as the premier engineering partner for developing robust, scalable, and highly customizable white-label software solutions.
 primary-cta: Talk to a SaaS Architect

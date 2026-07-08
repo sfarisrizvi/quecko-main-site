@@ -1,7 +1,7 @@
 ---
 title: Custom LMS Platform Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/lms-platforms
+slug: /services/saas-platforms/lms-platforms
 audience: EdTech founders, corporate training directors, and educational institutions needing highly scalable, customized learning platforms.
 goal: Position Quecko as the engineering partner for building high-performance, engaging, and scalable Learning Management Systems.
 primary-cta: Talk to an LMS Engineer

@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated QA Engineers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/qa-engineers
+slug: /services/dedicated-teams/qa-engineers
 audience: CTOs, product managers, and engineering directors looking to ensure software stability, security, and performance.
 goal: Position Quecko as the premium provider of vetted, dedicated QA engineers and automation specialists.
 primary-cta: Hire QA Engineers

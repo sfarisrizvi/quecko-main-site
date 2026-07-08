@@ -1,7 +1,7 @@
 ---
 title: Android App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/android-app-development
+slug: /services/mobile-app-development/android-app-development
 audience: Enterprise leaders, startup founders, and product owners seeking scalable, secure native Android applications.
 goal: Position Quecko as the elite engineering team for building native Android apps using Kotlin and Jetpack Compose.
 primary-cta: Talk to an Android Architect

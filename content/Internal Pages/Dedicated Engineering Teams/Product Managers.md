@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated Product Managers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/product-managers
+slug: /services/dedicated-teams/product-managers
 audience: CTOs, founders, and product directors looking to scale their software development teams with senior, technical product managers.
 goal: Position Quecko as the premium provider of vetted, dedicated product managers.
 primary-cta: Hire Product Managers

@@ -1,7 +1,7 @@
 ---
 title: Custom UI/UX Design Services | Quecko
 page-type: Internal Service Page — Growth, Branding & Go-To-Market
-slug: /services/growth-branding/ui-ux-design
+slug: /services/growth-branding/uiux-design
 audience: Product managers, CTOs, and founders seeking to design or modernize web and mobile user interfaces.
 goal: Position Quecko as the elite partner for high-fidelity UI/UX design, interactive prototyping, and design systems.
 primary-cta: Talk to a UI/UX Designer

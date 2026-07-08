@@ -1,7 +1,7 @@
 ---
 title: Smart Contract Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/smart-contract-development
+slug: /services/web3/smart-contract-development
 audience: DeFi founders, protocol teams, and enterprise blockchain leads requiring secure, audited smart contract engineering.
 goal: Establish Quecko as the go-to partner for production-grade smart contract development across EVM and non-EVM chains.
 primary-cta: Talk to a Smart Contract Engineer

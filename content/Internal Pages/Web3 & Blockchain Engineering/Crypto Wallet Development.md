@@ -1,7 +1,7 @@
 ---
 title: Crypto Wallet Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/crypto-wallet-development
+slug: /services/web3/crypto-wallet-development
 audience: Crypto startups, fintech companies, and enterprise blockchain teams needing secure, multi-chain wallet infrastructure.
 goal: Position Quecko as the partner for building production-grade crypto wallet solutions — custodial, non-custodial, and MPC.
 primary-cta: Talk to a Wallet Engineer

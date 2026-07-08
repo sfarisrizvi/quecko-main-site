@@ -1,7 +1,7 @@
 ---
 title: Mobile App Maintenance & Scaling Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/app-maintenance-scaling
+slug: /services/mobile-app-development/app-maintenance-scaling
 audience: Product owners, engineering leaders, and founders seeking to optimize, update, and scale existing mobile applications.
 goal: Position Quecko as the elite technical partner for maintaining, modernizing, and scaling mobile apps.
 primary-cta: Talk to an App Performance Engineer

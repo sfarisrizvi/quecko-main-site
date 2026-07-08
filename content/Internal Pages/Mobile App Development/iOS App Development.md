@@ -1,7 +1,7 @@
 ---
 title: iOS App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/ios-app-development
+slug: /services/mobile-app-development/ios-app-development
 audience: Enterprise leaders, startup founders, and product owners seeking premium, high-performance native iOS applications.
 goal: Position Quecko as the elite engineering team for building secure, high-performance, native iOS applications utilizing Swift and SwiftUI.
 primary-cta: Talk to an iOS Architect

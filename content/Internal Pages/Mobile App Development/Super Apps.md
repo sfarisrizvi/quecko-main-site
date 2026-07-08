@@ -1,7 +1,7 @@
 ---
 title: Super App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/super-apps
+slug: /services/mobile-app-development/super-apps
 audience: Enterprise conglomerates, large fintech platforms, and scaling ecosystems looking to unify multiple distinct services under a single mobile app.
 goal: Position Quecko as the elite software engineering team capable of designing, building, and scaling complex Super App ecosystems.
 primary-cta: Talk to a Super App Architect

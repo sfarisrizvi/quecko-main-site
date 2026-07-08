@@ -1,7 +1,7 @@
 ---
 title: Custom ERP System Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/erp-systems
+slug: /services/saas-platforms/erp-systems
 audience: COOs, operations directors, and enterprise IT leaders suffocating under rigid, legacy ERP systems.
 goal: Position Quecko as the engineering partner capable of architecting and deploying robust, custom Enterprise Resource Planning systems.
 primary-cta: Talk to an Enterprise Architect

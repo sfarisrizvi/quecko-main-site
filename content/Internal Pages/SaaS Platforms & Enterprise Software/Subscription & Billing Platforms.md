@@ -1,7 +1,7 @@
 ---
 title: Custom Subscription & Billing Platform Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/subscription-billing-platforms
+slug: /services/saas-platforms/subscription-billing-platforms
 audience: SaaS founders, enterprise finance leaders, and D2C brands requiring complex, scalable recurring revenue infrastructure.
 goal: Position Quecko as the engineering authority on complex billing architecture, usage-based pricing models, and secure payment integrations.
 primary-cta: Talk to a Billing Architect

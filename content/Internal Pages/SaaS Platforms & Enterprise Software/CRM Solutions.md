@@ -1,7 +1,7 @@
 ---
 title: Custom CRM Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/crm-solutions
+slug: /services/saas-platforms/crm-solutions
 audience: Enterprise operations leaders, sales directors, and founders who have outgrown generic CRM platforms.
 goal: Position Quecko as the engineering partner for building highly customized, scalable CRM systems tailored to specific business workflows.
 primary-cta: Talk to an Enterprise Engineer

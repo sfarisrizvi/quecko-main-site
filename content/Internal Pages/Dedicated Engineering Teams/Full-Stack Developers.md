@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated Full-Stack Developers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/full-stack-developers
+slug: /services/dedicated-teams/full-stack-developers
 audience: CTOs, startup founders, and engineering managers looking to scale their product development teams with versatile, senior full-stack engineers.
 goal: Position Quecko as the premium provider of vetted, dedicated full-stack developers.
 primary-cta: Hire Full-Stack Developers

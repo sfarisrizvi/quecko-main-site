@@ -1,7 +1,7 @@
 ---
 title: Fintech App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/fintech-apps
+slug: /services/mobile-app-development/fintech-apps
 audience: Fintech founders, neo-bank executives, and digital finance product managers seeking secure, compliant mobile finance apps.
 goal: Position Quecko as the elite engineering team for developing highly secure, compliant, and feature-rich fintech mobile applications.
 primary-cta: Talk to a Fintech Architect

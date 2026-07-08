@@ -1,7 +1,7 @@
 ---
 title: NFT Marketplace Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/nft-marketplaces
+slug: /services/web3/nft-marketplaces
 audience: NFT entrepreneurs, brands entering Web3, and creative platforms building digital asset trading infrastructure.
 goal: Position Quecko as the engineering partner for building production-grade NFT marketplace platforms with advanced trading features.
 primary-cta: Talk to an NFT Platform Engineer

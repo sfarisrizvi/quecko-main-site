@@ -1,7 +1,7 @@
 ---
 title: Custom HRM Platform Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/hrm-platforms
+slug: /services/saas-platforms/hrm-platforms
 audience: HR Directors, COOs, and founders needing specialized talent management, onboarding, and workforce administration tools.
 goal: Position Quecko as the engineering partner capable of building secure, compliant, and highly customized HR Management platforms.
 primary-cta: Talk to an Enterprise Engineer

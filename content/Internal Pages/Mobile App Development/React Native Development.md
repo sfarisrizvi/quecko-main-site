@@ -1,7 +1,7 @@
 ---
 title: React Native App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/react-native-development
+slug: /services/mobile-app-development/react-native-development
 audience: Startup founders, enterprise product teams, and businesses looking to build high-performance mobile apps using React and JavaScript.
 goal: Position Quecko as the elite React Native engineering team for delivering responsive, clean, and highly maintainable apps for iOS and Android.
 primary-cta: Talk to a React Native Architect

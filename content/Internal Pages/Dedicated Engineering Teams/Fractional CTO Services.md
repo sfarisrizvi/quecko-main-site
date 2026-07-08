@@ -1,7 +1,7 @@
 ---
 title: Fractional CTO Services | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/fractional-cto
+slug: /services/dedicated-teams/fractional-cto-services
 audience: Startup founders, enterprise executives, and investment firms seeking senior technical leadership without the cost of a full-time hire.
 goal: Position Quecko as the elite provider of strategic, fractional CTO and technical advisory services.
 primary-cta: Talk to a Fractional CTO

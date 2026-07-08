@@ -1,7 +1,7 @@
 ---
 title: Custom Business Intelligence (BI) Dashboard Development | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/business-intelligence-dashboards
+slug: /services/saas-platforms/business-intelligence-dashboards
 audience: C-Suite executives, data analysts, and operations leaders drowning in fragmented data and static spreadsheets.
 goal: Position Quecko as the engineering partner capable of building high-performance, real-time custom BI dashboards that drive actionable insights.
 primary-cta: Talk to a Data Engineer

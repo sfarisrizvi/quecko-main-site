@@ -1,7 +1,7 @@
 ---
 title: Flutter App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/flutter-development
+slug: /services/mobile-app-development/flutter-development
 audience: Startup founders, enterprise product teams, and businesses aiming to launch high-performance cross-platform apps with a single codebase.
 goal: Position Quecko as the elite Flutter engineering team for building fast, beautiful, and highly maintainable apps for iOS and Android.
 primary-cta: Talk to a Flutter Architect

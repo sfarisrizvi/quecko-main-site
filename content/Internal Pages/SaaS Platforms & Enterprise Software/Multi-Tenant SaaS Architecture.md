@@ -1,7 +1,7 @@
 ---
 title: Multi-Tenant SaaS Architecture Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/multi-tenant-architecture
+slug: /services/saas-platforms/multi-tenant-saas-architecture
 audience: CTOs, SaaS founders, and engineering leaders struggling with software scalability, data isolation, and infrastructure costs.
 goal: Position Quecko as deep infrastructure experts capable of designing and rescuing complex multi-tenant software architectures.
 primary-cta: Talk to a Systems Architect

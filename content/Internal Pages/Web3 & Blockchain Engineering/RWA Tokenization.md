@@ -1,7 +1,7 @@
 ---
 title: RWA Tokenization Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/rwa-tokenization
+slug: /services/web3/rwa-tokenization
 audience: Financial institutions, real estate firms, asset managers, and fintech companies tokenizing real-world assets on-chain.
 goal: Position Quecko as the engineering partner for building compliant, production-grade RWA tokenization platforms.
 primary-cta: Talk to a Tokenization Engineer

@@ -1,7 +1,7 @@
 ---
 title: Custom Retail Management System Development Services | Quecko
 page-type: Internal Service Page — SaaS Platforms & Enterprise Software
-slug: /services/saas-enterprise/retail-management-systems
+slug: /services/saas-platforms/retail-management-systems
 audience: Retail executives, operations directors, and omnichannel brand founders needing unified commerce solutions.
 goal: Position Quecko as the engineering partner capable of bridging online and offline retail through powerful, custom management systems.
 primary-cta: Talk to a Retail Systems Engineer

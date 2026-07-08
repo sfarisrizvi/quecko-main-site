@@ -1,7 +1,7 @@
 ---
 title: Prediction & Opinion Market Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/prediction-opinion-markets
+slug: /services/web3/prediction-opinion-markets
 audience: Web3 founders, fintech innovators, and media companies building decentralized prediction and opinion trading platforms.
 goal: Position Quecko as the engineering partner for building transparent, on-chain prediction and opinion market infrastructure.
 primary-cta: Talk to a Prediction Market Engineer

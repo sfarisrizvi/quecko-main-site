@@ -1,7 +1,7 @@
 ---
 title: Crypto Launchpad Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/launchpads
+slug: /services/web3/launchpads
 audience: Web3 founders, token projects, and venture DAOs building token launch and fundraising infrastructure.
 goal: Demonstrate Quecko's expertise in building secure, compliant launchpad platforms for IDOs, IEOs, and token sales.
 primary-cta: Talk to a Launchpad Engineer

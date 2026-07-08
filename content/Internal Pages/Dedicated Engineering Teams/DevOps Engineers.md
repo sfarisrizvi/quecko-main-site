@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated DevOps Engineers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/devops-engineers
+slug: /services/dedicated-teams/devops-engineers
 audience: CTOs, engineering directors, and operations leaders looking to scale cloud infrastructure, improve security, and automate deployment pipelines.
 goal: Position Quecko as the premium provider of vetted, dedicated DevOps and Site Reliability Engineers (SRE).
 primary-cta: Hire DevOps Engineers

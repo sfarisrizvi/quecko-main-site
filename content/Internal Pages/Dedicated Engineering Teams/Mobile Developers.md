@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated Mobile App Developers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/mobile-developers
+slug: /services/dedicated-teams/mobile-developers
 audience: CTOs, mobile startup founders, and engineering managers looking to scale their mobile product teams with senior native or cross-platform developers.
 goal: Position Quecko as the premium provider of vetted, dedicated mobile app developers.
 primary-cta: Hire Mobile Developers

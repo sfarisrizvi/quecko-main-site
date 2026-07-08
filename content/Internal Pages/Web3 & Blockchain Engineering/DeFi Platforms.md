@@ -1,7 +1,7 @@
 ---
 title: DeFi Platform Development Services | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
-slug: /services/web3-blockchain-engineering/defi-platforms
+slug: /services/web3/defi-platforms
 audience: DeFi founders, fintech innovators, and protocol teams building decentralized financial products.
 goal: Demonstrate Quecko's ability to architect and ship production-grade DeFi protocols — AMMs, lending, staking, and yield infrastructure.
 primary-cta: Talk to a DeFi Engineer

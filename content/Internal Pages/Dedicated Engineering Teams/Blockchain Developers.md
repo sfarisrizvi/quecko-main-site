@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated Blockchain Developers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/blockchain-developers
+slug: /services/dedicated-teams/blockchain-developers
 audience: CTOs, Web3 founders, and enterprise engineering directors looking to scale their blockchain development teams with elite talent.
 goal: Position Quecko as the premium provider of vetted, dedicated blockchain developers and smart contract engineers.
 primary-cta: Hire Blockchain Developers

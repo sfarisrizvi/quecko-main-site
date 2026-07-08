@@ -1,7 +1,7 @@
 ---
 title: Hire Dedicated AI Engineers | Quecko
 page-type: Internal Service Page — Dedicated Engineering Teams
-slug: /services/teams/ai-engineers
+slug: /services/dedicated-teams/ai-engineers
 audience: CTOs, AI founders, and enterprise engineering leaders looking to add senior AI and Machine Learning talent to their teams.
 goal: Position Quecko as the premium provider of vetted, dedicated AI engineers and machine learning specialists.
 primary-cta: Hire AI Engineers

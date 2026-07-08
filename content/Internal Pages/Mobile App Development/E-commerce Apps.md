@@ -1,7 +1,7 @@
 ---
 title: E-commerce Mobile App Development Services | Quecko
 page-type: Internal Service Page — Mobile App Development
-slug: /services/mobile-development/ecommerce-apps
+slug: /services/mobile-app-development/e-commerce-apps
 audience: Retail brands, D2C founders, and online marketplace directors aiming to increase conversion rates and customer LTV via dedicated mobile apps.
 goal: Position Quecko as the elite engineering team for developing fast, high-converting, and scalable e-commerce mobile applications.
 primary-cta: Talk to an E-commerce Architect
