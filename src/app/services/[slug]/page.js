@@ -1,6 +1,8 @@
 import { allServicesData } from "@/components/sections/allServicesData";
 import Web3ClientPage from "./_client";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [
     { slug: "web3" },

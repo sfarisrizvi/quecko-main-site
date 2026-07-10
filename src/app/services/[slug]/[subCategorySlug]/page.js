@@ -11,6 +11,8 @@ import FAQAccordion from "@/components/sections/FAQAccordion";
 import TechLogo from "@/components/sections/TechLogo";
 import { getInternalPageData, getAllInternalPages } from "@/Utils/internalPagesParser";
 
+export const dynamicParams = false;
+
 // Dynamic SVG Icon Selector for Capabilities
 function getIconForCapability(title = "") {
   const t = title.toLowerCase();
