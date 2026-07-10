@@ -68,12 +68,12 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Custom LLM & Fine-tuning", href: "/services/ai-development?tab=custom-llm-fine-tuning" },
-      { title: "AI Agents & Autonomous Workflows", href: "/services/ai-development?tab=ai-agents-autonomous-workflows" },
-      { title: "Cognitive Search & RAG Systems", href: "/services/ai-development?tab=cognitive-search-rag-systems" },
-      { title: "Computer Vision Solutions", href: "/services/ai-development?tab=computer-vision-solutions" },
-      { title: "Predictive Analytics Engines", href: "/services/ai-development?tab=predictive-analytics-engines" },
-      { title: "Voice & Conversational AI", href: "/services/ai-development?tab=voice-conversational-ai" }
+      { title: "Custom LLM & Fine-tuning", href: "/services/ai-development?tab=custom-ai-applications" },
+      { title: "AI Agents & Autonomous Workflows", href: "/services/ai-development?tab=ai-agents-copilots" },
+      { title: "Cognitive Search & RAG Systems", href: "/services/ai-development?tab=intelligent-document-processing" },
+      { title: "Computer Vision Solutions", href: "/services/ai-development?tab=data-engineering-mlops" },
+      { title: "Predictive Analytics Engines", href: "/services/ai-development?tab=predictive-analytics" },
+      { title: "Voice & Conversational AI", href: "/services/ai-development?tab=conversational-ai" }
     ]
   },
   {
@@ -90,14 +90,14 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Dedicated Frontend Developers", href: "/services/dedicated-teams?tab=dedicated-frontend-developers" },
-      { title: "Dedicated Backend Developers", href: "/services/dedicated-teams?tab=dedicated-backend-developers" },
-      { title: "Dedicated Full-Stack Engineers", href: "/services/dedicated-teams?tab=dedicated-full-stack-engineers" },
-      { title: "Mobile App Developers", href: "/services/dedicated-teams?tab=mobile-app-developers" },
-      { title: "UI/UX Designers & Researchers", href: "/services/dedicated-teams?tab=uiux-designers-researchers" },
-      { title: "QA Engineers & Test Automation", href: "/services/dedicated-teams?tab=qa-engineers-test-automation" },
-      { title: "Project Managers & Product Owners", href: "/services/dedicated-teams?tab=project-managers-product-owners" },
-      { title: "DevOps & Cloud Architects", href: "/services/dedicated-teams?tab=devops-cloud-architects" },
+      { title: "Dedicated Frontend Developers", href: "/services/dedicated-teams?tab=ai-engineers" },
+      { title: "Dedicated Backend Developers", href: "/services/dedicated-teams?tab=blockchain-developers" },
+      { title: "Dedicated Full-Stack Engineers", href: "/services/dedicated-teams?tab=full-stack-developers" },
+      { title: "Mobile App Developers", href: "/services/dedicated-teams?tab=mobile-developers" },
+      { title: "UI/UX Designers & Researchers", href: "/services/dedicated-teams?tab=product-designers" },
+      { title: "QA Engineers & Test Automation", href: "/services/dedicated-teams?tab=qa-engineers" },
+      { title: "Project Managers & Product Owners", href: "/services/dedicated-teams?tab=product-managers" },
+      { title: "DevOps & Cloud Architects", href: "/services/dedicated-teams?tab=devops-engineers" },
       { title: "Blockchain Developers", href: "/services/dedicated-teams?tab=blockchain-developers" }
     ]
   },
@@ -116,15 +116,15 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Custom iOS App Development", href: "/services/mobile-app-development?tab=custom-ios-app-development" },
-      { title: "Custom Android App Development", href: "/services/mobile-app-development?tab=custom-android-app-development" },
-      { title: "Cross-Platform Apps (React Native)", href: "/services/mobile-app-development?tab=cross-platform-apps-react-native" },
-      { title: "Cross-Platform Apps (Flutter)", href: "/services/mobile-app-development?tab=cross-platform-apps-flutter" },
-      { title: "Mobile App UI/UX Design", href: "/services/mobile-app-development?tab=mobile-app-uiux-design" },
-      { title: "Enterprise Mobile Solutions", href: "/services/mobile-app-development?tab=enterprise-mobile-solutions" },
-      { title: "Mobile Backend & API Integration", href: "/services/mobile-app-development?tab=mobile-backend-api-integration" },
-      { title: "App Store Optimization (ASO)", href: "/services/mobile-app-development?tab=app-store-optimization-aso" },
-      { title: "App Support & Maintenance Services", href: "/services/mobile-app-development?tab=app-support-maintenance-services" }
+      { title: "Custom iOS App Development", href: "/services/mobile-app-development?tab=ios-app-development" },
+      { title: "Custom Android App Development", href: "/services/mobile-app-development?tab=android-app-development" },
+      { title: "Cross-Platform Apps (React Native)", href: "/services/mobile-app-development?tab=react-native-development" },
+      { title: "Cross-Platform Apps (Flutter)", href: "/services/mobile-app-development?tab=flutter-development" },
+      { title: "Mobile App UI/UX Design", href: "/services/mobile-app-development?tab=e-commerce-apps" },
+      { title: "Enterprise Mobile Solutions", href: "/services/mobile-app-development?tab=enterprise-mobile-apps" },
+      { title: "Mobile Backend & API Integration", href: "/services/mobile-app-development?tab=fintech-apps" },
+      { title: "App Store Optimization (ASO)", href: "/services/mobile-app-development?tab=super-apps" },
+      { title: "App Support & Maintenance Services", href: "/services/mobile-app-development?tab=app-maintenance-scaling" }
     ]
   },
   {
@@ -142,15 +142,15 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Custom E-Commerce Development", href: "/services/ecommerce-cms?tab=custom-ecommerce-development" },
-      { title: "Headless Commerce Architectures", href: "/services/ecommerce-cms?tab=headless-commerce-architectures" },
-      { title: "Shopify Custom Development", href: "/services/ecommerce-cms?tab=shopify-custom-development" },
-      { title: "WooCommerce Development Services", href: "/services/ecommerce-cms?tab=woocommerce-development-services" },
-      { title: "Adobe Commerce (Magento)", href: "/services/ecommerce-cms?tab=adobe-commerce-magento" },
-      { title: "Custom CMS Development", href: "/services/ecommerce-cms?tab=custom-cms-development" },
-      { title: "Headless CMS Implementations", href: "/services/ecommerce-cms?tab=headless-cms-implementations" },
-      { title: "Payment Gateway Integrations", href: "/services/ecommerce-cms?tab=payment-gateway-integrations" },
-      { title: "E-commerce SEO Optimization", href: "/services/ecommerce-cms?tab=ecommerce-seo-optimization" }
+      { title: "Custom E-Commerce Development", href: "/services/ecommerce-cms?tab=custom-e-commerce-platforms" },
+      { title: "Headless Commerce Architectures", href: "/services/ecommerce-cms?tab=headless-commerce" },
+      { title: "Shopify Custom Development", href: "/services/ecommerce-cms?tab=shopify-development" },
+      { title: "WooCommerce Development Services", href: "/services/ecommerce-cms?tab=woocommerce-development" },
+      { title: "Adobe Commerce (Magento)", href: "/services/ecommerce-cms?tab=shopify-plus" },
+      { title: "Custom CMS Development", href: "/services/ecommerce-cms?tab=wordpress-development" },
+      { title: "Headless CMS Implementations", href: "/services/ecommerce-cms?tab=marketplace-development" },
+      { title: "Payment Gateway Integrations", href: "/services/ecommerce-cms?tab=payment-integrations" },
+      { title: "E-commerce SEO Optimization", href: "/services/ecommerce-cms?tab=conversion-optimization" }
     ]
   },
   {
@@ -169,15 +169,15 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Custom SaaS Architecture Design", href: "/services/saas-platforms?tab=custom-saas-architecture-design" },
-      { title: "Multi-Tenant Database Design", href: "/services/saas-platforms?tab=multi-tenant-database-design" },
-      { title: "Subscription & Billing Integration", href: "/services/saas-platforms?tab=subscription-billing-integration" },
-      { title: "Enterprise API Integrations", href: "/services/saas-platforms?tab=enterprise-api-integrations" },
-      { title: "CRM & ERP Custom Development", href: "/services/saas-platforms?tab=crm-erp-custom-development" },
+      { title: "Custom SaaS Architecture Design", href: "/services/saas-platforms?tab=white-label-saas-development" },
+      { title: "Multi-Tenant Database Design", href: "/services/saas-platforms?tab=multi-tenant-saas-architecture" },
+      { title: "Subscription & Billing Integration", href: "/services/saas-platforms?tab=subscription-billing-platforms" },
+      { title: "Enterprise API Integrations", href: "/services/saas-platforms?tab=retail-management-systems" },
+      { title: "CRM & ERP Custom Development", href: "/services/saas-platforms?tab=crm-solutions" },
       { title: "Business Intelligence Dashboards", href: "/services/saas-platforms?tab=business-intelligence-dashboards" },
-      { title: "Legacy Software Modernization", href: "/services/saas-platforms?tab=legacy-software-modernization" },
-      { title: "Cloud Migration & DevOps Setup", href: "/services/saas-platforms?tab=cloud-migration-devops-setup" },
-      { title: "SLA-Backed Support & Maintenance", href: "/services/saas-platforms?tab=sla-backed-support-maintenance" }
+      { title: "Legacy Software Modernization", href: "/services/saas-platforms?tab=erp-systems" },
+      { title: "Cloud Migration & DevOps Setup", href: "/services/saas-platforms?tab=lms-platforms" },
+      { title: "SLA-Backed Support & Maintenance", href: "/services/saas-platforms?tab=hrm-platforms" }
     ]
   },
   {
@@ -195,14 +195,14 @@ export const services = [
     ),
     links: [
       { title: "WhatsApp Automation", href: "/services/automation-engagement?tab=whatsapp-automation" },
-      { title: "Telegram Automation & Bots", href: "/services/automation-engagement?tab=telegram-automation-bots" },
-      { title: "Customer Support Chatbots (AI)", href: "/services/automation-engagement?tab=customer-support-chatbots-ai" },
-      { title: "Marketing Email Workflows", href: "/services/automation-engagement?tab=marketing-email-workflows" },
-      { title: "CRM Data Integration & Sync", href: "/services/automation-engagement?tab=crm-data-integration-sync" },
-      { title: "Internal Task Automation (Zapier)", href: "/services/automation-engagement?tab=internal-task-automation-zapier" },
-      { title: "SMS & Push Alert Systems", href: "/services/automation-engagement?tab=sms-push-alert-systems" },
-      { title: "Lead Scoring & Routing Systems", href: "/services/automation-engagement?tab=lead-scoring-routing-systems" },
-      { title: "Performance Tracking Dashboards", href: "/services/automation-engagement?tab=performance-tracking-dashboards" }
+      { title: "Telegram Automation & Bots", href: "/services/automation-engagement?tab=telegram-automation" },
+      { title: "Customer Support Chatbots (AI)", href: "/services/automation-engagement?tab=ai-chatbots" },
+      { title: "Marketing Email Workflows", href: "/services/automation-engagement?tab=marketing-automation" },
+      { title: "CRM Data Integration & Sync", href: "/services/automation-engagement?tab=customer-support-automation" },
+      { title: "Internal Task Automation (Zapier)", href: "/services/automation-engagement?tab=whatsapp-automation" },
+      { title: "SMS & Push Alert Systems", href: "/services/automation-engagement?tab=lead-generation-systems" },
+      { title: "Lead Scoring & Routing Systems", href: "/services/automation-engagement?tab=lead-generation-systems" },
+      { title: "Performance Tracking Dashboards", href: "/services/automation-engagement?tab=marketing-automation" }
     ]
   },
   {
@@ -220,14 +220,14 @@ export const services = [
     ),
     links: [
       { title: "Web3 Marketing", href: "/services/marketing/web3-marketing" },
-      { title: "Social Media Management", href: "/services/growth-branding?tab=social-media-management" },
-      { title: "Community Management (Discord)", href: "/services/growth-branding?tab=community-management-discord" },
-      { title: "Search Engine Optimization (SEO)", href: "/services/growth-branding?tab=search-engine-optimization-seo" },
-      { title: "PPC & Paid Media Campaigns", href: "/services/growth-branding?tab=ppc-paid-media-campaigns" },
-      { title: "Brand Strategy & Visual Identity", href: "/services/growth-branding?tab=brand-strategy-visual-identity" },
-      { title: "Influencer & KOL Partnerships", href: "/services/growth-branding?tab=influencer-kol-partnerships" },
-      { title: "Analytics Setup & CRO", href: "/services/growth-branding?tab=analytics-setup-cro" },
-      { title: "Public Relations & PR Campaigns", href: "/services/growth-branding?tab=public-relations-pr-campaigns" }
+      { title: "Social Media Management", href: "/services/growth-branding?tab=digital-marketing" },
+      { title: "Community Management (Discord)", href: "/services/growth-branding?tab=community-building" },
+      { title: "Search Engine Optimization (SEO)", href: "/services/growth-branding?tab=content-marketing" },
+      { title: "PPC & Paid Media Campaigns", href: "/services/growth-branding?tab=digital-marketing" },
+      { title: "Brand Strategy & Visual Identity", href: "/services/growth-branding?tab=branding-positioning" },
+      { title: "Influencer & KOL Partnerships", href: "/services/growth-branding?tab=influencer-kol-campaigns" },
+      { title: "Analytics Setup & CRO", href: "/services/growth-branding?tab=motion-graphics" },
+      { title: "Public Relations & PR Campaigns", href: "/services/growth-branding?tab=video-production" }
     ]
   },
   {
