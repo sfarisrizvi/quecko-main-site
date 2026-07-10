@@ -470,3 +470,218 @@
         padding-top: 35px !important;
     }
 }
+/* =========================================================================
+   Mitosis (Metaball) Mega Menu Styles
+   ========================================================================= */
+
+.services-mega-menu-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .mitosis-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    /* Chain drop-shadow after gooey to give it a border-like outline */
+    filter: url('#mitosis-gooey') drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 1px rgba(0,0,0,0.15));
+  }
+
+  .blob-mother {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    border-radius: 60px;
+    z-index: 2;
+    transition: background 0.3s ease;
+  }
+
+  .blob-daughter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 40px;
+    background: #FFF;
+    border-radius: 30px;
+    transform: translateX(-50%) translateY(0);
+    z-index: 1;
+    /* Smoother transition */
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+                width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+                height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-radius 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .blob-daughter.expanded {
+    /* 50vw width as requested */
+    width: 55vw;
+    height: 500px;
+    /* Shift it slightly to left since nav is on the right side of the screen */
+    transform: translateX(-40%) translateY(70px);
+    border-radius: 24px;
+    background: #FFF;
+  }
+  
+  .services-mega-menu-wrapper:hover .blob-mother {
+      background: #FFF;
+  }
+
+  .mitosis-content-layer {
+    position: relative;
+    z-index: 10;
+  }
+
+  .mega-nav-trigger {
+    display: block;
+    position: relative;
+    z-index: 11;
+  }
+
+  .mega-nav-trigger p.nav-link {
+    background: transparent !important;
+  }
+
+  .mega-menu-content {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 55vw;
+    height: 500px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    padding: 30px;
+    pointer-events: none;
+    
+    /* When closing (leaving hover), fade text instantly so bg shrinks after */
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+  }
+
+  .mega-menu-content.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    /* When opening, wait for blob to expand before fading in */
+    transition: opacity 0.3s ease 0.4s, visibility 0.3s ease 0.4s;
+  }
+
+  .mega-menu-left {
+    width: 35%;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 20px;
+    height: 100%;
+    overflow-y: auto;
+    
+    /* Hide scrollbar for a clean look */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .mega-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+    flex-shrink: 0; /* Prevent squishing */
+    
+    .mega-category-content-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .mega-category-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .mega-category-title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    .mega-active-arrow {
+        color: #C1FF14;
+        flex-shrink: 0;
+    }
+
+    &:hover, &.active {
+      background: #F8F8F8;
+      opacity: 1;
+    }
+    
+    &.active {
+        box-shadow: inset 3px 0 0 #C1FF14;
+    }
+  }
+
+  .mega-menu-right {
+    width: 65%;
+    padding-left: 30px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    height: 100%;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.1);
+        border-radius: 4px;
+    }
+  }
+
+  .mega-sub-grid {
+    display: grid;
+    /* Switched to 3 columns to fit all 9 services without scrolling too much */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .mega-sub-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: #F8F8F8;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+      background: #C1FF14;
+      border-color: #C1FF14;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(193, 255, 20, 0.25);
+    }
+  }
+}

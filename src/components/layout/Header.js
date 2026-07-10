@@ -9,6 +9,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { scrollToHash } from "@/Utils/scroll";
+import ServicesMegaMenu from "./ServicesMegaMenu";
 
 const menuVariants = {
   hidden: { opacity: 0, x: -80 },
@@ -173,9 +174,9 @@ const Header = () => {
               >
                 <Image ref={newLogoRefRotate} src="/Assets/phonennav.svg" alt="Quecko Icon" className="img-fluid" width={36} height={36} />
               </Link>
-              <Link href="/#services" scroll={false} onClick={() => handleHashNav("#services")}>
-                <p className="nav-link">Service</p>
-              </Link>
+              
+              <ServicesMegaMenu />
+
               <Link href="/about-us">
                 <p className="nav-link">About Us</p>
               </Link>

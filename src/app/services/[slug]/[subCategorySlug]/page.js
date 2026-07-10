@@ -8,14 +8,15 @@ import Testimonials from "@/components/sections/Testimonials";
 import Stories from "@/components/sections/Stories";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import FAQAccordion from "@/components/sections/FAQAccordion";
+import TechLogo from "@/components/sections/TechLogo";
 import { getInternalPageData, getAllInternalPages } from "@/Utils/internalPagesParser";
 
 // Dynamic SVG Icon Selector for Capabilities
 function getIconForCapability(title = "") {
   const t = title.toLowerCase();
 
-  // 1. Agent / Bot / Assistant
-  if (t.includes("agent") || t.includes("copilot") || t.includes("assistant") || t.includes("chatbot")) {
+  // 1. Agent / Bot / Assistant / AI
+  if (t.includes("agent") || t.includes("copilot") || t.includes("assistant") || t.includes("chatbot") || t.includes("ai") || t.includes("machine") || t.includes("intelligence")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 8V4H8" />
@@ -28,8 +29,19 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 2. Database / Memory / Vector Store / Ledger
-  if (t.includes("database") || t.includes("memory") || t.includes("vector") || t.includes("storage") || t.includes("ledger") || t.includes("rwa") || t.includes("data")) {
+  // 2. Blockchain / Web3 / Crypto / Token / Smart Contract
+  if (t.includes("blockchain") || t.includes("web3") || t.includes("crypto") || t.includes("token") || t.includes("smart contract") || t.includes("nft") || t.includes("defi") || t.includes("exchange")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+        <polyline points="2 17 12 22 22 17" />
+        <polyline points="2 12 12 17 22 12" />
+      </svg>
+    );
+  }
+
+  // 3. Database / Memory / Vector Store / Ledger
+  if (t.includes("database") || t.includes("memory") || t.includes("vector") || t.includes("storage") || t.includes("ledger") || t.includes("rwa") || t.includes("data") || t.includes("cms")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -39,8 +51,8 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 3. API / Connection / Orchestration / Integration
-  if (t.includes("api") || t.includes("orchestration") || t.includes("integration") || t.includes("tool") || t.includes("bridge") || t.includes("cross-chain")) {
+  // 4. API / Connection / Orchestration / Integration / Cloud
+  if (t.includes("api") || t.includes("orchestration") || t.includes("integration") || t.includes("tool") || t.includes("bridge") || t.includes("cross-chain") || t.includes("cloud") || t.includes("saas") || t.includes("platform")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" />
@@ -51,8 +63,8 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 4. Security / Audit / Shield / Guardrails / Governance
-  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety")) {
+  // 5. Security / Audit / Shield / Guardrails / Governance
+  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety") || t.includes("trust") || t.includes("quality") || t.includes("qa")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z" />
@@ -60,19 +72,20 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 5. Analytics / Chart / Dashboards / Prediction
-  if (t.includes("analytics") || t.includes("predictive") || t.includes("charts") || t.includes("dashboard") || t.includes("market") || t.includes("conversion")) {
+  // 6. Analytics / Chart / Dashboards / Prediction / Growth / SEO
+  if (t.includes("analytics") || t.includes("predictive") || t.includes("charts") || t.includes("dashboard") || t.includes("market") || t.includes("conversion") || t.includes("growth") || t.includes("seo") || t.includes("performance") || t.includes("scale") || t.includes("optimization")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <line x1="18" y1="20" x2="18" y2="10" />
         <line x1="12" y1="20" x2="12" y2="4" />
         <line x1="6" y1="20" x2="6" y2="14" />
+        <polyline points="4 10 10 4 16 10 22 4" />
       </svg>
     );
   }
 
-  // 6. Commerce / Cart / Checkout / Payment
-  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription")) {
+  // 7. Commerce / Cart / Checkout / Payment / Finance / Fintech
+  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription") || t.includes("finance") || t.includes("fintech") || t.includes("sales") || t.includes("money") || t.includes("monetization")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="8" cy="21" r="1" />
@@ -82,8 +95,8 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 7. Automation / Process / Workflow
-  if (t.includes("automation") || t.includes("workflow") || t.includes("process") || t.includes("whatsapp") || t.includes("telegram")) {
+  // 8. Automation / Process / Workflow / Speed
+  if (t.includes("automation") || t.includes("workflow") || t.includes("process") || t.includes("whatsapp") || t.includes("telegram") || t.includes("speed") || t.includes("efficiency") || t.includes("agile") || t.includes("ci/cd") || t.includes("devops")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -91,8 +104,8 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 8. Design / Creative / Brand / UI / UX
-  if (t.includes("design") || t.includes("creative") || t.includes("brand") || t.includes("ui") || t.includes("ux") || t.includes("positioning") || t.includes("graphics")) {
+  // 9. Design / Creative / Brand / UI / UX / Mobile / App
+  if (t.includes("design") || t.includes("creative") || t.includes("brand") || t.includes("ui") || t.includes("ux") || t.includes("positioning") || t.includes("graphics") || t.includes("mobile") || t.includes("app") || t.includes("ios") || t.includes("android")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
@@ -102,7 +115,20 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // Default: Code Bracket
+  // 10. Games / Gaming / Entertainment
+  if (t.includes("game") || t.includes("gaming") || t.includes("play") || t.includes("metaverse") || t.includes("roblox") || t.includes("unity") || t.includes("entertainment")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="6" width="20" height="12" rx="2" />
+        <path d="M6 12h4" />
+        <path d="M8 10v4" />
+        <circle cx="15" cy="13" r="1" />
+        <circle cx="18" cy="11" r="1" />
+      </svg>
+    );
+  }
+
+  // Default: Code Bracket / Development
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="16 18 22 12 16 6" />
@@ -187,6 +213,10 @@ function parseTextWithMarkdownLinks(text) {
 
 // Helpers for Gantt timeline parser and rendering
 function getTimelineMetrics(timeframe, index, totalPhases) {
+  if (!timeframe) {
+    const step = 90 / totalPhases;
+    return { start: Math.round(index * step) + 1, end: Math.round((index + 1) * step) };
+  }
   const match = timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)/i) || timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)/i);
   if (match) {
     return { start: parseInt(match[1]), end: parseInt(match[2]) };
@@ -198,6 +228,9 @@ function getTimelineMetrics(timeframe, index, totalPhases) {
 }
 
 function parsePhaseParts(timeframe) {
+  if (!timeframe) {
+    return { days: "Ongoing", title: "Execution Phase" };
+  }
   const match = timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)(?:\s*\(([^)]+)\))?/i) || timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)(?:\s*\(([^)]+)\))?/i);
   if (match) {
     return {
@@ -209,6 +242,17 @@ function parsePhaseParts(timeframe) {
     days: timeframe,
     title: 'Execution Phase'
   };
+}
+
+function getTechLogoUrl(tech) {
+  let normalized = tech.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const map = {
+    'nodejs': 'nodedotjs', 'reactjs': 'react', 'vuejs': 'vuedotjs', 'nextjs': 'nextdotjs',
+    'aws': 'amazonaws', 'gcp': 'googlecloud', 'azure': 'microsoftazure', 'csharp': 'csharp',
+    'cpp': 'cplusplus', 'postgres': 'postgresql', 'mongo': 'mongodb', 'chatgpt': 'openai', 'gpt4': 'openai'
+  };
+  normalized = map[normalized] || normalized;
+  return `https://cdn.simpleicons.org/${normalized}`;
 }
 
 function getIconForPhase(index) {
@@ -424,7 +468,7 @@ export default async function SubCategoryPage({ params }) {
               Explore our technical specialties, engineering practices, and developer skills.
             </p>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))", gap: "24px" }}>
+            <div className="capabilities-grid">
               {sections.capabilities.items.map((item, idx) => (
                 <div
                   key={idx}
@@ -662,7 +706,7 @@ export default async function SubCategoryPage({ params }) {
                   </h4>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {cat.items.map((tech, tIdx) => (
-                      <span
+                      <div
                         key={tIdx}
                         style={{
                           background: "#FFFFFF",
@@ -672,10 +716,18 @@ export default async function SubCategoryPage({ params }) {
                           fontSize: "14px",
                           color: "#1C1C1E",
                           fontWeight: "500",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "8px"
                         }}
                       >
+                        <TechLogo 
+                          src={getTechLogoUrl(tech)} 
+                          alt={tech}
+                          fallback={getIconForCapability(tech)}
+                        />
                         {tech}
-                      </span>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -700,10 +752,6 @@ export default async function SubCategoryPage({ params }) {
                   {sections.whyChoose.items?.[0]?.desc || "We apply traditional software engineering rigor to next-generation AI and blockchain solutions, creating resilient systems that scale."}
                 </p>
               </div>
-              <div style={{ background: "#FFFFFF", border: "1px solid #000000", padding: "24px 32px", borderRadius: "24px", minWidth: "250px" }}>
-                <span style={{ fontSize: "12px", fontFamily: "Orbitron", letterSpacing: "0.1em", textTransform: "uppercase", color: "#8E8E93" }}>Builder Ecosystem</span>
-                <h4 style={{ fontSize: "20px", fontWeight: "600", margin: "8px 0 0 0" }}>Full-Spectrum Partners</h4>
-              </div>
             </div>
 
             {/* Differentiators Cards Grid */}
@@ -726,10 +774,8 @@ export default async function SubCategoryPage({ params }) {
                       }}
                       className="edge-hover-card"
                     >
-                      <div style={{ background: "rgba(193, 255, 20, 0.08)", width: "36px", height: "36px", borderRadius: "50%", display: "flex", alignItems: "center", justifyCenter: "center" }}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ margin: "auto" }}>
-                          <path d="M20 6L9 17L4 12" stroke="#000000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                      <div style={{ background: "rgba(193, 255, 20, 0.08)", width: "36px", height: "36px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#000000" }}>
+                        {getIconForCapability(diff.title)}
                       </div>
                       <div>
                         <h4 style={{ fontSize: "18px", fontWeight: "600", color: "#000000", marginBottom: "8px", fontFamily: "Aeonik" }}>
@@ -816,10 +862,12 @@ export default async function SubCategoryPage({ params }) {
       {sections.faqs?.faqs && sections.faqs.faqs.length > 0 && (
         <section className="service-section light-bg">
           <div className="section-container">
-            <span className="tagline">FAQ</span>
-            <h2 className="section-head" style={{ textAlign: "center", margin: "0 auto 40px auto" }}>
-              Frequently Asked Questions
-            </h2>
+            <div style={{ textAlign: "center", marginBottom: "40px" }}>
+              <span className="tagline">FAQ</span>
+              <h2 className="section-head" style={{ margin: "0 auto" }}>
+                Frequently Asked Questions
+              </h2>
+            </div>
 
             <FAQAccordion faqs={sections.faqs.faqs} />
           </div>
