@@ -194,10 +194,6 @@ const Footer = () => {
                 <span className="contact-label">Landline</span>
                 <span>051-8897789</span>
               </a>
-              <a href="tel:+923333480179" className="contact-line">
-                <span className="contact-label">WhatsApp</span>
-                <span>+92 333 3480179</span>
-              </a>
               <a href="mailto:info@quecko.com" className="contact-line">
                 <span className="contact-label">Email</span>
                 <span>info@quecko.com</span>
