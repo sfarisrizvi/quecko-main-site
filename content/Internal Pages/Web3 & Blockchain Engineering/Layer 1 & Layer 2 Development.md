@@ -86,6 +86,24 @@ Our Engineering Approach to L1/L2 Development
 
 ---
 
+## 4.5. PUBLIC CHAINS
+
+### Headline
+Layer 1 & Layer 2 Solutions
+
+### Subhead
+Development across leading public chains for secure, scalable dApps.
+
+### Chains
+- **BSC (BNB Smart Chain):** dApp development on Binance Smart Chain.
+- **Solana:** High-throughput application development on Solana.
+- **Cardano:** Scalable, sustainable dApps on Cardano.
+- **Ethereum:** Secure platform development on Ethereum.
+- **Polkadot:** Cross-network solutions spanning public, private, and permissioned chains.
+- **SUI Blockchain Development:** Web3 applications built on the Sui network.
+
+---
+
 ## 5. PROJECT BLUEPRINT
 
 ### Headline

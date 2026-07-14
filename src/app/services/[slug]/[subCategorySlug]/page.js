@@ -9,6 +9,7 @@ import Stories from "@/components/sections/Stories";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import FAQAccordion from "@/components/sections/FAQAccordion";
 import TechLogo from "@/components/sections/TechLogo";
+import PublicChains from "@/components/sections/PublicChains";
 import { getInternalPageData, getAllInternalPages } from "@/Utils/internalPagesParser";
 
 export const dynamicParams = false;
@@ -512,6 +513,11 @@ export default async function SubCategoryPage({ params }) {
             </div>
           </div>
         </section>
+      )}
+
+      {/* 5.5. PUBLIC CHAINS SECTION */}
+      {sections.publicChains?.chains && sections.publicChains.chains.length > 0 && (
+        <PublicChains data={sections.publicChains} />
       )}
 
       {/* 6. TARGET QUALIFIER (Ideal Fit vs Not a Fit) */}

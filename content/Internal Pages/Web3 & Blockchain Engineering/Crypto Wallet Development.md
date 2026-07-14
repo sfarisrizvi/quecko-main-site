@@ -86,6 +86,27 @@ Our Engineering Approach to Wallet Development
 
 ---
 
+## 4.5. WALLET SOLUTIONS
+
+### Headline
+Wallet Solutions
+
+### Subhead
+Development of custom, white-label, custodial, and non-custodial wallet infrastructure.
+
+### Solutions
+- **Digital Wallet:** Custom client-facing wallet applications for secure asset storage and transfers.
+- **White Label Wallet:** Customizable, production-ready wallet templates for rapid rebranding and distribution.
+- **Super App Development:** Consolidated portal combining wallets, messaging, dApp browsers, and payment gateways.
+- **DeFi Wallet:** Non-custodial wallets tailored for seamless interactions with Web3 yield and liquidity platforms.
+- **Web3 Wallet:** Secure browser extensions and mobile clients built to authenticate and interact with decentralized networks.
+- **Multicurrency Wallet:** Cross-chain wallet systems supporting Bitcoin, Ethereum, EVM networks, and non-EVM chains under one seed phrase.
+- **TRON Wallet:** High-speed wallet architectures specialized for the TRON network, bandwidth, and energy models.
+- **MPC Crypto Wallet:** Multi-Party Computation wallets eliminating single points of failure by splitting private keys.
+- **AI Crypto Wallet:** Smart wallet implementations with integrated AI assistants to analyze gas, portfolio trends, and automate transfers.
+
+---
+
 ## 5. PROJECT BLUEPRINT
 
 ### Headline

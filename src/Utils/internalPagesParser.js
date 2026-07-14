@@ -296,6 +296,30 @@ function parseSectionContent(key, content) {
     }
     result.ctas = ctas;
   }
+  else if (key === 'publicChains') {
+    result.headline = cleanText(parsedSubs['headline'] || '');
+    result.subhead = cleanText(parsedSubs['subhead'] || '');
+    const chains = [];
+    const chainContent = parsedSubs['chains'] || parsedSubs['solutions'] || content;
+    const lines = chainContent.split(/\r?\n/);
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('-') && !/^-+$/.test(trimmed)) {
+        const match = trimmed.match(/^-\s+\*\*([^*]+):\*\*\s*(.*)$/);
+        if (match) {
+          chains.push({ name: cleanText(match[1]), desc: cleanText(match[2]) });
+        } else {
+          const parts = trimmed.replace(/^-\s+/, '').split(/[:—-]/);
+          if (parts.length >= 2) {
+            chains.push({ name: cleanText(parts[0]), desc: cleanText(parts.slice(1).join('—')) });
+          } else {
+            chains.push({ name: '', desc: cleanText(trimmed.replace(/^-\s+/, '')) });
+          }
+        }
+      }
+    }
+    result.chains = chains;
+  }
 
   return result;
 }
@@ -328,6 +352,7 @@ function parseSections(body) {
     else if (key.includes('11. engagement')) key = 'engagement';
     else if (key.includes('12. faqs')) key = 'faqs';
     else if (key.includes('13. final cta')) key = 'finalCta';
+    else if (key.includes('public chains') || key.includes('public chain') || key.includes('solutions')) key = 'publicChains';
 
     sections[key] = parseSectionContent(key, rest);
   }

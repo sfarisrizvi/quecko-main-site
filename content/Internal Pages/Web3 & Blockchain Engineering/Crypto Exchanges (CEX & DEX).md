@@ -86,6 +86,27 @@ Our Engineering Approach to Exchange Development
 
 ---
 
+## 4.5. EXCHANGE SOLUTIONS
+
+### Headline
+Exchange Solutions
+
+### Subhead
+Development across custom, white-label, centralized, and decentralized exchange models.
+
+### Solutions
+- **Custom Exchange:** Tailor-made trading platforms built from the ground up to match your custom business workflows and requirements.
+- **White Label Exchange:** Rapid market deployment using our pre-engineered, secure, and customizable exchange software core.
+- **Derivatives Exchange:** Dynamic trading platforms for futures, options, swaps, and synthetic crypto contracts.
+- **Decentralized Exchange:** Non-custodial trading environments featuring on-chain settlements and liquidity pools.
+- **Centralized Exchange:** Enterprise-grade custodial trading platforms featuring high-speed order matching and deep orderbooks.
+- **P2P Exchange:** Escrow-protected peer-to-peer trading platforms enabling secure OTC currency swaps.
+- **Margin Trading Exchange:** Leverage-enabled trading systems supporting borrow/lend mechanics and risk management.
+- **Hybrid Exchange Development:** Combining the speed of centralized order matching with the custody security of decentralized settlement.
+- **Perpetual Futures Exchange:** Non-expiring futures contracts with funding rate mechanisms and leverage up to 100x.
+
+---
+
 ## 5. PROJECT BLUEPRINT
 
 ### Headline
