@@ -520,61 +520,7 @@ export default async function SubCategoryPage({ params }) {
         <PublicChains data={sections.publicChains} />
       )}
 
-      {/* 6. TARGET QUALIFIER (Ideal Fit vs Not a Fit) */}
-      {(sections.targetQualifier?.idealFit?.length > 0 || sections.targetQualifier?.notFit?.length > 0) && (
-        <section className="service-section">
-          <div className="section-container">
-            <span className="tagline">Target Fit</span>
-            <h2 className="section-head" style={{ marginBottom: "50px" }}>Is This Service a Fit for You?</h2>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px" }}>
-              {/* Ideal Fit */}
-              {sections.targetQualifier.idealFit && sections.targetQualifier.idealFit.length > 0 && (
-                <div style={{ background: "rgba(193, 255, 20, 0.04)", border: "1px solid rgba(193, 255, 20, 0.15)", padding: "40px", borderRadius: "32px" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px" }}>
-                    <div style={{ background: "#C1FF14", width: "32px", height: "32px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 6L9 17L4 12" stroke="#000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-                    <h3 style={{ fontSize: "22px", fontWeight: "600", margin: 0 }}>Ideal Match</h3>
-                  </div>
-                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                    {sections.targetQualifier.idealFit.map((fit, idx) => (
-                      <li key={idx} style={{ position: "relative", paddingLeft: "28px", marginBottom: "16px", fontSize: "16px", color: "#1C1C1E", lineHeight: "1.5" }}>
-                        <span style={{ position: "absolute", left: 0, color: "#C1FF14", fontWeight: "bold" }}>✓</span>
-                        {parseTextWithMarkdownLinks(fit)}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Not a Fit */}
-              {sections.targetQualifier.notFit && sections.targetQualifier.notFit.length > 0 && (
-                <div style={{ background: "#F4F4F4", border: "1px solid rgba(0, 0, 0, 0.05)", padding: "40px", borderRadius: "32px" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px" }}>
-                    <div style={{ background: "#E5E5EA", width: "32px", height: "32px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M18 6L6 18M6 6l12 12" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-                    <h3 style={{ fontSize: "22px", fontWeight: "600", margin: 0 }}>Not a Fit</h3>
-                  </div>
-                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                    {sections.targetQualifier.notFit.map((fit, idx) => (
-                      <li key={idx} style={{ position: "relative", paddingLeft: "28px", marginBottom: "16px", fontSize: "16px", color: "#636366", lineHeight: "1.5" }}>
-                        <span style={{ position: "absolute", left: 0, color: "#8E8E93" }}>—</span>
-                        {parseTextWithMarkdownLinks(fit)}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* 7. PROJECT BLUEPRINT / TIMELINE */}
       {sections.blueprint?.timeline && sections.blueprint.timeline.length > 0 && (
