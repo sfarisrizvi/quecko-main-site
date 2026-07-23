@@ -211,6 +211,7 @@ function parseSectionContent(key, content) {
   } 
   else if (key === 'whyChoose') {
     result.headline = cleanText(parsedSubs['headline'] || '');
+    result.subhead = cleanText(parsedSubs['subhead'] || '');
     const diffContent = parsedSubs['differentiators'] || content;
     const items = [];
     const lines = diffContent.split(/\r?\n/);

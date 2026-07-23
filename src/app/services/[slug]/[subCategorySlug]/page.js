@@ -215,16 +215,16 @@ function parseTextWithMarkdownLinks(text) {
 }
 
 // Helpers for Gantt timeline parser and rendering
-function getTimelineMetrics(timeframe, index, totalPhases) {
+function getTimelineMetrics(timeframe, index, totalPhases, defaultMax = 90) {
   if (!timeframe) {
-    const step = 90 / totalPhases;
+    const step = defaultMax / totalPhases;
     return { start: Math.round(index * step) + 1, end: Math.round((index + 1) * step) };
   }
   const match = timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)/i) || timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)/i);
   if (match) {
     return { start: parseInt(match[1]), end: parseInt(match[2]) };
   }
-  const step = 90 / totalPhases;
+  const step = defaultMax / totalPhases;
   const start = Math.round(index * step) + 1;
   const end = Math.round((index + 1) * step);
   return { start, end };
@@ -376,7 +376,9 @@ export default async function SubCategoryPage({ params }) {
                 </svg>
                 <span>{cleanSubTitle}</span>
               </div>
-              <h1 className="mainpara">{sections.hero?.headline}</h1>
+              <h1 className="mainpara">
+                {(sections.hero?.headline || "").split(/[|—–]|\s+-\s+/)[0].trim()}
+              </h1>
               <p className="para">{sections.hero?.subhead}</p>
               <div className="hero-ctas">
                 <Link href="/contact" className="btn-primary">
@@ -435,7 +437,7 @@ export default async function SubCategoryPage({ params }) {
               <div className="solution-side">
                 <span className="tagline">The Solution</span>
                 <h3 className="section-head" style={{ fontSize: "28px", marginBottom: "30px", lineHeight: "1.25" }}>
-                  Engineering Production-Grade {cleanSubTitle} Infrastructure
+                  {frontmatter["solution-heading"] || `Engineering Production-Grade ${cleanSubTitle} Infrastructure`}
                 </h3>
                 
                 {sections.process?.steps && sections.process.steps.length > 0 ? (
@@ -534,15 +536,21 @@ export default async function SubCategoryPage({ params }) {
 
             {/* Horizontal Gantt chart layout replacing vertical timeline */}
             {(() => {
-              const parsedPhases = sections.blueprint.timeline
-                .map((phase, idx) => {
-                  if (!phase.timeframe && !phase.desc) return null;
-                  const metrics = getTimelineMetrics(phase.timeframe, idx, sections.blueprint.timeline.length);
-                  return { ...phase, ...metrics };
-                })
-                .filter(Boolean);
+              const rawPhases = sections.blueprint.timeline.filter(
+                (phase) => phase.timeframe || phase.desc
+              );
+              
+              const rawEnds = rawPhases.map((phase) => {
+                if (!phase.timeframe) return 0;
+                const match = phase.timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)/i) || phase.timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)/i);
+                return match ? parseInt(match[2]) : 0;
+              });
+              const totalDays = Math.max(...rawEnds, 0) || 90;
 
-              const totalDays = parsedPhases.reduce((max, p) => Math.max(max, p.end), 90);
+              const parsedPhases = rawPhases.map((phase, idx) => {
+                const metrics = getTimelineMetrics(phase.timeframe, idx, rawPhases.length, totalDays);
+                return { ...phase, ...metrics };
+              });
 
               return (
                 <div className="gantt-timeline-container">
@@ -644,7 +652,7 @@ export default async function SubCategoryPage({ params }) {
               Tools, frameworks, and protocols we use to build secure and scalable solutions.
             </p>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
               {sections.techStack.categories.map((cat, idx) => (
                 <div
                   key={idx}
@@ -703,14 +711,14 @@ export default async function SubCategoryPage({ params }) {
                   {sections.whyChoose.headline || "Why Choose Quecko"}
                 </h2>
                 <p style={{ fontSize: "17px", color: "#48484A", lineHeight: "1.5", maxWidth: "800px" }}>
-                  {sections.whyChoose.items?.[0]?.desc || "We apply traditional software engineering rigor to next-generation AI and blockchain solutions, creating resilient systems that scale."}
+                  {sections.whyChoose.subhead || sections.whyChoose.items?.[0]?.desc || "We apply traditional software engineering rigor to next-generation AI and blockchain solutions, creating resilient systems that scale."}
                 </p>
               </div>
             </div>
 
             {/* Differentiators Cards Grid */}
             {sections.whyChoose.items && sections.whyChoose.items.length > 0 && (
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 520px), 2fr))", gap: "24px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "24px" }}>
                 {sections.whyChoose.items.map((diff, idx) => {
                   if (!diff.title && !diff.desc) return null;
                   return (

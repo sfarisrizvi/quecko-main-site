@@ -68,12 +68,15 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Custom LLM & Fine-tuning", href: "/services/ai-development?tab=custom-ai-applications" },
-      { title: "AI Agents & Autonomous Workflows", href: "/services/ai-development?tab=ai-agents-copilots" },
-      { title: "Cognitive Search & RAG Systems", href: "/services/ai-development?tab=intelligent-document-processing" },
-      { title: "Computer Vision Solutions", href: "/services/ai-development?tab=data-engineering-mlops" },
-      { title: "Predictive Analytics Engines", href: "/services/ai-development?tab=predictive-analytics" },
-      { title: "Voice & Conversational AI", href: "/services/ai-development?tab=conversational-ai" }
+      { title: "Custom AI Applications", href: "/services/ai-development?tab=custom-ai-applications" },
+      { title: "AI Agents & Copilots", href: "/services/ai-development?tab=ai-agents-copilots" },
+      { title: "Intelligent Document Processing", href: "/services/ai-development?tab=intelligent-document-processing" },
+      { title: "Data Engineering & MLOps", href: "/services/ai-development?tab=data-engineering-mlops" },
+      { title: "Predictive Analytics", href: "/services/ai-development?tab=predictive-analytics" },
+      { title: "Conversational AI", href: "/services/ai-development?tab=conversational-ai" },
+      { title: "AI Automation", href: "/services/ai-development?tab=ai-automation" },
+      { title: "AI Governance & Compliance", href: "/services/ai-development?tab=ai-governance" },
+      { title: "AI Strategy & Consulting", href: "/services/ai-development?tab=ai-strategy-consulting" }
     ]
   },
   {
@@ -90,8 +93,8 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Dedicated Frontend Developers", href: "/services/dedicated-teams?tab=ai-engineers" },
-      { title: "Dedicated Backend Developers", href: "/services/dedicated-teams?tab=blockchain-developers" },
+      { title: "Dedicated AI Engineers", href: "/services/dedicated-teams?tab=ai-engineers" },
+      { title: "Fractional CTO Services", href: "/services/dedicated-teams?tab=fractional-cto-services" },
       { title: "Dedicated Full-Stack Engineers", href: "/services/dedicated-teams?tab=full-stack-developers" },
       { title: "Mobile App Developers", href: "/services/dedicated-teams?tab=mobile-developers" },
       { title: "UI/UX Designers & Researchers", href: "/services/dedicated-teams?tab=product-designers" },
@@ -120,11 +123,11 @@ export const services = [
       { title: "Custom Android App Development", href: "/services/mobile-app-development?tab=android-app-development" },
       { title: "Cross-Platform Apps (React Native)", href: "/services/mobile-app-development?tab=react-native-development" },
       { title: "Cross-Platform Apps (Flutter)", href: "/services/mobile-app-development?tab=flutter-development" },
-      { title: "Mobile App UI/UX Design", href: "/services/mobile-app-development?tab=e-commerce-apps" },
+      { title: "E-Commerce Mobile Apps", href: "/services/mobile-app-development?tab=e-commerce-apps" },
       { title: "Enterprise Mobile Solutions", href: "/services/mobile-app-development?tab=enterprise-mobile-apps" },
-      { title: "Mobile Backend & API Integration", href: "/services/mobile-app-development?tab=fintech-apps" },
-      { title: "App Store Optimization (ASO)", href: "/services/mobile-app-development?tab=super-apps" },
-      { title: "App Support & Maintenance Services", href: "/services/mobile-app-development?tab=app-maintenance-scaling" }
+      { title: "Fintech App Development", href: "/services/mobile-app-development?tab=fintech-apps" },
+      { title: "Super App Development", href: "/services/mobile-app-development?tab=super-apps" },
+      { title: "App Maintenance & Scaling", href: "/services/mobile-app-development?tab=app-maintenance-scaling" }
     ]
   },
   {
@@ -146,11 +149,11 @@ export const services = [
       { title: "Headless Commerce Architectures", href: "/services/ecommerce-cms?tab=headless-commerce" },
       { title: "Shopify Custom Development", href: "/services/ecommerce-cms?tab=shopify-development" },
       { title: "WooCommerce Development Services", href: "/services/ecommerce-cms?tab=woocommerce-development" },
-      { title: "Adobe Commerce (Magento)", href: "/services/ecommerce-cms?tab=shopify-plus" },
-      { title: "Custom CMS Development", href: "/services/ecommerce-cms?tab=wordpress-development" },
-      { title: "Headless CMS Implementations", href: "/services/ecommerce-cms?tab=marketplace-development" },
+      { title: "Shopify Plus Development", href: "/services/ecommerce-cms?tab=shopify-plus" },
+      { title: "WordPress Development", href: "/services/ecommerce-cms?tab=wordpress-development" },
+      { title: "Online Marketplace Development", href: "/services/ecommerce-cms?tab=marketplace-development" },
       { title: "Payment Gateway Integrations", href: "/services/ecommerce-cms?tab=payment-integrations" },
-      { title: "E-commerce SEO Optimization", href: "/services/ecommerce-cms?tab=conversion-optimization" }
+      { title: "Conversion Rate Optimization", href: "/services/ecommerce-cms?tab=conversion-optimization" }
     ]
   },
   {
@@ -169,15 +172,15 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Custom SaaS Architecture Design", href: "/services/saas-platforms?tab=white-label-saas-development" },
-      { title: "Multi-Tenant Database Design", href: "/services/saas-platforms?tab=multi-tenant-saas-architecture" },
-      { title: "Subscription & Billing Integration", href: "/services/saas-platforms?tab=subscription-billing-platforms" },
-      { title: "Enterprise API Integrations", href: "/services/saas-platforms?tab=retail-management-systems" },
-      { title: "CRM & ERP Custom Development", href: "/services/saas-platforms?tab=crm-solutions" },
+      { title: "White-Label SaaS Development", href: "/services/saas-platforms?tab=white-label-saas-development" },
+      { title: "Multi-Tenant SaaS Architecture", href: "/services/saas-platforms?tab=multi-tenant-saas-architecture" },
+      { title: "Subscription & Billing Platforms", href: "/services/saas-platforms?tab=subscription-billing-platforms" },
+      { title: "Retail Management Systems", href: "/services/saas-platforms?tab=retail-management-systems" },
+      { title: "CRM Solutions", href: "/services/saas-platforms?tab=crm-solutions" },
       { title: "Business Intelligence Dashboards", href: "/services/saas-platforms?tab=business-intelligence-dashboards" },
-      { title: "Legacy Software Modernization", href: "/services/saas-platforms?tab=erp-systems" },
-      { title: "Cloud Migration & DevOps Setup", href: "/services/saas-platforms?tab=lms-platforms" },
-      { title: "SLA-Backed Support & Maintenance", href: "/services/saas-platforms?tab=hrm-platforms" }
+      { title: "ERP Systems", href: "/services/saas-platforms?tab=erp-systems" },
+      { title: "LMS Platforms", href: "/services/saas-platforms?tab=lms-platforms" },
+      { title: "HRM Platforms", href: "/services/saas-platforms?tab=hrm-platforms" }
     ]
   },
   {
@@ -197,12 +200,12 @@ export const services = [
       { title: "WhatsApp Automation", href: "/services/automation-engagement?tab=whatsapp-automation" },
       { title: "Telegram Automation & Bots", href: "/services/automation-engagement?tab=telegram-automation" },
       { title: "Customer Support Chatbots (AI)", href: "/services/automation-engagement?tab=ai-chatbots" },
-      { title: "Marketing Email Workflows", href: "/services/automation-engagement?tab=marketing-automation" },
-      { title: "CRM Data Integration & Sync", href: "/services/automation-engagement?tab=customer-support-automation" },
-      { title: "Internal Task Automation (Zapier)", href: "/services/automation-engagement?tab=whatsapp-automation" },
-      { title: "SMS & Push Alert Systems", href: "/services/automation-engagement?tab=lead-generation-systems" },
-      { title: "Lead Scoring & Routing Systems", href: "/services/automation-engagement?tab=lead-generation-systems" },
-      { title: "Performance Tracking Dashboards", href: "/services/automation-engagement?tab=marketing-automation" }
+      { title: "Marketing Automation", href: "/services/automation-engagement?tab=marketing-automation" },
+      { title: "Customer Support Automation", href: "/services/automation-engagement?tab=customer-support-automation" },
+      { title: "Workflow Automation", href: "/services/automation-engagement?tab=workflow-automation" },
+      { title: "Lead Generation Systems", href: "/services/automation-engagement?tab=lead-generation-systems" },
+      { title: "Sales Automation", href: "/services/automation-engagement?tab=sales-automation" },
+      { title: "Omnichannel Engagement", href: "/services/automation-engagement?tab=omnichannel-engagement" }
     ]
   },
   {
@@ -219,15 +222,15 @@ export const services = [
       </svg>
     ),
     links: [
-      { title: "Web3 Marketing", href: "/services/marketing/web3-marketing" },
-      { title: "Social Media Management", href: "/services/growth-branding?tab=digital-marketing" },
-      { title: "Community Management (Discord)", href: "/services/growth-branding?tab=community-building" },
-      { title: "Search Engine Optimization (SEO)", href: "/services/growth-branding?tab=content-marketing" },
-      { title: "PPC & Paid Media Campaigns", href: "/services/growth-branding?tab=digital-marketing" },
-      { title: "Brand Strategy & Visual Identity", href: "/services/growth-branding?tab=branding-positioning" },
-      { title: "Influencer & KOL Partnerships", href: "/services/growth-branding?tab=influencer-kol-campaigns" },
-      { title: "Analytics Setup & CRO", href: "/services/growth-branding?tab=motion-graphics" },
-      { title: "Public Relations & PR Campaigns", href: "/services/growth-branding?tab=video-production" }
+      { title: "Web3 Marketing", href: "/services/growth-branding?tab=web3-marketing" },
+      { title: "Digital Marketing", href: "/services/growth-branding?tab=digital-marketing" },
+      { title: "Community Building", href: "/services/growth-branding?tab=community-building" },
+      { title: "Content Marketing", href: "/services/growth-branding?tab=content-marketing" },
+      { title: "UI/UX Design", href: "/services/growth-branding?tab=uiux-design" },
+      { title: "Branding & Positioning", href: "/services/growth-branding?tab=branding-positioning" },
+      { title: "Influencer & KOL Campaigns", href: "/services/growth-branding?tab=influencer-kol-campaigns" },
+      { title: "Motion Graphics", href: "/services/growth-branding?tab=motion-graphics" },
+      { title: "Video Production", href: "/services/growth-branding?tab=video-production" }
     ]
   },
   {

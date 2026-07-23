@@ -7,6 +7,7 @@ goal: Position Quecko as the premium provider of vetted, dedicated product desig
 primary-cta: Hire Product Designers
 seo-primary-keywords: [hire product designers, dedicated UI UX designers, hire product design team, UI UX designers for hire]
 seo-meta-description: "Hire dedicated product and UI/UX designers from Quecko — visual design systems, wireframes, user testing, and developer-ready Figma layouts. 250+ products shipped."
+solution-heading: Production-Grade Product Design Infrastructure
 ---
 
 # PRODUCT DESIGNERS
@@ -16,7 +17,7 @@ seo-meta-description: "Hire dedicated product and UI/UX designers from Quecko �
 ## 1. HERO
 
 ### Headline
-Hire Dedicated Product Designers — Elite UI/UX & Interaction Designers
+Hire Dedicated Product Designers & UI/UX Designers
 
 ### Subhead
 Quecko provides dedicated, senior product designers vetted for visual design and interface logic. From UI/UX layout design and complex user flows to design systems engineering in Figma, we plug elite creative talent directly into your team to accelerate your product development cycles.
