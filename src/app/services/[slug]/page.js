@@ -13,7 +13,12 @@ export function generateStaticParams() {
     { slug: "ecommerce-cms" },
     { slug: "automation-engagement" },
     { slug: "dedicated-teams" },
-    { slug: "growth-branding" }
+    { slug: "growth-branding" },
+    { slug: "coin-token-dev" },
+    { slug: "crypto-banking" },
+    { slug: "consultancy" },
+    { slug: "web3-enterprise" },
+    { slug: "web3-compliance" }
   ];
 }
 

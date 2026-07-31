@@ -1517,5 +1517,245 @@ export const allServicesData = {
         "a": "Getting started is simple. Contact us via our website or email (Sales@Quecko.com). We will schedule a technical consultation to map out your requirements and recommend the best roadmap for your project."
       }
     ]
+  },
+  "coin-token-dev": {
+    "title": "COIN & TOKEN DEVELOPMENT",
+    "hero": {
+      "headline": "Custom Coin & Token Engineering — From Tokenomics to Mainnet",
+      "subhead": "Quecko builds custom coins and tokens — native chains, ERC-20/BEP-20/SPL standards, ICO platforms, and tokenomics engineering designed for long-term value.",
+      "ctaPrimary": "Start a Project",
+      "ctaSecondary": "Explore Our Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com"
+    },
+    "problem": {
+      "tagline": "The Challenge",
+      "headline": "Minting a token is trivial — designing one that survives is not.",
+      "body": "Supply schedules, vesting cliffs, and incentive structures that look fine on a spreadsheet often break down once early holders start selling. Without rigorous tokenomics modeling and smart contract security, tokens face liquidity crises, regulatory action, or collapse after initial hype fades."
+    },
+    "solution": {
+      "headline": "Economics-first token engineering from design through audit to listing.",
+      "steps": [
+        { "title": "Tokenomics Design", "desc": "Model supply, utility, and incentive structures against realistic market scenarios." },
+        { "title": "Smart Contract Build", "desc": "Contract development with full test coverage across ERC-20, BEP-20, SPL, and native chains." },
+        { "title": "Security & Launch", "desc": "Third-party audit coordination, exchange listing prep, and liquidity bootstrapping." }
+      ]
+    },
+    "subServices": {
+      "coin-token-development": { "title": "Coin & Token Development", "slug": "coin-token-development", "headline": "Custom token issuance and tokenomics engineering.", "overview": "Native coins and standard tokens (ERC-20, BEP-20, SPL) with economic modeling.", "capabilities": ["ERC-20/BEP-20/SPL token development", "Tokenomics design and stress testing", "Multi-chain deployment"] },
+      "ico-development": { "title": "ICO Development", "slug": "ico-development", "headline": "End-to-end token sale infrastructure.", "overview": "Sale contracts, KYC-gated participation, investor dashboards, and vesting.", "capabilities": ["Smart contract sale mechanics", "KYC/AML integration", "Vesting and distribution automation"] },
+      "nft-lending": { "title": "NFT Lending", "slug": "nft-lending", "headline": "NFT-backed peer-to-peer credit markets.", "overview": "Collateralized lending protocols using NFTs as liquid collateral.", "capabilities": ["NFT vault infrastructure", "Liquidation mechanics", "Cross-platform collateral support"] },
+      "semi-fungible-tokens": { "title": "Semi-Fungible Tokens", "slug": "semi-fungible-tokens", "headline": "ERC-1155 and dual-state token engineering.", "overview": "Batch-minting and state-transition token systems for gaming and ticketing.", "capabilities": ["ERC-1155 development", "State-transition logic", "Gaming and ticketing integration"] }
+    },
+    "differentiation": {
+      "tagline": "Our Edge",
+      "headline": "We engineer tokens that survive — not just launch.",
+      "body": "Quecko combines deep tokenomics modeling, rigorous smart contract security, and multi-chain deployment expertise to create tokens designed for long-term value. Every engagement starts with economic stress-testing, not a template contract."
+    },
+    "security": {
+      "headline": "Audited, stress-tested, and built for adversarial conditions.",
+      "body": "Every token contract undergoes independent third-party audit, automated vulnerability scanning, and economic stress-testing against realistic sell-pressure scenarios before any mainnet deployment."
+    },
+    "cta": {
+      "headline": "Ready to launch your token?",
+      "body": "From tokenomics design through audit to exchange listing, Quecko's token engineering team handles the full lifecycle."
+    },
+    "faqs": [
+      { "q": "Which token standards do you support?", "a": "ERC-20, BEP-20, SPL, TRC-20, ERC-1155, and native chain tokens — matched to your target ecosystem." },
+      { "q": "Do you help with tokenomics design?", "a": "Yes — economic modeling and incentive design are core to every engagement." },
+      { "q": "Can you run a compliant ICO?", "a": "Yes — our technical build runs alongside legal structuring with our Compliance team." }
+    ]
+  },
+  "crypto-banking": {
+    "title": "CRYPTO BANKING & FINANCIAL RAILS",
+    "hero": {
+      "headline": "Crypto Banking & Financial Infrastructure — From CBDCs to Neobanks",
+      "subhead": "Quecko builds the financial infrastructure layer for Web3 — CBDCs, crypto payment gateways, neobanks, P2P lending platforms, stablecoin systems, and cross-border remittance rails.",
+      "ctaPrimary": "Start a Project",
+      "ctaSecondary": "Explore Our Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com"
+    },
+    "problem": {
+      "tagline": "The Challenge",
+      "headline": "Crypto finance products must handle real money with banking-grade reliability.",
+      "body": "Building financial infrastructure requires integrating with traditional banking rails, meeting regulatory requirements across jurisdictions, and engineering systems that handle real funds with zero tolerance for downtime or security failures."
+    },
+    "solution": {
+      "headline": "Banking-grade crypto financial infrastructure from architecture to production.",
+      "steps": [
+        { "title": "Architecture & Compliance", "desc": "Design payment flows, custody models, and compliance architecture for target jurisdictions." },
+        { "title": "Core Platform Build", "desc": "Develop transaction engines, wallet infrastructure, and banking integrations." },
+        { "title": "Launch & Scale", "desc": "Production deployment with monitoring, audit trails, and regulatory reporting." }
+      ]
+    },
+    "subServices": {
+      "cbdc-development": { "title": "CBDC Development", "slug": "cbdc-development", "headline": "Central Bank Digital Currency architecture.", "overview": "Retail and wholesale CBDC infrastructure for national payment systems.", "capabilities": ["Permissioned ledger design", "Offline payment support", "Cross-border interoperability"] },
+      "crypto-payment-gateway": { "title": "Crypto Payment Gateway", "slug": "crypto-payment-gateway", "headline": "Non-custodial merchant payment infrastructure.", "overview": "Crypto payment acceptance for merchants with fiat settlement options.", "capabilities": ["Multi-chain payment support", "Real-time settlement", "Merchant dashboards"] },
+      "neobank-development": { "title": "Neobank Development", "slug": "neobank-development", "headline": "Fiat-to-crypto neobanking platforms.", "overview": "Full-stack neobank with IBAN integration and crypto wallet management.", "capabilities": ["KYC/AML integration", "IBAN and SWIFT support", "Multi-currency wallets"] },
+      "p2p-lending-platforms": { "title": "P2P Lending Platforms", "slug": "p2p-lending-platforms", "headline": "Automated collateralized P2P lending.", "overview": "Peer-to-peer crypto lending with automated collateral management.", "capabilities": ["Smart contract collateral", "Automated liquidation", "Interest rate models"] },
+      "stablecoin-infrastructure": { "title": "Stablecoin Infrastructure", "slug": "stablecoin-infrastructure", "headline": "Fiat and algorithmic stablecoin architecture.", "overview": "Design and build stablecoin systems with reserve management and peg mechanisms.", "capabilities": ["Reserve proof systems", "Peg maintenance logic", "Multi-chain issuance"] },
+      "stablecoin-remittance-platforms": { "title": "Stablecoin Remittance Platforms", "slug": "stablecoin-remittance-platforms", "headline": "Cross-border settlement via stablecoins.", "overview": "Remittance corridors using stablecoins for instant, low-cost cross-border transfers.", "capabilities": ["Local off-ramp networks", "Compliance integration", "Real-time FX conversion"] }
+    },
+    "differentiation": {
+      "tagline": "Our Edge",
+      "headline": "Banking-grade infrastructure, built by blockchain engineers.",
+      "body": "Quecko bridges the gap between traditional financial infrastructure and Web3 — integrating with banking rails, meeting regulatory requirements, and engineering systems that handle real funds with zero tolerance for failure."
+    },
+    "security": {
+      "headline": "Financial-grade security for every transaction.",
+      "body": "Our financial infrastructure undergoes rigorous security audits, penetration testing, and compliance reviews. Every system is designed with multi-layered security, encrypted data handling, and real-time monitoring."
+    },
+    "cta": {
+      "headline": "Ready to build financial infrastructure?",
+      "body": "Whether you're launching a neobank, building a CBDC, or deploying stablecoin rails, Quecko's fintech engineering team is ready."
+    },
+    "faqs": [
+      { "q": "Can you build a CBDC for a central bank?", "a": "Yes — we design retail and wholesale CBDC architecture with offline payment and cross-border interoperability." },
+      { "q": "Do you handle regulatory compliance?", "a": "Our Compliance & Legal Advisory team works alongside the technical build to ensure all required licenses and compliance frameworks are in place." },
+      { "q": "What chains do you support for payment infrastructure?", "a": "We work across Ethereum, BSC, Solana, Tron, Polygon, and custom chains based on your requirements." }
+    ]
+  },
+  "consultancy": {
+    "title": "CONSULTANCY",
+    "hero": {
+      "headline": "Strategic Technology Consulting — From Assessment to Roadmap",
+      "subhead": "Quecko provides dedicated strategic consulting for organizations exploring blockchain, AI, and digital transformation — feasibility assessment, architecture planning, and technology selection before any development begins.",
+      "ctaPrimary": "Start a Consultation",
+      "ctaSecondary": "Explore Our Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com"
+    },
+    "problem": {
+      "tagline": "The Challenge",
+      "headline": "Technology adoption decisions need unbiased assessment, not vendor pitches.",
+      "body": "Organizations exploring blockchain, AI, or major platform investments need a partner whose recommendation isn't automatically 'yes, build it' — someone who will say no when a simpler solution solves the problem better and faster."
+    },
+    "solution": {
+      "headline": "Independent technology strategy from a team that also ships production systems.",
+      "steps": [
+        { "title": "Discovery Workshop", "desc": "Understand business goals, constraints, and current capabilities." },
+        { "title": "Feasibility & Architecture", "desc": "Validate use case and define technical approach." },
+        { "title": "Roadmap Delivery", "desc": "Actionable plan with technology, timeline, and cost guidance." }
+      ]
+    },
+    "subServices": {
+      "web3-and-blockchain-consultation": { "title": "Web3 & Blockchain Consultation", "slug": "web3-and-blockchain-consultation", "headline": "Blockchain feasibility and strategy consulting.", "overview": "Strategic consulting for blockchain adoption — use case validation, chain selection, and technical roadmapping.", "capabilities": ["Feasibility assessment", "L1/L2 chain selection", "Build vs. buy analysis", "Technical roadmapping"] }
+    },
+    "differentiation": {
+      "tagline": "Our Edge",
+      "headline": "Strategy from builders — not consultants who've never shipped.",
+      "body": "Quecko's consulting comes from a team that also designs and ships production Web3, AI, and enterprise systems. Our recommendations are grounded in real engineering experience, not theoretical frameworks."
+    },
+    "security": {
+      "headline": "Independent, unbiased technology assessment.",
+      "body": "Our consulting engagements are designed to give you an honest, independent view of what's feasible, compliant, and cost-effective — even when the answer is 'don't build this.'"
+    },
+    "cta": {
+      "headline": "Ready to plan your technology strategy?",
+      "body": "Get an unbiased assessment before committing budget. Quecko's consulting team is ready to help you make the right decision."
+    },
+    "faqs": [
+      { "q": "Do we have to build with Quecko after the consultation?", "a": "No — the consultation is standalone. Many clients use it to make an informed decision with no obligation." },
+      { "q": "How long does a consultation take?", "a": "Most engagements run 2–4 weeks from initial workshop to roadmap delivery." },
+      { "q": "What if you conclude we shouldn't use blockchain?", "a": "We'll tell you directly — a clear 'not the right fit' is a legitimate outcome." }
+    ]
+  },
+  "web3-enterprise": {
+    "title": "WEB3 ENTERPRISE SOLUTIONS",
+    "hero": {
+      "headline": "Enterprise Blockchain Solutions — From Pilot to Production",
+      "subhead": "Quecko delivers enterprise-grade blockchain infrastructure — insurance, trade finance, carbon credits, government systems, and institutional-grade KYC/AML platforms built for regulated environments.",
+      "ctaPrimary": "Start a Project",
+      "ctaSecondary": "Explore Our Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com"
+    },
+    "problem": {
+      "tagline": "The Challenge",
+      "headline": "Enterprise blockchain projects die between demo and production.",
+      "body": "Most enterprise pilots work with clean test data and three participants, then collapse once real ERP integrations, dozens of stakeholders, and regulatory requirements enter the picture. Getting from pilot to production requires engineering discipline most Web3-native teams haven't had to exercise."
+    },
+    "solution": {
+      "headline": "Production-focused enterprise blockchain from architecture to scale.",
+      "steps": [
+        { "title": "Discovery & Architecture", "desc": "Map business processes, stakeholders, and data-sharing requirements." },
+        { "title": "Pilot Build", "desc": "Smart contracts and integration with a limited stakeholder group." },
+        { "title": "Scale & Launch", "desc": "Full stakeholder onboarding, compliance integration, and production deployment." }
+      ]
+    },
+    "subServices": {
+      "blockchain-insurance": { "title": "Blockchain Insurance", "slug": "blockchain-insurance", "headline": "Parametric insurance and automated claims.", "overview": "Blockchain insurance platforms with parametric coverage and transparent risk pools.", "capabilities": ["Parametric coverage logic", "Automated claims processing", "Risk pool management"] },
+      "blockchain-trade-finance": { "title": "Blockchain Trade Finance", "slug": "blockchain-trade-finance", "headline": "On-chain trade finance infrastructure.", "overview": "Letters of credit, supply chain finance, and cross-border trade settlement.", "capabilities": ["Letter of credit automation", "Multi-party workflows", "Cross-border settlement"] },
+      "carbon-credit-platforms": { "title": "Carbon Credit Platforms", "slug": "carbon-credit-platforms", "headline": "Tokenized carbon offsets and ESG registries.", "overview": "Verifiable carbon credit systems with on-chain tracking and marketplace.", "capabilities": ["Carbon credit tokenization", "Verification oracle integration", "ESG reporting dashboards"] },
+      "enterprise-blockchain-solutions": { "title": "Enterprise Blockchain Solutions", "slug": "enterprise-blockchain-solutions", "headline": "Private and consortium blockchain networks.", "overview": "Permissioned ledger infrastructure for enterprise use cases.", "capabilities": ["Hyperledger/Corda development", "ERP integration", "Multi-stakeholder governance"] },
+      "government-blockchain-solutions": { "title": "Government Blockchain Solutions", "slug": "government-blockchain-solutions", "headline": "Public sector blockchain infrastructure.", "overview": "Identity, land titling, voting, and public records on distributed ledgers.", "capabilities": ["Digital identity systems", "Land registry solutions", "Voting and governance platforms"] },
+      "kyc-aml-platforms": { "title": "KYC/AML Platforms", "slug": "kyc-aml-platforms", "headline": "On-chain compliance and identity attestation.", "overview": "Zero-knowledge identity verification and transaction monitoring platforms.", "capabilities": ["ZK-proof identity", "Transaction monitoring", "Regulatory reporting"] }
+    },
+    "differentiation": {
+      "tagline": "Our Edge",
+      "headline": "We ship enterprise blockchain to production — not just pilot.",
+      "body": "Quecko specializes in the hardest part of enterprise blockchain: getting from pilot to production. We integrate with real ERP systems, handle multi-stakeholder governance, and build for the scale and compliance requirements regulated industries demand."
+    },
+    "security": {
+      "headline": "Enterprise-grade security and compliance by design.",
+      "body": "Every enterprise engagement includes security architecture aligned with institutional standards, data privacy controls, audit trail infrastructure, and governance frameworks designed for regulated environments."
+    },
+    "cta": {
+      "headline": "Ready to bring blockchain to your enterprise?",
+      "body": "From insurance to trade finance to government systems, Quecko's enterprise team delivers production-grade blockchain infrastructure."
+    },
+    "faqs": [
+      { "q": "Do we need a public blockchain?", "a": "Usually not — most enterprise use cases run best on permissioned or consortium networks." },
+      { "q": "Can this integrate with existing enterprise software?", "a": "Yes — ERP, CRM, and legacy system integration is core to every enterprise engagement." },
+      { "q": "How long does a typical pilot take?", "a": "Pilots typically run 3–6 months before scaling to full production." }
+    ]
+  },
+  "web3-compliance": {
+    "title": "WEB3 COMPLIANCE & LEGAL ADVISORY",
+    "hero": {
+      "headline": "Web3 Compliance & Legal Advisory — From Licensing to Audit",
+      "subhead": "Quecko provides regulatory compliance consulting, licensing support, AML/CFT policy design, tax advisory, and legal structuring for crypto businesses and token launches.",
+      "ctaPrimary": "Start a Consultation",
+      "ctaSecondary": "Explore Our Work",
+      "ctaSecondaryLink": "https://portfolio.quecko.com"
+    },
+    "problem": {
+      "tagline": "The Challenge",
+      "headline": "Regulatory enforcement is accelerating — compliance is no longer optional.",
+      "body": "FATF Travel Rule enforcement, MiCA implementation, SEC enforcement actions, and VARA licensing requirements mean crypto businesses need real compliance infrastructure, not template policies. Written AML policy has to translate abstract regulatory principles into specific, operational rules that survive real regulatory scrutiny."
+    },
+    "solution": {
+      "headline": "Compliance-first advisory from a team that understands both regulation and technology.",
+      "steps": [
+        { "title": "Regulatory Assessment", "desc": "Map applicable regulations, jurisdictions, and compliance gaps." },
+        { "title": "Policy & Framework Design", "desc": "Written compliance programs, risk scoring, and Travel Rule strategy." },
+        { "title": "Implementation Support", "desc": "Licensing applications, ongoing compliance monitoring, and audit preparation." }
+      ]
+    },
+    "subServices": {
+      "aml-cft-policy-framework-design": { "title": "AML/CFT Policy & Framework Design", "slug": "aml-cft-policy-framework-design", "headline": "Written AML/CFT compliance documentation.", "overview": "Risk-scoring policies, CDD procedures, and Travel Rule strategy.", "capabilities": ["AML program documentation", "Risk tier methodology", "Travel Rule compliance"] },
+      "crypto-licensing-registration-support": { "title": "Crypto Licensing & Registration", "slug": "crypto-licensing-registration-support", "headline": "VASP and exchange license acquisition.", "overview": "VASP registration, MSB/MTL applications, and exchange authorization.", "capabilities": ["VASP licensing", "MSB/MTL applications", "Multi-jurisdiction support"] },
+      "crypto-tax-advisory": { "title": "Crypto Tax Advisory", "slug": "crypto-tax-advisory", "headline": "Multi-jurisdictional crypto tax strategy.", "overview": "On-chain transaction accounting, cost-basis tracking, and tax optimization.", "capabilities": ["Transaction classification", "Cost-basis methodology", "Multi-jurisdiction tax policy"] },
+      "data-privacy-cross-border-compliance": { "title": "Data Privacy & Cross-Border Compliance", "slug": "data-privacy-cross-border-compliance", "headline": "GDPR-compliant decentralized data handling.", "overview": "Privacy framework design for Web3 platforms handling cross-border data.", "capabilities": ["GDPR compliance architecture", "On-chain privacy design", "Cross-border data frameworks"] },
+      "legal-structuring-token-launches": { "title": "Legal Structuring for Token Launches", "slug": "legal-structuring-token-launches", "headline": "Token entity and DAO governance structuring.", "overview": "Foundation setup, DAO governance, and token classification for compliant launches.", "capabilities": ["Offshore foundation setup", "DAO governance structuring", "Token classification advisory"] },
+      "regulatory-compliance-consulting": { "title": "Regulatory Compliance Consulting", "slug": "regulatory-compliance-consulting", "headline": "MiCA, SEC/CFTC, and VARA regulatory strategy.", "overview": "Gap analysis, regulatory strategy, and compliance roadmap development.", "capabilities": ["MiCA readiness assessment", "SEC/CFTC guidance", "VARA licensing support"] },
+      "regulatory-framework-development-institutions": { "title": "Regulatory Framework for Institutions", "slug": "regulatory-framework-development-institutions", "headline": "Institutional sandbox and central bank frameworks.", "overview": "Framework design for regulators and central banks exploring digital assets.", "capabilities": ["Regulatory sandbox design", "CBDC policy frameworks", "Institutional governance"] },
+      "whitepaper-documentation-legal-review": { "title": "Whitepaper & Documentation Review", "slug": "whitepaper-documentation-legal-review", "headline": "Token classification and whitepaper compliance.", "overview": "Howey Test analysis, utility vs. security classification, and documentation audit.", "capabilities": ["Howey Test audit", "Token classification", "Whitepaper compliance review"] }
+    },
+    "differentiation": {
+      "tagline": "Our Edge",
+      "headline": "Compliance expertise from a team that builds the systems, not just writes the policies.",
+      "body": "Quecko's compliance advisory is backed by a team that also engineers the KYC/AML platforms, transaction monitoring systems, and regulatory reporting tools — giving our policy recommendations practical, implementable depth."
+    },
+    "security": {
+      "headline": "Regulatory compliance that survives real scrutiny.",
+      "body": "Our compliance frameworks are designed to pass regulatory audits, not just check boxes. Written policies translate abstract regulations into specific, operational rules with exact thresholds and escalation triggers."
+    },
+    "cta": {
+      "headline": "Ready to get compliant?",
+      "body": "From licensing to AML policy to token classification, Quecko's compliance team provides end-to-end regulatory support."
+    },
+    "faqs": [
+      { "q": "Do you handle licensing applications?", "a": "Yes — we support VASP registration, MSB/MTL applications, and exchange authorization across multiple jurisdictions." },
+      { "q": "Can you help classify our token as utility vs. security?", "a": "Yes — Howey Test analysis and token classification advisory is a core service." },
+      { "q": "Do you provide ongoing compliance monitoring?", "a": "Yes — we offer retainer-based compliance advisory for ongoing regulatory support." }
+    ]
   }
 };

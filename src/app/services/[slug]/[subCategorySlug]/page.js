@@ -66,8 +66,8 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 5. Security / Audit / Shield / Guardrails / Governance
-  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety") || t.includes("trust") || t.includes("quality") || t.includes("qa")) {
+  // 5. Security / Audit / Shield / Guardrails / Governance / Compliance / Legal / Regulatory / Licensing / Tax
+  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety") || t.includes("trust") || t.includes("quality") || t.includes("qa") || t.includes("legal") || t.includes("regulatory") || t.includes("licensing") || t.includes("aml") || t.includes("kyc") || t.includes("cft") || t.includes("travel rule") || t.includes("tax") || t.includes("whitepaper") || t.includes("privacy")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z" />
@@ -87,8 +87,8 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 7. Commerce / Cart / Checkout / Payment / Finance / Fintech
-  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription") || t.includes("finance") || t.includes("fintech") || t.includes("sales") || t.includes("money") || t.includes("monetization")) {
+  // 7. Commerce / Cart / Checkout / Payment / Finance / Fintech / Banking / Insurance / CBDC / Remittance / Lending
+  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription") || t.includes("finance") || t.includes("fintech") || t.includes("sales") || t.includes("money") || t.includes("monetization") || t.includes("banking") || t.includes("insurance") || t.includes("cbdc") || t.includes("remittance") || t.includes("lending") || t.includes("neobank") || t.includes("stablecoin") || t.includes("trade finance") || t.includes("carbon") || t.includes("ico") || t.includes("tokenomics")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="8" cy="21" r="1" />

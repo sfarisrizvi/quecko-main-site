@@ -45,6 +45,26 @@ const CATEGORY_MAP = {
   "web3-blockchain-engineering": {
     folder: "Web3 & Blockchain Engineering",
     name: "Web3 & Blockchain Engineering"
+  },
+  "coin-token-dev": {
+    folder: "Coin & Token Development",
+    name: "Coin & Token Development"
+  },
+  "crypto-banking": {
+    folder: "Crypto Banking & Financial Rails",
+    name: "Crypto Banking & Financial Rails"
+  },
+  "consultancy": {
+    folder: "Consultancy",
+    name: "Consultancy"
+  },
+  "web3-enterprise": {
+    folder: "Web3 Enterprise Solutions",
+    name: "Web3 Enterprise Solutions"
+  },
+  "web3-compliance": {
+    folder: "Web3 Compliance & Legal Advisory",
+    name: "Web3 Compliance & Legal Advisory"
   }
 };
 

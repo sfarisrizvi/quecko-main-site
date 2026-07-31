@@ -1,0 +1,35 @@
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background: rgba(193, 255, 20, 0.4);
+  border: 1px solid rgba(193, 255, 20, 0.8);
+  pointer-events: none;
+  z-index: 99999;
+  transition: transform 0.08s ease-out, width 0.25s ease, height 0.25s ease, background 0.25s ease;
+  backdrop-filter: blur(2px);
+
+  &.hovered {
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+    margin-left: -24px;
+    background: rgba(193, 255, 20, 0.2);
+    border-color: rgba(193, 255, 20, 1);
+  }
+
+  [data-theme='light'] & {
+    background: rgba(24, 24, 27, 0.2);
+    border-color: rgba(24, 24, 27, 0.6);
+
+    &.hovered {
+      background: rgba(0, 113, 227, 0.2);
+      border-color: rgba(0, 113, 227, 0.8);
+    }
+  }
+}

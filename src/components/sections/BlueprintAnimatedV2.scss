@@ -1,0 +1,323 @@
+.blueprint-v2-section {
+  padding: 100px 0;
+  background-color: var(--v2-bg);
+  transition: background-color 0.5s ease;
+}
+
+.blueprint-v2-container {
+  max-width: 100%;
+  padding: 0 2%;
+}
+
+.blueprint-left-header {
+  text-align: left;
+  margin-bottom: 50px;
+  max-width: 700px;
+
+  h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--v2-text);
+    margin-bottom: 16px;
+    font-family: 'Aeonik', sans-serif;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: var(--v2-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.blueprint-grid-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: flex-start;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blueprint-timeline-wrapper {
+  position: relative;
+  padding-left: 50px;
+
+  @media (max-width: 768px) {
+    padding-left: 36px;
+  }
+}
+
+.blueprint-timeline-track {
+  position: absolute;
+  left: 18px;
+  top: 30px;
+  bottom: 30px;
+  width: 3px;
+  background: var(--v2-border);
+  border-radius: 4px;
+
+  @media (max-width: 768px) {
+    left: 10px;
+  }
+}
+
+.blueprint-timeline-progress {
+  width: 100%;
+  height: 0;
+  background: var(--v2-accent);
+  box-shadow: 0 0 12px var(--v2-accent);
+  border-radius: 4px;
+}
+
+.blueprint-timeline-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blueprint-timeline-card {
+  position: relative;
+
+  .timeline-node {
+    position: absolute;
+    left: -42px;
+    top: 24px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--v2-bg);
+    border: 3px solid var(--v2-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    z-index: 3;
+
+    @media (max-width: 768px) {
+      left: -32px;
+      width: 16px;
+      height: 16px;
+    }
+
+    .node-inner-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: transparent;
+      transition: background 0.4s ease;
+    }
+  }
+
+  .card-inner {
+    background: var(--v2-card-bg);
+    border: 1px solid var(--v2-border);
+    border-radius: 20px;
+    padding: 24px 28px;
+    backdrop-filter: blur(20px);
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  &.active {
+    .timeline-node {
+      border-color: var(--v2-accent);
+      background: var(--v2-accent);
+      box-shadow: 0 0 16px var(--v2-accent);
+
+      .node-inner-dot {
+        background: #000;
+      }
+    }
+
+    .card-inner {
+      border-color: var(--v2-border-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--v2-border);
+
+    .phase-days-badge {
+      font-family: 'Inter', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--v2-accent);
+      background: rgba(193, 255, 20, 0.12);
+      padding: 3px 10px;
+      border-radius: 100px;
+
+      [data-theme='light'] & {
+        background: rgba(0, 0, 0, 0.06);
+        color: #18181b;
+      }
+    }
+
+    .phase-title {
+      font-family: 'Aeonik', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--v2-text);
+      margin: 0;
+    }
+  }
+
+  .phase-tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: var(--v2-text-muted);
+      line-height: 1.5;
+
+      .task-bullet {
+        color: var(--v2-accent);
+        font-weight: 800;
+        font-size: 12px;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+/* Compact Vector Milestone Progress Diagram Side */
+.blueprint-vector-side {
+  position: sticky;
+  top: 140px;
+
+  .vector-card-container {
+    background: var(--v2-card-bg);
+    border: 1px solid var(--v2-border);
+    border-radius: 24px;
+    padding: 32px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    .vector-card-header {
+      margin-bottom: 30px;
+
+      .vector-badge {
+        font-family: 'Inter', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--v2-accent);
+        background: rgba(193, 255, 20, 0.12);
+        padding: 4px 12px;
+        border-radius: 100px;
+
+        [data-theme='light'] & {
+          background: rgba(0, 0, 0, 0.06);
+          color: #18181b;
+        }
+      }
+    }
+
+    .vector-roadmap-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .roadmap-step-node {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .step-circle {
+        font-family: 'Inter', monospace;
+        font-size: 12px;
+        font-weight: 700;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: var(--v2-bg);
+        border: 2px solid var(--v2-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--v2-text-muted);
+        transition: all 0.3s ease;
+      }
+
+      .step-label {
+        font-family: 'Aeonik', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--v2-text-muted);
+        transition: color 0.3s ease;
+      }
+
+      &.active {
+        .step-circle {
+          border-color: var(--v2-accent);
+          background: var(--v2-accent);
+          color: #000;
+          box-shadow: 0 0 12px var(--v2-accent);
+        }
+
+        .step-label {
+          color: var(--v2-text);
+        }
+      }
+    }
+
+    .roadmap-line {
+      width: 2px;
+      height: 16px;
+      background: var(--v2-border);
+      margin-left: 15px;
+
+      &.active {
+        background: var(--v2-accent);
+      }
+    }
+
+    .vector-card-footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      border-top: 1px solid var(--v2-border);
+
+      .footer-metric {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          font-family: 'Aeonik', sans-serif;
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: var(--v2-text);
+        }
+
+        span {
+          font-size: 0.85rem;
+          color: var(--v2-text-muted);
+        }
+      }
+    }
+  }
+}

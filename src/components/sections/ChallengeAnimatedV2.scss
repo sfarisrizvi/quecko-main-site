@@ -1,0 +1,229 @@
+.challenge-v2-section {
+  padding: 100px 0;
+  background-color: var(--v2-bg);
+  transition: background-color 0.5s ease;
+}
+
+.challenge-v2-container {
+  max-width: 100%;
+  padding: 0 2%;
+}
+
+.challenge-asymmetric-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: flex-start;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.eyebrow-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+
+  &.warning-tag {
+    color: #ff9f0a;
+  }
+
+  &.success-tag {
+    color: var(--v2-accent);
+  }
+}
+
+.problem-editorial-side {
+  padding-right: 20px;
+
+  @media (max-width: 991px) {
+    padding-right: 0;
+  }
+
+  .editorial-headline {
+    font-family: 'Aeonik', sans-serif;
+    font-size: 2.25rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--v2-text);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .editorial-body {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--v2-text-muted);
+    margin-bottom: 40px;
+  }
+}
+
+/* Paper to Blockchain Metaphor Graphic */
+.paper-to-blockchain-metaphor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--v2-card-bg);
+  border: 1px solid var(--v2-border);
+  border-radius: 20px;
+  padding: 24px 30px;
+  backdrop-filter: blur(20px);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metaphor-node {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    svg {
+      color: var(--v2-accent);
+
+      [data-theme='light'] & {
+        color: #18181b;
+      }
+    }
+
+    span {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--v2-text);
+    }
+  }
+
+  .metaphor-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    .digitize-label {
+      font-family: 'Inter', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--v2-accent);
+    }
+  }
+}
+
+/* Solution Flow Diagram */
+.solution-glass-card {
+  background: var(--v2-card-bg);
+  border: 1px solid var(--v2-border);
+  border-radius: 24px;
+  padding: 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    padding: 28px;
+  }
+
+  .solution-card-title {
+    font-family: 'Aeonik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--v2-text);
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+}
+
+.solution-flow-diagram {
+  position: relative;
+  padding-left: 36px;
+}
+
+.flow-connector-track {
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+  background: var(--v2-border);
+}
+
+.flow-connector-fill {
+  width: 100%;
+  height: 0;
+  background: var(--v2-accent);
+  box-shadow: 0 0 8px var(--v2-accent);
+}
+
+.flow-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.flow-step-item {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+
+  .flow-step-icon-wrapper {
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--v2-bg);
+    border: 2px solid var(--v2-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--v2-accent);
+    box-shadow: 0 0 12px rgba(193, 255, 20, 0.2);
+
+    [data-theme='light'] & {
+      border-color: #18181b;
+      color: #18181b;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .flow-step-body {
+    padding-left: 16px;
+
+    .flow-step-num {
+      font-family: 'Inter', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--v2-accent);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    h4 {
+      font-family: 'Aeonik', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--v2-text);
+      margin: 0 0 6px 0;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--v2-text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+}

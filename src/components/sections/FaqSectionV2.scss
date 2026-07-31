@@ -1,0 +1,132 @@
+.faq-v2-section {
+  padding: 100px 0;
+  background-color: var(--v2-bg);
+  transition: background-color 0.5s ease;
+}
+
+.faq-v2-container {
+  max-width: 100%;
+  padding: 0 2%;
+}
+
+.faq-grid-split {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: flex-start;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.faq-left-side {
+  h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--v2-text);
+    margin-bottom: 16px;
+    font-family: 'Aeonik', sans-serif;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: var(--v2-text-muted);
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+}
+
+/* Interactive Rotating Globe SVG Animation */
+.rotating-globe-wrapper {
+  background: var(--v2-card-bg);
+  border: 1px solid var(--v2-border);
+  border-radius: 24px;
+  padding: 40px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  .globe-graphic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .globe-svg {
+      transform-origin: center;
+      animation: globeRotate 25s linear infinite;
+    }
+
+    .orbit-ring-outer {
+      animation: counterRotate 35s linear infinite;
+      transform-origin: center;
+    }
+
+    .orbit-dot {
+      animation: pulseGlow 2s ease-in-out infinite alternate;
+    }
+
+    .globe-center-badge {
+      margin-top: 20px;
+
+      span {
+        font-family: 'Inter', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--v2-accent);
+        background: rgba(193, 255, 20, 0.12);
+        padding: 6px 14px;
+        border-radius: 100px;
+
+        [data-theme='light'] & {
+          background: rgba(0, 0, 0, 0.06);
+          color: #18181b;
+        }
+      }
+    }
+  }
+}
+
+@keyframes globeRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes counterRotate {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulseGlow {
+  0% { opacity: 0.4; r: 3px; }
+  100% { opacity: 1; r: 5px; }
+}
+
+.faq-right-side {
+  /* Style FAQ Accordion to match V2 theme */
+  .accordion-item, .faq-item {
+    background: var(--v2-card-bg) !important;
+    border: 1px solid var(--v2-border) !important;
+    border-radius: 16px !important;
+    margin-bottom: 16px !important;
+
+    h3, .question, .faq-title {
+      color: var(--v2-text) !important;
+      font-family: 'Aeonik', sans-serif !important;
+    }
+
+    p, .answer, .faq-desc {
+      color: var(--v2-text-muted) !important;
+    }
+  }
+}
