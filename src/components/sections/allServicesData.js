@@ -59,13 +59,15 @@ export const allServicesData = {
       "defi-platforms": {
         "title": "DeFi Platforms",
         "slug": "defi-platforms",
-        "headline": "Yield engines, liquidity pools, and lending markets built to scale.",
-        "overview": "We build non-custodial financial platforms, including automated market makers, lending/borrowing markets, and yield aggregators with risk-mitigating logic.",
+        "headline": "Yield engines, liquidity pools, lending markets, and VRF lotteries.",
+        "overview": "We build non-custodial financial platforms including AMMs, lending protocols, staking pools, yield farming vaults, and verifiable on-chain lotteries.",
         "capabilities": [
-          "Automated Market Maker (AMM) custom routing",
-          "Decentralized lending and borrowing protocols",
-          "Staking, restaking, and liquid staking tokens (LSTs)",
-          "Oracle integration (Chainlink, Pyth) for real-time asset feeds"
+          "AMM & Concentrated Liquidity Pools",
+          "Lending, Borrowing & Collateral Rails",
+          "Yield Farming & Auto-Compounding Vaults",
+          "Staking & Liquid Staking Protocols",
+          "On-Chain Lotteries & VRF Draw Games",
+          "Cross-Chain DeFi & Bridge Aggregations"
         ]
       },
       "crypto-exchanges-cex-dex": {
@@ -168,92 +170,18 @@ export const allServicesData = {
           "Carbon credit registries"
         ]
       },
-      "aml-cft-policy-framework-design": {
-        "title": "AML/CFT Policy & Framework Design",
-        "slug": "aml-cft-policy-framework-design",
-        "headline": "Written AML/CFT compliance documentation.",
-        "overview": "Risk-scoring policies, CDD procedures, and Travel Rule strategy.",
+      "web3-compliance-legal-advisory": {
+        "title": "Web3 Compliance & Legal Advisory",
+        "slug": "web3-compliance-legal-advisory",
+        "headline": "Regulatory roadmaps, licensing support, legal token structures, AML programs, and data privacy audits.",
+        "overview": "We deliver multi-jurisdictional compliance roadmaps, VASP/MSB licensing support, foundation legal wraps, Travel Rule policies, GDPR privacy setups, and institutional frameworks.",
         "capabilities": [
-          "AML program documentation",
-          "Risk tier methodology",
-          "Travel Rule compliance"
-        ]
-      },
-      "crypto-licensing-registration-support": {
-        "title": "Crypto Licensing & Registration",
-        "slug": "crypto-licensing-registration-support",
-        "headline": "VASP and exchange license acquisition.",
-        "overview": "VASP registration, MSB/MTL applications, and exchange authorization.",
-        "capabilities": [
-          "VASP licensing",
-          "MSB/MTL applications",
-          "Multi-jurisdiction support"
-        ]
-      },
-      "crypto-tax-advisory": {
-        "title": "Crypto Tax Advisory",
-        "slug": "crypto-tax-advisory",
-        "headline": "Multi-jurisdictional crypto tax strategy.",
-        "overview": "On-chain transaction accounting, cost-basis tracking, and tax optimization.",
-        "capabilities": [
-          "Transaction classification",
-          "Cost-basis methodology",
-          "Multi-jurisdiction tax policy"
-        ]
-      },
-      "data-privacy-cross-border-compliance": {
-        "title": "Data Privacy & Cross-Border Compliance",
-        "slug": "data-privacy-cross-border-compliance",
-        "headline": "GDPR-compliant decentralized data handling.",
-        "overview": "Privacy framework design for Web3 platforms handling cross-border data.",
-        "capabilities": [
-          "GDPR compliance architecture",
-          "On-chain privacy design",
-          "Cross-border data frameworks"
-        ]
-      },
-      "legal-structuring-token-launches": {
-        "title": "Legal Structuring for Token Launches",
-        "slug": "legal-structuring-token-launches",
-        "headline": "Token entity and DAO governance structuring.",
-        "overview": "Foundation setup, DAO governance, and token classification for compliant launches.",
-        "capabilities": [
-          "Offshore foundation setup",
-          "DAO governance structuring",
-          "Token classification advisory"
-        ]
-      },
-      "regulatory-compliance-consulting": {
-        "title": "Regulatory Compliance Consulting",
-        "slug": "regulatory-compliance-consulting",
-        "headline": "MiCA, SEC/CFTC, and VARA regulatory strategy.",
-        "overview": "Gap analysis, regulatory strategy, and compliance roadmap development.",
-        "capabilities": [
-          "MiCA readiness assessment",
-          "SEC/CFTC guidance",
-          "VARA licensing support"
-        ]
-      },
-      "regulatory-framework-development-institutions": {
-        "title": "Regulatory Framework for Institutions",
-        "slug": "regulatory-framework-development-institutions",
-        "headline": "Institutional sandbox and central bank frameworks.",
-        "overview": "Framework design for regulators and central banks exploring digital assets.",
-        "capabilities": [
-          "Regulatory sandbox design",
-          "CBDC policy frameworks",
-          "Institutional governance"
-        ]
-      },
-      "whitepaper-documentation-legal-review": {
-        "title": "Whitepaper & Documentation Review",
-        "slug": "whitepaper-documentation-legal-review",
-        "headline": "Token classification and whitepaper compliance.",
-        "overview": "Howey Test analysis, utility vs. security classification, and documentation audit.",
-        "capabilities": [
-          "Howey Test audit",
-          "Token classification",
-          "Whitepaper compliance review"
+          "Regulatory Strategy & Market Entry Consulting",
+          "Crypto Licensing & Registry Support",
+          "Legal Structuring & Token Launches",
+          "AML/CFT Policies & Travel Rule Protocols",
+          "Whitepaper & Marketing Legal Reviews",
+          "Data Privacy, Tax & Institutional Frameworks"
         ]
       },
       "crypto-banking": {

@@ -38,19 +38,10 @@ export const services = [
       { title: "NFT Marketplaces", href: "/services/web3?tab=nft-marketplaces" },
       { title: "RWA Tokenization", href: "/services/web3?tab=rwa-tokenization" },
       { title: "Prediction & Opinion Markets", href: "/services/web3?tab=prediction-opinion-markets" },
-      { title: "DeFi Lottery", href: "/services/web3?tab=defi-lottery" },
-      { title: "DeFi Yield Farming", href: "/services/web3?tab=defi-yield-farming" },
       { title: "Coin & Token Development", href: "/services/web3?tab=coin-token-development" },
       { title: "Crypto Banking & Financial Rails", href: "/services/web3?tab=crypto-banking" },
       { title: "Web3 Enterprise Solutions", href: "/services/web3?tab=web3-enterprise-solutions" },
-      { title: "AML/CFT Policy Design", href: "/services/web3?tab=aml-cft-policy-framework-design" },
-      { title: "Crypto Licensing", href: "/services/web3?tab=crypto-licensing-registration-support" },
-      { title: "Crypto Tax Advisory", href: "/services/web3?tab=crypto-tax-advisory" },
-      { title: "Data Privacy Compliance", href: "/services/web3?tab=data-privacy-cross-border-compliance" },
-      { title: "Token Launch Structuring", href: "/services/web3?tab=legal-structuring-token-launches" },
-      { title: "Regulatory Consulting", href: "/services/web3?tab=regulatory-compliance-consulting" },
-      { title: "Institutional Frameworks", href: "/services/web3?tab=regulatory-framework-development-institutions" },
-      { title: "Whitepaper Review", href: "/services/web3?tab=whitepaper-documentation-legal-review" }
+      { title: "Web3 Compliance & Legal Advisory", href: "/services/web3?tab=web3-compliance-legal-advisory" }
     ]
   },
   {

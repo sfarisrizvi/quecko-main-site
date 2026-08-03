@@ -137,6 +137,117 @@ function getIconForCapability(title = "") {
     );
   }
 
+  // Explicit overrides for DeFi Platforms to prevent duplicates
+  if (t === "amm & concentrated liquidity pools") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+        <path d="M3 3v5h5" />
+        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+        <path d="M16 16h5v5" />
+      </svg>
+    );
+  }
+  if (t === "lending, borrowing & collateral rails") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="1" x2="12" y2="23" />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </svg>
+    );
+  }
+  if (t === "yield farming & auto-compounding vaults") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M7 20h10" />
+        <path d="M10 20V14a2 2 0 0 1 4 0v6" />
+        <path d="M12 11a4 4 0 0 1 4-4h2" />
+        <path d="M12 11a4 4 0 0 0-4-4H6" />
+      </svg>
+    );
+  }
+  if (t === "staking & liquid staking protocols") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="6" rx="8" ry="3" />
+        <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
+        <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+      </svg>
+    );
+  }
+  if (t === "on-chain lotteries & vrf draw games") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+        <path d="M13 5v2" />
+        <path d="M13 17v2" />
+        <path d="M13 11v2" />
+      </svg>
+    );
+  }
+  if (t === "cross-chain defi & bridge aggregations") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="m16 3 4 4-4 4" />
+        <path d="M20 7H4" />
+        <path d="m8 21-4-4 4-4" />
+        <path d="M4 17h16" />
+      </svg>
+    );
+  }
+
+  // Explicit overrides for Web3 Compliance & Legal Advisory to prevent duplicates
+  if (t === "regulatory strategy & market entry consulting") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+      </svg>
+    );
+  }
+  if (t === "crypto licensing & registry support") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="8" r="7" />
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+      </svg>
+    );
+  }
+  if (t === "legal structuring & token launches") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="5" y1="7" x2="19" y2="7" />
+        <path d="M5 7v10a7 7 0 0 0 14 0V7" />
+      </svg>
+    );
+  }
+  if (t === "aml/cft policies & travel rule protocols") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 19.5V15a2 2 0 0 1 2-2h14" />
+        <path d="M20 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z" />
+      </svg>
+    );
+  }
+  if (t === "whitepaper & marketing legal reviews") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+      </svg>
+    );
+  }
+  if (t === "data privacy, tax & institutional frameworks") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <rect width="8" height="5" x="8" y="11" rx="1" />
+        <path d="M10 11V9a2 2 0 1 1 4 0v2" />
+      </svg>
+    );
+  }
+
   // 1. Agent / Bot / Assistant / AI
   if (t.includes("agent") || t.includes("copilot") || t.includes("assistant") || t.includes("chatbot") || t.includes("ai") || t.includes("machine") || t.includes("intelligence")) {
     return (
@@ -506,6 +617,20 @@ export default async function SubCategoryPage({ params }) {
     "kyc-aml-platforms",
     "carbon-credit-platforms"
   ];
+  const DEFI_SLUGS = [
+    "defi-yield-farming",
+    "defi-lottery"
+  ];
+  const COMPLIANCE_SLUGS = [
+    "regulatory-compliance-consulting",
+    "crypto-licensing-registration-support",
+    "legal-structuring-token-launches",
+    "aml-cft-policy-framework-design",
+    "whitepaper-documentation-legal-review",
+    "data-privacy-cross-border-compliance",
+    "crypto-tax-advisory",
+    "regulatory-framework-development-institutions"
+  ];
 
   if (LEGACY_SLUGS.includes(slug)) {
     let targetSub = subCategorySlug;
@@ -515,6 +640,10 @@ export default async function SubCategoryPage({ params }) {
       targetSub = "coin-token-development";
     } else if (ENTERPRISE_SLUGS.includes(subCategorySlug) || subCategorySlug === "web3-enterprise-solutions") {
       targetSub = "web3-enterprise-solutions";
+    } else if (DEFI_SLUGS.includes(subCategorySlug) || subCategorySlug === "defi-platforms") {
+      targetSub = "defi-platforms";
+    } else if (COMPLIANCE_SLUGS.includes(subCategorySlug) || subCategorySlug === "web3-compliance-legal-advisory") {
+      targetSub = "web3-compliance-legal-advisory";
     }
     redirect(`/services/web3/${targetSub}`);
   }
@@ -529,6 +658,14 @@ export default async function SubCategoryPage({ params }) {
 
   if (slug === "web3" && ENTERPRISE_SLUGS.includes(subCategorySlug)) {
     redirect("/services/web3/web3-enterprise-solutions");
+  }
+
+  if (slug === "web3" && DEFI_SLUGS.includes(subCategorySlug)) {
+    redirect("/services/web3/defi-platforms");
+  }
+
+  if (slug === "web3" && COMPLIANCE_SLUGS.includes(subCategorySlug)) {
+    redirect("/services/web3/web3-compliance-legal-advisory");
   }
 
   const pageData = getInternalPageData(slug, subCategorySlug);
