@@ -59,6 +59,10 @@ What Quecko Delivers for Coin & Token Development
 
 - **NFT Lending & Collateral Engines:** Automated floor-price and oracle valuation tools, secure escrows, margins/liquidation triggers, and LTV configurations by rarity tiers.
 
+- **On-Chain Vesting & Lockups:** Secure smart contract vaults, cliff and linear distribution schedules, and multi-signature release controls for team and seed allocations.
+
+- **Liquidity Bootstrapping & Launch Support:** DEX pool provisioning, automated market maker (AMM) setup, token bridge configurations, and post-launch liquidity monitoring.
+
 ---
 
 ## 4. OUR PROCESS

@@ -43,62 +43,7 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 2. Blockchain / Web3 / Crypto / Token / Smart Contract
-  if (t.includes("blockchain") || t.includes("web3") || t.includes("crypto") || t.includes("token") || t.includes("smart contract") || t.includes("nft") || t.includes("defi") || t.includes("exchange")) {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 2 7 12 12 22 7 12 2" />
-        <polyline points="2 17 12 22 22 17" />
-        <polyline points="2 12 12 17 22 12" />
-      </svg>
-    );
-  }
-
-  // 3. Database / Memory / Vector Store / Ledger
-  if (t.includes("database") || t.includes("memory") || t.includes("vector") || t.includes("storage") || t.includes("ledger") || t.includes("rwa") || t.includes("data") || t.includes("cms")) {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-        <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
-      </svg>
-    );
-  }
-
-  // 4. API / Connection / Orchestration / Integration / Cloud
-  if (t.includes("api") || t.includes("orchestration") || t.includes("integration") || t.includes("tool") || t.includes("bridge") || t.includes("cross-chain") || t.includes("cloud") || t.includes("saas") || t.includes("platform")) {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" />
-        <path d="M8 20v-4" />
-        <path d="M12 20v-8" />
-        <path d="M16 20v-6" />
-      </svg>
-    );
-  }
-
-  // 5. Security / Audit / Shield / Guardrails / Governance / Compliance / Legal / Regulatory / Licensing / Tax
-  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety") || t.includes("trust") || t.includes("quality") || t.includes("qa") || t.includes("legal") || t.includes("regulatory") || t.includes("licensing") || t.includes("aml") || t.includes("kyc") || t.includes("cft") || t.includes("travel rule") || t.includes("tax") || t.includes("whitepaper") || t.includes("privacy")) {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z" />
-      </svg>
-    );
-  }
-
-  // 6. Analytics / Chart / Dashboards / Prediction / Growth / SEO
-  if (t.includes("analytics") || t.includes("predictive") || t.includes("charts") || t.includes("dashboard") || t.includes("market") || t.includes("conversion") || t.includes("growth") || t.includes("seo") || t.includes("performance") || t.includes("scale") || t.includes("optimization")) {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="18" y1="20" x2="18" y2="10" />
-        <line x1="12" y1="20" x2="12" y2="4" />
-        <line x1="6" y1="20" x2="6" y2="14" />
-        <polyline points="4 10 10 4 16 10 22 4" />
-      </svg>
-    );
-  }
-
-  // 6.5. Specific Financial Rails: Neobank / Payment / Stablecoin / Remittance / Lending / CBDC
+  // 2. Specific Financial Rails: Neobank / Payment / Stablecoin / Remittance / Lending / CBDC / ICO (Placed high to take precedence)
   if (t.includes("neobank") || t.includes("core banking") || t.includes("banking core")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -119,7 +64,7 @@ function getIconForCapability(title = "") {
       </svg>
     );
   }
-  if (t.includes("stablecoin") || t.includes("minting") || t.includes("reserves")) {
+  if (t.includes("stablecoin") || t.includes("minting") || t.includes("reserves") || t.includes("ico") || t.includes("tokenomics")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="8" cy="8" r="6" />
@@ -138,7 +83,7 @@ function getIconForCapability(title = "") {
       </svg>
     );
   }
-  if (t.includes("lending") || t.includes("yield") || t.includes("collateral")) {
+  if (t.includes("lending") || t.includes("yield") || t.includes("collateral") || t.includes("loan")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <line x1="12" y1="1" x2="12" y2="23" />
@@ -154,13 +99,57 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 7. Commerce / Cart / Checkout / Payment / Finance / Fintech / Banking / Insurance / CBDC / Remittance / Lending
-  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription") || t.includes("finance") || t.includes("fintech") || t.includes("sales") || t.includes("money") || t.includes("monetization") || t.includes("banking") || t.includes("insurance") || t.includes("cbdc") || t.includes("remittance") || t.includes("lending") || t.includes("neobank") || t.includes("stablecoin") || t.includes("trade finance") || t.includes("carbon") || t.includes("ico") || t.includes("tokenomics")) {
+  // 3. Blockchain / Web3 / Crypto / Token / Smart Contract / Launchpad / Liquidity
+  if (t.includes("blockchain") || t.includes("web3") || t.includes("crypto") || t.includes("token") || t.includes("smart contract") || t.includes("nft") || t.includes("defi") || t.includes("exchange") || t.includes("launchpad") || t.includes("launch") || t.includes("liquidity")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="8" cy="21" r="1" />
-        <circle cx="19" cy="21" r="1" />
-        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+        <polyline points="2 17 12 22 22 17" />
+        <polyline points="2 12 12 17 22 12" />
+      </svg>
+    );
+  }
+
+  // 4. Database / Memory / Vector Store / Ledger
+  if (t.includes("database") || t.includes("memory") || t.includes("vector") || t.includes("storage") || t.includes("ledger") || t.includes("rwa") || t.includes("data") || t.includes("cms")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+      </svg>
+    );
+  }
+
+  // 5. API / Connection / Orchestration / Integration / Cloud
+  if (t.includes("api") || t.includes("orchestration") || t.includes("integration") || t.includes("tool") || t.includes("bridge") || t.includes("cross-chain") || t.includes("cloud") || t.includes("saas") || t.includes("platform")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" />
+        <path d="M8 20v-4" />
+        <path d="M12 20v-8" />
+        <path d="M16 20v-6" />
+      </svg>
+    );
+  }
+
+  // 6. Security / Audit / Shield / Guardrails / Governance / Compliance / Legal / Regulatory / Licensing / Tax / Vesting
+  if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety") || t.includes("trust") || t.includes("quality") || t.includes("qa") || t.includes("legal") || t.includes("regulatory") || t.includes("licensing") || t.includes("aml") || t.includes("kyc") || t.includes("cft") || t.includes("travel rule") || t.includes("tax") || t.includes("whitepaper") || t.includes("privacy") || t.includes("vesting") || t.includes("lockup")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z" />
+      </svg>
+    );
+  }
+
+  // 7. Analytics / Chart / Dashboards / Prediction / Growth / SEO
+  if (t.includes("analytics") || t.includes("predictive") || t.includes("charts") || t.includes("dashboard") || t.includes("market") || t.includes("conversion") || t.includes("growth") || t.includes("seo") || t.includes("performance") || t.includes("scale") || t.includes("optimization")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="18" y1="20" x2="18" y2="10" />
+        <line x1="12" y1="20" x2="12" y2="4" />
+        <line x1="6" y1="20" x2="6" y2="14" />
+        <polyline points="4 10 10 4 16 10 22 4" />
       </svg>
     );
   }
