@@ -161,14 +161,24 @@ export async function generateMetadata({ params }) {
   }
 
   const LEGACY_SLUGS = ["coin-token-dev", "crypto-banking", "web3-enterprise", "web3-compliance"];
+  const BANKING_SLUGS = [
+    "cbdc-development",
+    "crypto-payment-gateway",
+    "neobank-development",
+    "p2p-lending-platforms",
+    "stablecoin-infrastructure",
+    "stablecoin-remittance-platforms"
+  ];
+
   const canonicalSlug = LEGACY_SLUGS.includes(slug) ? "web3" : slug;
+  const canonicalSubCategory = BANKING_SLUGS.includes(subCategorySlug) ? "crypto-banking" : subCategorySlug;
 
   return {
     title: `${pageData.frontmatter.title}`,
     description: pageData.frontmatter["seo-meta-description"] || pageData.frontmatter.goal || "",
     keywords: pageData.frontmatter["seo-primary-keywords"] || [],
     alternates: {
-      canonical: `https://quecko.com/services/${canonicalSlug}/${subCategorySlug}`
+      canonical: `https://quecko.com/services/${canonicalSlug}/${canonicalSubCategory}`
     }
   };
 }
@@ -302,8 +312,22 @@ export default async function SubCategoryPage({ params }) {
   const { slug, subCategorySlug } = await params;
   
   const LEGACY_SLUGS = ["coin-token-dev", "crypto-banking", "web3-enterprise", "web3-compliance"];
+  const BANKING_SLUGS = [
+    "cbdc-development",
+    "crypto-payment-gateway",
+    "neobank-development",
+    "p2p-lending-platforms",
+    "stablecoin-infrastructure",
+    "stablecoin-remittance-platforms"
+  ];
+
   if (LEGACY_SLUGS.includes(slug)) {
-    redirect(`/services/web3/${subCategorySlug}`);
+    const targetSub = BANKING_SLUGS.includes(subCategorySlug) ? "crypto-banking" : subCategorySlug;
+    redirect(`/services/web3/${targetSub}`);
+  }
+
+  if (slug === "web3" && BANKING_SLUGS.includes(subCategorySlug)) {
+    redirect("/services/web3/crypto-banking");
   }
 
   const pageData = getInternalPageData(slug, subCategorySlug);

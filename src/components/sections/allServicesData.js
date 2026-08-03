@@ -184,72 +184,6 @@ export const allServicesData = {
           "Gaming and ticketing integration"
         ]
       },
-      "cbdc-development": {
-        "title": "CBDC Development",
-        "slug": "cbdc-development",
-        "headline": "Central Bank Digital Currency architecture.",
-        "overview": "Retail and wholesale CBDC infrastructure for national payment systems.",
-        "capabilities": [
-          "Permissioned ledger design",
-          "Offline payment support",
-          "Cross-border interoperability"
-        ]
-      },
-      "crypto-payment-gateway": {
-        "title": "Crypto Payment Gateway",
-        "slug": "crypto-payment-gateway",
-        "headline": "Non-custodial merchant payment infrastructure.",
-        "overview": "Crypto payment acceptance for merchants with fiat settlement options.",
-        "capabilities": [
-          "Multi-chain payment support",
-          "Real-time settlement",
-          "Merchant dashboards"
-        ]
-      },
-      "neobank-development": {
-        "title": "Neobank Development",
-        "slug": "neobank-development",
-        "headline": "Fiat-to-crypto neobanking platforms.",
-        "overview": "Full-stack neobank with IBAN integration and crypto wallet management.",
-        "capabilities": [
-          "KYC/AML integration",
-          "IBAN and SWIFT support",
-          "Multi-currency wallets"
-        ]
-      },
-      "p2p-lending-platforms": {
-        "title": "P2P Lending Platforms",
-        "slug": "p2p-lending-platforms",
-        "headline": "Automated collateralized P2P lending.",
-        "overview": "Peer-to-peer crypto lending with automated collateral management.",
-        "capabilities": [
-          "Smart contract collateral",
-          "Automated liquidation",
-          "Interest rate models"
-        ]
-      },
-      "stablecoin-infrastructure": {
-        "title": "Stablecoin Infrastructure",
-        "slug": "stablecoin-infrastructure",
-        "headline": "Fiat and algorithmic stablecoin architecture.",
-        "overview": "Design and build stablecoin systems with reserve management and peg mechanisms.",
-        "capabilities": [
-          "Reserve proof systems",
-          "Peg maintenance logic",
-          "Multi-chain issuance"
-        ]
-      },
-      "stablecoin-remittance-platforms": {
-        "title": "Stablecoin Remittance Platforms",
-        "slug": "stablecoin-remittance-platforms",
-        "headline": "Cross-border settlement via stablecoins.",
-        "overview": "Remittance corridors using stablecoins for instant, low-cost cross-border transfers.",
-        "capabilities": [
-          "Local off-ramp networks",
-          "Compliance integration",
-          "Real-time FX conversion"
-        ]
-      },
       "blockchain-insurance": {
         "title": "Blockchain Insurance",
         "slug": "blockchain-insurance",
@@ -402,6 +336,20 @@ export const allServicesData = {
           "Howey Test audit",
           "Token classification",
           "Whitepaper compliance review"
+        ]
+      },
+      "crypto-banking": {
+        "title": "Crypto Banking & Financial Rails",
+        "slug": "crypto-banking",
+        "headline": "Fintech-grade banking and payment gateway rails.",
+        "overview": "Neobanks, payment checkouts, stablecoin reserve audits, remittances, lending cores, and CBDCs.",
+        "capabilities": [
+          "Neobank core ledgers",
+          "Crypto checkout APIs",
+          "Reserve attestation reporting",
+          "Cross-border remittance corridors",
+          "P2P lending collateral vaults",
+          "Wholesale/Retail CBDC networks"
         ]
       }
     },
