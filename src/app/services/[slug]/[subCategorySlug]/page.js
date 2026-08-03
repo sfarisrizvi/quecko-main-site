@@ -33,8 +33,64 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 2. Blockchain / Web3 / Crypto / Token / Smart Contract
-  if (t.includes("blockchain") || t.includes("web3") || t.includes("crypto") || t.includes("token") || t.includes("smart contract") || t.includes("nft") || t.includes("defi") || t.includes("exchange")) {
+  // 2. Specific Financial Rails: Neobank / Payment / Stablecoin / Remittance / Lending / CBDC / ICO (Placed high to take precedence)
+  if (t.includes("neobank") || t.includes("core banking") || t.includes("banking core")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="3" y1="22" x2="21" y2="22" />
+        <line x1="6" y1="18" x2="6" y2="11" />
+        <line x1="10" y1="18" x2="10" y2="11" />
+        <line x1="14" y1="18" x2="14" y2="11" />
+        <line x1="18" y1="18" x2="18" y2="11" />
+        <polygon points="12 2 2 7 22 7 12 2" />
+      </svg>
+    );
+  }
+  if (t.includes("gateway") || t.includes("checkout") || t.includes("payment")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect width="20" height="14" x="2" y="5" rx="2" />
+        <line x1="2" y1="10" x2="22" y2="10" />
+      </svg>
+    );
+  }
+  if (t.includes("stablecoin") || t.includes("minting") || t.includes("reserves") || t.includes("ico") || t.includes("tokenomics")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="8" cy="8" r="6" />
+        <circle cx="18" cy="18" r="4" />
+        <path d="M12 18a6 6 0 0 0-6-6" />
+      </svg>
+    );
+  }
+  if (t.includes("remittance") || t.includes("cross-border") || t.includes("transfer")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="m16 3 4 4-4 4" />
+        <path d="M20 7H4" />
+        <path d="m8 21-4-4 4-4" />
+        <path d="M4 17h16" />
+      </svg>
+    );
+  }
+  if (t.includes("lending") || t.includes("yield") || t.includes("collateral") || t.includes("loan")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="1" x2="12" y2="23" />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </svg>
+    );
+  }
+  if (t.includes("cbdc") || t.includes("national") || t.includes("wholesale")) {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    );
+  }
+
+  // 3. Blockchain / Web3 / Crypto / Token / Smart Contract / Launchpad
+  if (t.includes("blockchain") || t.includes("web3") || t.includes("crypto") || t.includes("token") || t.includes("smart contract") || t.includes("nft") || t.includes("defi") || t.includes("exchange") || t.includes("launchpad")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="12 2 2 7 12 12 22 7 12 2" />
@@ -44,7 +100,7 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 3. Database / Memory / Vector Store / Ledger
+  // 4. Database / Memory / Vector Store / Ledger
   if (t.includes("database") || t.includes("memory") || t.includes("vector") || t.includes("storage") || t.includes("ledger") || t.includes("rwa") || t.includes("data") || t.includes("cms")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -55,7 +111,7 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 4. API / Connection / Orchestration / Integration / Cloud
+  // 5. API / Connection / Orchestration / Integration / Cloud
   if (t.includes("api") || t.includes("orchestration") || t.includes("integration") || t.includes("tool") || t.includes("bridge") || t.includes("cross-chain") || t.includes("cloud") || t.includes("saas") || t.includes("platform")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -67,7 +123,7 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 5. Security / Audit / Shield / Guardrails / Governance / Compliance / Legal / Regulatory / Licensing / Tax
+  // 6. Security / Audit / Shield / Guardrails / Governance / Compliance / Legal / Regulatory / Licensing / Tax
   if (t.includes("security") || t.includes("audit") || t.includes("shield") || t.includes("guardrail") || t.includes("governance") || t.includes("compliance") || t.includes("safety") || t.includes("trust") || t.includes("quality") || t.includes("qa") || t.includes("legal") || t.includes("regulatory") || t.includes("licensing") || t.includes("aml") || t.includes("kyc") || t.includes("cft") || t.includes("travel rule") || t.includes("tax") || t.includes("whitepaper") || t.includes("privacy")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -76,7 +132,7 @@ function getIconForCapability(title = "") {
     );
   }
 
-  // 6. Analytics / Chart / Dashboards / Prediction / Growth / SEO
+  // 7. Analytics / Chart / Dashboards / Prediction / Growth / SEO
   if (t.includes("analytics") || t.includes("predictive") || t.includes("charts") || t.includes("dashboard") || t.includes("market") || t.includes("conversion") || t.includes("growth") || t.includes("seo") || t.includes("performance") || t.includes("scale") || t.includes("optimization")) {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -84,17 +140,6 @@ function getIconForCapability(title = "") {
         <line x1="12" y1="20" x2="12" y2="4" />
         <line x1="6" y1="20" x2="6" y2="14" />
         <polyline points="4 10 10 4 16 10 22 4" />
-      </svg>
-    );
-  }
-
-  // 7. Commerce / Cart / Checkout / Payment / Finance / Fintech / Banking / Insurance / CBDC / Remittance / Lending
-  if (t.includes("commerce") || t.includes("shopify") || t.includes("payment") || t.includes("checkout") || t.includes("billing") || t.includes("subscription") || t.includes("finance") || t.includes("fintech") || t.includes("sales") || t.includes("money") || t.includes("monetization") || t.includes("banking") || t.includes("insurance") || t.includes("cbdc") || t.includes("remittance") || t.includes("lending") || t.includes("neobank") || t.includes("stablecoin") || t.includes("trade finance") || t.includes("carbon") || t.includes("ico") || t.includes("tokenomics")) {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="8" cy="21" r="1" />
-        <circle cx="19" cy="21" r="1" />
-        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
       </svg>
     );
   }
@@ -169,9 +214,19 @@ export async function generateMetadata({ params }) {
     "stablecoin-infrastructure",
     "stablecoin-remittance-platforms"
   ];
+  const TOKEN_SLUGS = [
+    "ico-development",
+    "semi-fungible-tokens",
+    "nft-lending"
+  ];
 
   const canonicalSlug = LEGACY_SLUGS.includes(slug) ? "web3" : slug;
-  const canonicalSubCategory = BANKING_SLUGS.includes(subCategorySlug) ? "crypto-banking" : subCategorySlug;
+  let canonicalSubCategory = subCategorySlug;
+  if (BANKING_SLUGS.includes(subCategorySlug)) {
+    canonicalSubCategory = "crypto-banking";
+  } else if (TOKEN_SLUGS.includes(subCategorySlug)) {
+    canonicalSubCategory = "coin-token-development";
+  }
 
   return {
     title: `${pageData.frontmatter.title}`,
@@ -320,14 +375,28 @@ export default async function SubCategoryPage({ params }) {
     "stablecoin-infrastructure",
     "stablecoin-remittance-platforms"
   ];
+  const TOKEN_SLUGS = [
+    "ico-development",
+    "semi-fungible-tokens",
+    "nft-lending"
+  ];
 
   if (LEGACY_SLUGS.includes(slug)) {
-    const targetSub = BANKING_SLUGS.includes(subCategorySlug) ? "crypto-banking" : subCategorySlug;
+    let targetSub = subCategorySlug;
+    if (BANKING_SLUGS.includes(subCategorySlug)) {
+      targetSub = "crypto-banking";
+    } else if (TOKEN_SLUGS.includes(subCategorySlug) || subCategorySlug === "coin-token-development") {
+      targetSub = "coin-token-development";
+    }
     redirect(`/services/web3/${targetSub}`);
   }
 
   if (slug === "web3" && BANKING_SLUGS.includes(subCategorySlug)) {
     redirect("/services/web3/crypto-banking");
+  }
+
+  if (slug === "web3" && TOKEN_SLUGS.includes(subCategorySlug)) {
+    redirect("/services/web3/coin-token-development");
   }
 
   const pageData = getInternalPageData(slug, subCategorySlug);

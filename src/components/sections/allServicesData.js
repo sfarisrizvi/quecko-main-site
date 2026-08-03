@@ -143,45 +143,15 @@ export const allServicesData = {
       "coin-token-development": {
         "title": "Coin & Token Development",
         "slug": "coin-token-development",
-        "headline": "Custom token issuance and tokenomics engineering.",
-        "overview": "Native coins and standard tokens (ERC-20, BEP-20, SPL) with economic modeling.",
+        "headline": "Engineering sustainable tokens and fundraising structures.",
+        "overview": "ERC-20/BEP-20/SPL tokens, ICO sale launchers, ERC-1155 semi-fungible inventory systems, and NFT-backed lending protocols.",
         "capabilities": [
-          "ERC-20/BEP-20/SPL token development",
-          "Tokenomics design and stress testing",
-          "Multi-chain deployment"
-        ]
-      },
-      "ico-development": {
-        "title": "ICO Development",
-        "slug": "ico-development",
-        "headline": "End-to-end token sale infrastructure.",
-        "overview": "Sale contracts, KYC-gated participation, investor dashboards, and vesting.",
-        "capabilities": [
-          "Smart contract sale mechanics",
-          "KYC/AML integration",
-          "Vesting and distribution automation"
-        ]
-      },
-      "nft-lending": {
-        "title": "NFT Lending",
-        "slug": "nft-lending",
-        "headline": "NFT-backed peer-to-peer credit markets.",
-        "overview": "Collateralized lending protocols using NFTs as liquid collateral.",
-        "capabilities": [
-          "NFT vault infrastructure",
-          "Liquidation mechanics",
-          "Cross-platform collateral support"
-        ]
-      },
-      "semi-fungible-tokens": {
-        "title": "Semi-Fungible Tokens",
-        "slug": "semi-fungible-tokens",
-        "headline": "ERC-1155 and dual-state token engineering.",
-        "overview": "Batch-minting and state-transition token systems for gaming and ticketing.",
-        "capabilities": [
-          "ERC-1155 development",
-          "State-transition logic",
-          "Gaming and ticketing integration"
+          "ERC-20/SPL tokenomics design",
+          "ICO launchpad & whitelist portals",
+          "ERC-1155 gas-efficient SFTs",
+          "NFT-backed lending escrows",
+          "On-chain vesting & allocations",
+          "Liquidity pool setup & support"
         ]
       },
       "blockchain-insurance": {
