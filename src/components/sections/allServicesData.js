@@ -154,70 +154,18 @@ export const allServicesData = {
           "Liquidity pool setup & support"
         ]
       },
-      "blockchain-insurance": {
-        "title": "Blockchain Insurance",
-        "slug": "blockchain-insurance",
-        "headline": "Parametric insurance and automated claims.",
-        "overview": "Blockchain insurance platforms with parametric coverage and transparent risk pools.",
+      "web3-enterprise-solutions": {
+        "title": "Web3 Enterprise Solutions",
+        "slug": "web3-enterprise-solutions",
+        "headline": "Institutional permissioned ledgers, trade finance corridors, compliance engines, and carbon registries.",
+        "overview": "We build Hyperledger/consortium networks, parametric insurance triggers, automated Letter of Credit trade corridors, Travel Rule KYC/AML checks, and Verra-aligned carbon registries.",
         "capabilities": [
-          "Parametric coverage logic",
-          "Automated claims processing",
-          "Risk pool management"
-        ]
-      },
-      "blockchain-trade-finance": {
-        "title": "Blockchain Trade Finance",
-        "slug": "blockchain-trade-finance",
-        "headline": "On-chain trade finance infrastructure.",
-        "overview": "Letters of credit, supply chain finance, and cross-border trade settlement.",
-        "capabilities": [
-          "Letter of credit automation",
-          "Multi-party workflows",
-          "Cross-border settlement"
-        ]
-      },
-      "carbon-credit-platforms": {
-        "title": "Carbon Credit Platforms",
-        "slug": "carbon-credit-platforms",
-        "headline": "Tokenized carbon offsets and ESG registries.",
-        "overview": "Verifiable carbon credit systems with on-chain tracking and marketplace.",
-        "capabilities": [
-          "Carbon credit tokenization",
-          "Verification oracle integration",
-          "ESG reporting dashboards"
-        ]
-      },
-      "enterprise-blockchain-solutions": {
-        "title": "Enterprise Blockchain Solutions",
-        "slug": "enterprise-blockchain-solutions",
-        "headline": "Private and consortium blockchain networks.",
-        "overview": "Permissioned ledger infrastructure for enterprise use cases.",
-        "capabilities": [
-          "Hyperledger/Corda development",
-          "ERP integration",
-          "Multi-stakeholder governance"
-        ]
-      },
-      "government-blockchain-solutions": {
-        "title": "Government Blockchain Solutions",
-        "slug": "government-blockchain-solutions",
-        "headline": "Public sector blockchain infrastructure.",
-        "overview": "Identity, land titling, voting, and public records on distributed ledgers.",
-        "capabilities": [
-          "Digital identity systems",
-          "Land registry solutions",
-          "Voting and governance platforms"
-        ]
-      },
-      "kyc-aml-platforms": {
-        "title": "KYC/AML Platforms",
-        "slug": "kyc-aml-platforms",
-        "headline": "On-chain compliance and identity attestation.",
-        "overview": "Zero-knowledge identity verification and transaction monitoring platforms.",
-        "capabilities": [
-          "ZK-proof identity",
-          "Transaction monitoring",
-          "Regulatory reporting"
+          "Enterprise consortium networks",
+          "Government digital registries",
+          "Automated trade finance",
+          "Parametric insurance oracles",
+          "KYC/AML compliance engines",
+          "Carbon credit registries"
         ]
       },
       "aml-cft-policy-framework-design": {

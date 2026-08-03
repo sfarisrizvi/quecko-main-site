@@ -83,6 +83,70 @@ function getIconForCapability(title = "") {
     );
   }
 
+  // Explicit overrides for Web3 Enterprise Solutions to prevent duplicates
+  if (t === "enterprise consortium & private networks") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="3" />
+        <circle cx="19" cy="5" r="3" />
+        <circle cx="5" cy="19" r="3" />
+        <circle cx="19" cy="19" r="3" />
+        <circle cx="5" cy="5" r="3" />
+        <line x1="12" y1="12" x2="19" y2="5" />
+        <line x1="12" y1="12" x2="5" y2="19" />
+        <line x1="12" y1="12" x2="19" y2="19" />
+        <line x1="12" y1="12" x2="5" y2="5" />
+      </svg>
+    );
+  }
+  if (t === "government digital registries & citizen portals") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="3" y1="22" x2="21" y2="22" />
+        <line x1="6" y1="18" x2="6" y2="11" />
+        <line x1="10" y1="18" x2="10" y2="11" />
+        <line x1="14" y1="18" x2="14" y2="11" />
+        <line x1="18" y1="18" x2="18" y2="11" />
+        <polygon points="12 2 2 7 22 7 12 2" />
+      </svg>
+    );
+  }
+  if (t === "automated trade finance & settlement") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+        <polyline points="14 2 14 8 20 8" />
+        <path d="M16 13H8" />
+        <path d="M16 17H8" />
+        <path d="M10 9H8" />
+      </svg>
+    );
+  }
+  if (t === "parametric insurance & oracle claims") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22v-3a4 4 0 0 0-4-4H5" />
+        <path d="M3 12a9 9 0 0 1 18 0" />
+      </svg>
+    );
+  }
+  if (t === "on-chain kyc & aml compliance engines") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="m9 11 2 2 4-4" />
+      </svg>
+    );
+  }
+  if (t === "carbon credit registries & esg tracking") {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 2 2 4 0 4.25-5.66 7-8.5 8.5C11 16.5 11 20 11 20z" />
+        <path d="M19 2c-2.26 4.33-5.27 7.14-8 8" />
+      </svg>
+    );
+  }
+
   // 1. Agent / Bot / Assistant / AI
   if (t.includes("agent") || t.includes("copilot") || t.includes("assistant") || t.includes("chatbot") || t.includes("ai") || t.includes("machine") || t.includes("intelligence")) {
     return (
