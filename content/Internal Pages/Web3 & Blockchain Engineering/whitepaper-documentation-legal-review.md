@@ -1,7 +1,7 @@
 ---
 title: Whitepaper & Documentation Legal Review | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/whitepaper-documentation-legal-review
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/whitepaper-documentation-legal-review
 audience: Organizations and founders seeking whitepaper & documentation legal review solutions.
 goal: Position Quecko as a trusted partner for whitepaper & documentation legal review.
 primary-cta: Talk to Our Team

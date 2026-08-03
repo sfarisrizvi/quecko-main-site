@@ -1,7 +1,7 @@
 ---
 title: P2P Lending Platforms | Quecko
-page-type: Internal Service Page — Crypto Banking & Financial Rails
-slug: /services/crypto-banking/p2p-lending-platforms
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/p2p-lending-platforms
 audience: Organizations and founders seeking p2p lending platforms solutions.
 goal: Position Quecko as a trusted partner for p2p lending platforms.
 primary-cta: Talk to Our Team

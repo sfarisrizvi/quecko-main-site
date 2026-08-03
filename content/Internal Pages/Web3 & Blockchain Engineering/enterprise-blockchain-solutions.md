@@ -1,7 +1,7 @@
 ---
 title: Enterprise Blockchain Solutions | Quecko
-page-type: Internal Service Page — Web3 Enterprise Solutions
-slug: /services/web3-enterprise/enterprise-blockchain-solutions
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/enterprise-blockchain-solutions
 audience: Organizations and founders seeking enterprise blockchain solutions solutions.
 goal: Position Quecko as a trusted partner for enterprise blockchain solutions.
 primary-cta: Talk to Our Team

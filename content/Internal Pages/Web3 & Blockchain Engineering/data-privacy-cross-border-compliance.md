@@ -1,7 +1,7 @@
 ---
 title: Data Privacy & Cross-Border Compliance | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/data-privacy-cross-border-compliance
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/data-privacy-cross-border-compliance
 audience: Organizations and founders seeking data privacy & cross-border compliance solutions.
 goal: Position Quecko as a trusted partner for data privacy & cross-border compliance.
 primary-cta: Talk to Our Team

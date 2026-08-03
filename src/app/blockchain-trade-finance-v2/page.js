@@ -154,7 +154,7 @@ function getIconForCapability(title = "") {
 
 
 export async function generateMetadata() {
-  const pageData = getInternalPageData("web3-enterprise", "blockchain-trade-finance");
+  const pageData = getInternalPageData("web3", "blockchain-trade-finance");
   if (!pageData) return { title: "V2 Page" };
   return {
     title: `${pageData.frontmatter.title} | V2`,
@@ -291,7 +291,7 @@ function getIconForPhase(index) {
 }
 
 export default async function BlockchainTradeFinanceV2Page() {
-  const slug = "web3-enterprise";
+  const slug = "web3";
   const subCategorySlug = "blockchain-trade-finance";
   const pageData = getInternalPageData(slug, subCategorySlug);
 

@@ -1,7 +1,7 @@
 ---
 title: Regulatory Framework Development for Institutions | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/regulatory-framework-development-institutions
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/regulatory-framework-development-institutions
 audience: Organizations and founders seeking regulatory framework development for institutions solutions.
 goal: Position Quecko as a trusted partner for regulatory framework development for institutions.
 primary-cta: Talk to Our Team

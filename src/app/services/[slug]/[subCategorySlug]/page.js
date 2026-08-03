@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Projects from "@/components/sections/Projects";
@@ -159,12 +160,15 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const LEGACY_SLUGS = ["coin-token-dev", "crypto-banking", "web3-enterprise", "web3-compliance"];
+  const canonicalSlug = LEGACY_SLUGS.includes(slug) ? "web3" : slug;
+
   return {
     title: `${pageData.frontmatter.title}`,
     description: pageData.frontmatter["seo-meta-description"] || pageData.frontmatter.goal || "",
     keywords: pageData.frontmatter["seo-primary-keywords"] || [],
     alternates: {
-      canonical: `https://quecko.com/services/${slug}/${subCategorySlug}`
+      canonical: `https://quecko.com/services/${canonicalSlug}/${subCategorySlug}`
     }
   };
 }
@@ -296,6 +300,12 @@ function getIconForPhase(index) {
 
 export default async function SubCategoryPage({ params }) {
   const { slug, subCategorySlug } = await params;
+  
+  const LEGACY_SLUGS = ["coin-token-dev", "crypto-banking", "web3-enterprise", "web3-compliance"];
+  if (LEGACY_SLUGS.includes(slug)) {
+    redirect(`/services/web3/${subCategorySlug}`);
+  }
+
   const pageData = getInternalPageData(slug, subCategorySlug);
 
   if (!pageData) {

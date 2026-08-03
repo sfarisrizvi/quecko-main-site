@@ -1,7 +1,7 @@
 ---
 title: Neobank Development | Quecko
-page-type: Internal Service Page — Crypto Banking & Financial Rails
-slug: /services/crypto-banking/neobank-development
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/neobank-development
 audience: Organizations and founders seeking neobank development solutions.
 goal: Position Quecko as a trusted partner for neobank development.
 primary-cta: Talk to Our Team

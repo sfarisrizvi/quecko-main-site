@@ -18,6 +18,86 @@ const getSlug = (text) => {
     .replace(/-+/g, "-");
 };
 
+const CardBackCarousel = ({ service, getSlug }) => {
+  const containerRef = useRef(null);
+  const subServices = allServicesData[service.slug]?.subServices;
+  const linksToRender = subServices 
+    ? Object.values(subServices).map(sub => ({ title: sub.title, slug: sub.slug }))
+    : service.links;
+
+  // Chunk links into pages of 9 max
+  const pages = [];
+  const chunkSize = 9;
+  for (let i = 0; i < linksToRender.length; i += chunkSize) {
+    pages.push(linksToRender.slice(i, i + chunkSize));
+  }
+
+  const scrollLeft = (e) => {
+    e.stopPropagation();
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: -containerRef.current.clientWidth, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = (e) => {
+    e.stopPropagation();
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: containerRef.current.clientWidth, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="card-back-carousel-wrapper">
+      <div className="carousel-track" ref={containerRef}>
+        {pages.map((pageLinks, pageIdx) => (
+          <div key={pageIdx} className="carousel-page">
+            {pageLinks.map((link, index) => {
+              const href = service.slug
+                ? `/services/${service.slug}/${link.slug || getSlug(link.title)}`
+                : (link.href || "#");
+              return (
+                <Link
+                  key={index}
+                  href={href}
+                  className="innerlink"
+                >
+                  {link.title}
+                </Link>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+
+      {pages.length > 1 && (
+        <div className="carousel-controls">
+          <button 
+            type="button" 
+            className="carousel-nav-btn prev" 
+            onClick={scrollLeft}
+            aria-label="Scroll left"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          
+          <button 
+            type="button" 
+            className="carousel-nav-btn next" 
+            onClick={scrollRight}
+            aria-label="Scroll right"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
 const Services = () => {
   const router = useRouter();
   const prevRef = useRef(null);
@@ -210,29 +290,7 @@ const Services = () => {
                       <div className="rightnumber">{service.number}</div>
                     </div>
 
-                    <div className="mainlinks">
-                      {(() => {
-                        const subServices = allServicesData[service.slug]?.subServices;
-                        const linksToRender = subServices 
-                          ? Object.values(subServices).map(sub => ({ title: sub.title, slug: sub.slug }))
-                          : service.links;
-                        
-                        return linksToRender.map((link, index) => {
-                          const href = service.slug
-                            ? `/services/${service.slug}/${link.slug || getSlug(link.title)}`
-                            : (link.href || "#");
-                          return (
-                            <Link
-                              key={index}
-                              href={href}
-                              className="innerlink"
-                            >
-                              {link.title}
-                            </Link>
-                          );
-                        });
-                      })()}
-                    </div>
+                    <CardBackCarousel service={service} getSlug={getSlug} />
                   </div>
                 </div>
               </div>

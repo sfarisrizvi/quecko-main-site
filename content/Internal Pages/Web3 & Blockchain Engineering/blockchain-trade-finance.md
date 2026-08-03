@@ -1,7 +1,7 @@
 ---
 title: Blockchain Trade Finance | Quecko
-page-type: Internal Service Page — Web3 Enterprise Solutions
-slug: /services/web3-enterprise/blockchain-trade-finance
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/blockchain-trade-finance
 audience: Organizations and founders seeking blockchain trade finance solutions.
 goal: Position Quecko as a trusted partner for blockchain trade finance.
 primary-cta: Talk to Our Team

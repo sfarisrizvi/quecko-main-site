@@ -39,7 +39,31 @@ export const services = [
       { title: "RWA Tokenization", href: "/services/web3?tab=rwa-tokenization" },
       { title: "Prediction & Opinion Markets", href: "/services/web3?tab=prediction-opinion-markets" },
       { title: "DeFi Lottery", href: "/services/web3?tab=defi-lottery" },
-      { title: "DeFi Yield Farming", href: "/services/web3?tab=defi-yield-farming" }
+      { title: "DeFi Yield Farming", href: "/services/web3?tab=defi-yield-farming" },
+      { title: "Coin & Token Development", href: "/services/web3?tab=coin-token-development" },
+      { title: "ICO Development", href: "/services/web3?tab=ico-development" },
+      { title: "NFT Lending", href: "/services/web3?tab=nft-lending" },
+      { title: "Semi-Fungible Tokens", href: "/services/web3?tab=semi-fungible-tokens" },
+      { title: "CBDC Development", href: "/services/web3?tab=cbdc-development" },
+      { title: "Crypto Payment Gateway", href: "/services/web3?tab=crypto-payment-gateway" },
+      { title: "Neobank Development", href: "/services/web3?tab=neobank-development" },
+      { title: "P2P Lending Platforms", href: "/services/web3?tab=p2p-lending-platforms" },
+      { title: "Stablecoin Infrastructure", href: "/services/web3?tab=stablecoin-infrastructure" },
+      { title: "Stablecoin Remittance", href: "/services/web3?tab=stablecoin-remittance-platforms" },
+      { title: "Blockchain Insurance", href: "/services/web3?tab=blockchain-insurance" },
+      { title: "Blockchain Trade Finance", href: "/services/web3?tab=blockchain-trade-finance" },
+      { title: "Carbon Credit Platforms", href: "/services/web3?tab=carbon-credit-platforms" },
+      { title: "Enterprise Blockchain", href: "/services/web3?tab=enterprise-blockchain-solutions" },
+      { title: "Government Blockchain", href: "/services/web3?tab=government-blockchain-solutions" },
+      { title: "KYC/AML Platforms", href: "/services/web3?tab=kyc-aml-platforms" },
+      { title: "AML/CFT Policy Design", href: "/services/web3?tab=aml-cft-policy-framework-design" },
+      { title: "Crypto Licensing", href: "/services/web3?tab=crypto-licensing-registration-support" },
+      { title: "Crypto Tax Advisory", href: "/services/web3?tab=crypto-tax-advisory" },
+      { title: "Data Privacy Compliance", href: "/services/web3?tab=data-privacy-cross-border-compliance" },
+      { title: "Token Launch Structuring", href: "/services/web3?tab=legal-structuring-token-launches" },
+      { title: "Regulatory Consulting", href: "/services/web3?tab=regulatory-compliance-consulting" },
+      { title: "Institutional Frameworks", href: "/services/web3?tab=regulatory-framework-development-institutions" },
+      { title: "Whitepaper Review", href: "/services/web3?tab=whitepaper-documentation-legal-review" }
     ]
   },
   {
@@ -83,7 +107,7 @@ export const services = [
   },
   {
     id: 8,
-    number: "06",
+    number: "03",
     title: "Dedicated Engineering Teams",
     description: "Extend your team with world-class talent.",
     slug: "dedicated-teams",
@@ -108,7 +132,7 @@ export const services = [
   },
   {
     id: 5,
-    number: "03",
+    number: "04",
     title: "Mobile App Development",
     description: "Native and cross-platform mobile experiences.",
     slug: "mobile-app-development",
@@ -134,7 +158,7 @@ export const services = [
   },
   {
     id: 6,
-    number: "04",
+    number: "05",
     title: "E-Commerce & CMS Solutions",
     description: "Digital commerce optimized for conversion.",
     slug: "ecommerce-cms",
@@ -160,7 +184,7 @@ export const services = [
   },
   {
     id: 4,
-    number: "05",
+    number: "06",
     title: "SaaS Platforms & Enterprise Software",
     description: "Scalable software built for growth.",
     slug: "saas-platforms",
@@ -260,55 +284,8 @@ export const services = [
     ]
   },
   {
-    id: 10,
-    number: "10",
-    title: "Coin & Token Development",
-    description: "Custom tokenomics and multi-chain token engineering.",
-    slug: "coin-token-dev",
-    href: "/services/coin-token-dev",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-        <circle cx="40" cy="40" r="30" stroke="#CCCCCC" strokeWidth="4.8" />
-        <circle cx="40" cy="40" r="18" stroke="#CCCCCC" strokeWidth="4.8" />
-        <path d="M40 10V70" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" />
-        <path d="M10 40H70" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" />
-      </svg>
-    ),
-    links: [
-      { title: "Coin & Token Development", href: "/services/coin-token-dev?tab=coin-token-development" },
-      { title: "ICO Development", href: "/services/coin-token-dev?tab=ico-development" },
-      { title: "NFT Lending", href: "/services/coin-token-dev?tab=nft-lending" },
-      { title: "Semi-Fungible Tokens", href: "/services/coin-token-dev?tab=semi-fungible-tokens" }
-    ]
-  },
-  {
-    id: 11,
-    number: "11",
-    title: "Crypto Banking & Financial Rails",
-    description: "Financial infrastructure for the Web3 economy.",
-    slug: "crypto-banking",
-    href: "/services/crypto-banking",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-        <rect x="10" y="26.6667" width="60" height="40" rx="3" stroke="#CCCCCC" strokeWidth="4.8" />
-        <path d="M40 13.3333L10 26.6667H70L40 13.3333Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M23.3335 40V53.3333" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" />
-        <path d="M40 40V53.3333" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" />
-        <path d="M56.6665 40V53.3333" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" />
-      </svg>
-    ),
-    links: [
-      { title: "CBDC Development", href: "/services/crypto-banking?tab=cbdc-development" },
-      { title: "Crypto Payment Gateway", href: "/services/crypto-banking?tab=crypto-payment-gateway" },
-      { title: "Neobank Development", href: "/services/crypto-banking?tab=neobank-development" },
-      { title: "P2P Lending Platforms", href: "/services/crypto-banking?tab=p2p-lending-platforms" },
-      { title: "Stablecoin Infrastructure", href: "/services/crypto-banking?tab=stablecoin-infrastructure" },
-      { title: "Stablecoin Remittance", href: "/services/crypto-banking?tab=stablecoin-remittance-platforms" }
-    ]
-  },
-  {
     id: 12,
-    number: "12",
+    number: "10",
     title: "Consultancy",
     description: "Strategic technology assessment and roadmapping.",
     slug: "consultancy",
@@ -321,55 +298,6 @@ export const services = [
     ),
     links: [
       { title: "Web3 & Blockchain Consultation", href: "/services/consultancy?tab=web3-and-blockchain-consultation" }
-    ]
-  },
-  {
-    id: 13,
-    number: "13",
-    title: "Web3 Enterprise Solutions",
-    description: "Institutional blockchain for regulated industries.",
-    slug: "web3-enterprise",
-    href: "/services/web3-enterprise",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-        <rect x="6.6665" y="13.3333" width="66.6667" height="53.3333" rx="3" stroke="#CCCCCC" strokeWidth="4.8" />
-        <path d="M6.6665 30H73.3332" stroke="#CCCCCC" strokeWidth="4.8" />
-        <path d="M26.6665 30V66.6667" stroke="#CCCCCC" strokeWidth="4.8" />
-        <path d="M53.3335 30V66.6667" stroke="#CCCCCC" strokeWidth="4.8" />
-        <path d="M6.6665 48.3333H73.3332" stroke="#CCCCCC" strokeWidth="4.8" />
-      </svg>
-    ),
-    links: [
-      { title: "Blockchain Insurance", href: "/services/web3-enterprise?tab=blockchain-insurance" },
-      { title: "Blockchain Trade Finance", href: "/services/web3-enterprise?tab=blockchain-trade-finance" },
-      { title: "Carbon Credit Platforms", href: "/services/web3-enterprise?tab=carbon-credit-platforms" },
-      { title: "Enterprise Blockchain", href: "/services/web3-enterprise?tab=enterprise-blockchain-solutions" },
-      { title: "Government Blockchain", href: "/services/web3-enterprise?tab=government-blockchain-solutions" },
-      { title: "KYC/AML Platforms", href: "/services/web3-enterprise?tab=kyc-aml-platforms" }
-    ]
-  },
-  {
-    id: 14,
-    number: "14",
-    title: "Web3 Compliance & Legal Advisory",
-    description: "Regulatory compliance for the decentralized economy.",
-    slug: "web3-compliance",
-    href: "/services/web3-compliance",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-        <path d="M40 6.66663L66.6667 20V40C66.6667 56.5685 55.2285 71.3333 40 73.3333C24.7715 71.3333 13.3333 56.5685 13.3333 40V20L40 6.66663Z" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M28 40L36 48L52 32" stroke="#CCCCCC" strokeWidth="4.8" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    links: [
-      { title: "AML/CFT Policy Design", href: "/services/web3-compliance?tab=aml-cft-policy-framework-design" },
-      { title: "Crypto Licensing", href: "/services/web3-compliance?tab=crypto-licensing-registration-support" },
-      { title: "Crypto Tax Advisory", href: "/services/web3-compliance?tab=crypto-tax-advisory" },
-      { title: "Data Privacy Compliance", href: "/services/web3-compliance?tab=data-privacy-cross-border-compliance" },
-      { title: "Token Launch Structuring", href: "/services/web3-compliance?tab=legal-structuring-token-launches" },
-      { title: "Regulatory Consulting", href: "/services/web3-compliance?tab=regulatory-compliance-consulting" },
-      { title: "Institutional Frameworks", href: "/services/web3-compliance?tab=regulatory-framework-development-institutions" },
-      { title: "Whitepaper Review", href: "/services/web3-compliance?tab=whitepaper-documentation-legal-review" }
     ]
   }
 ];

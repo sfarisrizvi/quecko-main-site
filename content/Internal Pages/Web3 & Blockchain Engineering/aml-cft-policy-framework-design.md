@@ -1,7 +1,7 @@
 ---
 title: AML/CFT Policy & Framework Design | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/aml-cft-policy-framework-design
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/aml-cft-policy-framework-design
 audience: Organizations and founders seeking aml/cft policy & framework design solutions.
 goal: Position Quecko as a trusted partner for aml/cft policy & framework design.
 primary-cta: Talk to Our Team

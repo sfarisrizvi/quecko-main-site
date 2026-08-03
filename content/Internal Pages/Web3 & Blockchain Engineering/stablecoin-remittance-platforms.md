@@ -1,7 +1,7 @@
 ---
 title: Stablecoin Remittance Platforms | Quecko
-page-type: Internal Service Page — Crypto Banking & Financial Rails
-slug: /services/crypto-banking/stablecoin-remittance-platforms
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/stablecoin-remittance-platforms
 audience: Organizations and founders seeking stablecoin remittance platforms solutions.
 goal: Position Quecko as a trusted partner for stablecoin remittance platforms.
 primary-cta: Talk to Our Team

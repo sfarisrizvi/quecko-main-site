@@ -1,7 +1,7 @@
 ---
 title: Crypto Payment Gateway Development | Quecko
-page-type: Internal Service Page — Crypto Banking & Financial Rails
-slug: /services/crypto-banking/crypto-payment-gateway
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/crypto-payment-gateway
 audience: Organizations and founders seeking crypto payment gateway development solutions.
 goal: Position Quecko as a trusted partner for crypto payment gateway development.
 primary-cta: Talk to Our Team

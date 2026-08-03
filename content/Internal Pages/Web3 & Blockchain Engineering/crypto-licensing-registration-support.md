@@ -1,7 +1,7 @@
 ---
 title: Crypto Licensing & Registration Support | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/crypto-licensing-registration-support
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/crypto-licensing-registration-support
 audience: Organizations and founders seeking crypto licensing & registration support solutions.
 goal: Position Quecko as a trusted partner for crypto licensing & registration support.
 primary-cta: Talk to Our Team

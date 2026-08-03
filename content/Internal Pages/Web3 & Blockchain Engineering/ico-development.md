@@ -1,7 +1,7 @@
 ---
 title: ICO Development | Quecko
-page-type: Internal Service Page — Coin & Token Development
-slug: /services/coin-token-dev/ico-development
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/ico-development
 audience: Organizations and founders seeking ico development solutions.
 goal: Position Quecko as a trusted partner for ico development.
 primary-cta: Talk to Our Team

@@ -1,7 +1,7 @@
 ---
 title: Carbon Credit Blockchain Platforms | Quecko
-page-type: Internal Service Page — Web3 Enterprise Solutions
-slug: /services/web3-enterprise/carbon-credit-platforms
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/carbon-credit-platforms
 audience: Organizations and founders seeking carbon credit blockchain platforms solutions.
 goal: Position Quecko as a trusted partner for carbon credit blockchain platforms.
 primary-cta: Talk to Our Team

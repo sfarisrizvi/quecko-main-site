@@ -1,7 +1,7 @@
 ---
 title: Blockchain Insurance | Quecko
-page-type: Internal Service Page — Web3 Enterprise Solutions
-slug: /services/web3-enterprise/blockchain-insurance
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/blockchain-insurance
 audience: Organizations and founders seeking blockchain insurance solutions.
 goal: Position Quecko as a trusted partner for blockchain insurance.
 primary-cta: Talk to Our Team

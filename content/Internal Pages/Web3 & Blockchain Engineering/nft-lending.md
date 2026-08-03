@@ -1,7 +1,7 @@
 ---
 title: NFT Lending | Quecko
-page-type: Internal Service Page — Coin & Token Development
-slug: /services/coin-token-dev/nft-lending
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/nft-lending
 audience: Organizations and founders seeking nft lending solutions.
 goal: Position Quecko as a trusted partner for nft lending.
 primary-cta: Talk to Our Team

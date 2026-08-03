@@ -1,7 +1,7 @@
 ---
 title: Crypto Tax Advisory | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/crypto-tax-advisory
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/crypto-tax-advisory
 audience: Organizations and founders seeking crypto tax advisory solutions.
 goal: Position Quecko as a trusted partner for crypto tax advisory.
 primary-cta: Talk to Our Team

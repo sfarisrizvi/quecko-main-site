@@ -1,7 +1,7 @@
 ---
 title: CBDC Development | Quecko
-page-type: Internal Service Page — Crypto Banking & Financial Rails
-slug: /services/crypto-banking/cbdc-development
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/cbdc-development
 audience: Organizations and founders seeking cbdc development solutions.
 goal: Position Quecko as a trusted partner for cbdc development.
 primary-cta: Talk to Our Team

@@ -1,7 +1,7 @@
 ---
 title: Blockchain KYC & AML Platforms | Quecko
-page-type: Internal Service Page — Web3 Enterprise Solutions
-slug: /services/web3-enterprise/kyc-aml-platforms
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/kyc-aml-platforms
 audience: Organizations and founders seeking blockchain kyc & aml platforms solutions.
 goal: Position Quecko as a trusted partner for blockchain kyc & aml platforms.
 primary-cta: Talk to Our Team

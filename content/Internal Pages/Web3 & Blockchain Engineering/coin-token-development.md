@@ -1,7 +1,7 @@
 ---
 title: Coin & Token Development | Quecko
-page-type: Internal Service Page — Coin & Token Development
-slug: /services/coin-token-dev/coin-token-development
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/coin-token-development
 audience: Organizations and founders seeking coin & token development solutions.
 goal: Position Quecko as a trusted partner for coin & token development.
 primary-cta: Talk to Our Team

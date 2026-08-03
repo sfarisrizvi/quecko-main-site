@@ -1,7 +1,10 @@
+import { redirect } from "next/navigation";
 import { allServicesData } from "@/components/sections/allServicesData";
 import Web3ClientPage from "./_client";
 
 export const dynamicParams = false;
+
+const LEGACY_SLUGS = ["coin-token-dev", "crypto-banking", "web3-enterprise", "web3-compliance"];
 
 export function generateStaticParams() {
   return [
@@ -14,16 +17,19 @@ export function generateStaticParams() {
     { slug: "automation-engagement" },
     { slug: "dedicated-teams" },
     { slug: "growth-branding" },
-    { slug: "coin-token-dev" },
-    { slug: "crypto-banking" },
-    { slug: "consultancy" },
-    { slug: "web3-enterprise" },
-    { slug: "web3-compliance" }
+    { slug: "consultancy" }
   ];
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  
+  if (LEGACY_SLUGS.includes(slug)) {
+    return {
+      title: "Redirecting...",
+    };
+  }
+
   const service = allServicesData[slug];
   if (!service) {
     return {
@@ -49,5 +55,8 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { slug } = await params;
+  if (LEGACY_SLUGS.includes(slug)) {
+    redirect("/services/web3");
+  }
   return <Web3ClientPage slug={slug} />;
 }

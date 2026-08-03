@@ -1,7 +1,7 @@
 ---
 title: Legal Structuring for Token Launches | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/legal-structuring-token-launches
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/legal-structuring-token-launches
 audience: Organizations and founders seeking legal structuring for token launches solutions.
 goal: Position Quecko as a trusted partner for legal structuring for token launches.
 primary-cta: Talk to Our Team

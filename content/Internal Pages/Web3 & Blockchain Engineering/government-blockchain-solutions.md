@@ -1,7 +1,7 @@
 ---
 title: Government Blockchain Solutions | Quecko
-page-type: Internal Service Page — Web3 Enterprise Solutions
-slug: /services/web3-enterprise/government-blockchain-solutions
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/government-blockchain-solutions
 audience: Organizations and founders seeking government blockchain solutions solutions.
 goal: Position Quecko as a trusted partner for government blockchain solutions.
 primary-cta: Talk to Our Team

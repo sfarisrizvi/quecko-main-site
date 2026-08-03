@@ -1,7 +1,7 @@
 ---
 title: Semi-Fungible Token Development | Quecko
-page-type: Internal Service Page — Coin & Token Development
-slug: /services/coin-token-dev/semi-fungible-tokens
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/semi-fungible-tokens
 audience: Organizations and founders seeking semi-fungible token development solutions.
 goal: Position Quecko as a trusted partner for semi-fungible token development.
 primary-cta: Talk to Our Team

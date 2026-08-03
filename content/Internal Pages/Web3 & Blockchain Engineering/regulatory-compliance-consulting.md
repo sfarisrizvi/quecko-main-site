@@ -1,7 +1,7 @@
 ---
 title: Regulatory Compliance Consulting | Quecko
-page-type: Internal Service Page — Web3 Compliance & Legal Advisory
-slug: /services/web3-compliance/regulatory-compliance-consulting
+page-type: Internal Service Page — Web3 & Blockchain Engineering
+slug: /services/web3/regulatory-compliance-consulting
 audience: Organizations and founders seeking regulatory compliance consulting solutions.
 goal: Position Quecko as a trusted partner for regulatory compliance consulting.
 primary-cta: Talk to Our Team
