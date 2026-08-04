@@ -420,6 +420,47 @@ export default function L1L2LandingClient() {
       </div>
 
       {/* ══════════════════════════════════════════════════════
+          6. CAPABILITIES (Expanding Accordion Cards)
+          ══════════════════════════════════════════════════════ */}
+      <section className="l1l2-capabilities-section">
+        <div className="capabilities-container">
+          <div className="capabilities-header">
+            <span className="cap-eyebrow">What We Build</span>
+            <h2>Core Capabilities</h2>
+          </div>
+
+          <div className="capabilities-stack">
+            {CAPABILITIES.map((cap, idx) => (
+              <div
+                key={idx}
+                className={`capability-expand-card ${expandedCap === idx ? "is-expanded" : ""}`}
+                onClick={() => setExpandedCap(expandedCap === idx ? -1 : idx)}
+              >
+                <div className="cap-card-header">
+                  <span className="cap-num">0{idx + 1}</span>
+                  <div className="cap-icon">
+                    <CapIcon type={cap.icon} />
+                  </div>
+                  <h3>{cap.title}</h3>
+                  <span className="expand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                  </span>
+                </div>
+                <div className="cap-card-body">
+                  <div className="cap-card-inner">
+                    <p>{cap.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
           3. THE MULTI-CHAIN REALITY
           ══════════════════════════════════════════════════════ */}
       <section className="l1l2-context-section">
@@ -504,47 +545,6 @@ export default function L1L2LandingClient() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════
-          6. CAPABILITIES (Expanding Accordion Cards)
-          ══════════════════════════════════════════════════════ */}
-      <section className="l1l2-capabilities-section">
-        <div className="capabilities-container">
-          <div className="capabilities-header">
-            <span className="cap-eyebrow">What We Build</span>
-            <h2>Core Capabilities</h2>
-          </div>
-
-          <div className="capabilities-stack">
-            {CAPABILITIES.map((cap, idx) => (
-              <div
-                key={idx}
-                className={`capability-expand-card ${expandedCap === idx ? "is-expanded" : ""}`}
-                onClick={() => setExpandedCap(expandedCap === idx ? -1 : idx)}
-              >
-                <div className="cap-card-header">
-                  <span className="cap-num">0{idx + 1}</span>
-                  <div className="cap-icon">
-                    <CapIcon type={cap.icon} />
-                  </div>
-                  <h3>{cap.title}</h3>
-                  <span className="expand-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <line x1="12" y1="5" x2="12" y2="19" />
-                      <line x1="5" y1="12" x2="19" y2="12" />
-                    </svg>
-                  </span>
-                </div>
-                <div className="cap-card-body">
-                  <div className="cap-card-inner">
-                    <p>{cap.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

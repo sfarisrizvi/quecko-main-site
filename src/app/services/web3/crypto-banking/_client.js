@@ -457,6 +457,30 @@ export default function CryptoBankingLandingClient() {
       </div>
 
       {/* ══════════════════════════════════════════════════════
+          6. CAPABILITIES SECTION
+          ══════════════════════════════════════════════════════ */}
+      <section className="cb-capabilities-section">
+        <div className="section-container">
+          <div className="capabilities-header">
+            <div className="cap-eyebrow">Core Capabilities</div>
+            <h2>What We Deliver for Crypto Banking &amp; Financial Rails</h2>
+          </div>
+
+          <div className="capabilities-grid">
+            {CAPABILITIES.map((cap, idx) => (
+              <div key={idx} className="capability-card">
+                <div className="cap-card-icon">
+                  <CapIcon type={cap.icon} />
+                </div>
+                <h3>{cap.title}</h3>
+                <p>{cap.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
           3. MERGING RAILS SECTION
           ══════════════════════════════════════════════════════ */}
       <section className="cb-merging-section">
@@ -562,30 +586,6 @@ export default function CryptoBankingLandingClient() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════
-          6. CAPABILITIES SECTION
-          ══════════════════════════════════════════════════════ */}
-      <section className="cb-capabilities-section">
-        <div className="section-container">
-          <div className="capabilities-header">
-            <div className="cap-eyebrow">Core Capabilities</div>
-            <h2>What We Deliver for Crypto Banking &amp; Financial Rails</h2>
-          </div>
-
-          <div className="capabilities-grid">
-            {CAPABILITIES.map((cap, idx) => (
-              <div key={idx} className="capability-card">
-                <div className="cap-card-icon">
-                  <CapIcon type={cap.icon} />
-                </div>
-                <h3>{cap.title}</h3>
-                <p>{cap.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
