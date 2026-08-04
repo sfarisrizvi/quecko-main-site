@@ -185,6 +185,28 @@ export default function L1L2LandingClient() {
   const timelineTrackRef = useRef(null);
   const [expandedCap, setExpandedCap] = useState(0);
   const [videoReady, setVideoReady] = useState(false);
+  const lottieContainerRef = useRef(null);
+
+  /* ── Load green Lottie animation in context section ── */
+  useEffect(() => {
+    let anim;
+    import("lottie-web").then((lottieModule) => {
+      const Lottie = lottieModule.default || lottieModule;
+      if (lottieContainerRef.current) {
+        anim = Lottie.loadAnimation({
+          container: lottieContainerRef.current,
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "/DEFI-lottie-green.json"
+        });
+      }
+    });
+
+    return () => {
+      if (anim) anim.destroy();
+    };
+  }, []);
 
   /* ── Deferred video load (matching global hero pattern) ── */
   useEffect(() => {
@@ -415,16 +437,8 @@ export default function L1L2LandingClient() {
               </p>
             </div>
 
-            {/* Placeholder for image/Lottie — as per user request */}
-            <div className="context-visual-side">
-              <div className="visual-placeholder">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p>Image / Lottie Animation Placeholder</p>
-              </div>
+            {/* Lottie Animation — recolored to branding green */}
+            <div className="context-visual-side" ref={lottieContainerRef}>
             </div>
           </div>
         </div>

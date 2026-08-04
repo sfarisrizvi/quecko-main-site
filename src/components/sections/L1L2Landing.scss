@@ -67,9 +67,8 @@
     align-items: center;
     justify-content: center;
     min-height: 350px;
-    border: 2px dashed rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    background: #F4F4F4;
+    overflow: hidden;
 
     .visual-placeholder {
       text-align: center;
