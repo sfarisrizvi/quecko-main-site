@@ -380,7 +380,7 @@ export default function L1L2LandingClient() {
               </p>
               <div className="hero-ctas">
                 <Link href="/contact" className="btn-primary">
-                  Talk to a Protocol Engineer
+                  Talk to an Engineer
                 </Link>
                 <Link href="/portfolio" className="btn-secondary">
                   Explore Our Work
@@ -689,7 +689,7 @@ export default function L1L2LandingClient() {
           <p>From whitepaper to mainnet — without the guesswork.</p>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-cta-primary">
-              Talk to a Protocol Engineer
+              Talk to an Engineer
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M10.6667 11.3334L14 8.00002L10.6667 4.66669M14 8.00002H2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>

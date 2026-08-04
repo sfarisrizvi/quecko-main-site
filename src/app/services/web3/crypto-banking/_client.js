@@ -419,7 +419,7 @@ export default function CryptoBankingLandingClient() {
               </div>
               <div className="hero-ctas" style={{ marginTop: "30px" }}>
                 <Link href="/contact" className="btn-primary">
-                  Talk to a Banking Engineer
+                  Talk to an Engineer
                 </Link>
                 <Link href="/portfolio" className="btn-secondary">
                   Explore Our Work
@@ -465,7 +465,7 @@ export default function CryptoBankingLandingClient() {
             <div className="merging-text">
               <h2>Traditional fiat and digital asset infrastructure are no longer separate ecosystems.</h2>
               <p>
-                Financial rails are converging in a way that would have seemed implausible just a few years ago — banks are increasingly positioning themselves as reserve custodians for stablecoin issuers, regulated neobanks are embedding native crypto conversion directly into everyday accounts, and cross-border CBDC pilots are explicitly targeting the same remittance corridors that stablecoin-powered products already serve. The institutions and fintechs winning in this space aren't choosing between fiat and crypto infrastructure — they're the ones who've figured out how to engineer both as a single coherent system rather than two systems awkwardly bolted together.
+                Financial rails are converging in a way that would have seemed implausible just a few years ago — banks are increasingly positioning themselves as reserve custodians for stablecoin issuers, regulated neobanks are embedding native crypto conversion directly into everyday accounts, and cross-border CBDC pilots are explicitly targeting the same remittance corridors that stablecoin-powered products already serve. The institutions and fintechs winning in this space aren&apos;t choosing between fiat and crypto infrastructure — they&apos;re the ones who&apos;ve figured out how to engineer both as a single coherent system rather than two systems awkwardly bolted together.
               </p>
             </div>
             <div className="merging-graphic">
@@ -495,9 +495,9 @@ export default function CryptoBankingLandingClient() {
         <div className="section-container">
           <div className="comparison-header">
             <div className="comp-eyebrow">The Challenge</div>
-            <h2>Why Banking Products Fail Where Apps Don't</h2>
+            <h2>Why Banking Products Fail Where Apps Don&apos;t</h2>
             <p>
-              Building modern crypto banking and financial rail products is a compliance, treasury, and engineering problem combined, in a way that most consumer app development simply isn't. Whether you're launching a cross-border remittance gateway, an institutional stablecoin reserve, a neobank card issuance service, or exploring central bank digital currency infrastructure, you need to solve ledger synchronization, banking-as-a-service integration, real-time liquidity management, and strict regulatory standards like the GENIUS Act, MiCA, and VASP licensing simultaneously — and get all of them right, since a financial product with a beautiful interface but an unreliable ledger or an unmanaged reserve isn't a product at all, it's a liability waiting to surface.
+              Building modern crypto banking and financial rail products is a compliance, treasury, and engineering problem combined, in a way that most consumer app development simply isn&apos;t. Whether you&apos;re launching a cross-border remittance gateway, an institutional stablecoin reserve, a neobank card issuance service, or exploring central bank digital currency infrastructure, you need to solve ledger synchronization, banking-as-a-service integration, real-time liquidity management, and strict regulatory standards like the GENIUS Act, MiCA, and VASP licensing simultaneously — and get all of them right, since a financial product with a beautiful interface but an unreliable ledger or an unmanaged reserve isn&apos;t a product at all, it&apos;s a liability waiting to surface.
             </p>
           </div>
 
@@ -772,7 +772,7 @@ export default function CryptoBankingLandingClient() {
           <h2>Ready to build financial rails engineered to bank-grade reliability standards, not startup-MVP ones?</h2>
           <div className="cta-buttons">
             <Link href="/contact" className="btn-cta-primary">
-              Talk to a Banking Engineer
+              Talk to an Engineer
             </Link>
             <Link href="/portfolio" className="btn-cta-secondary">
               View Our Portfolio
