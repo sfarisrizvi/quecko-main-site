@@ -20,7 +20,7 @@ export default function ChallengeComparison({ headline, body, oldWay, queckoWay 
           <h2 style={{ fontSize: "38px", fontWeight: "500", color: "#000000", marginBottom: "20px", lineHeight: "1.2" }}>
             {headline || "Overcoming Development Bottlenecks"}
           </h2>
-          <p style={{ fontSize: "16px", color: "#48484A", lineHeight: "1.65", maxWidth: "800px", margin: 0 }}>
+          <p style={{ fontSize: "16px", color: "#48484A", lineHeight: "1.65", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
             {body}
           </p>
         </div>
