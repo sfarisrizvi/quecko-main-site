@@ -11,6 +11,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import FAQAccordion from "@/components/sections/FAQAccordion";
 import TechLogo from "@/components/sections/TechLogo";
 import PublicChains from "@/components/sections/PublicChains";
+import CapabilitiesAccordion from "@/components/sections/CapabilitiesAccordion";
+import ChallengeComparison from "@/components/sections/ChallengeComparison";
+import StepperTimeline from "@/components/sections/StepperTimeline";
 import { getInternalPageData, getAllInternalPages } from "@/Utils/internalPagesParser";
 
 export const dynamicParams = false;
@@ -795,69 +798,20 @@ export default async function SubCategoryPage({ params }) {
 
       {/* 5. CORE CAPABILITIES SECTION */}
       {sections.capabilities?.items && sections.capabilities.items.length > 0 && (
-        <section className="service-section light-bg">
-          <div className="section-container">
-            <span className="tagline">Capabilities</span>
-            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.capabilities.headline || "Our Core Capabilities"}</h2>
-            <p className="section-desc" style={{ marginBottom: "50px" }}>
-              Explore our technical specialties, engineering practices, and developer skills.
-            </p>
-
-            <div className="capabilities-grid">
-              {sections.capabilities.items.map((item, idx) => (
-                <div key={idx} className="capability-hover-card">
-                  <div className="cap-icon">
-                    {getIconForCapability(item.title)}
-                  </div>
-                  <h3>{item.title || `Specialized Service ${idx + 1}`}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <CapabilitiesAccordion
+          items={sections.capabilities.items}
+          headline={sections.capabilities.headline}
+        />
       )}
 
-      {/* 3 & 4. PROBLEM & SOLUTION SECTION (THE CHALLENGE) */}
+      {/* 3 & 4. PROBLEM & SOLUTION SECTION (THE CHALLENGE & COMPARISON) */}
       {sections.challenge && (
-        <section className="service-section">
-          <div className="section-container">
-            <div className="problem-solution-grid">
-              <div className="problem-side">
-                <span className="tagline">The Challenge</span>
-                <div className="problem-card">
-                  <h3>{sections.challenge.headline}</h3>
-                  <p>{sections.challenge.body}</p>
-                </div>
-              </div>
-
-              <div className="solution-side">
-                <span className="tagline">The Solution</span>
-                <h3 className="section-head" style={{ fontSize: "28px", marginBottom: "30px", lineHeight: "1.25" }}>
-                  {frontmatter["solution-heading"] || `Engineering Production-Grade ${cleanSubTitle} Infrastructure`}
-                </h3>
-                
-                {sections.process?.steps && sections.process.steps.length > 0 ? (
-                  <div className="solution-steps">
-                    {sections.process.steps.map((step, idx) => (
-                      <div key={idx} className="step-item">
-                        <div className="step-num">{idx + 1}</div>
-                        <div className="step-body">
-                          <h4>{step.title}</h4>
-                          <p>{step.desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <p style={{ color: "#3A3A3C", fontSize: "16px", lineHeight: "1.6" }}>
-                    Quecko approaches subcategory product challenges with full lifecycle planning, rigorous testing, and strict compliance alignment to guarantee long-term stability and seamless operation under heavy production load.
-                  </p>
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
+        <ChallengeComparison
+          headline={sections.challenge.headline}
+          body={sections.challenge.body}
+          oldWay={sections.challenge.oldWay}
+          queckoWay={sections.challenge.queckoWay}
+        />
       )}
 
       {/* 5.5. PUBLIC CHAINS SECTION */}
@@ -865,124 +819,13 @@ export default async function SubCategoryPage({ params }) {
         <PublicChains data={sections.publicChains} />
       )}
 
-
-
       {/* 7. PROJECT BLUEPRINT / TIMELINE */}
       {sections.blueprint?.timeline && sections.blueprint.timeline.length > 0 && (
-        <section className="service-section light-bg">
-          <div className="section-container">
-            <span className="tagline">Execution Blueprint</span>
-            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.blueprint.headline || "Project Execution Timeline"}</h2>
-            <p className="section-desc" style={{ marginBottom: "50px" }}>
-              How we take your {cleanSubTitle} requirements from day 1 to production delivery.
-            </p>
-
-            {/* Horizontal Gantt chart layout replacing vertical timeline */}
-            {(() => {
-              const rawPhases = sections.blueprint.timeline.filter(
-                (phase) => phase.timeframe || phase.desc
-              );
-              
-              const rawEnds = rawPhases.map((phase) => {
-                if (!phase.timeframe) return 0;
-                const match = phase.timeframe.match(/Day\s+(\d+)[\u2013-]\s*(\d+)/i) || phase.timeframe.match(/Day\s+(\d+)\s*-\s*(\d+)/i);
-                return match ? parseInt(match[2]) : 0;
-              });
-              const totalDays = Math.max(...rawEnds, 0) || 90;
-
-              const parsedPhases = rawPhases.map((phase, idx) => {
-                const metrics = getTimelineMetrics(phase.timeframe, idx, rawPhases.length, totalDays);
-                return { ...phase, ...metrics };
-              });
-
-              return (
-                <div className="gantt-timeline-container">
-                  {/* Horizontal Gantt Board Grid for Desktop/Tablet */}
-                  <div className="gantt-board-wrapper">
-                    {/* Header Columns and Bracket braces */}
-                    <div className="gantt-headers">
-                      <div className="gantt-header-col group-discovery">
-                        <span className="gantt-header-title">Discovery</span>
-                        <div className="gantt-bracket-line" />
-                      </div>
-                      <div className="gantt-header-col group-design">
-                        <span className="gantt-header-title">Design & Build</span>
-                        <div className="gantt-bracket-line" />
-                      </div>
-                      <div className="gantt-header-col group-delivery">
-                        <span className="gantt-header-title">Delivery & Launch</span>
-                        <div className="gantt-bracket-line" />
-                      </div>
-                    </div>
-
-                    {/* Chart Area */}
-                    <div className="gantt-chart-area">
-                      {/* Grid Lines */}
-                      {[...Array(8)].map((_, i) => (
-                        <div
-                          key={i}
-                          className="gantt-grid-line"
-                          style={{ left: `${(i + 1) * 11.1}%` }}
-                        />
-                      ))}
-
-                      {/* Staggered Rows */}
-                      <div className="gantt-rows-container">
-                        {parsedPhases.map((phase, idx) => {
-                          const { days, title } = parsePhaseParts(phase.timeframe);
-                          const isLast = idx === parsedPhases.length - 1;
-                          const left = ((phase.start - 1) / totalDays) * 100;
-                          const width = ((phase.end - phase.start + 1) / totalDays) * 100;
-
-                          return (
-                            <div key={idx} className="gantt-row">
-                              <div
-                                className={`gantt-capsule ${isLast ? 'gantt-capsule-active' : ''}`}
-                                style={{
-                                  left: `${left}%`,
-                                  width: `${width}%`
-                                }}
-                              >
-                                <div className="gantt-capsule-content">
-                                  <span className="gantt-capsule-title">{title}</span>
-                                  <span className="gantt-capsule-days">{days}</span>
-                                </div>
-                                <div className="gantt-tooltip">
-                                  <div className="gantt-tooltip-arrow" />
-                                  <span className="gantt-tooltip-timeframe">{days} — {title}</span>
-                                  <p className="gantt-tooltip-desc">{phase.desc}</p>
-                                </div>
-                                <div className="gantt-capsule-icon-circle">
-                                  {getIconForPhase(idx)}
-                                </div>
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Accessible descriptive list (Visible on all viewports, becomes mobile fallback) */}
-                  <div className="gantt-details-list">
-                    {parsedPhases.map((phase, idx) => {
-                      const { days, title } = parsePhaseParts(phase.timeframe);
-                      return (
-                        <div key={idx} className="gantt-details-item">
-                          <div className="gantt-details-num">{idx + 1}</div>
-                          <div className="gantt-details-body">
-                            <h4>{days} — {title}</h4>
-                            <p>{phase.desc}</p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })()}
-          </div>
-        </section>
+        <StepperTimeline
+          timeline={sections.blueprint.timeline}
+          headline={sections.blueprint.headline}
+          cleanSubTitle={cleanSubTitle}
+        />
       )}
 
       {/* 8. TECH STACK SECTION */}

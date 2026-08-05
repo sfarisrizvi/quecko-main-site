@@ -128,7 +128,26 @@ function parseSectionContent(key, content) {
   } 
   else if (key === 'challenge') {
     result.headline = cleanText(parsedSubs['headline'] || '');
-    result.body = cleanText(parsedSubs['body'] || '');
+    const rawBody = cleanText(parsedSubs['body'] || '');
+    
+    const oldWayMatch = rawBody.match(/#### The Old Way\s*\n([\s\S]*?)(?:\n\s*####|\n\s*---|$)/);
+    const queckoWayMatch = rawBody.match(/#### The Quecko Way\s*\n([\s\S]*?)(?:\n\s*####|\n\s*---|$)/);
+    
+    const parseList = (text) => {
+      if (!text) return [];
+      return text.split(/\r?\n/)
+        .map(line => line.trim())
+        .filter(line => line.startsWith('-'))
+        .map(line => line.replace(/^-\s*/, ''));
+    };
+    
+    result.oldWay = oldWayMatch ? parseList(oldWayMatch[1]) : [];
+    result.queckoWay = queckoWayMatch ? parseList(queckoWayMatch[1]) : [];
+    
+    result.body = rawBody
+      .split(/#### The Old Way/i)[0]
+      .replace(/---/g, '')
+      .trim();
   } 
   else if (key === 'capabilities') {
     result.headline = cleanText(parsedSubs['headline'] || '');
