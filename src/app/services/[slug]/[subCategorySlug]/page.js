@@ -793,6 +793,31 @@ export default async function SubCategoryPage({ params }) {
         </div>
       </div>
 
+      {/* 5. CORE CAPABILITIES SECTION */}
+      {sections.capabilities?.items && sections.capabilities.items.length > 0 && (
+        <section className="service-section light-bg">
+          <div className="section-container">
+            <span className="tagline">Capabilities</span>
+            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.capabilities.headline || "Our Core Capabilities"}</h2>
+            <p className="section-desc" style={{ marginBottom: "50px" }}>
+              Explore our technical specialties, engineering practices, and developer skills.
+            </p>
+
+            <div className="capabilities-grid">
+              {sections.capabilities.items.map((item, idx) => (
+                <div key={idx} className="capability-hover-card">
+                  <div className="cap-icon">
+                    {getIconForCapability(item.title)}
+                  </div>
+                  <h3>{item.title || `Specialized Service ${idx + 1}`}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* 3 & 4. PROBLEM & SOLUTION SECTION (THE CHALLENGE) */}
       {sections.challenge && (
         <section className="service-section">
@@ -830,60 +855,6 @@ export default async function SubCategoryPage({ params }) {
                   </p>
                 )}
               </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* 5. CORE CAPABILITIES SECTION */}
-      {sections.capabilities?.items && sections.capabilities.items.length > 0 && (
-        <section className="service-section light-bg">
-          <div className="section-container">
-            <span className="tagline">Capabilities</span>
-            <h2 className="section-head" style={{ marginBottom: "15px" }}>{sections.capabilities.headline || "Our Core Capabilities"}</h2>
-            <p className="section-desc" style={{ marginBottom: "50px" }}>
-              Explore our technical specialties, engineering practices, and developer skills.
-            </p>
-
-            <div className="capabilities-grid">
-              {sections.capabilities.items.map((item, idx) => (
-                <div
-                  key={idx}
-                  style={{
-                    background: "#FFFFFF",
-                    border: "1px solid rgba(0,0,0,0.06)",
-                    padding: "36px",
-                    borderRadius: "28px",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-start",
-                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  }}
-                  className="capability-hover-card"
-                >
-                  <div
-                    style={{
-                      background: "#000000",
-                      width: "48px",
-                      height: "48px",
-                      borderRadius: "14px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginBottom: "24px",
-                      color: "#C1FF14"
-                    }}
-                  >
-                    {getIconForCapability(item.title)}
-                  </div>
-                  <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#000000", marginBottom: "12px", fontFamily: "Aeonik" }}>
-                    {item.title || `Specialized Service ${idx + 1}`}
-                  </h3>
-                  <p style={{ fontSize: "15px", color: "#48484A", lineHeight: "1.5", margin: 0 }}>
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
             </div>
           </div>
         </section>
