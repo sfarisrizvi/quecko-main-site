@@ -1534,4 +1534,127 @@
       }
     }
   }
+
+  // Comparison section
+  .l1l2-comparison-section {
+    background: #FFFFFF;
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    .comparison-header {
+      text-align: center;
+      margin-bottom: 60px;
+      padding: 0 24px;
+
+      .comp-eyebrow {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #8E8E93;
+        margin-bottom: 24px;
+        font-family: 'Orbitron', sans-serif;
+      }
+
+      h2 {
+        font-size: clamp(28px, 3vw, 40px);
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 16px;
+        letter-spacing: -0.5px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.75;
+        color: #48484A;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .comparison-card {
+      padding: 36px;
+      border-radius: 20px;
+      position: relative;
+
+      &.old-way {
+        background: #FFFFFF;
+        border: 1px solid rgba(211, 47, 47, 0.12);
+
+        .card-label {
+          color: #D32F2F;
+          border-color: rgba(211, 47, 47, 0.2);
+          background: rgba(211, 47, 47, 0.06);
+        }
+
+        .comparison-item::before {
+          content: '✕';
+          color: #D32F2F;
+        }
+      }
+
+      &.quecko-way {
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+
+        .card-label {
+          color: #000000;
+          background: #C1FF14;
+          border-color: #C1FF14;
+        }
+
+        .comparison-item::before {
+          content: '✓';
+          color: #2E7D32;
+          font-weight: 700;
+        }
+      }
+
+      .card-label {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 100px;
+        border: 1px solid;
+        margin-bottom: 28px;
+        font-family: 'Orbitron', sans-serif;
+      }
+
+      .comparison-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .comparison-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #1C1C1E;
+
+        &::before {
+          flex-shrink: 0;
+          font-size: 16px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
 }

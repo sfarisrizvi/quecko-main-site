@@ -254,7 +254,11 @@
   }
 
   .timeline-step-card {
-    flex: 0 0 420px;
+    flex: 0 0 380px;
+
+    @media (min-width: 1024px) {
+      flex: 0 0 calc((100% - 80px) / 3) !important;
+    }
     min-height: 300px;
     background: #F4F4F4;
     border: 1px solid rgba(0, 0, 0, 0.05);

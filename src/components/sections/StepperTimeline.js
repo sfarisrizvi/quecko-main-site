@@ -54,7 +54,6 @@ export default function StepperTimeline({ timeline, headline, cleanSubTitle }) {
                 key={idx}
                 className="timeline-step-card"
                 style={{
-                  flex: "0 0 380px",
                   minHeight: "280px",
                   background: "#F4F4F4",
                   border: "1px solid rgba(0, 0, 0, 0.05)",
@@ -116,6 +115,14 @@ export default function StepperTimeline({ timeline, headline, cleanSubTitle }) {
       <style jsx global>{`
         .custom-timeline-scroll::-webkit-scrollbar {
           display: none;
+        }
+        .timeline-step-card {
+          flex: 0 0 380px;
+        }
+        @media (min-width: 1024px) {
+          .timeline-step-card {
+            flex: 0 0 calc((100% - 64px) / 3) !important;
+          }
         }
         .timeline-step-card:hover {
           border-color: rgba(0, 0, 0, 0.12) !important;

@@ -54,17 +54,9 @@ export default function ChallengeComparison({ headline, body, oldWay, queckoWay 
                 borderRadius: "100px",
                 background: "rgba(255, 69, 58, 0.05)"
               }}>The Old Way</span>
-              <div className="comparison-list" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div className="comparison-list">
                 {oldWay.map((item, idx) => (
-                  <div key={idx} className="comparison-item" style={{
-                    display: "flex",
-                    alignItems: "flex-start",
-                    gap: "12px",
-                    fontSize: "15px",
-                    lineHeight: "1.5",
-                    color: "#48484A"
-                  }}>
-                    <span style={{ color: "#FF453A", fontWeight: "700" }}>✕</span>
+                  <div key={idx} className="comparison-item">
                     <span>{item}</span>
                   </div>
                 ))}
@@ -93,17 +85,9 @@ export default function ChallengeComparison({ headline, body, oldWay, queckoWay 
                 padding: "4px 12px",
                 borderRadius: "100px"
               }}>The Quecko Way</span>
-              <div className="comparison-list" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div className="comparison-list">
                 {queckoWay.map((item, idx) => (
-                  <div key={idx} className="comparison-item" style={{
-                    display: "flex",
-                    alignItems: "flex-start",
-                    gap: "12px",
-                    fontSize: "15px",
-                    lineHeight: "1.5",
-                    color: "#1C1C1E"
-                  }}>
-                    <span style={{ color: "#000000", fontWeight: "700" }}>✓</span>
+                  <div key={idx} className="comparison-item">
                     <span>{item}</span>
                   </div>
                 ))}
