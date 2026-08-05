@@ -4,7 +4,7 @@ page-type: Internal Service Page — Web3 & Blockchain Engineering
 slug: /services/web3/rwa-tokenization
 audience: Asset managers, real estate groups, and financial firms tokenizing real-world assets (RWA).
 goal: Highlight Quecko's expertise in compliant RWA tokenization, legal-technical bridging, and fractional ownership mechanics.
-primary-cta: Talk to Our Team
+primary-cta: Talk to a Tokenization Engineer
 seo-primary-keywords: ["Real-World Asset Tokenization Services"]
 seo-meta-description: "Quecko tokenizes real-world assets — real estate, funds, and commodities — with compliant transfer restrictions, custody integration, and investor onboarding."
 ---
@@ -16,13 +16,13 @@ seo-meta-description: "Quecko tokenizes real-world assets — real estate, funds
 ## 1. HERO
 
 ### Headline
-
+A Token Is Only as Real as the Asset Legally Behind It.
 
 ### Subhead
-
+Quecko tokenizes real-world assets — real estate, investment funds, and commodities — building compliant token structures with built-in transfer restrictions, custodian integration, and investor onboarding infrastructure that holds up to real legal scrutiny.
 
 ### CTA
-[Talk to Our Team]
+[Talk to a Tokenization Engineer] [Explore Our Work]
 
 ---
 
@@ -37,10 +37,22 @@ seo-meta-description: "Quecko tokenizes real-world assets — real estate, funds
 ## 2. THE CHALLENGE
 
 ### Headline
-Integrate with a custodian or transfer agent maintaining the legal record of ownership tied to the token, so the on-chain record and the legal record never diverge.
+Why Most 'Tokenized Assets' Aren't Legally Real
 
 ### Body
-Build permissioned token contracts (such as ERC-3643 or an equivalent compliant standard) enforcing KYC-gated, whitelist-based transfers rather than open, unrestricted transferability.
+Institutional interest in tokenized real-world assets has moved from experimental pilot programs to genuine allocation strategy, as major asset managers and banks explore tokenized funds and treasuries as a way to unlock 24/7 settlement and fractional ownership without abandoning existing regulatory frameworks. The organizations succeeding here aren't the ones treating tokenization as a marketing exercise — they're the ones building token structures with the same legal rigor as a traditional securities offering, just settled on a different rail. Tokenizing a real-world asset isn't just wrapping it in an ERC-20 contract and calling it done — the token has to actually enforce securities-law transfer restrictions, integrate with a real custodian or transfer agent, and maintain a legally defensible link between the on-chain token and the underlying legal ownership record. A large share of early 'tokenized real estate' and similar projects amounted to little more than a symbolic token with no enforceable legal claim behind it — impressive on a pitch deck, worthless the moment an investor actually needed to exercise their ownership rights.
+
+#### The Old Way
+- Wrap the asset in a standard ERC-20 with no transfer restrictions or legal wrapper
+- Skip custodian or transfer agent integration entirely
+- Treat KYC as a simple checkbox rather than a jurisdiction-specific gating mechanism
+- Launch without a clear legal answer to 'what does the token holder actually own?'
+
+#### The Quecko Way
+- Structure a proper legal wrapper (typically an SPV) before any token is minted
+- Integrate directly with a custodian or transfer agent maintaining the authoritative ownership record
+- Build permissioned, whitelist-based transfer restrictions directly into the token standard
+- Define and document the token holder's legal claim clearly before investor onboarding begins
 
 ---
 
@@ -71,6 +83,11 @@ What Quecko Delivers for Real-World Asset
 Our Engineering Approach
 
 ### Step-by-Step
+1. **Asset & Structure Design:** Define the legal wrapper (SPV, fund structure), transfer restriction rules, and target jurisdiction for the tokenized asset in close coordination with legal counsel before any technical work begins.
+2. **Token & Compliance Engineering:** Build permissioned token contracts (such as ERC-3643 or an equivalent compliant standard) enforcing KYC-gated, whitelist-based transfers rather than open, unrestricted transferability.
+3. **Custody & Registry Integration:** Integrate with a custodian or transfer agent maintaining the legal record of ownership tied to the token, so the on-chain record and the legal record never diverge.
+4. **Investor Onboarding Platform Build:** Build a KYC/accreditation-gated investor onboarding platform controlling access to the tokenized offering per applicable jurisdiction and investor eligibility rules.
+5. **Issuance & Secondary Market Launch:** Primary issuance to onboarded investors, followed by secondary market trading support where permitted under the applicable regulatory structure.
 
 ---
 
@@ -80,10 +97,10 @@ Our Engineering Approach
 Execution Timeline
 
 ### Timeline
-- **Day 1–22:** Phase 1: Planning & Specification
-- **Day 23–44:** Phase 2: Development & Integration
-- **Day 45–66:** Phase 3: Testing & Auditing
-- **Day 67–88:** Phase 4: Mainnet Deployment & Launch
+- **Day 1–22 (Asset & Structure Design):** Define the legal wrapper (SPV, fund structure), transfer restriction rules, and target jurisdiction for the tokenized asset in close coordination with legal counsel before any technical work begins.
+- **Day 23–44 (Token & Compliance Engineering):** Build permissioned token contracts (such as ERC-3643 or an equivalent compliant standard) enforcing KYC-gated, whitelist-based transfers rather than open, unrestricted transferability.
+- **Day 45–66 (Custody & Registry Integration):** Integrate with a custodian or transfer agent maintaining the legal record of ownership tied to the token, so the on-chain record and the legal record never diverge.
+- **Day 67–88 (Investor Onboarding Platform Build):** Build a KYC/accreditation-gated investor onboarding platform controlling access to the tokenized offering per applicable jurisdiction and investor eligibility rules.
 
 ---
 
@@ -106,9 +123,9 @@ Why Quecko for Real-World Asset
 
 ### Differentiators
 - **Legally Defensible Structure:** Token design is coordinated directly with legal structuring so the on-chain asset has real, enforceable backing, not just a symbolic wrapper that looks credible in a pitch deck.
-- **Compliance-Native Tokens:** Transfer restrictions and KYC-gating are built directly into the token standard itself, not bolted on with a separate, bypassable whitelist contract.
+- **Compliance:** Native Tokens — Transfer restrictions and KYC-gating are built directly into the token standard itself, not bolted on with a separate, bypassable whitelist contract.
 - **Custodian Integration Experience:** Direct integration experience with custodians and transfer agents maintaining the authoritative legal ownership record behind the token.
-- **Cross-Team Coordination:** Works directly and continuously with Quecko's Legal Structuring and Regulatory Compliance teams for a fully coordinated, single-accountability launch.
+- **Cross:** Team Coordination — Works directly and continuously with Quecko's Legal Structuring and Regulatory Compliance teams for a fully coordinated, single-accountability launch.
 
 ---
 

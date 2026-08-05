@@ -4,7 +4,7 @@ page-type: Internal Service Page — Web3 & Blockchain Engineering
 slug: /services/web3/crypto-wallet-development
 audience: Founders and enterprises seeking secure, custom crypto wallet infrastructure.
 goal: Position Quecko as a premier partner for custodial, non-custodial, and MPC wallet engineering.
-primary-cta: Talk to Our Team
+primary-cta: Talk to a Wallet Engineer
 seo-primary-keywords: ["Crypto Wallet Development — Non-Custodial, MPC", "Custodial"]
 seo-meta-description: "Quecko builds custodial, non-custodial, and MPC crypto wallets — secure, multi-chain, and embeddable into any product experience."
 ---
@@ -16,13 +16,13 @@ seo-meta-description: "Quecko builds custodial, non-custodial, and MPC crypto wa
 ## 1. HERO
 
 ### Headline
-
+As Secure as a Hardware Wallet. As Simple as a Banking App.
 
 ### Subhead
-
+Quecko builds crypto wallets across every custody model — non-custodial, custodial, and MPC-based — engineered to be as secure as a hardware wallet and as simple to use as a mainstream banking app, without asking users to become their own security expert.
 
 ### CTA
-[Talk to Our Team]
+[Talk to a Wallet Engineer] [Explore Our Work]
 
 ---
 
@@ -37,10 +37,22 @@ seo-meta-description: "Quecko builds custodial, non-custodial, and MPC crypto wa
 ## 2. THE CHALLENGE
 
 ### Headline
-Social recovery or guardian-based backup flows designed around how real users actually behave, not an idealized security-conscious user who never loses a device or forgets a phrase.
+Where Wallets Actually Lose User Funds
 
 ### Body
-Key generation, secure storage, and transaction signing infrastructure, plus multi-chain transaction construction and broadcasting logic built to handle network-specific quirks correctly.
+Every Web3 product, no matter how sophisticated its underlying protocol, is ultimately experienced through a wallet — and wallets remain the point where mainstream users most often abandon crypto entirely, confused by seed phrases, gas fees, and unfamiliar signing prompts. Account abstraction and MPC custody have matured to the point where a genuinely mainstream-friendly wallet experience is achievable without sacrificing self-custody principles, but building it correctly requires treating UX and cryptographic security as one unified design problem rather than two separate concerns handled by different teams. Wallets sit at the highest-stakes point of any Web3 product — a single key-management flaw means permanent, irreversible loss of user funds with no customer support line to call and no chargeback process available. Teams routinely underestimate how much of wallet engineering is UX and recovery design rather than pure cryptography: industry data consistently shows that seed phrase confusion, phishing via unclear signing prompts, and lost recovery phrases cause far more fund loss than actual smart contract hacks or cryptographic breaks. A technically perfect key-management scheme still fails if real users can't operate it correctly under everyday conditions.
+
+#### The Old Way
+- Hand users a seed phrase and a warning, then consider key management 'solved'
+- Present raw transaction signing prompts users can't meaningfully evaluate
+- Treat MPC or account abstraction as a nice-to-have future upgrade
+- Build a standalone wallet app when embedding into an existing product would serve users better
+
+#### The Quecko Way
+- Design recovery flows (social recovery, guardian-based, or MPC-distributed) as the primary safety net, not the seed phrase alone
+- Translate signing requests into plain-language summaries of what a transaction actually does
+- Default to account abstraction (ERC-4337) or MPC custody where it meaningfully improves security and UX simultaneously
+- Build wallet functionality as an embeddable SDK whenever that better serves the actual product experience
 
 ---
 
@@ -71,6 +83,11 @@ What Quecko Delivers for Crypto Wallet Development
 Our Engineering Approach
 
 ### Step-by-Step
+1. **Custody Model Selection:** Choose non-custodial, custodial, or MPC-based custody based on your product's actual risk tolerance, target user sophistication, and regulatory context — not a default choice made out of familiarity.
+2. **Core Wallet Engineering:** Key generation, secure storage, and transaction signing infrastructure, plus multi-chain transaction construction and broadcasting logic built to handle network-specific quirks correctly.
+3. **Recovery & UX Design:** Social recovery or guardian-based backup flows designed around how real users actually behave, not an idealized security-conscious user who never loses a device or forgets a phrase.
+4. **Security Audit:** Independent security review of key management logic, signing flows, and recovery mechanisms, specifically probing for the everyday failure modes that cause the majority of real-world fund loss.
+5. **Launch & Ecosystem Integration:** App store submission for mobile, browser extension packaging for web, and integrations with dApps, DEXs, and NFT marketplaces so the wallet is genuinely useful from day one, not an isolated product.
 
 ---
 
@@ -80,10 +97,10 @@ Our Engineering Approach
 Execution Timeline
 
 ### Timeline
-- **Day 1–22:** Phase 1: Planning & Specification
-- **Day 23–44:** Phase 2: Development & Integration
-- **Day 45–66:** Phase 3: Testing & Auditing
-- **Day 67–88:** Phase 4: Mainnet Deployment & Launch
+- **Day 1–22 (Custody Model Selection):** Choose non-custodial, custodial, or MPC-based custody based on your product's actual risk tolerance, target user sophistication, and regulatory context — not a default choice made out of familiarity.
+- **Day 23–44 (Core Wallet Engineering):** Key generation, secure storage, and transaction signing infrastructure, plus multi-chain transaction construction and broadcasting logic built to handle network-specific quirks correctly.
+- **Day 45–66 (Recovery & UX Design):** Social recovery or guardian-based backup flows designed around how real users actually behave, not an idealized security-conscious user who never loses a device or forgets a phrase.
+- **Day 67–88 (Security Audit):** Independent security review of key management logic, signing flows, and recovery mechanisms, specifically probing for the everyday failure modes that cause the majority of real-world fund loss.
 
 ---
 
@@ -107,8 +124,8 @@ Technologies We Master
 Why Quecko for Crypto Wallet Development
 
 ### Differentiators
-- **Custody-Model Agnostic:** We build all major custody models with equal depth and recommend based on your actual risk profile and user base, not our own default preference or what we happen to have built most recently.
-- **UX-First Security:** Recovery and signing flows are designed around how real users actually behave under everyday conditions, since most fund loss comes from confusion and forgotten backups, not sophisticated hacks.
+- **Custody:** Model Agnostic — We build all major custody models with equal depth and recommend based on your actual risk profile and user base, not our own default preference or what we happen to have built most recently.
+- **UX:** First Security — Recovery and signing flows are designed around how real users actually behave under everyday conditions, since most fund loss comes from confusion and forgotten backups, not sophisticated hacks.
 - **Account Abstraction Fluency:** Deep, current experience with ERC-4337 smart accounts for gasless transactions, social recovery, and programmable spending controls.
 - **Embeddable by Design:** Wallet SDKs built to drop into any existing app without requiring a full standalone wallet product, meaningfully reducing your time to market.
 
