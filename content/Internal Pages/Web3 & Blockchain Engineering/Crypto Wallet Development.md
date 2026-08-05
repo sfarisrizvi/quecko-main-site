@@ -1,12 +1,12 @@
 ---
-title: Crypto Wallet Development Services | Quecko
+title: Crypto Wallet Development — Non-Custodial, MPC & Custodial | Quecko
 page-type: Internal Service Page — Web3 & Blockchain Engineering
 slug: /services/web3/crypto-wallet-development
-audience: Crypto startups, fintech companies, and enterprise blockchain teams needing secure, multi-chain wallet infrastructure.
-goal: Position Quecko as the partner for building production-grade crypto wallet solutions — custodial, non-custodial, and MPC.
-primary-cta: Talk to a Wallet Engineer
-seo-primary-keywords: [crypto wallet development, blockchain wallet development, multi-chain wallet, MPC wallet development]
-seo-meta-description: "Quecko builds secure crypto wallets — custodial, non-custodial, MPC, and multi-chain. Mobile, web, and browser extension wallets built for production. 250+ products shipped."
+audience: Founders and enterprises seeking secure, custom crypto wallet infrastructure.
+goal: Position Quecko as a premier partner for custodial, non-custodial, and MPC wallet engineering.
+primary-cta: Talk to Our Team
+seo-primary-keywords: ["Crypto Wallet Development — Non-Custodial, MPC", "Custodial"]
+seo-meta-description: "Quecko builds custodial, non-custodial, and MPC crypto wallets — secure, multi-chain, and embeddable into any product experience."
 ---
 
 # CRYPTO WALLET DEVELOPMENT
@@ -16,107 +16,74 @@ seo-meta-description: "Quecko builds secure crypto wallets — custodial, non-cu
 ## 1. HERO
 
 ### Headline
-Secure Crypto Wallet Development — Custodial, Non-Custodial, and Multi-Chain
+
 
 ### Subhead
-Quecko builds wallet infrastructure that users trust with their assets. From non-custodial mobile wallets and browser extensions to MPC-powered institutional custody solutions, we engineer wallets with the security architecture, UX polish, and multi-chain support that the market demands.
+
 
 ### CTA
-[Talk to a Wallet Engineer] [Explore Our Work]
+[Talk to Our Team]
 
 ---
 
 ## 1.5. MICRO-TRUST STRIP
 
-- Multi-chain wallet products shipped
-- Zero custody breaches on Quecko-built wallets
-- Supporting 50+ blockchain networks across client products
+- 400+ clients across 20+ countries
+- $300M+ in funds generated
+- 250+ products built across blockchain, AI, and enterprise platforms
 
 ---
 
 ## 2. THE CHALLENGE
 
 ### Headline
-A wallet is the first thing users touch — and the last thing they'll forgive if it fails.
+Social recovery or guardian-based backup flows designed around how real users actually behave, not an idealized security-conscious user who never loses a device or forgets a phrase.
 
 ### Body
-Wallet development sits at the intersection of cryptography, UX design, and multi-chain infrastructure — and getting any one of those wrong means losing users or losing funds. Most teams either build wallets with poor key management that creates security vulnerabilities, or over-engineer the security to the point where the UX becomes unusable. Quecko builds wallets that balance institutional-grade security with consumer-grade simplicity — HD key derivation, multi-party computation, biometric authentication, and seamless multi-chain support, all wrapped in interfaces that non-technical users can navigate without a tutorial.
+Key generation, secure storage, and transaction signing infrastructure, plus multi-chain transaction construction and broadcasting logic built to handle network-specific quirks correctly.
 
 ---
 
 ## 3. CORE CAPABILITIES
 
 ### Headline
-Comprehensive Wallet Engineering
+What Quecko Delivers for Crypto Wallet Development
 
 ### Grid
 
-- **Non-Custodial Wallet Development:** Self-custody wallets where users own their keys. We implement HD wallet derivation (BIP-32/39/44), encrypted local key storage, seed phrase backup flows, and recovery mechanisms that balance security with usability.
+- **Non-Custodial Wallets:** Full user key ownership with secure local key storage, seed phrase backup flows, and biometric-gated signing designed to minimize the everyday friction that causes users to make risky shortcuts.
 
-- **Custodial & Institutional Wallet Solutions:** Enterprise-grade custody infrastructure with HSM integration, multi-signature authorization, role-based access control, and full audit trails. Built for institutions that need compliance-ready asset management.
+- **MPC Wallets:** Multi-party computation-based key management that eliminates single points of failure without requiring a traditional seed phrase at all, distributing key shares across devices or parties so no single compromise is catastrophic.
 
-- **MPC Wallet Architecture:** Multi-party computation wallets that eliminate single points of failure. We implement threshold signature schemes where no single party holds the complete private key — combining institutional security with seamless UX.
+- **Custodial Wallet Infrastructure:** Enterprise-grade custody with HSM-backed key storage, multi-approval withdrawal flows, and compliance-ready audit trails suited to platforms that need to hold assets on behalf of users directly.
 
-- **Multi-Chain Wallet Support:** Unified wallet interfaces supporting EVM chains, Solana, Bitcoin, Cosmos, and custom networks. We handle chain-specific transaction signing, gas management, and token standard compatibility across ecosystems.
+- **Multi-Chain Wallet Support:** Unified wallet experiences spanning EVM chains, Solana, and Bitcoin, with automatic network detection so users don't need to understand which chain an asset lives on to use it.
 
-- **Browser Extension & Web Wallets:** Chrome/Firefox extension wallets with dApp injection, transaction simulation, and phishing protection. We build extensions that integrate seamlessly with DeFi, NFT, and Web3 applications.
+- **Wallet-as-a-Feature (SDK):** Embeddable wallet SDKs that let any existing app add crypto wallet functionality without building custody infrastructure from scratch, dramatically reducing time-to-market for wallet-enabled features.
 
-- **Wallet-as-a-Service (WaaS) Infrastructure:** White-label wallet SDKs and APIs for platforms that need embedded wallet functionality — social login onboarding, gasless transactions, and session key management for Web3 apps.
-
----
-
-## 3.5. TARGET QUALIFIER
-
-### Who This Is For
-- **Ideal Fit:** Crypto startups building their own branded wallet, exchanges needing integrated custody, DeFi protocols requiring embedded wallet flows, or enterprises entering Web3 with institutional custody needs.
-- **Not a Fit:** Teams looking for a MetaMask integration guide — we build custom wallet products, not tutorials.
+- **Social Recovery & Account Abstraction:** ERC-4337-based smart accounts with guardian-based recovery, removing seed phrases as the sole recovery mechanism and enabling gasless transactions, session keys, and spending limits.
 
 ---
 
 ## 4. OUR PROCESS
 
 ### Headline
-Our Engineering Approach to Wallet Development
+Our Engineering Approach
 
 ### Step-by-Step
-1. **Wallet Architecture & Key Management Design:** We define the custody model (custodial, non-custodial, MPC), key derivation paths, backup/recovery flows, and multi-chain support requirements.
-2. **Core Wallet Development:** Key generation, transaction signing, chain-specific integrations, token management, and UI/UX implementation. For mobile: native iOS/Android or cross-platform (Flutter/React Native).
-3. **Security Hardening & Penetration Testing:** Key storage encryption validation, transaction simulation testing, phishing protection, biometric auth testing, and full penetration testing by our security team.
-4. **Launch & Ecosystem Integration:** App store submissions, browser extension publishing, dApp ecosystem integrations, user onboarding flows, and post-launch monitoring.
-
----
-
-## 4.5. WALLET SOLUTIONS
-
-### Headline
-Wallet Solutions
-
-### Subhead
-Development of custom, white-label, custodial, and non-custodial wallet infrastructure.
-
-### Solutions
-- **Digital Wallet:** Custom client-facing wallet applications for secure asset storage and transfers.
-- **White Label Wallet:** Customizable, production-ready wallet templates for rapid rebranding and distribution.
-- **Super App Development:** Consolidated portal combining wallets, messaging, dApp browsers, and payment gateways.
-- **DeFi Wallet:** Non-custodial wallets tailored for seamless interactions with Web3 yield and liquidity platforms.
-- **Web3 Wallet:** Secure browser extensions and mobile clients built to authenticate and interact with decentralized networks.
-- **Multicurrency Wallet:** Cross-chain wallet systems supporting Bitcoin, Ethereum, EVM networks, and non-EVM chains under one seed phrase.
-- **TRON Wallet:** High-speed wallet architectures specialized for the TRON network, bandwidth, and energy models.
-- **MPC Crypto Wallet:** Multi-Party Computation wallets eliminating single points of failure by splitting private keys.
-- **AI Crypto Wallet:** Smart wallet implementations with integrated AI assistants to analyze gas, portfolio trends, and automate transfers.
 
 ---
 
 ## 5. PROJECT BLUEPRINT
 
 ### Headline
-From Day 1 to Day 90: What Wallet Execution Looks Like
+Execution Timeline
 
 ### Timeline
-- **Day 1–15 (Architecture & Key Design):** Custody model selection, key derivation design, multi-chain support mapping, UI/UX wireframes, and security requirements documentation.
-- **Day 16–45 (Core Development):** Key management implementation, transaction signing for target chains, token display/management, send/receive flows, and backup/recovery UX.
-- **Day 46–75 (Security & Testing):** Penetration testing, key storage audits, transaction simulation testing, phishing protection, biometric integration, and cross-chain transaction validation.
-- **Day 76–90 (Launch & Integration):** App store/extension publishing, dApp connector integration, user onboarding optimization, monitoring setup, and documentation.
+- **Day 1–22:** Phase 1: Planning & Specification
+- **Day 23–44:** Phase 2: Development & Integration
+- **Day 45–66:** Phase 3: Testing & Auditing
+- **Day 67–88:** Phase 4: Mainnet Deployment & Launch
 
 ---
 
@@ -126,25 +93,24 @@ From Day 1 to Day 90: What Wallet Execution Looks Like
 Technologies We Master
 
 ### Stack
-- **Key Management:** BIP-32/39/44, ECDSA, EdDSA, Shamir's Secret Sharing, MPC (TSS)
-- **Mobile:** Swift (iOS), Kotlin (Android), Flutter, React Native
-- **Web/Extension:** React, TypeScript, Chrome Extension APIs, Web3Modal, WalletConnect
-- **Chains:** Ethereum, Polygon, Arbitrum, Optimism, Solana, Bitcoin, Cosmos, BSC, Avalanche, custom chains
-- **Security:** HSM integration (AWS CloudHSM, Azure HSM), Secure Enclave, biometric APIs
-- **Infrastructure:** Node.js, Go, PostgreSQL, Redis, AWS KMS
+- **Key Management:** MPC (threshold signatures), HSM integration, Secure Enclave / Keystore
+- **Account Abstraction:** ERC-4337, Safe (Gnosis Safe) smart accounts
+- **Mobile:** Swift, Kotlin, React Native
+- **Browser Extension:** TypeScript, WebExtensions API
+- **Infrastructure:** Chain RPC providers, WalletConnect protocol
 
 ---
 
 ## 7. WHY CHOOSE QUECKO
 
 ### Headline
-Your Wallet Guards Every Asset Your Users Own. We Build It Like That Matters.
+Why Quecko for Crypto Wallet Development
 
 ### Differentiators
-- **Cryptography-First Engineering:** Our wallet engineers understand HD derivation, threshold signatures, and key management at a cryptographic level — not just at an API level.
-- **Multi-Chain Native:** We don't bolt on chain support as an afterthought. Our wallets are architected for multi-chain from day one — EVM, Solana, Bitcoin, Cosmos, and beyond.
-- **Security Without UX Sacrifice:** Institutional-grade key management wrapped in interfaces that non-crypto-native users can navigate. Security and usability aren't trade-offs — they're both requirements.
-- **250+ Products Shipped:** From consumer mobile wallets to institutional MPC custody, we've built wallet infrastructure trusted with real assets at scale.
+- **Custody-Model Agnostic:** We build all major custody models with equal depth and recommend based on your actual risk profile and user base, not our own default preference or what we happen to have built most recently.
+- **UX-First Security:** Recovery and signing flows are designed around how real users actually behave under everyday conditions, since most fund loss comes from confusion and forgotten backups, not sophisticated hacks.
+- **Account Abstraction Fluency:** Deep, current experience with ERC-4337 smart accounts for gasless transactions, social recovery, and programmable spending controls.
+- **Embeddable by Design:** Wallet SDKs built to drop into any existing app without requiring a full standalone wallet product, meaningfully reducing your time to market.
 
 ---
 
@@ -157,7 +123,7 @@ Your Wallet Guards Every Asset Your Users Own. We Build It Like That Matters.
 ## 8.5. SERVICE-SPECIFIC SOCIAL PROOF
 
 > "With hard work, determination, and an amazing team at Quecko, we can overcome any obstacle and achieve anything we set our minds to."
-> **Mateen O Dawood**, Stable33 Protocol
+> **Tom Blears**, Bitcast Protocol
 
 ---
 
@@ -175,35 +141,41 @@ Your Wallet Guards Every Asset Your Users Own. We Build It Like That Matters.
 
 ## 11. ENGAGEMENT & DELIVERY MODELS
 
-- **Dedicated Wallet Pod:** Full-time mobile/web engineers, cryptography specialists, and security testers working as your wallet development team.
-- **Project-Based Delivery:** End-to-end wallet development from architecture to app store launch, with security audit included.
-- **Wallet-as-a-Service SDK:** White-label wallet infrastructure delivered as an embeddable SDK for your existing platform.
+- **Full Wallet Product Build  (3–6 months typical):** Standalone consumer or enterprise wallet application built from architecture through app store launch.
+- **Wallet SDK Integration  (6–12 weeks):** Embed wallet functionality into an existing app or platform without building custody infrastructure from scratch.
+- **Dedicated Wallet Engineering Pod  (Ongoing):** Embedded key-management and mobile engineers for continuous wallet feature development.
 
 ---
 
 ## 12. FAQs
 
-**What types of crypto wallets can you build?**
-We build non-custodial mobile wallets, custodial enterprise wallets, MPC wallets, browser extensions, hardware wallet integrations, and embedded wallet SDKs (Wallet-as-a-Service). We support all major chains and token standards.
+**What's the difference between MPC and multi-sig wallets?**
+MPC splits a single private key into distributed shares that never fully combine at any point, while multi-sig uses multiple complete, independent keys requiring M-of-N signatures to authorize a transaction. MPC is typically faster and cheaper on-chain since it produces a standard single signature, while multi-sig is more battle-tested, transparent on-chain, and easier for users to audit independently.
 
-**How do you handle private key security?**
-Depending on the custody model, we implement encrypted local storage with Secure Enclave/Keystore, HSM-backed custody, or MPC threshold signatures. Every implementation undergoes penetration testing and security audit.
+**Can you add wallet functionality to our existing app?**
+Yes, our Wallet SDK is specifically designed for embedding into existing products without requiring a full standalone wallet rebuild. Most integrations can add core send/receive/sign functionality within a matter of weeks, with more advanced features like account abstraction layered in afterward as needed.
 
-**Can you build a multi-chain wallet?**
-Yes. Our wallets support EVM chains (Ethereum, Polygon, Arbitrum, etc.), Solana, Bitcoin, Cosmos ecosystem chains, and custom networks — all from a unified interface with chain-specific transaction signing.
+**How do you handle seed phrase recovery for non-custodial wallets?**
+We design social recovery and guardian-based recovery flows using account abstraction, meaningfully reducing reliance on users safely storing a seed phrase alone with no backup. This typically involves trusted contacts or devices that can collectively help a user regain access without any single point holding full control.
 
-**Do you build both mobile and browser extension wallets?**
-Yes. We build native iOS and Android wallets, cross-platform wallets (Flutter/React Native), Chrome/Firefox browser extensions, and web-based wallets — all sharing a common key management backend.
+**Which chains can a single wallet support?**
+We build multi-chain wallets spanning all major EVM chains, Solana, and Bitcoin within a single unified interface, with automatic network detection so users interact with assets without needing to understand the underlying chain architecture themselves.
+
+**Is a custodial or non-custodial wallet better for our product?**
+It depends on your regulatory exposure, target users, and product model — custodial wallets simplify UX and enable features like account recovery via support, but they concentrate custody risk and regulatory obligations on your platform. We help assess this trade-off explicitly rather than defaulting to one model.
+
+**How do you test wallet security before launch?**
+Independent security review specifically targets key generation, storage, and signing logic, alongside penetration testing of recovery flows for the everyday failure modes — lost devices, social engineering attempts, and phishing-style signing requests — that account for the majority of real-world wallet fund loss.
 
 ---
 
 ## 13. FINAL CTA
 
 ### Headline
-Ready to build a wallet your users will trust?
+Ready to build a wallet secure enough for power users and simple enough for everyone else?
 
 ### Body
-Whether you need a consumer mobile wallet, institutional MPC custody, or an embedded wallet SDK — Quecko's engineers build wallet infrastructure with the security and UX your users and assets deserve.
+
 
 ### CTA
-[Start a Project]   [View Our Portfolio]
+[Talk to a Wallet Engineer] [View Our Portfolio]
