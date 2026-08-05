@@ -1,12 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 export default function StepperTimeline({ timeline, headline, cleanSubTitle }) {
+  const containerRef = useRef(null);
+  const timelineTrackRef = useRef(null);
+
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 769px)", () => {
+      const track = timelineTrackRef.current;
+      if (!track) return;
+      
+      const totalScroll = track.scrollWidth - window.innerWidth + 120;
+
+      gsap.to(track, {
+        x: -totalScroll,
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current.querySelector(".timeline-scroll-wrapper"),
+          start: "center center",
+          end: () => `+=${totalScroll}`,
+          scrub: 1,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true
+        }
+      });
+    });
+  }, { scope: containerRef });
+
   if (!timeline || timeline.length === 0) return null;
 
   return (
-    <section className="l1l2-timeline-section" style={{ background: "#FFFFFF", padding: "100px 0", overflow: "hidden", borderBottom: "1px solid rgba(0, 0, 0, 0.05)" }}>
+    <section ref={containerRef} className="l1l2-timeline-section" style={{ background: "#FFFFFF", padding: "100px 0", overflow: "hidden", borderBottom: "1px solid rgba(0, 0, 0, 0.05)" }}>
       <div className="timeline-header" style={{ textAlign: "center", marginBottom: "50px", padding: "0 24px" }}>
         <span className="timeline-eyebrow" style={{
           display: "inline-flex",
@@ -29,21 +63,10 @@ export default function StepperTimeline({ timeline, headline, cleanSubTitle }) {
         </h2>
       </div>
 
-      <div className="timeline-scroll-wrapper" style={{
-        position: "relative",
-        width: "100%",
-        padding: "20px 0 40px"
-      }}>
-        <div style={{
-          display: "flex",
-          gap: "32px",
-          overflowX: "auto",
-          padding: "0 40px",
-          scrollbarWidth: "none", // Firefox
-          msOverflowStyle: "none", // IE
-          WebkitOverflowScrolling: "touch"
-        }} className="custom-timeline-scroll">
-          {timeline.map((step, idx) => {
+      <div className="timeline-scroll-wrapper">
+        <div className="timeline-pin-container">
+          <div ref={timelineTrackRef} className="timeline-track custom-timeline-scroll">
+            {timeline.map((step, idx) => {
             // Parse timeframe and title
             const parts = step.timeframe ? step.timeframe.match(/^([^(]+)(?:\(([^)]+)\))?$/) : null;
             const timeLabel = parts ? parts[1].trim() : (step.timeframe || `Phase 0${idx + 1}`);
@@ -112,6 +135,7 @@ export default function StepperTimeline({ timeline, headline, cleanSubTitle }) {
           })}
         </div>
       </div>
+    </div>
       <style jsx global>{`
         .custom-timeline-scroll::-webkit-scrollbar {
           display: none;
