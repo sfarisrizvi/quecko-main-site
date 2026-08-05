@@ -145,7 +145,7 @@ export default function StepperTimeline({ timeline, headline, cleanSubTitle }) {
         }
         @media (min-width: 1024px) {
           .timeline-step-card {
-            flex: 0 0 calc((100% - 64px) / 3) !important;
+            flex: 0 0 calc((100% - 200px) / 3) !important;
           }
         }
         .timeline-step-card:hover {
