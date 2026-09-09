@@ -36,10 +36,11 @@ export const allServicesData = {
         "title": "Layer 1 & Layer 2 Development",
         "slug": "layer-1-layer-2-development",
         "headline": "Custom chains and scaling solutions engineered for high throughput.",
-        "overview": "We design and deploy custom blockchain networks and layer-2 scaling solutions (rollups, sidechains) tailored to your transaction, latency, and consensus needs.",
+        "overview": "We design and deploy custom blockchain networks and layer-2 scaling solutions (rollups, sidechains) across major Layer 1 protocols (BNB Chain, Solana, Ethereum, Polkadot, Sui) tailored to your transaction, latency, and consensus needs.",
         "capabilities": [
           "Custom consensus mechanism design (PoS, PoA, DPoS)",
           "Rollup integration (Optimistic & ZK-Rollups)",
+          "Layer 1 networks (BNB Chain, Solana, Ethereum, Polkadot, Sui)",
           "Subnet and Appchain architecture (Avalanche Subnets, Cosmos Zones, Polkadot Parachains)",
           "Cross-chain bridge development and security hardening"
         ]

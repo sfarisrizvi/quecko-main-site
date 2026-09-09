@@ -88,13 +88,255 @@ const BENCHMARKS = [
   { value: "4–12mo", label: "Delivery range based on consensus complexity" }
 ];
 
-const ECOSYSTEM_CHAINS = [
-  { name: "Ethereum", desc: "Solidity/Vyper engineering, EVM-compatible dApps, gas optimization, ERC-20/721/1155 standards." },
-  { name: "Solana", desc: "Rust-based program engineering, high-frequency DeFi protocols, Anchor framework audit-readiness." },
-  { name: "BNB Smart Chain", desc: "High-performance BEP-20 tokens, BSC-optimized contracts, DeFi ecosystem hooks." },
-  { name: "Polkadot", desc: "Substrate framework engineering, custom parachain development, cross-chain messaging (XCM)." },
-  { name: "Cardano", desc: "Plutus & Haskell engineering, UTXO architecture security, sustainable tokenomics design." },
-  { name: "SUI", desc: "Sui Move contract deployment, parallelized execution, object-based asset modeling." }
+const LAYER1_CHAINS = [
+  {
+    id: "bnb",
+    name: "BNB Chain Development",
+    cardTitle: "BNB Chain",
+    cardDesc: "Build scalable decentralized applications with BNB Chain’s EVM-compatible infrastructure.",
+    accentColor: "#F3BA2F",
+    accentRgb: "243, 186, 47",
+    intro: "Build and deploy scalable blockchain solutions with BNB Chain. Its EVM compatibility, efficient transaction processing, and broad ecosystem make it suitable for decentralized applications, digital assets, DeFi platforms, and Web3 products.",
+    queckoRole: "At Quecko, we develop custom BNB Chain solutions based on your business requirements, from smart contracts and token development to dApps, wallets, and decentralized exchanges.",
+    servicesTitle: "Our BNB Chain Development Services",
+    services: [
+      {
+        title: "BNB Chain Consulting",
+        desc: "Get strategic guidance on blockchain architecture, technology selection, development planning, and BNB Chain integration based on your business requirements."
+      },
+      {
+        title: "BNB Chain Token Development",
+        desc: "Create and deploy custom tokens for payments, utility, governance, DeFi, gaming, and other Web3 applications with the required token standards and functionality."
+      },
+      {
+        title: "BNB Chain Smart Contract Development",
+        desc: "Develop, test, and deploy secure smart contracts to automate transactions, business processes, and digital asset management on BNB Chain."
+      },
+      {
+        title: "BNB Chain Wallet Development",
+        desc: "Build secure and user-friendly wallets for storing, transferring, and managing digital assets, with support for required tokens and transaction functionality."
+      },
+      {
+        title: "BNB Chain NFT Marketplace Development",
+        desc: "Develop scalable NFT marketplaces with features such as minting, buying, selling, bidding, royalties, and digital asset management."
+      },
+      {
+        title: "BNB Chain DeFi Development",
+        desc: "Build decentralized finance applications for use cases such as staking, lending, borrowing, liquidity management, and yield-based platforms."
+      },
+      {
+        title: "BNB Chain dApp Development",
+        desc: "Develop decentralized applications tailored to specific business use cases, with secure smart contract integration and intuitive user interfaces."
+      },
+      {
+        title: "BNB Chain DEX Development",
+        desc: "Build decentralized exchanges for token swaps and digital asset trading, with features such as liquidity pools, trading pairs, and automated transaction execution."
+      }
+    ]
+  },
+  {
+    id: "solana",
+    name: "Solana Blockchain Development",
+    cardTitle: "Solana",
+    cardDesc: "Build high-performance decentralized applications with Solana’s scalable blockchain infrastructure.",
+    accentColor: "#14F195",
+    accentRgb: "20, 241, 149",
+    intro: "Develop fast, scalable, and cost-efficient Web3 applications on Solana. Its high-performance architecture and parallel transaction processing make it suitable for applications that require high throughput and low-latency transactions.",
+    queckoRole: "At Quecko, we develop custom Solana solutions, including dApps, smart contracts, tokens, wallets, NFT marketplaces, DeFi platforms, and blockchain integrations.",
+    servicesTitle: "Our Solana Development Services",
+    services: [
+      {
+        title: "Custom Solana dApp Development",
+        desc: "Build scalable decentralized applications for payments, trading, lending, gaming, digital assets, and other Web3 use cases."
+      },
+      {
+        title: "Solana Smart Contract Development",
+        desc: "Develop and audit Solana programs to automate transactions, enforce business logic, and support decentralized applications securely."
+      },
+      {
+        title: "Solana Token Development",
+        desc: "Create and deploy SPL tokens for DeFi, NFTs, gaming, loyalty programs, payments, and other digital asset use cases."
+      },
+      {
+        title: "Solana Wallet Development",
+        desc: "Develop secure, user-friendly wallets with features such as multi-asset support, transaction tracking, QR-based transfers, and digital asset management."
+      },
+      {
+        title: "Solana AI Integration",
+        desc: "Integrate AI capabilities into Solana applications for automation, analytics, recommendations, data processing, and intelligent decision-making."
+      },
+      {
+        title: "Solana NFT Marketplace Development",
+        desc: "Build NFT marketplaces with features including minting, trading, bidding, royalties, collections, and digital asset management."
+      },
+      {
+        title: "Solana AI Project Consulting",
+        desc: "Get technical guidance for Solana-based AI projects, including feasibility analysis, architecture planning, technology selection, integration, and optimization."
+      },
+      {
+        title: "Solana DeFi Exchange Development",
+        desc: "Develop decentralized trading platforms with features such as token swaps, liquidity pools, trading pairs, and automated transaction execution."
+      },
+      {
+        title: "Solana Migration Services",
+        desc: "Migrate existing blockchain applications from Ethereum or other compatible networks to Solana while adapting smart contracts, architecture, and functionality to the Solana ecosystem."
+      }
+    ],
+    benefitsTitle: "Key Benefits of Solana",
+    benefits: [
+      { title: "High Throughput", desc: "Solana is designed to process a high volume of transactions, making it suitable for applications that require scalable blockchain infrastructure." },
+      { title: "Low Transaction Costs", desc: "Solana supports low-cost transactions, making it practical for applications involving frequent on-chain interactions." },
+      { title: "Scalable Architecture", desc: "Solana’s architecture supports parallel transaction processing, helping applications maintain performance as transaction volumes increase." },
+      { title: "Fast Transaction Finality", desc: "Fast transaction confirmation enables responsive user experiences for trading, payments, gaming, and other real-time applications." },
+      { title: "Energy Efficient", desc: "Solana uses a Proof-of-Stake-based consensus model combined with Proof of History to support efficient network operation." },
+      { title: "Secure Development Environment", desc: "Solana programs can be developed using Rust and other supported technologies, enabling developers to build performance-focused and secure blockchain applications." }
+    ],
+    industriesTitle: "Industries We Serve",
+    industries: [
+      { title: "Banking & Finance", desc: "Develop DeFi platforms, payment solutions, tokenized assets, and financial applications with blockchain-based transaction infrastructure." },
+      { title: "Healthcare", desc: "Build solutions for secure data management, medical records, data sharing, and healthcare asset tracking." },
+      { title: "Real Estate", desc: "Enable property tokenization, automated agreements, digital ownership, and blockchain-based transaction management." },
+      { title: "Transport & Logistics", desc: "Improve supply chain visibility with blockchain-based tracking, automated processes, and tamper-resistant transaction records." },
+      { title: "Media & Entertainment", desc: "Build NFT platforms, digital ownership solutions, royalty management systems, and creator-focused Web3 applications." },
+      { title: "Insurance", desc: "Develop blockchain solutions for claims automation, policy management, data verification, and fraud reduction." }
+    ]
+  },
+  {
+    id: "ethereum",
+    name: "Ethereum Blockchain Development",
+    cardTitle: "Ethereum",
+    cardDesc: "Build secure and scalable decentralized applications with Ethereum blockchain solutions.",
+    accentColor: "#627EEA",
+    accentRgb: "98, 126, 234",
+    intro: "Ethereum provides a mature infrastructure for decentralized applications, smart contracts, tokens, DeFi platforms, and digital assets.",
+    queckoRole: "At Quecko, we develop customized Ethereum solutions based on your business requirements, from smart contracts and dApps to private blockchain networks and wallets.",
+    servicesTitle: "Our Ethereum Development Services",
+    services: [
+      {
+        title: "Ethereum dApp Development",
+        desc: "Develop decentralized applications with smart contract integration for financial services, marketplaces, gaming, digital assets, and other business use cases."
+      },
+      {
+        title: "Ethereum Smart Contract Development",
+        desc: "Create, test, and deploy smart contracts that automate transactions, workflows, and business rules without relying on intermediaries."
+      },
+      {
+        title: "Ethereum Token Development",
+        desc: "Develop ERC-compatible tokens for utility, governance, payments, digital assets, and other blockchain applications."
+      },
+      {
+        title: "Private Ethereum Blockchain Development",
+        desc: "Build permissioned Ethereum networks for organizations requiring controlled access, private transactions, and enterprise-focused blockchain infrastructure."
+      },
+      {
+        title: "Ethereum Node Development",
+        desc: "Set up and configure Ethereum nodes to support network connectivity, application infrastructure, blockchain data access, and transaction processing."
+      },
+      {
+        title: "Ethereum Wallet Development",
+        desc: "Develop secure wallets for managing Ethereum-based assets, with features tailored to your application's requirements."
+      }
+    ]
+  },
+  {
+    id: "polkadot",
+    name: "Polkadot Blockchain Development",
+    cardTitle: "Polkadot",
+    cardDesc: "Connect applications and assets across multiple blockchain networks with Polkadot development solutions.",
+    accentColor: "#E6007A",
+    accentRgb: "230, 0, 122",
+    intro: "Polkadot enables interoperability between independent blockchain networks, allowing applications to exchange data and assets across connected chains.",
+    queckoRole: "At Quecko, we develop Polkadot-based solutions focused on interoperability, scalability, cross-chain communication, and decentralized application development.",
+    servicesTitle: "Polkadot Development Services",
+    services: [
+      {
+        title: "Polkadot dApp Development",
+        desc: "Build decentralized applications designed for cross-chain functionality."
+      },
+      {
+        title: "Parachain Development",
+        desc: "Develop customized blockchain networks connected to the Polkadot ecosystem."
+      },
+      {
+        title: "Cross-Chain Solutions",
+        desc: "Enable secure communication and asset or data transfers between blockchain networks."
+      },
+      {
+        title: "Smart Contract Development",
+        desc: "Build and integrate smart contract functionality based on project requirements."
+      },
+      {
+        title: "Polkadot Consulting",
+        desc: "Plan blockchain architecture, network integration, technology selection, and development strategies."
+      }
+    ],
+    benefitsTitle: "Key Benefits of Polkadot",
+    benefits: [
+      { title: "Interoperability", desc: "Connect different blockchain networks and enable cross-chain communication." },
+      { title: "Scalability", desc: "Distribute workloads across connected networks to support scalable applications." },
+      { title: "Shared Security", desc: "Leverage the Polkadot ecosystem’s shared security model for connected blockchain networks." },
+      { title: "Cross-Chain Communication", desc: "Transfer data and digital assets between compatible blockchain networks." },
+      { title: "Flexible Architecture", desc: "Develop customized blockchain solutions for specific application and business requirements." }
+    ]
+  },
+  {
+    id: "sui",
+    name: "Sui Blockchain Development",
+    cardTitle: "Sui",
+    cardDesc: "Build scalable Web3 applications with Sui’s object-centric blockchain architecture.",
+    accentColor: "#34A2E6",
+    accentRgb: "52, 162, 230",
+    intro: "Sui is a Layer 1 blockchain designed for scalable digital asset applications, decentralized finance, gaming, and Web3 platforms. Its object-centric data model and parallel transaction execution support efficient processing of independent transactions.",
+    queckoRole: "At Quecko, we develop Sui-based solutions including dApps, smart contracts, NFTs, DeFi platforms, and blockchain integrations.",
+    servicesTitle: "Our Sui Development Services",
+    services: [
+      {
+        title: "Sui dApp Development",
+        desc: "Develop scalable decentralized applications using Sui's architecture for gaming, DeFi, digital assets, payments, and other Web3 use cases."
+      },
+      {
+        title: "Sui Smart Contract Development",
+        desc: "Build and deploy secure smart contracts using Move, with functionality tailored to your application's requirements."
+      },
+      {
+        title: "Sui NFT Development",
+        desc: "Create NFT platforms and digital asset solutions with support for minting, ownership, trading, and marketplace functionality."
+      },
+      {
+        title: "Sui DeFi Development",
+        desc: "Develop decentralized financial applications for lending, borrowing, staking, asset management, and other DeFi use cases."
+      },
+      {
+        title: "Sui Blockchain Consulting",
+        desc: "Get technical guidance on Sui adoption, architecture, development strategy, security, and blockchain integration."
+      },
+      {
+        title: "Sui Integration Services",
+        desc: "Integrate Sui blockchain functionality with existing applications, databases, APIs, and business systems."
+      }
+    ],
+    benefitsTitle: "Key Features of Sui",
+    benefits: [
+      { title: "Object-Centric Data Model", desc: "Sui represents digital assets as programmable objects with defined ownership and properties, supporting efficient asset management." },
+      { title: "Parallel Transaction Processing", desc: "Independent transactions can be processed in parallel, helping applications improve transaction throughput and performance." },
+      { title: "Move Programming Language", desc: "Sui uses Move, a programming language designed for secure digital asset management and smart contract development." },
+      { title: "Fast Transaction Finality", desc: "Sui is designed to provide rapid transaction processing and confirmation for supported use cases." },
+      { title: "On-Chain Asset Storage", desc: "Digital assets and their associated data can be managed directly on-chain, supporting transparent and verifiable ownership." },
+      { title: "Programmable Transaction Blocks", desc: "Developers can combine multiple operations into programmable transaction blocks to execute complex blockchain interactions efficiently." }
+    ],
+    industriesTitle: "Industries We Serve",
+    industries: [
+      { title: "Healthcare", desc: "Develop secure solutions for patient data management, medical supply chains, and data verification." },
+      { title: "Real Estate", desc: "Enable property tokenization, automated agreements, digital ownership, and transparent transaction management." },
+      { title: "BFSI", desc: "Build blockchain-based payment systems, financial applications, fraud prevention solutions, and automated insurance workflows." },
+      { title: "Agriculture", desc: "Improve supply chain traceability, product verification, sustainability tracking, and agricultural data management." },
+      { title: "Logistics", desc: "Develop solutions for shipment tracking, supply chain visibility, automated agreements, and transaction management." },
+      { title: "Retail", desc: "Enable product authentication, digital payments, asset tracking, and transparent supply chain management." },
+      { title: "Entertainment", desc: "Build NFT platforms, digital ownership systems, royalty management solutions, and decentralized creator ecosystems." },
+      { title: "Education", desc: "Develop blockchain-based credential verification, digital certificates, and secure academic record management." },
+      { title: "Energy", desc: "Build solutions for energy tracking, digital asset management, peer-to-peer energy trading, and renewable energy data management." }
+    ]
+  }
 ];
 
 const TECH_STACK = [
@@ -178,14 +420,110 @@ function CapIcon({ type }) {
 
 
 
+function ChainBrandIcon({ id, isActive }) {
+  const color = isActive ? "#000000" : "#636366";
+  const props = { 
+    width: 28, 
+    height: 28, 
+    viewBox: "0 0 24 24", 
+    fill: "none", 
+    stroke: color, 
+    strokeWidth: 1.8, 
+    strokeLinecap: "round", 
+    strokeLinejoin: "round" 
+  };
+  switch (id) {
+    case "bnb":
+      return (
+        <svg {...props}>
+          <path d="M12 2L5 9l7 7 7-7-7-7z" fill={isActive ? color : "none"} fillOpacity={isActive ? 0.2 : 0} />
+          <path d="M5 9l-4 4 4 4 4-4-4-4z" />
+          <path d="M19 9l-4 4 4 4 4-4-4-4z" />
+          <path d="M12 16l-7 7 7 7 7-7-7-7z" />
+        </svg>
+      );
+    case "solana":
+      return (
+        <svg {...props}>
+          <path d="M4 6h16l-3 4H1L4 6z" fill={color} fillOpacity={isActive ? 0.95 : 0.4} />
+          <path d="M20 12H4l3 4h16l-3-4z" fill={color} fillOpacity={isActive ? 0.95 : 0.4} />
+          <path d="M4 18h16l-3 4H1L4 18z" fill={color} fillOpacity={isActive ? 0.95 : 0.4} />
+        </svg>
+      );
+    case "ethereum":
+      return (
+        <svg {...props}>
+          <path d="M12 2L4 11.5L12 16L20 11.5L12 2Z" fill={isActive ? color : "none"} fillOpacity={isActive ? 0.25 : 0} />
+          <path d="M12 16L4 11.5L12 22L20 11.5L12 16Z" fill={isActive ? color : "none"} fillOpacity={isActive ? 0.4 : 0} />
+          <path d="M12 2V16" />
+          <path d="M12 16V22" />
+        </svg>
+      );
+    case "polkadot":
+      return (
+        <svg {...props}>
+          <circle cx="12" cy="12" r="3.5" fill={isActive ? color : "none"} />
+          <circle cx="5" cy="5" r="2" fill={isActive ? color : "none"} />
+          <circle cx="19" cy="5" r="2" fill={isActive ? color : "none"} />
+          <circle cx="5" cy="19" r="2" fill={isActive ? color : "none"} />
+          <circle cx="19" cy="19" r="2" fill={isActive ? color : "none"} />
+          <line x1="7.5" y1="7.5" x2="9.5" y2="9.5" />
+          <line x1="16.5" y1="7.5" x2="14.5" y2="9.5" />
+          <line x1="7.5" y1="16.5" x2="9.5" y2="14.5" />
+          <line x1="16.5" y1="16.5" x2="14.5" y2="14.5" />
+        </svg>
+      );
+    case "sui":
+      return (
+        <svg {...props}>
+          <path d="M12 2c0 0-8 7-8 12 0 4.4 3.6 8 8 8s8-3.6 8-8c0-5-8-12-8-12z" fill={isActive ? color : "none"} fillOpacity={isActive ? 0.3 : 0} />
+          <path d="M8 12.5c0 0 2-2 4-2s4 2 4 2" />
+          <path d="M6 15.5c0 0 3-2.5 6-2.5s6 2.5 6 2.5" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...props}>
+          <polygon points="12 2 2 7 12 12 22 7 12 2" />
+          <polyline points="2 17 12 22 22 17" />
+          <polyline points="2 12 12 17 22 12" />
+        </svg>
+      );
+  }
+}
+
 /* ── MAIN COMPONENT ────────────────────────────────────────── */
 
 export default function L1L2LandingClient() {
   const pageRef = useRef(null);
   const timelineTrackRef = useRef(null);
+  const timelineWrapperRef = useRef(null);
+  const l1PinnedWrapperRef = useRef(null);
+  const l1ScrollTriggerRef = useRef(null);
   const [expandedCap, setExpandedCap] = useState(0);
+  const [activeChainIndex, setActiveChainIndex] = useState(0);
+  const [activeSubTab, setActiveSubTab] = useState("services");
   const [videoReady, setVideoReady] = useState(false);
   const lottieContainerRef = useRef(null);
+  const activeChainIndexRef = useRef(activeChainIndex);
+
+  useEffect(() => {
+    activeChainIndexRef.current = activeChainIndex;
+  }, [activeChainIndex]);
+
+  const scrollToChain = (idx) => {
+    setActiveChainIndex(idx);
+    setActiveSubTab("services");
+    const st = l1ScrollTriggerRef.current;
+    if (st && typeof window !== "undefined") {
+      const step = 1 / (LAYER1_CHAINS.length - 1);
+      const targetScroll = st.start + idx * step * (st.end - st.start);
+      window.scrollTo({
+        top: targetScroll,
+        behavior: "smooth"
+      });
+    }
+  };
 
   /* ── Load green Lottie animation in context section ── */
   useEffect(() => {
@@ -222,28 +560,68 @@ export default function L1L2LandingClient() {
     };
   }, []);
 
-  /* ── Horizontal scroll timeline (desktop only) ── */
+  /* ── Pinned & Horizontal ScrollTriggers in DOM order ── */
   useGSAP(() => {
     const mm = gsap.matchMedia();
+
+    /* 1. Pinned Layer 1 Showcase ScrollTrigger with Snap (First pinned section in DOM) */
+    mm.add("(min-width: 900px)", () => {
+      if (!l1PinnedWrapperRef.current) return;
+      const pinTrigger = ScrollTrigger.create({
+        trigger: l1PinnedWrapperRef.current,
+        start: "top top",
+        end: "+=2600",
+        pin: true,
+        scrub: 0.4,
+        anticipatePin: 1,
+        refreshPriority: 10,
+        snap: {
+          snapTo: (val) => {
+            const step = 1 / (LAYER1_CHAINS.length - 1);
+            return Math.round(val / step) * step;
+          },
+          duration: { min: 0.2, max: 0.5 },
+          delay: 0.05,
+          ease: "power2.out"
+        },
+        onUpdate: (self) => {
+          const step = 1 / (LAYER1_CHAINS.length - 1);
+          const rawIdx = Math.round(self.progress / step);
+          const idx = Math.min(LAYER1_CHAINS.length - 1, Math.max(0, rawIdx));
+          if (idx !== activeChainIndexRef.current) {
+            setActiveChainIndex(idx);
+            setActiveSubTab("services");
+          }
+        }
+      });
+      l1ScrollTriggerRef.current = pinTrigger;
+    });
+
+    /* 2. Horizontal scroll timeline (Lower pinned section in DOM) */
     mm.add("(min-width: 769px)", () => {
       const track = timelineTrackRef.current;
-      if (!track) return;
-      const totalScroll = track.scrollWidth - window.innerWidth + 120;
+      const wrapper = timelineWrapperRef.current;
+      if (!track || !wrapper) return;
 
       gsap.to(track, {
-        x: -totalScroll,
+        x: () => -(track.scrollWidth - window.innerWidth + 140),
         ease: "none",
         scrollTrigger: {
-          trigger: ".timeline-scroll-wrapper",
+          trigger: wrapper,
           start: "center center",
-          end: () => `+=${totalScroll}`,
+          end: () => `+=${track.scrollWidth - window.innerWidth + 140}`,
           scrub: 1,
           pin: true,
           anticipatePin: 1,
-          invalidateOnRefresh: true
+          invalidateOnRefresh: true,
+          refreshPriority: 5
         }
       });
     });
+
+    // Sort and refresh triggers so all pin spacers and offsets calculate accurately
+    ScrollTrigger.sort();
+    ScrollTrigger.refresh();
   }, { scope: pageRef });
 
   /* ── Scroll-triggered fade-ins for sections ── */
@@ -372,11 +750,9 @@ export default function L1L2LandingClient() {
                 </svg>
                 <span>Layer 1 &amp; Layer 2 Development</span>
               </div>
-              <h1 className="mainpara">Chains Built to Last Past Testnet.</h1>
+              <h1 className="mainpara">Layer 1 Blockchain Development Services</h1>
               <p className="para">
-                Quecko engineers production-grade Layer 1 and Layer 2 networks — consensus mechanisms,
-                validator infrastructure, and audited bridge architecture — for teams who need infrastructure
-                that survives real transaction volume, not a testnet demo.
+                Build secure, scalable, and high-performance blockchain solutions with Layer 1 networks designed for decentralized applications, digital assets, financial platforms, and enterprise use cases.
               </p>
               <div className="hero-ctas">
                 <Link href="/contact" className="btn-primary">
@@ -418,6 +794,172 @@ export default function L1L2LandingClient() {
           ))}
         </div>
       </div>
+
+      {/* ══════════════════════════════════════════════════════
+          3. PINNED LAYER 1 BLOCKCHAIN DEVELOPMENT SHOWCASE
+          ══════════════════════════════════════════════════════ */}
+      <section 
+        className="l1-pinned-section" 
+        ref={l1PinnedWrapperRef}
+        id="layer-1-services"
+      >
+        <div className="l1-pinned-sticky-inner">
+          <div className="l1-pinned-container">
+            <div className="l1-pinned-body">
+              {/* LEFT TIMELINE: ONLY ICONS VERTICALLY FROM TOP TO BOTTOM */}
+              <div className="l1-timeline-col">
+                <div className="l1-timeline-rail">
+                  <div className="timeline-track-line" />
+                  <div 
+                    className="timeline-fill-line" 
+                    style={{ 
+                      height: `${(activeChainIndex / (LAYER1_CHAINS.length - 1)) * 100}%` 
+                    }} 
+                  />
+                  <div className="timeline-nodes-list" role="tablist" aria-label="Layer 1 Blockchain Networks">
+                    {LAYER1_CHAINS.map((chain, idx) => {
+                      const isActive = activeChainIndex === idx;
+                      return (
+                        <button
+                          key={chain.id}
+                          type="button"
+                          role="tab"
+                          aria-selected={isActive}
+                          aria-label={`Switch to ${chain.cardTitle}`}
+                          className={`timeline-node-btn ${isActive ? "active" : ""}`}
+                          onClick={() => scrollToChain(idx)}
+                        >
+                          <ChainBrandIcon id={chain.id} isActive={isActive} />
+                          <span className="node-tooltip">{chain.cardTitle}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+
+              {/* CENTERED RIGHT: EQUAL SPACING, CONTENT OF SPECIFIC SECTION */}
+              <div className="l1-content-col">
+                {(() => {
+                  const currentChain = LAYER1_CHAINS[activeChainIndex] || LAYER1_CHAINS[0];
+                  return (
+                    <div 
+                      className="l1-showcase-card"
+                      key={currentChain.id}
+                    >
+                      {/* Card Header */}
+                      <div className="card-top-bar">
+                        <div className="card-title-meta">
+                          <div className="chain-badge-pill">
+                            <span className="lime-dot" />
+                            <span>{currentChain.cardTitle}</span>
+                          </div>
+                          <h3 className="card-tagline">{currentChain.cardDesc}</h3>
+                        </div>
+                        <Link href="/contact" className="card-direct-cta">
+                          <span>Talk to an Engineer</span>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <line x1="7" y1="17" x2="17" y2="7" />
+                            <polyline points="7 7 17 7 17 17" />
+                          </svg>
+                        </Link>
+                      </div>
+
+                      {/* Overview Paragraphs */}
+                      <div className="card-overview-prose">
+                        <h4 className="overview-headline">{currentChain.name} Services</h4>
+                        <p>{currentChain.intro}</p>
+                        <p className="quecko-role">{currentChain.queckoRole}</p>
+                      </div>
+
+                      {/* Sub-Tabs Selector */}
+                      <div className="card-subtabs-nav">
+                        <button
+                          type="button"
+                          className={`subtab-btn ${activeSubTab === "services" ? "active" : ""}`}
+                          onClick={() => setActiveSubTab("services")}
+                        >
+                          <span>Our {currentChain.cardTitle} Services</span>
+                          <span className="tab-count">{currentChain.services.length}</span>
+                        </button>
+
+                        {currentChain.benefits && (
+                          <button
+                            type="button"
+                            className={`subtab-btn ${activeSubTab === "benefits" ? "active" : ""}`}
+                            onClick={() => setActiveSubTab("benefits")}
+                          >
+                            <span>{currentChain.benefitsTitle}</span>
+                            <span className="tab-count">{currentChain.benefits.length}</span>
+                          </button>
+                        )}
+
+                        {currentChain.industries && (
+                          <button
+                            type="button"
+                            className={`subtab-btn ${activeSubTab === "industries" ? "active" : ""}`}
+                            onClick={() => setActiveSubTab("industries")}
+                          >
+                            <span>{currentChain.industriesTitle}</span>
+                            <span className="tab-count">{currentChain.industries.length}</span>
+                          </button>
+                        )}
+                      </div>
+
+                      {/* Content Pane */}
+                      <div className="card-subtab-pane">
+                        {activeSubTab === "services" && (
+                          <div className="services-grid-pane">
+                            {currentChain.services.map((srv, sIdx) => (
+                              <div key={sIdx} className="service-bubble">
+                                <div className="bubble-icon">
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                  </svg>
+                                </div>
+                                <div className="bubble-text">
+                                  <h5>{srv.title}</h5>
+                                  <p>{srv.desc}</p>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+
+                        {activeSubTab === "benefits" && currentChain.benefits && (
+                          <div className="benefits-grid-pane">
+                            {currentChain.benefits.map((ben, bIdx) => (
+                              <div key={bIdx} className="benefit-bubble">
+                                <span className="bubble-num">0{bIdx + 1}</span>
+                                <h5>{ben.title}</h5>
+                                <p>{ben.desc}</p>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+
+                        {activeSubTab === "industries" && currentChain.industries && (
+                          <div className="industries-grid-pane">
+                            {currentChain.industries.map((ind, iIdx) => (
+                              <div key={iIdx} className="industry-bubble">
+                                <div className="ind-header">
+                                  <span className="ind-lime-dot" />
+                                  <h5>{ind.title}</h5>
+                                </div>
+                                <p>{ind.desc}</p>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })()}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ══════════════════════════════════════════════════════
           6. CAPABILITIES (Expanding Accordion Cards)
@@ -533,7 +1075,7 @@ export default function L1L2LandingClient() {
           <h2>From Whitepaper to Genesis Block</h2>
         </div>
 
-        <div className="timeline-scroll-wrapper">
+        <div className="timeline-scroll-wrapper" ref={timelineWrapperRef}>
           <div className="timeline-pin-container">
             <div className="timeline-track" ref={timelineTrackRef}>
               {TIMELINE_STEPS.map((step, idx) => (
@@ -570,32 +1112,7 @@ export default function L1L2LandingClient() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════════
-          8. ECOSYSTEM / CHAIN COVERAGE
-          ══════════════════════════════════════════════════════ */}
-      <section className="l1l2-ecosystem-section">
-        <div className="ecosystem-container">
-          <div className="ecosystem-header">
-            <h2>Ecosystem &amp; Chain Coverage</h2>
-          </div>
 
-          <div className="ecosystem-grid">
-            {ECOSYSTEM_CHAINS.map((chain, idx) => (
-              <div key={idx} className="ecosystem-card">
-                <div className="eco-chain-name">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2">
-                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                    <polyline points="2 17 12 22 22 17" />
-                    <polyline points="2 12 12 17 22 12" />
-                  </svg>
-                  {chain.name}
-                </div>
-                <div className="eco-chain-desc">{chain.desc}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ══════════════════════════════════════════════════════
           9. TECHNOLOGY STACK
